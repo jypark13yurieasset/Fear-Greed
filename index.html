@@ -3,58 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나만의 투자 대시보드</title>
+    <title>나만의 투자 대시보드 | CNN Fear & Greed Index</title>
+    <meta name="description" content="실시간 CNN 공포와 탐욕 지수(Fear & Greed Index)를 모니터링하고 과거 데이터를 한눈에 확인하는 나만의 투자 대시보드입니다.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
-        .card { text-align: center; background: #edf2f7; padding: 30px; border-radius: 10px; margin-top: 20px; transition: all 0.3s ease; }
-        .fng-value { font-size: 72px; font-weight: bold; margin: 10px 0; }
-        .status { font-size: 24px; font-weight: bold; }
-        .date { color: #7f8c8d; font-size: 14px; margin-top: 10px; }
-        .history-section { margin-top: 40px; }
-        .history-table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
-        .history-table th, .history-table td { padding: 12px; border-bottom: 1px solid #edf2f7; text-align: center; }
-        .history-table th { background-color: #34495e; color: white; font-weight: 600; }
-        .history-table tr:hover { background-color: #f8fafc; }
+        :root {
+            --bg-gradient: radial-gradient(circle at 50% 50%, #0c0f1d 0%, #030712 100%);
+            --card-bg: rgba(17, 24, 39, 0.45);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-glow: 0 20px 40px -15px rgba(99, 102, 241, 0.15);
+            --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            
+            --color-extreme-fear: #ef4444;
+            --color-fear: #f97316;
+            --color-neutral: #eab308;
+            --color-greed: #10b981;
+            --color-extreme-greed: #06b6d4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Ambient glowing backgrounds */
+        .bg-glow-1 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(99, 102, 241, 0) 70%);
+            top: -10%;
+            left: -10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .bg-glow-2 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.06) 0%, rgba(6, 182, 212, 0) 70%);
+            bottom: -10%;
+            right: -10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            z-index: 1;
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1.dashboard-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.025em;
+            margin-bottom: 6px;
+        }
+
+        .dashboard-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 24px;
+            padding: 35px 25px;
+            box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.5), var(--accent-glow);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+        }
+
+        .card-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+        }
+
+        /* SVG Gauge Section */
+        .gauge-container {
+            position: relative;
+            width: 260px;
+            height: 145px;
+            margin: 0 auto 15px auto;
+        }
+
+        .gauge-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gauge-track {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.04);
+            stroke-width: 10;
+            stroke-linecap: round;
+        }
+
+        .gauge-progress-path {
+            fill: none;
+            stroke: url(#gauge-gradient);
+            stroke-width: 10;
+            stroke-linecap: round;
+            stroke-dasharray: 251.32;
+            stroke-dashoffset: 251.32;
+            transition: stroke-dashoffset 2s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .gauge-needle {
+            fill: #ffffff;
+            stroke: none;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+            transform-origin: 100px 95px;
+            transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+            transform: rotate(-90deg);
+        }
+
+        .gauge-needle-center {
+            fill: #0c0f1d;
+            stroke: #ffffff;
+            stroke-width: 2.5;
+        }
+
+        .fng-value {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            background: linear-gradient(to bottom, #ffffff, #d1d5db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        /* Status Badge dynamic styles */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            border: 1px solid transparent;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;
+        }
+
+        .status-extreme-fear {
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+            border-color: rgba(239, 68, 68, 0.3);
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.15);
+        }
+        .status-fear {
+            background: rgba(249, 115, 22, 0.15);
+            color: #fed7aa;
+            border-color: rgba(249, 115, 22, 0.3);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.15);
+        }
+        .status-neutral {
+            background: rgba(234, 179, 8, 0.15);
+            color: #fef08a;
+            border-color: rgba(234, 179, 8, 0.3);
+            box-shadow: 0 0 15px rgba(234, 179, 8, 0.15);
+        }
+        .status-greed {
+            background: rgba(16, 185, 129, 0.15);
+            color: #a7f3d0;
+            border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+        }
+        .status-extreme-greed {
+            background: rgba(6, 182, 212, 0.15);
+            color: #a5f3fc;
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+        }
+
+        .date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 25px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+
+        /* History Section */
+        .history-section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-left: 5px;
+            color: var(--text-primary);
+        }
+
+        .history-table-container {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .history-table th {
+            background: rgba(255, 255, 255, 0.01);
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .history-table td {
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .history-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .history-table tr {
+            transition: background-color 0.2s ease;
+        }
+
+        .history-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .table-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>My Investment Dashboard</h1>
-    
-    <div class="card">
-        <h3 style="margin: 0; color: #4a5568;">CNN Fear & Greed Index</h3>
-        <div class="fng-value" id="today-fng">-</div>
-        <div class="status" id="fng-status">-</div>
-        <div class="date" id="update-date">최근 업데이트: -</div>
-    </div>
+<div class="bg-glow-1"></div>
+<div class="bg-glow-2"></div>
 
-    <div class="history-section">
+<main class="container">
+    <header class="dashboard-header">
+        <h1 class="dashboard-title">My Investment Dashboard</h1>
+        <p class="dashboard-subtitle">실시간 금융 시장 데이터 시각화</p>
+    </header>
+    
+    <section class="card">
+        <h2 class="card-title">CNN Fear & Greed Index</h2>
+        
+        <div class="gauge-container">
+            <svg viewBox="0 0 200 110" class="gauge-svg">
+                <defs>
+                    <linearGradient id="gauge-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="var(--color-extreme-fear)" />
+                        <stop offset="25%" stop-color="var(--color-fear)" />
+                        <stop offset="50%" stop-color="var(--color-neutral)" />
+                        <stop offset="75%" stop-color="var(--color-greed)" />
+                        <stop offset="100%" stop-color="var(--color-extreme-greed)" />
+                    </linearGradient>
+                </defs>
+                <path class="gauge-track" d="M20,95 A80,80 0 0,1 180,95" />
+                <path id="gauge-progress" class="gauge-progress-path" d="M20,95 A80,80 0 0,1 180,95" />
+                <polygon id="gauge-needle" class="gauge-needle" points="98,95 102,95 100,25" />
+                <circle cx="100" cy="95" r="5" class="gauge-needle-center" />
+            </svg>
+        </div>
+
+        <div class="fng-value" id="today-fng">-</div>
+        <div class="status-badge" id="fng-status">-</div>
+        <div class="date" id="update-date">최근 업데이트: -</div>
+    </section>
+
+    <section class="history-section">
         <h3>과거 기록 히스토리</h3>
-        <table class="history-table">
-            <thead>
-                <tr>
-                    <th>날짜</th>
-                    <th>공포 & 탐욕 지수</th>
-                </tr>
-            </thead>
-            <tbody id="history-data">
-                </tbody>
-        </table>
-    </div>
-</div>
+        <div class="history-table-container">
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>날짜</th>
+                        <th>공포 & 탐욕 지수</th>
+                    </tr>
+                </thead>
+                <tbody id="history-data"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
 
 <script>
-    // 자동화 로봇이 쌓아둔 data.json 파일을 읽어와서 화면에 뿌려주는 기능
     fetch('./data.json')
         .then(response => {
             if (!response.ok) throw new Error('데이터 파일을 찾을 수 없습니다.');
             return response.json();
         })
         .then(data => {
-            const dates = Object.keys(data).sort().reverse(); // 최신 날짜 순서로 정렬
+            const dates = Object.keys(data).sort().reverse();
             if (dates.length === 0) return;
 
             const latestDate = dates[0];
@@ -66,18 +375,76 @@
 
             // 2. 지수 크기에 따라 상태 텍스트와 색상 다르게 지정
             const statusEl = document.getElementById('fng-status');
-            if (latestValue <= 25) { statusEl.innerText = "Extreme Fear (극도의 공포)"; statusEl.style.color = "#e74c3c"; }
-            else if (latestValue <= 45) { statusEl.innerText = "Fear (공포)"; statusEl.style.color = "#e67e22"; }
-            else if (latestValue <= 55) { statusEl.innerText = "Neutral (중립)"; statusEl.style.color = "#f1c40f"; }
-            else if (latestValue <= 75) { statusEl.innerText = "Greed (탐욕)"; statusEl.style.color = "#2ecc71"; }
-            else { statusEl.innerText = "Extreme Greed (극도의 탐욕)"; statusEl.style.color = "#1abc9c"; }
+            statusEl.className = 'status-badge'; // reset class
+            
+            let statusText = '';
+            let badgeClass = '';
+            
+            if (latestValue <= 25) {
+                statusText = "Extreme Fear (극도의 공포)";
+                badgeClass = "status-extreme-fear";
+            } else if (latestValue <= 45) {
+                statusText = "Fear (공포)";
+                badgeClass = "status-fear";
+            } else if (latestValue <= 55) {
+                statusText = "Neutral (중립)";
+                badgeClass = "status-neutral";
+            } else if (latestValue <= 75) {
+                statusText = "Greed (탐욕)";
+                badgeClass = "status-greed";
+            } else {
+                statusText = "Extreme Greed (극도의 탐욕)";
+                badgeClass = "status-extreme-greed";
+            }
+            
+            statusEl.innerText = statusText;
+            statusEl.classList.add(badgeClass);
 
-            // 3. 밑에 표(Table) 형태로 누적 데이터 쌓기
+            // 3. SVG 게이지 게이지 바늘 회전 및 진행 표시 업데이트
+            const maxDash = 251.32;
+            const offset = maxDash - (latestValue / 100) * maxDash;
+            
+            // 미세 딜레이를 주어 화면이 나타난 후 부드럽게 채워지는 효과 구현
+            setTimeout(() => {
+                const progressEl = document.getElementById('gauge-progress');
+                const needleEl = document.getElementById('gauge-needle');
+                
+                if (progressEl) progressEl.style.strokeDashoffset = offset;
+                if (needleEl) {
+                    const angle = (latestValue / 100) * 180 - 90;
+                    needleEl.style.transform = `rotate(${angle}deg)`;
+                }
+            }, 100);
+
+            // 4. 밑에 표(Table) 형태로 누적 데이터 쌓기
             const tbody = document.getElementById('history-data');
             dates.forEach(date => {
+                const val = data[date].fear_and_greed;
+                let tableBadgeClass = '';
+                let tableStatusText = '';
+                
+                if (val <= 25) {
+                    tableBadgeClass = 'status-extreme-fear';
+                    tableStatusText = 'Extreme Fear';
+                } else if (val <= 45) {
+                    tableBadgeClass = 'status-fear';
+                    tableStatusText = 'Fear';
+                } else if (val <= 55) {
+                    tableBadgeClass = 'status-neutral';
+                    tableStatusText = 'Neutral';
+                } else if (val <= 75) {
+                    tableBadgeClass = 'status-greed';
+                    tableStatusText = 'Greed';
+                } else {
+                    tableBadgeClass = 'status-extreme-greed';
+                    tableStatusText = 'Extreme Greed';
+                }
+
                 const row = `<tr>
                     <td><strong>${date}</strong></td>
-                    <td>${data[date].fear_and_greed}</td>
+                    <td>
+                        <span class="table-badge ${tableBadgeClass}">${val} &bull; ${tableStatusText}</span>
+                    </td>
                 </tr>`;
                 tbody.innerHTML += row;
             });
@@ -85,7 +452,8 @@
         .catch(err => {
             console.error(err);
             document.getElementById('today-fng').innerText = "에러";
-            document.getElementById('fng-status').innerText = "data.json 파일을 찾을 수 없거나 아직 데이터가 비어있습니다.";
+            document.getElementById('fng-status').innerText = "데이터 로딩 실패";
+            document.getElementById('fng-status').className = "status-badge status-extreme-fear";
         });
 </script>
 </body>
