@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 투자 대시보드</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+        .card { text-align: center; background: #edf2f7; padding: 30px; border-radius: 10px; margin-top: 20px; transition: all 0.3s ease; }
+        .fng-value { font-size: 72px; font-weight: bold; margin: 10px 0; }
+        .status { font-size: 24px; font-weight: bold; }
+        .date { color: #7f8c8d; font-size: 14px; margin-top: 10px; }
+        .history-section { margin-top: 40px; }
+        .history-table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+        .history-table th, .history-table td { padding: 12px; border-bottom: 1px solid #edf2f7; text-align: center; }
+        .history-table th { background-color: #34495e; color: white; font-weight: 600; }
+        .history-table tr:hover { background-color: #f8fafc; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>My Investment Dashboard</h1>
+    
+    <div class="card">
+        <h3 style="margin: 0; color: #4a5568;">CNN Fear & Greed Index</h3>
+        <div class="fng-value" id="today-fng">-</div>
+        <div class="status" id="fng-status">-</div>
+        <div class="date" id="update-date">최근 업데이트: -</div>
+    </div>
+
+    <div class="history-section">
+        <h3>과거 기록 히스토리</h3>
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>날짜</th>
+                    <th>공포 & 탐욕 지수</th>
+                </tr>
+            </thead>
+            <tbody id="history-data">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // 자동화 로봇이 쌓아둔 data.json 파일을 읽어와서 화면에 뿌려주는 기능
+    fetch('./data.json')
+        .then(response => {
+            if (!response.ok) throw new Error('데이터 파일을 찾을 수 없습니다.');
+            return response.json();
+        })
+        .then(data => {
+            const dates = Object.keys(data).sort().reverse(); // 최신 날짜 순서로 정렬
+            if (dates.length === 0) return;
+
+            const latestDate = dates[0];
+            const latestValue = data[latestDate].fear_and_greed;
+
+            // 1. 오늘의 큰 숫자 및 날짜 반영
+            document.getElementById('today-fng').innerText = latestValue;
+            document.getElementById('update-date').innerText = `최근 업데이트: ${latestDate}`;
+
+            // 2. 지수 크기에 따라 상태 텍스트와 색상 다르게 지정
+            const statusEl = document.getElementById('fng-status');
+            if (latestValue <= 25) { statusEl.innerText = "Extreme Fear (극도의 공포)"; statusEl.style.color = "#e74c3c"; }
+            else if (latestValue <= 45) { statusEl.innerText = "Fear (공포)"; statusEl.style.color = "#e67e22"; }
+            else if (latestValue <= 55) { statusEl.innerText = "Neutral (중립)"; statusEl.style.color = "#f1c40f"; }
+            else if (latestValue <= 75) { statusEl.innerText = "Greed (탐욕)"; statusEl.style.color = "#2ecc71"; }
+            else { statusEl.innerText = "Extreme Greed (극도의 탐욕)"; statusEl.style.color = "#1abc9c"; }
+
+            // 3. 밑에 표(Table) 형태로 누적 데이터 쌓기
+            const tbody = document.getElementById('history-data');
+            dates.forEach(date => {
+                const row = `<tr>
+                    <td><strong>${date}</strong></td>
+                    <td>${data[date].fear_and_greed}</td>
+                </tr>`;
+                tbody.innerHTML += row;
+            });
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('today-fng').innerText = "에러";
+            document.getElementById('fng-status').innerText = "data.json 파일을 찾을 수 없거나 아직 데이터가 비어있습니다.";
+        });
+</script>
+</body>
+</html>
