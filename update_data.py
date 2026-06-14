@@ -3,6 +3,10 @@ import json
 import datetime
 import requests
 from bs4 import BeautifulSoup
+import urllib3
+
+# SSL 경고 메시지 비활성화
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # 1. CNN Fear and Greed 최신 공식 데이터 API 주소 (2026년 최신 반영)
 url = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
@@ -14,8 +18,8 @@ headers = {
 fng_value = None
 
 try:
-    # API 요청 시도
-    response = requests.get(url, headers=headers, timeout=10)
+    # API 요청 시도 (verify=False로 SSL 검증 생략)
+    response = requests.get(url, headers=headers, timeout=10, verify=False)
     
     if response.status_code == 200:
         data = response.json()
@@ -33,7 +37,7 @@ except Exception as api_err:
 if fng_value is None:
     try:
         web_url = "https://edition.cnn.com/markets/fear-and-greed"
-        web_response = requests.get(web_url, headers=headers, timeout=10)
+        web_response = requests.get(web_url, headers=headers, timeout=10, verify=False)
         soup = BeautifulSoup(web_response.text, 'html.parser')
         
         # 구조 내 텍스트 중 ratingValue 값을 역추적
@@ -72,9 +76,12 @@ dashboard_data[today_str] = {
     "fear_and_greed": fng_value
 }
 
-# 3. JSON 파일로 다시 저장
+# 3. JSON 및 JS 파일로 저장 (CORS 우회 로딩 지원)
 with open(json_file, "w", encoding="utf-8") as f:
     json.dump(dashboard_data, f, indent=4, ensure_ascii=False)
+
+with open("data.js", "w", encoding="utf-8") as f:
+    f.write(f"window.fng_data = {json.dumps(dashboard_data, indent=4, ensure_ascii=False)};\n")
 
 print(f"--- 작업 완료 ---")
 print(f"최종 저장 결과 -> 날짜: {today_str}, 지수: {fng_value}")
