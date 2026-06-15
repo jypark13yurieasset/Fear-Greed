@@ -72,7 +72,7 @@
 
         .container {
             width: 100%;
-            max-width: 680px;
+            max-width: 960px;
             z-index: 1;
         }
 
@@ -97,6 +97,130 @@
             font-weight: 400;
         }
 
+        /* Dashboard Grid Layout (5 columns layout) */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+            align-items: stretch;
+        }
+
+        @media (max-width: 1024px) {
+            .dashboard-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .metric-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 22px 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.4), var(--accent-glow);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+        }
+
+        .metric-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .metric-name {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .metric-symbol {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.3);
+            text-transform: uppercase;
+        }
+
+        .metric-value-container {
+            margin-top: auto;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        /* Glassmorphism badges for daily changes */
+        .change-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 1px solid transparent;
+            width: fit-content;
+        }
+
+        .change-up {
+            background: rgba(52, 211, 153, 0.12);
+            color: #34d399;
+            border-color: rgba(52, 211, 153, 0.2);
+        }
+
+        .change-down {
+            background: rgba(248, 113, 113, 0.12);
+            color: #f87171;
+            border-color: rgba(248, 113, 113, 0.2);
+        }
+
+        .change-neutral {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
         .card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
@@ -108,7 +232,7 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-            margin-bottom: 30px;
+            margin-bottom: 0; /* Align with layout grid */
         }
 
         .card::before {
@@ -190,50 +314,45 @@
         .status-badge {
             display: inline-flex;
             align-items: center;
-            padding: 6px 16px;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
             letter-spacing: -0.01em;
             border: 1px solid transparent;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            margin-top: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: fit-content;
         }
 
         .status-extreme-fear {
-            background: rgba(239, 68, 68, 0.15);
+            background: rgba(239, 68, 68, 0.12);
             color: #fca5a5;
-            border-color: rgba(239, 68, 68, 0.3);
-            box-shadow: 0 0 15px rgba(239, 68, 68, 0.15);
+            border-color: rgba(239, 68, 68, 0.2);
         }
 
         .status-fear {
-            background: rgba(249, 115, 22, 0.15);
+            background: rgba(249, 115, 22, 0.12);
             color: #fed7aa;
-            border-color: rgba(249, 115, 22, 0.3);
-            box-shadow: 0 0 15px rgba(249, 115, 22, 0.15);
+            border-color: rgba(249, 115, 22, 0.2);
         }
 
         .status-neutral {
-            background: rgba(234, 179, 8, 0.15);
+            background: rgba(234, 179, 8, 0.12);
             color: #fef08a;
-            border-color: rgba(234, 179, 8, 0.3);
-            box-shadow: 0 0 15px rgba(234, 179, 8, 0.15);
+            border-color: rgba(234, 179, 8, 0.2);
         }
 
         .status-greed {
-            background: rgba(16, 185, 129, 0.15);
+            background: rgba(16, 185, 129, 0.12);
             color: #a7f3d0;
-            border-color: rgba(16, 185, 129, 0.3);
-            box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.2);
         }
 
         .status-extreme-greed {
-            background: rgba(6, 182, 212, 0.15);
+            background: rgba(6, 182, 212, 0.12);
             color: #a5f3fc;
-            border-color: rgba(6, 182, 212, 0.3);
-            box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+            border-color: rgba(6, 182, 212, 0.2);
         }
 
         .date {
@@ -318,34 +437,70 @@
     <main class="container">
         <header class="dashboard-header">
             <h1 class="dashboard-title">My Investment Dashboard</h1>
-            <p class="dashboard-subtitle">실시간 금융 시장 데이터 시각화</p>
+            <p class="dashboard-subtitle">실시간 금융 시장 데이터 시각화 &nbsp;|&nbsp; <span id="update-date">최근 업데이트: -</span></p>
         </header>
 
-        <section class="card">
-            <h2 class="card-title">CNN Fear & Greed Index</h2>
-
-            <div class="gauge-container">
-                <svg viewBox="0 0 200 110" class="gauge-svg">
-                    <defs>
-                        <linearGradient id="gauge-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="var(--color-extreme-fear)" />
-                            <stop offset="25%" stop-color="var(--color-fear)" />
-                            <stop offset="50%" stop-color="var(--color-neutral)" />
-                            <stop offset="75%" stop-color="var(--color-greed)" />
-                            <stop offset="100%" stop-color="var(--color-extreme-greed)" />
-                        </linearGradient>
-                    </defs>
-                    <path class="gauge-track" d="M20,95 A80,80 0 0,1 180,95" />
-                    <path id="gauge-progress" class="gauge-progress-path" d="M20,95 A80,80 0 0,1 180,95" />
-                    <polygon id="gauge-needle" class="gauge-needle" points="98,95 102,95 100,25" />
-                    <circle cx="100" cy="95" r="5" class="gauge-needle-center" />
-                </svg>
+        <div class="dashboard-grid">
+            <!-- S&P 500 -->
+            <div class="metric-card" id="sp500-card">
+                <div class="metric-header">
+                    <span class="metric-name">S&P 500</span>
+                    <span class="metric-symbol">.INX</span>
+                </div>
+                <div class="metric-value-container">
+                    <div class="metric-value" id="sp500-price">-</div>
+                    <div class="change-badge change-neutral" id="sp500-change">-</div>
+                </div>
             </div>
 
-            <div class="fng-value" id="today-fng">-</div>
-            <div class="status-badge" id="fng-status">-</div>
-            <div class="date" id="update-date">최근 업데이트: -</div>
-        </section>
+            <!-- Nasdaq 100 -->
+            <div class="metric-card" id="nasdaq100-card">
+                <div class="metric-header">
+                    <span class="metric-name">Nasdaq 100</span>
+                    <span class="metric-symbol">NDX</span>
+                </div>
+                <div class="metric-value-container">
+                    <div class="metric-value" id="nasdaq100-price">-</div>
+                    <div class="change-badge change-neutral" id="nasdaq100-change">-</div>
+                </div>
+            </div>
+
+            <!-- VIX Index -->
+            <div class="metric-card" id="vix-card">
+                <div class="metric-header">
+                    <span class="metric-name">VIX Index</span>
+                    <span class="metric-symbol">VIX</span>
+                </div>
+                <div class="metric-value-container">
+                    <div class="metric-value" id="vix-price">-</div>
+                    <div class="change-badge change-neutral" id="vix-change">-</div>
+                </div>
+            </div>
+
+            <!-- USD/KRW Exchange Rate -->
+            <div class="metric-card" id="usd_krw-card">
+                <div class="metric-header">
+                    <span class="metric-name">USD / KRW</span>
+                    <span class="metric-symbol">환율</span>
+                </div>
+                <div class="metric-value-container">
+                    <div class="metric-value" id="usd_krw-price">-</div>
+                    <div class="change-badge change-neutral" id="usd_krw-change">-</div>
+                </div>
+            </div>
+
+            <!-- CNN Fear & Greed Index -->
+            <div class="metric-card" id="fng-card">
+                <div class="metric-header">
+                    <span class="metric-name">Fear & Greed</span>
+                    <span class="metric-symbol">CNN</span>
+                </div>
+                <div class="metric-value-container">
+                    <div class="metric-value" id="today-fng">-</div>
+                    <div class="status-badge" id="fng-status">-</div>
+                </div>
+            </div>
+        </div>
 
         <section class="history-section">
             <h3>과거 기록 히스토리</h3>
@@ -354,7 +509,11 @@
                     <thead>
                         <tr>
                             <th>날짜</th>
-                            <th>공포 & 탐욕 지수</th>
+                            <th>S&P 500</th>
+                            <th>나스닥 100</th>
+                            <th>VIX 지수</th>
+                            <th>환율 (USD/KRW)</th>
+                            <th>공포 & 탐욕</th>
                         </tr>
                     </thead>
                     <tbody id="history-data"></tbody>
@@ -363,9 +522,87 @@
         </section>
     </main>
 
+    <script src="./data.js"></script>
     <script>
         const isLocalFile = window.location.protocol === 'file:';
         const fetchUrl = isLocalFile ? './data.json' : `./data.json?_=${Date.now()}`;
+
+        function renderDashboard(data) {
+            const dates = Object.keys(data).sort().reverse();
+            if (dates.length === 0) return;
+
+            const latestDate = dates[0];
+            const latestData = data[latestDate];
+            const latestValue = latestData.fear_and_greed;
+
+            // 1. 오늘의 CNN Fear & Greed 반영
+            document.getElementById('today-fng').innerText = latestValue;
+            document.getElementById('update-date').innerText = `최근 업데이트: ${latestDate}`;
+
+            // 지수 크기에 따라 상태 텍스트와 색상 다르게 지정
+            const statusEl = document.getElementById('fng-status');
+            statusEl.className = 'status-badge';
+
+            let statusText = '';
+            let badgeClass = '';
+
+            if (latestValue <= 25) {
+                statusText = "극도 공포";
+                badgeClass = "status-extreme-fear";
+            } else if (latestValue <= 45) {
+                statusText = "공포";
+                badgeClass = "status-fear";
+            } else if (latestValue <= 55) {
+                statusText = "중립";
+                badgeClass = "status-neutral";
+            } else if (latestValue <= 75) {
+                statusText = "탐욕";
+                badgeClass = "status-greed";
+            } else {
+                statusText = "극도 탐욕";
+                badgeClass = "status-extreme-greed";
+            }
+
+            statusEl.innerText = statusText;
+            statusEl.classList.add(badgeClass);
+
+            // 2. 오늘의 시장 지수 및 환율 카드 반영
+            updateMetricCard('sp500', latestData.sp500_price, latestData.sp500_change);
+            updateMetricCard('nasdaq100', latestData.nasdaq100_price, latestData.nasdaq100_change);
+            updateMetricCard('vix', latestData.vix_price, latestData.vix_change);
+            updateMetricCard('usd_krw', latestData.usd_krw_price, latestData.usd_krw_change, ' ₩');
+
+            // 3. 밑에 표(Table) 형태로 누적 데이터 쌓기
+            const tbody = document.getElementById('history-data');
+            tbody.innerHTML = '';
+            dates.forEach(date => {
+                const dayData = data[date];
+                const fng = dayData.fear_and_greed;
+                
+                let fngColor = '';
+                if (fng <= 25) fngColor = 'var(--color-extreme-fear)';
+                else if (fng <= 45) fngColor = 'var(--color-fear)';
+                else if (fng <= 55) fngColor = 'var(--color-neutral)';
+                else if (fng <= 75) fngColor = 'var(--color-greed)';
+                else fngColor = 'var(--color-extreme-greed)';
+
+                // 추가 지표들 포맷팅 (없는 경우 - 처리)
+                const sp500_val = formatTableChange(dayData.sp500_change);
+                const nasdaq_val = formatTableChange(dayData.nasdaq100_change);
+                const vix_val = formatTableChange(dayData.vix_change, true); // VIX는 하락이 호재
+                const usd_krw_val = formatTableChange(dayData.usd_krw_change);
+
+                const row = `<tr>
+                    <td><strong>${date}</strong></td>
+                    <td>${sp500_val}</td>
+                    <td>${nasdaq_val}</td>
+                    <td>${vix_val}</td>
+                    <td>${usd_krw_val}</td>
+                    <td><span style="color: ${fngColor}; font-weight: 700;">${fng}</span></td>
+                </tr>`;
+                tbody.innerHTML += row;
+            });
+        }
 
         fetch(fetchUrl)
             .then(response => {
@@ -373,92 +610,72 @@
                 return response.json();
             })
             .then(data => {
-                const dates = Object.keys(data).sort().reverse();
-                if (dates.length === 0) return;
-
-                const latestDate = dates[0];
-                const latestValue = data[latestDate].fear_and_greed;
-
-                // 1. 오늘의 큰 숫자 및 날짜 반영
-                document.getElementById('today-fng').innerText = latestValue;
-                document.getElementById('update-date').innerText = `최근 업데이트: ${latestDate}`;
-
-                // 2. 지수 크기에 따라 상태 텍스트와 색상 다르게 지정
-                const statusEl = document.getElementById('fng-status');
-                statusEl.className = 'status-badge'; // reset class
-
-                let statusText = '';
-                let badgeClass = '';
-
-                if (latestValue <= 25) {
-                    statusText = "Extreme Fear (극도의 공포)";
-                    badgeClass = "status-extreme-fear";
-                } else if (latestValue <= 45) {
-                    statusText = "Fear (공포)";
-                    badgeClass = "status-fear";
-                } else if (latestValue <= 55) {
-                    statusText = "Neutral (중립)";
-                    badgeClass = "status-neutral";
-                } else if (latestValue <= 75) {
-                    statusText = "Greed (탐욕)";
-                    badgeClass = "status-greed";
-                } else {
-                    statusText = "Extreme Greed (극도의 탐욕)";
-                    badgeClass = "status-extreme-greed";
-                }
-
-                statusEl.innerText = statusText;
-                statusEl.classList.add(badgeClass);
-
-                // 3. SVG 게이지 게이지 바늘 회전 및 진행 표시 업데이트
-                const maxDash = 251.32;
-                const offset = maxDash - (latestValue / 100) * maxDash;
-
-                // 미세 딜레이를 주어 화면이 나타난 후 부드럽게 채워지는 효과 구현
-                setTimeout(() => {
-                    const progressEl = document.getElementById('gauge-progress');
-                    const needleEl = document.getElementById('gauge-needle');
-
-                    if (progressEl) progressEl.style.strokeDashoffset = offset;
-                    if (needleEl) {
-                        const angle = (latestValue / 100) * 180 - 90;
-                        needleEl.style.transform = `rotate(${angle}deg)`;
-                    }
-                }, 100);
-
-                // 4. 밑에 표(Table) 형태로 누적 데이터 쌓기 (정확한 수치 비교를 위해 셀 텍스트는 숫자만 포함하도록 렌더링)
-                const tbody = document.getElementById('history-data');
-                dates.forEach(date => {
-                    const val = data[date].fear_and_greed;
-                    let statusColor = '';
-
-                    if (val <= 25) {
-                        statusColor = 'var(--color-extreme-fear)';
-                    } else if (val <= 45) {
-                        statusColor = 'var(--color-fear)';
-                    } else if (val <= 55) {
-                        statusColor = 'var(--color-neutral)';
-                    } else if (val <= 75) {
-                        statusColor = 'var(--color-greed)';
-                    } else {
-                        statusColor = 'var(--color-extreme-greed)';
-                    }
-
-                    const row = `<tr>
-                    <td><strong>${date}</strong></td>
-                    <td>
-                        <span style="color: ${statusColor}; font-weight: 700;">${val}</span>
-                    </td>
-                </tr>`;
-                    tbody.innerHTML += row;
-                });
+                renderDashboard(data);
             })
             .catch(err => {
-                console.error(err);
-                document.getElementById('today-fng').innerText = "에러";
-                document.getElementById('fng-status').innerText = "데이터 로딩 실패";
-                document.getElementById('fng-status').className = "status-badge status-extreme-fear";
+                console.warn("fetch 실패, 로컬 JS 백업 데이터를 사용합니다:", err);
+                if (window.fng_data) {
+                    renderDashboard(window.fng_data);
+                } else {
+                    document.getElementById('today-fng').innerText = "에러";
+                    document.getElementById('fng-status').innerText = "데이터 로딩 실패";
+                    document.getElementById('fng-status').className = "status-badge status-extreme-fear";
+                }
             });
+
+        // 카드 컴포넌트 업데이트 헬퍼 함수
+        function updateMetricCard(id, price, change, suffix = '') {
+            const priceEl = document.getElementById(`${id}-price`);
+            const badgeEl = document.getElementById(`${id}-change`);
+            
+            if (!priceEl || !badgeEl) return;
+            
+            if (price === undefined || price === null) {
+                priceEl.innerText = '-';
+                badgeEl.innerText = '-';
+                badgeEl.className = 'change-badge change-neutral';
+                return;
+            }
+            
+            // 가격 포맷팅 (천단위 콤마)
+            priceEl.innerText = price.toLocaleString('ko-KR') + suffix;
+            
+            // 변동률 포맷팅
+            if (change === undefined || change === null) {
+                badgeEl.innerText = '-';
+                badgeEl.className = 'change-badge change-neutral';
+            } else {
+                const sign = change > 0 ? '+' : '';
+                badgeEl.innerText = `${sign}${change.toFixed(2)}%`;
+                
+                // VIX는 변동성이 낮아질 때 호재(초록), 높아질 때 악재(빨강)
+                const isVix = id === 'vix';
+                const isPositive = change > 0;
+                
+                if (change === 0) {
+                    badgeEl.className = 'change-badge change-neutral';
+                } else if ((isPositive && !isVix) || (!isPositive && isVix)) {
+                    badgeEl.className = 'change-badge change-up';
+                } else {
+                    badgeEl.className = 'change-badge change-down';
+                }
+            }
+        }
+
+        // 테이블 셀 변동률 포맷팅 헬퍼 함수
+        function formatTableChange(change, isVix = false) {
+            if (change === undefined || change === null) return `<span style="color: var(--text-secondary); font-weight: 500;">-</span>`;
+            
+            const sign = change > 0 ? '+' : '';
+            const isPositive = change > 0;
+            let color = '';
+            
+            if (change === 0) color = 'var(--text-secondary)';
+            else if ((isPositive && !isVix) || (!isPositive && isVix)) color = '#34d399'; // 초록
+            else color = '#f87171'; // 빨강
+            
+            return `<span style="color: ${color}; font-weight: 600;">${sign}${change.toFixed(2)}%</span>`;
+        }
     </script>
 </body>
 
