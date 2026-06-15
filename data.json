@@ -11,14 +11,14 @@
         "usd_krw_change": -0.05
     },
     "2026-06-15": {
-        "fear_and_greed": 34,
-        "sp500_price": 7431.46,
-        "sp500_change": 0.5,
-        "nasdaq100_price": 29635.95,
-        "nasdaq100_change": 0.64,
-        "vix_price": 17.68,
+        "fear_and_greed": 42,
+        "sp500_price": 7570.15,
+        "sp500_change": 1.87,
+        "nasdaq100_price": 30547.86,
+        "nasdaq100_change": 3.08,
+        "vix_price": 16.08,
         "vix_change": -9.05,
-        "usd_krw_price": 1512.58,
-        "usd_krw_change": -0.32
+        "usd_krw_price": 1514.23,
+        "usd_krw_change": -0.21
     }
 }
