@@ -72,7 +72,7 @@
 
         .container {
             width: 100%;
-            max-width: 960px;
+            max-width: 1120px;
             z-index: 1;
         }
 
@@ -97,10 +97,10 @@
             font-weight: 400;
         }
 
-        /* Dashboard Grid Layout (5 columns layout) */
+        /* Dashboard Grid Layout (6 columns layout) */
         .dashboard-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             gap: 15px;
             margin-bottom: 30px;
             align-items: stretch;
@@ -426,6 +426,63 @@
             font-size: 0.8rem;
             font-weight: 600;
         }
+
+        /* AAII Sentiment Mini Bar */
+        .aaii-mini-bar {
+            display: flex;
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .aaii-mini-bar .bar-bull {
+            background: #34d399;
+            transition: width 1s ease;
+        }
+
+        .aaii-mini-bar .bar-neutral {
+            background: #fbbf24;
+            transition: width 1s ease;
+        }
+
+        .aaii-mini-bar .bar-bear {
+            background: #f87171;
+            transition: width 1s ease;
+        }
+
+        .aaii-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .aaii-labels .label-bull { color: #34d399; }
+        .aaii-labels .label-neutral { color: #fbbf24; }
+        .aaii-labels .label-bear { color: #f87171; }
+
+        .aaii-survey-date {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        /* AAII table cell mini display */
+        .aaii-table-mini {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+        .aaii-table-mini .t-bull { color: #34d399; }
+        .aaii-table-mini .t-bear { color: #f87171; }
     </style>
 </head>
 
@@ -453,15 +510,15 @@
                 </div>
             </div>
 
-            <!-- Nasdaq 100 -->
-            <div class="metric-card" id="nasdaq100-card">
+            <!-- Nasdaq Composite -->
+            <div class="metric-card" id="nasdaq-card">
                 <div class="metric-header">
-                    <span class="metric-name">Nasdaq 100</span>
-                    <span class="metric-symbol">NDX</span>
+                    <span class="metric-name">Nasdaq Composite</span>
+                    <span class="metric-symbol">IXIC</span>
                 </div>
                 <div class="metric-value-container">
-                    <div class="metric-value" id="nasdaq100-price">-</div>
-                    <div class="change-badge change-neutral" id="nasdaq100-change">-</div>
+                    <div class="metric-value" id="nasdaq-price">-</div>
+                    <div class="change-badge change-neutral" id="nasdaq-change">-</div>
                 </div>
             </div>
 
@@ -500,6 +557,28 @@
                     <div class="status-badge" id="fng-status">-</div>
                 </div>
             </div>
+
+            <!-- AAII Investor Sentiment -->
+            <div class="metric-card" id="aaii-card">
+                <div class="metric-header">
+                    <span class="metric-name">AAII Sentiment</span>
+                    <span class="metric-symbol">주간 설문</span>
+                </div>
+                <div class="metric-value-container">
+                    <div class="metric-value" id="aaii-bull-value" style="font-size: 1.25rem;">-</div>
+                    <div class="aaii-mini-bar">
+                        <div class="bar-bull" id="aaii-bar-bull" style="width: 0%"></div>
+                        <div class="bar-neutral" id="aaii-bar-neutral" style="width: 0%"></div>
+                        <div class="bar-bear" id="aaii-bar-bear" style="width: 0%"></div>
+                    </div>
+                    <div class="aaii-labels">
+                        <span class="label-bull" id="aaii-label-bull">-</span>
+                        <span class="label-neutral" id="aaii-label-neutral">-</span>
+                        <span class="label-bear" id="aaii-label-bear">-</span>
+                    </div>
+                    <div class="aaii-survey-date" id="aaii-survey-date">-</div>
+                </div>
+            </div>
         </div>
 
         <section class="history-section">
@@ -510,10 +589,11 @@
                         <tr>
                             <th>날짜</th>
                             <th>S&P 500</th>
-                            <th>나스닥 100</th>
+                            <th>나스닥</th>
                             <th>VIX 지수</th>
                             <th>환율 (USD/KRW)</th>
                             <th>공포 & 탐욕</th>
+                            <th>AAII 센티먼트</th>
                         </tr>
                     </thead>
                     <tbody id="history-data"></tbody>
@@ -568,9 +648,28 @@
 
             // 2. 오늘의 시장 지수 및 환율 카드 반영
             updateMetricCard('sp500', latestData.sp500_price, latestData.sp500_change);
-            updateMetricCard('nasdaq100', latestData.nasdaq100_price, latestData.nasdaq100_change);
+            updateMetricCard('nasdaq', latestData.nasdaq_price, latestData.nasdaq_change);
             updateMetricCard('vix', latestData.vix_price, latestData.vix_change);
             updateMetricCard('usd_krw', latestData.usd_krw_price, latestData.usd_krw_change, ' ₩');
+
+            // AAII Sentiment 카드 반영
+            if (latestData.aaii_bullish !== undefined) {
+                const bull = latestData.aaii_bullish;
+                const neutral = latestData.aaii_neutral;
+                const bear = latestData.aaii_bearish;
+                const spread = (bull - bear).toFixed(1);
+                const spreadSign = (bull - bear) > 0 ? '+' : '';
+                document.getElementById('aaii-bull-value').innerHTML = `<span style="color:#34d399">▲</span> ${bull}% <span style="font-size:0.85rem;color:var(--text-secondary)">vs</span> <span style="color:#f87171">▼</span> ${bear}%`;
+                document.getElementById('aaii-bar-bull').style.width = bull + '%';
+                document.getElementById('aaii-bar-neutral').style.width = neutral + '%';
+                document.getElementById('aaii-bar-bear').style.width = bear + '%';
+                document.getElementById('aaii-label-bull').innerText = `강세 ${bull}%`;
+                document.getElementById('aaii-label-neutral').innerText = `중립 ${neutral}%`;
+                document.getElementById('aaii-label-bear').innerText = `약세 ${bear}%`;
+                if (latestData.aaii_date) {
+                    document.getElementById('aaii-survey-date').innerText = `설문 마감: ${latestData.aaii_date}`;
+                }
+            }
 
             // 3. 밑에 표(Table) 형태로 누적 데이터 쌓기
             const tbody = document.getElementById('history-data');
@@ -588,9 +687,17 @@
 
                 // 추가 지표들 포맷팅 (없는 경우 - 처리)
                 const sp500_val = formatTableChange(dayData.sp500_change);
-                const nasdaq_val = formatTableChange(dayData.nasdaq100_change);
+                const nasdaq_val = formatTableChange(dayData.nasdaq_change);
                 const vix_val = formatTableChange(dayData.vix_change, true); // VIX는 하락이 호재
                 const usd_krw_val = formatTableChange(dayData.usd_krw_change);
+
+                // AAII 센티먼트 포맷팅
+                let aaii_cell = `<span style="color: var(--text-secondary); font-weight: 500;">-</span>`;
+                if (dayData.aaii_bullish !== undefined) {
+                    const b = dayData.aaii_bullish;
+                    const br = dayData.aaii_bearish;
+                    aaii_cell = `<span class="aaii-table-mini"><span class="t-bull">${b}%</span> / <span class="t-bear">${br}%</span></span>`;
+                }
 
                 const row = `<tr>
                     <td><strong>${date}</strong></td>
@@ -599,6 +706,7 @@
                     <td>${vix_val}</td>
                     <td>${usd_krw_val}</td>
                     <td><span style="color: ${fngColor}; font-weight: 700;">${fng}</span></td>
+                    <td>${aaii_cell}</td>
                 </tr>`;
                 tbody.innerHTML += row;
             });

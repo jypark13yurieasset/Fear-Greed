@@ -52,6 +52,75 @@ def get_fear_and_greed():
             
     return fng_value
 
+# AAII Investor Sentiment Survey 데이터 가져오기
+def get_aaii_sentiment():
+    """AAII 주간 투자 심리 설문 데이터를 스크래핑합니다.
+    매주 수요일(미국 현지시간) 업데이트됩니다.
+    Returns: dict with keys: bullish, neutral, bearish, date (or None if failed)
+    """
+    url = "https://www.aaii.com/sentimentsurvey"
+    try:
+        r = requests.get(url, headers=headers, timeout=15, verify=False)
+        if r.status_code == 200:
+            text = r.text
+            
+            # JavaScript 변수에서 전체 투표 수치 추출
+            bull_match = re.search(r'var\s+bullTotalCnt\s*=\s*([\d.]+)', text)
+            neutral_match = re.search(r'var\s+neutralTotalCnt\s*=\s*([\d.]+)', text)
+            bear_match = re.search(r'var\s+bearTotalCnt\s*=\s*([\d.]+)', text)
+            
+            if bull_match and neutral_match and bear_match:
+                bullish = round(float(bull_match.group(1)), 1)
+                neutral = round(float(neutral_match.group(1)), 1)
+                bearish = round(float(bear_match.group(1)), 1)
+                
+                # dataChart5 배열에서 가장 최근 날짜 추출
+                date_matches = re.findall(r'"date_":\s*"(\d{4}-\d{2}-\d{2})"', text)
+                survey_date = date_matches[-1] if date_matches else None
+                
+                print(f"AAII 수집 성공! Bullish={bullish}%, Neutral={neutral}%, Bearish={bearish}%, 설문 마감일={survey_date}")
+                return {
+                    "bullish": bullish,
+                    "neutral": neutral,
+                    "bearish": bearish,
+                    "date": survey_date
+                }
+            else:
+                # 백업: HTML 바 차트에서 가장 최근 주의 데이터 추출
+                soup = BeautifulSoup(text, 'html.parser')
+                weekending_divs = soup.find_all('div', class_='weekending')
+                for div in weekending_divs:
+                    bars = div.find_all('div', class_='bar')
+                    if len(bars) >= 3:
+                        bullish = float(bars[0].text.strip().replace('%', ''))
+                        neutral = float(bars[1].text.strip().replace('%', ''))
+                        bearish = float(bars[2].text.strip().replace('%', ''))
+                        date_div = div.find('div', class_='date')
+                        survey_date = None
+                        if date_div:
+                            date_text = date_div.text.strip()
+                            # 날짜 형식 M/D/YYYY -> YYYY-MM-DD 변환
+                            try:
+                                parsed = datetime.datetime.strptime(date_text, '%m/%d/%Y').date()
+                                survey_date = parsed.isoformat()
+                            except:
+                                pass
+                        print(f"AAII 백업 추출 성공! Bullish={bullish}%, Neutral={neutral}%, Bearish={bearish}%")
+                        return {
+                            "bullish": bullish,
+                            "neutral": neutral,
+                            "bearish": bearish,
+                            "date": survey_date
+                        }
+                print("AAII 페이지에서 데이터를 찾지 못했습니다.")
+                return None
+        else:
+            print(f"AAII 페이지 접근 실패 (상태코드: {r.status_code})")
+            return None
+    except Exception as e:
+        print(f"AAII 수집 에러: {e}")
+        return None
+
 # 2. Google Finance 데이터 가져오기 (Container: div.ujg0He, Price: div.N6SYTe, Change: div.DAicsd)
 def get_google_data(name, symbol_path):
     url = f"https://www.google.com/finance/quote/{symbol_path}"
@@ -189,9 +258,21 @@ def main():
             fng_value = prev_data["fear_and_greed"]
             print(f"CNN 수집 실패! 이전 영업일 데이터 적용: {fng_value}")
     
+    print("\n=== AAII Investor Sentiment Survey 수집 시작 ===")
+    aaii_data = get_aaii_sentiment()
+    if aaii_data is None:
+        if prev_data and "aaii_bullish" in prev_data:
+            aaii_data = {
+                "bullish": prev_data["aaii_bullish"],
+                "neutral": prev_data["aaii_neutral"],
+                "bearish": prev_data["aaii_bearish"],
+                "date": prev_data.get("aaii_date")
+            }
+            print(f"AAII 수집 실패! 이전 데이터 적용: Bullish={aaii_data['bullish']}%, Bearish={aaii_data['bearish']}%")
+    
     print("\n=== 시장 지수 및 환율 데이터 수집 시작 (Google & Yahoo 교차 체크) ===")
     sp500 = get_combined_metric("S&P 500", ".INX:INDEXSP", "^GSPC")
-    nasdaq100 = get_combined_metric("Nasdaq 100", "NDX:INDEXNASDAQ", "^NDX")
+    nasdaq = get_combined_metric("Nasdaq Composite", ".IXIC:INDEXNASDAQ", "^IXIC")
     vix = get_combined_metric("VIX", "VIX:INDEXCBOE", "^VIX")
     usd_krw = get_combined_metric("USD/KRW", "USD-KRW", "USDKRW=X")
     
@@ -205,22 +286,31 @@ def main():
             print(f"[{name}] 변동률 수집 실패 -> 이전 영업일 데이터 적용: {metric_dict['change']}%")
 
     carry_over_if_needed(sp500, "S&P 500", "sp500_price", "sp500_change")
-    carry_over_if_needed(nasdaq100, "Nasdaq 100", "nasdaq100_price", "nasdaq100_change")
+    carry_over_if_needed(nasdaq, "Nasdaq Composite", "nasdaq_price", "nasdaq_change")
     carry_over_if_needed(vix, "VIX", "vix_price", "vix_change")
     carry_over_if_needed(usd_krw, "USD/KRW", "usd_krw_price", "usd_krw_change")
     
     # 데이터 업데이트
-    dashboard_data[today_str] = {
+    today_entry = {
         "fear_and_greed": fng_value,
         "sp500_price": sp500["price"],
         "sp500_change": sp500["change"],
-        "nasdaq100_price": nasdaq100["price"],
-        "nasdaq100_change": nasdaq100["change"],
+        "nasdaq_price": nasdaq["price"],
+        "nasdaq_change": nasdaq["change"],
         "vix_price": vix["price"],
         "vix_change": vix["change"],
         "usd_krw_price": usd_krw["price"],
         "usd_krw_change": usd_krw["change"]
     }
+    
+    # AAII 데이터 추가
+    if aaii_data:
+        today_entry["aaii_bullish"] = aaii_data["bullish"]
+        today_entry["aaii_neutral"] = aaii_data["neutral"]
+        today_entry["aaii_bearish"] = aaii_data["bearish"]
+        today_entry["aaii_date"] = aaii_data["date"]
+    
+    dashboard_data[today_str] = today_entry
     
     # 혹시 모를 기존 주말(토/일) 데이터가 있다면 제거
     cleaned_dashboard_data = {}
@@ -247,10 +337,11 @@ def main():
     print(f"최종 저장 결과 -> 날짜: {today_str}")
     print(f"  CNN Fear & Greed: {fng_value}")
     print(f"  S&P 500: Price={sp500['price']}, Change={sp500['change']}%")
-    print(f"  Nasdaq 100: Price={nasdaq100['price']}, Change={nasdaq100['change']}%")
+    print(f"  Nasdaq Composite: Price={nasdaq['price']}, Change={nasdaq['change']}%")
     print(f"  VIX: Price={vix['price']}, Change={vix['change']}%")
     print(f"  USD/KRW: Price={usd_krw['price']}, Change={usd_krw['change']}%")
-
+    if aaii_data:
+        print(f"  AAII Sentiment: Bullish={aaii_data['bullish']}%, Neutral={aaii_data['neutral']}%, Bearish={aaii_data['bearish']}% (설문 마감: {aaii_data['date']})")
 
 if __name__ == "__main__":
     main()
