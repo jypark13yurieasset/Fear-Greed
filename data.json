@@ -30,18 +30,18 @@
         "aaii_date": "2026-06-10"
     },
     "2026-06-16": {
-        "fear_and_greed": 41,
-        "sp500_price": 7554.29,
-        "sp500_change": 1.65,
-        "nasdaq_price": 26683.94,
-        "nasdaq_change": 3.07,
-        "vix_price": 16.2,
-        "vix_change": -8.37,
-        "usd_krw_price": 1508.95,
-        "usd_krw_change": -0.04,
-        "aaii_bullish": 34.4,
-        "aaii_neutral": 24.1,
-        "aaii_bearish": 41.6,
+        "fear_and_greed": 40,
+        "sp500_price": 7545.23,
+        "sp500_change": 1.53,
+        "nasdaq_price": 26572.85,
+        "nasdaq_change": -0.42,
+        "vix_price": 15.95,
+        "vix_change": -1.54,
+        "usd_krw_price": 1508.12,
+        "usd_krw_change": -0.09,
+        "aaii_bullish": 34.3,
+        "aaii_neutral": 24.2,
+        "aaii_bearish": 41.5,
         "aaii_date": "2026-06-10"
     }
 }
