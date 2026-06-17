@@ -795,7 +795,7 @@
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
                         <div class="etf-card-title">KoAct 미국나스닥성장기업액티브</div>
-                        <div class="etf-card-sub">삼성액티브자산운용 &nbsp;|&nbsp; 기준일: 2026.06.16</div>
+                        <div class="etf-card-sub">삼성액티브자산운용 &nbsp;|&nbsp; <span id="koact-update-date">기준일: 2026.06.17</span></div>
                     </div>
                     <table class="etf-table">
                         <thead>
@@ -827,7 +827,7 @@
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
                         <div class="etf-card-title">TIME 미국나스닥100액티브</div>
-                        <div class="etf-card-sub">타임폴리오자산운용 &nbsp;|&nbsp; 기준일: 2026.06.16</div>
+                        <div class="etf-card-sub">타임폴리오자산운용 &nbsp;|&nbsp; <span id="time-update-date">기준일: 2026.06.17</span></div>
                     </div>
                     <table class="etf-table">
                         <thead>
@@ -1049,6 +1049,59 @@
                 tbody.innerHTML += row;
             });
 
+            // 5. Active ETF Holdings 반영
+            const koactTbody = document.getElementById('koact-holdings-body');
+            const koactDateEl = document.getElementById('koact-update-date');
+            
+            let targetKoactData = null;
+            for (const d of dates) {
+                if (data[d] && data[d].koact_holdings && data[d].koact_holdings.length > 0) {
+                    targetKoactData = data[d];
+                    break;
+                }
+            }
+            
+            if (targetKoactData && koactTbody) {
+                koactTbody.innerHTML = '';
+                targetKoactData.koact_holdings.forEach((item, idx) => {
+                    const row = `<tr data-ticker="${item.ticker || ''}">
+                        <td class="rank">${idx + 1}</td>
+                        <td>${item.name}</td>
+                        <td class="weight">${item.weight.toFixed(2)}%</td>
+                    </tr>`;
+                    koactTbody.innerHTML += row;
+                });
+                if (koactDateEl && targetKoactData.koact_date) {
+                    koactDateEl.innerText = `기준일: ${targetKoactData.koact_date}`;
+                }
+            }
+
+            const timeTbody = document.getElementById('time-holdings-body');
+            const timeDateEl = document.getElementById('time-update-date');
+            
+            let targetTimeData = null;
+            for (const d of dates) {
+                if (data[d] && data[d].time_holdings && data[d].time_holdings.length > 0) {
+                    targetTimeData = data[d];
+                    break;
+                }
+            }
+            
+            if (targetTimeData && timeTbody) {
+                timeTbody.innerHTML = '';
+                targetTimeData.time_holdings.forEach((item, idx) => {
+                    const row = `<tr data-ticker="${item.ticker || ''}">
+                        <td class="rank">${idx + 1}</td>
+                        <td>${item.name}</td>
+                        <td class="weight">${item.weight.toFixed(2)}%</td>
+                    </tr>`;
+                    timeTbody.innerHTML += row;
+                });
+                if (timeDateEl && targetTimeData.time_date) {
+                    timeDateEl.innerText = `기준일: ${targetTimeData.time_date}`;
+                }
+            }
+
             // 독자(비공통) 보유 종목 돋보이게 하이라이트 실행
             highlightUniqueHoldings();
         }
@@ -1131,38 +1184,73 @@
             const koactRows = document.querySelectorAll('#koact-holdings-body tr');
             const timeRows = document.querySelectorAll('#time-holdings-body tr');
             
-            const koactNames = [];
-            const timeNames = [];
+            const koactKeys = [];
+            const timeKeys = [];
+            
+            // 헬퍼 함수: 이름을 표준화하여 비교하기 편하게 만듬 (티커가 없을 때 백업용)
+            function normalizeName(name) {
+                if (!name) return '';
+                return name.toUpperCase()
+                    .replace(/[\s\.,\-\/]/g, '') // 공백, 마침표, 쉼표, 하이픈, 슬래시 제거
+                    .replace(/(CORP|CORPORATION|INC|INCORPORATED|PLC|LTD|LIMITED|CO|COMPANY)$/g, ''); // 사명 접미사 제거
+            }
             
             koactRows.forEach(row => {
+                const ticker = row.getAttribute('data-ticker');
                 const nameCell = row.cells[1];
-                if (nameCell) koactNames.push(nameCell.innerText.trim());
+                const name = nameCell ? nameCell.innerText.trim() : '';
+                if (ticker) {
+                    koactKeys.push({ type: 'ticker', value: ticker });
+                } else if (name) {
+                    koactKeys.push({ type: 'name', value: normalizeName(name) });
+                }
             });
             
             timeRows.forEach(row => {
+                const ticker = row.getAttribute('data-ticker');
                 const nameCell = row.cells[1];
-                if (nameCell) timeNames.push(nameCell.innerText.trim());
+                const name = nameCell ? nameCell.innerText.trim() : '';
+                if (ticker) {
+                    timeKeys.push({ type: 'ticker', value: ticker });
+                } else if (name) {
+                    timeKeys.push({ type: 'name', value: normalizeName(name) });
+                }
             });
+            
+            function hasMatch(key, list) {
+                return list.some(item => {
+                    if (key.type === 'ticker' && item.type === 'ticker') {
+                        return key.value === item.value;
+                    }
+                    return normalizeName(key.value) === normalizeName(item.value);
+                });
+            }
             
             // KoAct 테이블 하이라이트
             koactRows.forEach(row => {
+                const ticker = row.getAttribute('data-ticker');
                 const nameCell = row.cells[1];
-                if (nameCell) {
-                    const name = nameCell.innerText.trim();
-                    if (!timeNames.includes(name)) {
-                        row.classList.add('unique-holding');
-                    }
+                const name = nameCell ? nameCell.innerText.trim() : '';
+                const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
+                
+                if (name && !hasMatch(key, timeKeys)) {
+                    row.classList.add('unique-holding');
+                } else {
+                    row.classList.remove('unique-holding');
                 }
             });
             
             // TIME 테이블 하이라이트
             timeRows.forEach(row => {
+                const ticker = row.getAttribute('data-ticker');
                 const nameCell = row.cells[1];
-                if (nameCell) {
-                    const name = nameCell.innerText.trim();
-                    if (!koactNames.includes(name)) {
-                        row.classList.add('unique-holding');
-                    }
+                const name = nameCell ? nameCell.innerText.trim() : '';
+                const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
+                
+                if (name && !hasMatch(key, koactKeys)) {
+                    row.classList.add('unique-holding');
+                } else {
+                    row.classList.remove('unique-holding');
                 }
             });
         }

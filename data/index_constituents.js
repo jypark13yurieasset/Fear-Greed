@@ -3431,129 +3431,160 @@ const INDEX_DATA = {
       }
     ]
   },
-  "sox": {
+  "dowjones": {
     "count": 30,
     "constituents": [
       {
-        "ticker": "ADI",
-        "name": "Analog Devices"
+        "ticker": "MMM",
+        "name": "3M",
+        "sector": "Industrials"
       },
       {
-        "ticker": "AMAT",
-        "name": "Applied Materials"
+        "ticker": "AXP",
+        "name": "American Express",
+        "sector": "Financials"
       },
       {
-        "ticker": "ASML",
-        "name": "ASML Holding"
+        "ticker": "AMGN",
+        "name": "Amgen",
+        "sector": "Health Care"
       },
       {
-        "ticker": "AVGO",
-        "name": "Broadcom"
+        "ticker": "AMZN",
+        "name": "Amazon",
+        "sector": "Consumer Discretionary"
       },
       {
-        "ticker": "AMD",
-        "name": "Advanced Micro Devices"
+        "ticker": "AAPL",
+        "name": "Apple",
+        "sector": "Information Technology"
       },
       {
-        "ticker": "ENTG",
-        "name": "Entegris"
+        "ticker": "BA",
+        "name": "Boeing",
+        "sector": "Industrials"
       },
       {
-        "ticker": "GFS",
-        "name": "GlobalFoundries"
+        "ticker": "CAT",
+        "name": "Caterpillar",
+        "sector": "Industrials"
       },
       {
-        "ticker": "INTC",
-        "name": "Intel"
+        "ticker": "CVX",
+        "name": "Chevron",
+        "sector": "Energy"
       },
       {
-        "ticker": "KLAC",
-        "name": "KLA Corporation"
+        "ticker": "CSCO",
+        "name": "Cisco",
+        "sector": "Information Technology"
       },
       {
-        "ticker": "LRCX",
-        "name": "Lam Research"
+        "ticker": "KO",
+        "name": "Coca-Cola",
+        "sector": "Consumer Staples"
       },
       {
-        "ticker": "LSCC",
-        "name": "Lattice Semiconductor"
+        "ticker": "DIS",
+        "name": "Disney",
+        "sector": "Communication Services"
       },
       {
-        "ticker": "MRVL",
-        "name": "Marvell Technology"
+        "ticker": "GS",
+        "name": "Goldman Sachs",
+        "sector": "Financials"
       },
       {
-        "ticker": "MCHP",
-        "name": "Microchip Technology"
+        "ticker": "HD",
+        "name": "Home Depot",
+        "sector": "Consumer Discretionary"
       },
       {
-        "ticker": "MU",
-        "name": "Micron Technology"
+        "ticker": "HON",
+        "name": "Honeywell",
+        "sector": "Industrials"
       },
       {
-        "ticker": "MPWR",
-        "name": "Monolithic Power Systems"
+        "ticker": "IBM",
+        "name": "IBM",
+        "sector": "Information Technology"
+      },
+      {
+        "ticker": "JNJ",
+        "name": "Johnson & Johnson",
+        "sector": "Health Care"
+      },
+      {
+        "ticker": "JPM",
+        "name": "JPMorgan Chase",
+        "sector": "Financials"
+      },
+      {
+        "ticker": "MCD",
+        "name": "McDonald's",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "ticker": "MRK",
+        "name": "Merck",
+        "sector": "Health Care"
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "sector": "Information Technology"
+      },
+      {
+        "ticker": "NKE",
+        "name": "Nike",
+        "sector": "Consumer Discretionary"
       },
       {
         "ticker": "NVDA",
-        "name": "NVIDIA"
+        "name": "Nvidia",
+        "sector": "Information Technology"
       },
       {
-        "ticker": "NXPI",
-        "name": "NXP Semiconductors"
+        "ticker": "PG",
+        "name": "Procter & Gamble",
+        "sector": "Consumer Staples"
       },
       {
-        "ticker": "ON",
-        "name": "ON Semiconductor"
+        "ticker": "CRM",
+        "name": "Salesforce",
+        "sector": "Information Technology"
       },
       {
-        "ticker": "QCOM",
-        "name": "Qualcomm"
+        "ticker": "SHW",
+        "name": "Sherwin-Williams",
+        "sector": "Materials"
       },
       {
-        "ticker": "QRVO",
-        "name": "Qorvo"
+        "ticker": "TRV",
+        "name": "Travelers Companies, Inc.",
+        "sector": "Financials"
       },
       {
-        "ticker": "SNPS",
-        "name": "Synopsys"
+        "ticker": "UNH",
+        "name": "UnitedHealth Group",
+        "sector": "Health Care"
       },
       {
-        "ticker": "CDNS",
-        "name": "Cadence Design Systems"
+        "ticker": "VZ",
+        "name": "Verizon",
+        "sector": "Communication Services"
       },
       {
-        "ticker": "SWKS",
-        "name": "Skyworks Solutions"
+        "ticker": "V",
+        "name": "Visa",
+        "sector": "Financials"
       },
       {
-        "ticker": "STM",
-        "name": "STMicroelectronics"
-      },
-      {
-        "ticker": "TER",
-        "name": "Teradyne"
-      },
-      {
-        "ticker": "TSM",
-        "name": "Taiwan Semiconductor (ADR)"
-      },
-      {
-        "ticker": "TXN",
-        "name": "Texas Instruments"
-      },
-      {
-        "ticker": "WOLF",
-        "name": "Wolfspeed"
-      },
-      {
-        "ticker": "ARM",
-        "name": "Arm Holdings"
-      },
-      {
-        "ticker": "COHR",
-        "name": "Coherent Corp"
+        "ticker": "WMT",
+        "name": "Walmart",
+        "sector": "Consumer Staples"
       }
     ]
-  }
+  },
+  "date": "2026.06.17"
 };

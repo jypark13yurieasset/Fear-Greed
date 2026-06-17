@@ -340,6 +340,133 @@ def get_assets_by_market_cap():
         print(f"글로벌 자산 시가총액 수집 중 에러 발생: {e}")
         return None
 
+def get_koact_holdings():
+    print("Scraping KoAct...")
+    try:
+        # Step 1: get list of etfs to get the latest gijunYMD
+        list_url = "https://www.samsungactive.co.kr/api/v1/product/etf.do"
+        r = requests.get(list_url, headers=headers, timeout=10, verify=False)
+        r.raise_for_status()
+        etfs = r.json().get('etfs', [])
+        
+        target_etf = None
+        for e in etfs:
+            if e.get('fId') == '2ETFQ1':
+                target_etf = e
+                break
+                
+        if not target_etf:
+            print("KoAct ETF 2ETFQ1 not found in listing.")
+            return None
+            
+        gijun_date = target_etf.get('gijunYMD')
+        print(f"Latest KoAct date: {gijun_date}")
+        
+        # Step 2: query details for that date
+        detail_url = f"https://www.samsungactive.co.kr/api/v1/product/etf-pdf/2ETFQ1.do?gijunYMD={gijun_date}"
+        r = requests.get(detail_url, headers=headers, timeout=10, verify=False)
+        r.raise_for_status()
+        pdf_data = r.json().get('pdf', {})
+        pdf_list = pdf_data.get('list', [])
+        
+        holdings = []
+        for item in pdf_list:
+            ratio_str = item.get('ratio')
+            name = item.get('secNm', '').strip()
+            itm_no = item.get('itmNo', '')
+            # Filter out cash and empty ratios
+            if ratio_str and name and not any(k in name for k in ['현금', 'CASH', '원화', '설정']):
+                try:
+                    weight = float(ratio_str)
+                    if weight > 0:
+                        ticker = ''
+                        if itm_no:
+                            ticker = itm_no.strip().split()[0].upper()
+                        holdings.append({
+                            'name': name,
+                            'ticker': ticker,
+                            'weight': weight
+                        })
+                except ValueError:
+                    pass
+                    
+        # Sort by weight descending
+        holdings.sort(key=lambda x: x['weight'], reverse=True)
+        top10 = holdings[:10]
+        
+        # Format date from YYYYMMDD to YYYY.MM.DD
+        formatted_date = f"{gijun_date[:4]}.{gijun_date[4:6]}.{gijun_date[6:]}"
+        
+        return {
+            'date': formatted_date,
+            'holdings': top10
+        }
+    except Exception as e:
+        print(f"Error scraping KoAct: {e}")
+        return None
+
+def get_timefolio_holdings():
+    print("Scraping Timefolio...")
+    try:
+        url = "https://timeetf.co.kr/m11_view.php?idx=2&cate="
+        r = requests.get(url, headers=headers, timeout=10, verify=False)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, 'html.parser')
+        
+        tables = soup.find_all('table')
+        if len(tables) < 3:
+            print("Timefolio page does not have enough tables.")
+            return None
+            
+        # Table 0 is holdings
+        holdings_table = tables[0]
+        rows = holdings_table.find_all('tr')
+        holdings = []
+        for r in rows[1:]: # skip header
+            cells = [c.get_text(strip=True) for c in r.find_all('td')]
+            if len(cells) >= 5:
+                ticker_raw = cells[0]
+                name = cells[1]
+                weight_str = cells[4]
+                try:
+                    weight = float(weight_str)
+                    ticker = ''
+                    if ticker_raw:
+                        ticker = ticker_raw.strip().split()[0].upper()
+                    holdings.append({
+                        'name': name,
+                        'ticker': ticker,
+                        'weight': weight
+                    })
+                except ValueError:
+                    pass
+        # Top 10
+        top10 = holdings[:10]
+        
+        # Table 2 is price/date history
+        history_table = tables[2]
+        h_rows = history_table.find_all('tr')
+        # Skip headers (row 0, 1) and take row 2
+        date_str = None
+        if len(h_rows) >= 3:
+            cells = [c.get_text(strip=True) for c in h_rows[2].find_all(['td', 'th'])]
+            if cells:
+                date_str = cells[0]
+                
+        if not date_str:
+            print("Could not parse date from Timefolio history table.")
+            # fallback: use today's date
+            import datetime
+            date_str = datetime.date.today().strftime("%Y.%m.%d")
+            
+        return {
+            'date': date_str,
+            'holdings': top10
+        }
+    except Exception as e:
+        print(f"Error scraping Timefolio: {e}")
+        return None
+
 def main():
     today = datetime.date.today()
     today_str = today.isoformat()
@@ -411,6 +538,25 @@ def main():
             assets_top20 = prev_data["assets_top20"]
             print("글로벌 자산 수집 실패 -> 이전 영업일 데이터 적용")
 
+    print("\n=== Active ETF Holdings 수집 시작 ===")
+    koact_holdings = get_koact_holdings()
+    if koact_holdings is None:
+        if prev_data and "koact_holdings" in prev_data:
+            koact_holdings = {
+                "date": prev_data.get("koact_date", "2026.06.16"),
+                "holdings": prev_data["koact_holdings"]
+            }
+            print("KoAct 수집 실패 -> 이전 영업일 데이터 적용")
+            
+    timefolio_holdings = get_timefolio_holdings()
+    if timefolio_holdings is None:
+        if prev_data and "time_holdings" in prev_data:
+            timefolio_holdings = {
+                "date": prev_data.get("time_date", "2026.06.16"),
+                "holdings": prev_data["time_holdings"]
+            }
+            print("Timefolio 수집 실패 -> 이전 영업일 데이터 적용")
+
     # 데이터 업데이트
     today_entry = {
         "fear_and_greed": fng_value,
@@ -434,6 +580,14 @@ def main():
         today_entry["aaii_neutral"] = aaii_data["neutral"]
         today_entry["aaii_bearish"] = aaii_data["bearish"]
         today_entry["aaii_date"] = aaii_data["date"]
+        
+    # Active ETF Holdings 추가
+    if koact_holdings:
+        today_entry["koact_date"] = koact_holdings["date"]
+        today_entry["koact_holdings"] = koact_holdings["holdings"]
+    if timefolio_holdings:
+        today_entry["time_date"] = timefolio_holdings["date"]
+        today_entry["time_holdings"] = timefolio_holdings["holdings"]
     
     dashboard_data[today_str] = today_entry
     

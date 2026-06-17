@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Screener | Gary Park Investment Dashboard</title>
-    <meta name="description" content="S&P 500, Nasdaq-100, SOX 인덱스 구성종목을 검색·필터링·비교하는 스크리닝 도구입니다.">
+    <meta name="description" content="S&P 500, Nasdaq-100, Dow Jones 인덱스 구성종목을 검색·필터링·비교하는 스크리닝 도구입니다.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
@@ -23,7 +23,7 @@
             --accent-dim: rgba(124, 140, 245, 0.15);
             --sp500-color: #38bdf8;
             --ndx-color: #a78bfa;
-            --sox-color: #fb923c;
+            --dow-color: #f59e0b;
         }
 
         * {
@@ -235,16 +235,16 @@
         }
         .index-btn.ndx:hover { background: rgba(167, 139, 250, 0.1); }
 
-        .index-btn.sox {
-            border-color: var(--sox-color);
-            color: var(--sox-color);
+        .index-btn.dowjones {
+            border-color: var(--dow-color);
+            color: var(--dow-color);
             background: transparent;
         }
-        .index-btn.sox.active {
-            background: rgba(251, 146, 60, 0.15);
-            color: var(--sox-color);
+        .index-btn.dowjones.active {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--dow-color);
         }
-        .index-btn.sox:hover { background: rgba(251, 146, 60, 0.1); }
+        .index-btn.dowjones:hover { background: rgba(245, 158, 11, 0.1); }
 
         /* Sector dropdown */
         .sector-select {
@@ -310,7 +310,7 @@
 
         .stat-card.sp500-stat .stat-value { color: var(--sp500-color); }
         .stat-card.ndx-stat .stat-value { color: var(--ndx-color); }
-        .stat-card.sox-stat .stat-value { color: var(--sox-color); }
+        .stat-card.dow-stat .stat-value { color: var(--dow-color); }
         .stat-card.overlap-stat .stat-value { color: #34d399; }
 
         /* ─── Main Table ─── */
@@ -471,78 +471,15 @@
             background: rgba(167, 139, 250, 0.15);
             color: var(--ndx-color);
         }
-        .badge-sox {
-            background: rgba(251, 146, 60, 0.15);
-            color: var(--sox-color);
+        .badge-dow {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--dow-color);
         }
         .badge-no {
             color: rgba(130, 140, 180, 0.2);
         }
 
-        /* ─── Overlap Section ─── */
-        .overlap-section {
-            margin-top: 24px;
-            margin-bottom: 30px;
-        }
 
-        .overlap-title {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 14px;
-            padding-left: 5px;
-            color: var(--text-primary);
-        }
-
-        .overlap-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 10px;
-        }
-
-        .overlap-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-radius: 14px;
-            padding: 16px;
-            text-align: center;
-            transition: transform 0.2s ease;
-        }
-
-        .overlap-card:hover {
-            transform: translateY(-2px);
-        }
-
-        .overlap-value {
-            font-size: 1.4rem;
-            font-weight: 800;
-            line-height: 1.1;
-        }
-
-        .overlap-label {
-            font-size: 0.72rem;
-            color: var(--text-secondary);
-            font-weight: 500;
-            margin-top: 6px;
-            line-height: 1.3;
-        }
-
-        .overlap-dots {
-            display: flex;
-            gap: 4px;
-            justify-content: center;
-            margin-bottom: 8px;
-        }
-
-        .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-        }
-        .dot.sp500 { background: var(--sp500-color); }
-        .dot.ndx { background: var(--ndx-color); }
-        .dot.sox { background: var(--sox-color); }
 
         /* ─── Responsive ─── */
         @media (max-width: 768px) {
@@ -560,10 +497,6 @@
             }
 
             .page-header h1 { font-size: 1.4rem; }
-
-            .overlap-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
     </style>
 </head>
@@ -583,7 +516,7 @@
                     <a href="./screener.html" class="nav-tab active">Screener</a>
                 </div>
             </div>
-            <p>S&P 500 · Nasdaq-100 · SOX &nbsp;|&nbsp; 인덱스 구성종목 검색 & 비교</p>
+            <p>S&P 500 · Nasdaq-100 · Dow Jones &nbsp;|&nbsp; 인덱스 구성종목 검색 & 비교 &nbsp;|&nbsp; <span id="screener-update-date">기준일: -</span></p>
         </header>
 
         <!-- Stats Cards -->
@@ -600,9 +533,9 @@
                 <div class="stat-value" id="stat-ndx">-</div>
                 <div class="stat-label">Nasdaq-100</div>
             </div>
-            <div class="stat-card sox-stat">
-                <div class="stat-value" id="stat-sox">-</div>
-                <div class="stat-label">SOX</div>
+            <div class="stat-card dow-stat">
+                <div class="stat-value" id="stat-dow">-</div>
+                <div class="stat-label">Dow Jones</div>
             </div>
             <div class="stat-card overlap-stat">
                 <div class="stat-value" id="stat-filtered">-</div>
@@ -620,7 +553,7 @@
                 <div class="index-toggles">
                     <button class="index-btn sp500 active" data-index="sp500" onclick="toggleIndex(this)">S&P 500</button>
                     <button class="index-btn ndx active" data-index="nasdaq100" onclick="toggleIndex(this)">NDX</button>
-                    <button class="index-btn sox active" data-index="sox" onclick="toggleIndex(this)">SOX</button>
+                    <button class="index-btn dowjones active" data-index="dowjones" onclick="toggleIndex(this)">Dow Jones</button>
                 </div>
                 <select class="sector-select" id="sector-filter" onchange="applyFilters()">
                     <option value="">전체 섹터</option>
@@ -644,7 +577,7 @@
                             <th data-sort="sector">Sector</th>
                             <th class="no-sort" style="text-align:center; width:70px;">S&P</th>
                             <th class="no-sort" style="text-align:center; width:70px;">NDX</th>
-                            <th class="no-sort" style="text-align:center; width:70px;">SOX</th>
+                            <th class="no-sort" style="text-align:center; width:70px;">Dow</th>
                         </tr>
                     </thead>
                     <tbody id="screener-body">
@@ -654,13 +587,7 @@
             </div>
         </div>
 
-        <!-- Overlap Statistics -->
-        <section class="overlap-section">
-            <h3 class="overlap-title">📊 인덱스 간 중복 분석</h3>
-            <div class="overlap-grid" id="overlap-grid">
-                <!-- Dynamically rendered -->
-            </div>
-        </section>
+
     </main>
 
     <script src="./data/index_constituents.js"></script>
@@ -668,8 +595,8 @@
         // ─── State ───
         let allStocks = [];
         let filteredStocks = [];
-        let indexSets = { sp500: new Set(), nasdaq100: new Set(), sox: new Set() };
-        let activeIndices = { sp500: true, nasdaq100: true, sox: true };
+        let indexSets = { sp500: new Set(), nasdaq100: new Set(), dowjones: new Set() };
+        let activeIndices = { sp500: true, nasdaq100: true, dowjones: true };
         let sortState = { key: 'ticker', dir: 'asc' };
 
         // ─── Load Data ───
@@ -677,8 +604,10 @@
             processData(data);
             populateSectorFilter();
             applyFilters();
-            renderOverlapStats();
             updateGlobalStats();
+            if (data.date) {
+                document.getElementById('screener-update-date').textContent = `기준일: ${data.date}`;
+            }
         }
 
         const isLocalFile = window.location.protocol === 'file:';
@@ -723,16 +652,19 @@
                 });
             }
 
-            // SOX
-            if (data.sox) {
-                data.sox.constituents.forEach(item => {
+            // Dow Jones
+            if (data.dowjones) {
+                data.dowjones.constituents.forEach(item => {
                     const t = item.ticker;
-                    indexSets.sox.add(t);
-                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: '', sub_industry: '' };
+                    indexSets.dowjones.add(t);
+                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: item.sector || '', sub_industry: '' };
+                    else if (!stockMap[t].sector && item.sector) {
+                        stockMap[t].sector = item.sector;
+                    }
                 });
             }
 
-            // Cross-fill sector info: if a stock is in S&P 500, use its sector for Nasdaq/SOX entries too
+            // Cross-fill sector info: if a stock is in S&P 500, use its sector for Nasdaq/Dow entries too
             // (already handled by stockMap merge above)
 
             allStocks = Object.values(stockMap);
@@ -776,7 +708,7 @@
                     let inAnyActive = false;
                     if (activeIndices.sp500 && indexSets.sp500.has(stock.ticker)) inAnyActive = true;
                     if (activeIndices.nasdaq100 && indexSets.nasdaq100.has(stock.ticker)) inAnyActive = true;
-                    if (activeIndices.sox && indexSets.sox.has(stock.ticker)) inAnyActive = true;
+                    if (activeIndices.dowjones && indexSets.dowjones.has(stock.ticker)) inAnyActive = true;
                     if (!inAnyActive) return false;
                 }
 
@@ -851,12 +783,12 @@
             filteredStocks.forEach((stock, idx) => {
                 const inSp = indexSets.sp500.has(stock.ticker);
                 const inNdx = indexSets.nasdaq100.has(stock.ticker);
-                const inSox = indexSets.sox.has(stock.ticker);
-                const isTriple = inSp && inNdx && inSox;
+                const inDow = indexSets.dowjones.has(stock.ticker);
+                const isTriple = inSp && inNdx && inDow;
 
                 const spBadge = inSp ? '<span class="badge-yes badge-sp500">✓</span>' : '<span class="badge-no">–</span>';
                 const ndxBadge = inNdx ? '<span class="badge-yes badge-ndx">✓</span>' : '<span class="badge-no">–</span>';
-                const soxBadge = inSox ? '<span class="badge-yes badge-sox">✓</span>' : '<span class="badge-no">–</span>';
+                const dowBadge = inDow ? '<span class="badge-yes badge-dow">✓</span>' : '<span class="badge-no">–</span>';
 
                 const rowClass = isTriple ? ' class="triple-index"' : '';
                 const sectorDisplay = stock.sector || '<span style="opacity:0.3">-</span>';
@@ -868,7 +800,7 @@
                     <td class="col-sector">${sectorDisplay}</td>
                     <td class="col-index">${spBadge}</td>
                     <td class="col-index">${ndxBadge}</td>
-                    <td class="col-index">${soxBadge}</td>
+                    <td class="col-index">${dowBadge}</td>
                 </tr>`;
             });
 
@@ -885,63 +817,10 @@
             document.getElementById('stat-total').textContent = allStocks.length;
             document.getElementById('stat-sp500').textContent = indexSets.sp500.size;
             document.getElementById('stat-ndx').textContent = indexSets.nasdaq100.size;
-            document.getElementById('stat-sox').textContent = indexSets.sox.size;
+            document.getElementById('stat-dow').textContent = indexSets.dowjones.size;
         }
 
-        // ─── Overlap Statistics ───
-        function renderOverlapStats() {
-            const sp = indexSets.sp500;
-            const ndx = indexSets.nasdaq100;
-            const sox = indexSets.sox;
 
-            const spOnly = [...sp].filter(t => !ndx.has(t) && !sox.has(t)).length;
-            const ndxOnly = [...ndx].filter(t => !sp.has(t) && !sox.has(t)).length;
-            const soxOnly = [...sox].filter(t => !sp.has(t) && !ndx.has(t)).length;
-
-            const spNdx = [...sp].filter(t => ndx.has(t) && !sox.has(t)).length;
-            const spSox = [...sp].filter(t => sox.has(t) && !ndx.has(t)).length;
-            const ndxSox = [...ndx].filter(t => sox.has(t) && !sp.has(t)).length;
-            const allThree = [...sp].filter(t => ndx.has(t) && sox.has(t)).length;
-
-            const grid = document.getElementById('overlap-grid');
-            grid.innerHTML = `
-                <div class="overlap-card">
-                    <div class="overlap-dots"><span class="dot sp500"></span></div>
-                    <div class="overlap-value" style="color:var(--sp500-color)">${spOnly}</div>
-                    <div class="overlap-label">S&P 500만</div>
-                </div>
-                <div class="overlap-card">
-                    <div class="overlap-dots"><span class="dot ndx"></span></div>
-                    <div class="overlap-value" style="color:var(--ndx-color)">${ndxOnly}</div>
-                    <div class="overlap-label">Nasdaq-100만</div>
-                </div>
-                <div class="overlap-card">
-                    <div class="overlap-dots"><span class="dot sox"></span></div>
-                    <div class="overlap-value" style="color:var(--sox-color)">${soxOnly}</div>
-                    <div class="overlap-label">SOX만</div>
-                </div>
-                <div class="overlap-card">
-                    <div class="overlap-dots"><span class="dot sp500"></span><span class="dot ndx"></span></div>
-                    <div class="overlap-value" style="color:#67e8f9">${spNdx}</div>
-                    <div class="overlap-label">S&P ∩ NDX</div>
-                </div>
-                <div class="overlap-card">
-                    <div class="overlap-dots"><span class="dot sp500"></span><span class="dot sox"></span></div>
-                    <div class="overlap-value" style="color:#fbbf24">${spSox}</div>
-                    <div class="overlap-label">S&P ∩ SOX</div>
-                </div>
-                <div class="overlap-card">
-                    <div class="overlap-dots"><span class="dot ndx"></span><span class="dot sox"></span></div>
-                    <div class="overlap-value" style="color:#f0abfc">${ndxSox}</div>
-                    <div class="overlap-label">NDX ∩ SOX</div>
-                </div>
-                <div class="overlap-card" style="border-color: rgba(52, 211, 153, 0.2);">
-                    <div class="overlap-dots"><span class="dot sp500"></span><span class="dot ndx"></span><span class="dot sox"></span></div>
-                    <div class="overlap-value" style="color:#34d399">${allThree}</div>
-                    <div class="overlap-label">3개 모두 포함</div>
-                </div>
-            `;
-        }
     </script>
 </body>
 
