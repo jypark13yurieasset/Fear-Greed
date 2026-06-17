@@ -51,15 +51,15 @@ window.fng_data = {
         "nasdaq_price": 26376.34,
         "nasdaq_change": -1.15,
         "vix_price": 16.34,
-        "vix_change": 0.86,
-        "dxy_price": 99.68,
-        "dxy_change": 0.14,
+        "vix_change": -0.43,
+        "dxy_price": 99.62,
+        "dxy_change": 0.08,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$30.233 T"
+                "mcap": "$30.250 T"
             },
             {
                 "rank": 2,
@@ -83,7 +83,7 @@ window.fng_data = {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.940 T"
+                "mcap": "$3.938 T"
             },
             {
                 "rank": 6,
@@ -119,7 +119,7 @@ window.fng_data = {
                 "rank": 11,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.712 T"
+                "mcap": "$1.714 T"
             },
             {
                 "rank": 12,
@@ -143,7 +143,7 @@ window.fng_data = {
                 "rank": 15,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.296 T"
+                "mcap": "$1.301 T"
             },
             {
                 "rank": 16,
@@ -176,11 +176,11 @@ window.fng_data = {
                 "mcap": "$987.48 B"
             }
         ],
-        "aaii_bullish": 34.6,
-        "aaii_neutral": 24.3,
-        "aaii_bearish": 41.1,
+        "aaii_bullish": 34.7,
+        "aaii_neutral": 24.2,
+        "aaii_bearish": 41.0,
         "aaii_date": "2026-06-10",
-        "koact_date": "2026.06.17",
+        "koact_date": "2026.06.16",
         "koact_holdings": [
             {
                 "name": "Space Exploration Technologies Corp",
@@ -233,7 +233,7 @@ window.fng_data = {
                 "weight": 3.83
             }
         ],
-        "time_date": "2026.06.17",
+        "time_date": "2026.06.16",
         "time_holdings": [
             {
                 "name": "Micron Technology Inc",
@@ -284,6 +284,249 @@ window.fng_data = {
                 "name": "Space Exploration Technologies Corp",
                 "ticker": "SPCX",
                 "weight": 3.02
+            }
+        ]
+    },
+    "2026-06-18": {
+        "fear_and_greed": 33,
+        "sp500_price": 7420.1,
+        "sp500_change": -1.21,
+        "nasdaq_price": 26021.66,
+        "nasdaq_change": -1.34,
+        "vix_price": 18.44,
+        "vix_change": 12.37,
+        "dxy_price": 100.39,
+        "dxy_change": 0.85,
+        "assets_top20": [
+            {
+                "rank": 1,
+                "name": "Gold",
+                "code": "GOLD",
+                "mcap": "$29.882 T"
+            },
+            {
+                "rank": 2,
+                "name": "NVIDIA",
+                "code": "NVDA",
+                "mcap": "$4.956 T"
+            },
+            {
+                "rank": 3,
+                "name": "Alphabet (Google)",
+                "code": "GOOG",
+                "mcap": "$4.418 T"
+            },
+            {
+                "rank": 4,
+                "name": "Apple",
+                "code": "AAPL",
+                "mcap": "$4.346 T"
+            },
+            {
+                "rank": 5,
+                "name": "Silver",
+                "code": "SILVER",
+                "mcap": "$3.846 T"
+            },
+            {
+                "rank": 6,
+                "name": "Microsoft",
+                "code": "MSFT",
+                "mcap": "$2.814 T"
+            },
+            {
+                "rank": 7,
+                "name": "Amazon",
+                "code": "AMZN",
+                "mcap": "$2.554 T"
+            },
+            {
+                "rank": 8,
+                "name": "SpaceX",
+                "code": "SPCX",
+                "mcap": "$2.527 T"
+            },
+            {
+                "rank": 9,
+                "name": "TSMC",
+                "code": "TSM",
+                "mcap": "$2.241 T"
+            },
+            {
+                "rank": 10,
+                "name": "Broadcom",
+                "code": "AVGO",
+                "mcap": "$1.869 T"
+            },
+            {
+                "rank": 11,
+                "name": "Saudi Aramco",
+                "code": "2222.SR",
+                "mcap": "$1.714 T"
+            },
+            {
+                "rank": 12,
+                "name": "Samsung",
+                "code": "005930.KS",
+                "mcap": "$1.493 T"
+            },
+            {
+                "rank": 13,
+                "name": "Tesla",
+                "code": "TSLA",
+                "mcap": "$1.488 T"
+            },
+            {
+                "rank": 14,
+                "name": "Meta Platforms (Facebook)",
+                "code": "META",
+                "mcap": "$1.440 T"
+            },
+            {
+                "rank": 15,
+                "name": "Bitcoin",
+                "code": "BTC",
+                "mcap": "$1.291 T"
+            },
+            {
+                "rank": 16,
+                "name": "Micron Technology",
+                "code": "MU",
+                "mcap": "$1.176 T"
+            },
+            {
+                "rank": 17,
+                "name": "SK Hynix",
+                "code": "000660.KS",
+                "mcap": "$1.174 T"
+            },
+            {
+                "rank": 18,
+                "name": "Berkshire Hathaway",
+                "code": "BRK-B",
+                "mcap": "$1.059 T"
+            },
+            {
+                "rank": 19,
+                "name": "Eli Lilly",
+                "code": "LLY",
+                "mcap": "$991.61 B"
+            },
+            {
+                "rank": 20,
+                "name": "Vanguard S&P 500 ETF",
+                "code": "VOO",
+                "mcap": "$975.54 B"
+            }
+        ],
+        "aaii_bullish": 34.8,
+        "aaii_neutral": 24.0,
+        "aaii_bearish": 41.2,
+        "aaii_date": "2026-06-10",
+        "koact_date": "2026.06.17",
+        "koact_holdings": [
+            {
+                "name": "Space Exploration Technologies Corp",
+                "ticker": "SPCX",
+                "weight": 9.63
+            },
+            {
+                "name": "ADVANCED MICRO DEVICES",
+                "ticker": "AMD",
+                "weight": 7.45
+            },
+            {
+                "name": "ARM Holdings PLC",
+                "ticker": "ARM",
+                "weight": 7.34
+            },
+            {
+                "name": "Sandisk Corp/DE",
+                "ticker": "SNDK",
+                "weight": 5.94
+            },
+            {
+                "name": "INTEL Corp",
+                "ticker": "INTC",
+                "weight": 5.57
+            },
+            {
+                "name": "NVIDIA Corp",
+                "ticker": "NVDA",
+                "weight": 4.91
+            },
+            {
+                "name": "ALPHABET INC-CL A",
+                "ticker": "GOOGL",
+                "weight": 4.7
+            },
+            {
+                "name": "BLOOM ENERGY CORPORATION",
+                "ticker": "BE",
+                "weight": 4.2
+            },
+            {
+                "name": "MICRON TECH",
+                "ticker": "MU",
+                "weight": 4.05
+            },
+            {
+                "name": "Amazon.com Inc",
+                "ticker": "AMZN",
+                "weight": 3.71
+            }
+        ],
+        "time_date": "2026.06.17",
+        "time_holdings": [
+            {
+                "name": "Micron Technology Inc",
+                "ticker": "MU",
+                "weight": 6.54
+            },
+            {
+                "name": "Sandisk Corp",
+                "ticker": "SNDK",
+                "weight": 6.51
+            },
+            {
+                "name": "ARM Holdings PLC",
+                "ticker": "ARM",
+                "weight": 5.29
+            },
+            {
+                "name": "Intel Corp",
+                "ticker": "INTC",
+                "weight": 5.2
+            },
+            {
+                "name": "NVIDIA Corp",
+                "ticker": "NVDA",
+                "weight": 4.66
+            },
+            {
+                "name": "Marvell Technology Inc",
+                "ticker": "MRVL",
+                "weight": 3.72
+            },
+            {
+                "name": "Advanced Micro Devices Inc",
+                "ticker": "AMD",
+                "weight": 3.25
+            },
+            {
+                "name": "Space Exploration Technologies Corp",
+                "ticker": "SPCX",
+                "weight": 3.25
+            },
+            {
+                "name": "Dell Technologies Inc",
+                "ticker": "DELL",
+                "weight": 3.22
+            },
+            {
+                "name": "Western Digital Corp",
+                "ticker": "WDC",
+                "weight": 3.03
             }
         ]
     }
