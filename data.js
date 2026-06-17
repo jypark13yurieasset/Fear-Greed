@@ -295,14 +295,14 @@ window.fng_data = {
         "nasdaq_change": -1.34,
         "vix_price": 18.44,
         "vix_change": 12.37,
-        "dxy_price": 100.34,
-        "dxy_change": 0.8,
+        "dxy_price": 100.35,
+        "dxy_change": 0.81,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$29.853 T"
+                "mcap": "$29.878 T"
             },
             {
                 "rank": 2,
@@ -326,7 +326,7 @@ window.fng_data = {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.844 T"
+                "mcap": "$3.848 T"
             },
             {
                 "rank": 6,
@@ -386,7 +386,7 @@ window.fng_data = {
                 "rank": 15,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.290 T"
+                "mcap": "$1.291 T"
             },
             {
                 "rank": 16,
@@ -476,7 +476,7 @@ window.fng_data = {
                 "weight": 3.62
             }
         ],
-        "time_date": "2026.06.17",
+        "time_date": "2026.06.18",
         "time_holdings": [
             {
                 "name": "Micron Technology Inc",

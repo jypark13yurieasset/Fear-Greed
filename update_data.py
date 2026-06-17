@@ -434,21 +434,9 @@ def get_timefolio_holdings():
         # Top 10
         top10 = holdings[:10]
         
-        # Table 2 is price/date history
-        history_table = tables[2]
-        h_rows = history_table.find_all('tr')
-        # Skip headers (row 0, 1) and take row 2
-        date_str = None
-        if len(h_rows) >= 3:
-            cells = [c.get_text(strip=True) for c in h_rows[2].find_all(['td', 'th'])]
-            if cells:
-                date_str = cells[0]
-                
-        if not date_str:
-            print("Could not parse date from Timefolio history table.")
-            # fallback: use today's date
-            import datetime
-            date_str = datetime.date.today().strftime("%Y.%m.%d")
+        # 기준일을 스크래핑한 과거 날짜가 아닌 '오늘 날짜(업데이트 실행일)'로 설정
+        import datetime
+        date_str = datetime.date.today().strftime("%Y.%m.%d")
             
         return {
             'date': date_str,
