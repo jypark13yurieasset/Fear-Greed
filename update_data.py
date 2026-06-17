@@ -385,8 +385,8 @@ def get_koact_holdings():
         holdings.sort(key=lambda x: x['weight'], reverse=True)
         top10 = holdings[:10]
         
-        # Format date from YYYYMMDD to YYYY.MM.DD
-        formatted_date = f"{gijun_date[:4]}.{gijun_date[4:6]}.{gijun_date[6:]}"
+        # Format date from YYYYMMDD to YYYY-MM-DD
+        formatted_date = f"{gijun_date[:4]}-{gijun_date[4:6]}-{gijun_date[6:]}"
         
         return {
             'date': formatted_date,
@@ -436,7 +436,7 @@ def get_timefolio_holdings():
         
         # 기준일을 스크래핑한 과거 날짜가 아닌 '오늘 날짜(업데이트 실행일)'로 설정
         import datetime
-        date_str = datetime.date.today().strftime("%Y.%m.%d")
+        date_str = datetime.date.today().strftime("%Y-%m-%d")
             
         return {
             'date': date_str,

@@ -180,7 +180,7 @@ window.fng_data = {
         "aaii_neutral": 24.2,
         "aaii_bearish": 41.0,
         "aaii_date": "2026-06-10",
-        "koact_date": "2026.06.16",
+        "koact_date": "2026-06-16",
         "koact_holdings": [
             {
                 "name": "Space Exploration Technologies Corp",
@@ -233,7 +233,7 @@ window.fng_data = {
                 "weight": 3.83
             }
         ],
-        "time_date": "2026.06.16",
+        "time_date": "2026-06-16",
         "time_holdings": [
             {
                 "name": "Micron Technology Inc",
@@ -302,7 +302,7 @@ window.fng_data = {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$29.878 T"
+                "mcap": "$29.865 T"
             },
             {
                 "rank": 2,
@@ -423,7 +423,7 @@ window.fng_data = {
         "aaii_neutral": 24.1,
         "aaii_bearish": 41.2,
         "aaii_date": "2026-06-10",
-        "koact_date": "2026.06.18",
+        "koact_date": "2026-06-18",
         "koact_holdings": [
             {
                 "name": "Space Exploration Technologies Corp",
@@ -476,7 +476,7 @@ window.fng_data = {
                 "weight": 3.62
             }
         ],
-        "time_date": "2026.06.18",
+        "time_date": "2026-06-18",
         "time_holdings": [
             {
                 "name": "Micron Technology Inc",
