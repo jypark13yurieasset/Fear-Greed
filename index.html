@@ -612,6 +612,19 @@
             color: #2dd4bf;
         }
 
+        /* Unique holding & Close gap asset highlight */
+        .unique-holding, .close-gap-highlight {
+            background-color: rgba(45, 212, 191, 0.08) !important;
+            transition: background-color 0.2s ease;
+        }
+        .unique-holding td, .close-gap-highlight td {
+            color: #2dd4bf !important;
+            font-weight: 600;
+        }
+        .unique-holding td.rank, .close-gap-highlight td.rank {
+            color: rgba(45, 212, 191, 0.5) !important;
+        }
+
     </style>
 </head>
 
@@ -663,15 +676,15 @@
                 </div>
             </div>
 
-            <!-- USD/KRW Exchange Rate -->
-            <div class="metric-card" id="usd_krw-card">
+            <!-- Dollar Index -->
+            <div class="metric-card" id="dxy-card">
                 <div class="metric-header">
-                    <span class="metric-name">USD / KRW</span>
-                    <span class="metric-symbol">환율</span>
+                    <span class="metric-name">Dollar Index</span>
+                    <span class="metric-symbol">DXY</span>
                 </div>
                 <div class="metric-value-container">
-                    <div class="metric-value" id="usd_krw-price">-</div>
-                    <div class="change-badge change-neutral" id="usd_krw-change">-</div>
+                    <div class="metric-value" id="dxy-price">-</div>
+                    <div class="change-badge change-neutral" id="dxy-change">-</div>
                 </div>
             </div>
 
@@ -720,7 +733,7 @@
                             <th>S&P 500</th>
                             <th>나스닥</th>
                             <th>VIX 지수</th>
-                            <th>환율 (USD/KRW)</th>
+                            <th>달러 인덱스 (DXY)</th>
                             <th>공포 & 탐욕</th>
                             <th>AAII 센티먼트</th>
                         </tr>
@@ -749,7 +762,7 @@
                                 <th>비중(%)</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="koact-holdings-body">
                             <tr><td class="rank">1</td><td>Space Exploration Technologies (SpaceX)</td><td class="weight">8.60%</td></tr>
                             <tr><td class="rank">2</td><td>Advanced Micro Devices (AMD)</td><td class="weight">7.40%</td></tr>
                             <tr><td class="rank">3</td><td>ARM Holdings PLC</td><td class="weight">7.20%</td></tr>
@@ -781,7 +794,7 @@
                                 <th>비중(%)</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="time-holdings-body">
                             <tr><td class="rank">1</td><td>Micron Technology Inc</td><td class="weight">6.73%</td></tr>
                             <tr><td class="rank">2</td><td>Sandisk Corp</td><td class="weight">6.66%</td></tr>
                             <tr><td class="rank">3</td><td>Intel Corp</td><td class="weight">5.54%</td></tr>
@@ -879,7 +892,7 @@
             updateMetricCard('sp500', latestData.sp500_price, latestData.sp500_change);
             updateMetricCard('nasdaq', latestData.nasdaq_price, latestData.nasdaq_change);
             updateMetricCard('vix', latestData.vix_price, latestData.vix_change);
-            updateMetricCard('usd_krw', latestData.usd_krw_price, latestData.usd_krw_change, ' ₩');
+            updateMetricCard('dxy', latestData.dxy_price, latestData.dxy_change);
 
             // AAII Sentiment 카드 반영
             if (latestData.aaii_bullish !== undefined) {
@@ -925,16 +938,24 @@
                 
                 latestData.assets_top20.forEach((asset, idx, arr) => {
                     let gapText = '-';
+                    let shouldHighlight = false;
                     if (idx > 0) {
                         const currentVal = parseMcap(asset.mcap);
                         const prevVal = parseMcap(arr[idx - 1].mcap);
                         if (currentVal > 0) {
                             const percentage = ((prevVal - currentVal) / currentVal) * 100;
                             gapText = `+${percentage.toFixed(2)}%`;
+                            
+                            // 0% 초과 10% 이하 격차 자산 조건부 음영 처리
+                            if (percentage > 0 && percentage <= 10) {
+                                shouldHighlight = true;
+                            }
                         }
                     }
                     
-                    const row = `<tr>
+                    const rowClass = shouldHighlight ? 'class="close-gap-highlight"' : '';
+                    
+                    const row = `<tr ${rowClass}>
                         <td class="rank" style="font-weight: 700; color: var(--text-secondary); text-align: center; width: 50px;">${asset.rank}</td>
                         <td style="font-weight: 600;">${asset.name}</td>
                         <td style="color: var(--text-secondary); text-align: right; font-size: 0.8rem;">${asset.code}</td>
@@ -963,7 +984,7 @@
                 const sp500_val = formatTableChange(dayData.sp500_change);
                 const nasdaq_val = formatTableChange(dayData.nasdaq_change);
                 const vix_val = formatTableChange(dayData.vix_change, true); // VIX는 하락이 호재
-                const usd_krw_val = formatTableChange(dayData.usd_krw_change);
+                const dxy_val = formatTableChange(dayData.dxy_change);
 
                 // AAII 센티먼트 포맷팅
                 let aaii_cell = `<span style="color: var(--text-secondary); font-weight: 500;">-</span>`;
@@ -978,12 +999,15 @@
                     <td>${sp500_val}</td>
                     <td>${nasdaq_val}</td>
                     <td>${vix_val}</td>
-                    <td>${usd_krw_val}</td>
+                    <td>${dxy_val}</td>
                     <td><span style="color: ${fngColor}; font-weight: 700;">${fng}</span></td>
                     <td>${aaii_cell}</td>
                 </tr>`;
                 tbody.innerHTML += row;
             });
+
+            // 독자(비공통) 보유 종목 돋보이게 하이라이트 실행
+            highlightUniqueHoldings();
         }
 
         fetch(fetchUrl)
@@ -1057,6 +1081,47 @@
             else color = '#f87171'; // 빨강
             
             return `<span style="color: ${color}; font-weight: 600;">${sign}${change.toFixed(2)}%</span>`;
+        }
+
+        // 두 ETF 테이블에서 서로 다른(한쪽에만 있는) 종목을 강조 표시하는 함수
+        function highlightUniqueHoldings() {
+            const koactRows = document.querySelectorAll('#koact-holdings-body tr');
+            const timeRows = document.querySelectorAll('#time-holdings-body tr');
+            
+            const koactNames = [];
+            const timeNames = [];
+            
+            koactRows.forEach(row => {
+                const nameCell = row.cells[1];
+                if (nameCell) koactNames.push(nameCell.innerText.trim());
+            });
+            
+            timeRows.forEach(row => {
+                const nameCell = row.cells[1];
+                if (nameCell) timeNames.push(nameCell.innerText.trim());
+            });
+            
+            // KoAct 테이블 하이라이트
+            koactRows.forEach(row => {
+                const nameCell = row.cells[1];
+                if (nameCell) {
+                    const name = nameCell.innerText.trim();
+                    if (!timeNames.includes(name)) {
+                        row.classList.add('unique-holding');
+                    }
+                }
+            });
+            
+            // TIME 테이블 하이라이트
+            timeRows.forEach(row => {
+                const nameCell = row.cells[1];
+                if (nameCell) {
+                    const name = nameCell.innerText.trim();
+                    if (!koactNames.includes(name)) {
+                        row.classList.add('unique-holding');
+                    }
+                }
+            });
         }
     </script>
 </body>

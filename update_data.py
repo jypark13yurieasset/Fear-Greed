@@ -226,6 +226,70 @@ def get_combined_metric(name, google_path, yahoo_ticker):
         "change": round(final_change, 2) if final_change is not None else None
     }
 
+def get_finviz_dxy():
+    """Finviz futures 페이지에서 U.S. Dollar Index (DX) 가격과 변동률을 수집합니다."""
+    url = "https://finviz.com/futures.ashx"
+    try:
+        r = requests.get(url, headers=headers, timeout=10, verify=False)
+        if r.status_code == 200:
+            html = r.text
+            dx_match = re.search(r'"DX":(\{.*?\})', html)
+            if dx_match:
+                dx_block = dx_match.group(1)
+                last_match = re.search(r'"last":\s*([\d.]+)', dx_block)
+                change_match = re.search(r'"change":\s*([-\d.]+)', dx_block)
+                
+                if last_match and change_match:
+                    price = float(last_match.group(1))
+                    change = float(change_match.group(1))
+                    print(f"[Finviz] DXY 수집 성공! Price: {price}, Change: {change}%")
+                    return price, change
+        print("[Finviz] U.S. Dollar Index 수집 실패")
+        return None, None
+    except Exception as e:
+        print(f"[Finviz] DXY 수집 중 에러 발생: {e}")
+        return None, None
+
+def get_dxy_metric():
+    """Yahoo Finance와 Finviz의 DXY 데이터를 수집하여 상호 검증 후 최종 반영합니다."""
+    f_price, f_change = get_finviz_dxy()
+    y_price, y_change = get_yahoo_data("DXY", "DX-Y.NYB")
+    
+    final_price = None
+    final_change = None
+    
+    # 가격 검증
+    if f_price is not None and y_price is not None:
+        price_diff_pct = abs(f_price - y_price) / max(f_price, y_price) * 100
+        if price_diff_pct > 1.0:
+            print(f"[DXY] 경고: 양방향 가격 차이 큼! Finviz={f_price}, Yahoo={y_price} ({price_diff_pct:.2f}%)")
+        final_price = y_price # 야후가 조금 더 정밀(소수점 셋째 자리)하므로 야후 선호
+    elif f_price is not None:
+        final_price = f_price
+    elif y_price is not None:
+        final_price = y_price
+        
+    # 변동률 검증
+    if f_change is not None and y_change is not None:
+        change_diff = abs(f_change - y_change)
+        if change_diff < 1.0:
+            final_change = y_change
+            print(f"[DXY] 교차 점검 성공! 최종 반영 변동률: {final_change:+.2f}% (오차: {change_diff:.4f}%)")
+        else:
+            final_change = f_change
+            print(f"[DXY] 경고: 변동률 오차범위 초과! Finviz={f_change:+.2f}%, Yahoo={y_change:+.2f}%. Finviz 값 사용: {final_change:+.2f}%")
+    elif f_change is not None:
+        final_change = f_change
+        print(f"[DXY] Yahoo 수집 실패. Finviz 변동률 사용: {final_change:+.2f}%")
+    elif y_change is not None:
+        final_change = y_change
+        print(f"[DXY] Finviz 수집 실패. Yahoo 변동률 사용: {final_change:+.2f}%")
+        
+    return {
+        "price": round(final_price, 2) if final_price is not None else None,
+        "change": round(final_change, 2) if final_change is not None else None
+    }
+
 import urllib.request
 
 def get_assets_by_market_cap():
@@ -324,7 +388,7 @@ def main():
     sp500 = get_combined_metric("S&P 500", ".INX:INDEXSP", "^GSPC")
     nasdaq = get_combined_metric("Nasdaq Composite", ".IXIC:INDEXNASDAQ", "^IXIC")
     vix = get_combined_metric("VIX", "VIX:INDEXCBOE", "^VIX")
-    usd_krw = get_combined_metric("USD/KRW", "USD-KRW", "USDKRW=X")
+    dxy = get_dxy_metric()
     
     # 평일 데이터 보완 (수집 실패 시 전일/직전 영업일 데이터 그대로 적용)
     def carry_over_if_needed(metric_dict, name, price_key, change_key):
@@ -338,7 +402,7 @@ def main():
     carry_over_if_needed(sp500, "S&P 500", "sp500_price", "sp500_change")
     carry_over_if_needed(nasdaq, "Nasdaq Composite", "nasdaq_price", "nasdaq_change")
     carry_over_if_needed(vix, "VIX", "vix_price", "vix_change")
-    carry_over_if_needed(usd_krw, "USD/KRW", "usd_krw_price", "usd_krw_change")
+    carry_over_if_needed(dxy, "DXY", "dxy_price", "dxy_change")
     
     print("\n=== 글로벌 자산 시가총액 TOP 20 수집 시작 ===")
     assets_top20 = get_assets_by_market_cap()
@@ -356,8 +420,8 @@ def main():
         "nasdaq_change": nasdaq["change"],
         "vix_price": vix["price"],
         "vix_change": vix["change"],
-        "usd_krw_price": usd_krw["price"],
-        "usd_krw_change": usd_krw["change"]
+        "dxy_price": dxy["price"],
+        "dxy_change": dxy["change"]
     }
     
     # TOP 20 자산 데이터 추가
@@ -400,7 +464,7 @@ def main():
     print(f"  S&P 500: Price={sp500['price']}, Change={sp500['change']}%")
     print(f"  Nasdaq Composite: Price={nasdaq['price']}, Change={nasdaq['change']}%")
     print(f"  VIX: Price={vix['price']}, Change={vix['change']}%")
-    print(f"  USD/KRW: Price={usd_krw['price']}, Change={usd_krw['change']}%")
+    print(f"  DXY: Price={dxy['price']}, Change={dxy['change']}%")
     if aaii_data:
         print(f"  AAII Sentiment: Bullish={aaii_data['bullish']}%, Neutral={aaii_data['neutral']}%, Bearish={aaii_data['bearish']}% (설문 마감: {aaii_data['date']})")
 

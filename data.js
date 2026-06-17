@@ -7,12 +7,12 @@ window.fng_data = {
         "nasdaq_change": 2.54,
         "vix_price": 19.44,
         "vix_change": -12.51,
-        "usd_krw_price": 1517.38,
-        "usd_krw_change": -0.5,
         "aaii_bullish": 30.4,
         "aaii_neutral": 22.0,
         "aaii_bearish": 47.7,
-        "aaii_date": "2026-06-10"
+        "aaii_date": "2026-06-10",
+        "dxy_price": 99.75,
+        "dxy_change": 0.0
     },
     "2026-06-15": {
         "fear_and_greed": 42,
@@ -22,12 +22,12 @@ window.fng_data = {
         "nasdaq_change": 0.31,
         "vix_price": 17.68,
         "vix_change": -9.05,
-        "usd_krw_price": 1509.5,
-        "usd_krw_change": -0.52,
         "aaii_bullish": 30.4,
         "aaii_neutral": 22.0,
         "aaii_bearish": 47.7,
-        "aaii_date": "2026-06-10"
+        "aaii_date": "2026-06-10",
+        "dxy_price": 99.63,
+        "dxy_change": -0.12
     },
     "2026-06-16": {
         "fear_and_greed": 40,
@@ -37,12 +37,12 @@ window.fng_data = {
         "nasdaq_change": -0.42,
         "vix_price": 15.95,
         "vix_change": -1.54,
-        "usd_krw_price": 1508.12,
-        "usd_krw_change": -0.09,
         "aaii_bullish": 34.3,
         "aaii_neutral": 24.2,
         "aaii_bearish": 41.5,
-        "aaii_date": "2026-06-10"
+        "aaii_date": "2026-06-10",
+        "dxy_price": 99.54,
+        "dxy_change": -0.09
     },
     "2026-06-17": {
         "fear_and_greed": 39,
@@ -52,14 +52,14 @@ window.fng_data = {
         "nasdaq_change": -1.15,
         "vix_price": 16.41,
         "vix_change": 1.3,
-        "usd_krw_price": 1512.65,
-        "usd_krw_change": -0.04,
+        "dxy_price": 99.54,
+        "dxy_change": -0.0,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$30.222 T"
+                "mcap": "$30.246 T"
             },
             {
                 "rank": 2,
@@ -83,7 +83,7 @@ window.fng_data = {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.959 T"
+                "mcap": "$3.962 T"
             },
             {
                 "rank": 6,
@@ -119,7 +119,7 @@ window.fng_data = {
                 "rank": 11,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.725 T"
+                "mcap": "$1.719 T"
             },
             {
                 "rank": 12,
