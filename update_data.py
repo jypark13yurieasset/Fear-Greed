@@ -343,30 +343,21 @@ def get_assets_by_market_cap():
 def get_koact_holdings():
     print("Scraping KoAct...")
     try:
-        # Step 1: get list of etfs to get the latest gijunYMD
-        list_url = "https://www.samsungactive.co.kr/api/v1/product/etf.do"
-        r = requests.get(list_url, headers=headers, timeout=10, verify=False)
-        r.raise_for_status()
-        etfs = r.json().get('etfs', [])
-        
-        target_etf = None
-        for e in etfs:
-            if e.get('fId') == '2ETFQ1':
-                target_etf = e
-                break
-                
-        if not target_etf:
-            print("KoAct ETF 2ETFQ1 not found in listing.")
-            return None
-            
-        gijun_date = target_etf.get('gijunYMD')
-        print(f"Latest KoAct date: {gijun_date}")
-        
-        # Step 2: query details for that date
-        detail_url = f"https://www.samsungactive.co.kr/api/v1/product/etf-pdf/2ETFQ1.do?gijunYMD={gijun_date}"
+        # Directly query the specific ETF's API endpoint used by the webpage
+        detail_url = "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFQ1.do"
         r = requests.get(detail_url, headers=headers, timeout=10, verify=False)
         r.raise_for_status()
-        pdf_data = r.json().get('pdf', {})
+        
+        data = r.json()
+        pdf_data = data.get('pdf', {})
+        
+        gijun_date = pdf_data.get('gijunYMD')
+        if not gijun_date:
+            print("Could not find gijunYMD from KoAct API.")
+            return None
+            
+        print(f"Latest KoAct date: {gijun_date}")
+        
         pdf_list = pdf_data.get('list', [])
         
         holdings = []

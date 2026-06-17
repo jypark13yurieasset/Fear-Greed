@@ -295,14 +295,14 @@ window.fng_data = {
         "nasdaq_change": -1.34,
         "vix_price": 18.44,
         "vix_change": 12.37,
-        "dxy_price": 100.39,
-        "dxy_change": 0.85,
+        "dxy_price": 100.34,
+        "dxy_change": 0.8,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$29.882 T"
+                "mcap": "$29.853 T"
             },
             {
                 "rank": 2,
@@ -326,7 +326,7 @@ window.fng_data = {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.846 T"
+                "mcap": "$3.844 T"
             },
             {
                 "rank": 6,
@@ -386,7 +386,7 @@ window.fng_data = {
                 "rank": 15,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.291 T"
+                "mcap": "$1.290 T"
             },
             {
                 "rank": 16,
@@ -420,60 +420,60 @@ window.fng_data = {
             }
         ],
         "aaii_bullish": 34.8,
-        "aaii_neutral": 24.0,
+        "aaii_neutral": 24.1,
         "aaii_bearish": 41.2,
         "aaii_date": "2026-06-10",
-        "koact_date": "2026.06.17",
+        "koact_date": "2026.06.18",
         "koact_holdings": [
             {
                 "name": "Space Exploration Technologies Corp",
                 "ticker": "SPCX",
-                "weight": 9.63
-            },
-            {
-                "name": "ADVANCED MICRO DEVICES",
-                "ticker": "AMD",
-                "weight": 7.45
+                "weight": 9.85
             },
             {
                 "name": "ARM Holdings PLC",
                 "ticker": "ARM",
-                "weight": 7.34
+                "weight": 6.88
+            },
+            {
+                "name": "ADVANCED MICRO DEVICES",
+                "ticker": "AMD",
+                "weight": 6.74
             },
             {
                 "name": "Sandisk Corp/DE",
                 "ticker": "SNDK",
-                "weight": 5.94
+                "weight": 5.48
             },
             {
                 "name": "INTEL Corp",
                 "ticker": "INTC",
-                "weight": 5.57
+                "weight": 5.32
             },
             {
                 "name": "NVIDIA Corp",
                 "ticker": "NVDA",
-                "weight": 4.91
+                "weight": 4.68
             },
             {
                 "name": "ALPHABET INC-CL A",
                 "ticker": "GOOGL",
-                "weight": 4.7
-            },
-            {
-                "name": "BLOOM ENERGY CORPORATION",
-                "ticker": "BE",
-                "weight": 4.2
+                "weight": 4.64
             },
             {
                 "name": "MICRON TECH",
                 "ticker": "MU",
-                "weight": 4.05
+                "weight": 4.46
+            },
+            {
+                "name": "BLOOM ENERGY CORPORATION",
+                "ticker": "BE",
+                "weight": 4.19
             },
             {
                 "name": "Amazon.com Inc",
                 "ticker": "AMZN",
-                "weight": 3.71
+                "weight": 3.62
             }
         ],
         "time_date": "2026.06.17",
