@@ -51,15 +51,15 @@
         "nasdaq_price": 26376.34,
         "nasdaq_change": -1.15,
         "vix_price": 16.34,
-        "vix_change": 0.86,
-        "dxy_price": 99.68,
-        "dxy_change": 0.14,
+        "vix_change": -0.43,
+        "dxy_price": 99.62,
+        "dxy_change": 0.08,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$30.233 T"
+                "mcap": "$30.250 T"
             },
             {
                 "rank": 2,
@@ -83,7 +83,7 @@
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.940 T"
+                "mcap": "$3.938 T"
             },
             {
                 "rank": 6,
@@ -119,7 +119,7 @@
                 "rank": 11,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.712 T"
+                "mcap": "$1.714 T"
             },
             {
                 "rank": 12,
@@ -143,7 +143,7 @@
                 "rank": 15,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.296 T"
+                "mcap": "$1.301 T"
             },
             {
                 "rank": 16,
@@ -176,11 +176,11 @@
                 "mcap": "$987.48 B"
             }
         ],
-        "aaii_bullish": 34.6,
-        "aaii_neutral": 24.3,
-        "aaii_bearish": 41.1,
+        "aaii_bullish": 34.7,
+        "aaii_neutral": 24.2,
+        "aaii_bearish": 41.0,
         "aaii_date": "2026-06-10",
-        "koact_date": "2026.06.17",
+        "koact_date": "2026.06.16",
         "koact_holdings": [
             {
                 "name": "Space Exploration Technologies Corp",
@@ -233,7 +233,7 @@
                 "weight": 3.83
             }
         ],
-        "time_date": "2026.06.17",
+        "time_date": "2026.06.16",
         "time_holdings": [
             {
                 "name": "Micron Technology Inc",
