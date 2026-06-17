@@ -43,5 +43,20 @@ window.fng_data = {
         "aaii_neutral": 24.1,
         "aaii_bearish": 41.6,
         "aaii_date": "2026-06-10"
+    },
+    "2026-06-17": {
+        "fear_and_greed": 39,
+        "sp500_price": 7511.35,
+        "sp500_change": -0.57,
+        "nasdaq_price": 26376.34,
+        "nasdaq_change": -1.15,
+        "vix_price": 16.15,
+        "vix_change": -0.31,
+        "usd_krw_price": 1511.6,
+        "usd_krw_change": 0.14,
+        "aaii_bullish": 30.4,
+        "aaii_neutral": 22.0,
+        "aaii_bearish": 47.7,
+        "aaii_date": "2026-06-10"
     }
 };

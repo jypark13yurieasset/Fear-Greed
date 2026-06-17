@@ -12,19 +12,19 @@
         rel="stylesheet">
     <style>
         :root {
-            --bg-gradient: radial-gradient(circle at 50% 50%, #0c0f1d 0%, #030712 100%);
-            --card-bg: rgba(17, 24, 39, 0.45);
-            --card-border: rgba(255, 255, 255, 0.08);
-            --text-primary: #f3f4f6;
-            --text-secondary: #9ca3af;
-            --accent-glow: 0 20px 40px -15px rgba(99, 102, 241, 0.15);
+            --bg-gradient: radial-gradient(circle at 50% 50%, #052e2b 0%, #001514 100%);
+            --card-bg: rgba(0, 37, 36, 0.5);
+            --card-border: rgba(45, 212, 191, 0.08);
+            --text-primary: #e6f1f0;
+            --text-secondary: #8fa3a1;
+            --accent-glow: 0 15px 35px -10px rgba(45, 212, 191, 0.1);
             --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
             --color-extreme-fear: #ef4444;
-            --color-fear: #f97316;
+            --color-fear: #f59e0b;
             --color-neutral: #eab308;
             --color-greed: #10b981;
-            --color-extreme-greed: #06b6d4;
+            --color-extreme-greed: #2dd4bf;
         }
 
         * {
@@ -52,7 +52,7 @@
             position: absolute;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(99, 102, 241, 0) 70%);
+            background: radial-gradient(circle, rgba(45, 212, 191, 0.08) 0%, rgba(45, 212, 191, 0) 70%);
             top: -10%;
             left: -10%;
             z-index: 0;
@@ -63,7 +63,7 @@
             position: absolute;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(6, 182, 212, 0.06) 0%, rgba(6, 182, 212, 0) 70%);
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.05) 0%, rgba(20, 184, 166, 0) 70%);
             bottom: -10%;
             right: -10%;
             z-index: 0;
@@ -84,7 +84,7 @@
         h1.dashboard-title {
             font-size: 2.25rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #2dd4bf 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: -0.025em;
@@ -294,7 +294,7 @@
         }
 
         .gauge-needle-center {
-            fill: #0c0f1d;
+            fill: #052e2b;
             stroke: #ffffff;
             stroke-width: 2.5;
         }
@@ -483,6 +483,134 @@
         }
         .aaii-table-mini .t-bull { color: #34d399; }
         .aaii-table-mini .t-bear { color: #f87171; }
+
+        /* ETF Holdings Comparison Section */
+        .etf-holdings-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .etf-holdings-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .etf-holdings-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .etf-holdings-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.1), rgba(255,255,255,0));
+        }
+
+        .etf-card-header {
+            padding: 18px 20px 12px 20px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .etf-card-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .etf-card-sub {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .etf-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .etf-table th {
+            background: rgba(255, 255, 255, 0.01);
+            color: var(--text-secondary);
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .etf-table td {
+            padding: 9px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            font-size: 0.85rem;
+            color: var(--text-primary);
+        }
+
+        .etf-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .etf-table tr {
+            transition: background-color 0.2s ease;
+        }
+
+        .etf-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .etf-table td.rank {
+            font-weight: 700;
+            color: var(--text-secondary);
+            width: 36px;
+            text-align: center;
+        }
+
+        .etf-table td.weight {
+            font-weight: 700;
+            color: #2dd4bf;
+            text-align: right;
+            width: 80px;
+        }
+
+        .etf-table th:first-child {
+            text-align: center;
+            width: 36px;
+        }
+
+        .etf-table th:last-child {
+            text-align: right;
+            width: 80px;
+        }
+
+        .etf-source-link {
+            padding: 10px 16px 14px;
+            text-align: right;
+        }
+
+        .etf-source-link a {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .etf-source-link a:hover {
+            color: #2dd4bf;
+        }
     </style>
 </head>
 
@@ -493,7 +621,7 @@
 
     <main class="container">
         <header class="dashboard-header">
-            <h1 class="dashboard-title">My Investment Dashboard</h1>
+            <h1 class="dashboard-title">Gary Park Investment Dashboard</h1>
             <p class="dashboard-subtitle">실시간 금융 시장 데이터 시각화 &nbsp;|&nbsp; <span id="update-date">최근 업데이트: -</span></p>
         </header>
 
@@ -582,7 +710,7 @@
         </div>
 
         <section class="history-section">
-            <h3>과거 기록 히스토리</h3>
+            <h3>Major Indicators</h3>
             <div class="history-table-container">
                 <table class="history-table">
                     <thead>
@@ -598,6 +726,77 @@
                     </thead>
                     <tbody id="history-data"></tbody>
                 </table>
+            </div>
+        </section>
+
+        <section class="etf-holdings-section" style="margin-top: 30px;">
+            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary);">
+                Active ETF Holdings
+            </h3>
+            <div class="etf-holdings-grid">
+                <!-- KoAct 삼성액티브 -->
+                <div class="etf-holdings-card">
+                    <div class="etf-card-header">
+                        <div class="etf-card-title">KoAct 미국나스닥성장기업액티브</div>
+                        <div class="etf-card-sub">삼성액티브자산운용 &nbsp;|&nbsp; 기준일: 2026.06.16</div>
+                    </div>
+                    <table class="etf-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>종목명</th>
+                                <th>비중(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank">1</td><td>Space Exploration Technologies (SpaceX)</td><td class="weight">8.60%</td></tr>
+                            <tr><td class="rank">2</td><td>Advanced Micro Devices (AMD)</td><td class="weight">7.40%</td></tr>
+                            <tr><td class="rank">3</td><td>ARM Holdings PLC</td><td class="weight">7.20%</td></tr>
+                            <tr><td class="rank">4</td><td>Sandisk Corp</td><td class="weight">6.00%</td></tr>
+                            <tr><td class="rank">5</td><td>Intel Corp</td><td class="weight">5.80%</td></tr>
+                            <tr><td class="rank">6</td><td>NVIDIA Corp</td><td class="weight">5.10%</td></tr>
+                            <tr><td class="rank">7</td><td>Alphabet Inc</td><td class="weight">4.90%</td></tr>
+                            <tr><td class="rank">8</td><td>Bloom Energy Corp</td><td class="weight">4.20%</td></tr>
+                            <tr><td class="rank">9</td><td>Micron Technology Inc</td><td class="weight">3.90%</td></tr>
+                            <tr><td class="rank">10</td><td>Amazon.com Inc</td><td class="weight">3.80%</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="etf-source-link">
+                        <a href="https://www.samsungactive.co.kr/etf/view.do?id=2ETFQ1" target="_blank" rel="noopener">삼성액티브 공식 페이지 →</a>
+                    </div>
+                </div>
+
+                <!-- TIME 타임폴리오 -->
+                <div class="etf-holdings-card">
+                    <div class="etf-card-header">
+                        <div class="etf-card-title">TIME 미국나스닥100액티브</div>
+                        <div class="etf-card-sub">타임폴리오자산운용 &nbsp;|&nbsp; 기준일: 2026.06.16</div>
+                    </div>
+                    <table class="etf-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>종목명</th>
+                                <th>비중(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank">1</td><td>Micron Technology Inc</td><td class="weight">6.73%</td></tr>
+                            <tr><td class="rank">2</td><td>Sandisk Corp</td><td class="weight">6.66%</td></tr>
+                            <tr><td class="rank">3</td><td>Intel Corp</td><td class="weight">5.54%</td></tr>
+                            <tr><td class="rank">4</td><td>ARM Holdings PLC</td><td class="weight">5.32%</td></tr>
+                            <tr><td class="rank">5</td><td>NVIDIA Corp</td><td class="weight">4.67%</td></tr>
+                            <tr><td class="rank">6</td><td>Marvell Technology Inc</td><td class="weight">4.02%</td></tr>
+                            <tr><td class="rank">7</td><td>Advanced Micro Devices (AMD)</td><td class="weight">3.46%</td></tr>
+                            <tr><td class="rank">8</td><td>Dell Technologies Inc</td><td class="weight">3.15%</td></tr>
+                            <tr><td class="rank">9</td><td>Credo Technology Group</td><td class="weight">3.02%</td></tr>
+                            <tr><td class="rank">10</td><td>Space Exploration Technologies (SpaceX)</td><td class="weight">3.02%</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="etf-source-link">
+                        <a href="https://timeetf.co.kr/m11_view.php?idx=2&cate=" target="_blank" rel="noopener">TIME ETF 공식 페이지 →</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
