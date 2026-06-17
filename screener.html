@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Screener | Gary Park Investment Dashboard</title>
+    <meta name="description" content="S&P 500, Nasdaq-100, SOX 인덱스 구성종목을 검색·필터링·비교하는 스크리닝 도구입니다.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at 50% 50%, #1a1b26 0%, #0f1017 100%);
+            --card-bg: rgba(26, 27, 38, 0.6);
+            --card-border: rgba(130, 140, 180, 0.1);
+            --text-primary: #e1e4ed;
+            --text-secondary: #8b92a8;
+            --accent-glow: 0 15px 35px -10px rgba(130, 140, 200, 0.08);
+            --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --accent: #7c8cf5;
+            --accent-dim: rgba(124, 140, 245, 0.15);
+            --sp500-color: #38bdf8;
+            --ndx-color: #a78bfa;
+            --sox-color: #fb923c;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 0 20px 40px;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Ambient glowing backgrounds */
+        .bg-glow-1 {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(100, 110, 180, 0.06) 0%, rgba(100, 110, 180, 0) 70%);
+            top: -10%;
+            left: -10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .bg-glow-2 {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(90, 100, 170, 0.05) 0%, rgba(90, 100, 170, 0) 70%);
+            bottom: -10%;
+            right: -10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ─── Navigation Bar ─── */
+        .nav-tabs {
+            display: flex;
+            gap: 4px;
+            background: rgba(26, 27, 38, 0.5);
+            padding: 4px;
+            border-radius: 12px;
+            border: 1px solid rgba(130, 140, 180, 0.1);
+        }
+
+        .nav-tab {
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .nav-tab:hover {
+            color: var(--text-primary);
+            background: rgba(124, 140, 245, 0.08);
+        }
+
+        .nav-tab.active {
+            color: var(--accent);
+            background: var(--accent-dim);
+            font-weight: 600;
+        }
+
+        /* ─── Container ─── */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ─── Page Header ─── */
+        .page-header {
+            padding: 36px 0 28px;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .page-header h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.025em;
+            margin-bottom: 0;
+        }
+
+        .page-header p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* ─── Filter Controls ─── */
+        .filter-section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--accent-glow);
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 16px 10px 42px;
+            background: rgba(15, 16, 23, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .search-box input::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.6;
+        }
+
+        .search-box input:focus {
+            border-color: rgba(124, 140, 245, 0.4);
+            box-shadow: 0 0 0 3px rgba(124, 140, 245, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 1rem;
+            pointer-events: none;
+        }
+
+        /* Index Toggle Buttons */
+        .index-toggles {
+            display: flex;
+            gap: 6px;
+        }
+
+        .index-btn {
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1.5px solid;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: var(--font-family);
+            letter-spacing: 0.02em;
+        }
+
+        .index-btn.sp500 {
+            border-color: var(--sp500-color);
+            color: var(--sp500-color);
+            background: transparent;
+        }
+        .index-btn.sp500.active {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--sp500-color);
+        }
+        .index-btn.sp500:hover { background: rgba(56, 189, 248, 0.1); }
+
+        .index-btn.ndx {
+            border-color: var(--ndx-color);
+            color: var(--ndx-color);
+            background: transparent;
+        }
+        .index-btn.ndx.active {
+            background: rgba(167, 139, 250, 0.15);
+            color: var(--ndx-color);
+        }
+        .index-btn.ndx:hover { background: rgba(167, 139, 250, 0.1); }
+
+        .index-btn.sox {
+            border-color: var(--sox-color);
+            color: var(--sox-color);
+            background: transparent;
+        }
+        .index-btn.sox.active {
+            background: rgba(251, 146, 60, 0.15);
+            color: var(--sox-color);
+        }
+        .index-btn.sox:hover { background: rgba(251, 146, 60, 0.1); }
+
+        /* Sector dropdown */
+        .sector-select {
+            padding: 10px 14px;
+            background: rgba(15, 16, 23, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            font-size: 0.85rem;
+            outline: none;
+            cursor: pointer;
+            min-width: 180px;
+            transition: border-color 0.2s ease;
+        }
+
+        .sector-select:focus {
+            border-color: rgba(124, 140, 245, 0.4);
+        }
+
+        .sector-select option {
+            background: #1a1b26;
+            color: var(--text-primary);
+        }
+
+        /* ─── Stats Cards ─── */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 16px;
+            padding: 16px 18px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--accent-glow);
+        }
+
+        .stat-value {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .stat-card.sp500-stat .stat-value { color: var(--sp500-color); }
+        .stat-card.ndx-stat .stat-value { color: var(--ndx-color); }
+        .stat-card.sox-stat .stat-value { color: var(--sox-color); }
+        .stat-card.overlap-stat .stat-value { color: #34d399; }
+
+        /* ─── Main Table ─── */
+        .table-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 0;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .table-info-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .table-count {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .table-count strong {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .screener-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        .screener-table thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .screener-table th {
+            background: rgba(15, 16, 23, 0.95);
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--card-border);
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .screener-table th:hover {
+            color: var(--accent);
+        }
+
+        .screener-table th.sorted-asc::after {
+            content: ' ▲';
+            font-size: 0.65rem;
+            color: var(--accent);
+        }
+
+        .screener-table th.sorted-desc::after {
+            content: ' ▼';
+            font-size: 0.65rem;
+            color: var(--accent);
+        }
+
+        .screener-table th.no-sort {
+            cursor: default;
+        }
+        .screener-table th.no-sort:hover {
+            color: var(--text-secondary);
+        }
+
+        .screener-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(130, 140, 180, 0.05);
+            vertical-align: middle;
+        }
+
+        .screener-table tbody tr {
+            transition: background 0.15s ease;
+        }
+
+        .screener-table tbody tr:hover {
+            background: rgba(124, 140, 245, 0.04);
+        }
+
+        /* Triple-index highlight */
+        .screener-table tbody tr.triple-index {
+            background: rgba(52, 211, 153, 0.06);
+        }
+        .screener-table tbody tr.triple-index:hover {
+            background: rgba(52, 211, 153, 0.1);
+        }
+
+        .col-rank {
+            width: 50px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .col-ticker {
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 0.88rem;
+            letter-spacing: 0.02em;
+        }
+
+        .col-name {
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .col-sector {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+        }
+
+        .col-index {
+            text-align: center;
+            width: 70px;
+        }
+
+        .badge-yes {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        .badge-sp500 {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--sp500-color);
+        }
+        .badge-ndx {
+            background: rgba(167, 139, 250, 0.15);
+            color: var(--ndx-color);
+        }
+        .badge-sox {
+            background: rgba(251, 146, 60, 0.15);
+            color: var(--sox-color);
+        }
+        .badge-no {
+            color: rgba(130, 140, 180, 0.2);
+        }
+
+        /* ─── Overlap Section ─── */
+        .overlap-section {
+            margin-top: 24px;
+            margin-bottom: 30px;
+        }
+
+        .overlap-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 14px;
+            padding-left: 5px;
+            color: var(--text-primary);
+        }
+
+        .overlap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+        }
+
+        .overlap-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 14px;
+            padding: 16px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .overlap-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .overlap-value {
+            font-size: 1.4rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .overlap-label {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-top: 6px;
+            line-height: 1.3;
+        }
+
+        .overlap-dots {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        .dot.sp500 { background: var(--sp500-color); }
+        .dot.ndx { background: var(--ndx-color); }
+        .dot.sox { background: var(--sox-color); }
+
+        /* ─── Responsive ─── */
+        @media (max-width: 768px) {
+            .filter-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box { min-width: 100%; }
+            .index-toggles { justify-content: center; }
+            .sector-select { width: 100%; }
+
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .page-header h1 { font-size: 1.4rem; }
+
+            .overlap-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <main class="container">
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="header-main">
+                <h1>Index Constituents Screener</h1>
+                <div class="nav-tabs">
+                    <a href="./index.html" class="nav-tab">Dashboard</a>
+                    <a href="./screener.html" class="nav-tab active">Screener</a>
+                </div>
+            </div>
+            <p>S&P 500 · Nasdaq-100 · SOX &nbsp;|&nbsp; 인덱스 구성종목 검색 & 비교</p>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="stats-row" id="stats-row">
+            <div class="stat-card">
+                <div class="stat-value" id="stat-total">-</div>
+                <div class="stat-label">전체 고유 종목</div>
+            </div>
+            <div class="stat-card sp500-stat">
+                <div class="stat-value" id="stat-sp500">-</div>
+                <div class="stat-label">S&P 500</div>
+            </div>
+            <div class="stat-card ndx-stat">
+                <div class="stat-value" id="stat-ndx">-</div>
+                <div class="stat-label">Nasdaq-100</div>
+            </div>
+            <div class="stat-card sox-stat">
+                <div class="stat-value" id="stat-sox">-</div>
+                <div class="stat-label">SOX</div>
+            </div>
+            <div class="stat-card overlap-stat">
+                <div class="stat-value" id="stat-filtered">-</div>
+                <div class="stat-label">필터 결과</div>
+            </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-section">
+            <div class="filter-row">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="티커 또는 종목명으로 검색..." autocomplete="off">
+                </div>
+                <div class="index-toggles">
+                    <button class="index-btn sp500 active" data-index="sp500" onclick="toggleIndex(this)">S&P 500</button>
+                    <button class="index-btn ndx active" data-index="nasdaq100" onclick="toggleIndex(this)">NDX</button>
+                    <button class="index-btn sox active" data-index="sox" onclick="toggleIndex(this)">SOX</button>
+                </div>
+                <select class="sector-select" id="sector-filter" onchange="applyFilters()">
+                    <option value="">전체 섹터</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Main Table -->
+        <div class="table-card">
+            <div class="table-info-bar">
+                <span class="table-count" id="table-count">로딩 중...</span>
+                <span style="font-size: 0.75rem; color: var(--text-secondary);">🟢 3개 모두 포함 종목 강조</span>
+            </div>
+            <div class="table-wrapper">
+                <table class="screener-table" id="screener-table">
+                    <thead>
+                        <tr>
+                            <th class="no-sort" style="width:50px; text-align:center;">#</th>
+                            <th data-sort="ticker">Ticker</th>
+                            <th data-sort="name">Company</th>
+                            <th data-sort="sector">Sector</th>
+                            <th class="no-sort" style="text-align:center; width:70px;">S&P</th>
+                            <th class="no-sort" style="text-align:center; width:70px;">NDX</th>
+                            <th class="no-sort" style="text-align:center; width:70px;">SOX</th>
+                        </tr>
+                    </thead>
+                    <tbody id="screener-body">
+                        <tr><td colspan="7" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Overlap Statistics -->
+        <section class="overlap-section">
+            <h3 class="overlap-title">📊 인덱스 간 중복 분석</h3>
+            <div class="overlap-grid" id="overlap-grid">
+                <!-- Dynamically rendered -->
+            </div>
+        </section>
+    </main>
+
+    <script src="./data/index_constituents.js"></script>
+    <script>
+        // ─── State ───
+        let allStocks = [];
+        let filteredStocks = [];
+        let indexSets = { sp500: new Set(), nasdaq100: new Set(), sox: new Set() };
+        let activeIndices = { sp500: true, nasdaq100: true, sox: true };
+        let sortState = { key: 'ticker', dir: 'asc' };
+
+        // ─── Load Data ───
+        function initScreener(data) {
+            processData(data);
+            populateSectorFilter();
+            applyFilters();
+            renderOverlapStats();
+            updateGlobalStats();
+        }
+
+        const isLocalFile = window.location.protocol === 'file:';
+        const dataUrl = isLocalFile ? './data/index_constituents.json' : `./data/index_constituents.json?_=${Date.now()}`;
+
+        fetch(dataUrl)
+            .then(r => { if (!r.ok) throw new Error('fetch 실패'); return r.json(); })
+            .then(data => initScreener(data))
+            .catch(err => {
+                console.warn('fetch 실패, JS 백업 사용:', err);
+                if (typeof INDEX_DATA !== 'undefined') {
+                    initScreener(INDEX_DATA);
+                } else {
+                    document.getElementById('screener-body').innerHTML =
+                        `<tr><td colspan="7" style="text-align:center;padding:40px;color:#ef4444;">❌ 데이터 로딩 실패</td></tr>`;
+                }
+            });
+
+        // ─── Process raw JSON into unified stock list ───
+        function processData(data) {
+            const stockMap = {};
+
+            // S&P 500
+            if (data.sp500) {
+                data.sp500.constituents.forEach(item => {
+                    const t = item.ticker;
+                    indexSets.sp500.add(t);
+                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: item.sector || '', sub_industry: item.sub_industry || '' };
+                    else if (!stockMap[t].sector && item.sector) {
+                        stockMap[t].sector = item.sector;
+                        stockMap[t].sub_industry = item.sub_industry || '';
+                    }
+                });
+            }
+
+            // Nasdaq-100
+            if (data.nasdaq100) {
+                data.nasdaq100.constituents.forEach(item => {
+                    const t = item.ticker;
+                    indexSets.nasdaq100.add(t);
+                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: '', sub_industry: '' };
+                });
+            }
+
+            // SOX
+            if (data.sox) {
+                data.sox.constituents.forEach(item => {
+                    const t = item.ticker;
+                    indexSets.sox.add(t);
+                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: '', sub_industry: '' };
+                });
+            }
+
+            // Cross-fill sector info: if a stock is in S&P 500, use its sector for Nasdaq/SOX entries too
+            // (already handled by stockMap merge above)
+
+            allStocks = Object.values(stockMap);
+            allStocks.sort((a, b) => a.ticker.localeCompare(b.ticker));
+        }
+
+        // ─── Populate Sector Dropdown ───
+        function populateSectorFilter() {
+            const sectors = new Set();
+            allStocks.forEach(s => { if (s.sector) sectors.add(s.sector); });
+            const sorted = [...sectors].sort();
+            const select = document.getElementById('sector-filter');
+            sorted.forEach(sec => {
+                const opt = document.createElement('option');
+                opt.value = sec;
+                opt.textContent = sec;
+                select.appendChild(opt);
+            });
+        }
+
+        // ─── Toggle Index Filter ───
+        function toggleIndex(btn) {
+            const idx = btn.dataset.index;
+            activeIndices[idx] = !activeIndices[idx];
+            btn.classList.toggle('active');
+            applyFilters();
+        }
+
+        // ─── Apply All Filters ───
+        function applyFilters() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const sectorVal = document.getElementById('sector-filter').value;
+
+            // Determine which tickers pass the index filter
+            // A stock passes if it belongs to at least one of the active indices
+            const anyIndexActive = Object.values(activeIndices).some(v => v);
+
+            filteredStocks = allStocks.filter(stock => {
+                // Index filter
+                if (anyIndexActive) {
+                    let inAnyActive = false;
+                    if (activeIndices.sp500 && indexSets.sp500.has(stock.ticker)) inAnyActive = true;
+                    if (activeIndices.nasdaq100 && indexSets.nasdaq100.has(stock.ticker)) inAnyActive = true;
+                    if (activeIndices.sox && indexSets.sox.has(stock.ticker)) inAnyActive = true;
+                    if (!inAnyActive) return false;
+                }
+
+                // Sector filter
+                if (sectorVal && stock.sector !== sectorVal) return false;
+
+                // Search filter
+                if (query) {
+                    const matchTicker = stock.ticker.toLowerCase().includes(query);
+                    const matchName = stock.name.toLowerCase().includes(query);
+                    if (!matchTicker && !matchName) return false;
+                }
+
+                return true;
+            });
+
+            // Apply sort
+            sortStocks();
+            renderTable();
+            updateFilteredCount();
+        }
+
+        // ─── Sorting ───
+        function sortStocks() {
+            const { key, dir } = sortState;
+            filteredStocks.sort((a, b) => {
+                let va = (a[key] || '').toLowerCase();
+                let vb = (b[key] || '').toLowerCase();
+                if (va < vb) return dir === 'asc' ? -1 : 1;
+                if (va > vb) return dir === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+
+        // ─── Table Header Click Sort ───
+        document.querySelectorAll('.screener-table th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => {
+                const key = th.dataset.sort;
+                if (sortState.key === key) {
+                    sortState.dir = sortState.dir === 'asc' ? 'desc' : 'asc';
+                } else {
+                    sortState.key = key;
+                    sortState.dir = 'asc';
+                }
+
+                // Update header classes
+                document.querySelectorAll('.screener-table th').forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+                th.classList.add(sortState.dir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+
+                sortStocks();
+                renderTable();
+            });
+        });
+
+        // ─── Search Input Handler ───
+        document.getElementById('search-input').addEventListener('input', () => {
+            applyFilters();
+        });
+
+        // ─── Render Table ───
+        function renderTable() {
+            const tbody = document.getElementById('screener-body');
+
+            if (filteredStocks.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                return;
+            }
+
+            let html = '';
+            filteredStocks.forEach((stock, idx) => {
+                const inSp = indexSets.sp500.has(stock.ticker);
+                const inNdx = indexSets.nasdaq100.has(stock.ticker);
+                const inSox = indexSets.sox.has(stock.ticker);
+                const isTriple = inSp && inNdx && inSox;
+
+                const spBadge = inSp ? '<span class="badge-yes badge-sp500">✓</span>' : '<span class="badge-no">–</span>';
+                const ndxBadge = inNdx ? '<span class="badge-yes badge-ndx">✓</span>' : '<span class="badge-no">–</span>';
+                const soxBadge = inSox ? '<span class="badge-yes badge-sox">✓</span>' : '<span class="badge-no">–</span>';
+
+                const rowClass = isTriple ? ' class="triple-index"' : '';
+                const sectorDisplay = stock.sector || '<span style="opacity:0.3">-</span>';
+
+                html += `<tr${rowClass}>
+                    <td class="col-rank">${idx + 1}</td>
+                    <td class="col-ticker">${stock.ticker}</td>
+                    <td class="col-name">${stock.name}</td>
+                    <td class="col-sector">${sectorDisplay}</td>
+                    <td class="col-index">${spBadge}</td>
+                    <td class="col-index">${ndxBadge}</td>
+                    <td class="col-index">${soxBadge}</td>
+                </tr>`;
+            });
+
+            tbody.innerHTML = html;
+        }
+
+        // ─── Update Counts ───
+        function updateFilteredCount() {
+            document.getElementById('stat-filtered').textContent = filteredStocks.length;
+            document.getElementById('table-count').innerHTML = `<strong>${filteredStocks.length}</strong>개 종목 표시 중`;
+        }
+
+        function updateGlobalStats() {
+            document.getElementById('stat-total').textContent = allStocks.length;
+            document.getElementById('stat-sp500').textContent = indexSets.sp500.size;
+            document.getElementById('stat-ndx').textContent = indexSets.nasdaq100.size;
+            document.getElementById('stat-sox').textContent = indexSets.sox.size;
+        }
+
+        // ─── Overlap Statistics ───
+        function renderOverlapStats() {
+            const sp = indexSets.sp500;
+            const ndx = indexSets.nasdaq100;
+            const sox = indexSets.sox;
+
+            const spOnly = [...sp].filter(t => !ndx.has(t) && !sox.has(t)).length;
+            const ndxOnly = [...ndx].filter(t => !sp.has(t) && !sox.has(t)).length;
+            const soxOnly = [...sox].filter(t => !sp.has(t) && !ndx.has(t)).length;
+
+            const spNdx = [...sp].filter(t => ndx.has(t) && !sox.has(t)).length;
+            const spSox = [...sp].filter(t => sox.has(t) && !ndx.has(t)).length;
+            const ndxSox = [...ndx].filter(t => sox.has(t) && !sp.has(t)).length;
+            const allThree = [...sp].filter(t => ndx.has(t) && sox.has(t)).length;
+
+            const grid = document.getElementById('overlap-grid');
+            grid.innerHTML = `
+                <div class="overlap-card">
+                    <div class="overlap-dots"><span class="dot sp500"></span></div>
+                    <div class="overlap-value" style="color:var(--sp500-color)">${spOnly}</div>
+                    <div class="overlap-label">S&P 500만</div>
+                </div>
+                <div class="overlap-card">
+                    <div class="overlap-dots"><span class="dot ndx"></span></div>
+                    <div class="overlap-value" style="color:var(--ndx-color)">${ndxOnly}</div>
+                    <div class="overlap-label">Nasdaq-100만</div>
+                </div>
+                <div class="overlap-card">
+                    <div class="overlap-dots"><span class="dot sox"></span></div>
+                    <div class="overlap-value" style="color:var(--sox-color)">${soxOnly}</div>
+                    <div class="overlap-label">SOX만</div>
+                </div>
+                <div class="overlap-card">
+                    <div class="overlap-dots"><span class="dot sp500"></span><span class="dot ndx"></span></div>
+                    <div class="overlap-value" style="color:#67e8f9">${spNdx}</div>
+                    <div class="overlap-label">S&P ∩ NDX</div>
+                </div>
+                <div class="overlap-card">
+                    <div class="overlap-dots"><span class="dot sp500"></span><span class="dot sox"></span></div>
+                    <div class="overlap-value" style="color:#fbbf24">${spSox}</div>
+                    <div class="overlap-label">S&P ∩ SOX</div>
+                </div>
+                <div class="overlap-card">
+                    <div class="overlap-dots"><span class="dot ndx"></span><span class="dot sox"></span></div>
+                    <div class="overlap-value" style="color:#f0abfc">${ndxSox}</div>
+                    <div class="overlap-label">NDX ∩ SOX</div>
+                </div>
+                <div class="overlap-card" style="border-color: rgba(52, 211, 153, 0.2);">
+                    <div class="overlap-dots"><span class="dot sp500"></span><span class="dot ndx"></span><span class="dot sox"></span></div>
+                    <div class="overlap-value" style="color:#34d399">${allThree}</div>
+                    <div class="overlap-label">3개 모두 포함</div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+
+</html>
