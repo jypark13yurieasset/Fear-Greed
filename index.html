@@ -611,6 +611,20 @@
         .etf-source-link a:hover {
             color: #2dd4bf;
         }
+
+        /* Assets by Market Cap Grid & Responsive */
+        .assets-mcap-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .assets-mcap-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
     </style>
 </head>
 
@@ -799,6 +813,52 @@
                 </div>
             </div>
         </section>
+
+        <!-- Global Assets by Market Cap Section -->
+        <section class="assets-mcap-section" style="margin-top: 30px; margin-bottom: 20px;">
+            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary);">
+                Global Assets by Market Cap (TOP 20)
+            </h3>
+            <div class="assets-mcap-container" style="background: var(--card-bg); border: 1px solid var(--card-border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 20px; padding: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);">
+                <div class="assets-mcap-grid">
+                    <!-- Left Column (1-10) -->
+                    <div>
+                        <table class="etf-table" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 36px; text-align: center;">#</th>
+                                    <th>Asset Name</th>
+                                    <th style="width: 80px; text-align: right;">Symbol</th>
+                                    <th style="width: 120px; text-align: right;">Market Cap</th>
+                                </tr>
+                            </thead>
+                            <tbody id="assets-mcap-list-left">
+                                <!-- Dynamic Render 1-10 -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Right Column (11-20) -->
+                    <div>
+                        <table class="etf-table" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 36px; text-align: center;">#</th>
+                                    <th>Asset Name</th>
+                                    <th style="width: 80px; text-align: right;">Symbol</th>
+                                    <th style="width: 120px; text-align: right;">Market Cap</th>
+                                </tr>
+                            </thead>
+                            <tbody id="assets-mcap-list-right">
+                                <!-- Dynamic Render 11-20 -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="etf-source-link" style="margin-top: 15px; border-top: 1px solid var(--card-border); padding-top: 12px;">
+                    <a href="https://companiesmarketcap.com/assets-by-market-cap/" target="_blank" rel="noopener">CompaniesMarketCap Live Ranking →</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="./data.js"></script>
@@ -868,6 +928,30 @@
                 if (latestData.aaii_date) {
                     document.getElementById('aaii-survey-date').innerText = `설문 마감: ${latestData.aaii_date}`;
                 }
+            }
+
+            // 4. 글로벌 자산 시가총액 TOP 20 반영
+            const leftTbody = document.getElementById('assets-mcap-list-left');
+            const rightTbody = document.getElementById('assets-mcap-list-right');
+            
+            if (latestData.assets_top20 && leftTbody && rightTbody) {
+                leftTbody.innerHTML = '';
+                rightTbody.innerHTML = '';
+                
+                latestData.assets_top20.forEach((asset, idx) => {
+                    const row = `<tr>
+                        <td class="rank" style="font-weight: 700; color: var(--text-secondary); text-align: center; width: 36px;">${asset.rank}</td>
+                        <td style="font-weight: 600;">${asset.name}</td>
+                        <td style="color: var(--text-secondary); text-align: right; font-size: 0.8rem;">${asset.code}</td>
+                        <td class="weight" style="font-weight: 700; color: #2dd4bf; text-align: right; width: 120px;">${asset.mcap}</td>
+                    </tr>`;
+                    
+                    if (idx < 10) {
+                        leftTbody.innerHTML += row;
+                    } else {
+                        rightTbody.innerHTML += row;
+                    }
+                });
             }
 
             // 3. 밑에 표(Table) 형태로 누적 데이터 쌓기

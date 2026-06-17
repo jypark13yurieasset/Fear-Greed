@@ -226,6 +226,56 @@ def get_combined_metric(name, google_path, yahoo_ticker):
         "change": round(final_change, 2) if final_change is not None else None
     }
 
+import urllib.request
+
+def get_assets_by_market_cap():
+    """companiesmarketcap.com에서 글로벌 자산 시가총액 TOP 20 데이터를 수집합니다."""
+    url = "https://companiesmarketcap.com/assets-by-market-cap/"
+    try:
+        req = urllib.request.Request(
+            url, 
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+        )
+        with urllib.request.urlopen(req, timeout=15) as response:
+            html = response.read().decode('utf-8')
+            
+            tbody_match = re.search(r'<tbody[^>]*>(.*?)</tbody>', html, re.DOTALL)
+            tbody_html = tbody_match.group(1) if tbody_match else html
+                
+            tr_blocks = re.findall(r'<tr[^>]*>(.*?)</tr>', tbody_html, re.DOTALL)
+            
+            assets = []
+            for tr in tr_blocks:
+                rank_match = re.search(r'class="rank-td[^"]*"[^>]*>\s*(\d+)', tr)
+                name_match = re.search(r'class="company-name">([^<]+)</div>', tr)
+                code_match = re.search(r'class="company-code">(?:<span[^>]*></span>)?\s*([^<]+?)\s*</div>', tr)
+                mcap_match = re.search(r'<td class="td-right"[^>]*data-sort="\d+">\s*(\$[^<]+)\s*</td>', tr)
+                
+                if rank_match and name_match and mcap_match:
+                    rank = int(rank_match.group(1).strip())
+                    name = name_match.group(1).strip()
+                    code = code_match.group(1).strip() if code_match else "N/A"
+                    mcap = mcap_match.group(1).strip()
+                    
+                    assets.append({
+                        "rank": rank,
+                        "name": name,
+                        "code": code,
+                        "mcap": mcap
+                    })
+                    if len(assets) >= 20:
+                        break
+            
+            if assets:
+                print(f"글로벌 자산 시가총액 TOP 20 수집 성공! ({len(assets)}개)")
+                return assets
+            else:
+                print("글로벌 자산 시가총액 데이터를 파싱하지 못했습니다.")
+                return None
+    except Exception as e:
+        print(f"글로벌 자산 시가총액 수집 중 에러 발생: {e}")
+        return None
+
 def main():
     today = datetime.date.today()
     today_str = today.isoformat()
@@ -290,6 +340,13 @@ def main():
     carry_over_if_needed(vix, "VIX", "vix_price", "vix_change")
     carry_over_if_needed(usd_krw, "USD/KRW", "usd_krw_price", "usd_krw_change")
     
+    print("\n=== 글로벌 자산 시가총액 TOP 20 수집 시작 ===")
+    assets_top20 = get_assets_by_market_cap()
+    if assets_top20 is None:
+        if prev_data and "assets_top20" in prev_data:
+            assets_top20 = prev_data["assets_top20"]
+            print("글로벌 자산 수집 실패 -> 이전 영업일 데이터 적용")
+
     # 데이터 업데이트
     today_entry = {
         "fear_and_greed": fng_value,
@@ -303,6 +360,10 @@ def main():
         "usd_krw_change": usd_krw["change"]
     }
     
+    # TOP 20 자산 데이터 추가
+    if assets_top20:
+        today_entry["assets_top20"] = assets_top20
+        
     # AAII 데이터 추가
     if aaii_data:
         today_entry["aaii_bullish"] = aaii_data["bullish"]
