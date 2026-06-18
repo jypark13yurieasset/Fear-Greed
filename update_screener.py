@@ -148,7 +148,7 @@ import datetime
 kst_date = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
 results['date'] = kst_date.strftime("%Y-%m-%d")
 
-output_dir = "/Users/junyounggarypark/Documents/GitHub/Fear-Greed/data"
+output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 os.makedirs(output_dir, exist_ok=True)
 json_path = os.path.join(output_dir, "index_constituents.json")
 with open(json_path, 'w', encoding='utf-8') as f:
