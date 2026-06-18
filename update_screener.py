@@ -146,7 +146,7 @@ for idx_name, data in results.items():
 # Save JSON
 import datetime
 kst_date = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
-results['date'] = kst_date.strftime("%Y.%m.%d")
+results['date'] = kst_date.strftime("%Y-%m-%d")
 
 output_dir = "/Users/junyounggarypark/Documents/GitHub/Fear-Greed/data"
 os.makedirs(output_dir, exist_ok=True)
