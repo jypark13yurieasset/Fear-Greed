@@ -631,6 +631,19 @@
         .unique-holding td.rank, .close-gap-highlight td.rank {
             color: rgba(45, 212, 191, 0.5) !important;
         }
+
+        /* Common top-5 holding highlight (warm amber — opposite of cool teal/purple unique) */
+        .common-top5 {
+            background-color: rgba(251, 191, 36, 0.10) !important;
+            transition: background-color 0.2s ease;
+        }
+        .common-top5 td {
+            color: #fbbf24 !important;
+            font-weight: 600;
+        }
+        .common-top5 td.rank {
+            color: rgba(251, 191, 36, 0.6) !important;
+        }
         /* ─── Navigation Bar ─── */
         .nav-tabs {
             display: flex;
@@ -1227,30 +1240,32 @@
             }
             
             // KoAct 테이블 하이라이트
-            koactRows.forEach(row => {
+            koactRows.forEach((row, idx) => {
                 const ticker = row.getAttribute('data-ticker');
                 const nameCell = row.cells[1];
                 const name = nameCell ? nameCell.innerText.trim() : '';
                 const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
                 
+                row.classList.remove('unique-holding', 'common-top5');
                 if (name && !hasMatch(key, timeKeys)) {
                     row.classList.add('unique-holding');
-                } else {
-                    row.classList.remove('unique-holding');
+                } else if (name && idx < 5 && hasMatch(key, timeKeys.slice(0, 5))) {
+                    row.classList.add('common-top5');
                 }
             });
             
             // TIME 테이블 하이라이트
-            timeRows.forEach(row => {
+            timeRows.forEach((row, idx) => {
                 const ticker = row.getAttribute('data-ticker');
                 const nameCell = row.cells[1];
                 const name = nameCell ? nameCell.innerText.trim() : '';
                 const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
                 
+                row.classList.remove('unique-holding', 'common-top5');
                 if (name && !hasMatch(key, koactKeys)) {
                     row.classList.add('unique-holding');
-                } else {
-                    row.classList.remove('unique-holding');
+                } else if (name && idx < 5 && hasMatch(key, koactKeys.slice(0, 5))) {
+                    row.classList.add('common-top5');
                 }
             });
         }
