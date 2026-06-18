@@ -1026,7 +1026,7 @@
                 // 추가 지표들 포맷팅 (없는 경우 - 처리)
                 const sp500_val = formatTableChange(dayData.sp500_change);
                 const nasdaq_val = formatTableChange(dayData.nasdaq_change);
-                const vix_val = formatTableChange(dayData.vix_change, true); // VIX는 하락이 호재
+                const vix_val = formatTableChange(dayData.vix_change);
                 const dxy_val = formatTableChange(dayData.dxy_change);
 
                 // AAII 센티먼트 포맷팅
@@ -1150,13 +1150,11 @@
                 const sign = change > 0 ? '+' : '';
                 badgeEl.innerText = `${sign}${change.toFixed(2)}%`;
                 
-                // VIX는 변동성이 낮아질 때 호재(초록), 높아질 때 악재(빨강)
-                const isVix = id === 'vix';
                 const isPositive = change > 0;
                 
                 if (change === 0) {
                     badgeEl.className = 'change-badge change-neutral';
-                } else if ((isPositive && !isVix) || (!isPositive && isVix)) {
+                } else if (isPositive) {
                     badgeEl.className = 'change-badge change-up';
                 } else {
                     badgeEl.className = 'change-badge change-down';
@@ -1165,7 +1163,7 @@
         }
 
         // 테이블 셀 변동률 포맷팅 헬퍼 함수
-        function formatTableChange(change, isVix = false) {
+        function formatTableChange(change) {
             if (change === undefined || change === null) return `<span style="color: var(--text-secondary); font-weight: 500;">-</span>`;
             
             const sign = change > 0 ? '+' : '';
@@ -1173,7 +1171,7 @@
             let color = '';
             
             if (change === 0) color = 'var(--text-secondary)';
-            else if ((isPositive && !isVix) || (!isPositive && isVix)) color = '#34d399'; // 초록
+            else if (isPositive) color = '#34d399'; // 초록
             else color = '#f87171'; // 빨강
             
             return `<span style="color: ${color}; font-weight: 600;">${sign}${change.toFixed(2)}%</span>`;
