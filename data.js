@@ -531,21 +531,21 @@ window.fng_data = {
         ]
     },
     "2026-06-19": {
-        "fear_and_greed": 38,
+        "fear_and_greed": 37,
         "sp500_price": 7500.58,
         "sp500_change": 1.08,
         "nasdaq_price": 26517.93,
         "nasdaq_change": 1.91,
-        "vix_price": 16.4,
-        "vix_change": -11.06,
-        "dxy_price": 100.81,
-        "dxy_change": 0.72,
+        "vix_price": 17.13,
+        "vix_change": -7.1,
+        "dxy_price": 100.78,
+        "dxy_change": 0.69,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$29.389 T"
+                "mcap": "$28.988 T"
             },
             {
                 "rank": 2,
@@ -569,7 +569,7 @@ window.fng_data = {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.702 T"
+                "mcap": "$3.646 T"
             },
             {
                 "rank": 6,
@@ -611,7 +611,7 @@ window.fng_data = {
                 "rank": 12,
                 "name": "Samsung",
                 "code": "005930.KS",
-                "mcap": "$1.549 T"
+                "mcap": "$1.520 T"
             },
             {
                 "rank": 13,
@@ -627,21 +627,21 @@ window.fng_data = {
             },
             {
                 "rank": 15,
+                "name": "SK Hynix",
+                "code": "000660.KS",
+                "mcap": "$1.283 T"
+            },
+            {
+                "rank": 16,
                 "name": "Micron Technology",
                 "code": "MU",
                 "mcap": "$1.278 T"
             },
             {
-                "rank": 16,
+                "rank": 17,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.259 T"
-            },
-            {
-                "rank": 17,
-                "name": "SK Hynix",
-                "code": "000660.KS",
-                "mcap": "$1.240 T"
+                "mcap": "$1.251 T"
             },
             {
                 "rank": 18,
@@ -662,61 +662,61 @@ window.fng_data = {
                 "mcap": "$979.64 B"
             }
         ],
-        "aaii_bullish": 34.7,
-        "aaii_neutral": 24.1,
-        "aaii_bearish": 41.2,
+        "aaii_bullish": 35.0,
+        "aaii_neutral": 24.3,
+        "aaii_bearish": 40.8,
         "aaii_date": "2026-06-17",
         "koact_date": "2026-06-19",
         "koact_holdings": [
             {
-                "name": "Space Exploration Technologies Corp",
-                "ticker": "SPCX",
-                "weight": 9.31
-            },
-            {
                 "name": "ARM Holdings PLC",
                 "ticker": "ARM",
-                "weight": 7.23
-            },
-            {
-                "name": "ADVANCED MICRO DEVICES",
-                "ticker": "AMD",
-                "weight": 6.77
-            },
-            {
-                "name": "INTEL Corp",
-                "ticker": "INTC",
-                "weight": 5.48
-            },
-            {
-                "name": "Sandisk Corp/DE",
-                "ticker": "SNDK",
-                "weight": 5.36
-            },
-            {
-                "name": "NVIDIA Corp",
-                "ticker": "NVDA",
-                "weight": 4.59
+                "weight": 7.09
             },
             {
                 "name": "MICRON TECH",
                 "ticker": "MU",
-                "weight": 4.53
+                "weight": 6.9
+            },
+            {
+                "name": "ADVANCED MICRO DEVICES",
+                "ticker": "AMD",
+                "weight": 6.64
+            },
+            {
+                "name": "Sandisk Corp/DE",
+                "ticker": "SNDK",
+                "weight": 6.21
+            },
+            {
+                "name": "INTEL Corp",
+                "ticker": "INTC",
+                "weight": 5.86
+            },
+            {
+                "name": "NVIDIA Corp",
+                "ticker": "NVDA",
+                "weight": 4.5
             },
             {
                 "name": "ALPHABET INC-CL A",
                 "ticker": "GOOGL",
-                "weight": 4.5
+                "weight": 4.41
             },
             {
                 "name": "BLOOM ENERGY CORPORATION",
                 "ticker": "BE",
-                "weight": 4.23
+                "weight": 4.15
             },
             {
-                "name": "Dell Technologies Inc",
-                "ticker": "DELL",
-                "weight": 3.64
+                "name": "WESTERN DIGITAL",
+                "ticker": "WDC",
+                "weight": 4.04
+            },
+            {
+                "name": "SEAGATE TECHNOLOGY",
+                "ticker": "STX",
+                "weight": 3.73
             }
         ],
         "time_date": "2026-06-19",
