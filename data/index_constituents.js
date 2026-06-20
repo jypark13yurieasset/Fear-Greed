@@ -501,12 +501,6 @@ const INDEX_DATA = {
         "sub_industry": "Multi-Family Residential REITs"
       },
       {
-        "ticker": "CPB",
-        "name": "Campbell's Company (The)",
-        "sector": "Consumer Staples",
-        "sub_industry": "Packaged Foods & Meats"
-      },
-      {
         "ticker": "COF",
         "name": "Capital One",
         "sector": "Financials",
@@ -1221,6 +1215,12 @@ const INDEX_DATA = {
         "sub_industry": "Transaction & Payment Processing Services"
       },
       {
+        "ticker": "FLEX",
+        "name": "Flex Ltd.",
+        "sector": "Information Technology",
+        "sub_industry": "Electronic Manufacturing Services"
+      },
+      {
         "ticker": "F",
         "name": "Ford Motor Company",
         "sector": "Consumer Discretionary",
@@ -1815,6 +1815,12 @@ const INDEX_DATA = {
         "sub_industry": "Construction Materials"
       },
       {
+        "ticker": "MRVL",
+        "name": "Marvell Technology",
+        "sector": "Information Technology",
+        "sub_industry": "Semiconductors"
+      },
+      {
         "ticker": "MAS",
         "name": "Masco",
         "sector": "Industrials",
@@ -2221,12 +2227,6 @@ const INDEX_DATA = {
         "name": "PNC Financial Services",
         "sector": "Financials",
         "sub_industry": "Diversified Banks"
-      },
-      {
-        "ticker": "POOL",
-        "name": "Pool Corporation",
-        "sector": "Consumer Discretionary",
-        "sub_industry": "Distributors"
       },
       {
         "ticker": "PPG",
@@ -3586,5 +3586,5 @@ const INDEX_DATA = {
       }
     ]
   },
-  "date": "2026-06-19"
+  "date": "2026-06-20"
 };
