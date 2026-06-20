@@ -644,26 +644,6 @@
         .common-top5 td.rank {
             color: rgba(251, 191, 36, 0.6) !important;
         }
-
-        /* Watchlist stock highlight (gold left border — can coexist with close-gap background) */
-        .watchlist-stock {
-            border-left: 3px solid #fbbf24 !important;
-        }
-        .watchlist-stock td:first-child {
-            padding-left: 13px;
-        }
-        /* Watchlist + no other highlight: apply subtle amber background */
-        .watchlist-stock:not(.close-gap-highlight) {
-            background-color: rgba(251, 191, 36, 0.06) !important;
-        }
-        .watchlist-stock:not(.close-gap-highlight) td {
-            color: #fbbf24 !important;
-            font-weight: 600;
-        }
-        /* Watchlist + close-gap: keep teal background, add gold rank indicator */
-        .watchlist-stock.close-gap-highlight td.rank {
-            color: #fbbf24 !important;
-        }
         /* ─── Navigation Bar ─── */
         .nav-tabs {
             display: flex;
@@ -1031,21 +1011,16 @@
                     
                     const rowClass = shouldHighlight ? 'class="close-gap-highlight"' : '';
                     
-                    // 관심종목 하이라이트 (SpaceX, Tesla, Samsung, SK Hynix, Micron)
+                    // 관심종목 별표 표시 (SpaceX, Tesla, Samsung, SK Hynix, Micron)
                     const watchlist = ['SPACEX', 'TESLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON'];
                     const nameUpper = (asset.name || '').toUpperCase();
                     const codeUpper = (asset.code || '').toUpperCase();
                     const isWatchlist = watchlist.some(w => nameUpper.includes(w) || codeUpper.includes(w));
+                    const starBadge = isWatchlist ? ' <span style="color: #fbbf24; font-size: 0.75rem;">⭐</span>' : '';
                     
-                    // 두 클래스를 독립적으로 적용 (동시 표시 가능)
-                    const classes = [];
-                    if (shouldHighlight) classes.push('close-gap-highlight');
-                    if (isWatchlist) classes.push('watchlist-stock');
-                    const finalRowClass = classes.length > 0 ? `class="${classes.join(' ')}"` : '';
-                    
-                    const row = `<tr ${finalRowClass}>
+                    const row = `<tr ${rowClass}>
                         <td class="rank" style="font-weight: 700; color: var(--text-secondary); text-align: center; width: 50px;">${asset.rank}</td>
-                        <td style="font-weight: 600;">${asset.name}</td>
+                        <td style="font-weight: 600;">${asset.name}${starBadge}</td>
                         <td style="color: var(--text-secondary); text-align: right; font-size: 0.8rem;">${asset.code}</td>
                         <td class="weight" style="font-weight: 700; color: var(--text-primary); text-align: right; width: 150px;">${asset.mcap}</td>
                         <td style="font-weight: 700; color: #7c8cf5; text-align: right; width: 150px;">${gapText}</td>
