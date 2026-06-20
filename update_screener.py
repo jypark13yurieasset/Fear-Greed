@@ -17,6 +17,7 @@ import yfinance as yf
 import urllib3
 from bs4 import BeautifulSoup
 from curl_cffi import requests as crequests
+from dateutil.relativedelta import relativedelta
 
 # Disable SSL warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -309,22 +310,26 @@ batches = [tickers_to_fetch[i:i + batch_size] for i in range(0, len(tickers_to_f
 for idx, batch in enumerate(batches):
     print(f"   다운로드 중 batch {idx+1}/{len(batches)} ({len(batch)}개 종목)...")
     try:
-        df = yf.download(batch, period="1y", interval="1d", auto_adjust=True, group_by="ticker", progress=False)
+        df = yf.download(batch, period="2y", interval="1d", auto_adjust=False, group_by="ticker", progress=False)
         
         if isinstance(df.columns, pd.MultiIndex):
             for yf_ticker in batch:
                 orig_ticker = ticker_mapping[yf_ticker]
                 if yf_ticker in df.columns.levels[0]:
                     ticker_df = df[yf_ticker]
-                    closes = ticker_df['Close'].dropna().tolist()
-                    if closes:
-                        all_data[orig_ticker] = closes
+                    series = ticker_df['Close'].dropna()
+                    if not series.empty:
+                        if series.index.tz is not None:
+                            series.index = series.index.tz_localize(None)
+                        all_data[orig_ticker] = series
         else:
             yf_ticker = batch[0]
             orig_ticker = ticker_mapping[yf_ticker]
-            closes = df['Close'].dropna().tolist()
-            if closes:
-                all_data[orig_ticker] = closes
+            series = df['Close'].dropna()
+            if not series.empty:
+                if series.index.tz is not None:
+                    series.index = series.index.tz_localize(None)
+                all_data[orig_ticker] = series
     except Exception as e:
         print(f"   ❌ Batch {idx+1} 에러: {e}")
 
@@ -372,8 +377,12 @@ print("\n" + "=" * 60)
 print("🧮 모멘텀 지표 연산 중...")
 stocks_output = []
 
+# Base date in KST matching script execution date (Google Finance baseline)
+run_date_str = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d")
+baseline_date = pd.Timestamp(run_date_str)
+
 for t, s in stock_map.items():
-    closes = all_data.get(t, [])
+    series = all_data.get(t)
     
     price = None
     pct_1d = None
@@ -390,34 +399,48 @@ for t, s in stock_map.items():
     dist_sma20 = None    # (price - SMA20) / SMA20 * 100
     rsi14 = None         # Wilder's RSI-14
     
-    if closes:
+    if series is not None and not series.empty:
+        closes = series.tolist()
         price = closes[-1]
+        latest_trading_date = series.index[-1]
+        today_date = baseline_date
         
+        # Helper to get return at specific calendar offset
+        def calc_pct_change(target_date):
+            ts = pd.Timestamp(target_date)
+            asof_date = series.index.asof(ts)
+            if pd.notna(asof_date):
+                # Ensure it's a strictly historical day
+                if asof_date < latest_trading_date:
+                    past_price = series.loc[asof_date]
+                    if past_price and past_price > 0:
+                        return (price - past_price) / past_price * 100
+            return None
+
         # 1D Change
-        if len(closes) >= 2:
-            pct_1d = (price - closes[-2]) / closes[-2] * 100
+        if len(series) >= 2:
+            pct_1d = (price - series.iloc[-2]) / series.iloc[-2] * 100
             
-        # 1W Change (5 trading days)
-        if len(closes) >= 6:
-            pct_1w = (price - closes[-6]) / closes[-6] * 100
+        # 1W Change (1 calendar week)
+        pct_1w = calc_pct_change(today_date - relativedelta(weeks=1))
             
-        # 1M Change (21 trading days)
-        if len(closes) >= 22:
-            pct_1m = (price - closes[-22]) / closes[-22] * 100
+        # 1M Change (1 calendar month)
+        pct_1m = calc_pct_change(today_date - relativedelta(months=1))
             
-        # 3M Change (63 trading days)
-        if len(closes) >= 64:
-            pct_3m = (price - closes[-64]) / closes[-64] * 100
+        # 3M Change (3 calendar months)
+        pct_3m = calc_pct_change(today_date - relativedelta(months=3))
             
-        # 1Y Change (approx 252 trading days)
-        if len(closes) >= 252:
-            pct_1y = (price - closes[-252]) / closes[-252] * 100
-        elif len(closes) > 0:
-            pct_1y = (price - closes[0]) / closes[0] * 100
+        # YTD Change (Year to Date, from the end of previous year)
+        ytd_target_date = datetime.date(today_date.year - 1, 12, 31)
+        pct_ytd = calc_pct_change(ytd_target_date)
             
-        # 52W High / Low
-        high_52w = max(closes)
-        low_52w = min(closes)
+        # 1Y Change (1 calendar year)
+        pct_1y = calc_pct_change(today_date - relativedelta(years=1))
+            
+        # 52W High / Low (based on the last 252 trading days to represent 1 year)
+        closes_1y = closes[-252:] if len(closes) >= 252 else closes
+        high_52w = max(closes_1y)
+        low_52w = min(closes_1y)
         if high_52w > 0:
             dist_high = (price - high_52w) / high_52w * 100
         if low_52w > 0:
@@ -472,6 +495,7 @@ for t, s in stock_map.items():
         'pct_1w': rnd(pct_1w),
         'pct_1m': rnd(pct_1m),
         'pct_3m': rnd(pct_3m),
+        'pct_ytd': rnd(pct_ytd),
         'pct_1y': rnd(pct_1y),
         'ema_signal': ema_signal,       # int 1/2/3 or null
         'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
