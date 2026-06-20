@@ -447,36 +447,145 @@
             color: var(--text-secondary);
         }
 
-        .col-index {
-            text-align: center;
-            width: 70px;
+        .col-price {
+            text-align: right;
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
         }
 
-        .badge-yes {
-            display: inline-block;
-            width: 22px;
-            height: 22px;
-            line-height: 22px;
+        .col-change {
+            text-align: right;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .col-high-dist {
+            text-align: right;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .col-range {
             text-align: center;
-            border-radius: 6px;
-            font-size: 0.7rem;
+            width: 130px;
+        }
+
+        /* Watchlist Row Highlight */
+        .screener-table tbody tr.watchlist-row {
+            background: rgba(251, 191, 36, 0.03);
+            border-left: 2px solid #fbbf24;
+        }
+        .screener-table tbody tr.watchlist-row:hover {
+            background: rgba(251, 191, 36, 0.06);
+        }
+
+        /* Color Utility Classes */
+        .text-green {
+            color: #34d399 !important;
+            font-weight: 600;
+        }
+        .text-red {
+            color: #f87171 !important;
+            font-weight: 600;
+        }
+        .text-neutral {
+            color: var(--text-secondary);
+        }
+        .text-breakout {
+            color: #fbbf24 !important;
             font-weight: 700;
         }
+        .breakout-icon {
+            font-size: 0.75rem;
+            margin-left: 2px;
+        }
 
-        .badge-sp500 {
-            background: rgba(56, 189, 248, 0.15);
-            color: var(--sp500-color);
+        .badge-private {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: inline-block;
         }
-        .badge-ndx {
-            background: rgba(167, 139, 250, 0.15);
-            color: var(--ndx-color);
+
+        /* Range Bar Slider */
+        .range-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            width: 100%;
+            min-width: 100px;
+            justify-content: center;
         }
-        .badge-dow {
-            background: rgba(245, 158, 11, 0.15);
-            color: var(--dow-color);
+        .range-track {
+            position: relative;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 2px;
+            flex: 1;
         }
-        .badge-no {
-            color: rgba(130, 140, 180, 0.2);
+        .range-fill {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+            top: -1px;
+            transform: translateX(-50%);
+            box-shadow: 0 0 8px var(--accent);
+        }
+        .range-lbl {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        /* Preset Filters Section */
+        .preset-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 16px;
+            border-top: 1px solid rgba(130, 140, 180, 0.08);
+            padding-top: 16px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .preset-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+        .preset-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .preset-btn {
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            border: 1px solid rgba(130, 140, 180, 0.15);
+            background: rgba(26, 27, 38, 0.4);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: var(--font-family);
+        }
+        .preset-btn:hover {
+            background: rgba(124, 140, 245, 0.08);
+            color: var(--text-primary);
+            border-color: rgba(124, 140, 245, 0.3);
+        }
+        .preset-btn.active {
+            background: var(--accent-dim);
+            color: var(--accent);
+            border-color: var(--accent);
+            font-weight: 600;
         }
 
 
@@ -559,13 +668,25 @@
                     <option value="">전체 섹터</option>
                 </select>
             </div>
+            <!-- Preset Buttons -->
+            <div class="preset-section">
+                <span class="preset-label">🔥 모멘텀 프리셋:</span>
+                <div class="preset-buttons">
+                    <button class="preset-btn active" id="preset-all" onclick="selectPreset('all')">전체 종목</button>
+                    <button class="preset-btn" id="preset-breakout" onclick="selectPreset('breakout')">신고가 임박 🚀</button>
+                    <button class="preset-btn" id="preset-leaders" onclick="selectPreset('leaders')">단기 주도주 🔥</button>
+                    <button class="preset-btn" id="preset-golden" onclick="selectPreset('golden')">상승 정배열 📈</button>
+                    <button class="preset-btn" id="preset-rebound" onclick="selectPreset('rebound')">과매도 반등 📉</button>
+                    <button class="preset-btn" id="preset-watchlist" onclick="selectPreset('watchlist')">나의 관심종목 ⭐⭐</button>
+                </div>
+            </div>
         </div>
 
         <!-- Main Table -->
         <div class="table-card">
             <div class="table-info-bar">
                 <span class="table-count" id="table-count">로딩 중...</span>
-                <span style="font-size: 0.75rem; color: var(--text-secondary);">🟢 3개 모두 포함 종목 강조</span>
+                <span style="font-size: 0.75rem; color: var(--text-secondary);">⭐⭐ 관심종목 하이라이트</span>
             </div>
             <div class="table-wrapper">
                 <table class="screener-table" id="screener-table">
@@ -575,13 +696,20 @@
                             <th data-sort="ticker">Ticker</th>
                             <th data-sort="name">Company</th>
                             <th data-sort="sector">Sector</th>
-                            <th class="no-sort" style="text-align:center; width:70px;">S&P</th>
-                            <th class="no-sort" style="text-align:center; width:70px;">NDX</th>
-                            <th class="no-sort" style="text-align:center; width:70px;">Dow</th>
+                            <th data-sort="price" style="text-align:right;">Price</th>
+                            <th data-sort="pct_1d" style="text-align:right; width:70px;">1D</th>
+                            <th data-sort="pct_1w" style="text-align:right; width:70px;">1W</th>
+                            <th data-sort="pct_1m" style="text-align:right; width:70px;">1M</th>
+                            <th data-sort="pct_1y" style="text-align:right; width:70px;">1Y</th>
+                            <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: ⭐⭐⭐ 두 이평선 모두 상회 / ⭐⭐ 사이 / ⭐ 두 이평선 모두 하회">EMA8/21</th>
+                            <th data-sort="dist_sma20" style="text-align:right; width:90px;" title="SMA20 대비 현재 주가 이격도 (%)">SMA20 Dist</th>
+                            <th data-sort="rsi14" style="text-align:right; width:70px;" title="RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">RSI</th>
+                            <th data-sort="dist_high" style="text-align:right; width:110px;">52W High</th>
+                            <th class="no-sort" style="text-align:center; width:120px;">52W Range</th>
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="7" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="14" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -595,8 +723,8 @@
         // ─── State ───
         let allStocks = [];
         let filteredStocks = [];
-        let indexSets = { sp500: new Set(), nasdaq100: new Set(), dowjones: new Set() };
         let activeIndices = { sp500: true, nasdaq100: true, dowjones: true };
+        let activePreset = 'all'; // 'all', 'breakout', 'leaders', 'golden', 'rebound', 'watchlist'
         let sortState = { key: 'ticker', dir: 'asc' };
 
         // ─── Load Data ───
@@ -622,52 +750,13 @@
                     initScreener(INDEX_DATA);
                 } else {
                     document.getElementById('screener-body').innerHTML =
-                        `<tr><td colspan="7" style="text-align:center;padding:40px;color:#ef4444;">❌ 데이터 로딩 실패</td></tr>`;
+                        `<tr><td colspan="10" style="text-align:center;padding:40px;color:#ef4444;">❌ 데이터 로딩 실패</td></tr>`;
                 }
             });
 
         // ─── Process raw JSON into unified stock list ───
         function processData(data) {
-            const stockMap = {};
-
-            // S&P 500
-            if (data.sp500) {
-                data.sp500.constituents.forEach(item => {
-                    const t = item.ticker;
-                    indexSets.sp500.add(t);
-                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: item.sector || '', sub_industry: item.sub_industry || '' };
-                    else if (!stockMap[t].sector && item.sector) {
-                        stockMap[t].sector = item.sector;
-                        stockMap[t].sub_industry = item.sub_industry || '';
-                    }
-                });
-            }
-
-            // Nasdaq-100
-            if (data.nasdaq100) {
-                data.nasdaq100.constituents.forEach(item => {
-                    const t = item.ticker;
-                    indexSets.nasdaq100.add(t);
-                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: '', sub_industry: '' };
-                });
-            }
-
-            // Dow Jones
-            if (data.dowjones) {
-                data.dowjones.constituents.forEach(item => {
-                    const t = item.ticker;
-                    indexSets.dowjones.add(t);
-                    if (!stockMap[t]) stockMap[t] = { ticker: t, name: item.name, sector: item.sector || '', sub_industry: '' };
-                    else if (!stockMap[t].sector && item.sector) {
-                        stockMap[t].sector = item.sector;
-                    }
-                });
-            }
-
-            // Cross-fill sector info: if a stock is in S&P 500, use its sector for Nasdaq/Dow entries too
-            // (already handled by stockMap merge above)
-
-            allStocks = Object.values(stockMap);
+            allStocks = data.stocks || [];
             allStocks.sort((a, b) => a.ticker.localeCompare(b.ticker));
         }
 
@@ -693,25 +782,29 @@
             applyFilters();
         }
 
+        // ─── Select Preset Filter ───
+        function selectPreset(preset) {
+            activePreset = preset;
+            
+            // Toggle active button class
+            document.querySelectorAll('.preset-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            const activeBtn = document.getElementById(`preset-${preset}`);
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            applyFilters();
+        }
+
         // ─── Apply All Filters ───
         function applyFilters() {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
             const sectorVal = document.getElementById('sector-filter').value;
 
-            // Determine which tickers pass the index filter
-            // A stock passes if it belongs to at least one of the active indices
+            // Determine if any index filter is active
             const anyIndexActive = Object.values(activeIndices).some(v => v);
 
             filteredStocks = allStocks.filter(stock => {
-                // Index filter
-                if (anyIndexActive) {
-                    let inAnyActive = false;
-                    if (activeIndices.sp500 && indexSets.sp500.has(stock.ticker)) inAnyActive = true;
-                    if (activeIndices.nasdaq100 && indexSets.nasdaq100.has(stock.ticker)) inAnyActive = true;
-                    if (activeIndices.dowjones && indexSets.dowjones.has(stock.ticker)) inAnyActive = true;
-                    if (!inAnyActive) return false;
-                }
-
                 // Sector filter
                 if (sectorVal && stock.sector !== sectorVal) return false;
 
@@ -722,8 +815,40 @@
                     if (!matchTicker && !matchName) return false;
                 }
 
+                // Index filter (ignored if preset is 'watchlist')
+                if (activePreset !== 'watchlist' && anyIndexActive) {
+                    let inAnyActive = false;
+                    if (activeIndices.sp500 && stock.sp500) inAnyActive = true;
+                    if (activeIndices.nasdaq100 && stock.nasdaq100) inAnyActive = true;
+                    if (activeIndices.dowjones && stock.dowjones) inAnyActive = true;
+                    if (!inAnyActive) return false;
+                }
+
+                // Preset filters
+                if (activePreset === 'breakout') {
+                    if (stock.dist_high === null || stock.dist_high < -3.0) return false;
+                } else if (activePreset === 'golden') {
+                    if (stock.dist_ma50 === null || stock.dist_ma50 <= 0) return false;
+                    if (stock.dist_ma200 === null || stock.dist_ma200 <= 0) return false;
+                } else if (activePreset === 'rebound') {
+                    if (stock.dist_ma200 === null || stock.dist_ma200 >= 0) return false;
+                    if (stock.pct_1w === null || stock.pct_1w <= 0) return false;
+                } else if (activePreset === 'watchlist') {
+                    if (!stock.is_watchlist) return false;
+                }
+
                 return true;
             });
+
+            // Special handling for 'leaders' preset
+            if (activePreset === 'leaders') {
+                const leaders = [...filteredStocks]
+                    .filter(s => s.pct_1m !== null)
+                    .sort((a, b) => b.pct_1m - a.pct_1m)
+                    .slice(0, 40);
+                const leaderTickers = new Set(leaders.map(s => s.ticker));
+                filteredStocks = filteredStocks.filter(s => leaderTickers.has(s.ticker));
+            }
 
             // Apply sort
             sortStocks();
@@ -731,15 +856,27 @@
             updateFilteredCount();
         }
 
-        // ─── Sorting ───
+        // ─── Sorting (Numeric-aware) ───
         function sortStocks() {
             const { key, dir } = sortState;
             filteredStocks.sort((a, b) => {
-                let va = (a[key] || '').toLowerCase();
-                let vb = (b[key] || '').toLowerCase();
-                if (va < vb) return dir === 'asc' ? -1 : 1;
-                if (va > vb) return dir === 'asc' ? 1 : -1;
-                return 0;
+                let va = a[key];
+                let vb = b[key];
+
+                // Place null values at the end regardless of direction
+                if (va === null || va === undefined) return 1;
+                if (vb === null || vb === undefined) return -1;
+
+                if (typeof va === 'string') {
+                    va = va.toLowerCase();
+                    vb = (vb || '').toLowerCase();
+                    if (va < vb) return dir === 'asc' ? -1 : 1;
+                    if (va > vb) return dir === 'asc' ? 1 : -1;
+                    return 0;
+                } else {
+                    // Numeric comparison
+                    return dir === 'asc' ? va - vb : vb - va;
+                }
             });
         }
 
@@ -770,37 +907,108 @@
             applyFilters();
         });
 
+        // ─── Price formatter ───
+        function formatPrice(stock) {
+            if (stock.is_private) return '<span class="badge-private">비상장</span>';
+            if (stock.price === null || stock.price === undefined) return '-';
+            if (stock.ticker.endsWith('.KS')) {
+                return '₩' + Math.round(stock.price).toLocaleString();
+            }
+            return '$' + stock.price.toFixed(2);
+        }
+
+        // ─── Change formatter ───
+        function formatChange(val) {
+            if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
+            const isPositive = val > 0;
+            const isNegative = val < 0;
+            const sign = isPositive ? '+' : '';
+            const colorClass = isPositive ? 'text-green' : (isNegative ? 'text-red' : 'text-neutral');
+            return `<span class="${colorClass}">${sign}${val.toFixed(2)}%</span>`;
+        }
+
+        // ─── 52W High Distance formatter ───
+        function formatHighDist(val) {
+            if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
+            const isNear = val >= -3.0;
+            const badge = isNear ? ' <span class="breakout-icon">🚀</span>' : '';
+            const colorClass = isNear ? 'text-breakout' : 'text-neutral';
+            return `<span class="${colorClass}">${val.toFixed(2)}%${badge}</span>`;
+        }
+
+        // ─── Range bar renderer ───
+        function renderRangeBar(stock) {
+            if (stock.is_private || stock.price === null || stock.dist_low === null || stock.dist_high === null) return '-';
+            
+            const low = stock.price / (1 + stock.dist_low / 100);
+            const high = stock.price / (1 + stock.dist_high / 100);
+            const range = high - low;
+            const pos_pct = range > 0 ? ((stock.price - low) / range) * 100 : 50;
+            const clamped = Math.max(0, Math.min(100, pos_pct));
+
+            return `
+                <div class="range-container">
+                    <span class="range-lbl">L</span>
+                    <div class="range-track">
+                        <div class="range-fill" style="left: ${clamped}%;"></div>
+                    </div>
+                    <span class="range-lbl">H</span>
+                </div>
+            `;
+        }
+
+        // ─── EMA Signal formatter ───
+        function formatEmaSignal(val) {
+            if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
+            if (val === 3) return '<span style="font-size:0.9rem; letter-spacing:-1px;" title="두 이평선 모두 상회 (강세)">⭐⭐⭐</span>';
+            if (val === 2) return '<span style="font-size:0.9rem; letter-spacing:-1px; opacity:0.75;" title="두 이평선 사이 (중립)">⭐⭐</span>';
+            return '<span style="font-size:0.9rem; letter-spacing:-1px; opacity:0.45;" title="두 이평선 모두 하회 (약세)">⭐</span>';
+        }
+
+        // ─── RSI formatter ───
+        function formatRsi(val) {
+            if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
+            let colorStyle;
+            if (val >= 70) {
+                colorStyle = 'color:#f87171; font-weight:700;'; // 과매수 — 빨강
+            } else if (val <= 30) {
+                colorStyle = 'color:#34d399; font-weight:700;'; // 과매도 — 초록
+            } else {
+                colorStyle = 'color:var(--text-primary); font-weight:500;';
+            }
+            return `<span style="${colorStyle}">${val.toFixed(1)}</span>`;
+        }
+
         // ─── Render Table ───
         function renderTable() {
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="14" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
             let html = '';
             filteredStocks.forEach((stock, idx) => {
-                const inSp = indexSets.sp500.has(stock.ticker);
-                const inNdx = indexSets.nasdaq100.has(stock.ticker);
-                const inDow = indexSets.dowjones.has(stock.ticker);
-                const isTriple = inSp && inNdx && inDow;
-
-                const spBadge = inSp ? '<span class="badge-yes badge-sp500">✓</span>' : '<span class="badge-no">–</span>';
-                const ndxBadge = inNdx ? '<span class="badge-yes badge-ndx">✓</span>' : '<span class="badge-no">–</span>';
-                const dowBadge = inDow ? '<span class="badge-yes badge-dow">✓</span>' : '<span class="badge-no">–</span>';
-
-                const rowClass = isTriple ? ' class="triple-index"' : '';
+                const rowClass = stock.is_watchlist ? ' class="watchlist-row"' : '';
+                const starBadge = stock.is_watchlist ? '<span style="color: #fbbf24; font-size: 0.75rem; margin-right: 4px;">⭐⭐</span>' : '';
                 const sectorDisplay = stock.sector || '<span style="opacity:0.3">-</span>';
 
                 html += `<tr${rowClass}>
                     <td class="col-rank">${idx + 1}</td>
-                    <td class="col-ticker">${stock.ticker}</td>
+                    <td class="col-ticker">${starBadge}${stock.ticker}</td>
                     <td class="col-name">${stock.name}</td>
                     <td class="col-sector">${sectorDisplay}</td>
-                    <td class="col-index">${spBadge}</td>
-                    <td class="col-index">${ndxBadge}</td>
-                    <td class="col-index">${dowBadge}</td>
+                    <td class="col-price">${formatPrice(stock)}</td>
+                    <td class="col-change">${formatChange(stock.pct_1d)}</td>
+                    <td class="col-change">${formatChange(stock.pct_1w)}</td>
+                    <td class="col-change">${formatChange(stock.pct_1m)}</td>
+                    <td class="col-change">${formatChange(stock.pct_1y)}</td>
+                    <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>
+                    <td class="col-change">${formatChange(stock.dist_sma20)}</td>
+                    <td style="text-align:right;">${formatRsi(stock.rsi14)}</td>
+                    <td class="col-high-dist">${formatHighDist(stock.dist_high)}</td>
+                    <td class="col-range">${renderRangeBar(stock)}</td>
                 </tr>`;
             });
 
@@ -815,9 +1023,20 @@
 
         function updateGlobalStats() {
             document.getElementById('stat-total').textContent = allStocks.length;
-            document.getElementById('stat-sp500').textContent = indexSets.sp500.size;
-            document.getElementById('stat-ndx').textContent = indexSets.nasdaq100.size;
-            document.getElementById('stat-dow').textContent = indexSets.dowjones.size;
+            
+            let spCount = 0;
+            let ndxCount = 0;
+            let dowCount = 0;
+            
+            allStocks.forEach(s => {
+                if (s.sp500) spCount++;
+                if (s.nasdaq100) ndxCount++;
+                if (s.dowjones) dowCount++;
+            });
+
+            document.getElementById('stat-sp500').textContent = spCount;
+            document.getElementById('stat-ndx').textContent = ndxCount;
+            document.getElementById('stat-dow').textContent = dowCount;
         }
 
 

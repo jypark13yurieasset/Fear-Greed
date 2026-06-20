@@ -1012,7 +1012,7 @@
                     const rowClass = shouldHighlight ? 'class="close-gap-highlight"' : '';
                     
                     // 관심종목 별표 표시 (SpaceX, Tesla, Samsung, SK Hynix, Micron)
-                    const watchlist = ['SPACEX', 'TESLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON'];
+                    const watchlist = ['SPACEX', 'SPCX', 'TESLA', 'TSLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON', 'MU'];
                     const nameUpper = (asset.name || '').toUpperCase();
                     const codeUpper = (asset.code || '').toUpperCase();
                     const isWatchlist = watchlist.some(w => nameUpper.includes(w) || codeUpper.includes(w));

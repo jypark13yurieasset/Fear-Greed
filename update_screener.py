@@ -1,155 +1,497 @@
 #!/usr/bin/env python3
 """
 Fetch constituents of S&P 500, Nasdaq-100, and Dow Jones Industrial Average
-from Wikipedia using requests + pandas.
+from SlickCharts using curl_cffi, resolve sectors using Wikipedia as a fallback
+database (with yfinance fallbacks and cross-checking), and download 1-year price history
+from Yahoo Finance to compute momentum statistics.
 """
 import pandas as pd
 import requests
 import json
 import os
+import sys
+import time
+import datetime
+import statistics
+import yfinance as yf
+import urllib3
+from bs4 import BeautifulSoup
+from curl_cffi import requests as crequests
+
+# Disable SSL warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Referer': 'https://www.google.com/'
 }
 
-results = {}
+# Check command line flags (e.g. python3 update_screener.py --force-check)
+force_check = "--force-check" in sys.argv
 
-# --- 1. S&P 500 ---
+# Load local sector database cache
+sectors_cache_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "screener_sectors.json")
+sector_db = {}
+if os.path.exists(sectors_cache_path):
+    try:
+        with open(sectors_cache_path, 'r', encoding='utf-8') as f:
+            sector_db = json.load(f)
+        print(f"✅ 로컬 섹터 DB 로드 완료 ({len(sector_db)}개 종목)")
+    except Exception as e:
+        print(f"⚠️ 로컬 섹터 DB 로딩 실패: {e}")
+
+# --- 1. Build Fallback Sector Database from Wikipedia ---
 print("=" * 60)
-print("📊 S&P 500 구성종목 가져오는 중...")
+print("📊 Wikipedia GICS 섹터 DB 빌드 중...")
+wiki_sectors = {}
+wiki_sub_industries = {}
+wiki_names = {}
 try:
-    resp = requests.get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", headers=headers)
+    resp = requests.get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", headers=headers, timeout=15)
     resp.raise_for_status()
     sp500_tables = pd.read_html(resp.text)
     sp500_df = sp500_tables[0]
-    
-    sp500_list = []
     for _, row in sp500_df.iterrows():
-        sp500_list.append({
-            'ticker': str(row.get('Symbol', row.iloc[0])).strip(),
-            'name': str(row.get('Security', row.iloc[1])).strip(),
-            'sector': str(row.get('GICS Sector', '')).strip(),
-            'sub_industry': str(row.get('GICS Sub-Industry', '')).strip()
-        })
-    results['sp500'] = {
-        'count': len(sp500_list),
-        'constituents': sp500_list
+        t = str(row.get('Symbol', row.iloc[0])).strip()
+        wiki_sectors[t] = str(row.get('GICS Sector', '')).strip()
+        wiki_sub_industries[t] = str(row.get('GICS Sub-Industry', '')).strip()
+        wiki_names[t] = str(row.get('Security', '')).strip()
+    print(f"   위키피디아 섹터 DB 구축 완료 ({len(wiki_sectors)}개 종목)")
+except Exception as e:
+    print(f"   ⚠️ 위키피디아 섹터 수집 에러 (일부 종목 야후 파이낸스 폴백 사용 예정): {e}")
+
+# --- 2. Fetch constituents from SlickCharts using curl_cffi ---
+def fetch_slickcharts(url):
+    print("\n" + "=" * 60)
+    print(f"🔗 SlickCharts 수집 중: {url}")
+    try:
+        r = crequests.get(url, headers=headers, impersonate="chrome120", timeout=15)
+        if r.status_code == 200:
+            soup = BeautifulSoup(r.text, 'html.parser')
+            table = soup.find('table')
+            if not table:
+                table = soup.find('table', {'class': 'table'})
+            if table:
+                rows = table.find_all('tr')[1:] # skip header
+                constituents = []
+                for row in rows:
+                    cols = row.find_all('td')
+                    if len(cols) >= 3:
+                        company = cols[1].text.strip()
+                        symbol = cols[2].text.strip()
+                        constituents.append({
+                            'ticker': symbol,
+                            'name': company
+                        })
+                print(f"   성공: {len(constituents)}개 종목 수집")
+                return constituents
+            else:
+                print("   ❌ 테이블을 찾지 못했습니다.")
+        else:
+            print(f"   ❌ HTTP 에러: {r.status_code}")
+    except Exception as e:
+        print(f"   ❌ SlickCharts 수집 에러: {e}")
+    return []
+
+sp500_list = fetch_slickcharts("https://www.slickcharts.com/sp500")
+ndx_list = fetch_slickcharts("https://www.slickcharts.com/nasdaq100")
+dow_list = fetch_slickcharts("https://www.slickcharts.com/dowjones")
+
+# --- 3. Sector Resolution with Cross-Checking ---
+print("\n" + "=" * 60)
+print("📋 구성종목 데이터 병합 및 섹터 교차 검증...")
+
+YAHOO_SECTOR_MAP = {
+    'Technology': 'Information Technology',
+    'Healthcare': 'Health Care',
+    'Consumer Cyclical': 'Consumer Discretionary',
+    'Financial Services': 'Financials',
+    'Consumer Defensive': 'Consumer Staples',
+    'Basic Materials': 'Materials'
+}
+
+def clean_sector(s):
+    return YAHOO_SECTOR_MAP.get(s, s)
+
+def fetch_yahoo_sector_info(ticker):
+    yf_t = ticker
+    if not ticker.endswith('.KS'):
+        yf_t = ticker.replace('.', '-')
+    try:
+        t_obj = yf.Ticker(yf_t)
+        info = t_obj.info
+        sector = clean_sector(info.get('sector', ''))
+        sub_industry = info.get('industry', '')
+        name = info.get('longName', info.get('shortName', ''))
+        return sector, sub_industry, name
+    except Exception as e:
+        print(f"   ⚠️ 야후 파이낸스 조회 에러 ({ticker}): {e}")
+    return '', '', ''
+
+def get_sector_info(ticker, force=False):
+    wiki_sec = clean_sector(wiki_sectors.get(ticker, ''))
+    wiki_sub = wiki_sub_industries.get(ticker, '')
+    wiki_nm = wiki_names.get(ticker, '')
+    
+    # If not forcing check and already cached in db, use cache
+    if not force and ticker in sector_db:
+        cached = sector_db[ticker]
+        return cached.get('sector', wiki_sec), cached.get('sub_industry', wiki_sub), cached.get('name', wiki_nm or ticker)
+        
+    # Cross-check Wikipedia vs Yahoo Finance API
+    print(f"   🔍 교차 점검 수행 중: {ticker}")
+    yf_sec, yf_sub, yf_nm = fetch_yahoo_sector_info(ticker)
+    
+    # Override SpaceX details specifically
+    if ticker == 'SPCX':
+        yf_sec = 'Aerospace & Defense'
+        yf_sub = 'Space Exploration'
+        yf_nm = 'SpaceX'
+        
+    final_sec = wiki_sec
+    final_sub = wiki_sub
+    final_nm = wiki_nm or yf_nm or ticker
+    
+    if yf_sec:
+        # Cross check values
+        if wiki_sec and wiki_sec != yf_sec:
+            print(f"   ⚠️ [교차 점검] 섹터 불일치 포착 ({ticker}): 위키피디아='{wiki_sec}' vs 야후='{yf_sec}' -> 야후 적용")
+            final_sec = yf_sec
+            final_sub = yf_sub
+        elif not wiki_sec:
+            final_sec = yf_sec
+            final_sub = yf_sub
+            
+    # Save/Update in Local Sector Cache
+    sector_db[ticker] = {
+        'sector': final_sec or wiki_sec or yf_sec,
+        'sub_industry': final_sub or wiki_sub or yf_sub,
+        'name': final_nm
     }
-    print(f"   성공: {len(sp500_list)}개 종목 완료")
-except Exception as e:
-    print(f"   ❌ S&P 500 에러: {e}")
-
-# --- 2. Nasdaq-100 ---
-print("\n" + "=" * 60)
-print("📊 Nasdaq-100 구성종목 가져오는 중...")
-try:
-    resp = requests.get("https://en.wikipedia.org/wiki/Nasdaq-100", headers=headers)
-    resp.raise_for_status()
-    ndx_tables = pd.read_html(resp.text)
     
-    ndx_df = None
-    for idx, t in enumerate(ndx_tables):
-        cols_str = ' '.join([str(c).lower() for c in t.columns])
-        if ('ticker' in cols_str or 'company' in cols_str) and len(t) >= 90:
-            ndx_df = t
-            print(f"   테이블 #{idx} 선택 (행: {len(t)})")
-            break
-            
-    if ndx_df is None:
-        for idx, t in enumerate(ndx_tables):
-            if len(t) >= 50:
-                ndx_df = t
-                print(f"   테이블 #{idx} 선택(fallback) (행: {len(t)})")
-                break
-                
-    if ndx_df is not None:
-        ticker_col = company_col = None
-        for c in ndx_df.columns:
-            cl = str(c).lower()
-            if 'ticker' in cl or 'symbol' in cl:
-                ticker_col = c
-            if 'company' in cl or 'security' in cl or 'name' in cl:
-                company_col = c
-        ticker_col = ticker_col or ndx_df.columns[1]
-        company_col = company_col or ndx_df.columns[0]
+    # Save cache update to disk
+    try:
+        with open(sectors_cache_path, 'w', encoding='utf-8') as f:
+            json.dump(sector_db, f, ensure_ascii=False, indent=2)
+    except:
+        pass
         
-        ndx_list = []
-        for _, row in ndx_df.iterrows():
-            ndx_list.append({
-                'ticker': str(row[ticker_col]).strip(),
-                'name': str(row[company_col]).strip()
-            })
-        results['nasdaq100'] = {
-            'count': len(ndx_list),
-            'constituents': ndx_list
-        }
-        print(f"   성공: {len(ndx_list)}개 종목 완료")
-    else:
-        print("   ❌ Nasdaq-100 테이블을 찾지 못했습니다.")
-except Exception as e:
-    print(f"   ❌ Nasdaq-100 에러: {e}")
+    return sector_db[ticker]['sector'], sector_db[ticker]['sub_industry'], sector_db[ticker]['name']
 
-# --- 3. Dow Jones ---
-print("\n" + "=" * 60)
-print("📊 Dow Jones Industrial Average 구성종목 가져오는 중...")
+stock_map = {}
+
+# S&P 500
+for s in sp500_list:
+    t = s['ticker']
+    sector, sub_industry, final_name = get_sector_info(t, force=force_check)
+    stock_map[t] = {
+        'ticker': t,
+        'name': final_name or s['name'],
+        'sector': sector,
+        'sub_industry': sub_industry,
+        'sp500': True,
+        'nasdaq100': False,
+        'dowjones': False,
+        'is_watchlist': False
+    }
+    if force_check:
+        time.sleep(0.15) # Delay if force checking to prevent 429
+
+# Nasdaq-100
+for s in ndx_list:
+    t = s['ticker']
+    if t in stock_map:
+        stock_map[t]['nasdaq100'] = True
+    else:
+        sector, sub_industry, final_name = get_sector_info(t, force=force_check)
+        stock_map[t] = {
+            'ticker': t,
+            'name': final_name or s['name'],
+            'sector': sector,
+            'sub_industry': sub_industry,
+            'sp500': False,
+            'nasdaq100': True,
+            'dowjones': False,
+            'is_watchlist': False
+        }
+        if force_check:
+            time.sleep(0.15)
+
+# Dow Jones
+for s in dow_list:
+    t = s['ticker']
+    if t in stock_map:
+        stock_map[t]['dowjones'] = True
+        if not stock_map[t]['sector']:
+            sector, sub_industry, _ = get_sector_info(t, force=force_check)
+            if sector:
+                stock_map[t]['sector'] = sector
+                stock_map[t]['sub_industry'] = sub_industry
+                if force_check:
+                    time.sleep(0.15)
+    else:
+        sector, sub_industry, final_name = get_sector_info(t, force=force_check)
+        stock_map[t] = {
+            'ticker': t,
+            'name': final_name or s['name'],
+            'sector': sector,
+            'sub_industry': sub_industry,
+            'sp500': False,
+            'nasdaq100': False,
+            'dowjones': True,
+            'is_watchlist': False
+        }
+        if force_check:
+            time.sleep(0.15)
+
+# Inject Watchlist Stocks
+# 5 Watchlist: SpaceX (SPCX), Tesla, Samsung, SK Hynix, Micron
+watchlist_tickers = {
+    'TSLA': 'Tesla, Inc.',
+    'MU': 'Micron Technology, Inc.',
+    '005930.KS': 'Samsung Electronics Co., Ltd.',
+    '000660.KS': 'SK Hynix Inc.',
+    'SPCX': 'SpaceX'
+}
+
+for wt, wname in watchlist_tickers.items():
+    if wt in stock_map:
+        stock_map[wt]['is_watchlist'] = True
+        if wt == 'SPCX':
+            stock_map[wt]['name'] = wname
+    else:
+        sector, sub_industry, _ = get_sector_info(wt, force=force_check)
+        stock_map[wt] = {
+            'ticker': wt,
+            'name': wname,
+            'sector': sector or ('Aerospace & Defense' if wt == 'SPCX' else 'Technology'),
+            'sub_industry': sub_industry or ('Space Exploration' if wt == 'SPCX' else 'Semiconductors'),
+            'sp500': False,
+            'nasdaq100': False,
+            'dowjones': False,
+            'is_watchlist': True
+        }
+        if force_check:
+            time.sleep(0.15)
+
+print(f"   총 고유 구성종목 수 (관심종목 포함): {len(stock_map)}개")
+
+# Save Local Sector Database cache one last time
 try:
-    resp = requests.get("https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average", headers=headers)
-    resp.raise_for_status()
-    dow_tables = pd.read_html(resp.text)
-    
-    dow_df = None
-    for idx, t in enumerate(dow_tables):
-        cols_str = ' '.join([str(c).lower() for c in t.columns])
-        if ('symbol' in cols_str or 'ticker' in cols_str) and (len(t) == 30 or len(t) == 31):
-            dow_df = t
-            print(f"   테이블 #{idx} 선택 (행: {len(t)})")
-            break
-            
-    if dow_df is not None:
-        ticker_col = company_col = sector_col = None
-        for c in dow_df.columns:
-            cl = str(c).lower()
-            if 'symbol' in cl or 'ticker' in cl:
-                ticker_col = c
-            if 'company' in cl or 'name' in cl:
-                company_col = c
-            if 'sector' in cl:
-                sector_col = c
-        ticker_col = ticker_col or 'Symbol'
-        company_col = company_col or 'Company'
-        sector_col = sector_col or 'Sector'
-        
-        dow_list = []
-        for _, row in dow_df.iterrows():
-            dow_list.append({
-                'ticker': str(row[ticker_col]).strip(),
-                'name': str(row[company_col]).strip(),
-                'sector': str(row[sector_col]).strip() if sector_col in dow_df.columns else ''
-            })
-        results['dowjones'] = {
-            'count': len(dow_list),
-            'constituents': dow_list
-        }
-        print(f"   성공: {len(dow_list)}개 종목 완료")
-    else:
-        print("   ❌ Dow Jones 테이블을 찾지 못했습니다.")
+    with open(sectors_cache_path, 'w', encoding='utf-8') as f:
+        json.dump(sector_db, f, ensure_ascii=False, indent=2)
+    print(f"💾 로컬 섹터 DB 업데이트 저장 완료 ({len(sector_db)}개 종목)")
 except Exception as e:
-    print(f"   ❌ Dow Jones 에러: {e}")
+    print(f"⚠️ 로컬 섹터 DB 저장 실패: {e}")
 
-# --- Summary ---
+# --- 4. Bulk Download Price History using yfinance ---
 print("\n" + "=" * 60)
-print("📋 요약")
-print("=" * 60)
-for idx_name, data in results.items():
-    print(f"  {idx_name.upper():12s}: {data['count']}개 종목")
+print("📈 야후 파이낸스(yfinance)로부터 가격 이력 벌크 다운로드 중...")
 
-# Save JSON
-import datetime
-kst_date = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
-results['date'] = kst_date.strftime("%Y-%m-%d")
+# Build list of tickers to fetch
+tickers_to_fetch = []
+ticker_mapping = {} # yfinance_ticker -> original_ticker
 
+for t in stock_map.keys():
+    yf_t = t
+    if not t.endswith('.KS'):
+        yf_t = t.replace('.', '-')
+    tickers_to_fetch.append(yf_t)
+    ticker_mapping[yf_t] = t
+
+# Fetch in batches of 100
+batch_size = 100
+all_data = {}
+batches = [tickers_to_fetch[i:i + batch_size] for i in range(0, len(tickers_to_fetch), batch_size)]
+
+for idx, batch in enumerate(batches):
+    print(f"   다운로드 중 batch {idx+1}/{len(batches)} ({len(batch)}개 종목)...")
+    try:
+        df = yf.download(batch, period="1y", interval="1d", auto_adjust=True, group_by="ticker", progress=False)
+        
+        if isinstance(df.columns, pd.MultiIndex):
+            for yf_ticker in batch:
+                orig_ticker = ticker_mapping[yf_ticker]
+                if yf_ticker in df.columns.levels[0]:
+                    ticker_df = df[yf_ticker]
+                    closes = ticker_df['Close'].dropna().tolist()
+                    if closes:
+                        all_data[orig_ticker] = closes
+        else:
+            yf_ticker = batch[0]
+            orig_ticker = ticker_mapping[yf_ticker]
+            closes = df['Close'].dropna().tolist()
+            if closes:
+                all_data[orig_ticker] = closes
+    except Exception as e:
+        print(f"   ❌ Batch {idx+1} 에러: {e}")
+
+print(f"   다운로드 완료: {len(all_data)}개 종목 성공")
+
+# --- Helper functions for technical indicators ---
+
+def calc_ema(closes, period):
+    """Exponential Moving Average using standard multiplier 2/(period+1)."""
+    if len(closes) < period:
+        return None
+    k = 2.0 / (period + 1)
+    ema = sum(closes[:period]) / period  # seed with SMA
+    for price in closes[period:]:
+        ema = price * k + ema * (1 - k)
+    return ema
+
+def calc_sma(closes, period):
+    """Simple Moving Average."""
+    if len(closes) < period:
+        return None
+    return sum(closes[-period:]) / period
+
+def calc_rsi(closes, period=14):
+    """Wilder's RSI using smoothed moving averages."""
+    if len(closes) < period + 1:
+        return None
+    changes = [closes[i] - closes[i - 1] for i in range(1, len(closes))]
+    gains = [max(c, 0) for c in changes]
+    losses = [abs(min(c, 0)) for c in changes]
+    # Initial average gain/loss (SMA seed)
+    avg_gain = sum(gains[:period]) / period
+    avg_loss = sum(losses[:period]) / period
+    # Wilder smoothing for remaining periods
+    for i in range(period, len(changes)):
+        avg_gain = (avg_gain * (period - 1) + gains[i]) / period
+        avg_loss = (avg_loss * (period - 1) + losses[i]) / period
+    if avg_loss == 0:
+        return 100.0
+    rs = avg_gain / avg_loss
+    return 100.0 - (100.0 / (1.0 + rs))
+
+# --- 5. Calculate Momentum Metrics ---
+print("\n" + "=" * 60)
+print("🧮 모멘텀 지표 연산 중...")
+stocks_output = []
+
+for t, s in stock_map.items():
+    closes = all_data.get(t, [])
+    
+    price = None
+    pct_1d = None
+    pct_1w = None
+    pct_1m = None
+    pct_3m = None
+    pct_1y = None
+    dist_high = None
+    dist_low = None
+    dist_ma50 = None
+    dist_ma200 = None
+    # New technical indicators
+    ema_signal = None    # 1=below both, 2=between, 3=above both
+    dist_sma20 = None    # (price - SMA20) / SMA20 * 100
+    rsi14 = None         # Wilder's RSI-14
+    
+    if closes:
+        price = closes[-1]
+        
+        # 1D Change
+        if len(closes) >= 2:
+            pct_1d = (price - closes[-2]) / closes[-2] * 100
+            
+        # 1W Change (5 trading days)
+        if len(closes) >= 6:
+            pct_1w = (price - closes[-6]) / closes[-6] * 100
+            
+        # 1M Change (21 trading days)
+        if len(closes) >= 22:
+            pct_1m = (price - closes[-22]) / closes[-22] * 100
+            
+        # 3M Change (63 trading days)
+        if len(closes) >= 64:
+            pct_3m = (price - closes[-64]) / closes[-64] * 100
+            
+        # 1Y Change (approx 252 trading days)
+        if len(closes) >= 252:
+            pct_1y = (price - closes[-252]) / closes[-252] * 100
+        elif len(closes) > 0:
+            pct_1y = (price - closes[0]) / closes[0] * 100
+            
+        # 52W High / Low
+        high_52w = max(closes)
+        low_52w = min(closes)
+        if high_52w > 0:
+            dist_high = (price - high_52w) / high_52w * 100
+        if low_52w > 0:
+            dist_low = (price - low_52w) / low_52w * 100
+            
+        # 50MA and 200MA
+        ma50 = calc_sma(closes, 50)
+        if ma50 and ma50 > 0:
+            dist_ma50 = (price - ma50) / ma50 * 100
+        ma200 = calc_sma(closes, 200)
+        if ma200 and ma200 > 0:
+            dist_ma200 = (price - ma200) / ma200 * 100
+        
+        # --- New Technical Indicators ---
+        
+        # EMA8 & EMA21 → Star Rating
+        ema8 = calc_ema(closes, 8)
+        ema21 = calc_ema(closes, 21)
+        if ema8 is not None and ema21 is not None:
+            above_ema8 = price > ema8
+            above_ema21 = price > ema21
+            if above_ema8 and above_ema21:
+                ema_signal = 3   # ⭐⭐⭐ above both
+            elif (above_ema8 and not above_ema21) or (not above_ema8 and above_ema21):
+                ema_signal = 2   # ⭐⭐ between
+            else:
+                ema_signal = 1   # ⭐ below both
+        
+        # SMA20 이격도
+        sma20 = calc_sma(closes, 20)
+        if sma20 and sma20 > 0:
+            dist_sma20 = (price - sma20) / sma20 * 100
+        
+        # RSI-14
+        rsi14 = calc_rsi(closes, 14)
+
+    def rnd(val):
+        return round(val, 2) if val is not None else None
+
+    stocks_output.append({
+        'ticker': s['ticker'],
+        'name': s['name'],
+        'sector': s['sector'],
+        'sub_industry': s['sub_industry'],
+        'sp500': s['sp500'],
+        'nasdaq100': s['nasdaq100'],
+        'dowjones': s['dowjones'],
+        'is_watchlist': s['is_watchlist'],
+        'is_private': False,
+        'price': rnd(price),
+        'pct_1d': rnd(pct_1d),
+        'pct_1w': rnd(pct_1w),
+        'pct_1m': rnd(pct_1m),
+        'pct_3m': rnd(pct_3m),
+        'pct_1y': rnd(pct_1y),
+        'ema_signal': ema_signal,       # int 1/2/3 or null
+        'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
+        'rsi14': rnd(rsi14),            # RSI-14 수치
+        'dist_high': rnd(dist_high),
+        'dist_low': rnd(dist_low),
+        'dist_ma50': rnd(dist_ma50),
+        'dist_ma200': rnd(dist_ma200)
+    })
+
+results = {
+    'date': datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d"),
+    'stocks': stocks_output
+}
+
+# --- 6. Save Output ---
 output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 os.makedirs(output_dir, exist_ok=True)
+
+# Save JSON
 json_path = os.path.join(output_dir, "index_constituents.json")
 with open(json_path, 'w', encoding='utf-8') as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
