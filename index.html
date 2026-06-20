@@ -1084,9 +1084,14 @@
             if (targetKoactData && koactTbody) {
                 koactTbody.innerHTML = '';
                 targetKoactData.koact_holdings.forEach((item, idx) => {
+                    const etfWatchlist = ['SPACEX', 'SPCX', 'TESLA', 'TSLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON', 'MU'];
+                    const nUp = (item.name || '').toUpperCase();
+                    const tUp = (item.ticker || '').toUpperCase();
+                    const isStar = etfWatchlist.some(w => nUp.includes(w) || tUp === w);
+                    const star = isStar ? '<span style="color: #fbbf24; font-size: 0.7rem;">⭐⭐</span> ' : '';
                     const row = `<tr data-ticker="${item.ticker || ''}">
                         <td class="rank">${idx + 1}</td>
-                        <td>${item.name}</td>
+                        <td>${star}${item.name}</td>
                         <td class="weight">${item.weight.toFixed(2)}%</td>
                     </tr>`;
                     koactTbody.innerHTML += row;
@@ -1110,9 +1115,14 @@
             if (targetTimeData && timeTbody) {
                 timeTbody.innerHTML = '';
                 targetTimeData.time_holdings.forEach((item, idx) => {
+                    const etfWatchlist = ['SPACEX', 'SPCX', 'TESLA', 'TSLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON', 'MU'];
+                    const nUp = (item.name || '').toUpperCase();
+                    const tUp = (item.ticker || '').toUpperCase();
+                    const isStar = etfWatchlist.some(w => nUp.includes(w) || tUp === w);
+                    const star = isStar ? '<span style="color: #fbbf24; font-size: 0.7rem;">⭐⭐</span> ' : '';
                     const row = `<tr data-ticker="${item.ticker || ''}">
                         <td class="rank">${idx + 1}</td>
-                        <td>${item.name}</td>
+                        <td>${star}${item.name}</td>
                         <td class="weight">${item.weight.toFixed(2)}%</td>
                     </tr>`;
                     timeTbody.innerHTML += row;
