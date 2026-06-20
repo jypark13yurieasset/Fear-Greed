@@ -1011,7 +1011,14 @@
                     
                     const rowClass = shouldHighlight ? 'class="close-gap-highlight"' : '';
                     
-                    const row = `<tr ${rowClass}>
+                    // 관심종목 하이라이트 (SpaceX, Tesla, Samsung, SK Hynix, Micron)
+                    const watchlist = ['SPACEX', 'TESLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON'];
+                    const nameUpper = (asset.name || '').toUpperCase();
+                    const codeUpper = (asset.code || '').toUpperCase();
+                    const isWatchlist = watchlist.some(w => nameUpper.includes(w) || codeUpper.includes(w));
+                    const finalRowClass = isWatchlist ? 'class="common-top5"' : rowClass;
+                    
+                    const row = `<tr ${finalRowClass}>
                         <td class="rank" style="font-weight: 700; color: var(--text-secondary); text-align: center; width: 50px;">${asset.rank}</td>
                         <td style="font-weight: 600;">${asset.name}</td>
                         <td style="color: var(--text-secondary); text-align: right; font-size: 0.8rem;">${asset.code}</td>
