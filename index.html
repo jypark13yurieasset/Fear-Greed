@@ -632,18 +632,7 @@
             color: rgba(45, 212, 191, 0.5) !important;
         }
 
-        /* Common top-5 holding highlight (warm amber — opposite of cool teal/purple unique) */
-        .common-top5 {
-            background-color: rgba(251, 191, 36, 0.10) !important;
-            transition: background-color 0.2s ease;
-        }
-        .common-top5 td {
-            color: #fbbf24 !important;
-            font-weight: 600;
-        }
-        .common-top5 td.rank {
-            color: rgba(251, 191, 36, 0.6) !important;
-        }
+
         /* ─── Navigation Bar ─── */
         .nav-tabs {
             display: flex;
@@ -686,13 +675,13 @@
     <main class="container">
         <header class="dashboard-header">
             <div class="header-main">
-                <h1 class="dashboard-title">Jypark13 Investment</h1>
+                <h1 class="dashboard-title">Jypark13 Investment Dashboard</h1>
                 <div class="nav-tabs">
                     <a href="./index.html" class="nav-tab active">Dashboard</a>
                     <a href="./screener.html" class="nav-tab">Screener</a>
                 </div>
             </div>
-            <p class="dashboard-subtitle">실시간 금융 시장 데이터 시각화 &nbsp;|&nbsp; <span id="update-date">최근 업데이트: -</span></p>
+            <p class="dashboard-subtitle">실시간 금융 시장 데이터 &nbsp;|&nbsp; <span id="update-date">기준일: -</span></p>
         </header>
 
         <div class="dashboard-grid">
@@ -915,7 +904,7 @@
 
             // 1. 오늘의 CNN Fear & Greed 반영
             document.getElementById('today-fng').innerText = latestValue;
-            document.getElementById('update-date').innerText = `최근 업데이트: ${latestDate}`;
+            document.getElementById('update-date').innerText = `기준일: ${latestDate}`;
 
             // 지수 크기에 따라 상태 텍스트와 색상 다르게 지정
             const statusEl = document.getElementById('fng-status');
@@ -1263,11 +1252,9 @@
                 const name = nameCell ? nameCell.innerText.trim() : '';
                 const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
                 
-                row.classList.remove('unique-holding', 'common-top5');
+                row.classList.remove('unique-holding');
                 if (name && !hasMatch(key, timeKeys)) {
                     row.classList.add('unique-holding');
-                } else if (name && idx < 5 && hasMatch(key, timeKeys.slice(0, 5))) {
-                    row.classList.add('common-top5');
                 }
             });
             
@@ -1278,11 +1265,9 @@
                 const name = nameCell ? nameCell.innerText.trim() : '';
                 const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
                 
-                row.classList.remove('unique-holding', 'common-top5');
+                row.classList.remove('unique-holding');
                 if (name && !hasMatch(key, koactKeys)) {
                     row.classList.add('unique-holding');
-                } else if (name && idx < 5 && hasMatch(key, koactKeys.slice(0, 5))) {
-                    row.classList.add('common-top5');
                 }
             });
         }
