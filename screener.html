@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Screener | Gary Park Investment Dashboard</title>
+    <title>Index Screener | Jypark13 Investment</title>
     <meta name="description" content="S&P 500, Nasdaq-100, Dow Jones 인덱스 구성종목을 검색·필터링·비교하는 스크리닝 도구입니다.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -702,6 +702,7 @@
                             <th data-sort="pct_1d" style="text-align:right; width:70px;">1D</th>
                             <th data-sort="pct_1w" style="text-align:right; width:70px;">1W</th>
                             <th data-sort="pct_1m" style="text-align:right; width:70px;">1M</th>
+                            <th data-sort="pct_6m" style="text-align:right; width:70px;">6M</th>
                             <th data-sort="pct_ytd" style="text-align:right; width:70px;">YTD</th>
                             <th data-sort="pct_1y" style="text-align:right; width:70px;">1Y</th>
                             <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: ⭐⭐⭐ 두 이평선 모두 상회 / ⭐⭐ 사이 / ⭐ 두 이평선 모두 하회">EMA8/21</th>
@@ -712,7 +713,7 @@
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="15" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="16" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -756,7 +757,7 @@
                     initScreener(INDEX_DATA);
                 } else {
                     document.getElementById('screener-body').innerHTML =
-                        `<tr><td colspan="15" style="text-align:center;padding:40px;color:#ef4444;">❌ 데이터 로딩 실패</td></tr>`;
+                        `<tr><td colspan="16" style="text-align:center;padding:40px;color:#ef4444;">❌ 데이터 로딩 실패</td></tr>`;
                 }
             });
 
@@ -1002,7 +1003,7 @@
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="15" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="16" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
@@ -1021,6 +1022,7 @@
                     <td class="col-change">${formatChange(stock.pct_1d)}</td>
                     <td class="col-change">${formatChange(stock.pct_1w)}</td>
                     <td class="col-change">${formatChange(stock.pct_1m)}</td>
+                    <td class="col-change">${formatChange(stock.pct_6m)}</td>
                     <td class="col-change">${formatChange(stock.pct_ytd)}</td>
                     <td class="col-change">${formatChange(stock.pct_1y)}</td>
                     <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>

@@ -430,6 +430,9 @@ for t, s in stock_map.items():
         # 3M Change (3 calendar months)
         pct_3m = calc_pct_change(today_date - relativedelta(months=3))
             
+        # 6M Change (6 calendar months)
+        pct_6m = calc_pct_change(today_date - relativedelta(months=6))
+            
         # YTD Change (Year to Date, from the end of previous year)
         ytd_target_date = datetime.date(today_date.year - 1, 12, 31)
         pct_ytd = calc_pct_change(ytd_target_date)
@@ -495,6 +498,7 @@ for t, s in stock_map.items():
         'pct_1w': rnd(pct_1w),
         'pct_1m': rnd(pct_1m),
         'pct_3m': rnd(pct_3m),
+        'pct_6m': rnd(pct_6m),
         'pct_ytd': rnd(pct_ytd),
         'pct_1y': rnd(pct_1y),
         'ema_signal': ema_signal,       # int 1/2/3 or null
