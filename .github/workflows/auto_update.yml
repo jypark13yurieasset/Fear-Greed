@@ -2,9 +2,9 @@ name: Auto Daily Data Update
 
 on:
   schedule:
-    # 한국 시간(KST) 매일 오전 7시 = UTC 매일 오후 10시 (22:00)
+    # 한국 시간(KST) 매일 오전 8시 = UTC 매일 오후 11시 (23:00)
     # cron 형식: '분 시 일 월 요일' (UTC 기준)
-    - cron: '0 22 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch: # GitHub 웹페이지에서 수동으로 '실행' 버튼을 눌러 돌릴 수도 있게 합니다.
 
 permissions:
@@ -42,5 +42,6 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add data.json data.js data/index_constituents.json data/index_constituents.js data/screener_sectors.json
         # 변경사항이 있을 때만 커밋을 수행하여 에러를 방지합니다.
         git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update market data and assets ranking [skip ci]" && git push)

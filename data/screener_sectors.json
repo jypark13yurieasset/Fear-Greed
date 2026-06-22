@@ -2598,5 +2598,25 @@
     "sector": "Information Technology",
     "sub_industry": "Consumer Electronics",
     "name": "Samsung Electronics Co., Ltd."
+  },
+  "NBIS": {
+    "sector": "Communication Services",
+    "sub_industry": "Internet Content & Information",
+    "name": "Nebius Group N.V."
+  },
+  "ALAB": {
+    "sector": "Information Technology",
+    "sub_industry": "Semiconductors",
+    "name": "Astera Labs, Inc."
+  },
+  "RKLB": {
+    "sector": "Industrials",
+    "sub_industry": "Aerospace & Defense",
+    "name": "Rocket Lab Corporation"
+  },
+  "CRWV": {
+    "sector": "Information Technology",
+    "sub_industry": "Software - Infrastructure",
+    "name": "CoreWeave, Inc."
   }
 }

@@ -436,7 +436,8 @@ def get_timefolio_holdings():
         
         # 기준일을 스크래핑한 과거 날짜가 아닌 '오늘 날짜(업데이트 실행일)'로 설정
         import datetime
-        date_str = datetime.date.today().strftime("%Y-%m-%d")
+        kst_tz = datetime.timezone(datetime.timedelta(hours=9))
+        date_str = datetime.datetime.now(kst_tz).strftime("%Y-%m-%d")
             
         return {
             'date': date_str,
@@ -447,7 +448,8 @@ def get_timefolio_holdings():
         return None
 
 def main():
-    today = datetime.date.today()
+    kst_tz = datetime.timezone(datetime.timedelta(hours=9))
+    today = datetime.datetime.now(kst_tz).date()
     today_str = today.isoformat()
     
     # 1. 주말(토요일=5, 일요일=6)인 경우 업데이트를 건너뜀
