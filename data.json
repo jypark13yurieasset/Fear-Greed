@@ -1015,5 +1015,248 @@
                 "weight": 3.04
             }
         ]
+    },
+    "2026-06-23": {
+        "fear_and_greed": 35,
+        "sp500_price": 7472.79,
+        "sp500_change": -0.37,
+        "nasdaq_price": 26166.6,
+        "nasdaq_change": -1.32,
+        "vix_price": 17.28,
+        "vix_change": 2.98,
+        "dxy_price": 101.01,
+        "dxy_change": 0.16,
+        "assets_top20": [
+            {
+                "rank": 1,
+                "name": "Gold",
+                "code": "GOLD",
+                "mcap": "$29.287 T"
+            },
+            {
+                "rank": 2,
+                "name": "NVIDIA",
+                "code": "NVDA",
+                "mcap": "$5.053 T"
+            },
+            {
+                "rank": 3,
+                "name": "Apple",
+                "code": "AAPL",
+                "mcap": "$4.362 T"
+            },
+            {
+                "rank": 4,
+                "name": "Alphabet (Google)",
+                "code": "GOOG",
+                "mcap": "$4.256 T"
+            },
+            {
+                "rank": 5,
+                "name": "Silver",
+                "code": "SILVER",
+                "mcap": "$3.669 T"
+            },
+            {
+                "rank": 6,
+                "name": "Microsoft",
+                "code": "MSFT",
+                "mcap": "$2.728 T"
+            },
+            {
+                "rank": 7,
+                "name": "Amazon",
+                "code": "AMZN",
+                "mcap": "$2.504 T"
+            },
+            {
+                "rank": 8,
+                "name": "TSMC",
+                "code": "TSM",
+                "mcap": "$2.425 T"
+            },
+            {
+                "rank": 9,
+                "name": "SpaceX",
+                "code": "SPCX",
+                "mcap": "$2.036 T"
+            },
+            {
+                "rank": 10,
+                "name": "Broadcom",
+                "code": "AVGO",
+                "mcap": "$1.865 T"
+            },
+            {
+                "rank": 11,
+                "name": "Saudi Aramco",
+                "code": "2222.SR",
+                "mcap": "$1.703 T"
+            },
+            {
+                "rank": 12,
+                "name": "Tesla",
+                "code": "TSLA",
+                "mcap": "$1.521 T"
+            },
+            {
+                "rank": 13,
+                "name": "Samsung",
+                "code": "005930.KS",
+                "mcap": "$1.513 T"
+            },
+            {
+                "rank": 14,
+                "name": "Meta Platforms (Facebook)",
+                "code": "META",
+                "mcap": "$1.431 T"
+            },
+            {
+                "rank": 15,
+                "name": "Micron Technology",
+                "code": "MU",
+                "mcap": "$1.366 T"
+            },
+            {
+                "rank": 16,
+                "name": "SK Hynix",
+                "code": "000660.KS",
+                "mcap": "$1.350 T"
+            },
+            {
+                "rank": 17,
+                "name": "Bitcoin",
+                "code": "BTC",
+                "mcap": "$1.280 T"
+            },
+            {
+                "rank": 18,
+                "name": "Berkshire Hathaway",
+                "code": "BRK-B",
+                "mcap": "$1.054 T"
+            },
+            {
+                "rank": 19,
+                "name": "Eli Lilly",
+                "code": "LLY",
+                "mcap": "$982.77 B"
+            },
+            {
+                "rank": 20,
+                "name": "Vanguard S&P 500 ETF",
+                "code": "VOO",
+                "mcap": "$982.25 B"
+            }
+        ],
+        "aaii_bullish": 35.9,
+        "aaii_neutral": 23.1,
+        "aaii_bearish": 41.0,
+        "aaii_date": "2026-06-17",
+        "koact_date": "2026-06-23",
+        "koact_holdings": [
+            {
+                "name": "MICRON TECH",
+                "ticker": "MU",
+                "weight": 7.17
+            },
+            {
+                "name": "ARM Holdings PLC",
+                "ticker": "ARM",
+                "weight": 7.12
+            },
+            {
+                "name": "ADVANCED MICRO DEVICES",
+                "ticker": "AMD",
+                "weight": 6.66
+            },
+            {
+                "name": "Sandisk Corp/DE",
+                "ticker": "SNDK",
+                "weight": 6.64
+            },
+            {
+                "name": "INTEL Corp",
+                "ticker": "INTC",
+                "weight": 6.21
+            },
+            {
+                "name": "BLOOM ENERGY CORPORATION",
+                "ticker": "BE",
+                "weight": 4.58
+            },
+            {
+                "name": "NVIDIA Corp",
+                "ticker": "NVDA",
+                "weight": 4.44
+            },
+            {
+                "name": "ALPHABET INC-CL A",
+                "ticker": "GOOGL",
+                "weight": 4.27
+            },
+            {
+                "name": "WESTERN DIGITAL",
+                "ticker": "WDC",
+                "weight": 4.05
+            },
+            {
+                "name": "SEAGATE TECHNOLOGY",
+                "ticker": "STX",
+                "weight": 3.58
+            }
+        ],
+        "time_date": "2026-06-23",
+        "time_holdings": [
+            {
+                "name": "Micron Technology Inc",
+                "ticker": "MU",
+                "weight": 7.16
+            },
+            {
+                "name": "Sandisk Corp",
+                "ticker": "SNDK",
+                "weight": 7.03
+            },
+            {
+                "name": "Intel Corp",
+                "ticker": "INTC",
+                "weight": 5.51
+            },
+            {
+                "name": "ARM Holdings PLC",
+                "ticker": "ARM",
+                "weight": 5.39
+            },
+            {
+                "name": "NVIDIA Corp",
+                "ticker": "NVDA",
+                "weight": 4.38
+            },
+            {
+                "name": "Marvell Technology Inc",
+                "ticker": "MRVL",
+                "weight": 3.81
+            },
+            {
+                "name": "Western Digital Corp",
+                "ticker": "WDC",
+                "weight": 3.6
+            },
+            {
+                "name": "Seagate Technology Holdings PLC",
+                "ticker": "STX",
+                "weight": 3.31
+            },
+            {
+                "name": "Lam Research Corp",
+                "ticker": "LRCX",
+                "weight": 3.23
+            },
+            {
+                "name": "Advanced Micro Devices Inc",
+                "ticker": "AMD",
+                "weight": 3.19
+            }
+        ]
     }
 }
