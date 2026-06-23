@@ -1017,21 +1017,21 @@ window.fng_data = {
         ]
     },
     "2026-06-23": {
-        "fear_and_greed": 35,
+        "fear_and_greed": 34,
         "sp500_price": 7472.79,
         "sp500_change": -0.37,
         "nasdaq_price": 26166.6,
         "nasdaq_change": -1.32,
-        "vix_price": 17.28,
-        "vix_change": 2.98,
-        "dxy_price": 101.01,
-        "dxy_change": 0.16,
+        "vix_price": 19.93,
+        "vix_change": 18.77,
+        "dxy_price": 101.17,
+        "dxy_change": 0.15,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$29.287 T"
+                "mcap": "$28.832 T"
             },
             {
                 "rank": 2,
@@ -1055,7 +1055,7 @@ window.fng_data = {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.669 T"
+                "mcap": "$3.513 T"
             },
             {
                 "rank": 6,
@@ -1091,7 +1091,7 @@ window.fng_data = {
                 "rank": 11,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.703 T"
+                "mcap": "$1.705 T"
             },
             {
                 "rank": 12,
@@ -1101,33 +1101,33 @@ window.fng_data = {
             },
             {
                 "rank": 13,
-                "name": "Samsung",
-                "code": "005930.KS",
-                "mcap": "$1.513 T"
-            },
-            {
-                "rank": 14,
                 "name": "Meta Platforms (Facebook)",
                 "code": "META",
                 "mcap": "$1.431 T"
             },
             {
-                "rank": 15,
+                "rank": 14,
                 "name": "Micron Technology",
                 "code": "MU",
                 "mcap": "$1.366 T"
             },
             {
+                "rank": 15,
+                "name": "Samsung",
+                "code": "005930.KS",
+                "mcap": "$1.326 T"
+            },
+            {
                 "rank": 16,
-                "name": "SK Hynix",
-                "code": "000660.KS",
-                "mcap": "$1.350 T"
+                "name": "Bitcoin",
+                "code": "BTC",
+                "mcap": "$1.246 T"
             },
             {
                 "rank": 17,
-                "name": "Bitcoin",
-                "code": "BTC",
-                "mcap": "$1.280 T"
+                "name": "SK Hynix",
+                "code": "000660.KS",
+                "mcap": "$1.182 T"
             },
             {
                 "rank": 18,
@@ -1148,9 +1148,9 @@ window.fng_data = {
                 "mcap": "$982.25 B"
             }
         ],
-        "aaii_bullish": 35.9,
-        "aaii_neutral": 23.1,
-        "aaii_bearish": 41.0,
+        "aaii_bullish": 36.4,
+        "aaii_neutral": 22.6,
+        "aaii_bearish": 40.9,
         "aaii_date": "2026-06-17",
         "koact_date": "2026-06-23",
         "koact_holdings": [
