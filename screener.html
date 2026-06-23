@@ -679,6 +679,7 @@
                     <button class="preset-btn" id="preset-breakout" onclick="selectPreset('breakout')">신고가 임박 🚀</button>
                     <button class="preset-btn" id="preset-leaders" onclick="selectPreset('leaders')">단기 주도주 🔥</button>
                     <button class="preset-btn" id="preset-golden" onclick="selectPreset('golden')">상승 정배열 📈</button>
+                    <button class="preset-btn" id="preset-overbought" onclick="selectPreset('overbought')">과매수 🔴</button>
                     <button class="preset-btn" id="preset-watchlist" onclick="selectPreset('watchlist')">나의 관심종목 ⭐⭐</button>
                 </div>
             </div>
@@ -837,6 +838,8 @@
                 } else if (activePreset === 'golden') {
                     if (stock.dist_ma50 === null || stock.dist_ma50 <= 0) return false;
                     if (stock.dist_ma200 === null || stock.dist_ma200 <= 0) return false;
+                } else if (activePreset === 'overbought') {
+                    if (stock.rsi14 === null || stock.rsi14 <= 70) return false;
                 } else if (activePreset === 'watchlist') {
                     if (!stock.is_watchlist) return false;
                 }
