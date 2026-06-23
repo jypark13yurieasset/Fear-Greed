@@ -1017,21 +1017,21 @@
         ]
     },
     "2026-06-23": {
-        "fear_and_greed": 34,
+        "fear_and_greed": 33,
         "sp500_price": 7472.79,
         "sp500_change": -0.37,
         "nasdaq_price": 26166.6,
         "nasdaq_change": -1.32,
-        "vix_price": 19.93,
-        "vix_change": 18.77,
-        "dxy_price": 101.17,
-        "dxy_change": 0.15,
+        "vix_price": 20.21,
+        "vix_change": 16.96,
+        "dxy_price": 101.29,
+        "dxy_change": 0.27,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$28.832 T"
+                "mcap": "$28.694 T"
             },
             {
                 "rank": 2,
@@ -1055,7 +1055,7 @@
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.513 T"
+                "mcap": "$3.477 T"
             },
             {
                 "rank": 6,
@@ -1091,7 +1091,7 @@
                 "rank": 11,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.705 T"
+                "mcap": "$1.700 T"
             },
             {
                 "rank": 12,
@@ -1121,7 +1121,7 @@
                 "rank": 16,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.246 T"
+                "mcap": "$1.245 T"
             },
             {
                 "rank": 17,
@@ -1148,9 +1148,9 @@
                 "mcap": "$982.25 B"
             }
         ],
-        "aaii_bullish": 36.4,
+        "aaii_bullish": 36.5,
         "aaii_neutral": 22.6,
-        "aaii_bearish": 40.9,
+        "aaii_bearish": 40.8,
         "aaii_date": "2026-06-17",
         "koact_date": "2026-06-23",
         "koact_holdings": [

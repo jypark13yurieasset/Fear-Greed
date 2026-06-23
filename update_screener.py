@@ -100,6 +100,39 @@ sp500_list = fetch_slickcharts("https://www.slickcharts.com/sp500")
 ndx_list = fetch_slickcharts("https://www.slickcharts.com/nasdaq100")
 dow_list = fetch_slickcharts("https://www.slickcharts.com/dowjones")
 
+# Fallback to local cache if scraping fails (e.g., due to IP blocks in GitHub Actions)
+existing_sp500 = []
+existing_ndx = []
+existing_dow = []
+
+existing_json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "index_constituents.json")
+if os.path.exists(existing_json_path):
+    try:
+        with open(existing_json_path, 'r', encoding='utf-8') as f:
+            existing_data = json.load(f)
+            for stock in existing_data.get('stocks', []):
+                ticker = stock.get('ticker')
+                name = stock.get('name')
+                if stock.get('sp500'):
+                    existing_sp500.append({'ticker': ticker, 'name': name})
+                if stock.get('nasdaq100'):
+                    existing_ndx.append({'ticker': ticker, 'name': name})
+                if stock.get('dowjones'):
+                    existing_dow.append({'ticker': ticker, 'name': name})
+        print(f"   [캐시] 기존 저장된 구성종목 로드 완료: S&P 500={len(existing_sp500)}개, NDX={len(existing_ndx)}개, Dow={len(existing_dow)}개")
+    except Exception as e:
+        print(f"   ⚠️ 기존 구성종목 캐시 로드 에러: {e}")
+
+if not sp500_list and existing_sp500:
+    print("   ⚠️ S&P 500 SlickCharts 수집 실패. 기존 캐시 데이터를 복원합니다.")
+    sp500_list = existing_sp500
+if not ndx_list and existing_ndx:
+    print("   ⚠️ Nasdaq-100 SlickCharts 수집 실패. 기존 캐시 데이터를 복원합니다.")
+    ndx_list = existing_ndx
+if not dow_list and existing_dow:
+    print("   ⚠️ Dow Jones SlickCharts 수집 실패. 기존 캐시 데이터를 복원합니다.")
+    dow_list = existing_dow
+
 # --- 3. Sector Resolution with Cross-Checking ---
 print("\n" + "=" * 60)
 print("📋 구성종목 데이터 병합 및 섹터 교차 검증...")
@@ -514,6 +547,12 @@ results = {
     'date': datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d"),
     'stocks': stocks_output
 }
+
+# --- Safety Check: Ensure we don't save a truncated dataset ---
+if len(stocks_output) < 400:
+    print(f"\n❌ 에러: 생성할 구성종목 개수가 {len(stocks_output)}개로 너무 적습니다 (기준: 400개 이상).")
+    print("데이터 정합성 오류로 판단되어 저장 작업을 중단하고 종료합니다.")
+    sys.exit(1)
 
 # --- 6. Save Output ---
 output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
