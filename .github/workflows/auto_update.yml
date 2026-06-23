@@ -1,10 +1,6 @@
 name: Auto Daily Data Update
 
 on:
-  schedule:
-    # 한국 시간(KST) 매일 오전 8시 = UTC 매일 오후 11시 (23:00)
-    # cron 형식: '분 시 일 월 요일' (UTC 기준)
-    - cron: '0 23 * * *'
   workflow_dispatch: # GitHub 웹페이지에서 수동으로 '실행' 버튼을 눌러 돌릴 수도 있게 합니다.
 
 permissions:
