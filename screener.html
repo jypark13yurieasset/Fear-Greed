@@ -436,6 +436,15 @@
             font-size: 0.88rem;
             letter-spacing: 0.02em;
         }
+        .col-ticker a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+        .col-ticker a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
 
         .col-name {
             color: var(--text-secondary);
@@ -929,6 +938,17 @@
             applyFilters();
         });
 
+        // ─── TradingView URL generator ───
+        function getTradingViewUrl(ticker) {
+            let symbol = ticker;
+            if (ticker.endsWith('.KS')) {
+                symbol = 'KRX:' + ticker.replace('.KS', '');
+            } else if (ticker.endsWith('.KQ')) {
+                symbol = 'KRX:' + ticker.replace('.KQ', '');
+            }
+            return `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(symbol)}`;
+        }
+
         // ─── Price formatter ───
         function formatPrice(stock) {
             if (stock.is_private) return '<span class="badge-private">비상장</span>';
@@ -1018,7 +1038,7 @@
 
                 html += `<tr${rowClass}>
                     <td class="col-rank">${idx + 1}</td>
-                    <td class="col-ticker">${starBadge}${stock.ticker}</td>
+                    <td class="col-ticker">${starBadge}<a href="${getTradingViewUrl(stock.ticker)}" target="_blank" rel="noopener noreferrer">${stock.ticker}</a></td>
                     <td class="col-name">${stock.name}</td>
                     <td class="col-sector">${sectorDisplay}</td>
                     <td class="col-price">${formatPrice(stock)}</td>
