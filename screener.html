@@ -938,15 +938,12 @@
             applyFilters();
         });
 
-        // ─── TradingView URL generator ───
-        function getTradingViewUrl(ticker) {
-            let symbol = ticker;
-            if (ticker.endsWith('.KS')) {
-                symbol = 'KRX:' + ticker.replace('.KS', '');
-            } else if (ticker.endsWith('.KQ')) {
-                symbol = 'KRX:' + ticker.replace('.KQ', '');
+        // ─── Finviz URL generator ───
+        function getFinvizUrl(ticker) {
+            if (ticker.endsWith('.KS') || ticker.endsWith('.KQ')) {
+                return `https://finance.yahoo.com/quote/${ticker}`;
             }
-            return `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(symbol)}`;
+            return `https://finviz.com/quote.ashx?t=${encodeURIComponent(ticker)}`;
         }
 
         // ─── Price formatter ───
@@ -1038,7 +1035,7 @@
 
                 html += `<tr${rowClass}>
                     <td class="col-rank">${idx + 1}</td>
-                    <td class="col-ticker">${starBadge}<a href="${getTradingViewUrl(stock.ticker)}" target="_blank" rel="noopener noreferrer">${stock.ticker}</a></td>
+                    <td class="col-ticker">${starBadge}<a href="${getFinvizUrl(stock.ticker)}" target="_blank" rel="noopener noreferrer">${stock.ticker}</a></td>
                     <td class="col-name">${stock.name}</td>
                     <td class="col-sector">${sectorDisplay}</td>
                     <td class="col-price">${formatPrice(stock)}</td>
