@@ -689,6 +689,7 @@
                     <button class="preset-btn" id="preset-leaders" onclick="selectPreset('leaders')">단기 주도주 🔥</button>
                     <button class="preset-btn" id="preset-golden" onclick="selectPreset('golden')">상승 정배열 📈</button>
                     <button class="preset-btn" id="preset-overbought" onclick="selectPreset('overbought')">과매수 🔴</button>
+                    <button class="preset-btn" id="preset-epsgrowth" onclick="selectPreset('epsgrowth')">실적 성장 모멘텀 📈</button>
                     <button class="preset-btn" id="preset-watchlist" onclick="selectPreset('watchlist')">나의 관심종목 ⭐⭐</button>
                 </div>
             </div>
@@ -866,7 +867,7 @@
                 return true;
             });
 
-            // Special handling for 'leaders' preset
+            // Special handling for presets that limit the result set
             if (activePreset === 'leaders') {
                 const leaders = [...filteredStocks]
                     .filter(s => s.pct_1m !== null)
@@ -874,6 +875,13 @@
                     .slice(0, 50);
                 const leaderTickers = new Set(leaders.map(s => s.ticker));
                 filteredStocks = filteredStocks.filter(s => leaderTickers.has(s.ticker));
+            } else if (activePreset === 'epsgrowth') {
+                const growers = [...filteredStocks]
+                    .filter(s => s.eps_growth !== null)
+                    .sort((a, b) => b.eps_growth - a.eps_growth)
+                    .slice(0, 50);
+                const growerTickers = new Set(growers.map(s => s.ticker));
+                filteredStocks = filteredStocks.filter(s => growerTickers.has(s.ticker));
             }
 
             // Apply sort
