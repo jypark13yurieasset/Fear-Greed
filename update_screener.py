@@ -18,6 +18,7 @@ import urllib3
 from bs4 import BeautifulSoup
 from curl_cffi import requests as crequests
 from dateutil.relativedelta import relativedelta
+from concurrent.futures import ThreadPoolExecutor
 
 # Disable SSL warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -368,6 +369,53 @@ for idx, batch in enumerate(batches):
 
 print(f"   다운로드 완료: {len(all_data)}개 종목 성공")
 
+# --- 4.5 Fetch trailingPE and forwardPE ---
+print("\n" + "=" * 60)
+print("🔍 Finviz(우선) 및 야후 파이낸스(대체)로부터 PER, Forward PER 정보 조회 중 (병렬 처리)...")
+info_data = {}
+def fetch_info(item):
+    yf_t, orig_t = item
+    pe, fpe = None, None
+    
+    # Try Finviz first (only for US stocks)
+    if not orig_t.endswith('.KS'):
+        try:
+            finviz_t = orig_t.replace('-', '.')
+            url = f"https://finviz.com/quote.ashx?t={finviz_t}"
+            r = crequests.get(url, headers=headers, impersonate="chrome110", timeout=5)
+            if r.status_code == 200:
+                soup = BeautifulSoup(r.text, 'html.parser')
+                tds = soup.find_all('td')
+                for i, td in enumerate(tds):
+                    if td.text == 'P/E':
+                        pe_val = tds[i+1].text
+                        if pe_val != '-':
+                            pe = float(pe_val)
+                    if td.text == 'Forward P/E':
+                        fpe_val = tds[i+1].text
+                        if fpe_val != '-':
+                            fpe = float(fpe_val)
+        except Exception:
+            pass
+            
+    # Fallback to Yahoo Finance if Finviz failed or missing data
+    if pe is None or fpe is None:
+        try:
+            info = yf.Ticker(yf_t).info
+            if pe is None:
+                pe = info.get("trailingPE")
+            if fpe is None:
+                fpe = info.get("forwardPE")
+        except Exception:
+            pass
+
+    return orig_t, pe, fpe
+
+with ThreadPoolExecutor(max_workers=10) as executor:
+    results_info = list(executor.map(fetch_info, ticker_mapping.items()))
+for orig_t, pe, fpe in results_info:
+    info_data[orig_t] = {"trailingPE": pe, "forwardPE": fpe}
+
 # --- Helper functions for technical indicators ---
 
 def calc_ema(closes, period):
@@ -534,6 +582,8 @@ for t, s in stock_map.items():
         'pct_6m': rnd(pct_6m),
         'pct_ytd': rnd(pct_ytd),
         'pct_1y': rnd(pct_1y),
+        'trailingPE': rnd(info_data.get(t, {}).get("trailingPE")),
+        'forwardPE': rnd(info_data.get(t, {}).get("forwardPE")),
         'ema_signal': ema_signal,       # int 1/2/3 or null
         'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
         'rsi14': rnd(rsi14),            # RSI-14 수치
