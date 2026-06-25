@@ -434,6 +434,11 @@ def fetch_info(item):
                             if len(ems) >= 2:
                                 try: target_price = float(ems[1].text.replace(',', ''))
                                 except Exception: pass
+                mcap_elem = soup.select_one('#_market_sum')
+                if mcap_elem:
+                    mcap_text = mcap_elem.text.strip().replace('\t', '').replace('\n', '')
+                    if mcap_text:
+                        mcap = mcap_text + "원"
         except Exception:
             pass
             
@@ -698,7 +703,7 @@ for t, s in stock_map.items():
         'dist_ma50': rnd(dist_ma50),
         'dist_ma200': rnd(dist_ma200),
         'marketCap': info_data.get(t, {}).get("marketCap", "-"),
-        'targetPrice': rnd(target_price)
+        'targetPrice': rnd(info_data.get(t, {}).get("targetPrice"))
     })
 
 results = {
