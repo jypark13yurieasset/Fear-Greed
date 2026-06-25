@@ -687,6 +687,7 @@
                     <button class="preset-btn active" id="preset-all" onclick="selectPreset('all')">전체 종목</button>
                     <button class="preset-btn" id="preset-breakout" onclick="selectPreset('breakout')">신고가 임박 🚀</button>
                     <button class="preset-btn" id="preset-leaders" onclick="selectPreset('leaders')">단기 주도주 🔥</button>
+                    <button class="preset-btn" id="preset-momentumtop" onclick="selectPreset('momentumtop')">모멘텀 상위 🏆</button>
                     <button class="preset-btn" id="preset-golden" onclick="selectPreset('golden')">상승 정배열 📈</button>
                     <button class="preset-btn" id="preset-overbought" onclick="selectPreset('overbought')">과매수 🔴</button>
                     <button class="preset-btn" id="preset-epsgrowth" onclick="selectPreset('epsgrowth')">실적 성장 모멘텀 📈</button>
@@ -875,6 +876,8 @@
                 // Preset filters
                 if (activePreset === 'breakout') {
                     if (stock.dist_high === null || stock.dist_high < -3.0) return false;
+                } else if (activePreset === 'momentumtop') {
+                    if (stock.momentum_score === null || stock.momentum_score < 6) return false;
                 } else if (activePreset === 'golden') {
                     if (stock.dist_ma50 === null || stock.dist_ma50 <= 0) return false;
                     if (stock.dist_ma200 === null || stock.dist_ma200 <= 0) return false;
