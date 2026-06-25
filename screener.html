@@ -425,12 +425,15 @@
 
         .col-rank {
             width: 50px;
+            min-width: 50px;
             text-align: center;
             color: var(--text-secondary);
             font-weight: 600;
         }
 
         .col-ticker {
+            width: 90px;
+            min-width: 90px;
             font-weight: 700;
             color: var(--text-primary);
             font-size: 0.88rem;
@@ -447,9 +450,38 @@
         }
 
         .col-name {
+            width: 160px;
+            min-width: 160px;
             color: var(--text-secondary);
             font-weight: 400;
         }
+
+        /* Sticky Columns */
+        .screener-table th:nth-child(1), .screener-table td:nth-child(1) {
+            position: sticky;
+            left: 0;
+            z-index: 5;
+            background: #1a1b26;
+        }
+        .screener-table th:nth-child(1) { z-index: 15; background: rgba(15, 16, 23, 1); }
+
+        .screener-table th:nth-child(2), .screener-table td:nth-child(2) {
+            position: sticky;
+            left: 50px;
+            z-index: 5;
+            background: #1a1b26;
+        }
+        .screener-table th:nth-child(2) { z-index: 15; background: rgba(15, 16, 23, 1); }
+
+        .screener-table th:nth-child(3), .screener-table td:nth-child(3) {
+            position: sticky;
+            left: 140px;
+            z-index: 5;
+            background: #1a1b26;
+            border-right: 1px solid rgba(130, 140, 180, 0.2);
+        }
+        .screener-table th:nth-child(3) { z-index: 15; background: rgba(15, 16, 23, 1); border-right: 1px solid rgba(130, 140, 180, 0.2); }
+
 
         .col-sector {
             font-size: 0.78rem;
@@ -707,9 +739,9 @@
                 <table class="screener-table" id="screener-table">
                     <thead>
                         <tr>
-                            <th class="no-sort" style="width:50px; text-align:center;">#</th>
-                            <th data-sort="ticker">Ticker</th>
-                            <th data-sort="name">Company</th>
+                            <th class="no-sort" style="width:50px; min-width:50px; text-align:center;">#</th>
+                            <th data-sort="ticker" style="width:90px; min-width:90px;">Ticker</th>
+                            <th data-sort="name" style="width:160px; min-width:160px;">Company</th>
                             <th data-sort="sector">Sector</th>
                             <th data-sort="marketCap" style="text-align:right; width:90px;" title="시가총액 (B=Billion, M=Million)">Market Cap</th>
                             <th data-sort="price" style="text-align:right;">Price</th>
