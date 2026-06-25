@@ -690,6 +690,7 @@
                     <button class="preset-btn" id="preset-golden" onclick="selectPreset('golden')">상승 정배열 📈</button>
                     <button class="preset-btn" id="preset-overbought" onclick="selectPreset('overbought')">과매수 🔴</button>
                     <button class="preset-btn" id="preset-epsgrowth" onclick="selectPreset('epsgrowth')">실적 성장 모멘텀 📈</button>
+                    <button class="preset-btn" id="preset-mcap" onclick="selectPreset('mcap')">대형주 Top 50 🏢</button>
                     <button class="preset-btn" id="preset-watchlist" onclick="selectPreset('watchlist')">나의 관심종목 ⭐⭐</button>
                 </div>
             </div>
@@ -712,6 +713,7 @@
                             <th data-sort="marketCap" style="text-align:right; width:90px;" title="시가총액 (B=Billion, M=Million)">Market Cap</th>
                             <th data-sort="price" style="text-align:right;">Price</th>
                             <th data-sort="targetPrice" style="text-align:right; width:90px;" title="월가 평균 목표가">Target Price</th>
+                            <th data-sort="target_dist" style="text-align:right; width:90px;" title="현재가 대비 목표가 괴리율">괴리율(%)</th>
                             <th data-sort="pct_1d" style="text-align:right; width:70px;">1D</th>
                             <th data-sort="pct_1w" style="text-align:right; width:70px;">1W</th>
                             <th data-sort="pct_1m" style="text-align:right; width:70px;">1M</th>
@@ -731,7 +733,7 @@
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="23" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="24" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -783,10 +785,15 @@
         function processData(data) {
             allStocks = data.stocks || [];
             allStocks.forEach(s => {
-                if (s.trailingPE && s.forwardPE && s.forwardPE > 0 && s.trailingPE > 0) {
+                if (s.trailingPE && s.forwardPE && s.forwardPE > 0) {
                     s.eps_growth = ((s.trailingPE / s.forwardPE) - 1) * 100;
                 } else {
                     s.eps_growth = null;
+                }
+                if (s.price && s.price > 0 && s.targetPrice && s.targetPrice > 0) {
+                    s.target_dist = ((s.targetPrice / s.price) - 1) * 100;
+                } else {
+                    s.target_dist = null;
                 }
             });
             allStocks.sort((a, b) => a.ticker.localeCompare(b.ticker));
@@ -886,9 +893,23 @@
                     .slice(0, 50);
                 const growerTickers = new Set(growers.map(s => s.ticker));
                 filteredStocks = filteredStocks.filter(s => growerTickers.has(s.ticker));
+            } else if (activePreset === 'mcap') {
+                const parseMcap = (val) => {
+                    if (!val || val === '-') return -1;
+                    let num = parseFloat(val);
+                    if (val.includes('B')) return num * 1e9;
+                    if (val.includes('M')) return num * 1e6;
+                    return num;
+                };
+                const mcapTop = [...filteredStocks]
+                    .filter(s => s.marketCap && s.marketCap !== '-')
+                    .sort((a, b) => parseMcap(b.marketCap) - parseMcap(a.marketCap))
+                    .slice(0, 50);
+                const mcapTickers = new Set(mcapTop.map(s => s.ticker));
+                filteredStocks = filteredStocks.filter(s => mcapTickers.has(s.ticker));
             }
 
-            // Apply sort
+            // Update stats
             sortStocks();
             renderTable();
             updateFilteredCount();
@@ -1068,7 +1089,7 @@
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="23" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="24" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
@@ -1086,6 +1107,7 @@
                     <td style="text-align:right; color:var(--text-secondary); font-size: 0.85rem;">${formatMarketCap(stock.marketCap)}</td>
                     <td class="col-price">${formatPrice(stock)}</td>
                     <td style="text-align:right; color:var(--text-secondary);">${formatTargetPrice(stock.targetPrice)}</td>
+                    <td class="col-change">${stock.target_dist !== null ? formatChange(stock.target_dist) : '<span style="opacity:0.3">-</span>'}</td>
                     <td class="col-change">${formatChange(stock.pct_1d)}</td>
                     <td class="col-change">${formatChange(stock.pct_1w)}</td>
                     <td class="col-change">${formatChange(stock.pct_1m)}</td>
