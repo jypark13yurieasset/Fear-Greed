@@ -1009,7 +1009,8 @@
         // ─── Finviz URL generator ───
         function getFinvizUrl(ticker) {
             if (ticker.endsWith('.KS') || ticker.endsWith('.KQ')) {
-                return `https://finance.yahoo.com/quote/${ticker}`;
+                const code = ticker.split('.')[0];
+                return `https://finance.naver.com/item/main.naver?code=${code}`;
             }
             return `https://finviz.com/quote.ashx?t=${encodeURIComponent(ticker)}`;
         }

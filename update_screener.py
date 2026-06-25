@@ -378,7 +378,7 @@ def fetch_info(item):
     pe, fpe, mcap, target_price = None, None, None, None
     
     # Try Finviz first (only for US stocks)
-    if not orig_t.endswith('.KS'):
+    if not orig_t.endswith('.KS') and not orig_t.endswith('.KQ'):
         try:
             finviz_t = orig_t.replace('-', '.')
             url = f"https://finviz.com/quote.ashx?t={finviz_t}"
@@ -406,6 +406,34 @@ def fetch_info(item):
                                 target_price = float(tp_val)
                             except Exception:
                                 pass
+        except Exception:
+            pass
+            
+    # Try Naver Finance for Korean stocks
+    elif orig_t.endswith('.KS') or orig_t.endswith('.KQ'):
+        try:
+            import requests as req
+            code = orig_t.split('.')[0]
+            url = f"https://finance.naver.com/item/main.naver?code={code}"
+            r = req.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=5)
+            if r.status_code == 200:
+                soup = BeautifulSoup(r.text, 'html.parser')
+                per_elem = soup.select_one('#_per')
+                if per_elem:
+                    try: pe = float(per_elem.text.replace(',', ''))
+                    except Exception: pass
+                fwd_elem = soup.select_one('#_cns_per')
+                if fwd_elem:
+                    try: fpe = float(fwd_elem.text.replace(',', ''))
+                    except Exception: pass
+                for th in soup.find_all('th'):
+                    if '목표주가' in th.text:
+                        td = th.find_next_sibling('td')
+                        if td:
+                            ems = td.find_all('em')
+                            if len(ems) >= 2:
+                                try: target_price = float(ems[1].text.replace(',', ''))
+                                except Exception: pass
         except Exception:
             pass
             
