@@ -728,6 +728,7 @@
                             <th data-sort="dist_ma200" style="text-align:right; width:90px;" title="SMA200 대비 현재 주가 이격도 (%)">SMA 200 Dist</th>
                             <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: 🔥강세(모두 상회) / ➖중립 / ❄️약세(모두 하회)">EMA8/21</th>
                             <th data-sort="macd_state" style="text-align:center; width:95px;" title="MACD 사이클: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">MACD</th>
+                            <th data-sort="momentum_score" style="text-align:center; width:95px;" title="종합 모멘텀 스코어 (EMA 점수 + MACD 점수)">모멘텀 스코어</th>
                             <th data-sort="rsi14" style="text-align:right; width:70px;" title="일봉 RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">일봉 RSI</th>
                             <th data-sort="rsi14_w" style="text-align:right; width:70px;" title="주봉 RSI-14">주봉 RSI</th>
                             <th data-sort="rsi14_m" style="text-align:right; width:70px;" title="월봉 RSI-14">월봉 RSI</th>
@@ -736,7 +737,7 @@
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="27" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="29" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -797,6 +798,11 @@
                     s.target_dist = ((s.targetPrice / s.price) - 1) * 100;
                 } else {
                     s.target_dist = null;
+                }
+                if (s.ema_signal !== null && s.macd_state !== null) {
+                    s.momentum_score = s.ema_signal + s.macd_state;
+                } else {
+                    s.momentum_score = null;
                 }
             });
             allStocks.sort((a, b) => a.ticker.localeCompare(b.ticker));
@@ -1082,6 +1088,18 @@
             return '<span style="opacity:0.3">-</span>';
         }
 
+        // ─── Momentum Score formatter ───
+        function formatMomentumScore(score) {
+            if (score === null || score === undefined) return '<span style="opacity:0.3">-</span>';
+            if (score === 7) return '<span style="color:#ef4444; font-weight:700; font-size:0.9rem; white-space:nowrap;" title="7점: S 등급 (초강세 주도주)">🏆 S <span style="font-size:0.75rem; opacity:0.7;">(7)</span></span>';
+            if (score === 6) return '<span style="color:#22c55e; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="6점: A 등급 (강한 매수)">🟢 A <span style="font-size:0.75rem; opacity:0.7;">(6)</span></span>';
+            if (score === 5) return '<span style="color:#eab308; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="5점: B 등급 (관망 / 조정 중)">🟡 B <span style="font-size:0.75rem; opacity:0.7;">(5)</span></span>';
+            if (score === 4) return '<span style="color:#f97316; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="4점: C 등급 (바닥권 반등 시도)">🟠 C <span style="font-size:0.75rem; opacity:0.7;">(4)</span></span>';
+            if (score === 3) return '<span style="color:#ef4444; font-weight:500; font-size:0.9rem; white-space:nowrap;" title="3점: D 등급 (추세 이탈 주의)">🔴 D <span style="font-size:0.75rem; opacity:0.7;">(3)</span></span>';
+            if (score === 2) return '<span style="color:#3b82f6; font-weight:700; font-size:0.9rem; white-space:nowrap;" title="2점: F 등급 (초약세장)">☠️ F <span style="font-size:0.75rem; opacity:0.7;">(2)</span></span>';
+            return '<span style="opacity:0.3">-</span>';
+        }
+
         // ─── RSI formatter ───
         function formatRsi(val) {
             if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
@@ -1101,7 +1119,7 @@
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="27" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="28" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
@@ -1134,6 +1152,7 @@
                     <td class="col-change">${formatChange(stock.dist_ma200)}</td>
                     <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>
                     <td style="text-align:center;">${formatMacdState(stock.macd_state)}</td>
+                    <td style="text-align:center; background:rgba(255,255,255,0.015); border-left:1px solid rgba(255,255,255,0.05); border-right:1px solid rgba(255,255,255,0.05);">${formatMomentumScore(stock.momentum_score)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_w)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_m)}</td>
