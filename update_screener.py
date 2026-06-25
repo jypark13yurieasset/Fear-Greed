@@ -475,6 +475,45 @@ def calc_rsi(closes, period=14):
     rs = avg_gain / avg_loss
     return 100.0 - (100.0 / (1.0 + rs))
 
+def calc_macd_state(closes):
+    """Returns MACD state: 4=🚀Strong Bull, 3=📈Bull Turn, 2=📉Bear Turn, 1=❄️Strong Bear"""
+    if len(closes) < 35:
+        return None
+        
+    def get_ema_array(data, period):
+        emas = []
+        k = 2.0 / (period + 1)
+        ema = sum(data[:period]) / period
+        emas.append(ema)
+        for price in data[period:]:
+            ema = price * k + ema * (1 - k)
+            emas.append(ema)
+        return [None]*(period-1) + emas
+
+    ema12 = get_ema_array(closes, 12)
+    ema26 = get_ema_array(closes, 26)
+    
+    macd_line = []
+    for e12, e26 in zip(ema12, ema26):
+        if e12 is not None and e26 is not None:
+            macd_line.append(e12 - e26)
+            
+    if len(macd_line) < 9:
+        return None
+        
+    signal = calc_ema(macd_line, 9)
+    current_macd = macd_line[-1]
+    histogram = current_macd - signal
+    
+    if current_macd > 0 and histogram > 0:
+        return 4
+    elif current_macd <= 0 and histogram > 0:
+        return 3
+    elif current_macd > 0 and histogram <= 0:
+        return 2
+    else:
+        return 1
+
 # --- 5. Calculate Momentum Metrics ---
 print("\n" + "=" * 60)
 print("🧮 모멘텀 지표 연산 중...")
@@ -499,6 +538,7 @@ for t, s in stock_map.items():
     dist_ma200 = None
     # New technical indicators
     ema_signal = None    # 1=below both, 2=between, 3=above both
+    macd_state = None    # 1=Strong Bear, 2=Bear Turn, 3=Bull Turn, 4=Strong Bull
     dist_sma20 = None    # (price - SMA20) / SMA20 * 100
     rsi14 = None         # Wilder's RSI-14
     
@@ -592,6 +632,9 @@ for t, s in stock_map.items():
                 rsi14_m = calc_rsi(closes_m, 14)
             except Exception:
                 pass
+                
+        # MACD
+        macd_state = calc_macd_state(closes)
 
     def rnd(val):
         return round(val, 2) if val is not None else None
@@ -617,6 +660,7 @@ for t, s in stock_map.items():
         'trailingPE': rnd(info_data.get(t, {}).get("trailingPE")),
         'forwardPE': rnd(info_data.get(t, {}).get("forwardPE")),
         'ema_signal': ema_signal,       # int 1/2/3 or null
+        'macd_state': macd_state,       # int 1/2/3/4 or null
         'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
         'rsi14': rnd(rsi14),            # RSI-14 수치
         'rsi14_w': rnd(rsi14_w),

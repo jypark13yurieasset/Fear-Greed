@@ -727,6 +727,7 @@
                             <th data-sort="dist_ma50" style="text-align:right; width:90px;" title="SMA50 대비 현재 주가 이격도 (%)">SMA 50 Dist</th>
                             <th data-sort="dist_ma200" style="text-align:right; width:90px;" title="SMA200 대비 현재 주가 이격도 (%)">SMA 200 Dist</th>
                             <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: ⭐⭐⭐ 두 이평선 모두 상회 / ⭐⭐ 사이 / ⭐ 두 이평선 모두 하회">EMA8/21</th>
+                            <th data-sort="macd_state" style="text-align:center; width:90px;" title="MACD 사이클: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">MACD</th>
                             <th data-sort="rsi14" style="text-align:right; width:70px;" title="일봉 RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">일봉 RSI</th>
                             <th data-sort="rsi14_w" style="text-align:right; width:70px;" title="주봉 RSI-14">주봉 RSI</th>
                             <th data-sort="rsi14_m" style="text-align:right; width:70px;" title="월봉 RSI-14">월봉 RSI</th>
@@ -735,7 +736,7 @@
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="26" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="27" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -1072,6 +1073,15 @@
             return '<span style="font-size:0.9rem; letter-spacing:-1px; opacity:0.45;" title="두 이평선 모두 하회 (약세)">⭐</span>';
         }
 
+        // ─── MACD formatter ───
+        function formatMacdState(state) {
+            if (state === 4) return '<span style="color:#ef4444; font-weight:600; font-size:0.85rem;" title="강력 상승장">🚀 상승</span>';
+            if (state === 3) return '<span style="color:#fca5a5; font-weight:500; font-size:0.85rem;" title="바닥 찍고 상승 반전">📈 반전</span>';
+            if (state === 2) return '<span style="color:#93c5fd; font-weight:500; font-size:0.85rem;" title="고점 찍고 하락 반전">📉 반전</span>';
+            if (state === 1) return '<span style="color:#3b82f6; font-weight:600; font-size:0.85rem;" title="강력 하락장">❄️ 하락</span>';
+            return '<span style="opacity:0.3">-</span>';
+        }
+
         // ─── RSI formatter ───
         function formatRsi(val) {
             if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
@@ -1091,7 +1101,7 @@
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="26" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="27" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
@@ -1123,6 +1133,7 @@
                     <td class="col-change">${formatChange(stock.dist_ma50)}</td>
                     <td class="col-change">${formatChange(stock.dist_ma200)}</td>
                     <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>
+                    <td style="text-align:center;">${formatMacdState(stock.macd_state)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_w)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_m)}</td>
