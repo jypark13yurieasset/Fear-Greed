@@ -726,8 +726,8 @@
                             <th data-sort="dist_sma20" style="text-align:right; width:90px;" title="SMA20 대비 현재 주가 이격도 (%)">SMA 20 Dist</th>
                             <th data-sort="dist_ma50" style="text-align:right; width:90px;" title="SMA50 대비 현재 주가 이격도 (%)">SMA 50 Dist</th>
                             <th data-sort="dist_ma200" style="text-align:right; width:90px;" title="SMA200 대비 현재 주가 이격도 (%)">SMA 200 Dist</th>
-                            <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: ⭐⭐⭐ 두 이평선 모두 상회 / ⭐⭐ 사이 / ⭐ 두 이평선 모두 하회">EMA8/21</th>
-                            <th data-sort="macd_state" style="text-align:center; width:90px;" title="MACD 사이클: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">MACD</th>
+                            <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: 🔥강세(모두 상회) / ➖중립 / ❄️약세(모두 하회)">EMA8/21</th>
+                            <th data-sort="macd_state" style="text-align:center; width:95px;" title="MACD 사이클: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">MACD</th>
                             <th data-sort="rsi14" style="text-align:right; width:70px;" title="일봉 RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">일봉 RSI</th>
                             <th data-sort="rsi14_w" style="text-align:right; width:70px;" title="주봉 RSI-14">주봉 RSI</th>
                             <th data-sort="rsi14_m" style="text-align:right; width:70px;" title="월봉 RSI-14">월봉 RSI</th>
@@ -1068,17 +1068,17 @@
         // ─── EMA Signal formatter ───
         function formatEmaSignal(val) {
             if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
-            if (val === 3) return '<span style="font-size:0.9rem; letter-spacing:-1px;" title="두 이평선 모두 상회 (강세)">⭐⭐⭐</span>';
-            if (val === 2) return '<span style="font-size:0.9rem; letter-spacing:-1px; opacity:0.75;" title="두 이평선 사이 (중립)">⭐⭐</span>';
-            return '<span style="font-size:0.9rem; letter-spacing:-1px; opacity:0.45;" title="두 이평선 모두 하회 (약세)">⭐</span>';
+            if (val === 3) return '<span style="color:#ef4444; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="단기 추세 강세 (Price > EMA8,21)">🔥 강세</span>';
+            if (val === 2) return '<span style="color:#fbbf24; font-weight:500; font-size:0.85rem; white-space:nowrap;" title="추세 전환 시도 중 (두 선 사이)">➖ 중립</span>';
+            return '<span style="color:#3b82f6; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="추세 하락 (Price < EMA8,21)">❄️ 약세</span>';
         }
 
         // ─── MACD formatter ───
         function formatMacdState(state) {
-            if (state === 4) return '<span style="color:#ef4444; font-weight:600; font-size:0.85rem;" title="강력 상승장">🚀 상승</span>';
-            if (state === 3) return '<span style="color:#fca5a5; font-weight:500; font-size:0.85rem;" title="바닥 찍고 상승 반전">📈 반전</span>';
-            if (state === 2) return '<span style="color:#93c5fd; font-weight:500; font-size:0.85rem;" title="고점 찍고 하락 반전">📉 반전</span>';
-            if (state === 1) return '<span style="color:#3b82f6; font-weight:600; font-size:0.85rem;" title="강력 하락장">❄️ 하락</span>';
+            if (state === 4) return '<span style="color:#ef4444; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="강력 상승장">🚀 상승</span>';
+            if (state === 3) return '<span style="color:#fca5a5; font-weight:500; font-size:0.85rem; white-space:nowrap;" title="바닥 찍고 상승 반전">📈 반전</span>';
+            if (state === 2) return '<span style="color:#93c5fd; font-weight:500; font-size:0.85rem; white-space:nowrap;" title="고점 찍고 하락 반전">📉 반전</span>';
+            if (state === 1) return '<span style="color:#3b82f6; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="강력 하락장">❄️ 하락</span>';
             return '<span style="opacity:0.3">-</span>';
         }
 
