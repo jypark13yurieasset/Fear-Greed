@@ -727,13 +727,15 @@
                             <th data-sort="dist_ma50" style="text-align:right; width:90px;" title="SMA50 대비 현재 주가 이격도 (%)">SMA 50 Dist</th>
                             <th data-sort="dist_ma200" style="text-align:right; width:90px;" title="SMA200 대비 현재 주가 이격도 (%)">SMA 200 Dist</th>
                             <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: ⭐⭐⭐ 두 이평선 모두 상회 / ⭐⭐ 사이 / ⭐ 두 이평선 모두 하회">EMA8/21</th>
-                            <th data-sort="rsi14" style="text-align:right; width:70px;" title="RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">RSI</th>
+                            <th data-sort="rsi14" style="text-align:right; width:70px;" title="일봉 RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">일봉 RSI</th>
+                            <th data-sort="rsi14_w" style="text-align:right; width:70px;" title="주봉 RSI-14">주봉 RSI</th>
+                            <th data-sort="rsi14_m" style="text-align:right; width:70px;" title="월봉 RSI-14">월봉 RSI</th>
                             <th data-sort="dist_high" style="text-align:right; width:110px;">52W High</th>
                             <th class="no-sort" style="text-align:center; width:120px;">52W Range</th>
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="24" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="26" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -1089,7 +1091,7 @@
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="24" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="26" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
@@ -1122,6 +1124,8 @@
                     <td class="col-change">${formatChange(stock.dist_ma200)}</td>
                     <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14)}</td>
+                    <td style="text-align:right;">${formatRsi(stock.rsi14_w)}</td>
+                    <td style="text-align:right;">${formatRsi(stock.rsi14_m)}</td>
                     <td class="col-high-dist">${formatHighDist(stock.dist_high)}</td>
                     <td class="col-range">${renderRangeBar(stock)}</td>
                 </tr>`;

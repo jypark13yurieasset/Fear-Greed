@@ -24,12 +24,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.1,
       "rsi14": 41.78,
+      "rsi14_w": 51.92,
+      "rsi14_m": 62.55,
       "dist_high": -15.58,
       "dist_low": 34.55,
       "dist_ma50": -5.34,
       "dist_ma200": 4.52,
       "marketCap": "4815.80B",
-      "targetPrice": 310.62
+      "targetPrice": 187.8
     },
     {
       "ticker": "AAPL",
@@ -54,12 +56,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.8,
       "rsi14": 45.81,
+      "rsi14_w": 58.29,
+      "rsi14_m": 63.46,
       "dist_high": -7.02,
       "dist_low": 46.32,
       "dist_ma50": 0.78,
       "dist_ma200": 8.94,
       "marketCap": "4304.57B",
-      "targetPrice": 318.82
+      "targetPrice": 187.8
     },
     {
       "ticker": "MSFT",
@@ -84,12 +88,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -9.94,
       "rsi14": 32.44,
+      "rsi14_w": 36.8,
+      "rsi14_m": 40.14,
       "dist_high": -32.58,
       "dist_low": 2.44,
       "dist_ma50": -11.41,
       "dist_ma200": -18.67,
       "marketCap": "2714.80B",
-      "targetPrice": 559.02
+      "targetPrice": 187.8
     },
     {
       "ticker": "AMZN",
@@ -114,12 +120,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.66,
       "rsi14": 38.0,
+      "rsi14_w": 47.96,
+      "rsi14_m": 53.91,
       "dist_high": -14.81,
       "dist_low": 17.85,
       "dist_ma50": -8.8,
       "dist_ma200": 0.61,
       "marketCap": "2520.07B",
-      "targetPrice": 316.56
+      "targetPrice": 187.8
     },
     {
       "ticker": "GOOGL",
@@ -144,12 +152,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.58,
       "rsi14": 36.98,
+      "rsi14_w": 53.14,
+      "rsi14_m": 64.27,
       "dist_high": -14.24,
       "dist_low": 107.05,
       "dist_ma50": -6.44,
       "dist_ma200": 10.38,
       "marketCap": "4183.30B",
-      "targetPrice": 433.97
+      "targetPrice": 187.8
     },
     {
       "ticker": "GOOG",
@@ -174,12 +184,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.06,
       "rsi14": 38.24,
+      "rsi14_w": 53.53,
+      "rsi14_m": 64.45,
       "dist_high": -13.53,
       "dist_low": 105.7,
       "dist_ma50": -5.83,
       "dist_ma200": 10.47,
       "marketCap": "4180.88B",
-      "targetPrice": 433.76
+      "targetPrice": 187.8
     },
     {
       "ticker": "AVGO",
@@ -204,12 +216,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.57,
       "rsi14": 44.08,
+      "rsi14_w": 51.76,
+      "rsi14_m": 63.06,
       "dist_high": -20.66,
       "dist_low": 44.85,
       "dist_ma50": -7.41,
       "dist_ma200": 5.83,
       "marketCap": "1817.73B",
-      "targetPrice": 525.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "META",
@@ -234,12 +248,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.83,
       "rsi14": 37.79,
+      "rsi14_w": 40.82,
+      "rsi14_m": 48.1,
       "dist_high": -29.41,
       "dist_low": 6.08,
       "dist_ma50": -9.72,
       "dist_ma200": -14.49,
       "marketCap": "1415.60B",
-      "targetPrice": 822.35
+      "targetPrice": 187.8
     },
     {
       "ticker": "TSLA",
@@ -264,12 +280,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.94,
       "rsi14": 39.06,
+      "rsi14_w": 44.29,
+      "rsi14_m": 56.04,
       "dist_high": -23.34,
       "dist_low": 27.76,
       "dist_ma50": -7.23,
       "dist_ma200": -10.09,
       "marketCap": "1410.39B",
-      "targetPrice": 401.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "MU",
@@ -294,12 +312,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 3.74,
       "rsi14": 56.81,
+      "rsi14_w": 74.73,
+      "rsi14_m": 89.5,
       "dist_high": -13.44,
       "dist_low": 899.72,
       "dist_ma50": 35.53,
       "dist_ma200": 152.39,
       "marketCap": "1182.44B",
-      "targetPrice": 1126.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "BRK.B",
@@ -324,12 +344,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.06,
       "rsi14": 61.68,
+      "rsi14_w": 54.89,
+      "rsi14_m": 58.02,
       "dist_high": -3.7,
       "dist_low": 7.78,
       "dist_ma50": 3.14,
       "dist_ma200": 0.96,
       "marketCap": "1067.23B",
-      "targetPrice": 520.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "LLY",
@@ -354,12 +376,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.16,
       "rsi14": 58.05,
+      "rsi14_w": 62.13,
+      "rsi14_m": 58.8,
       "dist_high": -3.76,
       "dist_low": 78.58,
       "dist_ma50": 9.41,
       "dist_ma200": 14.98,
       "marketCap": "1052.17B",
-      "targetPrice": 1261.48
+      "targetPrice": 187.8
     },
     {
       "ticker": "WMT",
@@ -384,12 +408,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.51,
       "rsi14": 44.68,
+      "rsi14_w": 48.41,
+      "rsi14_m": 66.59,
       "dist_high": -11.33,
       "dist_low": 26.06,
       "dist_ma50": -4.49,
       "dist_ma200": 1.94,
       "marketCap": "947.01B",
-      "targetPrice": 140.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "JPM",
@@ -414,12 +440,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.98,
       "rsi14": 66.6,
+      "rsi14_w": 62.72,
+      "rsi14_m": 69.88,
       "dist_high": -0.35,
       "dist_low": 18.56,
       "dist_ma50": 7.51,
       "dist_ma200": 8.4,
       "marketCap": "893.48B",
-      "targetPrice": 346.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "AMD",
@@ -444,12 +472,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.84,
       "rsi14": 56.46,
+      "rsi14_w": 73.32,
+      "rsi14_m": 79.97,
       "dist_high": -5.78,
       "dist_low": 285.56,
       "dist_ma50": 21.35,
       "dist_ma200": 94.86,
       "marketCap": "847.49B",
-      "targetPrice": 502.92
+      "targetPrice": 187.8
     },
     {
       "ticker": "INTC",
@@ -474,12 +504,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 11.1,
       "rsi14": 59.86,
+      "rsi14_w": 71.96,
+      "rsi14_m": 87.32,
       "dist_high": -6.59,
       "dist_low": 581.77,
       "dist_ma50": 24.51,
       "dist_ma200": 130.28,
       "marketCap": "661.67B",
-      "targetPrice": 101.57
+      "targetPrice": 187.8
     },
     {
       "ticker": "V",
@@ -504,12 +536,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.44,
       "rsi14": 58.31,
+      "rsi14_w": 54.94,
+      "rsi14_m": 60.29,
       "dist_high": -7.42,
       "dist_low": 12.42,
       "dist_ma50": 3.07,
       "dist_ma200": 1.04,
       "marketCap": "625.96B",
-      "targetPrice": 402.03
+      "targetPrice": 187.8
     },
     {
       "ticker": "JNJ",
@@ -534,12 +568,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.66,
       "rsi14": 60.96,
+      "rsi14_w": 58.73,
+      "rsi14_m": 72.01,
       "dist_high": -3.04,
       "dist_low": 58.54,
       "dist_ma50": 4.67,
       "dist_ma200": 11.26,
       "marketCap": "580.14B",
-      "targetPrice": 261.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "XOM",
@@ -564,12 +600,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.07,
       "rsi14": 33.66,
+      "rsi14_w": 45.46,
+      "rsi14_m": 55.01,
       "dist_high": -20.16,
       "dist_low": 29.36,
       "dist_ma50": -8.33,
       "dist_ma200": 1.47,
       "marketCap": "567.44B",
-      "targetPrice": 170.57
+      "targetPrice": 187.8
     },
     {
       "ticker": "CSCO",
@@ -594,12 +632,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -1.52,
       "rsi14": 55.06,
+      "rsi14_w": 82.64,
+      "rsi14_m": 90.56,
       "dist_high": -7.9,
       "dist_low": 80.86,
       "dist_ma50": 11.55,
       "dist_ma200": 43.48,
       "marketCap": "471.91B",
-      "targetPrice": 131.15
+      "targetPrice": 187.8
     },
     {
       "ticker": "LRCX",
@@ -624,12 +664,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.55,
       "rsi14": 59.42,
+      "rsi14_w": 74.1,
+      "rsi14_m": 86.63,
       "dist_high": -8.48,
       "dist_low": 295.19,
       "dist_ma50": 22.69,
       "dist_ma200": 74.86,
       "marketCap": "468.71B",
-      "targetPrice": 340.58
+      "targetPrice": 187.8
     },
     {
       "ticker": "AMAT",
@@ -654,12 +696,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 11.77,
       "rsi14": 63.85,
+      "rsi14_w": 78.09,
+      "rsi14_m": 81.77,
       "dist_high": -8.0,
       "dist_low": 276.94,
       "dist_ma50": 28.56,
       "dist_ma200": 81.5,
       "marketCap": "467.62B",
-      "targetPrice": 532.34
+      "targetPrice": 187.8
     },
     {
       "ticker": "CAT",
@@ -684,12 +728,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.3,
       "rsi14": 62.59,
+      "rsi14_w": 82.4,
+      "rsi14_m": 84.29,
       "dist_high": -2.72,
       "dist_low": 167.63,
       "dist_ma50": 12.29,
       "dist_ma200": 46.45,
       "marketCap": "458.04B",
-      "targetPrice": 949.68
+      "targetPrice": 187.8
     },
     {
       "ticker": "ORCL",
@@ -714,12 +760,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -21.77,
       "rsi14": 32.52,
+      "rsi14_w": 42.41,
+      "rsi14_m": 48.37,
       "dist_high": -52.02,
       "dist_low": 15.42,
       "dist_ma50": -16.96,
       "dist_ma200": -22.79,
       "marketCap": "453.76B",
-      "targetPrice": 252.64
+      "targetPrice": 187.8
     },
     {
       "ticker": "MA",
@@ -744,12 +792,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.02,
       "rsi14": 51.5,
+      "rsi14_w": 42.06,
+      "rsi14_m": 51.18,
       "dist_high": -17.46,
       "dist_low": 4.85,
       "dist_ma50": -0.72,
       "dist_ma200": -7.29,
       "marketCap": "436.85B",
-      "targetPrice": 644.89
+      "targetPrice": 187.8
     },
     {
       "ticker": "COST",
@@ -774,12 +824,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.92,
       "rsi14": 41.99,
+      "rsi14_w": 46.96,
+      "rsi14_m": 54.93,
       "dist_high": -12.17,
       "dist_low": 13.07,
       "dist_ma50": -3.72,
       "dist_ma200": 0.33,
       "marketCap": "426.22B",
-      "targetPrice": 1082.94
+      "targetPrice": 187.8
     },
     {
       "ticker": "ABBV",
@@ -804,12 +856,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.41,
       "rsi14": 66.01,
+      "rsi14_w": 60.2,
+      "rsi14_m": 63.16,
       "dist_high": -3.88,
       "dist_low": 28.84,
       "dist_ma50": 10.16,
       "dist_ma200": 6.34,
       "marketCap": "415.00B",
-      "targetPrice": 253.83
+      "targetPrice": 187.8
     },
     {
       "ticker": "BAC",
@@ -834,12 +888,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.92,
       "rsi14": 72.51,
+      "rsi14_w": 63.28,
+      "rsi14_m": 66.57,
       "dist_high": -0.31,
       "dist_low": 28.52,
       "dist_ma50": 8.64,
       "dist_ma200": 10.29,
       "marketCap": "409.69B",
-      "targetPrice": 63.34
+      "targetPrice": 187.8
     },
     {
       "ticker": "GE",
@@ -864,12 +920,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.22,
       "rsi14": 73.3,
+      "rsi14_w": 67.1,
+      "rsi14_m": 73.68,
       "dist_high": 0.0,
       "dist_low": 49.49,
       "dist_ma50": 17.79,
       "dist_ma200": 19.32,
       "marketCap": "382.28B",
-      "targetPrice": 350.95
+      "targetPrice": 187.8
     },
     {
       "ticker": "UNH",
@@ -889,17 +947,19 @@ const INDEX_DATA = {
       "pct_6m": 23.88,
       "pct_ytd": 22.93,
       "pct_1y": 34.36,
-      "trailingPE": 30.6,
+      "trailingPE": 30.58,
       "forwardPE": 19.39,
       "ema_signal": 3,
       "dist_sma20": 1.97,
       "rsi14": 60.26,
+      "rsi14_w": 65.67,
+      "rsi14_m": 49.27,
       "dist_high": -1.74,
       "dist_low": 70.67,
       "dist_ma50": 7.18,
       "dist_ma200": 21.14,
       "marketCap": "368.52B",
-      "targetPrice": 409.77
+      "targetPrice": 187.8
     },
     {
       "ticker": "PG",
@@ -919,17 +979,19 @@ const INDEX_DATA = {
       "pct_6m": 5.23,
       "pct_ytd": 6.09,
       "pct_1y": -4.36,
-      "trailingPE": 22.26,
+      "trailingPE": 22.23,
       "forwardPE": 21.45,
       "ema_signal": 3,
       "dist_sma20": 3.4,
       "rsi14": 60.37,
+      "rsi14_w": 54.81,
+      "rsi14_m": 47.6,
       "dist_high": -9.07,
       "dist_low": 10.14,
       "dist_ma50": 4.42,
       "dist_ma200": 2.15,
       "marketCap": "354.04B",
-      "targetPrice": 163.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "MS",
@@ -954,12 +1016,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 2.37,
       "rsi14": 60.18,
+      "rsi14_w": 73.98,
+      "rsi14_m": 79.86,
       "dist_high": -3.18,
       "dist_low": 61.78,
       "dist_ma50": 9.45,
       "dist_ma200": 24.44,
       "marketCap": "346.78B",
-      "targetPrice": 204.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "KO",
@@ -984,12 +1048,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.52,
       "rsi14": 52.55,
+      "rsi14_w": 58.29,
+      "rsi14_m": 63.64,
       "dist_high": -3.58,
       "dist_low": 22.73,
       "dist_ma50": 1.91,
       "dist_ma200": 9.09,
       "marketCap": "346.78B",
-      "targetPrice": 85.97
+      "targetPrice": 187.8
     },
     {
       "ticker": "HD",
@@ -1014,12 +1080,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.49,
       "rsi14": 63.13,
+      "rsi14_w": 50.9,
+      "rsi14_m": 48.53,
       "dist_high": -19.03,
       "dist_low": 15.24,
       "dist_ma50": 6.33,
       "dist_ma200": -4.09,
       "marketCap": "341.87B",
-      "targetPrice": 370.34
+      "targetPrice": 187.8
     },
     {
       "ticker": "CVX",
@@ -1044,12 +1112,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.3,
       "rsi14": 32.34,
+      "rsi14_w": 43.84,
+      "rsi14_m": 51.78,
       "dist_high": -18.8,
       "dist_low": 19.74,
       "dist_ma50": -7.84,
       "dist_ma200": -0.35,
       "marketCap": "341.46B",
-      "targetPrice": 217.36
+      "targetPrice": 187.8
     },
     {
       "ticker": "GS",
@@ -1074,12 +1144,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.92,
       "rsi14": 58.79,
+      "rsi14_w": 72.57,
+      "rsi14_m": 79.46,
       "dist_high": -2.66,
       "dist_low": 62.65,
       "dist_ma50": 9.29,
       "dist_ma200": 22.11,
       "marketCap": "317.70B",
-      "targetPrice": 959.8
+      "targetPrice": 187.8
     },
     {
       "ticker": "KLAC",
@@ -1104,12 +1176,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 7.41,
       "rsi14": 57.93,
+      "rsi14_w": 70.89,
+      "rsi14_m": 88.29,
       "dist_high": -10.66,
       "dist_low": 184.96,
       "dist_ma50": 21.24,
       "dist_ma200": 63.74,
       "marketCap": "314.13B",
-      "targetPrice": 204.39
+      "targetPrice": 187.8
     },
     {
       "ticker": "NFLX",
@@ -1134,12 +1208,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -10.98,
       "rsi14": 20.15,
+      "rsi14_w": 30.04,
+      "rsi14_m": 44.44,
       "dist_high": -46.35,
       "dist_low": 0.0,
       "dist_ma50": -17.82,
       "dist_ma200": -26.37,
       "marketCap": "302.50B",
-      "targetPrice": 114.15
+      "targetPrice": 187.8
     },
     {
       "ticker": "MRK",
@@ -1164,12 +1240,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.27,
       "rsi14": 58.03,
+      "rsi14_w": 58.18,
+      "rsi14_m": 53.37,
       "dist_high": -2.69,
       "dist_low": 55.41,
       "dist_ma50": 4.4,
       "dist_ma200": 13.88,
       "marketCap": "297.86B",
-      "targetPrice": 130.11
+      "targetPrice": 187.8
     },
     {
       "ticker": "GEV",
@@ -1194,12 +1272,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.48,
       "rsi14": 55.92,
+      "rsi14_w": 62.48,
+      "rsi14_m": 80.38,
       "dist_high": -7.99,
       "dist_low": 110.41,
       "dist_ma50": 2.91,
       "dist_ma200": 35.61,
       "marketCap": "284.21B",
-      "targetPrice": 1211.72
+      "targetPrice": 187.8
     },
     {
       "ticker": "SNDK",
@@ -1224,12 +1304,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 4.21,
       "rsi14": 55.8,
+      "rsi14_w": 71.84,
+      "rsi14_m": 99.1,
       "dist_high": -15.8,
       "dist_low": 4604.99,
       "dist_ma50": 30.26,
       "dist_ma200": 197.69,
       "marketCap": "283.51B",
-      "targetPrice": 1751.32
+      "targetPrice": 187.8
     },
     {
       "ticker": "DELL",
@@ -1254,12 +1336,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.92,
       "rsi14": 68.64,
+      "rsi14_w": 83.88,
+      "rsi14_m": 83.99,
       "dist_high": -6.85,
       "dist_low": 290.8,
       "dist_ma50": 46.17,
       "dist_ma200": 143.67,
       "marketCap": "280.46B",
-      "targetPrice": 485.09
+      "targetPrice": 187.8
     },
     {
       "ticker": "PM",
@@ -1284,12 +1368,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.14,
       "rsi14": 50.19,
+      "rsi14_w": 54.53,
+      "rsi14_m": 65.98,
       "dist_high": -6.82,
       "dist_low": 23.87,
       "dist_ma50": 2.15,
       "dist_ma200": 7.28,
       "marketCap": "278.64B",
-      "targetPrice": 193.86
+      "targetPrice": 187.8
     },
     {
       "ticker": "TXN",
@@ -1309,17 +1395,19 @@ const INDEX_DATA = {
       "pct_6m": 71.12,
       "pct_ytd": 74.71,
       "pct_1y": 47.58,
-      "trailingPE": 51.9,
+      "trailingPE": 51.81,
       "forwardPE": 31.66,
       "ema_signal": 1,
       "dist_sma20": -0.34,
       "rsi14": 51.29,
+      "rsi14_w": 66.67,
+      "rsi14_m": 68.06,
       "dist_high": -8.78,
       "dist_low": 97.68,
       "dist_ma50": 5.44,
       "dist_ma200": 42.88,
       "marketCap": "275.86B",
-      "targetPrice": 294.41
+      "targetPrice": 187.8
     },
     {
       "ticker": "PLTR",
@@ -1344,12 +1432,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -15.9,
       "rsi14": 30.8,
+      "rsi14_w": 37.77,
+      "rsi14_m": 54.31,
       "dist_high": -45.22,
       "dist_low": 0.0,
       "dist_ma50": -17.52,
       "dist_ma200": -28.77,
       "marketCap": "272.09B",
-      "targetPrice": 182.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "WFC",
@@ -1374,12 +1464,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.65,
       "rsi14": 61.82,
+      "rsi14_w": 53.36,
+      "rsi14_m": 60.4,
       "dist_high": -12.54,
       "dist_low": 14.82,
       "dist_ma50": 5.9,
       "dist_ma200": 0.05,
       "marketCap": "257.97B",
-      "targetPrice": 96.11
+      "targetPrice": 187.8
     },
     {
       "ticker": "RTX",
@@ -1404,12 +1496,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.13,
       "rsi14": 53.79,
+      "rsi14_w": 51.16,
+      "rsi14_m": 69.77,
       "dist_high": -12.77,
       "dist_low": 30.9,
       "dist_ma50": 2.56,
       "dist_ma200": 1.22,
       "marketCap": "249.22B",
-      "targetPrice": 215.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "IBM",
@@ -1434,12 +1528,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.55,
       "rsi14": 49.33,
+      "rsi14_w": 50.36,
+      "rsi14_m": 55.72,
       "dist_high": -20.13,
       "dist_low": 22.51,
       "dist_ma50": 4.34,
       "dist_ma200": -3.91,
       "marketCap": "247.15B",
-      "targetPrice": 293.89
+      "targetPrice": 187.8
     },
     {
       "ticker": "C",
@@ -1464,12 +1560,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.64,
       "rsi14": 68.19,
+      "rsi14_w": 71.87,
+      "rsi14_m": 82.63,
       "dist_high": -1.43,
       "dist_low": 76.97,
       "dist_ma50": 9.82,
       "dist_ma200": 25.91,
       "marketCap": "244.90B",
-      "targetPrice": 147.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "MRVL",
@@ -1494,12 +1592,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 2.1,
       "rsi14": 55.5,
+      "rsi14_w": 79.47,
+      "rsi14_m": 83.09,
       "dist_high": -12.56,
       "dist_low": 344.07,
       "dist_ma50": 33.27,
       "dist_ma200": 137.65,
       "marketCap": "242.06B",
-      "targetPrice": 241.79
+      "targetPrice": 187.8
     },
     {
       "ticker": "LIN",
@@ -1524,12 +1624,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.11,
       "rsi14": 54.13,
+      "rsi14_w": 58.88,
+      "rsi14_m": 62.27,
       "dist_high": -1.5,
       "dist_low": 32.45,
       "dist_ma50": 1.83,
       "dist_ma200": 10.17,
       "marketCap": "238.45B",
-      "targetPrice": 545.44
+      "targetPrice": 187.8
     },
     {
       "ticker": "AXP",
@@ -1554,12 +1656,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.16,
       "rsi14": 68.89,
+      "rsi14_w": 57.26,
+      "rsi14_m": 61.76,
       "dist_high": -11.0,
       "dist_low": 17.21,
       "dist_ma50": 7.03,
       "dist_ma200": 1.46,
       "marketCap": "233.74B",
-      "targetPrice": 363.11
+      "targetPrice": 187.8
     },
     {
       "ticker": "PANW",
@@ -1584,12 +1688,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.55,
       "rsi14": 62.75,
+      "rsi14_w": 73.61,
+      "rsi14_m": 68.69,
       "dist_high": -5.07,
       "dist_low": 101.36,
       "dist_ma50": 22.89,
       "dist_ma200": 44.39,
       "marketCap": "232.49B",
-      "targetPrice": 310.32
+      "targetPrice": 187.8
     },
     {
       "ticker": "STX",
@@ -1614,12 +1720,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 5.42,
       "rsi14": 59.66,
+      "rsi14_w": 78.83,
+      "rsi14_m": 95.53,
       "dist_high": -9.21,
       "dist_low": 628.67,
       "dist_ma50": 25.26,
       "dist_ma200": 128.48,
-      "marketCap": "224.72B",
-      "targetPrice": 898.09
+      "marketCap": "222.72B",
+      "targetPrice": 187.8
     },
     {
       "ticker": "WDC",
@@ -1644,12 +1752,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 8.66,
       "rsi14": 58.9,
+      "rsi14_w": 74.22,
+      "rsi14_m": 95.91,
       "dist_high": -13.72,
       "dist_low": 937.26,
       "dist_ma50": 28.69,
       "dist_ma200": 134.12,
       "marketCap": "221.92B",
-      "targetPrice": 554.13
+      "targetPrice": 187.8
     },
     {
       "ticker": "QCOM",
@@ -1674,12 +1784,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -10.93,
       "rsi14": 44.68,
+      "rsi14_w": 54.5,
+      "rsi14_m": 52.19,
       "dist_high": -21.36,
       "dist_low": 59.11,
       "dist_ma50": 0.64,
       "dist_ma200": 17.82,
       "marketCap": "208.07B",
-      "targetPrice": 186.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "ANET",
@@ -1704,12 +1816,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.77,
       "rsi14": 50.86,
+      "rsi14_w": 56.68,
+      "rsi14_m": 63.28,
       "dist_high": -9.0,
       "dist_low": 70.31,
       "dist_ma50": 1.34,
       "dist_ma200": 13.46,
       "marketCap": "203.66B",
-      "targetPrice": 190.09
+      "targetPrice": 187.8
     },
     {
       "ticker": "ADI",
@@ -1734,12 +1848,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.84,
       "rsi14": 50.09,
+      "rsi14_w": 64.76,
+      "rsi14_m": 74.03,
       "dist_high": -7.26,
       "dist_low": 87.22,
       "dist_ma50": 1.99,
       "dist_ma200": 31.94,
       "marketCap": "201.24B",
-      "targetPrice": 450.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "APH",
@@ -1764,12 +1880,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.82,
       "rsi14": 63.01,
+      "rsi14_w": 61.55,
+      "rsi14_m": 76.46,
       "dist_high": -2.09,
       "dist_low": 69.92,
       "dist_ma50": 13.09,
       "dist_ma200": 18.55,
       "marketCap": "200.26B",
-      "targetPrice": 183.28
+      "targetPrice": 187.8
     },
     {
       "ticker": "TMUS",
@@ -1794,12 +1912,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.73,
       "rsi14": 42.63,
+      "rsi14_w": 39.16,
+      "rsi14_m": 46.29,
       "dist_high": -30.2,
       "dist_low": 2.13,
       "dist_ma50": -4.3,
       "dist_ma200": -12.24,
       "marketCap": "195.65B",
-      "targetPrice": 259.08
+      "targetPrice": 187.8
     },
     {
       "ticker": "MCD",
@@ -1824,12 +1944,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.85,
       "rsi14": 40.81,
+      "rsi14_w": 34.14,
+      "rsi14_m": 47.76,
       "dist_high": -19.7,
       "dist_low": 1.4,
       "dist_ma50": -3.91,
       "dist_ma200": -10.09,
       "marketCap": "194.59B",
-      "targetPrice": 331.29
+      "targetPrice": 187.8
     },
     {
       "ticker": "PEP",
@@ -1854,12 +1976,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.69,
       "rsi14": 41.96,
+      "rsi14_w": 40.98,
+      "rsi14_m": 41.76,
       "dist_high": -16.55,
       "dist_low": 11.13,
       "dist_ma50": -4.76,
       "dist_ma200": -5.25,
       "marketCap": "194.47B",
-      "targetPrice": 168.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "VZ",
@@ -1884,12 +2008,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.03,
       "rsi14": 43.75,
+      "rsi14_w": 48.45,
+      "rsi14_m": 54.08,
       "dist_high": -11.09,
       "dist_low": 18.96,
       "dist_ma50": -2.63,
       "dist_ma200": 2.72,
       "marketCap": "190.74B",
-      "targetPrice": 51.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "AMGN",
@@ -1914,12 +2040,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.48,
       "rsi14": 57.19,
+      "rsi14_w": 53.97,
+      "rsi14_m": 55.45,
       "dist_high": -9.46,
       "dist_low": 29.59,
       "dist_ma50": 3.36,
       "dist_ma200": 5.58,
       "marketCap": "189.67B",
-      "targetPrice": 352.77
+      "targetPrice": 187.8
     },
     {
       "ticker": "TMO",
@@ -1944,12 +2072,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.3,
       "rsi14": 59.17,
+      "rsi14_w": 49.34,
+      "rsi14_m": 44.41,
       "dist_high": -23.03,
       "dist_low": 21.72,
       "dist_ma50": 3.58,
       "dist_ma200": -6.36,
       "marketCap": "182.91B",
-      "targetPrice": 599.19
+      "targetPrice": 187.8
     },
     {
       "ticker": "NEE",
@@ -1974,12 +2104,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.06,
       "rsi14": 50.98,
+      "rsi14_w": 48.85,
+      "rsi14_m": 57.46,
       "dist_high": -10.48,
       "dist_low": 26.22,
       "dist_ma50": -2.82,
       "dist_ma200": 1.84,
       "marketCap": "182.74B",
-      "targetPrice": 98.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "TJX",
@@ -2004,12 +2136,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.13,
       "rsi14": 60.57,
+      "rsi14_w": 59.29,
+      "rsi14_m": 72.98,
       "dist_high": -1.92,
       "dist_low": 36.11,
       "dist_ma50": 4.55,
       "dist_ma200": 8.14,
       "marketCap": "182.46B",
-      "targetPrice": 177.63
+      "targetPrice": 187.8
     },
     {
       "ticker": "GLW",
@@ -2034,12 +2168,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 10.1,
       "rsi14": 57.87,
+      "rsi14_w": 71.61,
+      "rsi14_m": 88.39,
       "dist_high": -1.91,
       "dist_low": 300.53,
       "dist_ma50": 13.68,
       "dist_ma200": 67.93,
       "marketCap": "177.15B",
-      "targetPrice": 201.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "DIS",
@@ -2064,12 +2200,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.1,
       "rsi14": 47.92,
+      "rsi14_w": 45.91,
+      "rsi14_m": 48.62,
       "dist_high": -18.46,
       "dist_low": 9.41,
       "dist_ma50": -1.72,
       "dist_ma200": -5.4,
       "marketCap": "175.60B",
-      "targetPrice": 129.63
+      "targetPrice": 187.8
     },
     {
       "ticker": "BA",
@@ -2089,17 +2227,19 @@ const INDEX_DATA = {
       "pct_6m": 0.96,
       "pct_ytd": 1.44,
       "pct_1y": 10.73,
-      "trailingPE": 86.71,
+      "trailingPE": 87.06,
       "forwardPE": 52.67,
       "ema_signal": 1,
       "dist_sma20": -0.17,
       "rsi14": 48.94,
+      "rsi14_w": 49.82,
+      "rsi14_m": 54.99,
       "dist_high": -12.65,
       "dist_low": 22.96,
       "dist_ma50": -1.78,
       "dist_ma200": 0.82,
       "marketCap": "173.62B",
-      "targetPrice": 270.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "CRWD",
@@ -2124,12 +2264,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -2.68,
       "rsi14": 54.8,
+      "rsi14_w": 66.65,
+      "rsi14_m": 63.73,
       "dist_high": -13.95,
       "dist_low": 92.15,
       "dist_ma50": 15.52,
       "dist_ma200": 36.42,
       "marketCap": "171.33B",
-      "targetPrice": 712.37
+      "targetPrice": 187.8
     },
     {
       "ticker": "DE",
@@ -2154,12 +2296,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.64,
       "rsi14": 61.53,
+      "rsi14_w": 58.99,
+      "rsi14_m": 65.36,
       "dist_high": -9.32,
       "dist_low": 36.81,
       "dist_ma50": 4.76,
       "dist_ma200": 13.51,
       "marketCap": "162.16B",
-      "targetPrice": 644.21
+      "targetPrice": 187.8
     },
     {
       "ticker": "SCHW",
@@ -2184,12 +2328,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 2.03,
       "rsi14": 52.22,
+      "rsi14_w": 47.63,
+      "rsi14_m": 55.6,
       "dist_high": -14.76,
       "dist_low": 7.08,
       "dist_ma50": 0.8,
       "dist_ma200": -3.49,
       "marketCap": "158.94B",
-      "targetPrice": 116.16
+      "targetPrice": 187.8
     },
     {
       "ticker": "ABT",
@@ -2214,12 +2360,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.96,
       "rsi14": 54.15,
+      "rsi14_w": 35.4,
+      "rsi14_m": 40.82,
       "dist_high": -34.47,
       "dist_low": 9.61,
       "dist_ma50": 1.18,
       "dist_ma200": -19.91,
       "marketCap": "157.62B",
-      "targetPrice": 116.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "ETN",
@@ -2244,12 +2392,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.34,
       "rsi14": 49.87,
+      "rsi14_w": 56.59,
+      "rsi14_m": 58.18,
       "dist_high": -7.16,
       "dist_low": 28.11,
       "dist_ma50": -0.32,
       "dist_ma200": 9.4,
       "marketCap": "157.10B",
-      "targetPrice": 451.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "WELL",
@@ -2274,12 +2424,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.38,
       "rsi14": 61.5,
+      "rsi14_w": 62.19,
+      "rsi14_m": 73.27,
       "dist_high": 0.0,
       "dist_low": 46.92,
       "dist_ma50": 4.72,
       "dist_ma200": 13.27,
       "marketCap": "156.31B",
-      "targetPrice": 235.48
+      "targetPrice": 187.8
     },
     {
       "ticker": "APP",
@@ -2299,17 +2451,19 @@ const INDEX_DATA = {
       "pct_6m": -36.09,
       "pct_ytd": -31.0,
       "pct_1y": 37.24,
-      "trailingPE": 40.47,
+      "trailingPE": 40.5,
       "forwardPE": 21.21,
       "ema_signal": 1,
       "dist_sma20": -12.49,
       "rsi14": 40.19,
+      "rsi14_w": 47.42,
+      "rsi14_m": 56.38,
       "dist_high": -36.62,
       "dist_low": 39.3,
       "dist_ma50": -6.29,
       "dist_ma200": -14.19,
       "marketCap": "156.20B",
-      "targetPrice": 650.3
+      "targetPrice": 187.8
     },
     {
       "ticker": "T",
@@ -2334,12 +2488,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.99,
       "rsi14": 37.25,
+      "rsi14_w": 36.34,
+      "rsi14_m": 48.34,
       "dist_high": -24.48,
       "dist_low": 1.64,
       "dist_ma50": -9.21,
       "dist_ma200": -13.85,
       "marketCap": "155.43B",
-      "targetPrice": 30.28
+      "targetPrice": 187.8
     },
     {
       "ticker": "GILD",
@@ -2364,12 +2520,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.94,
       "rsi14": 42.83,
+      "rsi14_w": 42.64,
+      "rsi14_m": 63.97,
       "dist_high": -19.67,
       "dist_low": 18.15,
       "dist_ma50": -4.37,
       "dist_ma200": -3.41,
       "marketCap": "155.39B",
-      "targetPrice": 157.57
+      "targetPrice": 187.8
     },
     {
       "ticker": "UNP",
@@ -2394,12 +2552,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.12,
       "rsi14": 44.96,
+      "rsi14_w": 54.08,
+      "rsi14_m": 56.92,
       "dist_high": -6.95,
       "dist_low": 20.96,
       "dist_ma50": -1.66,
       "dist_ma200": 7.12,
       "marketCap": "154.34B",
-      "targetPrice": 291.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "BLK",
@@ -2424,12 +2584,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.28,
       "rsi14": 36.51,
+      "rsi14_w": 42.87,
+      "rsi14_m": 53.24,
       "dist_high": -18.29,
       "dist_low": 6.47,
       "dist_ma50": -6.25,
       "dist_ma200": -8.03,
       "marketCap": "160.01B",
-      "targetPrice": 1249.38
+      "targetPrice": 187.8
     },
     {
       "ticker": "UBER",
@@ -2454,12 +2616,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.79,
       "rsi14": 55.16,
+      "rsi14_w": 46.98,
+      "rsi14_m": 47.69,
       "dist_high": -26.22,
       "dist_low": 7.64,
       "dist_ma50": 0.46,
       "dist_ma200": -9.69,
       "marketCap": "150.33B",
-      "targetPrice": 104.48
+      "targetPrice": 187.8
     },
     {
       "ticker": "HON",
@@ -2484,12 +2648,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.2,
       "rsi14": 53.93,
+      "rsi14_w": 53.46,
+      "rsi14_m": 56.04,
       "dist_high": -8.31,
       "dist_low": 20.88,
       "dist_ma50": 2.71,
       "dist_ma200": 6.39,
       "marketCap": "144.11B",
-      "targetPrice": 246.67
+      "targetPrice": 187.8
     },
     {
       "ticker": "ISRG",
@@ -2514,12 +2680,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.72,
       "rsi14": 38.26,
+      "rsi14_w": 32.9,
+      "rsi14_m": 41.8,
       "dist_high": -32.22,
       "dist_low": 0.0,
       "dist_ma50": -7.96,
       "dist_ma200": -17.98,
       "marketCap": "142.31B",
-      "targetPrice": 565.08
+      "targetPrice": 187.8
     },
     {
       "ticker": "BKNG",
@@ -2539,17 +2707,19 @@ const INDEX_DATA = {
       "pct_6m": -16.8,
       "pct_ytd": -15.39,
       "pct_1y": -17.39,
-      "trailingPE": 23.88,
+      "trailingPE": 23.91,
       "forwardPE": 14.73,
       "ema_signal": 3,
       "dist_sma20": 7.65,
       "rsi14": 64.29,
+      "rsi14_w": 51.57,
+      "rsi14_m": 52.19,
       "dist_high": -22.09,
       "dist_low": 17.6,
       "dist_ma50": 7.07,
       "dist_ma200": -4.59,
       "marketCap": "140.45B",
-      "targetPrice": 224.41
+      "targetPrice": 187.8
     },
     {
       "ticker": "BX",
@@ -2574,12 +2744,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.11,
       "rsi14": 40.08,
+      "rsi14_w": 39.73,
+      "rsi14_m": 44.43,
       "dist_high": -40.12,
       "dist_low": 10.64,
       "dist_ma50": -6.84,
       "dist_ma200": -18.46,
       "marketCap": "138.10B",
-      "targetPrice": 143.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "PFE",
@@ -2604,12 +2776,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.29,
       "rsi14": 27.46,
+      "rsi14_w": 37.57,
+      "rsi14_m": 39.61,
       "dist_high": -15.8,
       "dist_low": 3.22,
       "dist_ma50": -7.87,
       "dist_ma200": -7.09,
       "marketCap": "137.01B",
-      "targetPrice": 29.15
+      "targetPrice": 187.8
     },
     {
       "ticker": "DHR",
@@ -2634,12 +2808,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.31,
       "rsi14": 62.42,
+      "rsi14_w": 48.45,
+      "rsi14_m": 37.0,
       "dist_high": -21.97,
       "dist_low": 16.65,
       "dist_ma50": 5.58,
       "dist_ma200": -7.4,
       "marketCap": "133.68B",
-      "targetPrice": 242.35
+      "targetPrice": 187.8
     },
     {
       "ticker": "PLD",
@@ -2659,17 +2835,19 @@ const INDEX_DATA = {
       "pct_6m": 9.07,
       "pct_ytd": 10.35,
       "pct_1y": 34.44,
-      "trailingPE": 35.39,
-      "forwardPE": 41.96,
+      "trailingPE": 35.48,
+      "forwardPE": 35.89,
       "ema_signal": 1,
       "dist_sma20": -2.28,
       "rsi14": 44.74,
+      "rsi14_w": 54.31,
+      "rsi14_m": 60.16,
       "dist_high": -5.29,
       "dist_low": 35.35,
       "dist_ma50": -1.54,
       "dist_ma200": 7.13,
-      "marketCap": "132.00B",
-      "targetPrice": 152.6
+      "marketCap": "131.34B",
+      "targetPrice": 187.8
     },
     {
       "ticker": "COP",
@@ -2694,12 +2872,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.58,
       "rsi14": 34.73,
+      "rsi14_w": 45.04,
+      "rsi14_m": 47.84,
       "dist_high": -20.09,
       "dist_low": 24.82,
       "dist_ma50": -9.55,
       "dist_ma200": 1.5,
       "marketCap": "130.26B",
-      "targetPrice": 143.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "CB",
@@ -2724,12 +2904,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.8,
       "rsi14": 61.85,
+      "rsi14_w": 59.16,
+      "rsi14_m": 64.36,
       "dist_high": -2.22,
       "dist_low": 26.0,
       "dist_ma50": 3.23,
       "dist_ma200": 8.36,
       "marketCap": "129.99B",
-      "targetPrice": 345.04
+      "targetPrice": 187.8
     },
     {
       "ticker": "CVS",
@@ -2749,17 +2931,19 @@ const INDEX_DATA = {
       "pct_6m": 28.75,
       "pct_ytd": 28.36,
       "pct_1y": 53.49,
-      "trailingPE": 44.68,
-      "forwardPE": 12.15,
+      "trailingPE": 44.73,
+      "forwardPE": 12.14,
       "ema_signal": 3,
       "dist_sma20": 5.21,
       "rsi14": 67.94,
+      "rsi14_w": 68.05,
+      "rsi14_m": 68.6,
       "dist_high": -0.09,
       "dist_low": 73.4,
       "dist_ma50": 13.05,
       "dist_ma200": 26.33,
       "marketCap": "129.98B",
-      "targetPrice": 105.38
+      "targetPrice": 187.8
     },
     {
       "ticker": "PGR",
@@ -2779,17 +2963,19 @@ const INDEX_DATA = {
       "pct_6m": -3.15,
       "pct_ytd": -3.17,
       "pct_1y": -15.08,
-      "trailingPE": 11.22,
+      "trailingPE": 11.21,
       "forwardPE": 13.46,
       "ema_signal": 3,
       "dist_sma20": 9.29,
       "rsi14": 74.45,
+      "rsi14_w": 58.35,
+      "rsi14_m": 52.35,
       "dist_high": -17.37,
       "dist_low": 15.81,
       "dist_ma50": 9.77,
       "dist_ma200": 3.02,
       "marketCap": "128.38B",
-      "targetPrice": 230.19
+      "targetPrice": 187.8
     },
     {
       "ticker": "CRM",
@@ -2809,17 +2995,19 @@ const INDEX_DATA = {
       "pct_6m": -42.41,
       "pct_ytd": -42.34,
       "pct_1y": -42.95,
-      "trailingPE": 17.76,
-      "forwardPE": 9.86,
+      "trailingPE": 17.68,
+      "forwardPE": 9.79,
       "ema_signal": 1,
       "dist_sma20": -11.97,
       "rsi14": 33.33,
+      "rsi14_w": 33.93,
+      "rsi14_m": 34.9,
       "dist_high": -44.18,
       "dist_low": 1.76,
       "dist_ma50": -13.72,
       "dist_ma200": -28.92,
       "marketCap": "125.11B",
-      "targetPrice": 251.53
+      "targetPrice": 187.8
     },
     {
       "ticker": "COF",
@@ -2844,12 +3032,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.12,
       "rsi14": 62.38,
+      "rsi14_w": 51.4,
+      "rsi14_m": 57.41,
       "dist_high": -22.28,
       "dist_low": 13.84,
       "dist_ma50": 5.09,
       "dist_ma200": -4.21,
       "marketCap": "123.50B",
-      "targetPrice": 254.67
+      "targetPrice": 187.8
     },
     {
       "ticker": "LOW",
@@ -2869,17 +3059,19 @@ const INDEX_DATA = {
       "pct_6m": -8.87,
       "pct_ytd": -8.17,
       "pct_1y": 0.34,
-      "trailingPE": 18.05,
-      "forwardPE": 16.43,
+      "trailingPE": 18.73,
+      "forwardPE": 16.48,
       "ema_signal": 3,
       "dist_sma20": 2.86,
       "rsi14": 52.51,
+      "rsi14_w": 42.1,
+      "rsi14_m": 46.87,
       "dist_high": -22.94,
       "dist_low": 7.17,
       "dist_ma50": -1.83,
       "dist_ma200": -9.54,
       "marketCap": "124.17B",
-      "targetPrice": 263.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "VRT",
@@ -2904,12 +3096,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": 0.61,
       "rsi14": 49.41,
+      "rsi14_w": 60.81,
+      "rsi14_m": 75.5,
       "dist_high": -15.89,
       "dist_low": 162.12,
       "dist_ma50": -2.26,
       "dist_ma200": 39.38,
       "marketCap": "121.54B",
-      "targetPrice": 379.53
+      "targetPrice": 187.8
     },
     {
       "ticker": "PH",
@@ -2934,12 +3128,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.28,
       "rsi14": 65.94,
+      "rsi14_w": 59.32,
+      "rsi14_m": 68.08,
       "dist_high": -6.05,
       "dist_low": 42.7,
       "dist_ma50": 6.04,
       "dist_ma200": 9.3,
       "marketCap": "121.18B",
-      "targetPrice": 1046.08
+      "targetPrice": 187.8
     },
     {
       "ticker": "VRTX",
@@ -2959,17 +3155,19 @@ const INDEX_DATA = {
       "pct_6m": 2.64,
       "pct_ytd": 4.82,
       "pct_1y": 6.59,
-      "trailingPE": 28.17,
-      "forwardPE": 21.98,
+      "trailingPE": 27.77,
+      "forwardPE": 22.13,
       "ema_signal": 3,
       "dist_sma20": 6.16,
       "rsi14": 67.26,
+      "rsi14_w": 60.16,
+      "rsi14_m": 52.85,
       "dist_high": -4.8,
       "dist_low": 29.64,
       "dist_ma50": 8.05,
       "dist_ma200": 7.82,
       "marketCap": "120.61B",
-      "targetPrice": 553.64
+      "targetPrice": 187.8
     },
     {
       "ticker": "MO",
@@ -2994,12 +3192,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.87,
       "rsi14": 55.31,
+      "rsi14_w": 56.82,
+      "rsi14_m": 65.93,
       "dist_high": -3.33,
       "dist_low": 31.71,
       "dist_ma50": 2.9,
       "dist_ma200": 11.43,
       "marketCap": "120.35B",
-      "targetPrice": 70.36
+      "targetPrice": 187.8
     },
     {
       "ticker": "SYK",
@@ -3024,12 +3224,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.66,
       "rsi14": 54.07,
+      "rsi14_w": 43.09,
+      "rsi14_m": 43.32,
       "dist_high": -22.27,
       "dist_low": 11.01,
       "dist_ma50": 0.84,
       "dist_ma200": -10.23,
       "marketCap": "120.25B",
-      "targetPrice": 386.8
+      "targetPrice": 187.8
     },
     {
       "ticker": "SPGI",
@@ -3049,17 +3251,19 @@ const INDEX_DATA = {
       "pct_6m": -23.47,
       "pct_ytd": -23.01,
       "pct_1y": -22.82,
-      "trailingPE": 25.46,
-      "forwardPE": 18.07,
+      "trailingPE": 25.32,
+      "forwardPE": 18.09,
       "ema_signal": 1,
       "dist_sma20": -3.71,
       "rsi14": 40.89,
+      "rsi14_w": 38.36,
+      "rsi14_m": 40.76,
       "dist_high": -28.68,
       "dist_low": 2.97,
       "dist_ma50": -4.82,
       "dist_ma200": -13.81,
       "marketCap": "119.10B",
-      "targetPrice": 532.82
+      "targetPrice": 187.8
     },
     {
       "ticker": "SBUX",
@@ -3079,17 +3283,19 @@ const INDEX_DATA = {
       "pct_6m": 22.42,
       "pct_ytd": 22.94,
       "pct_1y": 13.64,
-      "trailingPE": 79.02,
-      "forwardPE": 33.84,
+      "trailingPE": 79.03,
+      "forwardPE": 34.38,
       "ema_signal": 3,
       "dist_sma20": 4.36,
       "rsi14": 58.73,
+      "rsi14_w": 56.48,
+      "rsi14_m": 58.86,
       "dist_high": -3.08,
       "dist_low": 31.95,
       "dist_ma50": 2.08,
       "dist_ma200": 12.38,
       "marketCap": "117.99B",
-      "targetPrice": 107.28
+      "targetPrice": 187.8
     },
     {
       "ticker": "LMT",
@@ -3114,12 +3320,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.87,
       "rsi14": 36.4,
+      "rsi14_w": 37.72,
+      "rsi14_m": 48.71,
       "dist_high": -27.35,
       "dist_low": 19.7,
       "dist_ma50": -7.25,
       "dist_ma200": -8.79,
       "marketCap": "113.35B",
-      "targetPrice": 625.16
+      "targetPrice": 187.8
     },
     {
       "ticker": "BMY",
@@ -3139,17 +3347,19 @@ const INDEX_DATA = {
       "pct_6m": 0.53,
       "pct_ytd": 1.97,
       "pct_1y": 17.82,
-      "trailingPE": 15.44,
-      "forwardPE": 8.96,
+      "trailingPE": 15.54,
+      "forwardPE": 8.92,
       "ema_signal": 1,
       "dist_sma20": -1.61,
       "rsi14": 44.06,
+      "rsi14_w": 46.5,
+      "rsi14_m": 57.81,
       "dist_high": -11.82,
       "dist_low": 29.11,
       "dist_ma50": -3.76,
       "dist_ma200": 2.41,
       "marketCap": "112.31B",
-      "targetPrice": 63.39
+      "targetPrice": 187.8
     },
     {
       "ticker": "HWM",
@@ -3174,12 +3384,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.07,
       "rsi14": 59.43,
+      "rsi14_w": 64.51,
+      "rsi14_m": 80.17,
       "dist_high": -2.53,
       "dist_low": 61.44,
       "dist_ma50": 7.12,
       "dist_ma200": 22.69,
       "marketCap": "110.45B",
-      "targetPrice": 306.88
+      "targetPrice": 187.8
     },
     {
       "ticker": "EQIX",
@@ -3204,12 +3416,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.84,
       "rsi14": 56.0,
+      "rsi14_w": 67.53,
+      "rsi14_m": 69.69,
       "dist_high": -1.88,
       "dist_low": 50.81,
       "dist_ma50": 1.57,
       "dist_ma200": 21.78,
       "marketCap": "107.99B",
-      "targetPrice": 1197.11
+      "targetPrice": 187.8
     },
     {
       "ticker": "SO",
@@ -3234,12 +3448,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.21,
       "rsi14": 59.88,
+      "rsi14_w": 54.99,
+      "rsi14_m": 62.0,
       "dist_high": -3.95,
       "dist_low": 13.92,
       "dist_ma50": 2.42,
       "dist_ma200": 3.48,
       "marketCap": "107.97B",
-      "targetPrice": 101.03
+      "targetPrice": 187.8
     },
     {
       "ticker": "TT",
@@ -3264,12 +3480,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.85,
       "rsi14": 57.01,
+      "rsi14_w": 62.35,
+      "rsi14_m": 61.2,
       "dist_high": -1.91,
       "dist_low": 28.35,
       "dist_ma50": 2.9,
       "dist_ma200": 11.9,
       "marketCap": "106.80B",
-      "targetPrice": 521.51
+      "targetPrice": 187.8
     },
     {
       "ticker": "FTNT",
@@ -3289,17 +3507,19 @@ const INDEX_DATA = {
       "pct_6m": 78.96,
       "pct_ytd": 82.95,
       "pct_1y": 40.11,
-      "trailingPE": 56.13,
-      "forwardPE": 42.49,
+      "trailingPE": 57.42,
+      "forwardPE": 42.41,
       "ema_signal": 2,
       "dist_sma20": 1.31,
       "rsi14": 62.08,
+      "rsi14_w": 80.84,
+      "rsi14_m": 78.34,
       "dist_high": -2.93,
       "dist_low": 95.3,
       "dist_ma50": 23.01,
       "dist_ma200": 59.77,
       "marketCap": "106.44B",
-      "targetPrice": 114.74
+      "targetPrice": 187.8
     },
     {
       "ticker": "PWR",
@@ -3319,17 +3539,19 @@ const INDEX_DATA = {
       "pct_6m": 61.88,
       "pct_ytd": 66.3,
       "pct_1y": 87.63,
-      "trailingPE": 96.29,
-      "forwardPE": 42.84,
+      "trailingPE": 96.15,
+      "forwardPE": 42.64,
       "ema_signal": 1,
       "dist_sma20": -0.67,
       "rsi14": 48.99,
+      "rsi14_w": 68.62,
+      "rsi14_m": 77.75,
       "dist_high": -10.62,
       "dist_low": 88.55,
       "dist_ma50": 0.36,
       "dist_ma200": 32.78,
       "marketCap": "105.32B",
-      "targetPrice": 802.79
+      "targetPrice": 187.8
     },
     {
       "ticker": "CDNS",
@@ -3349,17 +3571,19 @@ const INDEX_DATA = {
       "pct_6m": 17.2,
       "pct_ytd": 19.14,
       "pct_1y": 25.16,
-      "trailingPE": 86.94,
-      "forwardPE": 39.72,
+      "trailingPE": 88.46,
+      "forwardPE": 39.62,
       "ema_signal": 1,
       "dist_sma20": -4.37,
       "rsi14": 47.17,
+      "rsi14_w": 61.35,
+      "rsi14_m": 59.94,
       "dist_high": -10.56,
       "dist_low": 40.18,
       "dist_ma50": 3.49,
       "dist_ma200": 13.96,
       "marketCap": "102.71B",
-      "targetPrice": 393.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "MDT",
@@ -3379,17 +3603,19 @@ const INDEX_DATA = {
       "pct_6m": -17.62,
       "pct_ytd": -16.58,
       "pct_1y": -6.79,
-      "trailingPE": 21.51,
-      "forwardPE": 12.54,
+      "trailingPE": 21.6,
+      "forwardPE": 12.5,
       "ema_signal": 3,
       "dist_sma20": 1.6,
       "rsi14": 52.21,
+      "rsi14_w": 41.01,
+      "rsi14_m": 46.83,
       "dist_high": -23.94,
       "dist_low": 8.65,
       "dist_ma50": 0.57,
       "dist_ma200": -12.64,
       "marketCap": "102.57B",
-      "targetPrice": 96.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "MAR",
@@ -3409,17 +3635,19 @@ const INDEX_DATA = {
       "pct_6m": 21.7,
       "pct_ytd": 23.63,
       "pct_1y": 44.2,
-      "trailingPE": 40.25,
-      "forwardPE": 29.48,
+      "trailingPE": 40.16,
+      "forwardPE": 29.31,
       "ema_signal": 1,
       "dist_sma20": -1.25,
       "rsi14": 50.76,
+      "rsi14_w": 62.69,
+      "rsi14_m": 73.51,
       "dist_high": -4.72,
       "dist_low": 50.21,
       "dist_ma50": 3.04,
       "dist_ma200": 19.48,
       "marketCap": "101.14B",
-      "targetPrice": 385.57
+      "targetPrice": 187.8
     },
     {
       "ticker": "NEM",
@@ -3439,17 +3667,19 @@ const INDEX_DATA = {
       "pct_6m": -10.21,
       "pct_ytd": -5.82,
       "pct_1y": 61.97,
-      "trailingPE": 12.2,
-      "forwardPE": 8.26,
+      "trailingPE": 12.69,
+      "forwardPE": 8.28,
       "ema_signal": 1,
       "dist_sma20": -8.87,
       "rsi14": 36.9,
+      "rsi14_w": 43.34,
+      "rsi14_m": 59.35,
       "dist_high": -28.73,
       "dist_low": 65.68,
       "dist_ma50": -13.63,
       "dist_ma200": -8.54,
       "marketCap": "100.39B",
-      "targetPrice": 144.26
+      "targetPrice": 187.8
     },
     {
       "ticker": "DUK",
@@ -3469,17 +3699,19 @@ const INDEX_DATA = {
       "pct_6m": 7.7,
       "pct_ytd": 7.95,
       "pct_1y": 9.12,
-      "trailingPE": 19.37,
+      "trailingPE": 19.23,
       "forwardPE": 17.65,
       "ema_signal": 3,
       "dist_sma20": 2.29,
       "rsi14": 56.85,
+      "rsi14_w": 52.46,
+      "rsi14_m": 63.18,
       "dist_high": -5.19,
       "dist_low": 10.99,
       "dist_ma50": 1.11,
       "dist_ma200": 1.95,
       "marketCap": "98.64B",
-      "targetPrice": 138.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "BNY",
@@ -3499,17 +3731,19 @@ const INDEX_DATA = {
       "pct_6m": 21.43,
       "pct_ytd": 23.66,
       "pct_1y": 59.51,
-      "trailingPE": 17.79,
-      "forwardPE": 14.81,
+      "trailingPE": 17.81,
+      "forwardPE": 14.83,
       "ema_signal": 2,
       "dist_sma20": 0.55,
       "rsi14": 54.63,
+      "rsi14_w": 74.57,
+      "rsi14_m": 88.21,
       "dist_high": -2.53,
       "dist_low": 59.51,
       "dist_ma50": 4.1,
       "dist_ma200": 19.34,
       "marketCap": "98.54B",
-      "targetPrice": 147.36
+      "targetPrice": 187.8
     },
     {
       "ticker": "NOW",
@@ -3529,17 +3763,19 @@ const INDEX_DATA = {
       "pct_6m": -38.53,
       "pct_ytd": -38.77,
       "pct_1y": -53.34,
-      "trailingPE": 55.8,
-      "forwardPE": 18.54,
+      "trailingPE": 57.2,
+      "forwardPE": 18.66,
       "ema_signal": 1,
       "dist_sma20": -13.13,
       "rsi14": 40.86,
+      "rsi14_w": 40.18,
+      "rsi14_m": 38.03,
       "dist_high": -55.11,
       "dist_low": 13.01,
       "dist_ma50": -5.88,
       "dist_ma200": -30.75,
       "marketCap": "96.74B",
-      "targetPrice": 140.76
+      "targetPrice": 187.8
     },
     {
       "ticker": "PNC",
@@ -3559,17 +3795,19 @@ const INDEX_DATA = {
       "pct_6m": 12.39,
       "pct_ytd": 14.94,
       "pct_1y": 31.46,
-      "trailingPE": 13.93,
-      "forwardPE": 11.36,
+      "trailingPE": 13.94,
+      "forwardPE": 11.41,
       "ema_signal": 3,
       "dist_sma20": 4.77,
       "rsi14": 66.39,
+      "rsi14_w": 64.04,
+      "rsi14_m": 66.58,
       "dist_high": -1.06,
       "dist_low": 34.51,
       "dist_ma50": 7.45,
       "dist_ma200": 14.29,
       "marketCap": "96.34B",
-      "targetPrice": 256.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "CMI",
@@ -3594,12 +3832,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 2.7,
       "rsi14": 54.43,
+      "rsi14_w": 67.11,
+      "rsi14_m": 78.17,
       "dist_high": -4.15,
       "dist_low": 118.0,
       "dist_ma50": 4.08,
       "dist_ma200": 26.89,
       "marketCap": "95.88B",
-      "targetPrice": 744.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "CEG",
@@ -3624,12 +3864,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.78,
       "rsi14": 47.92,
+      "rsi14_w": 43.7,
+      "rsi14_m": 50.6,
       "dist_high": -33.66,
       "dist_low": 10.59,
       "dist_ma50": -5.49,
       "dist_ma200": -15.93,
       "marketCap": "95.69B",
-      "targetPrice": 360.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "USB",
@@ -3654,12 +3896,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.13,
       "rsi14": 66.84,
+      "rsi14_w": 63.55,
+      "rsi14_m": 67.14,
       "dist_high": -0.96,
       "dist_low": 36.8,
       "dist_ma50": 7.59,
       "dist_ma200": 13.76,
       "marketCap": "93.64B",
-      "targetPrice": 63.52
+      "targetPrice": 187.8
     },
     {
       "ticker": "GD",
@@ -3684,12 +3928,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.08,
       "rsi14": 47.56,
+      "rsi14_w": 50.4,
+      "rsi14_m": 61.68,
       "dist_high": -6.61,
       "dist_low": 22.51,
       "dist_ma50": 0.84,
       "dist_ma200": 0.02,
       "marketCap": "93.11B",
-      "targetPrice": 393.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "WMB",
@@ -3714,12 +3960,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.69,
       "rsi14": 61.4,
+      "rsi14_w": 59.66,
+      "rsi14_m": 70.38,
       "dist_high": -4.45,
       "dist_low": 34.26,
       "dist_ma50": 3.16,
       "dist_ma200": 13.43,
       "marketCap": "92.79B",
-      "targetPrice": 82.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "MNST",
@@ -3744,12 +3992,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.35,
       "rsi14": 71.16,
+      "rsi14_w": 72.41,
+      "rsi14_m": 72.98,
       "dist_high": 0.0,
       "dist_low": 61.47,
       "dist_ma50": 11.93,
       "dist_ma200": 23.63,
       "marketCap": "92.62B",
-      "targetPrice": 89.69
+      "targetPrice": 187.8
     },
     {
       "ticker": "UPS",
@@ -3774,12 +4024,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -1.12,
       "rsi14": 51.06,
+      "rsi14_w": 53.25,
+      "rsi14_m": 43.48,
       "dist_high": -11.55,
       "dist_low": 28.53,
       "dist_ma50": 1.75,
       "dist_ma200": 6.29,
       "marketCap": "90.22B",
-      "targetPrice": 113.6
+      "targetPrice": 187.8
     },
     {
       "ticker": "MCK",
@@ -3804,12 +4056,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.31,
       "rsi14": 48.17,
+      "rsi14_w": 43.57,
+      "rsi14_m": 53.66,
       "dist_high": -23.01,
       "dist_low": 16.32,
       "dist_ma50": -2.18,
       "dist_ma200": -7.11,
       "marketCap": "89.75B",
-      "targetPrice": 941.4
+      "targetPrice": 187.8
     },
     {
       "ticker": "WM",
@@ -3834,12 +4088,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.77,
       "rsi14": 56.52,
+      "rsi14_w": 50.14,
+      "rsi14_m": 51.71,
       "dist_high": -9.43,
       "dist_low": 13.46,
       "dist_ma50": 1.15,
       "dist_ma200": 0.9,
       "marketCap": "89.66B",
-      "targetPrice": 256.04
+      "targetPrice": 187.8
     },
     {
       "ticker": "FCX",
@@ -3864,12 +4120,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.43,
       "rsi14": 42.05,
+      "rsi14_w": 52.16,
+      "rsi14_m": 58.09,
       "dist_high": -13.78,
       "dist_low": 74.99,
       "dist_ma50": -4.1,
       "dist_ma200": 13.23,
       "marketCap": "88.90B",
-      "targetPrice": 70.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "SNPS",
@@ -3894,12 +4152,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -1.91,
       "rsi14": 45.76,
+      "rsi14_w": 49.96,
+      "rsi14_m": 44.49,
       "dist_high": -28.11,
       "dist_low": 21.94,
       "dist_ma50": -3.9,
       "dist_ma200": 1.41,
       "marketCap": "88.83B",
-      "targetPrice": 563.74
+      "targetPrice": 187.8
     },
     {
       "ticker": "ADP",
@@ -3924,12 +4184,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.2,
       "rsi14": 48.29,
+      "rsi14_w": 45.88,
+      "rsi14_m": 44.06,
       "dist_high": -29.4,
       "dist_low": 16.45,
       "dist_ma50": 2.07,
       "dist_ma200": -9.07,
       "marketCap": "87.88B",
-      "targetPrice": 246.8
+      "targetPrice": 187.8
     },
     {
       "ticker": "HOOD",
@@ -3949,17 +4211,19 @@ const INDEX_DATA = {
       "pct_6m": -19.3,
       "pct_ytd": -14.07,
       "pct_1y": 17.45,
-      "trailingPE": 46.95,
+      "trailingPE": 47.18,
       "forwardPE": 33.58,
       "ema_signal": 2,
       "dist_sma20": 5.48,
       "rsi14": 56.58,
+      "rsi14_w": 53.6,
+      "rsi14_m": 61.08,
       "dist_high": -36.25,
       "dist_low": 49.16,
       "dist_ma50": 14.74,
       "dist_ma200": -5.45,
       "marketCap": "87.52B",
-      "targetPrice": 101.24
+      "targetPrice": 187.8
     },
     {
       "ticker": "JCI",
@@ -3984,12 +4248,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": 0.06,
       "rsi14": 50.19,
+      "rsi14_w": 58.93,
+      "rsi14_m": 71.87,
       "dist_high": -3.64,
       "dist_low": 38.33,
       "dist_ma50": 0.8,
       "dist_ma200": 13.15,
       "marketCap": "87.13B",
-      "targetPrice": 154.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "MMM",
@@ -4014,12 +4280,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.77,
       "rsi14": 71.13,
+      "rsi14_w": 60.13,
+      "rsi14_m": 64.34,
       "dist_high": -4.98,
       "dist_low": 17.5,
       "dist_ma50": 9.73,
       "dist_ma200": 5.15,
       "marketCap": "86.53B",
-      "targetPrice": 170.97
+      "targetPrice": 187.8
     },
     {
       "ticker": "RCL",
@@ -4044,12 +4312,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.42,
       "rsi14": 64.51,
+      "rsi14_w": 60.13,
+      "rsi14_m": 62.36,
       "dist_high": -12.27,
       "dist_low": 30.09,
       "dist_ma50": 15.94,
       "dist_ma200": 10.79,
       "marketCap": "86.08B",
-      "targetPrice": 336.85
+      "targetPrice": 187.8
     },
     {
       "ticker": "HCA",
@@ -4074,12 +4344,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.48,
       "rsi14": 47.56,
+      "rsi14_w": 36.52,
+      "rsi14_m": 49.56,
       "dist_high": -28.87,
       "dist_low": 15.98,
       "dist_ma50": -6.45,
       "dist_ma200": -15.73,
       "marketCap": "86.02B",
-      "targetPrice": 500.29
+      "targetPrice": 187.8
     },
     {
       "ticker": "ABNB",
@@ -4104,12 +4376,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.31,
       "rsi14": 63.36,
+      "rsi14_w": 60.83,
+      "rsi14_m": 51.66,
       "dist_high": 0.0,
       "dist_low": 29.46,
       "dist_ma50": 5.29,
       "dist_ma200": 11.59,
       "marketCap": "85.70B",
-      "targetPrice": 156.47
+      "targetPrice": 187.8
     },
     {
       "ticker": "CSX",
@@ -4129,17 +4403,19 @@ const INDEX_DATA = {
       "pct_6m": 25.23,
       "pct_ytd": 27.06,
       "pct_1y": 41.77,
-      "trailingPE": 28.26,
-      "forwardPE": 21.2,
+      "trailingPE": 28.17,
+      "forwardPE": 21.17,
       "ema_signal": 1,
       "dist_sma20": -0.9,
       "rsi14": 49.76,
+      "rsi14_w": 64.77,
+      "rsi14_m": 67.82,
       "dist_high": -3.17,
       "dist_low": 43.71,
       "dist_ma50": 1.27,
       "dist_ma200": 17.26,
       "marketCap": "85.59B",
-      "targetPrice": 46.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "CME",
@@ -4159,17 +4435,19 @@ const INDEX_DATA = {
       "pct_6m": -16.17,
       "pct_ytd": -15.16,
       "pct_1y": -15.14,
-      "trailingPE": 20.67,
-      "forwardPE": 17.94,
+      "trailingPE": 19.77,
+      "forwardPE": 17.98,
       "ema_signal": 1,
       "dist_sma20": -10.09,
       "rsi14": 25.74,
+      "rsi14_w": 32.74,
+      "rsi14_m": 47.36,
       "dist_high": -29.03,
       "dist_low": 0.0,
       "dist_ma50": -16.34,
       "dist_ma200": -17.63,
-      "marketCap": "83.71B",
-      "targetPrice": 302.6
+      "marketCap": "83.95B",
+      "targetPrice": 187.8
     },
     {
       "ticker": "ELV",
@@ -4194,12 +4472,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.87,
       "rsi14": 44.68,
+      "rsi14_w": 58.08,
+      "rsi14_m": 43.42,
       "dist_high": -9.53,
       "dist_low": 39.81,
       "dist_ma50": 1.27,
       "dist_ma200": 12.17,
       "marketCap": "83.39B",
-      "targetPrice": 415.81
+      "targetPrice": 187.8
     },
     {
       "ticker": "KKR",
@@ -4224,12 +4504,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.81,
       "rsi14": 39.09,
+      "rsi14_w": 39.0,
+      "rsi14_m": 44.88,
       "dist_high": -39.86,
       "dist_low": 9.1,
       "dist_ma50": -6.79,
       "dist_ma200": -18.44,
       "marketCap": "85.33B",
-      "targetPrice": 125.53
+      "targetPrice": 187.8
     },
     {
       "ticker": "SHW",
@@ -4254,12 +4536,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.34,
       "rsi14": 63.19,
+      "rsi14_w": 52.48,
+      "rsi14_m": 52.7,
       "dist_high": -11.22,
       "dist_low": 13.7,
       "dist_ma50": 5.3,
       "dist_ma200": -0.3,
       "marketCap": "82.16B",
-      "targetPrice": 372.95
+      "targetPrice": 187.8
     },
     {
       "ticker": "AMT",
@@ -4284,12 +4568,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.91,
       "rsi14": 38.0,
+      "rsi14_w": 44.94,
+      "rsi14_m": 45.16,
       "dist_high": -24.91,
       "dist_low": 4.3,
       "dist_ma50": -3.85,
       "dist_ma200": -4.16,
       "marketCap": "81.28B",
-      "targetPrice": 216.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "CMCSA",
@@ -4314,12 +4600,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.95,
       "rsi14": 32.8,
+      "rsi14_w": 31.27,
+      "rsi14_m": 33.01,
       "dist_high": -33.51,
       "dist_low": 1.43,
       "dist_ma50": -11.68,
       "dist_ma200": -18.49,
       "marketCap": "80.88B",
-      "targetPrice": 32.4
+      "targetPrice": 187.8
     },
     {
       "ticker": "MRSH",
@@ -4344,12 +4632,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.52,
       "rsi14": 52.43,
+      "rsi14_w": 43.81,
+      "rsi14_m": 38.69,
       "dist_high": -24.45,
       "dist_low": 5.49,
       "dist_ma50": -0.2,
       "dist_ma200": -7.85,
       "marketCap": "79.96B",
-      "targetPrice": 199.57
+      "targetPrice": 187.8
     },
     {
       "ticker": "DDOG",
@@ -4374,12 +4664,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.22,
       "rsi14": 52.23,
+      "rsi14_w": 67.36,
+      "rsi14_m": 65.3,
       "dist_high": -19.76,
       "dist_low": 116.98,
       "dist_ma50": 15.45,
       "dist_ma200": 45.75,
       "marketCap": "79.25B",
-      "targetPrice": 241.83
+      "targetPrice": 187.8
     },
     {
       "ticker": "MDLZ",
@@ -4404,12 +4696,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.04,
       "rsi14": 52.02,
+      "rsi14_w": 54.41,
+      "rsi14_m": 49.31,
       "dist_high": -12.73,
       "dist_low": 19.86,
       "dist_ma50": 1.87,
       "dist_ma200": 4.81,
       "marketCap": "79.25B",
-      "targetPrice": 67.21
+      "targetPrice": 187.8
     },
     {
       "ticker": "EMR",
@@ -4434,12 +4728,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.22,
       "rsi14": 48.19,
+      "rsi14_w": 51.21,
+      "rsi14_m": 56.85,
       "dist_high": -12.52,
       "dist_low": 14.71,
       "dist_ma50": 0.38,
       "dist_ma200": 2.27,
       "marketCap": "79.22B",
-      "targetPrice": 163.47
+      "targetPrice": 187.8
     },
     {
       "ticker": "ACN",
@@ -4464,12 +4760,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -21.99,
       "rsi14": 24.7,
+      "rsi14_w": 26.78,
+      "rsi14_m": 26.93,
       "dist_high": -57.63,
       "dist_low": 3.46,
       "dist_ma50": -25.89,
       "dist_ma200": -42.4,
       "marketCap": "79.03B",
-      "targetPrice": 181.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "MCO",
@@ -4489,17 +4787,19 @@ const INDEX_DATA = {
       "pct_6m": -13.05,
       "pct_ytd": -11.95,
       "pct_1y": -6.61,
-      "trailingPE": 31.85,
-      "forwardPE": 24.18,
+      "trailingPE": 32.25,
+      "forwardPE": 24.12,
       "ema_signal": 1,
       "dist_sma20": -0.34,
       "rsi14": 49.83,
+      "rsi14_w": 47.09,
+      "rsi14_m": 49.83,
       "dist_high": -16.65,
       "dist_low": 9.11,
       "dist_ma50": -0.2,
       "dist_ma200": -4.83,
-      "marketCap": "78.57B",
-      "targetPrice": 536.5
+      "marketCap": "78.58B",
+      "targetPrice": 187.8
     },
     {
       "ticker": "HLT",
@@ -4524,12 +4824,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.78,
       "rsi14": 57.53,
+      "rsi14_w": 65.7,
+      "rsi14_m": 75.69,
       "dist_high": -1.94,
       "dist_low": 35.35,
       "dist_ma50": 3.89,
       "dist_ma200": 15.39,
       "marketCap": "78.18B",
-      "targetPrice": 347.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "ADBE",
@@ -4554,12 +4856,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -14.05,
       "rsi14": 29.64,
+      "rsi14_w": 29.32,
+      "rsi14_m": 21.31,
       "dist_high": -49.87,
       "dist_low": 0.86,
       "dist_ma50": -17.94,
       "dist_ma200": -32.92,
       "marketCap": "78.14B",
-      "targetPrice": 282.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "ECL",
@@ -4584,12 +4888,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.13,
       "rsi14": 64.49,
+      "rsi14_w": 55.37,
+      "rsi14_m": 55.24,
       "dist_high": -10.4,
       "dist_low": 12.44,
       "dist_ma50": 5.86,
       "dist_ma200": 2.24,
       "marketCap": "77.76B",
-      "targetPrice": 317.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "DASH",
@@ -4614,12 +4920,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 10.18,
       "rsi14": 61.87,
+      "rsi14_w": 50.13,
+      "rsi14_m": 54.14,
       "dist_high": -36.85,
       "dist_low": 21.37,
       "dist_ma50": 7.54,
       "dist_ma200": -11.6,
       "marketCap": "77.53B",
-      "targetPrice": 244.68
+      "targetPrice": 187.8
     },
     {
       "ticker": "COHR",
@@ -4639,17 +4947,19 @@ const INDEX_DATA = {
       "pct_6m": 105.1,
       "pct_ytd": 112.66,
       "pct_1y": 358.37,
-      "trailingPE": 186.9,
+      "trailingPE": 185.14,
       "forwardPE": 48.0,
       "ema_signal": 3,
       "dist_sma20": 1.29,
       "rsi14": 52.53,
+      "rsi14_w": 77.15,
+      "rsi14_m": 86.79,
       "dist_high": -8.06,
       "dist_low": 384.81,
       "dist_ma50": 8.06,
       "dist_ma200": 71.78,
       "marketCap": "76.79B",
-      "targetPrice": 384.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "ITW",
@@ -4674,12 +4984,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.17,
       "rsi14": 58.65,
+      "rsi14_w": 52.08,
+      "rsi14_m": 54.82,
       "dist_high": -11.99,
       "dist_low": 9.38,
       "dist_ma50": 2.31,
       "dist_ma200": 1.4,
       "marketCap": "75.86B",
-      "targetPrice": 274.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "FDX",
@@ -4704,12 +5016,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.89,
       "rsi14": 44.83,
+      "rsi14_w": 60.0,
+      "rsi14_m": 63.7,
       "dist_high": -6.47,
       "dist_low": 81.11,
       "dist_ma50": 0.01,
       "dist_ma200": 21.94,
       "marketCap": "75.60B",
-      "targetPrice": 345.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "CRH",
@@ -4734,12 +5048,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.41,
       "rsi14": 57.25,
+      "rsi14_w": 50.49,
+      "rsi14_m": 58.29,
       "dist_high": -14.74,
       "dist_low": 26.33,
       "dist_ma50": 2.0,
       "dist_ma200": -2.98,
       "marketCap": "74.85B",
-      "targetPrice": 142.95
+      "targetPrice": 187.8
     },
     {
       "ticker": "NXPI",
@@ -4759,17 +5075,19 @@ const INDEX_DATA = {
       "pct_6m": 30.54,
       "pct_ytd": 35.47,
       "pct_1y": 35.96,
-      "trailingPE": 28.14,
+      "trailingPE": 28.09,
       "forwardPE": 16.6,
       "ema_signal": 1,
       "dist_sma20": -5.06,
       "rsi14": 47.19,
+      "rsi14_w": 60.85,
+      "rsi14_m": 57.16,
       "dist_high": -11.61,
       "dist_low": 59.65,
       "dist_ma50": 2.48,
       "dist_ma200": 25.15,
       "marketCap": "74.24B",
-      "targetPrice": 309.04
+      "targetPrice": 187.8
     },
     {
       "ticker": "TDG",
@@ -4794,12 +5112,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.74,
       "rsi14": 61.98,
+      "rsi14_w": 55.22,
+      "rsi14_m": 52.02,
       "dist_high": -18.4,
       "dist_low": 16.75,
       "dist_ma50": 8.0,
       "dist_ma200": 3.08,
       "marketCap": "73.98B",
-      "targetPrice": 1527.78
+      "targetPrice": 187.8
     },
     {
       "ticker": "CI",
@@ -4819,17 +5139,19 @@ const INDEX_DATA = {
       "pct_6m": 1.67,
       "pct_ytd": 1.54,
       "pct_1y": -11.56,
-      "trailingPE": 11.84,
-      "forwardPE": 8.36,
+      "trailingPE": 11.85,
+      "forwardPE": 8.35,
       "ema_signal": 1,
       "dist_sma20": -2.0,
       "rsi14": 44.12,
+      "rsi14_w": 48.84,
+      "rsi14_m": 45.89,
       "dist_high": -16.43,
       "dist_low": 14.34,
       "dist_ma50": -1.65,
       "dist_ma200": -0.58,
       "marketCap": "73.93B",
-      "targetPrice": 340.22
+      "targetPrice": 187.8
     },
     {
       "ticker": "ICE",
@@ -4849,17 +5171,19 @@ const INDEX_DATA = {
       "pct_6m": -20.05,
       "pct_ytd": -19.72,
       "pct_1y": -27.98,
-      "trailingPE": 18.93,
-      "forwardPE": 14.77,
+      "trailingPE": 18.9,
+      "forwardPE": 14.76,
       "ema_signal": 1,
       "dist_sma20": -7.12,
       "rsi14": 27.42,
+      "rsi14_w": 27.37,
+      "rsi14_m": 42.26,
       "dist_high": -31.01,
       "dist_low": 0.0,
       "dist_ma50": -13.33,
       "dist_ma200": -17.93,
       "marketCap": "73.53B",
-      "targetPrice": 196.8
+      "targetPrice": 187.8
     },
     {
       "ticker": "CL",
@@ -4879,17 +5203,19 @@ const INDEX_DATA = {
       "pct_6m": 14.49,
       "pct_ytd": 16.27,
       "pct_1y": 4.65,
-      "trailingPE": 35.65,
-      "forwardPE": 22.79,
+      "trailingPE": 35.61,
+      "forwardPE": 22.73,
       "ema_signal": 3,
       "dist_sma20": 2.99,
       "rsi14": 59.46,
+      "rsi14_w": 59.21,
+      "rsi14_m": 50.57,
       "dist_high": -7.32,
       "dist_low": 22.54,
       "dist_ma50": 4.9,
       "dist_ma200": 8.74,
       "marketCap": "73.52B",
-      "targetPrice": 96.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "AEP",
@@ -4909,17 +5235,19 @@ const INDEX_DATA = {
       "pct_6m": 17.04,
       "pct_ytd": 17.04,
       "pct_1y": 33.08,
-      "trailingPE": 19.96,
-      "forwardPE": 19.7,
+      "trailingPE": 19.79,
+      "forwardPE": 19.67,
       "ema_signal": 3,
       "dist_sma20": 4.91,
       "rsi14": 63.81,
+      "rsi14_w": 58.55,
+      "rsi14_m": 67.24,
       "dist_high": -1.6,
       "dist_low": 33.08,
       "dist_ma50": 3.1,
       "dist_ma200": 9.5,
       "marketCap": "73.43B",
-      "targetPrice": 144.95
+      "targetPrice": 187.8
     },
     {
       "ticker": "ROST",
@@ -4944,12 +5272,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.39,
       "rsi14": 48.54,
+      "rsi14_w": 61.55,
+      "rsi14_m": 75.23,
       "dist_high": -4.81,
       "dist_low": 80.53,
       "dist_ma50": 0.87,
       "dist_ma200": 18.88,
       "marketCap": "73.33B",
-      "targetPrice": 256.18
+      "targetPrice": 187.8
     },
     {
       "ticker": "ORLY",
@@ -4969,17 +5299,19 @@ const INDEX_DATA = {
       "pct_6m": -4.96,
       "pct_ytd": -3.72,
       "pct_1y": -0.02,
-      "trailingPE": 28.69,
-      "forwardPE": 24.26,
+      "trailingPE": 28.61,
+      "forwardPE": 24.28,
       "ema_signal": 1,
       "dist_sma20": -0.85,
       "rsi14": 44.62,
+      "rsi14_w": 43.56,
+      "rsi14_m": 52.69,
       "dist_high": -18.55,
       "dist_low": 2.56,
       "dist_ma50": -3.61,
       "dist_ma200": -7.87,
       "marketCap": "72.78B",
-      "targetPrice": 111.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "KMI",
@@ -4999,17 +5331,19 @@ const INDEX_DATA = {
       "pct_6m": 19.86,
       "pct_ytd": 18.55,
       "pct_1y": 15.12,
-      "trailingPE": 21.98,
-      "forwardPE": 21.68,
+      "trailingPE": 21.87,
+      "forwardPE": 21.63,
       "ema_signal": 3,
       "dist_sma20": 2.93,
       "rsi14": 56.73,
+      "rsi14_w": 55.77,
+      "rsi14_m": 68.51,
       "dist_high": -5.01,
       "dist_low": 26.12,
       "dist_ma50": 1.54,
       "dist_ma200": 9.16,
       "marketCap": "72.51B",
-      "targetPrice": 35.89
+      "targetPrice": 187.8
     },
     {
       "ticker": "SPG",
@@ -5029,17 +5363,19 @@ const INDEX_DATA = {
       "pct_6m": 17.98,
       "pct_ytd": 20.01,
       "pct_1y": 41.14,
-      "trailingPE": 40.65,
-      "forwardPE": 32.24,
+      "trailingPE": 15.46,
+      "forwardPE": 32.88,
       "ema_signal": 3,
       "dist_sma20": 5.38,
       "rsi14": 67.84,
+      "rsi14_w": 67.46,
+      "rsi14_m": 68.62,
       "dist_high": 0.0,
       "dist_low": 41.14,
       "dist_ma50": 7.82,
       "dist_ma200": 16.25,
-      "marketCap": "72.04B",
-      "targetPrice": 217.16
+      "marketCap": "84.41B",
+      "targetPrice": 187.8
     },
     {
       "ticker": "VLO",
@@ -5064,12 +5400,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.0,
       "rsi14": 45.28,
+      "rsi14_w": 58.27,
+      "rsi14_m": 68.83,
       "dist_high": -7.69,
       "dist_low": 83.98,
       "dist_ma50": -1.34,
       "dist_ma200": 19.88,
       "marketCap": "71.99B",
-      "targetPrice": 263.67
+      "targetPrice": 187.8
     },
     {
       "ticker": "MPC",
@@ -5094,12 +5432,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.49,
       "rsi14": 45.11,
+      "rsi14_w": 58.55,
+      "rsi14_m": 67.19,
       "dist_high": -7.75,
       "dist_low": 55.44,
       "dist_ma50": -0.02,
       "dist_ma200": 18.34,
       "marketCap": "71.97B",
-      "targetPrice": 271.59
+      "targetPrice": 187.8
     },
     {
       "ticker": "INTU",
@@ -5119,17 +5459,19 @@ const INDEX_DATA = {
       "pct_6m": -61.14,
       "pct_ytd": -60.41,
       "pct_1y": -65.4,
-      "trailingPE": 15.88,
-      "forwardPE": 9.57,
+      "trailingPE": 15.75,
+      "forwardPE": 9.6,
       "ema_signal": 1,
       "dist_sma20": -10.38,
       "rsi14": 31.78,
+      "rsi14_w": 26.76,
+      "rsi14_m": 24.15,
       "dist_high": -67.52,
       "dist_low": 1.73,
       "dist_ma50": -24.64,
       "dist_ma200": -49.29,
       "marketCap": "71.73B",
-      "targetPrice": 474.64
+      "targetPrice": 187.8
     },
     {
       "ticker": "EOG",
@@ -5149,17 +5491,19 @@ const INDEX_DATA = {
       "pct_6m": 29.44,
       "pct_ytd": 28.04,
       "pct_1y": 12.21,
-      "trailingPE": 13.22,
-      "forwardPE": 9.06,
+      "trailingPE": 13.26,
+      "forwardPE": 9.09,
       "ema_signal": 2,
       "dist_sma20": -1.07,
       "rsi14": 47.62,
+      "rsi14_w": 53.92,
+      "rsi14_m": 55.61,
       "dist_high": -10.3,
       "dist_low": 32.1,
       "dist_ma50": -1.12,
       "dist_ma200": 11.16,
       "marketCap": "71.61B",
-      "targetPrice": 160.93
+      "targetPrice": 187.8
     },
     {
       "ticker": "NOC",
@@ -5184,12 +5528,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.78,
       "rsi14": 31.06,
+      "rsi14_w": 31.61,
+      "rsi14_m": 47.25,
       "dist_high": -34.51,
       "dist_low": 3.93,
       "dist_ma50": -10.94,
       "dist_ma200": -18.19,
       "marketCap": "71.44B",
-      "targetPrice": 696.95
+      "targetPrice": 187.8
     },
     {
       "ticker": "GM",
@@ -5209,17 +5555,19 @@ const INDEX_DATA = {
       "pct_6m": -4.74,
       "pct_ytd": -2.91,
       "pct_1y": 64.03,
-      "trailingPE": 31.84,
-      "forwardPE": 5.54,
+      "trailingPE": 28.81,
+      "forwardPE": 5.61,
       "ema_signal": 1,
       "dist_sma20": -3.5,
       "rsi14": 46.34,
+      "rsi14_w": 53.59,
+      "rsi14_m": 65.07,
       "dist_high": -8.6,
       "dist_low": 64.03,
       "dist_ma50": -0.31,
       "dist_ma200": 5.78,
       "marketCap": "71.19B",
-      "targetPrice": 97.26
+      "targetPrice": 187.8
     },
     {
       "ticker": "APO",
@@ -5244,12 +5592,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.51,
       "rsi14": 37.07,
+      "rsi14_w": 46.56,
+      "rsi14_m": 49.96,
       "dist_high": -21.44,
       "dist_low": 22.23,
       "dist_ma50": -5.2,
       "dist_ma200": -4.74,
       "marketCap": "70.68B",
-      "targetPrice": 150.38
+      "targetPrice": 187.8
     },
     {
       "ticker": "MPWR",
@@ -5274,12 +5624,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.72,
       "rsi14": 44.03,
+      "rsi14_w": 56.75,
+      "rsi14_m": 65.44,
       "dist_high": -15.09,
       "dist_low": 101.75,
       "dist_ma50": -7.61,
       "dist_ma200": 24.31,
       "marketCap": "70.50B",
-      "targetPrice": 1789.23
+      "targetPrice": 187.8
     },
     {
       "ticker": "SLB",
@@ -5304,12 +5656,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -13.27,
       "rsi14": 25.82,
+      "rsi14_w": 45.23,
+      "rsi14_m": 49.99,
       "dist_high": -19.65,
       "dist_low": 46.94,
       "dist_ma50": -14.56,
       "dist_ma200": 3.44,
       "marketCap": "69.68B",
-      "targetPrice": 62.36
+      "targetPrice": 187.8
     },
     {
       "ticker": "AON",
@@ -5334,12 +5688,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.35,
       "rsi14": 51.58,
+      "rsi14_w": 48.44,
+      "rsi14_m": 52.24,
       "dist_high": -13.27,
       "dist_low": 5.58,
       "dist_ma50": 1.01,
       "dist_ma200": -3.45,
       "marketCap": "69.52B",
-      "targetPrice": 382.37
+      "targetPrice": 187.8
     },
     {
       "ticker": "FIX",
@@ -5364,12 +5720,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.83,
       "rsi14": 54.61,
+      "rsi14_w": 75.59,
+      "rsi14_m": 88.66,
       "dist_high": -5.42,
       "dist_low": 285.04,
       "dist_ma50": 5.45,
       "dist_ma200": 53.6,
       "marketCap": "68.77B",
-      "targetPrice": 2048.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "CTAS",
@@ -5394,12 +5752,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.99,
       "rsi14": 46.0,
+      "rsi14_w": 41.38,
+      "rsi14_m": 46.41,
       "dist_high": -24.46,
       "dist_low": 4.51,
       "dist_ma50": -1.22,
       "dist_ma200": -8.15,
       "marketCap": "68.40B",
-      "targetPrice": 212.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "NSC",
@@ -5424,12 +5784,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.45,
       "rsi14": 44.71,
+      "rsi14_w": 51.55,
+      "rsi14_m": 60.8,
       "dist_high": -6.71,
       "dist_low": 19.05,
       "dist_ma50": -2.15,
       "dist_ma200": 2.4,
       "marketCap": "68.24B",
-      "targetPrice": 335.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "TRV",
@@ -5454,12 +5816,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.23,
       "rsi14": 71.24,
+      "rsi14_w": 63.64,
+      "rsi14_m": 69.36,
       "dist_high": 0.0,
       "dist_low": 27.98,
       "dist_ma50": 6.18,
       "dist_ma200": 10.49,
       "marketCap": "68.20B",
-      "targetPrice": 312.91
+      "targetPrice": 187.8
     },
     {
       "ticker": "WBD",
@@ -5484,12 +5848,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.52,
       "rsi14": 55.76,
+      "rsi14_w": 57.44,
+      "rsi14_m": 77.17,
       "dist_high": -9.27,
       "dist_low": 152.32,
       "dist_ma50": 0.72,
       "dist_ma200": 7.17,
       "marketCap": "68.19B",
-      "targetPrice": 29.82
+      "targetPrice": 187.8
     },
     {
       "ticker": "URI",
@@ -5514,12 +5880,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.87,
       "rsi14": 61.2,
+      "rsi14_w": 67.22,
+      "rsi14_m": 66.0,
       "dist_high": -0.96,
       "dist_low": 52.54,
       "dist_ma50": 11.82,
       "dist_ma200": 22.21,
       "marketCap": "67.89B",
-      "targetPrice": 1091.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "DLR",
@@ -5544,12 +5912,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.85,
       "rsi14": 55.2,
+      "rsi14_w": 58.64,
+      "rsi14_m": 60.81,
       "dist_high": -5.34,
       "dist_low": 30.48,
       "dist_ma50": 0.14,
       "dist_ma200": 10.39,
       "marketCap": "69.04B",
-      "targetPrice": 218.72
+      "targetPrice": 187.8
     },
     {
       "ticker": "PSX",
@@ -5574,12 +5944,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.44,
       "rsi14": 41.59,
+      "rsi14_w": 53.29,
+      "rsi14_m": 58.38,
       "dist_high": -10.43,
       "dist_low": 42.47,
       "dist_ma50": -2.33,
       "dist_ma200": 10.86,
       "marketCap": "67.61B",
-      "targetPrice": 194.11
+      "targetPrice": 187.8
     },
     {
       "ticker": "TER",
@@ -5604,12 +5976,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.63,
       "rsi14": 57.03,
+      "rsi14_w": 68.03,
+      "rsi14_m": 81.33,
       "dist_high": -6.52,
       "dist_low": 375.09,
       "dist_ma50": 13.54,
       "dist_ma200": 65.5,
       "marketCap": "66.87B",
-      "targetPrice": 389.88
+      "targetPrice": 187.8
     },
     {
       "ticker": "MSI",
@@ -5634,12 +6008,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -1.45,
       "rsi14": 45.02,
+      "rsi14_w": 43.74,
+      "rsi14_m": 49.21,
       "dist_high": -18.29,
       "dist_low": 10.11,
       "dist_ma50": -3.71,
       "dist_ma200": -5.15,
       "marketCap": "66.50B",
-      "targetPrice": 506.55
+      "targetPrice": 187.8
     },
     {
       "ticker": "BSX",
@@ -5664,12 +6040,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.11,
       "rsi14": 29.74,
+      "rsi14_w": 23.1,
+      "rsi14_m": 27.3,
       "dist_high": -58.89,
       "dist_low": 0.29,
       "dist_ma50": -17.48,
       "dist_ma200": -44.61,
       "marketCap": "66.08B",
-      "targetPrice": 77.04
+      "targetPrice": 187.8
     },
     {
       "ticker": "RSG",
@@ -5694,12 +6072,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.26,
       "rsi14": 58.27,
+      "rsi14_w": 50.15,
+      "rsi14_m": 52.75,
       "dist_high": -14.82,
       "dist_low": 8.02,
       "dist_ma50": 3.12,
       "dist_ma200": -0.97,
       "marketCap": "65.71B",
-      "targetPrice": 243.58
+      "targetPrice": 187.8
     },
     {
       "ticker": "CIEN",
@@ -5724,12 +6104,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -6.81,
       "rsi14": 44.19,
+      "rsi14_w": 58.04,
+      "rsi14_m": 75.47,
       "dist_high": -26.07,
       "dist_low": 496.15,
       "dist_ma50": -10.8,
       "dist_ma200": 47.0,
       "marketCap": "65.61B",
-      "targetPrice": 565.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "LITE",
@@ -5754,12 +6136,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.32,
       "rsi14": 45.84,
+      "rsi14_w": 60.67,
+      "rsi14_m": 89.68,
       "dist_high": -19.99,
       "dist_low": 831.59,
       "dist_ma50": -6.76,
       "dist_ma200": 61.05,
       "marketCap": "65.55B",
-      "targetPrice": 1111.29
+      "targetPrice": 187.8
     },
     {
       "ticker": "REGN",
@@ -5784,12 +6168,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.33,
       "rsi14": 45.21,
+      "rsi14_w": 38.14,
+      "rsi14_m": 34.92,
       "dist_high": -23.25,
       "dist_low": 19.82,
       "dist_ma50": -7.21,
       "dist_ma200": -10.66,
       "marketCap": "65.36B",
-      "targetPrice": 833.31
+      "targetPrice": 187.8
     },
     {
       "ticker": "HPE",
@@ -5814,12 +6200,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.85,
       "rsi14": 62.47,
+      "rsi14_w": 85.54,
+      "rsi14_m": 81.16,
       "dist_high": -13.18,
       "dist_low": 168.6,
       "dist_ma50": 30.93,
       "dist_ma200": 82.74,
       "marketCap": "64.55B",
-      "targetPrice": 64.13
+      "targetPrice": 187.8
     },
     {
       "ticker": "TGT",
@@ -5844,12 +6232,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.51,
       "rsi14": 67.49,
+      "rsi14_w": 68.27,
+      "rsi14_m": 56.99,
       "dist_high": 0.0,
       "dist_low": 68.74,
       "dist_ma50": 10.95,
       "dist_ma200": 30.6,
       "marketCap": "64.13B",
-      "targetPrice": 133.08
+      "targetPrice": 187.8
     },
     {
       "ticker": "GWW",
@@ -5874,12 +6264,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.24,
       "rsi14": 63.8,
+      "rsi14_w": 69.68,
+      "rsi14_m": 71.24,
       "dist_high": -1.67,
       "dist_low": 46.22,
       "dist_ma50": 8.52,
       "dist_ma200": 24.08,
       "marketCap": "63.39B",
-      "targetPrice": 1274.86
+      "targetPrice": 187.8
     },
     {
       "ticker": "APD",
@@ -5904,12 +6296,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.8,
       "rsi14": 41.83,
+      "rsi14_w": 47.43,
+      "rsi14_m": 52.59,
       "dist_high": -8.97,
       "dist_low": 20.79,
       "dist_ma50": -4.21,
       "dist_ma200": 1.8,
       "marketCap": "62.07B",
-      "targetPrice": 327.86
+      "targetPrice": 187.8
     },
     {
       "ticker": "TFC",
@@ -5934,12 +6328,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.83,
       "rsi14": 54.37,
+      "rsi14_w": 53.01,
+      "rsi14_m": 58.02,
       "dist_high": -10.79,
       "dist_low": 21.17,
       "dist_ma50": 1.21,
       "dist_ma200": 3.9,
       "marketCap": "62.03B",
-      "targetPrice": 55.88
+      "targetPrice": 187.8
     },
     {
       "ticker": "NKE",
@@ -5964,12 +6360,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.96,
       "rsi14": 38.73,
+      "rsi14_w": 34.59,
+      "rsi14_m": 31.43,
       "dist_high": -47.22,
       "dist_low": 0.0,
       "dist_ma50": -5.59,
       "dist_ma200": -28.24,
       "marketCap": "61.93B",
-      "targetPrice": 58.72
+      "targetPrice": 187.8
     },
     {
       "ticker": "PCAR",
@@ -5994,12 +6392,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.61,
       "rsi14": 50.68,
+      "rsi14_w": 51.87,
+      "rsi14_m": 55.71,
       "dist_high": -9.62,
       "dist_low": 25.96,
       "dist_ma50": -0.08,
       "dist_ma200": 4.21,
       "marketCap": "61.59B",
-      "targetPrice": 126.37
+      "targetPrice": 187.8
     },
     {
       "ticker": "CARR",
@@ -6024,12 +6424,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.85,
       "rsi14": 65.57,
+      "rsi14_w": 66.81,
+      "rsi14_m": 58.23,
       "dist_high": -8.26,
       "dist_low": 47.06,
       "dist_ma50": 12.73,
       "dist_ma200": 23.84,
       "marketCap": "61.51B",
-      "targetPrice": 76.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "D",
@@ -6054,12 +6456,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.11,
       "rsi14": 63.65,
+      "rsi14_w": 64.87,
+      "rsi14_m": 71.37,
       "dist_high": 0.0,
       "dist_low": 25.52,
       "dist_ma50": 6.53,
       "dist_ma200": 11.73,
       "marketCap": "60.92B",
-      "targetPrice": 69.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "SRE",
@@ -6084,12 +6488,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.22,
       "rsi14": 55.54,
+      "rsi14_w": 51.77,
+      "rsi14_m": 57.42,
       "dist_high": -7.04,
       "dist_low": 25.07,
       "dist_ma50": 0.68,
       "dist_ma200": 1.7,
       "marketCap": "60.62B",
-      "targetPrice": 103.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "ALL",
@@ -6114,12 +6520,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.3,
       "rsi14": 68.54,
+      "rsi14_w": 65.27,
+      "rsi14_m": 65.28,
       "dist_high": 0.0,
       "dist_low": 22.92,
       "dist_ma50": 7.71,
       "dist_ma200": 12.25,
       "marketCap": "60.12B",
-      "targetPrice": 240.86
+      "targetPrice": 187.8
     },
     {
       "ticker": "KEYS",
@@ -6144,12 +6552,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.8,
       "rsi14": 52.14,
+      "rsi14_w": 68.0,
+      "rsi14_m": 78.77,
       "dist_high": -5.9,
       "dist_low": 121.63,
       "dist_ma50": 1.56,
       "dist_ma200": 40.88,
       "marketCap": "60.04B",
-      "targetPrice": 383.08
+      "targetPrice": 187.8
     },
     {
       "ticker": "AFL",
@@ -6174,12 +6584,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.73,
       "rsi14": 55.49,
+      "rsi14_w": 57.88,
+      "rsi14_m": 64.4,
       "dist_high": -0.88,
       "dist_low": 20.04,
       "dist_ma50": 2.0,
       "dist_ma200": 5.51,
       "marketCap": "59.93B",
-      "targetPrice": 112.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "DAL",
@@ -6204,12 +6616,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 10.3,
       "rsi14": 71.96,
+      "rsi14_w": 71.06,
+      "rsi14_m": 71.82,
       "dist_high": 0.0,
       "dist_low": 87.64,
       "dist_ma50": 20.18,
       "dist_ma200": 35.13,
       "marketCap": "59.56B",
-      "targetPrice": 82.97
+      "targetPrice": 187.8
     },
     {
       "ticker": "TEL",
@@ -6234,12 +6648,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.99,
       "rsi14": 40.6,
+      "rsi14_w": 43.21,
+      "rsi14_m": 54.29,
       "dist_high": -20.26,
       "dist_low": 19.26,
       "dist_ma50": -6.84,
       "dist_ma200": -10.4,
       "marketCap": "57.96B",
-      "targetPrice": 261.89
+      "targetPrice": 187.8
     },
     {
       "ticker": "O",
@@ -6264,12 +6680,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.44,
       "rsi14": 52.97,
+      "rsi14_w": 51.05,
+      "rsi14_m": 56.59,
       "dist_high": -8.24,
       "dist_low": 10.83,
       "dist_ma50": -0.46,
       "dist_ma200": 1.99,
       "marketCap": "57.81B",
-      "targetPrice": 67.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "TRGP",
@@ -6294,12 +6712,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.86,
       "rsi14": 53.12,
+      "rsi14_w": 62.63,
+      "rsi14_m": 74.39,
       "dist_high": -3.77,
       "dist_low": 82.04,
       "dist_ma50": 3.32,
       "dist_ma200": 27.77,
       "marketCap": "57.16B",
-      "targetPrice": 285.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "AJG",
@@ -6324,12 +6744,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.01,
       "rsi14": 60.16,
+      "rsi14_w": 47.53,
+      "rsi14_m": 44.28,
       "dist_high": -32.28,
       "dist_low": 14.98,
       "dist_ma50": 4.94,
       "dist_ma200": -8.75,
       "marketCap": "56.72B",
-      "targetPrice": 264.74
+      "targetPrice": 187.8
     },
     {
       "ticker": "BKR",
@@ -6354,12 +6776,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -9.57,
       "rsi14": 31.12,
+      "rsi14_w": 45.96,
+      "rsi14_m": 57.52,
       "dist_high": -19.08,
       "dist_low": 50.03,
       "dist_ma50": -11.9,
       "dist_ma200": 1.88,
       "marketCap": "55.93B",
-      "targetPrice": 71.24
+      "targetPrice": 187.8
     },
     {
       "ticker": "PSA",
@@ -6379,17 +6803,19 @@ const INDEX_DATA = {
       "pct_6m": 21.31,
       "pct_ytd": 22.51,
       "pct_1y": 9.84,
-      "trailingPE": 32.88,
+      "trailingPE": 32.91,
       "forwardPE": 30.34,
       "ema_signal": 2,
       "dist_sma20": 1.37,
       "rsi14": 55.64,
+      "rsi14_w": 58.02,
+      "rsi14_m": 56.17,
       "dist_high": -2.46,
       "dist_low": 23.02,
       "dist_ma50": 3.29,
       "dist_ma200": 9.73,
       "marketCap": "55.82B",
-      "targetPrice": 328.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "COR",
@@ -6414,12 +6840,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.65,
       "rsi14": 57.47,
+      "rsi14_w": 42.14,
+      "rsi14_m": 51.23,
       "dist_high": -24.09,
       "dist_low": 12.55,
       "dist_ma50": 0.42,
       "dist_ma200": -12.37,
       "marketCap": "55.35B",
-      "targetPrice": 350.58
+      "targetPrice": 187.8
     },
     {
       "ticker": "FLEX",
@@ -6444,12 +6872,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.26,
       "rsi14": 57.11,
+      "rsi14_w": 81.25,
+      "rsi14_m": 94.06,
       "dist_high": -6.93,
       "dist_low": 214.59,
       "dist_ma50": 19.36,
       "dist_ma200": 91.73,
       "marketCap": "55.22B",
-      "targetPrice": 160.4
+      "targetPrice": 187.8
     },
     {
       "ticker": "F",
@@ -6474,12 +6904,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -8.24,
       "rsi14": 44.01,
+      "rsi14_w": 52.16,
+      "rsi14_m": 52.56,
       "dist_high": -20.64,
       "dist_low": 32.06,
       "dist_ma50": 0.99,
       "dist_ma200": 6.14,
       "marketCap": "55.15B",
-      "targetPrice": 14.85
+      "targetPrice": 187.8
     },
     {
       "ticker": "OKE",
@@ -6504,12 +6936,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -0.05,
       "rsi14": 48.25,
+      "rsi14_w": 52.29,
+      "rsi14_m": 54.32,
       "dist_high": -8.33,
       "dist_low": 35.76,
       "dist_ma50": -0.95,
       "dist_ma200": 9.82,
       "marketCap": "55.01B",
-      "targetPrice": 95.48
+      "targetPrice": 187.8
     },
     {
       "ticker": "VST",
@@ -6534,12 +6968,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.98,
       "rsi14": 58.06,
+      "rsi14_w": 51.52,
+      "rsi14_m": 57.92,
       "dist_high": -25.26,
       "dist_low": 20.9,
       "dist_ma50": 5.29,
       "dist_ma200": -4.14,
       "marketCap": "54.92B",
-      "targetPrice": 223.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "NUE",
@@ -6559,17 +6995,19 @@ const INDEX_DATA = {
       "pct_6m": 45.34,
       "pct_ytd": 47.46,
       "pct_1y": 87.6,
-      "trailingPE": 23.83,
-      "forwardPE": 14.13,
+      "trailingPE": 23.74,
+      "forwardPE": 14.1,
       "ema_signal": 1,
       "dist_sma20": -4.85,
       "rsi14": 46.26,
+      "rsi14_w": 66.1,
+      "rsi14_m": 67.53,
       "dist_high": -9.7,
       "dist_low": 87.61,
       "dist_ma50": 3.13,
       "dist_ma200": 34.75,
       "marketCap": "54.78B",
-      "targetPrice": 268.93
+      "targetPrice": 187.8
     },
     {
       "ticker": "CAH",
@@ -6594,12 +7032,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.52,
       "rsi14": 75.14,
+      "rsi14_w": 64.51,
+      "rsi14_m": 73.15,
       "dist_high": 0.0,
       "dist_low": 59.55,
       "dist_ma50": 13.93,
       "dist_ma200": 17.41,
       "marketCap": "54.57B",
-      "targetPrice": 245.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "MET",
@@ -6624,12 +7064,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.51,
       "rsi14": 51.07,
+      "rsi14_w": 58.42,
+      "rsi14_m": 59.46,
       "dist_high": -4.77,
       "dist_low": 24.96,
       "dist_ma50": 3.76,
       "dist_ma200": 8.08,
       "marketCap": "54.43B",
-      "targetPrice": 92.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "AME",
@@ -6654,12 +7096,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.67,
       "rsi14": 56.28,
+      "rsi14_w": 61.88,
+      "rsi14_m": 65.42,
       "dist_high": -2.55,
       "dist_low": 33.41,
       "dist_ma50": 2.18,
       "dist_ma200": 10.7,
       "marketCap": "53.95B",
-      "targetPrice": 259.05
+      "targetPrice": 187.8
     },
     {
       "ticker": "CTVA",
@@ -6679,17 +7123,19 @@ const INDEX_DATA = {
       "pct_6m": 18.95,
       "pct_ytd": 19.48,
       "pct_1y": 9.35,
-      "trailingPE": 47.03,
-      "forwardPE": 19.37,
+      "trailingPE": 43.29,
+      "forwardPE": 19.49,
       "ema_signal": 3,
       "dist_sma20": 3.39,
       "rsi14": 59.36,
+      "rsi14_w": 57.0,
+      "rsi14_m": 65.5,
       "dist_high": -6.28,
       "dist_low": 31.3,
       "dist_ma50": 0.81,
       "dist_ma200": 9.9,
       "marketCap": "53.57B",
-      "targetPrice": 89.67
+      "targetPrice": 187.8
     },
     {
       "ticker": "LHX",
@@ -6714,12 +7160,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.82,
       "rsi14": 37.97,
+      "rsi14_w": 36.25,
+      "rsi14_m": 53.19,
       "dist_high": -24.1,
       "dist_low": 16.47,
       "dist_ma50": -8.44,
       "dist_ma200": -9.08,
       "marketCap": "53.52B",
-      "targetPrice": 381.95
+      "targetPrice": 187.8
     },
     {
       "ticker": "FAST",
@@ -6744,12 +7192,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.07,
       "rsi14": 55.04,
+      "rsi14_w": 54.57,
+      "rsi14_m": 63.71,
       "dist_high": -8.2,
       "dist_low": 18.16,
       "dist_ma50": 2.9,
       "dist_ma200": 4.32,
       "marketCap": "53.11B",
-      "targetPrice": 46.66
+      "targetPrice": 187.8
     },
     {
       "ticker": "ETR",
@@ -6774,12 +7224,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.94,
       "rsi14": 61.06,
+      "rsi14_w": 61.82,
+      "rsi14_m": 76.48,
       "dist_high": -2.73,
       "dist_low": 41.72,
       "dist_ma50": 2.29,
       "dist_ma200": 13.22,
       "marketCap": "53.51B",
-      "targetPrice": 121.88
+      "targetPrice": 187.8
     },
     {
       "ticker": "EW",
@@ -6804,12 +7256,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.31,
       "rsi14": 61.14,
+      "rsi14_w": 61.31,
+      "rsi14_m": 51.74,
       "dist_high": 0.0,
       "dist_low": 23.41,
       "dist_ma50": 6.98,
       "dist_ma200": 9.26,
       "marketCap": "51.63B",
-      "targetPrice": 96.92
+      "targetPrice": 187.8
     },
     {
       "ticker": "FANG",
@@ -6834,12 +7288,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.06,
       "rsi14": 39.66,
+      "rsi14_w": 51.3,
+      "rsi14_m": 49.31,
       "dist_high": -14.14,
       "dist_low": 36.39,
       "dist_ma50": -6.24,
       "dist_ma200": 9.52,
       "marketCap": "51.62B",
-      "targetPrice": 234.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "EA",
@@ -6859,17 +7315,19 @@ const INDEX_DATA = {
       "pct_6m": -0.13,
       "pct_ytd": 0.09,
       "pct_1y": 29.59,
-      "trailingPE": 58.47,
-      "forwardPE": 21.37,
+      "trailingPE": 58.43,
+      "forwardPE": 21.3,
       "ema_signal": 3,
       "dist_sma20": 0.9,
       "rsi14": 65.99,
+      "rsi14_w": 64.24,
+      "rsi14_m": 66.76,
       "dist_high": -0.13,
       "dist_low": 38.39,
       "dist_ma50": 1.15,
       "dist_ma200": 2.36,
       "marketCap": "51.28B",
-      "targetPrice": 209.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "ROK",
@@ -6894,12 +7352,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.31,
       "rsi14": 53.17,
+      "rsi14_w": 64.51,
+      "rsi14_m": 70.24,
       "dist_high": -3.7,
       "dist_low": 42.76,
       "dist_ma50": 4.73,
       "dist_ma200": 16.51,
       "marketCap": "51.23B",
-      "targetPrice": 465.01
+      "targetPrice": 187.8
     },
     {
       "ticker": "XEL",
@@ -6919,17 +7379,19 @@ const INDEX_DATA = {
       "pct_6m": 9.96,
       "pct_ytd": 10.3,
       "pct_1y": 21.02,
-      "trailingPE": 23.45,
-      "forwardPE": 17.95,
+      "trailingPE": 23.14,
+      "forwardPE": 17.98,
       "ema_signal": 3,
       "dist_sma20": 3.58,
       "rsi14": 60.59,
+      "rsi14_w": 55.0,
+      "rsi14_m": 65.16,
       "dist_high": -2.91,
       "dist_low": 21.02,
       "dist_ma50": 2.5,
       "dist_ma200": 3.66,
       "marketCap": "50.86B",
-      "targetPrice": 92.35
+      "targetPrice": 187.8
     },
     {
       "ticker": "OXY",
@@ -6954,12 +7416,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -8.4,
       "rsi14": 32.31,
+      "rsi14_w": 46.55,
+      "rsi14_m": 44.65,
       "dist_high": -22.87,
       "dist_low": 31.27,
       "dist_ma50": -9.93,
       "dist_ma200": 3.72,
       "marketCap": "50.82B",
-      "targetPrice": 65.87
+      "targetPrice": 187.8
     },
     {
       "ticker": "AZO",
@@ -6979,17 +7443,19 @@ const INDEX_DATA = {
       "pct_6m": -10.66,
       "pct_ytd": -8.96,
       "pct_1y": -11.51,
-      "trailingPE": 21.23,
-      "forwardPE": 17.58,
+      "trailingPE": 20.96,
+      "forwardPE": 17.59,
       "ema_signal": 2,
       "dist_sma20": 0.84,
       "rsi14": 45.32,
+      "rsi14_w": 38.09,
+      "rsi14_m": 46.72,
       "dist_high": -29.09,
       "dist_low": 5.2,
       "dist_ma50": -6.91,
       "dist_ma200": -14.92,
       "marketCap": "50.41B",
-      "targetPrice": 3973.86
+      "targetPrice": 187.8
     },
     {
       "ticker": "MCHP",
@@ -7014,12 +7480,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.37,
       "rsi14": 48.15,
+      "rsi14_w": 59.52,
+      "rsi14_m": 55.31,
       "dist_high": -10.14,
       "dist_low": 88.66,
       "dist_ma50": 0.22,
       "dist_ma200": 26.65,
       "marketCap": "50.13B",
-      "targetPrice": 112.96
+      "targetPrice": 187.8
     },
     {
       "ticker": "FITB",
@@ -7044,12 +7512,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.46,
       "rsi14": 66.5,
+      "rsi14_w": 62.67,
+      "rsi14_m": 66.71,
       "dist_high": -0.22,
       "dist_low": 36.17,
       "dist_ma50": 8.68,
       "dist_ma200": 15.56,
       "marketCap": "49.81B",
-      "targetPrice": 57.52
+      "targetPrice": 187.8
     },
     {
       "ticker": "DVN",
@@ -7074,12 +7544,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.72,
       "rsi14": 40.71,
+      "rsi14_w": 48.09,
+      "rsi14_m": 47.8,
       "dist_high": -17.92,
       "dist_low": 34.66,
       "dist_ma50": -7.77,
       "dist_ma200": 4.89,
       "marketCap": "49.30B",
-      "targetPrice": 61.36
+      "targetPrice": 187.8
     },
     {
       "ticker": "CVNA",
@@ -7104,12 +7576,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": -0.02,
       "rsi14": 49.52,
+      "rsi14_w": 47.9,
+      "rsi14_m": 58.0,
       "dist_high": -29.03,
       "dist_low": 20.72,
       "dist_ma50": -5.73,
       "dist_ma200": -7.5,
       "marketCap": "74.49B",
-      "targetPrice": 92.1
+      "targetPrice": 187.8
     },
     {
       "ticker": "EBAY",
@@ -7134,12 +7608,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.5,
       "rsi14": 51.81,
+      "rsi14_w": 62.03,
+      "rsi14_m": 79.99,
       "dist_high": -7.99,
       "dist_low": 48.55,
       "dist_ma50": 1.15,
       "dist_ma200": 16.75,
       "marketCap": "48.60B",
-      "targetPrice": 107.84
+      "targetPrice": 187.8
     },
     {
       "ticker": "EXC",
@@ -7160,16 +7636,18 @@ const INDEX_DATA = {
       "pct_ytd": 7.59,
       "pct_1y": 10.9,
       "trailingPE": 17.18,
-      "forwardPE": 15.44,
+      "forwardPE": 15.45,
       "ema_signal": 3,
       "dist_sma20": 2.67,
       "rsi14": 58.99,
+      "rsi14_w": 52.89,
+      "rsi14_m": 62.5,
       "dist_high": -6.74,
       "dist_low": 10.9,
       "dist_ma50": 2.47,
       "dist_ma200": 2.18,
       "marketCap": "47.99B",
-      "targetPrice": 49.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "DHI",
@@ -7189,17 +7667,19 @@ const INDEX_DATA = {
       "pct_6m": 13.56,
       "pct_ytd": 15.61,
       "pct_1y": 30.81,
-      "trailingPE": 14.66,
-      "forwardPE": 13.84,
+      "trailingPE": 15.6,
+      "forwardPE": 14.03,
       "ema_signal": 3,
       "dist_sma20": 10.12,
       "rsi14": 68.74,
+      "rsi14_w": 60.06,
+      "rsi14_m": 55.34,
       "dist_high": -9.53,
       "dist_low": 30.96,
       "dist_ma50": 11.56,
       "dist_ma200": 9.29,
       "marketCap": "47.22B",
-      "targetPrice": 168.23
+      "targetPrice": 187.8
     },
     {
       "ticker": "STT",
@@ -7219,17 +7699,19 @@ const INDEX_DATA = {
       "pct_6m": 27.72,
       "pct_ytd": 30.9,
       "pct_1y": 61.83,
-      "trailingPE": 17.14,
-      "forwardPE": 12.22,
+      "trailingPE": 17.13,
+      "forwardPE": 12.13,
       "ema_signal": 2,
       "dist_sma20": 2.76,
       "rsi14": 61.06,
+      "rsi14_w": 81.65,
+      "rsi14_m": 88.09,
       "dist_high": -2.8,
       "dist_low": 65.54,
       "dist_ma50": 8.13,
       "dist_ma200": 28.56,
       "marketCap": "46.74B",
-      "targetPrice": 162.68
+      "targetPrice": 187.8
     },
     {
       "ticker": "GRMN",
@@ -7249,17 +7731,19 @@ const INDEX_DATA = {
       "pct_6m": 17.08,
       "pct_ytd": 18.32,
       "pct_1y": 17.92,
-      "trailingPE": 26.79,
-      "forwardPE": 23.25,
+      "trailingPE": 26.76,
+      "forwardPE": 22.97,
       "ema_signal": 3,
       "dist_sma20": 1.36,
       "rsi14": 53.18,
+      "rsi14_w": 53.14,
+      "rsi14_m": 59.72,
       "dist_high": -10.28,
       "dist_low": 28.28,
       "dist_ma50": -1.24,
       "dist_ma200": 4.9,
       "marketCap": "46.29B",
-      "targetPrice": 262.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "WAB",
@@ -7279,17 +7763,19 @@ const INDEX_DATA = {
       "pct_6m": 23.99,
       "pct_ytd": 27.66,
       "pct_1y": 33.72,
-      "trailingPE": 38.57,
+      "trailingPE": 38.59,
       "forwardPE": 22.42,
       "ema_signal": 3,
       "dist_sma20": 2.73,
       "rsi14": 57.26,
+      "rsi14_w": 66.61,
+      "rsi14_m": 72.44,
       "dist_high": -1.54,
       "dist_low": 46.77,
       "dist_ma50": 3.16,
       "dist_ma200": 17.28,
       "marketCap": "46.23B",
-      "targetPrice": 300.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "NDAQ",
@@ -7314,12 +7800,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.55,
       "rsi14": 33.69,
+      "rsi14_w": 41.18,
+      "rsi14_m": 53.82,
       "dist_high": -19.18,
       "dist_low": 3.29,
       "dist_ma50": -8.07,
       "dist_ma200": -8.8,
       "marketCap": "46.15B",
-      "targetPrice": 109.38
+      "targetPrice": 187.8
     },
     {
       "ticker": "ODFL",
@@ -7339,17 +7827,19 @@ const INDEX_DATA = {
       "pct_6m": 37.45,
       "pct_ytd": 39.69,
       "pct_1y": 36.6,
-      "trailingPE": 45.73,
+      "trailingPE": 45.63,
       "forwardPE": 34.47,
       "ema_signal": 1,
       "dist_sma20": -5.53,
       "rsi14": 45.54,
+      "rsi14_w": 57.8,
+      "rsi14_m": 60.83,
       "dist_high": -11.94,
       "dist_low": 73.44,
       "dist_ma50": 0.66,
       "dist_ma200": 23.4,
       "marketCap": "45.55B",
-      "targetPrice": 223.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "XYZ",
@@ -7374,12 +7864,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.98,
       "rsi14": 58.47,
+      "rsi14_w": 57.55,
+      "rsi14_m": 55.47,
       "dist_high": -6.69,
       "dist_low": 54.17,
       "dist_ma50": 6.27,
       "dist_ma200": 12.5,
       "marketCap": "45.04B",
-      "targetPrice": 90.4
+      "targetPrice": 187.8
     },
     {
       "ticker": "ON",
@@ -7404,12 +7896,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.57,
       "rsi14": 49.59,
+      "rsi14_w": 73.63,
+      "rsi14_m": 71.49,
       "dist_high": -13.58,
       "dist_low": 157.77,
       "dist_ma50": 6.45,
       "dist_ma200": 66.28,
       "marketCap": "45.00B",
-      "targetPrice": 107.15
+      "targetPrice": 187.8
     },
     {
       "ticker": "TTWO",
@@ -7434,12 +7928,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.03,
       "rsi14": 60.31,
+      "rsi14_w": 55.82,
+      "rsi14_m": 61.16,
       "dist_high": -10.11,
       "dist_low": 24.29,
       "dist_ma50": 6.07,
       "dist_ma200": 2.12,
       "marketCap": "43.77B",
-      "targetPrice": 281.11
+      "targetPrice": 187.8
     },
     {
       "ticker": "HUM",
@@ -7464,12 +7960,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 3.59,
       "rsi14": 68.66,
+      "rsi14_w": 72.53,
+      "rsi14_m": 56.1,
       "dist_high": -4.9,
       "dist_low": 120.96,
       "dist_ma50": 23.97,
       "dist_ma200": 44.84,
       "marketCap": "43.42B",
-      "targetPrice": 301.62
+      "targetPrice": 187.8
     },
     {
       "ticker": "IDXX",
@@ -7494,12 +7992,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.86,
       "rsi14": 46.5,
+      "rsi14_w": 40.04,
+      "rsi14_m": 48.68,
       "dist_high": -28.37,
       "dist_low": 6.71,
       "dist_ma50": -1.96,
       "dist_ma200": -12.99,
       "marketCap": "43.32B",
-      "targetPrice": 709.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "KDP",
@@ -7524,12 +8024,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.73,
       "rsi14": 61.06,
+      "rsi14_w": 61.72,
+      "rsi14_m": 51.58,
       "dist_high": -10.8,
       "dist_low": 24.11,
       "dist_ma50": 7.03,
       "dist_ma200": 12.24,
       "marketCap": "42.72B",
-      "targetPrice": 33.53
+      "targetPrice": 187.8
     },
     {
       "ticker": "UAL",
@@ -7549,17 +8051,19 @@ const INDEX_DATA = {
       "pct_6m": 13.7,
       "pct_ytd": 16.74,
       "pct_1y": 70.13,
-      "trailingPE": 11.68,
+      "trailingPE": 11.69,
       "forwardPE": 9.17,
       "ema_signal": 3,
       "dist_sma20": 15.11,
       "rsi14": 72.34,
+      "rsi14_w": 65.21,
+      "rsi14_m": 68.7,
       "dist_high": 0.0,
       "dist_low": 70.13,
       "dist_ma50": 27.3,
       "dist_ma200": 27.33,
       "marketCap": "42.37B",
-      "targetPrice": 132.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "YUM",
@@ -7584,12 +8088,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.24,
       "rsi14": 51.11,
+      "rsi14_w": 48.55,
+      "rsi14_m": 54.67,
       "dist_high": -9.0,
       "dist_low": 10.72,
       "dist_ma50": -0.74,
       "dist_ma200": -0.15,
       "marketCap": "42.18B",
-      "targetPrice": 173.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "VTR",
@@ -7614,12 +8120,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.22,
       "rsi14": 57.32,
+      "rsi14_w": 57.18,
+      "rsi14_m": 69.83,
       "dist_high": -4.18,
       "dist_low": 37.94,
       "dist_ma50": 1.62,
       "dist_ma200": 8.78,
       "marketCap": "42.09B",
-      "targetPrice": 96.9
+      "targetPrice": 187.8
     },
     {
       "ticker": "MSCI",
@@ -7644,12 +8152,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.84,
       "rsi14": 40.48,
+      "rsi14_w": 50.18,
+      "rsi14_m": 55.68,
       "dist_high": -10.34,
       "dist_low": 12.79,
       "dist_ma50": -2.45,
       "dist_ma200": 1.34,
       "marketCap": "41.98B",
-      "targetPrice": 690.44
+      "targetPrice": 187.8
     },
     {
       "ticker": "AMP",
@@ -7674,12 +8184,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.31,
       "rsi14": 51.2,
+      "rsi14_w": 47.78,
+      "rsi14_m": 51.2,
       "dist_high": -15.5,
       "dist_low": 7.1,
       "dist_ma50": -0.07,
       "dist_ma200": -2.7,
       "marketCap": "41.44B",
-      "targetPrice": 540.82
+      "targetPrice": 187.8
     },
     {
       "ticker": "IBKR",
@@ -7704,12 +8216,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 3.85,
       "rsi14": 59.54,
+      "rsi14_w": 65.38,
+      "rsi14_m": 75.4,
       "dist_high": -4.16,
       "dist_low": 79.69,
       "dist_ma50": 9.41,
       "dist_ma200": 27.68,
       "marketCap": "157.39B",
-      "targetPrice": 88.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "PEG",
@@ -7734,12 +8248,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.37,
       "rsi14": 61.6,
+      "rsi14_w": 53.13,
+      "rsi14_m": 54.24,
       "dist_high": -9.09,
       "dist_low": 7.21,
       "dist_ma50": 3.32,
       "dist_ma200": 0.96,
       "marketCap": "40.84B",
-      "targetPrice": 89.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "ED",
@@ -7764,12 +8280,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.97,
       "rsi14": 61.81,
+      "rsi14_w": 55.56,
+      "rsi14_m": 60.31,
       "dist_high": -4.11,
       "dist_low": 16.05,
       "dist_ma50": 2.86,
       "dist_ma200": 5.89,
       "marketCap": "40.80B",
-      "targetPrice": 109.94
+      "targetPrice": 187.8
     },
     {
       "ticker": "BDX",
@@ -7794,12 +8312,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.83,
       "rsi14": 52.06,
+      "rsi14_w": 45.08,
+      "rsi14_m": 41.15,
       "dist_high": -20.29,
       "dist_low": 10.59,
       "dist_ma50": -0.36,
       "dist_ma200": -4.03,
       "marketCap": "40.72B",
-      "targetPrice": 177.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "ADSK",
@@ -7824,12 +8344,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -10.78,
       "rsi14": 31.4,
+      "rsi14_w": 30.24,
+      "rsi14_m": 32.67,
       "dist_high": -41.06,
       "dist_low": 2.6,
       "dist_ma50": -16.43,
       "dist_ma200": -28.08,
       "marketCap": "40.67B",
-      "targetPrice": 318.53
+      "targetPrice": 187.8
     },
     {
       "ticker": "CMG",
@@ -7854,12 +8376,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.4,
       "rsi14": 50.65,
+      "rsi14_w": 42.25,
+      "rsi14_m": 31.0,
       "dist_high": -45.59,
       "dist_low": 12.46,
       "dist_ma50": -2.41,
       "dist_ma200": -11.15,
       "marketCap": "40.65B",
-      "targetPrice": 42.88
+      "targetPrice": 187.8
     },
     {
       "ticker": "AIG",
@@ -7884,12 +8408,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.89,
       "rsi14": 53.37,
+      "rsi14_w": 48.68,
+      "rsi14_m": 50.13,
       "dist_high": -12.07,
       "dist_low": 5.91,
       "dist_ma50": 0.22,
       "dist_ma200": -1.89,
       "marketCap": "40.37B",
-      "targetPrice": 87.8
+      "targetPrice": 187.8
     },
     {
       "ticker": "CCL",
@@ -7914,12 +8440,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.58,
       "rsi14": 53.4,
+      "rsi14_w": 52.59,
+      "rsi14_m": 57.57,
       "dist_high": -14.95,
       "dist_low": 21.01,
       "dist_ma50": 6.02,
       "dist_ma200": 2.03,
       "marketCap": "43.89B",
-      "targetPrice": 35.05
+      "targetPrice": 187.8
     },
     {
       "ticker": "LYV",
@@ -7944,12 +8472,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.97,
       "rsi14": 56.91,
+      "rsi14_w": 60.82,
+      "rsi14_m": 68.15,
       "dist_high": -2.49,
       "dist_low": 36.51,
       "dist_ma50": 4.58,
       "dist_ma200": 11.5,
       "marketCap": "39.90B",
-      "targetPrice": 185.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "VMC",
@@ -7974,12 +8504,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.09,
       "rsi14": 64.02,
+      "rsi14_w": 57.88,
+      "rsi14_m": 56.62,
       "dist_high": -6.99,
       "dist_low": 20.68,
       "dist_ma50": 7.82,
       "dist_ma200": 5.38,
       "marketCap": "39.87B",
-      "targetPrice": 326.73
+      "targetPrice": 187.8
     },
     {
       "ticker": "COIN",
@@ -8004,12 +8536,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -9.39,
       "rsi14": 36.41,
+      "rsi14_w": 36.76,
+      "rsi14_m": 42.33,
       "dist_high": -64.24,
       "dist_low": 6.39,
       "dist_ma50": -18.61,
       "dist_ma200": -36.38,
       "marketCap": "39.55B",
-      "targetPrice": 229.74
+      "targetPrice": 187.8
     },
     {
       "ticker": "JBL",
@@ -8029,17 +8563,19 @@ const INDEX_DATA = {
       "pct_6m": 58.56,
       "pct_ytd": 63.06,
       "pct_1y": 73.2,
-      "trailingPE": 50.11,
+      "trailingPE": 49.97,
       "forwardPE": 22.2,
       "ema_signal": 2,
       "dist_sma20": 0.36,
       "rsi14": 53.83,
+      "rsi14_w": 70.09,
+      "rsi14_m": 87.88,
       "dist_high": -3.59,
       "dist_low": 93.15,
       "dist_ma50": 5.29,
       "dist_ma200": 41.25,
       "marketCap": "39.23B",
-      "targetPrice": 441.44
+      "targetPrice": 187.8
     },
     {
       "ticker": "CBRE",
@@ -8064,12 +8600,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.31,
       "rsi14": 51.53,
+      "rsi14_w": 44.09,
+      "rsi14_m": 54.71,
       "dist_high": -21.95,
       "dist_low": 7.46,
       "dist_ma50": -2.68,
       "dist_ma200": -10.96,
       "marketCap": "39.22B",
-      "targetPrice": 177.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "IRM",
@@ -8094,12 +8632,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.49,
       "rsi14": 56.94,
+      "rsi14_w": 68.15,
+      "rsi14_m": 64.68,
       "dist_high": -1.86,
       "dist_low": 65.6,
       "dist_ma50": 4.79,
       "dist_ma200": 25.36,
       "marketCap": "38.85B",
-      "targetPrice": 131.55
+      "targetPrice": 187.8
     },
     {
       "ticker": "SYY",
@@ -8124,12 +8664,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.21,
       "rsi14": 65.56,
+      "rsi14_w": 54.77,
+      "rsi14_m": 54.68,
       "dist_high": -11.6,
       "dist_low": 16.29,
       "dist_ma50": 6.69,
       "dist_ma200": 2.92,
       "marketCap": "38.54B",
-      "targetPrice": 86.87
+      "targetPrice": 187.8
     },
     {
       "ticker": "PCG",
@@ -8154,12 +8696,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.84,
       "rsi14": 58.23,
+      "rsi14_w": 52.99,
+      "rsi14_m": 50.59,
       "dist_high": -10.41,
       "dist_low": 31.69,
       "dist_ma50": 3.04,
       "dist_ma200": 4.08,
       "marketCap": "37.70B",
-      "targetPrice": 22.59
+      "targetPrice": 187.8
     },
     {
       "ticker": "WEC",
@@ -8184,12 +8728,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.77,
       "rsi14": 59.09,
+      "rsi14_w": 54.82,
+      "rsi14_m": 65.93,
       "dist_high": -2.67,
       "dist_low": 12.38,
       "dist_ma50": 2.03,
       "dist_ma200": 3.12,
       "marketCap": "37.66B",
-      "targetPrice": 124.19
+      "targetPrice": 187.8
     },
     {
       "ticker": "EME",
@@ -8214,12 +8760,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.76,
       "rsi14": 51.31,
+      "rsi14_w": 60.95,
+      "rsi14_m": 73.28,
       "dist_high": -10.23,
       "dist_low": 69.21,
       "dist_ma50": -1.3,
       "dist_ma200": 16.26,
       "marketCap": "37.73B",
-      "targetPrice": 1000.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "PYPL",
@@ -8244,12 +8792,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -0.37,
       "rsi14": 45.55,
+      "rsi14_w": 35.97,
+      "rsi14_m": 39.39,
       "dist_high": -45.69,
       "dist_low": 8.7,
       "dist_ma50": -6.88,
       "dist_ma200": -22.01,
       "marketCap": "37.47B",
-      "targetPrice": 51.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "A",
@@ -8269,17 +8819,19 @@ const INDEX_DATA = {
       "pct_6m": -4.84,
       "pct_ytd": -3.26,
       "pct_1y": 10.97,
-      "trailingPE": 26.44,
-      "forwardPE": 19.96,
+      "trailingPE": 26.43,
+      "forwardPE": 19.92,
       "ema_signal": 3,
       "dist_sma20": 0.36,
       "rsi14": 58.21,
+      "rsi14_w": 55.64,
+      "rsi14_m": 50.69,
       "dist_high": -16.27,
       "dist_low": 19.4,
       "dist_ma50": 8.0,
       "dist_ma200": 0.9,
       "marketCap": "37.18B",
-      "targetPrice": 160.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "HSY",
@@ -8304,12 +8856,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.42,
       "rsi14": 49.98,
+      "rsi14_w": 44.52,
+      "rsi14_m": 48.3,
       "dist_high": -22.53,
       "dist_low": 13.02,
       "dist_ma50": -1.96,
       "dist_ma200": -5.51,
       "marketCap": "37.13B",
-      "targetPrice": 217.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "MLM",
@@ -8334,12 +8888,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.73,
       "rsi14": 61.1,
+      "rsi14_w": 52.86,
+      "rsi14_m": 53.62,
       "dist_high": -12.92,
       "dist_low": 15.76,
       "dist_ma50": 4.66,
       "dist_ma200": -0.21,
       "marketCap": "37.03B",
-      "targetPrice": 683.09
+      "targetPrice": 187.8
     },
     {
       "ticker": "PRU",
@@ -8364,12 +8920,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.36,
       "rsi14": 55.11,
+      "rsi14_w": 54.17,
+      "rsi14_m": 46.75,
       "dist_high": -10.5,
       "dist_low": 15.5,
       "dist_ma50": 4.33,
       "dist_ma200": 2.05,
       "marketCap": "36.91B",
-      "targetPrice": 100.93
+      "targetPrice": 187.8
     },
     {
       "ticker": "AXON",
@@ -8394,12 +8952,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.37,
       "rsi14": 56.47,
+      "rsi14_w": 47.92,
+      "rsi14_m": 51.99,
       "dist_high": -47.56,
       "dist_low": 32.03,
       "dist_ma50": 9.31,
       "dist_ma200": -15.43,
       "marketCap": "36.81B",
-      "targetPrice": 662.04
+      "targetPrice": 187.8
     },
     {
       "ticker": "HIG",
@@ -8424,12 +8984,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.47,
       "rsi14": 53.96,
+      "rsi14_w": 48.93,
+      "rsi14_m": 58.73,
       "dist_high": -7.81,
       "dist_low": 10.52,
       "dist_ma50": -0.68,
       "dist_ma200": -1.14,
       "marketCap": "36.27B",
-      "targetPrice": 147.65
+      "targetPrice": 187.8
     },
     {
       "ticker": "WAT",
@@ -8454,12 +9016,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.25,
       "rsi14": 59.2,
+      "rsi14_w": 56.06,
+      "rsi14_m": 56.36,
       "dist_high": -10.51,
       "dist_low": 32.93,
       "dist_ma50": 7.58,
       "dist_ma200": 6.78,
       "marketCap": "36.25B",
-      "targetPrice": 400.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "ADM",
@@ -8484,12 +9048,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.54,
       "rsi14": 39.69,
+      "rsi14_w": 55.54,
+      "rsi14_m": 62.72,
       "dist_high": -10.74,
       "dist_low": 44.44,
       "dist_ma50": -2.23,
       "dist_ma200": 12.09,
       "marketCap": "36.19B",
-      "targetPrice": 74.6
+      "targetPrice": 187.8
     },
     {
       "ticker": "KVUE",
@@ -8514,12 +9080,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.53,
       "rsi14": 65.7,
+      "rsi14_w": 59.38,
+      "rsi14_m": 52.79,
       "dist_high": -17.69,
       "dist_low": 33.24,
       "dist_ma50": 7.03,
       "dist_ma200": 8.99,
       "marketCap": "36.10B",
-      "targetPrice": 19.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "CCI",
@@ -8544,12 +9112,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -8.1,
       "rsi14": 34.68,
+      "rsi14_w": 42.27,
+      "rsi14_m": 42.37,
       "dist_high": -27.89,
       "dist_low": 6.73,
       "dist_ma50": -7.64,
       "dist_ma200": -8.08,
       "marketCap": "35.85B",
-      "targetPrice": 99.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "KR",
@@ -8574,12 +9144,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.51,
       "rsi14": 36.96,
+      "rsi14_w": 38.15,
+      "rsi14_m": 50.02,
       "dist_high": -22.65,
       "dist_low": 4.88,
       "dist_ma50": -10.08,
       "dist_ma200": -11.8,
       "marketCap": "35.85B",
-      "targetPrice": 70.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "HBAN",
@@ -8604,12 +9176,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.05,
       "rsi14": 64.47,
+      "rsi14_w": 56.33,
+      "rsi14_m": 59.51,
       "dist_high": -8.77,
       "dist_low": 17.04,
       "dist_ma50": 6.87,
       "dist_ma200": 5.19,
       "marketCap": "35.64B",
-      "targetPrice": 19.84
+      "targetPrice": 187.8
     },
     {
       "ticker": "KMB",
@@ -8634,12 +9208,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.31,
       "rsi14": 64.94,
+      "rsi14_w": 56.29,
+      "rsi14_m": 42.13,
       "dist_high": -21.96,
       "dist_low": 14.7,
       "dist_ma50": 8.13,
       "dist_ma200": 1.23,
       "marketCap": "35.43B",
-      "targetPrice": 114.8
+      "targetPrice": 187.8
     },
     {
       "ticker": "STLD",
@@ -8664,12 +9240,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -8.94,
       "rsi14": 40.5,
+      "rsi14_w": 60.47,
+      "rsi14_m": 70.44,
       "dist_high": -14.62,
       "dist_low": 98.94,
       "dist_ma50": -0.08,
       "dist_ma200": 29.99,
       "marketCap": "34.82B",
-      "targetPrice": 272.09
+      "targetPrice": 187.8
     },
     {
       "ticker": "PAYX",
@@ -8694,12 +9272,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.53,
       "rsi14": 47.21,
+      "rsi14_w": 44.42,
+      "rsi14_m": 39.68,
       "dist_high": -36.75,
       "dist_low": 12.54,
       "dist_ma50": 1.29,
       "dist_ma200": -9.27,
       "marketCap": "34.50B",
-      "targetPrice": 105.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "MTB",
@@ -8724,12 +9304,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.56,
       "rsi14": 65.89,
+      "rsi14_w": 61.92,
+      "rsi14_m": 65.9,
       "dist_high": -2.0,
       "dist_low": 30.58,
       "dist_ma50": 7.2,
       "dist_ma200": 12.84,
       "marketCap": "34.16B",
-      "targetPrice": 233.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "ROP",
@@ -8754,12 +9336,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.1,
       "rsi14": 48.73,
+      "rsi14_w": 36.26,
+      "rsi14_m": 24.06,
       "dist_high": -42.13,
       "dist_low": 5.09,
       "dist_ma50": -2.25,
       "dist_ma200": -17.69,
       "marketCap": "33.46B",
-      "targetPrice": 446.8
+      "targetPrice": 187.8
     },
     {
       "ticker": "Q",
@@ -8784,12 +9368,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 2.51,
       "rsi14": 52.84,
+      "rsi14_w": 64.95,
+      "rsi14_m": null,
       "dist_high": -9.63,
       "dist_low": 115.84,
       "dist_ma50": 6.01,
       "dist_ma200": null,
       "marketCap": "33.23B",
-      "targetPrice": 173.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "ACGL",
@@ -8814,12 +9400,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.44,
       "rsi14": 60.2,
+      "rsi14_w": 52.02,
+      "rsi14_m": 48.26,
       "dist_high": -6.92,
       "dist_low": 12.04,
       "dist_ma50": 1.32,
       "dist_ma200": 1.62,
       "marketCap": "33.16B",
-      "targetPrice": 108.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "ZTS",
@@ -8844,12 +9432,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -0.76,
       "rsi14": 40.22,
+      "rsi14_w": 26.52,
+      "rsi14_m": 23.44,
       "dist_high": -50.9,
       "dist_low": 5.32,
       "dist_ma50": -14.84,
       "dist_ma200": -34.63,
       "marketCap": "32.77B",
-      "targetPrice": 124.59
+      "targetPrice": 187.8
     },
     {
       "ticker": "EQT",
@@ -8874,12 +9464,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.8,
       "rsi14": 37.39,
+      "rsi14_w": 38.92,
+      "rsi14_m": 53.5,
       "dist_high": -24.22,
       "dist_low": 4.66,
       "dist_ma50": -7.78,
       "dist_ma200": -8.99,
       "marketCap": "32.20B",
-      "targetPrice": 69.79
+      "targetPrice": 187.8
     },
     {
       "ticker": "NTRS",
@@ -8904,12 +9496,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.62,
       "rsi14": 57.1,
+      "rsi14_w": 72.24,
+      "rsi14_m": 76.82,
       "dist_high": -1.32,
       "dist_low": 47.17,
       "dist_ma50": 4.38,
       "dist_ma200": 20.31,
       "marketCap": "32.19B",
-      "targetPrice": 171.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "LVS",
@@ -8934,12 +9528,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.71,
       "rsi14": 35.18,
+      "rsi14_w": 37.89,
+      "rsi14_m": 47.5,
       "dist_high": -31.27,
       "dist_low": 12.03,
       "dist_ma50": -7.99,
       "dist_ma200": -15.71,
       "marketCap": "31.65B",
-      "targetPrice": 69.09
+      "targetPrice": 187.8
     },
     {
       "ticker": "EXPE",
@@ -8964,12 +9560,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 12.81,
       "rsi14": 69.86,
+      "rsi14_w": 58.21,
+      "rsi14_m": 64.21,
       "dist_high": -13.0,
       "dist_low": 58.16,
       "dist_ma50": 10.62,
       "dist_ma200": 8.69,
       "marketCap": "31.46B",
-      "targetPrice": 286.32
+      "targetPrice": 187.8
     },
     {
       "ticker": "DTE",
@@ -8994,12 +9592,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.8,
       "rsi14": 63.57,
+      "rsi14_w": 61.12,
+      "rsi14_m": 65.67,
       "dist_high": -0.39,
       "dist_low": 18.38,
       "dist_ma50": 4.11,
       "dist_ma200": 7.77,
       "marketCap": "31.43B",
-      "targetPrice": 159.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "AEE",
@@ -9024,12 +9624,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.16,
       "rsi14": 62.76,
+      "rsi14_w": 58.18,
+      "rsi14_m": 68.89,
       "dist_high": -0.87,
       "dist_low": 19.28,
       "dist_ma50": 3.15,
       "dist_ma200": 7.0,
       "marketCap": "31.36B",
-      "targetPrice": 119.87
+      "targetPrice": 187.8
     },
     {
       "ticker": "CNC",
@@ -9054,12 +9656,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.12,
       "rsi14": 58.01,
+      "rsi14_w": 68.81,
+      "rsi14_m": 55.2,
       "dist_high": -4.89,
       "dist_low": 149.78,
       "dist_ma50": 13.87,
       "dist_ma200": 47.97,
       "marketCap": "31.09B",
-      "targetPrice": 61.35
+      "targetPrice": 187.8
     },
     {
       "ticker": "IQV",
@@ -9079,17 +9683,19 @@ const INDEX_DATA = {
       "pct_6m": -17.87,
       "pct_ytd": -17.65,
       "pct_1y": 16.96,
-      "trailingPE": 23.06,
+      "trailingPE": 23.03,
       "forwardPE": 13.08,
       "ema_signal": 3,
       "dist_sma20": 3.58,
       "rsi14": 59.19,
+      "rsi14_w": 51.58,
+      "rsi14_m": 45.98,
       "dist_high": -24.02,
       "dist_low": 18.49,
       "dist_ma50": 6.93,
       "dist_ma200": -4.89,
       "marketCap": "30.98B",
-      "targetPrice": 225.47
+      "targetPrice": 187.8
     },
     {
       "ticker": "EXR",
@@ -9114,12 +9720,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.0,
       "rsi14": 51.65,
+      "rsi14_w": 53.52,
+      "rsi14_m": 49.48,
       "dist_high": -4.59,
       "dist_low": 15.13,
       "dist_ma50": 1.53,
       "dist_ma200": 4.12,
       "marketCap": "32.19B",
-      "targetPrice": 155.7
+      "targetPrice": 187.8
     },
     {
       "ticker": "IR",
@@ -9144,12 +9752,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.01,
       "rsi14": 59.18,
+      "rsi14_w": 48.08,
+      "rsi14_m": 45.74,
       "dist_high": -20.7,
       "dist_low": 14.27,
       "dist_ma50": 2.79,
       "dist_ma200": -3.8,
       "marketCap": "30.65B",
-      "targetPrice": 93.2
+      "targetPrice": 187.8
     },
     {
       "ticker": "NTAP",
@@ -9169,17 +9779,19 @@ const INDEX_DATA = {
       "pct_6m": 41.34,
       "pct_ytd": 45.26,
       "pct_1y": 47.9,
-      "trailingPE": 24.54,
+      "trailingPE": 24.5,
       "forwardPE": 15.78,
       "ema_signal": 2,
       "dist_sma20": -4.83,
       "rsi14": 54.03,
+      "rsi14_w": 68.13,
+      "rsi14_m": 60.6,
       "dist_high": -14.09,
       "dist_low": 65.3,
       "dist_ma50": 16.19,
       "dist_ma200": 34.83,
       "marketCap": "30.48B",
-      "targetPrice": 171.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "TPR",
@@ -9204,12 +9816,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.75,
       "rsi14": 58.21,
+      "rsi14_w": 58.11,
+      "rsi14_m": 77.11,
       "dist_high": -6.69,
       "dist_low": 75.31,
       "dist_ma50": 5.07,
       "dist_ma200": 14.61,
       "marketCap": "30.26B",
-      "targetPrice": 166.74
+      "targetPrice": 187.8
     },
     {
       "ticker": "DOV",
@@ -9234,12 +9848,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.13,
       "rsi14": 57.2,
+      "rsi14_w": 60.87,
+      "rsi14_m": 60.52,
       "dist_high": -3.86,
       "dist_low": 39.18,
       "dist_ma50": 2.85,
       "dist_ma200": 11.56,
       "marketCap": "30.21B",
-      "targetPrice": 250.85
+      "targetPrice": 187.8
     },
     {
       "ticker": "RJF",
@@ -9264,12 +9880,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 2.33,
       "rsi14": 53.82,
+      "rsi14_w": 50.61,
+      "rsi14_m": 54.85,
       "dist_high": -12.27,
       "dist_low": 9.87,
       "dist_ma50": 1.2,
       "dist_ma200": -2.45,
       "marketCap": "30.17B",
-      "targetPrice": 174.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "EL",
@@ -9294,12 +9912,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.13,
       "rsi14": 47.25,
+      "rsi14_w": 46.27,
+      "rsi14_m": 44.18,
       "dist_high": -30.38,
       "dist_low": 23.86,
       "dist_ma50": 1.16,
       "dist_ma200": -10.53,
       "marketCap": "30.13B",
-      "targetPrice": 95.31
+      "targetPrice": 187.8
     },
     {
       "ticker": "SATS",
@@ -9324,12 +9944,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -15.5,
       "rsi14": 34.6,
+      "rsi14_w": 43.8,
+      "rsi14_m": 66.2,
       "dist_high": -29.28,
       "dist_low": 307.15,
       "dist_ma50": -19.17,
       "dist_ma200": -2.76,
       "marketCap": "30.12B",
-      "targetPrice": 137.6
+      "targetPrice": 187.8
     },
     {
       "ticker": "NRG",
@@ -9354,12 +9976,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.54,
       "rsi14": 58.82,
+      "rsi14_w": 47.33,
+      "rsi14_m": 56.26,
       "dist_high": -22.72,
       "dist_low": 17.87,
       "dist_ma50": 0.52,
       "dist_ma200": -9.11,
       "marketCap": "30.00B",
-      "targetPrice": 198.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "CASY",
@@ -9384,12 +10008,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.47,
       "rsi14": 44.94,
+      "rsi14_w": 57.99,
+      "rsi14_m": 74.67,
       "dist_high": -12.54,
       "dist_low": 62.05,
       "dist_ma50": -1.93,
       "dist_ma200": 22.24,
       "marketCap": "29.65B",
-      "targetPrice": 947.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "GEHC",
@@ -9414,12 +10040,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.3,
       "rsi14": 53.93,
+      "rsi14_w": 43.28,
+      "rsi14_m": 42.03,
       "dist_high": -26.41,
       "dist_low": 9.07,
       "dist_ma50": 0.15,
       "dist_ma200": -12.89,
       "marketCap": "29.51B",
-      "targetPrice": 79.74
+      "targetPrice": 187.8
     },
     {
       "ticker": "BIIB",
@@ -9444,12 +10072,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.57,
       "rsi14": 55.36,
+      "rsi14_w": 62.99,
+      "rsi14_m": 48.74,
       "dist_high": -2.42,
       "dist_low": 62.69,
       "dist_ma50": 4.02,
       "dist_ma200": 13.68,
       "marketCap": "29.47B",
-      "targetPrice": 220.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "CFG",
@@ -9474,12 +10104,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.57,
       "rsi14": 69.45,
+      "rsi14_w": 66.94,
+      "rsi14_m": 71.52,
       "dist_high": 0.0,
       "dist_low": 61.84,
       "dist_ma50": 8.06,
       "dist_ma200": 17.76,
       "marketCap": "29.37B",
-      "targetPrice": 73.09
+      "targetPrice": 187.8
     },
     {
       "ticker": "WDAY",
@@ -9504,12 +10136,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -11.55,
       "rsi14": 39.51,
+      "rsi14_w": 36.26,
+      "rsi14_m": 31.31,
       "dist_high": -52.32,
       "dist_low": 4.97,
       "dist_ma50": -7.55,
       "dist_ma200": -33.62,
       "marketCap": "29.17B",
-      "targetPrice": 171.13
+      "targetPrice": 187.8
     },
     {
       "ticker": "ATO",
@@ -9534,12 +10168,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.64,
       "rsi14": 50.16,
+      "rsi14_w": 45.96,
+      "rsi14_m": 62.77,
       "dist_high": -10.24,
       "dist_low": 13.91,
       "dist_ma50": -3.0,
       "dist_ma200": -1.56,
       "marketCap": "28.81B",
-      "targetPrice": 186.18
+      "targetPrice": 187.8
     },
     {
       "ticker": "VICI",
@@ -9564,12 +10200,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.23,
       "rsi14": 40.04,
+      "rsi14_w": 40.49,
+      "rsi14_m": 44.08,
       "dist_high": -21.25,
       "dist_low": 2.41,
       "dist_ma50": -5.04,
       "dist_ma200": -8.34,
       "marketCap": "28.77B",
-      "targetPrice": 34.04
+      "targetPrice": 187.8
     },
     {
       "ticker": "CNP",
@@ -9594,12 +10232,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.03,
       "rsi14": 60.95,
+      "rsi14_w": 61.09,
+      "rsi14_m": 68.36,
       "dist_high": -0.63,
       "dist_low": 22.62,
       "dist_ma50": 2.96,
       "dist_ma200": 7.75,
       "marketCap": "28.69B",
-      "targetPrice": 46.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "EIX",
@@ -9624,12 +10264,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.58,
       "rsi14": 62.23,
+      "rsi14_w": 62.04,
+      "rsi14_m": 54.92,
       "dist_high": -2.11,
       "dist_low": 47.23,
       "dist_ma50": 5.13,
       "dist_ma200": 15.56,
       "marketCap": "28.56B",
-      "targetPrice": 74.96
+      "targetPrice": 187.8
     },
     {
       "ticker": "RMD",
@@ -9649,17 +10291,19 @@ const INDEX_DATA = {
       "pct_6m": -19.61,
       "pct_ytd": -18.42,
       "pct_1y": -23.81,
-      "trailingPE": 18.95,
+      "trailingPE": 18.93,
       "forwardPE": 16.23,
       "ema_signal": 3,
       "dist_sma20": 1.95,
       "rsi14": 49.81,
+      "rsi14_w": 35.95,
+      "rsi14_m": 44.5,
       "dist_high": -33.1,
       "dist_low": 7.48,
       "dist_ma50": -4.08,
       "dist_ma200": -18.58,
       "marketCap": "28.50B",
-      "targetPrice": 260.6
+      "targetPrice": 187.8
     },
     {
       "ticker": "TDY",
@@ -9684,12 +10328,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.87,
       "rsi14": 46.05,
+      "rsi14_w": 50.96,
+      "rsi14_m": 62.25,
       "dist_high": -11.1,
       "dist_low": 26.36,
       "dist_ma50": -2.46,
       "dist_ma200": 3.89,
       "marketCap": "28.36B",
-      "targetPrice": 736.85
+      "targetPrice": 187.8
     },
     {
       "ticker": "HAL",
@@ -9714,12 +10360,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -11.79,
       "rsi14": 26.53,
+      "rsi14_w": 45.45,
+      "rsi14_m": 50.61,
       "dist_high": -21.13,
       "dist_low": 67.32,
       "dist_ma50": -14.45,
       "dist_ma200": 4.65,
       "marketCap": "28.32B",
-      "targetPrice": 44.24
+      "targetPrice": 187.8
     },
     {
       "ticker": "CPRT",
@@ -9744,12 +10392,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -1.9,
       "rsi14": 43.25,
+      "rsi14_w": 31.04,
+      "rsi14_m": 30.39,
       "dist_high": -39.16,
       "dist_low": 3.12,
       "dist_ma50": -6.22,
       "dist_ma200": -20.22,
       "marketCap": "28.14B",
-      "targetPrice": 41.44
+      "targetPrice": 187.8
     },
     {
       "ticker": "OTIS",
@@ -9774,12 +10424,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.06,
       "rsi14": 51.5,
+      "rsi14_w": 36.85,
+      "rsi14_m": 37.24,
       "dist_high": -28.14,
       "dist_low": 4.74,
       "dist_ma50": -2.01,
       "dist_ma200": -14.16,
       "marketCap": "27.87B",
-      "targetPrice": 94.2
+      "targetPrice": 187.8
     },
     {
       "ticker": "PPL",
@@ -9804,12 +10456,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.73,
       "rsi14": 59.46,
+      "rsi14_w": 51.41,
+      "rsi14_m": 61.55,
       "dist_high": -7.26,
       "dist_low": 11.0,
       "dist_ma50": 0.84,
       "dist_ma200": 0.95,
       "marketCap": "27.78B",
-      "targetPrice": 41.2
+      "targetPrice": 187.8
     },
     {
       "ticker": "WSM",
@@ -9834,12 +10488,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.87,
       "rsi14": 72.57,
+      "rsi14_w": 66.77,
+      "rsi14_m": 65.4,
       "dist_high": 0.0,
       "dist_low": 49.27,
       "dist_ma50": 19.61,
       "dist_ma200": 21.18,
       "marketCap": "27.75B",
-      "targetPrice": 211.58
+      "targetPrice": 187.8
     },
     {
       "ticker": "FE",
@@ -9864,12 +10520,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.94,
       "rsi14": 59.56,
+      "rsi14_w": 52.34,
+      "rsi14_m": 59.45,
       "dist_high": -7.88,
       "dist_low": 20.27,
       "dist_ma50": 2.1,
       "dist_ma200": 1.79,
       "marketCap": "27.66B",
-      "targetPrice": 52.15
+      "targetPrice": 187.8
     },
     {
       "ticker": "CINF",
@@ -9894,12 +10552,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.55,
       "rsi14": 73.31,
+      "rsi14_w": 63.13,
+      "rsi14_m": 67.89,
       "dist_high": 0.0,
       "dist_low": 24.17,
       "dist_ma50": 8.03,
       "dist_ma200": 9.92,
       "marketCap": "27.60B",
-      "targetPrice": 181.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "HUBB",
@@ -9924,12 +10584,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.75,
       "rsi14": 58.45,
+      "rsi14_w": 58.39,
+      "rsi14_m": 62.87,
       "dist_high": -7.11,
       "dist_low": 29.85,
       "dist_ma50": 3.26,
       "dist_ma200": 9.52,
       "marketCap": "27.38B",
-      "targetPrice": 552.31
+      "targetPrice": 187.8
     },
     {
       "ticker": "KHC",
@@ -9954,12 +10616,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.03,
       "rsi14": 46.87,
+      "rsi14_w": 46.52,
+      "rsi14_m": 34.0,
       "dist_high": -20.73,
       "dist_low": 8.16,
       "dist_ma50": -0.47,
       "dist_ma200": -4.59,
       "marketCap": "27.20B",
-      "targetPrice": 23.47
+      "targetPrice": 187.8
     },
     {
       "ticker": "ES",
@@ -9984,12 +10648,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.54,
       "rsi14": 61.39,
+      "rsi14_w": 54.72,
+      "rsi14_m": 58.43,
       "dist_high": -5.9,
       "dist_low": 14.81,
       "dist_ma50": 4.09,
       "dist_ma200": 2.9,
       "marketCap": "26.97B",
-      "targetPrice": 72.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "PPG",
@@ -10014,12 +10680,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.45,
       "rsi14": 62.25,
+      "rsi14_w": 59.24,
+      "rsi14_m": 52.62,
       "dist_high": -8.04,
       "dist_low": 28.24,
       "dist_ma50": 8.78,
       "dist_ma200": 12.04,
       "marketCap": "26.97B",
-      "targetPrice": 123.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "DXCM",
@@ -10044,12 +10712,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.58,
       "rsi14": 47.1,
+      "rsi14_w": 51.87,
+      "rsi14_m": 40.77,
       "dist_high": -22.09,
       "dist_low": 27.19,
       "dist_ma50": 4.26,
       "dist_ma200": 3.56,
       "marketCap": "26.91B",
-      "targetPrice": 85.21
+      "targetPrice": 187.8
     },
     {
       "ticker": "FSLR",
@@ -10074,12 +10744,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -10.44,
       "rsi14": 44.97,
+      "rsi14_w": 53.77,
+      "rsi14_m": 52.36,
       "dist_high": -21.96,
       "dist_low": 64.28,
       "dist_ma50": 3.54,
       "dist_ma200": 6.11,
       "marketCap": "26.69B",
-      "targetPrice": 247.3
+      "targetPrice": 187.8
     },
     {
       "ticker": "XYL",
@@ -10104,12 +10776,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.72,
       "rsi14": 52.35,
+      "rsi14_w": 37.43,
+      "rsi14_m": 37.66,
       "dist_high": -26.75,
       "dist_low": 5.36,
       "dist_ma50": -1.4,
       "dist_ma200": -14.81,
       "marketCap": "26.63B",
-      "targetPrice": 150.65
+      "targetPrice": 187.8
     },
     {
       "ticker": "FICO",
@@ -10134,12 +10808,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -4.09,
       "rsi14": 47.16,
+      "rsi14_w": 44.02,
+      "rsi14_m": 43.29,
       "dist_high": -40.81,
       "dist_low": 23.63,
       "dist_ma50": 1.21,
       "dist_ma200": -19.9,
       "marketCap": "26.45B",
-      "targetPrice": 1534.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "DG",
@@ -10164,12 +10840,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.99,
       "rsi14": 61.88,
+      "rsi14_w": 49.86,
+      "rsi14_m": 47.58,
       "dist_high": -23.73,
       "dist_low": 24.21,
       "dist_ma50": 6.1,
       "dist_ma200": -1.46,
       "marketCap": "26.29B",
-      "targetPrice": 131.24
+      "targetPrice": 187.8
     },
     {
       "ticker": "VEEV",
@@ -10194,12 +10872,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -2.99,
       "rsi14": 47.57,
+      "rsi14_w": 40.18,
+      "rsi14_m": 42.12,
       "dist_high": -47.31,
       "dist_low": 6.55,
       "dist_ma50": -1.77,
       "dist_ma200": -25.45,
       "marketCap": "26.21B",
-      "targetPrice": 245.48
+      "targetPrice": 187.8
     },
     {
       "ticker": "CBOE",
@@ -10224,12 +10904,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -13.08,
       "rsi14": 29.33,
+      "rsi14_w": 39.59,
+      "rsi14_m": 54.49,
       "dist_high": -31.94,
       "dist_low": 10.36,
       "dist_ma50": -20.32,
       "dist_ma200": -9.17,
       "marketCap": "26.12B",
-      "targetPrice": 319.64
+      "targetPrice": 187.8
     },
     {
       "ticker": "WRB",
@@ -10254,12 +10936,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.66,
       "rsi14": 62.82,
+      "rsi14_w": 54.52,
+      "rsi14_m": 57.77,
       "dist_high": -10.72,
       "dist_low": 10.25,
       "dist_ma50": 4.83,
       "dist_ma200": -0.24,
       "marketCap": "26.08B",
-      "targetPrice": 67.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "AVB",
@@ -10284,12 +10968,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": -0.39,
       "rsi14": 50.71,
+      "rsi14_w": 52.96,
+      "rsi14_m": 45.49,
       "dist_high": -10.93,
       "dist_low": 14.17,
       "dist_ma50": 0.8,
       "dist_ma200": 1.96,
       "marketCap": "26.05B",
-      "targetPrice": 196.78
+      "targetPrice": 187.8
     },
     {
       "ticker": "TPL",
@@ -10314,12 +11000,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -0.41,
       "rsi14": 47.36,
+      "rsi14_w": 45.93,
+      "rsi14_m": 54.6,
       "dist_high": -30.05,
       "dist_low": 38.02,
       "dist_ma50": -5.88,
       "dist_ma200": 1.39,
       "marketCap": "26.04B",
-      "targetPrice": 445.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "PHM",
@@ -10344,12 +11032,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 11.46,
       "rsi14": 70.84,
+      "rsi14_w": 60.91,
+      "rsi14_m": 56.62,
       "dist_high": -4.8,
       "dist_low": 31.04,
       "dist_ma50": 12.58,
       "dist_ma200": 8.93,
       "marketCap": "25.85B",
-      "targetPrice": 138.08
+      "targetPrice": 187.8
     },
     {
       "ticker": "FISV",
@@ -10374,12 +11064,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -8.49,
       "rsi14": 36.48,
+      "rsi14_w": 28.48,
+      "rsi14_m": 33.75,
       "dist_high": -72.55,
       "dist_low": 2.14,
       "dist_ma50": -14.53,
       "dist_ma200": -34.52,
       "marketCap": "25.70B",
-      "targetPrice": 70.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "ARES",
@@ -10404,12 +11096,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -11.02,
       "rsi14": 34.87,
+      "rsi14_w": 40.95,
+      "rsi14_m": 43.82,
       "dist_high": -40.93,
       "dist_low": 18.0,
       "dist_ma50": -7.69,
       "dist_ma200": -18.79,
       "marketCap": "37.56B",
-      "targetPrice": 145.76
+      "targetPrice": 187.8
     },
     {
       "ticker": "SYF",
@@ -10434,12 +11128,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.15,
       "rsi14": 61.44,
+      "rsi14_w": 55.85,
+      "rsi14_m": 60.75,
       "dist_high": -13.73,
       "dist_low": 19.66,
       "dist_ma50": 3.79,
       "dist_ma200": 2.83,
       "marketCap": "25.67B",
-      "targetPrice": 89.22
+      "targetPrice": 187.8
     },
     {
       "ticker": "JBHT",
@@ -10464,12 +11160,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.41,
       "rsi14": 48.31,
+      "rsi14_w": 65.49,
+      "rsi14_m": 70.83,
       "dist_high": -7.02,
       "dist_low": 105.94,
       "dist_ma50": 3.31,
       "dist_ma200": 30.98,
       "marketCap": "25.37B",
-      "targetPrice": 251.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "AWK",
@@ -10494,12 +11192,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.84,
       "rsi14": 59.21,
+      "rsi14_w": 49.13,
+      "rsi14_m": 49.37,
       "dist_high": -11.81,
       "dist_low": 7.03,
       "dist_ma50": 2.17,
       "dist_ma200": -1.74,
       "marketCap": "25.32B",
-      "targetPrice": 135.55
+      "targetPrice": 187.8
     },
     {
       "ticker": "RF",
@@ -10524,12 +11224,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.48,
       "rsi14": 62.79,
+      "rsi14_w": 59.49,
+      "rsi14_m": 63.3,
       "dist_high": -4.72,
       "dist_low": 28.89,
       "dist_ma50": 5.12,
       "dist_ma200": 8.95,
       "marketCap": "25.17B",
-      "targetPrice": 30.75
+      "targetPrice": 187.8
     },
     {
       "ticker": "KEY",
@@ -10554,12 +11256,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.9,
       "rsi14": 67.61,
+      "rsi14_w": 64.55,
+      "rsi14_m": 67.0,
       "dist_high": -0.39,
       "dist_low": 38.03,
       "dist_ma50": 6.09,
       "dist_ma200": 14.2,
       "marketCap": "24.96B",
-      "targetPrice": 25.06
+      "targetPrice": 187.8
     },
     {
       "ticker": "LUV",
@@ -10584,12 +11288,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 14.32,
       "rsi14": 74.3,
+      "rsi14_w": 64.33,
+      "rsi14_m": 66.6,
       "dist_high": -7.04,
       "dist_low": 75.29,
       "dist_ma50": 22.15,
       "dist_ma200": 28.45,
       "marketCap": "24.90B",
-      "targetPrice": 46.3
+      "targetPrice": 187.8
     },
     {
       "ticker": "EQR",
@@ -10614,12 +11320,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": -0.22,
       "rsi14": 52.14,
+      "rsi14_w": 55.87,
+      "rsi14_m": 50.21,
       "dist_high": -3.1,
       "dist_low": 14.21,
       "dist_ma50": 1.57,
       "dist_ma200": 5.6,
       "marketCap": "25.59B",
-      "targetPrice": 71.56
+      "targetPrice": 187.8
     },
     {
       "ticker": "WTW",
@@ -10644,12 +11352,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.48,
       "rsi14": 52.13,
+      "rsi14_w": 40.86,
+      "rsi14_m": 44.72,
       "dist_high": -25.27,
       "dist_low": 8.0,
       "dist_ma50": -1.23,
       "dist_ma200": -14.17,
       "marketCap": "24.70B",
-      "targetPrice": 331.68
+      "targetPrice": 187.8
     },
     {
       "ticker": "RL",
@@ -10674,12 +11384,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.05,
       "rsi14": 64.96,
+      "rsi14_w": 63.28,
+      "rsi14_m": 79.42,
       "dist_high": 0.0,
       "dist_low": 52.24,
       "dist_ma50": 11.77,
       "dist_ma200": 17.95,
       "marketCap": "24.65B",
-      "targetPrice": 429.56
+      "targetPrice": 187.8
     },
     {
       "ticker": "STZ",
@@ -10704,12 +11416,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.19,
       "rsi14": 48.72,
+      "rsi14_w": 45.8,
+      "rsi14_m": 31.42,
       "dist_high": -18.78,
       "dist_low": 12.04,
       "dist_ma50": -3.25,
       "dist_ma200": -1.95,
       "marketCap": "24.53B",
-      "targetPrice": 175.59
+      "targetPrice": 187.8
     },
     {
       "ticker": "DRI",
@@ -10734,12 +11448,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.97,
       "rsi14": 63.35,
+      "rsi14_w": 59.13,
+      "rsi14_m": 65.16,
       "dist_high": -3.34,
       "dist_low": 26.15,
       "dist_ma50": 6.39,
       "dist_ma200": 8.97,
       "marketCap": "24.45B",
-      "targetPrice": 226.23
+      "targetPrice": 187.8
     },
     {
       "ticker": "SW",
@@ -10764,12 +11480,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.48,
       "rsi14": 65.17,
+      "rsi14_w": 59.43,
+      "rsi14_m": 53.69,
       "dist_high": -10.19,
       "dist_low": 41.99,
       "dist_ma50": 13.74,
       "dist_ma200": 13.66,
       "marketCap": "24.42B",
-      "targetPrice": 53.7
+      "targetPrice": 187.8
     },
     {
       "ticker": "MTD",
@@ -10794,12 +11512,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.14,
       "rsi14": 58.5,
+      "rsi14_w": 47.2,
+      "rsi14_m": 42.59,
       "dist_high": -20.11,
       "dist_low": 17.32,
       "dist_ma50": 1.43,
       "dist_ma200": -8.41,
       "marketCap": "24.31B",
-      "targetPrice": 1327.83
+      "targetPrice": 187.8
     },
     {
       "ticker": "WST",
@@ -10824,12 +11544,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.78,
       "rsi14": 67.49,
+      "rsi14_w": 67.63,
+      "rsi14_m": 57.39,
       "dist_high": 0.0,
       "dist_low": 62.04,
       "dist_ma50": 9.96,
       "dist_ma200": 24.72,
       "marketCap": "24.05B",
-      "targetPrice": 358.79
+      "targetPrice": 187.8
     },
     {
       "ticker": "MRNA",
@@ -10854,12 +11576,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 16.52,
       "rsi14": 64.2,
+      "rsi14_w": 63.84,
+      "rsi14_m": 40.77,
       "dist_high": -5.53,
       "dist_low": 170.21,
       "dist_ma50": 19.04,
       "dist_ma200": 51.98,
       "marketCap": "23.97B",
-      "targetPrice": 43.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "FDXF",
@@ -10884,12 +11608,14 @@ const INDEX_DATA = {
       "ema_signal": null,
       "dist_sma20": -3.28,
       "rsi14": 52.45,
+      "rsi14_w": null,
+      "rsi14_m": null,
       "dist_high": -14.86,
       "dist_low": 7.3,
       "dist_ma50": null,
       "dist_ma200": null,
       "marketCap": "23.89B",
-      "targetPrice": 160.62
+      "targetPrice": 187.8
     },
     {
       "ticker": "CMS",
@@ -10914,12 +11640,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.89,
       "rsi14": 63.55,
+      "rsi14_w": 55.59,
+      "rsi14_m": 62.03,
       "dist_high": -4.32,
       "dist_low": 11.55,
       "dist_ma50": 3.18,
       "dist_ma200": 3.86,
       "marketCap": "23.63B",
-      "targetPrice": 79.79
+      "targetPrice": 187.8
     },
     {
       "ticker": "VRSK",
@@ -10939,17 +11667,19 @@ const INDEX_DATA = {
       "pct_6m": -17.72,
       "pct_ytd": -19.5,
       "pct_1y": -40.8,
-      "trailingPE": 27.49,
+      "trailingPE": 27.45,
       "forwardPE": 20.74,
       "ema_signal": 3,
       "dist_sma20": 0.99,
       "rsi14": 53.79,
+      "rsi14_w": 43.77,
+      "rsi14_m": 30.44,
       "dist_high": -42.46,
       "dist_low": 14.8,
       "dist_ma50": 2.42,
       "dist_ma200": -12.86,
       "marketCap": "23.59B",
-      "targetPrice": 220.47
+      "targetPrice": 187.8
     },
     {
       "ticker": "CHD",
@@ -10974,12 +11704,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.23,
       "rsi14": 56.48,
+      "rsi14_w": 57.17,
+      "rsi14_m": 50.38,
       "dist_high": -6.26,
       "dist_low": 20.92,
       "dist_ma50": 3.21,
       "dist_ma200": 7.27,
       "marketCap": "23.38B",
-      "targetPrice": 102.53
+      "targetPrice": 187.8
     },
     {
       "ticker": "PFG",
@@ -11004,12 +11736,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.34,
       "rsi14": 51.04,
+      "rsi14_w": 65.37,
+      "rsi14_m": 68.23,
       "dist_high": -5.04,
       "dist_low": 41.27,
       "dist_ma50": 3.97,
       "dist_ma200": 17.05,
       "marketCap": "23.05B",
-      "targetPrice": 101.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "L",
@@ -11034,12 +11768,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.59,
       "rsi14": 65.4,
+      "rsi14_w": 58.4,
+      "rsi14_m": 68.16,
       "dist_high": -0.61,
       "dist_low": 25.89,
       "dist_ma50": 3.68,
       "dist_ma200": 6.25,
       "marketCap": "23.03B",
-      "targetPrice": null
+      "targetPrice": 187.8
     },
     {
       "ticker": "VRSN",
@@ -11064,12 +11800,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -9.89,
       "rsi14": 30.58,
+      "rsi14_w": 45.0,
+      "rsi14_m": 57.41,
       "dist_high": -18.68,
       "dist_low": 19.19,
       "dist_ma50": -10.51,
       "dist_ma200": -2.4,
       "marketCap": "22.94B",
-      "targetPrice": 312.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "DLTR",
@@ -11094,12 +11832,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.33,
       "rsi14": 64.41,
+      "rsi14_w": 56.19,
+      "rsi14_m": 54.06,
       "dist_high": -15.48,
       "dist_low": 40.35,
       "dist_ma50": 16.67,
       "dist_ma200": 8.96,
       "marketCap": "22.94B",
-      "targetPrice": 125.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "LEN",
@@ -11124,12 +11864,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.98,
       "rsi14": 56.06,
+      "rsi14_w": 44.32,
+      "rsi14_m": 37.92,
       "dist_high": -34.73,
       "dist_low": 12.94,
       "dist_ma50": 3.91,
       "dist_ma200": -14.43,
       "marketCap": "22.89B",
-      "targetPrice": 88.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "NI",
@@ -11154,12 +11896,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.01,
       "rsi14": 55.27,
+      "rsi14_w": 57.94,
+      "rsi14_m": 72.87,
       "dist_high": -1.79,
       "dist_low": 22.13,
       "dist_ma50": 0.9,
       "dist_ma200": 6.75,
       "marketCap": "22.84B",
-      "targetPrice": 51.36
+      "targetPrice": 187.8
     },
     {
       "ticker": "TROW",
@@ -11184,12 +11928,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.03,
       "rsi14": 48.9,
+      "rsi14_w": 56.45,
+      "rsi14_m": 48.13,
       "dist_high": -5.67,
       "dist_low": 22.06,
       "dist_ma50": 1.78,
       "dist_ma200": 4.18,
       "marketCap": "22.54B",
-      "targetPrice": 97.83
+      "targetPrice": 187.8
     },
     {
       "ticker": "CPAY",
@@ -11214,12 +11960,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.39,
       "rsi14": 48.62,
+      "rsi14_w": 54.58,
+      "rsi14_m": 58.65,
       "dist_high": -5.46,
       "dist_low": 35.0,
       "dist_ma50": 2.1,
       "dist_ma200": 10.11,
       "marketCap": "22.50B",
-      "targetPrice": 395.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "DGX",
@@ -11244,12 +11992,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.51,
       "rsi14": 59.21,
+      "rsi14_w": 57.68,
+      "rsi14_m": 64.0,
       "dist_high": -4.15,
       "dist_low": 22.05,
       "dist_ma50": 4.11,
       "dist_ma200": 6.99,
       "marketCap": "22.48B",
-      "targetPrice": 223.44
+      "targetPrice": 187.8
     },
     {
       "ticker": "LH",
@@ -11274,12 +12024,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.26,
       "rsi14": 54.95,
+      "rsi14_w": 50.98,
+      "rsi14_m": 57.92,
       "dist_high": -8.85,
       "dist_low": 9.11,
       "dist_ma50": 1.69,
       "dist_ma200": -0.77,
       "marketCap": "21.74B",
-      "targetPrice": 310.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "FFIV",
@@ -11304,12 +12056,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.11,
       "rsi14": 51.87,
+      "rsi14_w": 69.48,
+      "rsi14_m": 76.36,
       "dist_high": -5.95,
       "dist_low": 71.78,
       "dist_ma50": 6.75,
       "dist_ma200": 28.06,
       "marketCap": "21.71B",
-      "targetPrice": 409.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "INCY",
@@ -11329,17 +12083,19 @@ const INDEX_DATA = {
       "pct_6m": 7.98,
       "pct_ytd": 9.81,
       "pct_1y": 60.56,
-      "trailingPE": 15.34,
-      "forwardPE": 12.19,
+      "trailingPE": 14.74,
+      "forwardPE": 11.79,
       "ema_signal": 3,
       "dist_sma20": 7.28,
       "rsi14": 63.42,
+      "rsi14_w": 59.77,
+      "rsi14_m": 72.13,
       "dist_high": -1.91,
       "dist_low": 61.23,
       "dist_ma50": 9.86,
       "dist_ma200": 11.72,
       "marketCap": "21.67B",
-      "targetPrice": 112.05
+      "targetPrice": 187.8
     },
     {
       "ticker": "ROL",
@@ -11364,12 +12120,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.38,
       "rsi14": 27.87,
+      "rsi14_w": 26.02,
+      "rsi14_m": 39.51,
       "dist_high": -32.1,
       "dist_low": 0.29,
       "dist_ma50": -13.14,
       "dist_ma200": -21.54,
       "marketCap": "21.44B",
-      "targetPrice": 62.94
+      "targetPrice": 187.8
     },
     {
       "ticker": "HPQ",
@@ -11394,12 +12152,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.41,
       "rsi14": 46.06,
+      "rsi14_w": 52.35,
+      "rsi14_m": 39.23,
       "dist_high": -20.65,
       "dist_low": 27.97,
       "dist_ma50": 3.01,
       "dist_ma200": 1.85,
       "marketCap": "21.30B",
-      "targetPrice": 22.91
+      "targetPrice": 187.8
     },
     {
       "ticker": "VLTO",
@@ -11419,17 +12179,19 @@ const INDEX_DATA = {
       "pct_6m": -15.61,
       "pct_ytd": -13.49,
       "pct_1y": -13.83,
-      "trailingPE": 22.27,
-      "forwardPE": 18.5,
+      "trailingPE": 21.8,
+      "forwardPE": 18.56,
       "ema_signal": 3,
       "dist_sma20": 2.84,
       "rsi14": 55.09,
+      "rsi14_w": 43.7,
+      "rsi14_m": 41.62,
       "dist_high": -21.35,
       "dist_low": 4.97,
       "dist_ma50": 0.01,
       "dist_ma200": -9.66,
       "marketCap": "21.20B",
-      "targetPrice": 109.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "EXE",
@@ -11450,16 +12212,18 @@ const INDEX_DATA = {
       "pct_ytd": -19.72,
       "pct_1y": -25.6,
       "trailingPE": 6.6,
-      "forwardPE": 9.69,
+      "forwardPE": 9.25,
       "ema_signal": 2,
       "dist_sma20": -1.53,
       "rsi14": 39.87,
+      "rsi14_w": 36.42,
+      "rsi14_m": 46.78,
       "dist_high": -27.9,
       "dist_low": 1.86,
       "dist_ma50": -6.16,
       "dist_ma200": -14.96,
       "marketCap": "21.20B",
-      "targetPrice": 131.19
+      "targetPrice": 187.8
     },
     {
       "ticker": "PKG",
@@ -11479,17 +12243,19 @@ const INDEX_DATA = {
       "pct_6m": 14.72,
       "pct_ytd": 15.33,
       "pct_1y": 27.3,
-      "trailingPE": 28.93,
-      "forwardPE": 19.26,
+      "trailingPE": 28.32,
+      "forwardPE": 19.41,
       "ema_signal": 3,
       "dist_sma20": 5.43,
       "rsi14": 65.71,
+      "rsi14_w": 62.53,
+      "rsi14_m": 62.01,
       "dist_high": -3.43,
       "dist_low": 27.3,
       "dist_ma50": 8.39,
       "dist_ma200": 10.91,
       "marketCap": "21.19B",
-      "targetPrice": 243.56
+      "targetPrice": 187.8
     },
     {
       "ticker": "DOW",
@@ -11510,16 +12276,18 @@ const INDEX_DATA = {
       "pct_ytd": 25.66,
       "pct_1y": 9.55,
       "trailingPE": null,
-      "forwardPE": 11.71,
+      "forwardPE": 13.53,
       "ema_signal": 1,
       "dist_sma20": -11.86,
       "rsi14": 23.91,
+      "rsi14_w": 42.08,
+      "rsi14_m": 36.67,
       "dist_high": -29.83,
       "dist_low": 42.28,
       "dist_ma50": -19.11,
       "dist_ma200": -1.17,
       "marketCap": "21.18B",
-      "targetPrice": 42.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "BG",
@@ -11544,12 +12312,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -11.02,
       "rsi14": 28.15,
+      "rsi14_w": 43.66,
+      "rsi14_m": 50.57,
       "dist_high": -17.06,
       "dist_low": 49.3,
       "dist_ma50": -11.72,
       "dist_ma200": 1.19,
       "marketCap": "21.15B",
-      "targetPrice": 142.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "OMC",
@@ -11574,12 +12344,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.47,
       "rsi14": 46.72,
+      "rsi14_w": 47.17,
+      "rsi14_m": 42.65,
       "dist_high": -14.15,
       "dist_low": 9.5,
       "dist_ma50": -2.29,
       "dist_ma200": -3.75,
       "marketCap": "20.99B",
-      "targetPrice": 102.83
+      "targetPrice": 187.8
     },
     {
       "ticker": "SMCI",
@@ -11604,12 +12376,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -14.0,
       "rsi14": 46.62,
+      "rsi14_w": 49.28,
+      "rsi14_m": 39.97,
       "dist_high": -46.55,
       "dist_low": 58.06,
       "dist_ma50": -2.67,
       "dist_ma200": -8.46,
       "marketCap": "20.99B",
-      "targetPrice": 37.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "EXPD",
@@ -11634,12 +12408,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.04,
       "rsi14": 50.08,
+      "rsi14_w": 58.83,
+      "rsi14_m": 64.87,
       "dist_high": -3.88,
       "dist_low": 43.81,
       "dist_ma50": 2.9,
       "dist_ma200": 10.46,
       "marketCap": "20.95B",
-      "targetPrice": 146.38
+      "targetPrice": 187.8
     },
     {
       "ticker": "BRO",
@@ -11664,12 +12440,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.67,
       "rsi14": 60.93,
+      "rsi14_w": 40.87,
+      "rsi14_m": 38.65,
       "dist_high": -44.3,
       "dist_low": 13.64,
       "dist_ma50": 3.06,
       "dist_ma200": -16.73,
       "marketCap": "20.95B",
-      "targetPrice": 71.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "CHRW",
@@ -11689,17 +12467,19 @@ const INDEX_DATA = {
       "pct_6m": 7.47,
       "pct_ytd": 10.28,
       "pct_1y": 91.22,
-      "trailingPE": 35.96,
+      "trailingPE": 35.81,
       "forwardPE": 24.13,
       "ema_signal": 1,
       "dist_sma20": -3.68,
       "rsi14": 44.39,
+      "rsi14_w": 52.85,
+      "rsi14_m": 68.78,
       "dist_high": -11.62,
       "dist_low": 91.22,
       "dist_ma50": -0.82,
       "dist_ma200": 7.78,
       "marketCap": "20.90B",
-      "targetPrice": 197.04
+      "targetPrice": 187.8
     },
     {
       "ticker": "ULTA",
@@ -11724,12 +12504,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.47,
       "rsi14": 48.59,
+      "rsi14_w": 39.7,
+      "rsi14_m": 50.09,
       "dist_high": -32.24,
       "dist_low": 6.25,
       "dist_ma50": -5.47,
       "dist_ma200": -14.91,
       "marketCap": "20.59B",
-      "targetPrice": 627.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "TSN",
@@ -11754,12 +12536,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -0.4,
       "rsi14": 43.37,
+      "rsi14_w": 43.66,
+      "rsi14_m": 48.69,
       "dist_high": -15.91,
       "dist_low": 13.98,
       "dist_ma50": -7.67,
       "dist_ma200": -2.66,
       "marketCap": "20.36B",
-      "targetPrice": 70.92
+      "targetPrice": 187.8
     },
     {
       "ticker": "SNA",
@@ -11784,12 +12568,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.86,
       "rsi14": 59.87,
+      "rsi14_w": 63.86,
+      "rsi14_m": 67.26,
       "dist_high": 0.0,
       "dist_low": 27.67,
       "dist_ma50": 4.04,
       "dist_ma200": 8.88,
       "marketCap": "20.31B",
-      "targetPrice": 393.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "IP",
@@ -11810,16 +12596,18 @@ const INDEX_DATA = {
       "pct_ytd": -2.77,
       "pct_1y": -17.46,
       "trailingPE": null,
-      "forwardPE": 14.41,
+      "forwardPE": 14.34,
       "ema_signal": 3,
       "dist_sma20": 10.24,
       "rsi14": 67.57,
+      "rsi14_w": 51.99,
+      "rsi14_m": 47.3,
       "dist_high": -31.21,
       "dist_low": 30.36,
       "dist_ma50": 13.8,
       "dist_ma200": -3.32,
       "marketCap": "20.28B",
-      "targetPrice": 39.4
+      "targetPrice": 187.8
     },
     {
       "ticker": "STE",
@@ -11839,17 +12627,19 @@ const INDEX_DATA = {
       "pct_6m": -18.97,
       "pct_ytd": -18.28,
       "pct_1y": -13.81,
-      "trailingPE": 26.11,
-      "forwardPE": 17.0,
+      "trailingPE": 26.12,
+      "forwardPE": 17.01,
       "ema_signal": 2,
       "dist_sma20": -0.58,
       "rsi14": 47.26,
+      "rsi14_w": 37.29,
+      "rsi14_m": 42.71,
       "dist_high": -22.88,
       "dist_low": 3.9,
       "dist_ma50": -2.91,
       "dist_ma200": -13.05,
       "marketCap": "20.19B",
-      "targetPrice": 269.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "FIS",
@@ -11874,12 +12664,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -3.63,
       "rsi14": 38.75,
+      "rsi14_w": 29.01,
+      "rsi14_m": 26.21,
       "dist_high": -53.05,
       "dist_low": 2.49,
       "dist_ma50": -10.61,
       "dist_ma200": -30.67,
       "marketCap": "19.98B",
-      "targetPrice": 58.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "EVRG",
@@ -11904,12 +12696,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.58,
       "rsi14": 62.99,
+      "rsi14_w": 61.83,
+      "rsi14_m": 75.96,
       "dist_high": 0.0,
       "dist_low": 26.71,
       "dist_ma50": 4.11,
       "dist_ma200": 9.35,
       "marketCap": "19.78B",
-      "targetPrice": 90.46
+      "targetPrice": 187.8
     },
     {
       "ticker": "SBAC",
@@ -11929,17 +12723,19 @@ const INDEX_DATA = {
       "pct_6m": -3.71,
       "pct_ytd": -4.12,
       "pct_1y": -20.29,
-      "trailingPE": 19.5,
-      "forwardPE": 22.09,
+      "trailingPE": 19.52,
+      "forwardPE": 22.88,
       "ema_signal": 1,
       "dist_sma20": -6.66,
       "rsi14": 34.48,
+      "rsi14_w": 42.05,
+      "rsi14_m": 47.45,
       "dist_high": -22.52,
       "dist_low": 12.3,
       "dist_ma50": -10.73,
       "dist_ma200": -5.38,
       "marketCap": "19.67B",
-      "targetPrice": 234.7
+      "targetPrice": 187.8
     },
     {
       "ticker": "CTSH",
@@ -11964,12 +12760,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -18.34,
       "rsi14": 24.19,
+      "rsi14_w": 29.08,
+      "rsi14_m": 33.38,
       "dist_high": -52.2,
       "dist_low": 1.2,
       "dist_ma50": -20.97,
       "dist_ma200": -38.28,
       "marketCap": "19.60B",
-      "targetPrice": 70.3
+      "targetPrice": 187.8
     },
     {
       "ticker": "LNT",
@@ -11994,12 +12792,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.08,
       "rsi14": 64.35,
+      "rsi14_w": 62.45,
+      "rsi14_m": 71.16,
       "dist_high": 0.0,
       "dist_low": 25.79,
       "dist_ma50": 4.17,
       "dist_ma200": 9.48,
       "marketCap": "19.52B",
-      "targetPrice": 79.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "IFF",
@@ -12024,12 +12824,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.29,
       "rsi14": 51.06,
+      "rsi14_w": 52.62,
+      "rsi14_m": 44.6,
       "dist_high": -8.64,
       "dist_low": 27.34,
       "dist_ma50": 1.66,
       "dist_ma200": 8.28,
       "marketCap": "19.36B",
-      "targetPrice": 91.66
+      "targetPrice": 187.8
     },
     {
       "ticker": "AMCR",
@@ -12054,12 +12856,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.59,
       "rsi14": 61.66,
+      "rsi14_w": 51.59,
+      "rsi14_m": 45.41,
       "dist_high": -17.54,
       "dist_low": 13.68,
       "dist_ma50": 6.26,
       "dist_ma200": 0.22,
       "marketCap": "19.28B",
-      "targetPrice": 48.21
+      "targetPrice": 187.8
     },
     {
       "ticker": "LII",
@@ -12084,12 +12888,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.66,
       "rsi14": 61.88,
+      "rsi14_w": 58.1,
+      "rsi14_m": 52.77,
       "dist_high": -16.97,
       "dist_low": 26.01,
       "dist_ma50": 8.28,
       "dist_ma200": 8.21,
       "marketCap": "19.20B",
-      "targetPrice": 570.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "EFX",
@@ -12114,12 +12920,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.09,
       "rsi14": 42.3,
+      "rsi14_w": 37.11,
+      "rsi14_m": 34.01,
       "dist_high": -40.69,
       "dist_low": 3.33,
       "dist_ma50": -7.11,
       "dist_ma200": -22.02,
       "marketCap": "19.01B",
-      "targetPrice": 222.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "DD",
@@ -12144,12 +12952,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.26,
       "rsi14": 42.32,
+      "rsi14_w": 51.86,
+      "rsi14_m": 62.25,
       "dist_high": -10.85,
       "dist_low": 61.55,
       "dist_ma50": -3.48,
       "dist_ma200": 8.03,
       "marketCap": "18.61B",
-      "targetPrice": 170.44
+      "targetPrice": 187.8
     },
     {
       "ticker": "GIS",
@@ -12174,12 +12984,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.48,
       "rsi14": 58.15,
+      "rsi14_w": 36.04,
+      "rsi14_m": 22.83,
       "dist_high": -35.35,
       "dist_low": 8.18,
       "dist_ma50": 2.0,
       "dist_ma200": -18.49,
       "marketCap": "18.57B",
-      "targetPrice": 37.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "VTRS",
@@ -12204,12 +13016,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": -0.03,
       "rsi14": 50.52,
+      "rsi14_w": 59.61,
+      "rsi14_m": 65.78,
       "dist_high": -8.4,
       "dist_low": 82.27,
       "dist_ma50": 1.04,
       "dist_ma200": 22.16,
       "marketCap": "18.55B",
-      "targetPrice": 17.81
+      "targetPrice": 187.8
     },
     {
       "ticker": "FTV",
@@ -12234,12 +13048,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.13,
       "rsi14": 50.19,
+      "rsi14_w": 57.07,
+      "rsi14_m": 56.21,
       "dist_high": -3.81,
       "dist_low": 29.73,
       "dist_ma50": 0.22,
       "dist_ma200": 9.39,
       "marketCap": "18.41B",
-      "targetPrice": 63.62
+      "targetPrice": 187.8
     },
     {
       "ticker": "GPN",
@@ -12264,12 +13080,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -1.64,
       "rsi14": 47.94,
+      "rsi14_w": 44.67,
+      "rsi14_m": 39.07,
       "dist_high": -25.47,
       "dist_low": 7.38,
       "dist_ma50": -3.21,
       "dist_ma200": -11.12,
       "marketCap": "18.35B",
-      "targetPrice": 93.38
+      "targetPrice": 187.8
     },
     {
       "ticker": "NVR",
@@ -12294,12 +13112,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 7.42,
       "rsi14": 65.11,
+      "rsi14_w": 50.88,
+      "rsi14_m": 45.12,
       "dist_high": -20.81,
       "dist_low": 21.59,
       "dist_ma50": 8.08,
       "dist_ma200": -5.3,
       "marketCap": "18.26B",
-      "targetPrice": 7132.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "WY",
@@ -12324,12 +13144,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.38,
       "rsi14": 61.51,
+      "rsi14_w": 54.72,
+      "rsi14_m": 47.31,
       "dist_high": -6.64,
       "dist_low": 18.5,
       "dist_ma50": 4.53,
       "dist_ma200": 4.5,
       "marketCap": "18.24B",
-      "targetPrice": 31.18
+      "targetPrice": 187.8
     },
     {
       "ticker": "LYB",
@@ -12354,12 +13176,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -12.06,
       "rsi14": 21.89,
+      "rsi14_w": 41.68,
+      "rsi14_m": 38.46,
       "dist_high": -31.88,
       "dist_low": 32.73,
       "dist_ma50": -18.67,
       "dist_ma200": -2.1,
       "marketCap": "18.11B",
-      "targetPrice": 80.35
+      "targetPrice": 187.8
     },
     {
       "ticker": "ESS",
@@ -12384,12 +13208,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.75,
       "rsi14": 57.87,
+      "rsi14_w": 61.56,
+      "rsi14_m": 54.74,
       "dist_high": -3.74,
       "dist_low": 17.55,
       "dist_ma50": 4.24,
       "dist_ma200": 8.37,
       "marketCap": "19.41B",
-      "targetPrice": 286.85
+      "targetPrice": 187.8
     },
     {
       "ticker": "INVH",
@@ -12414,12 +13240,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.38,
       "rsi14": 58.37,
+      "rsi14_w": 58.3,
+      "rsi14_m": 44.49,
       "dist_high": -12.39,
       "dist_low": 21.53,
       "dist_ma50": 3.84,
       "dist_ma200": 7.37,
       "marketCap": "17.61B",
-      "targetPrice": 32.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "ZBH",
@@ -12444,12 +13272,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.57,
       "rsi14": 61.34,
+      "rsi14_w": 51.04,
+      "rsi14_m": 44.39,
       "dist_high": -15.92,
       "dist_low": 13.8,
       "dist_ma50": 4.42,
       "dist_ma200": -1.85,
       "marketCap": "17.52B",
-      "targetPrice": 98.7
+      "targetPrice": 187.8
     },
     {
       "ticker": "ALB",
@@ -12474,12 +13304,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -9.25,
       "rsi14": 34.91,
+      "rsi14_w": 45.08,
+      "rsi14_m": 56.5,
       "dist_high": -31.43,
       "dist_low": 145.66,
       "dist_ma50": -17.71,
       "dist_ma200": 0.43,
       "marketCap": "17.44B",
-      "targetPrice": 214.65
+      "targetPrice": 187.8
     },
     {
       "ticker": "AKAM",
@@ -12504,12 +13336,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -13.89,
       "rsi14": 34.84,
+      "rsi14_w": 52.31,
+      "rsi14_m": 58.16,
       "dist_high": -25.85,
       "dist_low": 69.4,
       "dist_ma50": -6.47,
       "dist_ma200": 19.82,
       "marketCap": "17.37B",
-      "targetPrice": 159.3
+      "targetPrice": 187.8
     },
     {
       "ticker": "KIM",
@@ -12534,12 +13368,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.1,
       "rsi14": 61.72,
+      "rsi14_w": 63.52,
+      "rsi14_m": 65.73,
       "dist_high": -1.89,
       "dist_low": 28.51,
       "dist_ma50": 5.68,
       "dist_ma200": 14.7,
       "marketCap": "17.14B",
-      "targetPrice": 25.91
+      "targetPrice": 187.8
     },
     {
       "ticker": "BEN",
@@ -12564,12 +13400,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.45,
       "rsi14": 54.94,
+      "rsi14_w": 69.88,
+      "rsi14_m": 66.77,
       "dist_high": -4.3,
       "dist_low": 53.31,
       "dist_ma50": 6.14,
       "dist_ma200": 25.53,
       "marketCap": "16.87B",
-      "targetPrice": 31.86
+      "targetPrice": 187.8
     },
     {
       "ticker": "HST",
@@ -12594,12 +13432,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.27,
       "rsi14": 60.92,
+      "rsi14_w": 73.4,
+      "rsi14_m": 72.94,
       "dist_high": -2.19,
       "dist_low": 60.97,
       "dist_ma50": 8.88,
       "dist_ma200": 27.66,
       "marketCap": "17.05B",
-      "targetPrice": 24.24
+      "targetPrice": 187.8
     },
     {
       "ticker": "GNRC",
@@ -12624,12 +13464,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.47,
       "rsi14": 57.0,
+      "rsi14_w": 71.9,
+      "rsi14_m": 69.28,
       "dist_high": -3.86,
       "dist_low": 108.96,
       "dist_ma50": 11.2,
       "dist_ma200": 44.07,
       "marketCap": "16.73B",
-      "targetPrice": 284.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "CDW",
@@ -12654,12 +13496,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": -0.04,
       "rsi14": 54.45,
+      "rsi14_w": 50.46,
+      "rsi14_m": 32.32,
       "dist_high": -28.78,
       "dist_low": 31.14,
       "dist_ma50": 4.3,
       "dist_ma200": -4.17,
       "marketCap": "16.64B",
-      "targetPrice": 145.11
+      "targetPrice": 187.8
     },
     {
       "ticker": "NDSN",
@@ -12684,12 +13528,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.63,
       "rsi14": 58.52,
+      "rsi14_w": 64.93,
+      "rsi14_m": 62.93,
       "dist_high": -1.06,
       "dist_low": 41.51,
       "dist_ma50": 4.15,
       "dist_ma200": 13.81,
       "marketCap": "16.50B",
-      "targetPrice": 319.12
+      "targetPrice": 187.8
     },
     {
       "ticker": "IEX",
@@ -12714,12 +13560,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.07,
       "rsi14": 58.57,
+      "rsi14_w": 65.67,
+      "rsi14_m": 58.17,
       "dist_high": -1.42,
       "dist_low": 41.03,
       "dist_ma50": 4.4,
       "dist_ma200": 17.14,
       "marketCap": "16.44B",
-      "targetPrice": 238.29
+      "targetPrice": 187.8
     },
     {
       "ticker": "BBY",
@@ -12744,12 +13592,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.24,
       "rsi14": 64.0,
+      "rsi14_w": 58.67,
+      "rsi14_m": 50.54,
       "dist_high": -7.58,
       "dist_low": 39.82,
       "dist_ma50": 17.59,
       "dist_ma200": 11.11,
       "marketCap": "16.36B",
-      "targetPrice": 78.65
+      "targetPrice": 187.8
     },
     {
       "ticker": "BALL",
@@ -12774,12 +13624,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.01,
       "rsi14": 69.91,
+      "rsi14_w": 55.64,
+      "rsi14_m": 52.74,
       "dist_high": -10.01,
       "dist_low": 31.39,
       "dist_ma50": 4.87,
       "dist_ma200": 9.86,
       "marketCap": "16.24B",
-      "targetPrice": 70.79
+      "targetPrice": 187.8
     },
     {
       "ticker": "BR",
@@ -12799,17 +13651,19 @@ const INDEX_DATA = {
       "pct_6m": -38.65,
       "pct_ytd": -37.22,
       "pct_1y": -41.17,
-      "trailingPE": 14.98,
+      "trailingPE": 15.0,
       "forwardPE": 13.46,
       "ema_signal": 1,
       "dist_sma20": -4.53,
       "rsi14": 39.12,
+      "rsi14_w": 30.98,
+      "rsi14_m": 29.42,
       "dist_high": -47.51,
       "dist_low": 2.85,
       "dist_ma50": -7.21,
       "dist_ma200": -28.43,
       "marketCap": "16.20B",
-      "targetPrice": 206.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "CHTR",
@@ -12834,12 +13688,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.87,
       "rsi14": 38.97,
+      "rsi14_w": 31.4,
+      "rsi14_m": 34.72,
       "dist_high": -68.58,
       "dist_low": 4.68,
       "dist_ma50": -18.13,
       "dist_ma200": -37.32,
       "marketCap": "20.59B",
-      "targetPrice": 239.18
+      "targetPrice": 187.8
     },
     {
       "ticker": "CF",
@@ -12864,12 +13720,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.98,
       "rsi14": 35.02,
+      "rsi14_w": 46.26,
+      "rsi14_m": 57.12,
       "dist_high": -25.08,
       "dist_low": 35.48,
       "dist_ma50": -12.2,
       "dist_ma200": 3.92,
       "marketCap": "15.84B",
-      "targetPrice": 125.16
+      "targetPrice": 187.8
     },
     {
       "ticker": "TSCO",
@@ -12894,12 +13752,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.06,
       "rsi14": 41.64,
+      "rsi14_w": 24.67,
+      "rsi14_m": 28.45,
       "dist_high": -52.02,
       "dist_low": 3.16,
       "dist_ma50": -9.43,
       "dist_ma200": -37.18,
       "marketCap": "15.76B",
-      "targetPrice": 44.78
+      "targetPrice": 187.8
     },
     {
       "ticker": "MAS",
@@ -12924,12 +13784,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 8.51,
       "rsi14": 67.76,
+      "rsi14_w": 62.26,
+      "rsi14_m": 57.52,
       "dist_high": 0.0,
       "dist_low": 33.19,
       "dist_ma50": 11.1,
       "dist_ma200": 15.51,
       "marketCap": "15.75B",
-      "targetPrice": 81.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "MAA",
@@ -12954,12 +13816,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.04,
       "rsi14": 53.26,
+      "rsi14_w": 52.76,
+      "rsi14_m": 48.33,
       "dist_high": -12.26,
       "dist_low": 11.49,
       "dist_ma50": 2.89,
       "dist_ma200": 1.41,
       "marketCap": "16.04B",
-      "targetPrice": 141.58
+      "targetPrice": 187.8
     },
     {
       "ticker": "TKO",
@@ -12984,12 +13848,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.76,
       "rsi14": 54.92,
+      "rsi14_w": 54.89,
+      "rsi14_m": 64.17,
       "dist_high": -9.54,
       "dist_low": 30.78,
       "dist_ma50": 5.16,
       "dist_ma200": 2.84,
       "marketCap": "38.90B",
-      "targetPrice": 234.39
+      "targetPrice": 187.8
     },
     {
       "ticker": "GPC",
@@ -13014,12 +13880,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 8.67,
       "rsi14": 65.58,
+      "rsi14_w": 49.03,
+      "rsi14_m": 42.72,
       "dist_high": -25.81,
       "dist_low": 19.75,
       "dist_ma50": 7.38,
       "dist_ma200": -8.5,
       "marketCap": "15.40B",
-      "targetPrice": 134.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "TXT",
@@ -13044,12 +13912,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.04,
       "rsi14": 36.53,
+      "rsi14_w": 44.88,
+      "rsi14_m": 49.39,
       "dist_high": -14.12,
       "dist_low": 12.36,
       "dist_ma50": -4.91,
       "dist_ma200": -2.37,
       "marketCap": "15.05B",
-      "targetPrice": 103.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "DECK",
@@ -13074,12 +13944,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.02,
       "rsi14": 46.98,
+      "rsi14_w": 49.73,
+      "rsi14_m": 41.99,
       "dist_high": -14.7,
       "dist_low": 32.89,
       "dist_ma50": -0.05,
       "dist_ma200": 2.71,
       "marketCap": "14.68B",
-      "targetPrice": 126.86
+      "targetPrice": 187.8
     },
     {
       "ticker": "REG",
@@ -13104,12 +13976,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.12,
       "rsi14": 58.06,
+      "rsi14_w": 57.62,
+      "rsi14_m": 66.36,
       "dist_high": -1.54,
       "dist_low": 18.92,
       "dist_ma50": 1.7,
       "dist_ma200": 7.98,
       "marketCap": "14.93B",
-      "targetPrice": 84.63
+      "targetPrice": 187.8
     },
     {
       "ticker": "J",
@@ -13134,12 +14008,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": -0.07,
       "rsi14": 50.54,
+      "rsi14_w": 45.04,
+      "rsi14_m": 47.81,
       "dist_high": -25.78,
       "dist_low": 13.77,
       "dist_ma50": -0.1,
       "dist_ma200": -10.63,
       "marketCap": "14.41B",
-      "targetPrice": 158.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "DOC",
@@ -13164,12 +14040,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.57,
       "rsi14": 63.9,
+      "rsi14_w": 63.67,
+      "rsi14_m": 57.65,
       "dist_high": 0.0,
       "dist_low": 31.94,
       "dist_ma50": 11.0,
       "dist_ma200": 17.02,
       "marketCap": "14.35B",
-      "targetPrice": 21.28
+      "targetPrice": 187.8
     },
     {
       "ticker": "GEN",
@@ -13194,12 +14072,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.79,
       "rsi14": 45.98,
+      "rsi14_w": 49.86,
+      "rsi14_m": 47.83,
       "dist_high": -26.74,
       "dist_low": 31.69,
       "dist_ma50": 3.6,
       "dist_ma200": -4.11,
       "marketCap": "14.19B",
-      "targetPrice": 30.01
+      "targetPrice": 187.8
     },
     {
       "ticker": "HRL",
@@ -13224,12 +14104,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.97,
       "rsi14": 75.05,
+      "rsi14_w": 59.83,
+      "rsi14_m": 46.96,
       "dist_high": -18.99,
       "dist_low": 29.43,
       "dist_ma50": 15.8,
       "dist_ma200": 9.9,
       "marketCap": "14.06B",
-      "targetPrice": 26.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "SWK",
@@ -13254,12 +14136,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.8,
       "rsi14": 66.78,
+      "rsi14_w": 63.29,
+      "rsi14_m": 55.75,
       "dist_high": -2.5,
       "dist_low": 44.33,
       "dist_ma50": 14.34,
       "dist_ma200": 18.03,
       "marketCap": "13.94B",
-      "targetPrice": 92.65
+      "targetPrice": 187.8
     },
     {
       "ticker": "EG",
@@ -13284,12 +14168,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.65,
       "rsi14": 58.55,
+      "rsi14_w": 54.14,
+      "rsi14_m": 47.57,
       "dist_high": -5.24,
       "dist_low": 13.39,
       "dist_ma50": 0.66,
       "dist_ma200": 3.48,
       "marketCap": "13.68B",
-      "targetPrice": 388.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "DVA",
@@ -13314,12 +14200,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.11,
       "rsi14": 71.34,
+      "rsi14_w": 77.68,
+      "rsi14_m": 68.18,
       "dist_high": 0.0,
       "dist_low": 105.1,
       "dist_ma50": 15.82,
       "dist_ma200": 48.51,
       "marketCap": "13.67B",
-      "targetPrice": 193.71
+      "targetPrice": 187.8
     },
     {
       "ticker": "GL",
@@ -13344,12 +14232,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 8.35,
       "rsi14": 78.74,
+      "rsi14_w": 77.68,
+      "rsi14_m": 82.01,
       "dist_high": 0.0,
       "dist_low": 49.35,
       "dist_ma50": 12.13,
       "dist_ma200": 22.39,
       "marketCap": "13.64B",
-      "targetPrice": 177.36
+      "targetPrice": 187.8
     },
     {
       "ticker": "COO",
@@ -13374,12 +14264,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.11,
       "rsi14": 63.15,
+      "rsi14_w": 48.14,
+      "rsi14_m": 43.01,
       "dist_high": -18.37,
       "dist_low": 16.7,
       "dist_ma50": 7.52,
       "dist_ma200": -5.26,
       "marketCap": "13.42B",
-      "targetPrice": 80.57
+      "targetPrice": 187.8
     },
     {
       "ticker": "LDOS",
@@ -13404,12 +14296,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -12.68,
       "rsi14": 18.82,
+      "rsi14_w": 21.0,
+      "rsi14_m": 33.31,
       "dist_high": -47.72,
       "dist_low": 0.0,
       "dist_ma50": -20.58,
       "dist_ma200": -38.71,
       "marketCap": "13.12B",
-      "targetPrice": 178.27
+      "targetPrice": 187.8
     },
     {
       "ticker": "SOLV",
@@ -13434,12 +14328,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -2.32,
       "rsi14": 48.93,
+      "rsi14_w": 52.49,
+      "rsi14_m": 58.62,
       "dist_high": -12.25,
       "dist_low": 20.96,
       "dist_ma50": 2.42,
       "dist_ma200": 1.58,
       "marketCap": "13.09B",
-      "targetPrice": 82.15
+      "targetPrice": 187.8
     },
     {
       "ticker": "AIZ",
@@ -13459,17 +14355,19 @@ const INDEX_DATA = {
       "pct_6m": 9.07,
       "pct_ytd": 9.54,
       "pct_1y": 35.57,
-      "trailingPE": 13.53,
+      "trailingPE": 13.52,
       "forwardPE": 11.74,
       "ema_signal": 3,
       "dist_sma20": 3.14,
       "rsi14": 64.97,
+      "rsi14_w": 69.66,
+      "rsi14_m": 69.68,
       "dist_high": -0.56,
       "dist_low": 42.95,
       "dist_ma50": 7.43,
       "dist_ma200": 15.09,
       "marketCap": "13.07B",
-      "targetPrice": 283.83
+      "targetPrice": 187.8
     },
     {
       "ticker": "PTC",
@@ -13494,12 +14392,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -12.04,
       "rsi14": 27.23,
+      "rsi14_w": 28.54,
+      "rsi14_m": 30.43,
       "dist_high": -47.85,
       "dist_low": 0.53,
       "dist_ma50": -16.85,
       "dist_ma200": -31.42,
       "marketCap": "13.04B",
-      "targetPrice": 180.1
+      "targetPrice": 187.8
     },
     {
       "ticker": "LULU",
@@ -13524,12 +14424,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -5.7,
       "rsi14": 39.99,
+      "rsi14_w": 32.84,
+      "rsi14_m": 34.28,
       "dist_high": -54.34,
       "dist_low": 7.27,
       "dist_ma50": -13.65,
       "dist_ma200": -31.94,
       "marketCap": "12.84B",
-      "targetPrice": 132.16
+      "targetPrice": 187.8
     },
     {
       "ticker": "MKC",
@@ -13554,12 +14456,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.46,
       "rsi14": 49.29,
+      "rsi14_w": 36.63,
+      "rsi14_m": 34.49,
       "dist_high": -38.64,
       "dist_low": 4.39,
       "dist_ma50": -2.1,
       "dist_ma200": -21.41,
       "marketCap": "12.80B",
-      "targetPrice": 61.23
+      "targetPrice": 187.8
     },
     {
       "ticker": "APTV",
@@ -13584,12 +14488,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -9.66,
       "rsi14": 42.11,
+      "rsi14_w": 41.45,
+      "rsi14_m": 41.2,
       "dist_high": -31.86,
       "dist_low": 14.93,
       "dist_ma50": -1.54,
       "dist_ma200": -18.46,
       "marketCap": "12.79B",
-      "targetPrice": 78.21
+      "targetPrice": 187.8
     },
     {
       "ticker": "PNW",
@@ -13614,12 +14520,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.35,
       "rsi14": 62.55,
+      "rsi14_w": 61.12,
+      "rsi14_m": 70.44,
       "dist_high": 0.0,
       "dist_low": 22.71,
       "dist_ma50": 3.56,
       "dist_ma200": 10.87,
       "marketCap": "12.77B",
-      "targetPrice": 105.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "BF.B",
@@ -13644,12 +14552,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.81,
       "rsi14": 60.74,
+      "rsi14_w": 51.74,
+      "rsi14_m": 37.41,
       "dist_high": -11.07,
       "dist_low": 21.93,
       "dist_ma50": 3.88,
       "dist_ma200": 1.77,
       "marketCap": "12.76B",
-      "targetPrice": 27.77
+      "targetPrice": 187.8
     },
     {
       "ticker": "AVY",
@@ -13669,17 +14579,19 @@ const INDEX_DATA = {
       "pct_6m": -10.21,
       "pct_ytd": -10.3,
       "pct_1y": -7.62,
-      "trailingPE": 18.35,
+      "trailingPE": 18.37,
       "forwardPE": 14.61,
       "ema_signal": 3,
       "dist_sma20": 3.18,
       "rsi14": 57.01,
+      "rsi14_w": 44.49,
+      "rsi14_m": 34.68,
       "dist_high": -17.37,
       "dist_low": 6.63,
       "dist_ma50": 1.14,
       "dist_ma200": -5.42,
       "marketCap": "12.48B",
-      "targetPrice": 200.3
+      "targetPrice": 187.8
     },
     {
       "ticker": "UDR",
@@ -13704,12 +14616,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.38,
       "rsi14": 54.24,
+      "rsi14_w": 55.96,
+      "rsi14_m": 49.42,
       "dist_high": -7.2,
       "dist_low": 14.39,
       "dist_ma50": 3.43,
       "dist_ma200": 5.31,
       "marketCap": "14.22B",
-      "targetPrice": 40.55
+      "targetPrice": 187.8
     },
     {
       "ticker": "ALGN",
@@ -13734,12 +14648,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.75,
       "rsi14": 48.96,
+      "rsi14_w": 50.01,
+      "rsi14_m": 43.51,
       "dist_high": -17.52,
       "dist_low": 36.85,
       "dist_ma50": -1.53,
       "dist_ma200": 6.34,
       "marketCap": "12.24B",
-      "targetPrice": 209.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "CSGP",
@@ -13764,12 +14680,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.74,
       "rsi14": 33.31,
+      "rsi14_w": 27.88,
+      "rsi14_m": 26.9,
       "dist_high": -69.21,
       "dist_low": 2.02,
       "dist_ma50": -12.64,
       "dist_ma200": -46.74,
       "marketCap": "12.17B",
-      "targetPrice": 48.25
+      "targetPrice": 187.8
     },
     {
       "ticker": "PNR",
@@ -13794,12 +14712,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.6,
       "rsi14": 50.83,
+      "rsi14_w": 33.25,
+      "rsi14_m": 42.56,
       "dist_high": -33.56,
       "dist_low": 5.66,
       "dist_ma50": -3.86,
       "dist_ma200": -22.41,
       "marketCap": "12.09B",
-      "targetPrice": 101.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "MGM",
@@ -13824,12 +14744,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.21,
       "rsi14": 60.99,
+      "rsi14_w": 67.67,
+      "rsi14_m": 59.0,
       "dist_high": -7.1,
       "dist_low": 53.29,
       "dist_ma50": 12.87,
       "dist_ma200": 28.51,
       "marketCap": "12.05B",
-      "targetPrice": 46.61
+      "targetPrice": 187.8
     },
     {
       "ticker": "ERIE",
@@ -13854,12 +14776,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.93,
       "rsi14": 55.64,
+      "rsi14_w": 40.04,
+      "rsi14_m": 36.91,
       "dist_high": -37.79,
       "dist_low": 10.76,
       "dist_ma50": 2.08,
       "dist_ma200": -15.36,
       "marketCap": "12.00B",
-      "targetPrice": null
+      "targetPrice": 187.8
     },
     {
       "ticker": "SJM",
@@ -13884,12 +14808,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.03,
       "rsi14": 58.13,
+      "rsi14_w": 59.1,
+      "rsi14_m": 52.88,
       "dist_high": -4.63,
       "dist_low": 24.68,
       "dist_ma50": 9.19,
       "dist_ma200": 7.85,
       "marketCap": "11.91B",
-      "targetPrice": 121.59
+      "targetPrice": 187.8
     },
     {
       "ticker": "ZBRA",
@@ -13914,12 +14840,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.5,
       "rsi14": 55.72,
+      "rsi14_w": 52.45,
+      "rsi14_m": 45.07,
       "dist_high": -27.41,
       "dist_low": 24.33,
       "dist_ma50": 4.63,
       "dist_ma200": -1.48,
       "marketCap": "11.80B",
-      "targetPrice": 328.94
+      "targetPrice": 187.8
     },
     {
       "ticker": "RVTY",
@@ -13944,12 +14872,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 4.77,
       "rsi14": 61.66,
+      "rsi14_w": 57.42,
+      "rsi14_m": 52.37,
       "dist_high": -10.29,
       "dist_low": 28.41,
       "dist_ma50": 9.89,
       "dist_ma200": 10.29,
       "marketCap": "11.78B",
-      "targetPrice": 113.64
+      "targetPrice": 187.8
     },
     {
       "ticker": "HAS",
@@ -13974,12 +14904,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -1.37,
       "rsi14": 39.35,
+      "rsi14_w": 41.62,
+      "rsi14_m": 57.06,
       "dist_high": -21.39,
       "dist_low": 17.38,
       "dist_ma50": -7.71,
       "dist_ma200": -3.46,
       "marketCap": "11.78B",
-      "targetPrice": 113.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "APA",
@@ -14004,12 +14936,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.7,
       "rsi14": 37.26,
+      "rsi14_w": 49.46,
+      "rsi14_m": 54.06,
       "dist_high": -24.93,
       "dist_low": 87.22,
       "dist_ma50": -10.95,
       "dist_ma200": 11.26,
       "marketCap": "11.78B",
-      "targetPrice": 43.58
+      "targetPrice": 187.8
     },
     {
       "ticker": "TYL",
@@ -14029,17 +14963,19 @@ const INDEX_DATA = {
       "pct_6m": -38.0,
       "pct_ytd": -36.99,
       "pct_1y": -50.79,
-      "trailingPE": 39.56,
+      "trailingPE": 39.51,
       "forwardPE": 19.4,
       "ema_signal": 1,
       "dist_sma20": -4.56,
       "rsi14": 41.69,
+      "rsi14_w": 29.17,
+      "rsi14_m": 27.52,
       "dist_high": -53.24,
       "dist_low": 3.91,
       "dist_ma50": -9.55,
       "dist_ma200": -29.18,
       "marketCap": "11.77B",
-      "targetPrice": 437.52
+      "targetPrice": 187.8
     },
     {
       "ticker": "TRMB",
@@ -14064,12 +15000,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -4.74,
       "rsi14": 33.78,
+      "rsi14_w": 28.6,
+      "rsi14_m": 39.36,
       "dist_high": -41.18,
       "dist_low": 2.6,
       "dist_ma50": -14.68,
       "dist_ma200": -29.28,
       "marketCap": "11.69B",
-      "targetPrice": 85.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "CLX",
@@ -14094,12 +15032,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.18,
       "rsi14": 51.39,
+      "rsi14_w": 42.52,
+      "rsi14_m": 39.41,
       "dist_high": -27.43,
       "dist_low": 10.75,
       "dist_ma50": 0.81,
       "dist_ma200": -11.39,
       "marketCap": "11.53B",
-      "targetPrice": 105.29
+      "targetPrice": 187.8
     },
     {
       "ticker": "ALLE",
@@ -14124,12 +15064,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.09,
       "rsi14": 53.09,
+      "rsi14_w": 38.5,
+      "rsi14_m": 48.24,
       "dist_high": -25.46,
       "dist_low": 6.65,
       "dist_ma50": -0.33,
       "dist_ma200": -14.24,
       "marketCap": "11.52B",
-      "targetPrice": 164.08
+      "targetPrice": 187.8
     },
     {
       "ticker": "IVZ",
@@ -14154,12 +15096,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.07,
       "rsi14": 39.42,
+      "rsi14_w": 50.24,
+      "rsi14_m": 62.97,
       "dist_high": -11.79,
       "dist_low": 70.3,
       "dist_ma50": -3.75,
       "dist_ma200": 2.26,
       "marketCap": "11.51B",
-      "targetPrice": 29.68
+      "targetPrice": 187.8
     },
     {
       "ticker": "CPT",
@@ -14184,12 +15128,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.4,
       "rsi14": 55.98,
+      "rsi14_w": 56.78,
+      "rsi14_m": 52.55,
       "dist_high": -3.83,
       "dist_low": 14.75,
       "dist_ma50": 4.19,
       "dist_ma200": 5.42,
       "marketCap": "11.02B",
-      "targetPrice": 114.26
+      "targetPrice": 187.8
     },
     {
       "ticker": "HII",
@@ -14214,12 +15160,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.39,
       "rsi14": 32.61,
+      "rsi14_w": 32.06,
+      "rsi14_m": 47.46,
       "dist_high": -38.37,
       "dist_low": 20.72,
       "dist_ma50": -14.73,
       "dist_ma200": -19.27,
       "marketCap": "11.02B",
-      "targetPrice": 387.91
+      "targetPrice": 187.8
     },
     {
       "ticker": "PSKY",
@@ -14244,12 +15192,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.85,
       "rsi14": 37.83,
+      "rsi14_w": 41.6,
+      "rsi14_m": 45.06,
       "dist_high": -50.58,
       "dist_low": 10.92,
       "dist_ma50": -8.22,
       "dist_ma200": -24.6,
       "marketCap": "10.91B",
-      "targetPrice": 12.64
+      "targetPrice": 187.8
     },
     {
       "ticker": "BAX",
@@ -14274,12 +15224,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 6.8,
       "rsi14": 64.19,
+      "rsi14_w": 56.03,
+      "rsi14_m": 40.93,
       "dist_high": -32.63,
       "dist_low": 33.16,
       "dist_ma50": 12.82,
       "dist_ma200": 7.2,
       "marketCap": "10.87B",
-      "targetPrice": 21.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "GDDY",
@@ -14304,12 +15256,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": -0.19,
       "rsi14": 49.34,
+      "rsi14_w": 37.19,
+      "rsi14_m": 34.96,
       "dist_high": -54.83,
       "dist_low": 8.45,
       "dist_ma50": -4.21,
       "dist_ma200": -24.08,
       "marketCap": "10.77B",
-      "targetPrice": 112.14
+      "targetPrice": 187.8
     },
     {
       "ticker": "WYNN",
@@ -14334,12 +15288,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -0.7,
       "rsi14": 50.14,
+      "rsi14_w": 47.03,
+      "rsi14_m": 51.09,
       "dist_high": -22.19,
       "dist_low": 14.05,
       "dist_ma50": 0.27,
       "dist_ma200": -8.68,
       "marketCap": "10.77B",
-      "targetPrice": 135.89
+      "targetPrice": 187.8
     },
     {
       "ticker": "FRT",
@@ -14359,17 +15315,19 @@ const INDEX_DATA = {
       "pct_6m": 21.78,
       "pct_ytd": 23.63,
       "pct_1y": 32.98,
-      "trailingPE": 21.56,
+      "trailingPE": 21.6,
       "forwardPE": 40.14,
       "ema_signal": 3,
       "dist_sma20": 2.05,
       "rsi14": 63.07,
+      "rsi14_w": 67.75,
+      "rsi14_m": 67.77,
       "dist_high": -0.97,
       "dist_low": 37.53,
       "dist_ma50": 6.4,
       "dist_ma200": 18.14,
       "marketCap": "10.83B",
-      "targetPrice": 125.78
+      "targetPrice": 187.8
     },
     {
       "ticker": "SWKS",
@@ -14394,12 +15352,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -5.0,
       "rsi14": 47.8,
+      "rsi14_w": 55.28,
+      "rsi14_m": 41.91,
       "dist_high": -14.41,
       "dist_low": 36.0,
       "dist_ma50": 1.98,
       "dist_ma200": 7.54,
       "marketCap": "10.74B",
-      "targetPrice": 73.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "AES",
@@ -14424,12 +15384,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 0.05,
       "rsi14": 56.09,
+      "rsi14_w": 52.94,
+      "rsi14_m": 45.91,
       "dist_high": -15.05,
       "dist_low": 40.21,
       "dist_ma50": 0.91,
       "dist_ma200": 2.2,
       "marketCap": "10.47B",
-      "targetPrice": 15.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "PODD",
@@ -14454,12 +15416,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.12,
       "rsi14": 47.17,
+      "rsi14_w": 25.57,
+      "rsi14_m": 37.69,
       "dist_high": -57.8,
       "dist_low": 7.13,
       "dist_ma50": -8.01,
       "dist_ma200": -41.24,
       "marketCap": "10.31B",
-      "targetPrice": 242.43
+      "targetPrice": 187.8
     },
     {
       "ticker": "BXP",
@@ -14484,12 +15448,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 1.09,
       "rsi14": 56.23,
+      "rsi14_w": 55.7,
+      "rsi14_m": 51.34,
       "dist_high": -18.74,
       "dist_low": 25.72,
       "dist_ma50": 5.97,
       "dist_ma200": -0.97,
       "marketCap": "11.44B",
-      "targetPrice": 69.55
+      "targetPrice": 187.8
     },
     {
       "ticker": "FOX",
@@ -14514,12 +15480,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -17.42,
       "rsi14": 26.34,
+      "rsi14_w": 32.36,
+      "rsi14_m": 49.91,
       "dist_high": -33.04,
       "dist_low": 1.84,
       "dist_ma50": -19.75,
       "dist_ma200": -20.71,
       "marketCap": "19.05B",
-      "targetPrice": null
+      "targetPrice": 187.8
     },
     {
       "ticker": "FOXA",
@@ -14544,12 +15512,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -18.43,
       "rsi14": 26.8,
+      "rsi14_w": 32.32,
+      "rsi14_m": 49.94,
       "dist_high": -34.57,
       "dist_low": 2.07,
       "dist_ma50": -20.88,
       "dist_ma200": -21.73,
       "marketCap": "20.91B",
-      "targetPrice": 71.4
+      "targetPrice": 187.8
     },
     {
       "ticker": "CRL",
@@ -14574,12 +15544,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.85,
       "rsi14": 67.53,
+      "rsi14_w": 59.28,
+      "rsi14_m": 52.12,
       "dist_high": -10.88,
       "dist_low": 38.83,
       "dist_ma50": 15.24,
       "dist_ma200": 13.27,
       "marketCap": "9.73B",
-      "targetPrice": 215.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "NCLH",
@@ -14604,12 +15576,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.67,
       "rsi14": 65.31,
+      "rsi14_w": 53.85,
+      "rsi14_m": 51.5,
       "dist_high": -22.01,
       "dist_low": 42.06,
       "dist_ma50": 14.82,
       "dist_ma200": 0.34,
       "marketCap": "9.65B",
-      "targetPrice": 21.33
+      "targetPrice": 187.8
     },
     {
       "ticker": "DPZ",
@@ -14634,12 +15608,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -7.13,
       "rsi14": 32.99,
+      "rsi14_w": 29.64,
+      "rsi14_m": 28.22,
       "dist_high": -40.76,
       "dist_low": 1.62,
       "dist_ma50": -11.57,
       "dist_ma200": -25.74,
       "marketCap": "9.57B",
-      "targetPrice": 401.72
+      "targetPrice": 187.8
     },
     {
       "ticker": "HSIC",
@@ -14664,12 +15640,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 5.32,
       "rsi14": 68.76,
+      "rsi14_w": 61.66,
+      "rsi14_m": 60.41,
       "dist_high": -0.64,
       "dist_low": 33.52,
       "dist_ma50": 8.84,
       "dist_ma200": 12.15,
       "marketCap": "9.43B",
-      "targetPrice": 88.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "TECH",
@@ -14694,12 +15672,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 9.98,
       "rsi14": 63.98,
+      "rsi14_w": 54.74,
+      "rsi14_m": 46.04,
       "dist_high": -17.52,
       "dist_low": 35.97,
       "dist_ma50": 12.08,
       "dist_ma200": 2.33,
       "marketCap": "9.22B",
-      "targetPrice": 61.31
+      "targetPrice": 187.8
     },
     {
       "ticker": "BLDR",
@@ -14724,12 +15704,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 11.02,
       "rsi14": 62.51,
+      "rsi14_w": 45.94,
+      "rsi14_m": 41.1,
       "dist_high": -42.76,
       "dist_low": 28.65,
       "dist_ma50": 8.63,
       "dist_ma200": -16.74,
       "marketCap": "9.19B",
-      "targetPrice": 97.38
+      "targetPrice": 187.8
     },
     {
       "ticker": "NWSA",
@@ -14754,12 +15736,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -3.61,
       "rsi14": 42.34,
+      "rsi14_w": 46.61,
+      "rsi14_m": 44.23,
       "dist_high": -18.69,
       "dist_low": 12.63,
       "dist_ma50": -3.64,
       "dist_ma200": -3.13,
       "marketCap": "13.72B",
-      "targetPrice": 35.17
+      "targetPrice": 187.8
     },
     {
       "ticker": "JKHY",
@@ -14784,12 +15768,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -1.54,
       "rsi14": 42.32,
+      "rsi14_w": 32.82,
+      "rsi14_m": 33.7,
       "dist_high": -33.51,
       "dist_low": 3.76,
       "dist_ma50": -8.8,
       "dist_ma200": -19.99,
       "marketCap": "9.10B",
-      "targetPrice": 186.62
+      "targetPrice": 187.8
     },
     {
       "ticker": "ARE",
@@ -14814,12 +15800,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -0.13,
       "rsi14": 53.54,
+      "rsi14_w": 49.09,
+      "rsi14_m": 29.48,
       "dist_high": -41.41,
       "dist_low": 26.8,
       "dist_ma50": 6.73,
       "dist_ma200": -8.35,
       "marketCap": "8.93B",
-      "targetPrice": 51.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "UHS",
@@ -14844,12 +15832,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 0.02,
       "rsi14": 40.57,
+      "rsi14_w": 31.25,
+      "rsi14_m": 40.03,
       "dist_high": -40.45,
       "dist_low": 3.0,
       "dist_ma50": -9.53,
       "dist_ma200": -26.27,
       "marketCap": "8.80B",
-      "targetPrice": 213.82
+      "targetPrice": 187.8
     },
     {
       "ticker": "IT",
@@ -14869,17 +15859,19 @@ const INDEX_DATA = {
       "pct_6m": -48.06,
       "pct_ytd": -48.28,
       "pct_1y": -67.6,
-      "trailingPE": 12.91,
+      "trailingPE": 12.89,
       "forwardPE": 8.52,
       "ema_signal": 1,
       "dist_sma20": -13.83,
       "rsi14": 32.54,
+      "rsi14_w": 32.39,
+      "rsi14_m": 26.63,
       "dist_high": -67.92,
       "dist_low": 3.77,
       "dist_ma50": -14.18,
       "dist_ma200": -34.35,
       "marketCap": "8.74B",
-      "targetPrice": 166.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "TTD",
@@ -14904,12 +15896,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -10.65,
       "rsi14": 33.96,
+      "rsi14_w": 29.36,
+      "rsi14_m": 31.09,
       "dist_high": -80.28,
       "dist_low": 0.0,
       "dist_ma50": -17.68,
       "dist_ma200": -46.69,
       "marketCap": "8.32B",
-      "targetPrice": 24.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "AOS",
@@ -14934,12 +15928,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.76,
       "rsi14": 55.7,
+      "rsi14_w": 41.68,
+      "rsi14_m": 37.93,
       "dist_high": -25.21,
       "dist_low": 7.89,
       "dist_ma50": 0.8,
       "dist_ma200": -10.64,
       "marketCap": "8.29B",
-      "targetPrice": 70.45
+      "targetPrice": 187.8
     },
     {
       "ticker": "FDS",
@@ -14964,12 +15960,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -9.93,
       "rsi14": 37.92,
+      "rsi14_w": 41.84,
+      "rsi14_m": 31.29,
       "dist_high": -51.93,
       "dist_low": 13.89,
       "dist_ma50": -6.29,
       "dist_ma200": -15.15,
       "marketCap": "7.89B",
-      "targetPrice": 247.5
+      "targetPrice": 187.8
     },
     {
       "ticker": "TAP",
@@ -14994,12 +15992,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.4,
       "rsi14": 49.89,
+      "rsi14_w": 41.83,
+      "rsi14_m": 40.47,
       "dist_high": -25.47,
       "dist_low": 5.46,
       "dist_ma50": -2.3,
       "dist_ma200": -10.67,
       "marketCap": "7.60B",
-      "targetPrice": 46.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "MOS",
@@ -15024,12 +16024,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.61,
       "rsi14": 41.06,
+      "rsi14_w": 37.8,
+      "rsi14_m": 38.76,
       "dist_high": -44.83,
       "dist_low": 5.25,
       "dist_ma50": -8.41,
       "dist_ma200": -21.59,
       "marketCap": "6.63B",
-      "targetPrice": 27.03
+      "targetPrice": 187.8
     },
     {
       "ticker": "CAG",
@@ -15054,12 +16056,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.92,
       "rsi14": 52.58,
+      "rsi14_w": 35.98,
+      "rsi14_m": 26.97,
       "dist_high": -36.58,
       "dist_low": 8.19,
       "dist_ma50": -0.97,
       "dist_ma200": -18.55,
       "marketCap": "6.51B",
-      "targetPrice": 14.48
+      "targetPrice": 187.8
     },
     {
       "ticker": "NWS",
@@ -15084,12 +16088,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -4.51,
       "rsi14": 39.86,
+      "rsi14_w": 45.37,
+      "rsi14_m": 48.08,
       "dist_high": -18.88,
       "dist_low": 11.23,
       "dist_ma50": -5.04,
       "dist_ma200": -3.68,
       "marketCap": "15.51B",
-      "targetPrice": null
+      "targetPrice": 187.8
     },
     {
       "ticker": "ASML",
@@ -15114,12 +16120,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -0.03,
       "rsi14": 52.29,
+      "rsi14_w": 65.13,
+      "rsi14_m": 73.06,
       "dist_high": -8.65,
       "dist_low": 155.61,
       "dist_ma50": 10.11,
       "dist_ma200": 37.33,
       "marketCap": "679.40B",
-      "targetPrice": 1742.39
+      "targetPrice": 187.8
     },
     {
       "ticker": "ARM",
@@ -15144,12 +16152,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -3.64,
       "rsi14": 52.73,
+      "rsi14_w": 67.94,
+      "rsi14_m": 74.34,
       "dist_high": -18.29,
       "dist_low": 243.45,
       "dist_ma50": 29.13,
       "dist_ma200": 109.41,
       "marketCap": "383.53B",
-      "targetPrice": 281.58
+      "targetPrice": 187.8
     },
     {
       "ticker": "SHOP",
@@ -15174,12 +16184,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.91,
       "rsi14": 54.06,
+      "rsi14_w": 46.34,
+      "rsi14_m": 54.08,
       "dist_high": -36.22,
       "dist_low": 19.68,
       "dist_ma50": 0.36,
       "dist_ma200": -16.71,
       "marketCap": "148.15B",
-      "targetPrice": 148.22
+      "targetPrice": 187.8
     },
     {
       "ticker": "PDD",
@@ -15204,12 +16216,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -8.2,
       "rsi14": 26.88,
+      "rsi14_w": 26.91,
+      "rsi14_m": 34.64,
       "dist_high": -45.17,
       "dist_low": 0.0,
       "dist_ma50": -17.97,
       "dist_ma200": -31.07,
       "marketCap": "107.81B",
-      "targetPrice": 117.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "MELI",
@@ -15234,12 +16248,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 1.09,
       "rsi14": 51.44,
+      "rsi14_w": 42.63,
+      "rsi14_m": 45.94,
       "dist_high": -36.5,
       "dist_low": 7.29,
       "dist_ma50": -2.54,
       "dist_ma200": -15.42,
       "marketCap": "84.14B",
-      "targetPrice": 2216.96
+      "targetPrice": 187.8
     },
     {
       "ticker": "ALAB",
@@ -15264,12 +16280,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 10.1,
       "rsi14": 62.04,
+      "rsi14_w": 75.94,
+      "rsi14_m": 78.04,
       "dist_high": -9.04,
       "dist_low": 358.31,
       "dist_ma50": 46.03,
       "dist_ma200": 110.9,
       "marketCap": "68.55B",
-      "targetPrice": 254.51
+      "targetPrice": 187.8
     },
     {
       "ticker": "NBIS",
@@ -15294,12 +16312,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": 5.0,
       "rsi14": 57.88,
+      "rsi14_w": 72.93,
+      "rsi14_m": 86.18,
       "dist_high": -9.43,
       "dist_low": 486.14,
       "dist_ma50": 26.76,
       "dist_ma200": 102.61,
       "marketCap": "65.93B",
-      "targetPrice": 244.07
+      "targetPrice": 187.8
     },
     {
       "ticker": "CRWV",
@@ -15324,12 +16344,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -6.23,
       "rsi14": 44.53,
+      "rsi14_w": 50.64,
+      "rsi14_m": 58.58,
       "dist_high": -41.56,
       "dist_low": 56.28,
       "dist_ma50": -9.64,
       "dist_ma200": 0.22,
       "marketCap": "55.04B",
-      "targetPrice": 140.18
+      "targetPrice": 187.8
     },
     {
       "ticker": "RKLB",
@@ -15354,12 +16376,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -25.28,
       "rsi14": 36.17,
+      "rsi14_w": 49.08,
+      "rsi14_m": 59.82,
       "dist_high": -43.15,
       "dist_low": 164.02,
       "dist_ma50": -18.98,
       "dist_ma200": 14.59,
       "marketCap": "53.37B",
-      "targetPrice": 106.92
+      "targetPrice": 187.8
     },
     {
       "ticker": "FER",
@@ -15384,12 +16408,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 2.54,
       "rsi14": 55.45,
+      "rsi14_w": 55.94,
+      "rsi14_m": 70.74,
       "dist_high": -6.52,
       "dist_low": 36.07,
       "dist_ma50": 1.36,
       "dist_ma200": 5.44,
       "marketCap": "49.77B",
-      "targetPrice": 75.93
+      "targetPrice": 187.8
     },
     {
       "ticker": "CCEP",
@@ -15414,12 +16440,14 @@ const INDEX_DATA = {
       "ema_signal": 3,
       "dist_sma20": 3.43,
       "rsi14": 61.48,
+      "rsi14_w": 54.94,
+      "rsi14_m": 60.94,
       "dist_high": -10.53,
       "dist_low": 15.65,
       "dist_ma50": 4.1,
       "dist_ma200": 5.83,
       "marketCap": "43.75B",
-      "targetPrice": 104.55
+      "targetPrice": 187.8
     },
     {
       "ticker": "ALNY",
@@ -15439,17 +16467,19 @@ const INDEX_DATA = {
       "pct_6m": -26.61,
       "pct_ytd": -26.05,
       "pct_1y": -8.66,
-      "trailingPE": 73.88,
+      "trailingPE": 74.07,
       "forwardPE": 21.36,
       "ema_signal": 3,
       "dist_sma20": 0.77,
       "rsi14": 51.29,
+      "rsi14_w": 38.56,
+      "rsi14_m": 47.39,
       "dist_high": -40.14,
       "dist_low": 5.74,
       "dist_ma50": -1.45,
       "dist_ma200": -20.95,
       "marketCap": "39.26B",
-      "targetPrice": 436.32
+      "targetPrice": 187.8
     },
     {
       "ticker": "TRI",
@@ -15474,12 +16504,14 @@ const INDEX_DATA = {
       "ema_signal": 2,
       "dist_sma20": -2.17,
       "rsi14": 45.64,
+      "rsi14_w": 35.38,
+      "rsi14_m": 25.52,
       "dist_high": -62.2,
       "dist_low": 5.79,
       "dist_ma50": -7.05,
       "dist_ma200": -30.55,
       "marketCap": "35.35B",
-      "targetPrice": 123.0
+      "targetPrice": 187.8
     },
     {
       "ticker": "MSTR",
@@ -15504,12 +16536,14 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "dist_sma20": -25.33,
       "rsi14": 27.1,
+      "rsi14_w": 30.01,
+      "rsi14_m": 44.26,
       "dist_high": -79.35,
       "dist_low": 0.0,
       "dist_ma50": -38.4,
       "dist_ma200": -50.04,
       "marketCap": "33.68B",
-      "targetPrice": 351.54
+      "targetPrice": 187.8
     },
     {
       "ticker": "005930.KS",
@@ -15521,25 +16555,27 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": true,
       "is_private": false,
-      "price": 353500.0,
-      "pct_1d": 3.82,
-      "pct_1w": -2.48,
-      "pct_1m": 20.85,
-      "pct_3m": 87.04,
-      "pct_6m": 218.18,
-      "pct_ytd": 194.83,
-      "pct_1y": 476.67,
+      "price": 359000.0,
+      "pct_1d": 5.43,
+      "pct_1w": -0.97,
+      "pct_1m": 22.74,
+      "pct_3m": 89.95,
+      "pct_6m": 223.13,
+      "pct_ytd": 199.42,
+      "pct_1y": 485.64,
       "trailingPE": null,
-      "forwardPE": 6.0,
+      "forwardPE": 6.06,
       "ema_signal": 3,
-      "dist_sma20": 6.34,
-      "rsi14": 58.7,
-      "dist_high": -2.48,
-      "dist_low": 518.01,
-      "dist_ma50": 24.71,
-      "dist_ma200": 109.85,
-      "marketCap": "2331130.01B",
-      "targetPrice": 443492.2
+      "dist_sma20": 7.91,
+      "rsi14": 59.73,
+      "rsi14_w": 86.31,
+      "rsi14_m": 82.79,
+      "dist_high": -0.97,
+      "dist_low": 527.62,
+      "dist_ma50": 26.6,
+      "dist_ma200": 113.08,
+      "marketCap": "2354112.91B",
+      "targetPrice": 187.8
     },
     {
       "ticker": "000660.KS",
@@ -15551,25 +16587,27 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": true,
       "is_private": false,
-      "price": 2763000.0,
-      "pct_1d": 5.42,
-      "pct_1w": 2.91,
-      "pct_1m": 42.35,
-      "pct_3m": 177.69,
-      "pct_6m": 369.9,
-      "pct_ytd": 324.42,
-      "pct_1y": 866.08,
+      "price": 2768000.0,
+      "pct_1d": 5.61,
+      "pct_1w": 3.09,
+      "pct_1m": 42.61,
+      "pct_3m": 178.19,
+      "pct_6m": 370.75,
+      "pct_ytd": 325.19,
+      "pct_1y": 867.83,
       "trailingPE": null,
-      "forwardPE": 6.53,
+      "forwardPE": 6.51,
       "ema_signal": 3,
-      "dist_sma20": 16.0,
-      "rsi14": 65.14,
-      "dist_high": -5.34,
-      "dist_low": 1073.25,
-      "dist_ma50": 47.28,
-      "dist_ma200": 187.76,
-      "marketCap": "1964168.54B",
-      "targetPrice": 2962752.2
+      "dist_sma20": 16.2,
+      "rsi14": 65.25,
+      "rsi14_w": 83.68,
+      "rsi14_m": 89.5,
+      "dist_high": -5.17,
+      "dist_low": 1075.37,
+      "dist_ma50": 47.54,
+      "dist_ma200": 188.28,
+      "marketCap": "1957779.91B",
+      "targetPrice": 187.8
     },
     {
       "ticker": "SPCX",
@@ -15594,6 +16632,8 @@ const INDEX_DATA = {
       "ema_signal": null,
       "dist_sma20": null,
       "rsi14": null,
+      "rsi14_w": null,
+      "rsi14_m": null,
       "dist_high": -26.89,
       "dist_low": 0.0,
       "dist_ma50": null,

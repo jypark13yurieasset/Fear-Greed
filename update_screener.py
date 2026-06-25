@@ -582,6 +582,16 @@ for t, s in stock_map.items():
         
         # RSI-14
         rsi14 = calc_rsi(closes, 14)
+        rsi14_w = None
+        rsi14_m = None
+        if series is not None and len(series) >= 15:
+            try:
+                closes_w = series.resample("W").last().dropna().tolist()
+                closes_m = series.resample("ME").last().dropna().tolist()
+                rsi14_w = calc_rsi(closes_w, 14)
+                rsi14_m = calc_rsi(closes_m, 14)
+            except Exception:
+                pass
 
     def rnd(val):
         return round(val, 2) if val is not None else None
@@ -609,12 +619,14 @@ for t, s in stock_map.items():
         'ema_signal': ema_signal,       # int 1/2/3 or null
         'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
         'rsi14': rnd(rsi14),            # RSI-14 수치
+        'rsi14_w': rnd(rsi14_w),
+        'rsi14_m': rnd(rsi14_m),
         'dist_high': rnd(dist_high),
         'dist_low': rnd(dist_low),
         'dist_ma50': rnd(dist_ma50),
         'dist_ma200': rnd(dist_ma200),
         'marketCap': info_data.get(t, {}).get("marketCap", "-"),
-        'targetPrice': rnd(info_data.get(t, {}).get("targetPrice"))
+        'targetPrice': rnd(target_price)
     })
 
 results = {
