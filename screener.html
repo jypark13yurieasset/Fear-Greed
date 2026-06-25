@@ -721,6 +721,7 @@
                             <th data-sort="eps_growth" style="text-align:right; width:90px;" title="1년 예상 EPS 성장률 = (PER / Fwd PER - 1) * 100">EPS Gr.</th>
                             <th data-sort="dist_sma20" style="text-align:right; width:90px;" title="SMA20 대비 현재 주가 이격도 (%)">SMA 20 Dist</th>
                             <th data-sort="dist_ma50" style="text-align:right; width:90px;" title="SMA50 대비 현재 주가 이격도 (%)">SMA 50 Dist</th>
+                            <th data-sort="dist_ma200" style="text-align:right; width:90px;" title="SMA200 대비 현재 주가 이격도 (%)">SMA 200 Dist</th>
                             <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: ⭐⭐⭐ 두 이평선 모두 상회 / ⭐⭐ 사이 / ⭐ 두 이평선 모두 하회">EMA8/21</th>
                             <th data-sort="rsi14" style="text-align:right; width:70px;" title="RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">RSI</th>
                             <th data-sort="dist_high" style="text-align:right; width:110px;">52W High</th>
@@ -728,7 +729,7 @@
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="20" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="21" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -1069,6 +1070,7 @@
                     <td class="col-change">${stock.eps_growth !== null ? formatChange(stock.eps_growth) : '<span style="opacity:0.3">-</span>'}</td>
                     <td class="col-change">${formatChange(stock.dist_sma20)}</td>
                     <td class="col-change">${formatChange(stock.dist_ma50)}</td>
+                    <td class="col-change">${formatChange(stock.dist_ma200)}</td>
                     <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14)}</td>
                     <td class="col-high-dist">${formatHighDist(stock.dist_high)}</td>
