@@ -375,7 +375,7 @@ print("🔍 Finviz(우선) 및 야후 파이낸스(대체)로부터 PER, Forward
 info_data = {}
 def fetch_info(item):
     yf_t, orig_t = item
-    pe, fpe = None, None
+    pe, fpe, mcap, target_price = None, None, None, None
     
     # Try Finviz first (only for US stocks)
     if not orig_t.endswith('.KS'):
@@ -395,6 +395,17 @@ def fetch_info(item):
                         fpe_val = tds[i+1].text
                         if fpe_val != '-':
                             fpe = float(fpe_val)
+                    if td.text == 'Market Cap':
+                        mcap_val = tds[i+1].text
+                        if mcap_val != '-':
+                            mcap = mcap_val
+                    if td.text == 'Target Price':
+                        tp_val = tds[i+1].text
+                        if tp_val != '-':
+                            try:
+                                target_price = float(tp_val)
+                            except Exception:
+                                pass
         except Exception:
             pass
             
@@ -406,15 +417,26 @@ def fetch_info(item):
                 pe = info.get("trailingPE")
             if fpe is None:
                 fpe = info.get("forwardPE")
+            if mcap is None:
+                raw_mcap = info.get("marketCap")
+                if raw_mcap:
+                    if raw_mcap >= 1e9:
+                        mcap = f"{raw_mcap/1e9:.2f}B"
+                    elif raw_mcap >= 1e6:
+                        mcap = f"{raw_mcap/1e6:.2f}M"
+                    else:
+                        mcap = str(raw_mcap)
+            if target_price is None:
+                target_price = info.get("targetMeanPrice")
         except Exception:
             pass
 
-    return orig_t, pe, fpe
+    return orig_t, pe, fpe, mcap, target_price
 
 with ThreadPoolExecutor(max_workers=10) as executor:
     results_info = list(executor.map(fetch_info, ticker_mapping.items()))
-for orig_t, pe, fpe in results_info:
-    info_data[orig_t] = {"trailingPE": pe, "forwardPE": fpe}
+for orig_t, pe, fpe, mcap, target_price in results_info:
+    info_data[orig_t] = {"trailingPE": pe, "forwardPE": fpe, "marketCap": mcap, "targetPrice": target_price}
 
 # --- Helper functions for technical indicators ---
 
@@ -590,7 +612,9 @@ for t, s in stock_map.items():
         'dist_high': rnd(dist_high),
         'dist_low': rnd(dist_low),
         'dist_ma50': rnd(dist_ma50),
-        'dist_ma200': rnd(dist_ma200)
+        'dist_ma200': rnd(dist_ma200),
+        'marketCap': info_data.get(t, {}).get("marketCap", "-"),
+        'targetPrice': rnd(info_data.get(t, {}).get("targetPrice"))
     })
 
 results = {

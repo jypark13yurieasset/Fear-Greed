@@ -709,7 +709,9 @@
                             <th data-sort="ticker">Ticker</th>
                             <th data-sort="name">Company</th>
                             <th data-sort="sector">Sector</th>
+                            <th data-sort="marketCap" style="text-align:right; width:90px;" title="시가총액 (B=Billion, M=Million)">Market Cap</th>
                             <th data-sort="price" style="text-align:right;">Price</th>
+                            <th data-sort="targetPrice" style="text-align:right; width:90px;" title="월가 평균 목표가">Target Price</th>
                             <th data-sort="pct_1d" style="text-align:right; width:70px;">1D</th>
                             <th data-sort="pct_1w" style="text-align:right; width:70px;">1W</th>
                             <th data-sort="pct_1m" style="text-align:right; width:70px;">1M</th>
@@ -729,7 +731,7 @@
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="21" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="23" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -898,11 +900,24 @@
             filteredStocks.sort((a, b) => {
                 let va = a[currentSortKey];
                 let vb = b[currentSortKey];
+                
+                // Special handling for marketCap string parsing
+                if (currentSortKey === 'marketCap') {
+                    const parseMcap = (val) => {
+                        if (!val || val === '-') return -1;
+                        let num = parseFloat(val);
+                        if (val.includes('B')) return num * 1e9;
+                        if (val.includes('M')) return num * 1e6;
+                        return num;
+                    };
+                    va = parseMcap(va);
+                    vb = parseMcap(vb);
+                }
 
                 // Null values always go to the bottom
-                if ((va === null || va === undefined) && (vb === null || vb === undefined)) return 0;
-                if (va === null || va === undefined) return 1;
-                if (vb === null || vb === undefined) return -1;
+                if ((va === null || va === undefined || va === -1) && (vb === null || vb === undefined || vb === -1)) return 0;
+                if (va === null || va === undefined || va === -1) return 1;
+                if (vb === null || vb === undefined || vb === -1) return -1;
 
                 let cmp;
                 if (typeof va === 'string') {
@@ -995,6 +1010,16 @@
             return `<span class="${colorClass}">${val.toFixed(2)}%${badge}</span>`;
         }
 
+        // ─── Helper formatters ───
+        function formatMarketCap(val) {
+            if (!val || val === '-') return '<span style="opacity:0.3">-</span>';
+            return val;
+        }
+        function formatTargetPrice(val) {
+            if (val === null || val === undefined) return '<span style="opacity:0.3">-</span>';
+            return val.toFixed(2);
+        }
+
         // ─── Range bar renderer ───
         function renderRangeBar(stock) {
             if (stock.is_private || stock.price === null || stock.dist_low === null || stock.dist_high === null) return '-';
@@ -1043,7 +1068,7 @@
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="16" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="23" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
@@ -1058,7 +1083,9 @@
                     <td class="col-ticker">${starBadge}<a href="${getFinvizUrl(stock.ticker)}" target="_blank" rel="noopener noreferrer">${stock.ticker}</a></td>
                     <td class="col-name">${stock.name}</td>
                     <td class="col-sector">${sectorDisplay}</td>
+                    <td style="text-align:right; color:var(--text-secondary); font-size: 0.85rem;">${formatMarketCap(stock.marketCap)}</td>
                     <td class="col-price">${formatPrice(stock)}</td>
+                    <td style="text-align:right; color:var(--text-secondary);">${formatTargetPrice(stock.targetPrice)}</td>
                     <td class="col-change">${formatChange(stock.pct_1d)}</td>
                     <td class="col-change">${formatChange(stock.pct_1w)}</td>
                     <td class="col-change">${formatChange(stock.pct_1m)}</td>
