@@ -482,9 +482,10 @@
         }
         .screener-table th:nth-child(3) { z-index: 15; background: rgba(15, 16, 23, 1); border-right: 1px solid rgba(130, 140, 180, 0.2); }
 
-        /* Highlighted columns: 괴리율(%) = 8th, EPS Gr. = 11th */
+        /* Highlighted columns: 괴리율(%) = 8th, EPS Gr. = 11th, 모멘텀 스코어 = 14th */
         .screener-table th:nth-child(8), .screener-table td:nth-child(8),
-        .screener-table th:nth-child(11), .screener-table td:nth-child(11) {
+        .screener-table th:nth-child(11), .screener-table td:nth-child(11),
+        .screener-table th:nth-child(14), .screener-table td:nth-child(14) {
             background-color: rgba(45, 212, 191, 0.08) !important;
         }
 
@@ -755,6 +756,9 @@
                             <th data-sort="trailingPE" style="text-align:right; width:60px;" title="Trailing P/E">PER</th>
                             <th data-sort="forwardPE" style="text-align:right; width:80px;" title="Forward P/E">Fwd PER</th>
                             <th data-sort="eps_growth" style="text-align:right; width:90px;" title="1년 예상 EPS 성장률 = (PER / Fwd PER - 1) * 100">EPS Gr.</th>
+                            <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: 🔥강세(모두 상회) / ➖중립 / ❄️약세(모두 하회)">EMA8/21</th>
+                            <th data-sort="macd_state" style="text-align:center; width:95px;" title="MACD 사이클: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">MACD</th>
+                            <th data-sort="momentum_score" style="text-align:center; width:95px;" title="종합 모멘텀 스코어 (EMA 점수 + MACD 점수)">모멘텀 스코어</th>
                             <th data-sort="pct_1d" style="text-align:right; width:70px;">1D</th>
                             <th data-sort="pct_1w" style="text-align:right; width:70px;">1W</th>
                             <th data-sort="pct_1m" style="text-align:right; width:70px;">1M</th>
@@ -764,9 +768,6 @@
                             <th data-sort="dist_sma20" style="text-align:right; width:90px;" title="SMA20 대비 현재 주가 이격도 (%)">SMA 20 Dist</th>
                             <th data-sort="dist_ma50" style="text-align:right; width:90px;" title="SMA50 대비 현재 주가 이격도 (%)">SMA 50 Dist</th>
                             <th data-sort="dist_ma200" style="text-align:right; width:90px;" title="SMA200 대비 현재 주가 이격도 (%)">SMA 200 Dist</th>
-                            <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: 🔥강세(모두 상회) / ➖중립 / ❄️약세(모두 하회)">EMA8/21</th>
-                            <th data-sort="macd_state" style="text-align:center; width:95px;" title="MACD 사이클: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">MACD</th>
-                            <th data-sort="momentum_score" style="text-align:center; width:95px;" title="종합 모멘텀 스코어 (EMA 점수 + MACD 점수)">모멘텀 스코어</th>
                             <th data-sort="rsi14" style="text-align:right; width:70px;" title="일봉 RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">일봉 RSI</th>
                             <th data-sort="rsi14_w" style="text-align:right; width:70px;" title="주봉 RSI-14">주봉 RSI</th>
                             <th data-sort="rsi14_m" style="text-align:right; width:70px;" title="월봉 RSI-14">월봉 RSI</th>
@@ -1182,6 +1183,9 @@
                     <td style="text-align:right; font-variant-numeric: tabular-nums;">${stock.trailingPE ? stock.trailingPE.toFixed(1) : '<span style="opacity:0.3">-</span>'}</td>
                     <td style="text-align:right; font-variant-numeric: tabular-nums;">${stock.forwardPE ? stock.forwardPE.toFixed(1) : '<span style="opacity:0.3">-</span>'}</td>
                     <td class="col-change">${stock.eps_growth !== null ? formatChange(stock.eps_growth) : '<span style="opacity:0.3">-</span>'}</td>
+                    <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>
+                    <td style="text-align:center;">${formatMacdState(stock.macd_state)}</td>
+                    <td style="text-align:center;">${formatMomentumScore(stock.momentum_score)}</td>
                     <td class="col-change">${formatChange(stock.pct_1d)}</td>
                     <td class="col-change">${formatChange(stock.pct_1w)}</td>
                     <td class="col-change">${formatChange(stock.pct_1m)}</td>
@@ -1191,9 +1195,6 @@
                     <td class="col-change">${formatChange(stock.dist_sma20)}</td>
                     <td class="col-change">${formatChange(stock.dist_ma50)}</td>
                     <td class="col-change">${formatChange(stock.dist_ma200)}</td>
-                    <td style="text-align:center;">${formatEmaSignal(stock.ema_signal)}</td>
-                    <td style="text-align:center;">${formatMacdState(stock.macd_state)}</td>
-                    <td style="text-align:center; background:rgba(255,255,255,0.015); border-left:1px solid rgba(255,255,255,0.05); border-right:1px solid rgba(255,255,255,0.05);">${formatMomentumScore(stock.momentum_score)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_w)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_m)}</td>
