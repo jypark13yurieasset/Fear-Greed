@@ -579,6 +579,7 @@ for t, s in stock_map.items():
         closes = series.tolist()
         price = closes[-1]
         latest_trading_date = series.index[-1]
+        today_date = baseline_date
         
         # Helper to get return based on the Nth trading day back
         def calc_pct_by_trading_days(n):
@@ -607,21 +608,21 @@ for t, s in stock_map.items():
         # 5D Change (5 trading days back)
         pct_1w = calc_pct_by_trading_days(5)
             
-        # 1M Change (calendar month from latest trading date)
-        pct_1m = calc_pct_change(latest_trading_date - relativedelta(months=1))
+        # 1M Change (1 calendar month from baseline date)
+        pct_1m = calc_pct_change(today_date - relativedelta(months=1))
             
-        # 3M Change (3 calendar months from latest trading date)
-        pct_3m = calc_pct_change(latest_trading_date - relativedelta(months=3))
+        # 3M Change (3 calendar months from baseline date)
+        pct_3m = calc_pct_change(today_date - relativedelta(months=3))
             
-        # 6M Change (6 calendar months from latest trading date)
-        pct_6m = calc_pct_change(latest_trading_date - relativedelta(months=6))
+        # 6M Change (6 calendar months from baseline date)
+        pct_6m = calc_pct_change(today_date - relativedelta(months=6))
             
-        # YTD Change (from the last trading day of previous year)
-        ytd_target_date = datetime.date(latest_trading_date.year - 1, 12, 31)
+        # YTD Change (from the last trading day of previous year of baseline date)
+        ytd_target_date = datetime.date(today_date.year - 1, 12, 31)
         pct_ytd = calc_pct_change(ytd_target_date)
             
-        # 1Y Change (1 calendar year from latest trading date)
-        pct_1y = calc_pct_change(latest_trading_date - relativedelta(years=1))
+        # 1Y Change (1 calendar year from baseline date)
+        pct_1y = calc_pct_change(today_date - relativedelta(years=1))
             
         # 52W High / Low (based on the last 252 trading days to represent 1 year)
         closes_1y = closes[-252:] if len(closes) >= 252 else closes
