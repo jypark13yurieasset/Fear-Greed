@@ -483,8 +483,7 @@
         .screener-table th:nth-child(3) { z-index: 15; background: rgba(15, 16, 23, 1); border-right: 1px solid rgba(130, 140, 180, 0.2); }
 
         /* Group Separators (Finviz vs Yahoo) */
-        .screener-table th:nth-child(8), .screener-table td:nth-child(8),
-        .screener-table th:nth-child(14), .screener-table td:nth-child(14),
+        .screener-table th:nth-child(11), .screener-table td:nth-child(11),
         .screener-table th:nth-child(17), .screener-table td:nth-child(17) {
             border-right: 2px solid rgba(130, 140, 180, 0.4);
         }
@@ -754,15 +753,15 @@
                             <th data-sort="price" style="text-align:right;">Price</th>
                             <th data-sort="targetPrice" style="text-align:right; width:90px;" title="월가 평균 목표가">Target Price</th>
                             <th data-sort="target_dist" style="text-align:right; width:90px;" title="현재가 대비 목표가 괴리율">괴리율(%)</th>
+                            <th data-sort="trailingPE" style="text-align:right; width:60px;" title="Trailing P/E">PER</th>
+                            <th data-sort="forwardPE" style="text-align:right; width:80px;" title="Forward P/E">Fwd PER</th>
+                            <th data-sort="eps_growth" style="text-align:right; width:90px;" title="1년 예상 EPS 성장률 = (PER / Fwd PER - 1) * 100">EPS Gr.</th>
                             <th data-sort="pct_1d" style="text-align:right; width:70px;">1D</th>
                             <th data-sort="pct_1w" style="text-align:right; width:70px;">1W</th>
                             <th data-sort="pct_1m" style="text-align:right; width:70px;">1M</th>
                             <th data-sort="pct_6m" style="text-align:right; width:70px;">6M</th>
                             <th data-sort="pct_ytd" style="text-align:right; width:70px;">YTD</th>
                             <th data-sort="pct_1y" style="text-align:right; width:70px;">1Y</th>
-                            <th data-sort="trailingPE" style="text-align:right; width:60px;" title="Trailing P/E">PER</th>
-                            <th data-sort="forwardPE" style="text-align:right; width:80px;" title="Forward P/E">Fwd PER</th>
-                            <th data-sort="eps_growth" style="text-align:right; width:90px;" title="1년 예상 EPS 성장률 = (PER / Fwd PER - 1) * 100">EPS Gr.</th>
                             <th data-sort="dist_sma20" style="text-align:right; width:90px;" title="SMA20 대비 현재 주가 이격도 (%)">SMA 20 Dist</th>
                             <th data-sort="dist_ma50" style="text-align:right; width:90px;" title="SMA50 대비 현재 주가 이격도 (%)">SMA 50 Dist</th>
                             <th data-sort="dist_ma200" style="text-align:right; width:90px;" title="SMA200 대비 현재 주가 이격도 (%)">SMA 200 Dist</th>
@@ -1181,15 +1180,15 @@
                     <td class="col-price">${formatPrice(stock)}</td>
                     <td style="text-align:right; color:var(--text-secondary);">${formatTargetPrice(stock.targetPrice)}</td>
                     <td class="col-change">${stock.target_dist !== null ? formatChange(stock.target_dist) : '<span style="opacity:0.3">-</span>'}</td>
+                    <td style="text-align:right; font-variant-numeric: tabular-nums;">${stock.trailingPE ? stock.trailingPE.toFixed(1) : '<span style="opacity:0.3">-</span>'}</td>
+                    <td style="text-align:right; font-variant-numeric: tabular-nums;">${stock.forwardPE ? stock.forwardPE.toFixed(1) : '<span style="opacity:0.3">-</span>'}</td>
+                    <td class="col-change">${stock.eps_growth !== null ? formatChange(stock.eps_growth) : '<span style="opacity:0.3">-</span>'}</td>
                     <td class="col-change">${formatChange(stock.pct_1d)}</td>
                     <td class="col-change">${formatChange(stock.pct_1w)}</td>
                     <td class="col-change">${formatChange(stock.pct_1m)}</td>
                     <td class="col-change">${formatChange(stock.pct_6m)}</td>
                     <td class="col-change">${formatChange(stock.pct_ytd)}</td>
                     <td class="col-change">${formatChange(stock.pct_1y)}</td>
-                    <td style="text-align:right; font-variant-numeric: tabular-nums;">${stock.trailingPE ? stock.trailingPE.toFixed(1) : '<span style="opacity:0.3">-</span>'}</td>
-                    <td style="text-align:right; font-variant-numeric: tabular-nums;">${stock.forwardPE ? stock.forwardPE.toFixed(1) : '<span style="opacity:0.3">-</span>'}</td>
-                    <td class="col-change">${stock.eps_growth !== null ? formatChange(stock.eps_growth) : '<span style="opacity:0.3">-</span>'}</td>
                     <td class="col-change">${formatChange(stock.dist_sma20)}</td>
                     <td class="col-change">${formatChange(stock.dist_ma50)}</td>
                     <td class="col-change">${formatChange(stock.dist_ma200)}</td>
