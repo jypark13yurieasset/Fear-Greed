@@ -482,6 +482,11 @@
         }
         .screener-table th:nth-child(3) { z-index: 15; background: rgba(15, 16, 23, 1); border-right: 1px solid rgba(130, 140, 180, 0.2); }
 
+        /* Highlighted columns: 괴리율(%) = 8th, EPS Gr. = 11th */
+        .screener-table th:nth-child(8), .screener-table td:nth-child(8),
+        .screener-table th:nth-child(11), .screener-table td:nth-child(11) {
+            background-color: rgba(45, 212, 191, 0.08) !important;
+        }
 
         .col-sector {
             font-size: 0.78rem;
