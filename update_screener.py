@@ -579,42 +579,49 @@ for t, s in stock_map.items():
         closes = series.tolist()
         price = closes[-1]
         latest_trading_date = series.index[-1]
-        today_date = baseline_date
         
-        # Helper to get return at specific calendar offset
+        # Helper to get return based on the Nth trading day back
+        def calc_pct_by_trading_days(n):
+            """Return % change vs the Nth trading day before the latest close."""
+            idx = -(n + 1)  # e.g. n=5 → iloc[-6]
+            if len(series) >= (n + 1):
+                past_price = series.iloc[idx]
+                if past_price and past_price > 0:
+                    return (price - past_price) / past_price * 100
+            return None
+
+        # Helper to get return at specific calendar date (for month/year periods)
         def calc_pct_change(target_date):
             ts = pd.Timestamp(target_date)
             asof_date = series.index.asof(ts)
             if pd.notna(asof_date):
-                # Ensure it's a strictly historical day
                 if asof_date < latest_trading_date:
                     past_price = series.loc[asof_date]
                     if past_price and past_price > 0:
                         return (price - past_price) / past_price * 100
             return None
 
-        # 1D Change
-        if len(series) >= 2:
-            pct_1d = (price - series.iloc[-2]) / series.iloc[-2] * 100
+        # 1D Change (1 trading day back)
+        pct_1d = calc_pct_by_trading_days(1)
             
-        # 1W Change (1 calendar week)
-        pct_1w = calc_pct_change(today_date - relativedelta(weeks=1))
+        # 5D Change (5 trading days back)
+        pct_1w = calc_pct_by_trading_days(5)
             
-        # 1M Change (1 calendar month)
-        pct_1m = calc_pct_change(today_date - relativedelta(months=1))
+        # 1M Change (calendar month from latest trading date)
+        pct_1m = calc_pct_change(latest_trading_date - relativedelta(months=1))
             
-        # 3M Change (3 calendar months)
-        pct_3m = calc_pct_change(today_date - relativedelta(months=3))
+        # 3M Change (3 calendar months from latest trading date)
+        pct_3m = calc_pct_change(latest_trading_date - relativedelta(months=3))
             
-        # 6M Change (6 calendar months)
-        pct_6m = calc_pct_change(today_date - relativedelta(months=6))
+        # 6M Change (6 calendar months from latest trading date)
+        pct_6m = calc_pct_change(latest_trading_date - relativedelta(months=6))
             
-        # YTD Change (Year to Date, from the end of previous year)
-        ytd_target_date = datetime.date(today_date.year - 1, 12, 31)
+        # YTD Change (from the last trading day of previous year)
+        ytd_target_date = datetime.date(latest_trading_date.year - 1, 12, 31)
         pct_ytd = calc_pct_change(ytd_target_date)
             
-        # 1Y Change (1 calendar year)
-        pct_1y = calc_pct_change(today_date - relativedelta(years=1))
+        # 1Y Change (1 calendar year from latest trading date)
+        pct_1y = calc_pct_change(latest_trading_date - relativedelta(years=1))
             
         # 52W High / Low (based on the last 252 trading days to represent 1 year)
         closes_1y = closes[-252:] if len(closes) >= 252 else closes
