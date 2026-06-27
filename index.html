@@ -557,7 +557,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            padding: 10px 16px;
+            padding: 10px 8px;
             border-bottom: 1px solid var(--card-border);
         }
 
@@ -592,7 +592,7 @@
 
         .etf-table td.weight {
             font-weight: 700;
-            color: #7c8cf5;
+            color: var(--text-primary);
             text-align: right;
             width: 80px;
         }
@@ -623,9 +623,9 @@
             color: #7c8cf5;
         }
 
-        /* Common holding & Close gap asset highlight (Blue) */
+        /* Common holding & Close gap asset highlight (Sky Blue) */
         .common-holding, .close-gap-highlight {
-            background-color: rgba(56, 189, 248, 0.08) !important;
+            background-color: rgba(56, 189, 248, 0.07) !important;
             transition: background-color 0.2s ease;
         }
         .common-holding td, .close-gap-highlight td {
@@ -1096,7 +1096,7 @@
                         <td style="font-weight: 600;">${starBadge}${asset.name}</td>
                         <td style="color: var(--text-secondary); text-align: right; font-size: 0.8rem;">${asset.code}</td>
                         <td class="weight" style="font-weight: 700; color: var(--text-primary); text-align: right; width: 150px;">${asset.mcap}</td>
-                        <td style="font-weight: 700; color: #7c8cf5; text-align: right; width: 150px;">${gapText}</td>
+                        <td style="font-weight: 700; color: var(--text-primary); text-align: right; width: 150px;">${gapText}</td>
                     </tr>`;
                     assetsTbody.innerHTML += row;
                 });
