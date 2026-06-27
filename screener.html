@@ -246,6 +246,54 @@
         }
         .index-btn.dowjones:hover { background: rgba(245, 158, 11, 0.1); }
 
+        /* Sexy Filter Button */
+        .btn-sexy-filter {
+            position: relative;
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #fff;
+            background: linear-gradient(135deg, rgba(124, 140, 245, 0.25), rgba(56, 189, 248, 0.25));
+            border: 1.5px solid rgba(124, 140, 245, 0.5);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: var(--font-family);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(124, 140, 245, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        
+        .btn-sexy-filter::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-20deg);
+            transition: 0.5s;
+        }
+        
+        .btn-sexy-filter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 140, 245, 0.35);
+            border-color: rgba(56, 189, 248, 0.8);
+            background: linear-gradient(135deg, rgba(124, 140, 245, 0.4), rgba(56, 189, 248, 0.4));
+        }
+        
+        .btn-sexy-filter:hover::before {
+            left: 150%;
+        }
+        
+        .btn-sexy-filter:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(124, 140, 245, 0.2);
+        }
+
         /* Sector dropdown */
         .sector-select {
             padding: 10px 14px;
@@ -657,6 +705,172 @@
 
             .page-header h1 { font-size: 1.4rem; }
         }
+        /* Modal CSS */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        .modal-overlay.show {
+            display: flex;
+            opacity: 1;
+        }
+        .filter-modal {
+            background: #1a1b26;
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            width: 900px;
+            max-width: 95vw;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transform: scale(0.95);
+            transition: transform 0.2s ease;
+        }
+        .modal-overlay.show .filter-modal {
+            transform: scale(1);
+        }
+        .filter-modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .filter-modal-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .close-modal-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .close-modal-btn:hover {
+            color: var(--text-primary);
+        }
+        .filter-modal-body {
+            padding: 24px;
+            overflow-y: auto;
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        .filter-group {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .filter-group-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .filter-item {
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .filter-item:last-child { margin-bottom: 0; }
+        .filter-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .filter-inputs {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .filter-input {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--card-border);
+            padding: 6px 10px;
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            font-family: inherit;
+        }
+        .filter-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        .filter-modal-footer {
+            padding: 16px 24px;
+            border-top: 1px solid var(--card-border);
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+        .btn-reset {
+            background: transparent;
+            border: 1px solid var(--card-border);
+            color: var(--text-secondary);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn-reset:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+        .btn-apply {
+            background: var(--accent);
+            border: none;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(124, 140, 245, 0.3);
+            transition: all 0.2s;
+        }
+        .btn-apply:hover {
+            background: #6b7ced;
+            transform: translateY(-1px);
+        }
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+        .checkbox-label input {
+            accent-color: var(--accent);
+        }
+        
     </style>
 </head>
 
@@ -709,14 +923,12 @@
                     <span class="search-icon">🔍</span>
                     <input type="text" id="search-input" placeholder="티커 또는 종목명으로 검색..." autocomplete="off">
                 </div>
-                <div class="index-toggles">
-                    <button class="index-btn sp500 active" data-index="sp500" onclick="toggleIndex(this)">S&P 500</button>
-                    <button class="index-btn ndx active" data-index="nasdaq100" onclick="toggleIndex(this)">NDX</button>
-                    <button class="index-btn dowjones active" data-index="dowjones" onclick="toggleIndex(this)">Dow Jones</button>
+                <div class="index-toggles" style="display:none;">
+                    <!-- Removed by user request -->
                 </div>
-                <select class="sector-select" id="sector-filter" onchange="applyFilters()">
-                    <option value="">전체 섹터</option>
-                </select>
+                <button class="btn-sexy-filter" onclick="openFilterModal()">
+                    상세 필터 ⚙️
+                </button>
             </div>
             <!-- Preset Buttons -->
             <div class="preset-section">
@@ -726,7 +938,7 @@
                     <button class="preset-btn" id="preset-watchlist" onclick="selectPreset('watchlist')">나의 관심종목 ⭐⭐</button>
                     <button class="preset-btn" id="preset-epsgrowth" onclick="selectPreset('epsgrowth')">실적 성장 모멘텀 📈</button>
                     <button class="preset-btn" id="preset-macdgolden" onclick="selectPreset('macdgolden')">MACD 골든 📈</button>
-                    <button class="preset-btn" id="preset-momentumtop" onclick="selectPreset('momentumtop')">모멘텀 상위 🏆</button>
+                    <!-- Removed momentumtop -->
                     <button class="preset-btn" id="preset-breakout" onclick="selectPreset('breakout')">신고가 임박 🚀</button>
                     <button class="preset-btn" id="preset-mcap" onclick="selectPreset('mcap')">대형주 Top 50 🏢</button>
                     <button class="preset-btn" id="preset-leaders" onclick="selectPreset('leaders')">단기 주도주 🔥</button>
@@ -740,7 +952,12 @@
         <div class="table-card">
             <div class="table-info-bar">
                 <span class="table-count" id="table-count">로딩 중...</span>
-                <span style="font-size: 0.75rem; color: var(--text-secondary);">⭐⭐ 관심종목 하이라이트</span>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <a href="https://app.hyperliquid.xyz/trade" target="_blank" style="font-size: 0.75rem; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; display: flex; align-items: center; gap: 4px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent)'">
+                        Hyperliquid Trade ↗
+                    </a>
+                    <span style="font-size: 0.75rem; color: var(--text-secondary);">⭐⭐ 관심종목 하이라이트</span>
+                </div>
             </div>
             <div class="table-wrapper">
                 <table class="screener-table" id="screener-table">
@@ -782,7 +999,67 @@
                 </table>
             </div>
         </div>
+        
+        <!-- Detailed Filter Modal -->
+        <div class="modal-overlay" id="filter-modal-overlay">
+            <div class="filter-modal">
+                <div class="filter-modal-header">
+                    <div class="filter-modal-title">⚙️ 상세 다중 조건 필터</div>
+                    <button class="close-modal-btn" onclick="closeFilterModal()">&times;</button>
+                </div>
+                <div class="filter-modal-body">
+                    <!-- 1. 섹터 선택 -->
+                    <div class="filter-group">
+                        <div class="filter-group-title">🏢 섹터 필터</div>
+                        <div class="filter-item" style="border: none; padding: 0;">
+                            <select id="f-sector" class="sector-select" style="width: 100%; height: 42px; font-size: 0.9rem;">
+                                <option value="">전체 섹터</option>
+                            </select>
+                        </div>
+                    </div>
 
+                    <!-- 2. 모멘텀 & 추세 -->
+                    <div class="filter-group">
+                        <div class="filter-group-title">📈 모멘텀 & 추세</div>
+                        <div class="filter-item">
+                            <span class="filter-label">MACD 상태</span>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label"><input type="checkbox" name="f-macd" value="🚀 강력 상승"> 🚀 강력 상승</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-macd" value="📈 상승 반전"> 📈 상승 반전</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-macd" value="📉 하락 반전"> 📉 하락 반전</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-macd" value="❄️ 강력 하락"> ❄️ 강력 하락</label>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <span class="filter-label">EMA8/21 상태</span>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="🔥 강세"> 🔥 강세</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="➖ 중립"> ➖ 중립</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="❄️ 약세"> ❄️ 약세</label>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <span class="filter-label">SMA 50 이격도</span>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label"><input type="checkbox" name="f-sma50" value="positive"> 📈 양수 (> 0%)</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-sma50" value="negative"> 📉 음수 (≤ 0%)</label>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <span class="filter-label">SMA 200 이격도</span>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label"><input type="checkbox" name="f-sma200" value="positive"> 📈 양수 (> 0%)</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-sma200" value="negative"> 📉 음수 (≤ 0%)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-modal-footer">
+                    <button class="btn-reset" onclick="resetDetailedFilter()">초기화</button>
+                    <button class="btn-apply" onclick="applyDetailedFilter()">적용 및 닫기</button>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -847,18 +1124,52 @@
             });
             allStocks.sort((a, b) => a.ticker.localeCompare(b.ticker));
         }
+        
+        // ─── Modal Functions ───
+        function openFilterModal() {
+            document.getElementById('filter-modal-overlay').classList.add('show');
+        }
+        function closeFilterModal() {
+            document.getElementById('filter-modal-overlay').classList.remove('show');
+        }
+        
+        let detailedFilters = null;
+        
+        function resetDetailedFilter() {
+            document.querySelectorAll('.filter-input').forEach(input => input.value = '');
+            document.querySelectorAll('.checkbox-grid input[type="checkbox"]').forEach(cb => cb.checked = false);
+            // reset select specially
+            document.getElementById('f-sector').value = '';
+            detailedFilters = null;
+            applyFilters();
+        }
+        
+        function applyDetailedFilter() {
+            detailedFilters = {
+                sector: document.getElementById('f-sector').value,
+                macd: Array.from(document.querySelectorAll('input[name="f-macd"]:checked')).map(cb => cb.value),
+                ema: Array.from(document.querySelectorAll('input[name="f-ema"]:checked')).map(cb => cb.value),
+                sma50: Array.from(document.querySelectorAll('input[name="f-sma50"]:checked')).map(cb => cb.value),
+                sma200: Array.from(document.querySelectorAll('input[name="f-sma200"]:checked')).map(cb => cb.value),
+            };
+            closeFilterModal();
+            applyFilters();
+        }
 
         // ─── Populate Sector Dropdown ───
         function populateSectorFilter() {
             const sectors = new Set();
             allStocks.forEach(s => { if (s.sector) sectors.add(s.sector); });
             const sorted = [...sectors].sort();
-            const select = document.getElementById('sector-filter');
+            
+            // Populate modal dropdown
+            const selectModal = document.getElementById('f-sector');
+            
             sorted.forEach(sec => {
-                const opt = document.createElement('option');
-                opt.value = sec;
-                opt.textContent = sec;
-                select.appendChild(opt);
+                const opt2 = document.createElement('option');
+                opt2.value = sec;
+                opt2.textContent = sec;
+                selectModal.appendChild(opt2);
             });
         }
 
@@ -887,15 +1198,11 @@
         // ─── Apply All Filters ───
         function applyFilters() {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
-            const sectorVal = document.getElementById('sector-filter').value;
 
             // Determine if any index filter is active
             const anyIndexActive = Object.values(activeIndices).some(v => v);
 
             filteredStocks = allStocks.filter(stock => {
-                // Sector filter
-                if (sectorVal && stock.sector !== sectorVal) return false;
-
                 // Search filter
                 if (query) {
                     const matchTicker = stock.ticker.toLowerCase().includes(query);
@@ -926,6 +1233,47 @@
                     if (stock.macd_state !== 3) return false;
                 } else if (activePreset === 'watchlist') {
                     if (!stock.is_watchlist) return false;
+                }
+                
+                // Detailed Multi-Filters
+                if (detailedFilters) {
+                    const df = detailedFilters;
+                    
+                    if (df.sector && stock.sector !== df.sector) return false;
+                    
+                    // MACD (1:강력하락, 2:하락반전, 3:상승반전, 4:강력상승)
+                    if (df.macd.length > 0) {
+                        if (stock.macd_state === null) return false;
+                        const matchMap = { "❄️ 강력 하락": 1, "📉 하락 반전": 2, "📈 상승 반전": 3, "🚀 강력 상승": 4 };
+                        const allowed = df.macd.map(k => matchMap[k]);
+                        if (!allowed.includes(stock.macd_state)) return false;
+                    }
+                    
+                    // EMA (1:약세, 2:중립, 3:강세)
+                    if (df.ema.length > 0) {
+                        if (stock.ema_signal === null) return false;
+                        const matchMap = { "❄️ 약세": 1, "➖ 중립": 2, "🔥 강세": 3 };
+                        const allowed = df.ema.map(k => matchMap[k]);
+                        if (!allowed.includes(stock.ema_signal)) return false;
+                    }
+
+                    // SMA 50 Dist (+/-)
+                    if (df.sma50.length > 0) {
+                        if (stock.dist_ma50 === null) return false;
+                        let valid = false;
+                        if (df.sma50.includes('positive') && stock.dist_ma50 > 0) valid = true;
+                        if (df.sma50.includes('negative') && stock.dist_ma50 <= 0) valid = true;
+                        if (!valid) return false;
+                    }
+
+                    // SMA 200 Dist (+/-)
+                    if (df.sma200.length > 0) {
+                        if (stock.dist_ma200 === null) return false;
+                        let valid = false;
+                        if (df.sma200.includes('positive') && stock.dist_ma200 > 0) valid = true;
+                        if (df.sma200.includes('negative') && stock.dist_ma200 <= 0) valid = true;
+                        if (!valid) return false;
+                    }
                 }
 
                 return true;
