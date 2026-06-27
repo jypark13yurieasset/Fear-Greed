@@ -44,26 +44,6 @@ if os.path.exists(sectors_cache_path):
     except Exception as e:
         print(f"⚠️ 로컬 섹터 DB 로딩 실패: {e}")
 
-# --- 1. Build Fallback Sector Database from Wikipedia ---
-print("=" * 60)
-print("📊 Wikipedia GICS 섹터 DB 빌드 중...")
-wiki_sectors = {}
-wiki_sub_industries = {}
-wiki_names = {}
-try:
-    resp = requests.get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", headers=headers, timeout=15)
-    resp.raise_for_status()
-    sp500_tables = pd.read_html(resp.text)
-    sp500_df = sp500_tables[0]
-    for _, row in sp500_df.iterrows():
-        t = str(row.get('Symbol', row.iloc[0])).strip()
-        wiki_sectors[t] = str(row.get('GICS Sector', '')).strip()
-        wiki_sub_industries[t] = str(row.get('GICS Sub-Industry', '')).strip()
-        wiki_names[t] = str(row.get('Security', '')).strip()
-    print(f"   위키피디아 섹터 DB 구축 완료 ({len(wiki_sectors)}개 종목)")
-except Exception as e:
-    print(f"   ⚠️ 위키피디아 섹터 수집 에러 (일부 종목 야후 파이낸스 폴백 사용 예정): {e}")
-
 # --- 2. Fetch constituents from SlickCharts using curl_cffi ---
 def fetch_slickcharts(url):
     print("\n" + "=" * 60)
@@ -166,44 +146,26 @@ def fetch_yahoo_sector_info(ticker):
     return '', '', ''
 
 def get_sector_info(ticker, force=False):
-    wiki_sec = clean_sector(wiki_sectors.get(ticker, ''))
-    wiki_sub = wiki_sub_industries.get(ticker, '')
-    wiki_nm = wiki_names.get(ticker, '')
-    
     # If not forcing check and already cached in db, use cache
     if not force and ticker in sector_db:
         cached = sector_db[ticker]
-        return cached.get('sector', wiki_sec), cached.get('sub_industry', wiki_sub), cached.get('name', wiki_nm or ticker)
+        return cached.get('sector', ''), cached.get('sub_industry', ''), cached.get('name', ticker)
         
-    # Cross-check Wikipedia vs Yahoo Finance API
-    print(f"   🔍 교차 점검 수행 중: {ticker}")
+    # Fetch from Yahoo Finance API directly
+    print(f"   🔍 야후 파이낸스 섹터 조회 중: {ticker}")
     yf_sec, yf_sub, yf_nm = fetch_yahoo_sector_info(ticker)
     
     # Override SpaceX details specifically
     if ticker == 'SPCX':
-        yf_sec = 'Aerospace & Defense'
-        yf_sub = 'Space Exploration'
+        yf_sec = 'Industrials' # 11 GICS sector standard
+        yf_sub = 'Aerospace & Defense'
         yf_nm = 'SpaceX'
-        
-    final_sec = wiki_sec
-    final_sub = wiki_sub
-    final_nm = wiki_nm or yf_nm or ticker
-    
-    if yf_sec:
-        # Cross check values
-        if wiki_sec and wiki_sec != yf_sec:
-            print(f"   ⚠️ [교차 점검] 섹터 불일치 포착 ({ticker}): 위키피디아='{wiki_sec}' vs 야후='{yf_sec}' -> 야후 적용")
-            final_sec = yf_sec
-            final_sub = yf_sub
-        elif not wiki_sec:
-            final_sec = yf_sec
-            final_sub = yf_sub
             
     # Save/Update in Local Sector Cache
     sector_db[ticker] = {
-        'sector': final_sec or wiki_sec or yf_sec,
-        'sub_industry': final_sub or wiki_sub or yf_sub,
-        'name': final_nm
+        'sector': yf_sec,
+        'sub_industry': yf_sub,
+        'name': yf_nm or ticker
     }
     
     # Save cache update to disk
@@ -301,7 +263,7 @@ for wt, wname in watchlist_tickers.items():
         stock_map[wt] = {
             'ticker': wt,
             'name': wname,
-            'sector': sector or ('Aerospace & Defense' if wt == 'SPCX' else 'Technology'),
+            'sector': sector or ('Industrials' if wt == 'SPCX' else 'Information Technology'),
             'sub_industry': sub_industry or ('Space Exploration' if wt == 'SPCX' else 'Semiconductors'),
             'sp500': False,
             'nasdaq100': False,
