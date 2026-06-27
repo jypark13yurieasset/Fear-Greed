@@ -340,6 +340,61 @@ def get_assets_by_market_cap():
         print(f"글로벌 자산 시가총액 수집 중 에러 발생: {e}")
         return None
 
+def get_us_etf_holdings(ticker):
+    print(f"Scraping US ETF: {ticker}...")
+    try:
+        url = f'https://stockanalysis.com/etf/{ticker.lower()}/holdings/'
+        r = requests.get(url, headers=headers, timeout=10, verify=False)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, 'html.parser')
+        
+        # Get "As of" date
+        date_str = None
+        import re
+        from datetime import datetime
+        for t in soup.find_all(string=re.compile('As of')):
+            match = re.search(r'As of ([A-Z][a-z]{2} \d{1,2}, \d{4})', t.strip())
+            if match:
+                raw_date = match.group(1)
+                try:
+                    dt = datetime.strptime(raw_date, "%b %d, %Y")
+                    date_str = dt.strftime("%Y-%m-%d")
+                except:
+                    pass
+                break
+                
+        if not date_str:
+            import datetime as dt_mod
+            kst_tz = dt_mod.timezone(dt_mod.timedelta(hours=9))
+            date_str = dt_mod.datetime.now(kst_tz).strftime("%Y-%m-%d")
+            
+        tables = soup.find_all('table')
+        if not tables:
+            print(f"No tables found for {ticker}")
+            return None
+            
+        t = tables[0]
+        holdings = []
+        for row in t.find_all('tr')[1:11]: # Top 10
+            cells = row.find_all('td')
+            if len(cells) >= 4:
+                sym = cells[1].get_text(strip=True)
+                name = cells[2].get_text(strip=True)
+                alloc = cells[3].get_text(strip=True).replace('%', '')
+                try:
+                    weight = float(alloc)
+                    holdings.append({'ticker': sym, 'name': name, 'weight': weight})
+                except ValueError:
+                    pass
+                    
+        return {
+            'date': date_str,
+            'holdings': holdings
+        }
+    except Exception as e:
+        print(f"Error scraping {ticker}: {e}")
+        return None
+
 def get_koact_holdings():
     print("Scraping KoAct...")
     try:
@@ -584,6 +639,20 @@ def main():
         today_entry["aaii_neutral"] = aaii_data["neutral"]
         today_entry["aaii_bearish"] = aaii_data["bearish"]
         today_entry["aaii_date"] = aaii_data["date"]
+        
+    # US ETF Holdings (ARKK, IVES, GRNY)
+    print("\n=== US Theme ETF Holdings 수집 시작 ===")
+    us_etfs_data = {}
+    for ticker in ['ARKK', 'IVES', 'GRNY']:
+        data = get_us_etf_holdings(ticker)
+        if data:
+            us_etfs_data[ticker] = data
+        elif prev_data and "us_etfs" in prev_data and ticker in prev_data["us_etfs"]:
+            print(f"{ticker} 수집 실패 -> 이전 데이터 적용")
+            us_etfs_data[ticker] = prev_data["us_etfs"][ticker]
+            
+    if us_etfs_data:
+        today_entry["us_etfs"] = us_etfs_data
         
     # Active ETF Holdings 추가
     if koact_holdings:

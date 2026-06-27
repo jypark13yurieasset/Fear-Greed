@@ -1805,7 +1805,7 @@ window.fng_data = {
                 "rank": 17,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.206 T"
+                "mcap": "$1.209 T"
             },
             {
                 "rank": 18,
@@ -1826,10 +1826,177 @@ window.fng_data = {
                 "mcap": "$959.57 B"
             }
         ],
-        "aaii_bullish": 36.2,
+        "aaii_bullish": 36.1,
         "aaii_neutral": 23.2,
-        "aaii_bearish": 40.6,
+        "aaii_bearish": 40.7,
         "aaii_date": "2026-06-24",
+        "us_etfs": {
+            "ARKK": {
+                "date": "2026-06-26",
+                "holdings": [
+                    {
+                        "ticker": "TSLA",
+                        "name": "Tesla, Inc.",
+                        "weight": 9.59
+                    },
+                    {
+                        "ticker": "TEM",
+                        "name": "Tempus AI, Inc.",
+                        "weight": 5.58
+                    },
+                    {
+                        "ticker": "CRSP",
+                        "name": "CRISPR Therapeutics AG",
+                        "weight": 5.08
+                    },
+                    {
+                        "ticker": "AMD",
+                        "name": "Advanced Micro Devices, Inc.",
+                        "weight": 4.82
+                    },
+                    {
+                        "ticker": "HOOD",
+                        "name": "Robinhood Markets, Inc.",
+                        "weight": 4.4
+                    },
+                    {
+                        "ticker": "SHOP",
+                        "name": "Shopify Inc.",
+                        "weight": 4.31
+                    },
+                    {
+                        "ticker": "SPCX",
+                        "name": "Space Exploration Technologies Corp.",
+                        "weight": 4.17
+                    },
+                    {
+                        "ticker": "TWST",
+                        "name": "Twist Bioscience Corporation",
+                        "weight": 3.99
+                    },
+                    {
+                        "ticker": "BEAM",
+                        "name": "Beam Therapeutics Inc.",
+                        "weight": 3.45
+                    },
+                    {
+                        "ticker": "COIN",
+                        "name": "Coinbase Global, Inc.",
+                        "weight": 3.44
+                    }
+                ]
+            },
+            "IVES": {
+                "date": "2026-06-25",
+                "holdings": [
+                    {
+                        "ticker": "MU",
+                        "name": "Micron Technology, Inc.",
+                        "weight": 5.1
+                    },
+                    {
+                        "ticker": "TSM",
+                        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+                        "weight": 5.1
+                    },
+                    {
+                        "ticker": "AAPL",
+                        "name": "Apple Inc.",
+                        "weight": 5.09
+                    },
+                    {
+                        "ticker": "NVDA",
+                        "name": "NVIDIA Corporation",
+                        "weight": 4.93
+                    },
+                    {
+                        "ticker": "AVGO",
+                        "name": "Broadcom Inc.",
+                        "weight": 4.87
+                    },
+                    {
+                        "ticker": "AMZN",
+                        "name": "Amazon.com, Inc.",
+                        "weight": 4.83
+                    },
+                    {
+                        "ticker": "AMD",
+                        "name": "Advanced Micro Devices, Inc.",
+                        "weight": 4.8
+                    },
+                    {
+                        "ticker": "META",
+                        "name": "Meta Platforms, Inc.",
+                        "weight": 4.72
+                    },
+                    {
+                        "ticker": "GOOGL",
+                        "name": "Alphabet Inc.",
+                        "weight": 4.7
+                    },
+                    {
+                        "ticker": "MSFT",
+                        "name": "Microsoft Corporation",
+                        "weight": 4.64
+                    }
+                ]
+            },
+            "GRNY": {
+                "date": "2026-06-23",
+                "holdings": [
+                    {
+                        "ticker": "HOOD",
+                        "name": "Robinhood Markets, Inc.",
+                        "weight": 3.11
+                    },
+                    {
+                        "ticker": "KLAC",
+                        "name": "KLA Corporation",
+                        "weight": 3.07
+                    },
+                    {
+                        "ticker": "GE",
+                        "name": "GE Aerospace",
+                        "weight": 2.73
+                    },
+                    {
+                        "ticker": "AMD",
+                        "name": "Advanced Micro Devices, Inc.",
+                        "weight": 2.67
+                    },
+                    {
+                        "ticker": "ANET",
+                        "name": "Arista Networks, Inc.",
+                        "weight": 2.62
+                    },
+                    {
+                        "ticker": "GS",
+                        "name": "The Goldman Sachs Group, Inc.",
+                        "weight": 2.6
+                    },
+                    {
+                        "ticker": "VST",
+                        "name": "Vistra Corp.",
+                        "weight": 2.59
+                    },
+                    {
+                        "ticker": "CAT",
+                        "name": "Caterpillar Inc.",
+                        "weight": 2.58
+                    },
+                    {
+                        "ticker": "JPM",
+                        "name": "JPMorgan Chase & Co.",
+                        "weight": 2.53
+                    },
+                    {
+                        "ticker": "PKG",
+                        "name": "Packaging Corporation of America",
+                        "weight": 2.52
+                    }
+                ]
+            }
+        },
         "koact_date": "2026-06-26",
         "koact_holdings": [
             {

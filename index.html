@@ -547,6 +547,7 @@
             width: 100%;
             border-collapse: collapse;
             text-align: left;
+            table-layout: fixed;
         }
 
         .etf-table th {
@@ -561,10 +562,13 @@
         }
 
         .etf-table td {
-            padding: 9px 16px;
+            padding: 9px 8px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .etf-table tr:last-child td {
@@ -619,17 +623,30 @@
             color: #7c8cf5;
         }
 
-        /* Unique holding & Close gap asset highlight */
-        .unique-holding, .close-gap-highlight {
-            background-color: rgba(45, 212, 191, 0.08) !important;
+        /* Common holding & Close gap asset highlight (Blue) */
+        .common-holding, .close-gap-highlight {
+            background-color: rgba(56, 189, 248, 0.08) !important;
             transition: background-color 0.2s ease;
         }
-        .unique-holding td, .close-gap-highlight td {
-            color: #7c8cf5 !important;
+        .common-holding td, .close-gap-highlight td {
+            color: #38bdf8 !important;
             font-weight: 600;
         }
-        .unique-holding td.rank, .close-gap-highlight td.rank {
-            color: rgba(45, 212, 191, 0.5) !important;
+        .common-holding td.rank, .close-gap-highlight td.rank {
+            color: rgba(56, 189, 248, 0.5) !important;
+        }
+
+        /* US Theme ETF Common holding highlight (Purple) */
+        .common-holding-us {
+            background-color: rgba(167, 139, 250, 0.08) !important;
+            transition: background-color 0.2s ease;
+        }
+        .common-holding-us td {
+            color: #a78bfa !important;
+            font-weight: 600;
+        }
+        .common-holding-us td.rank {
+            color: rgba(167, 139, 250, 0.5) !important;
         }
 
 
@@ -792,12 +809,12 @@
             <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary);">
                 2. 액티브 ETF 비교
             </h3>
-            <div class="etf-holdings-grid">
+            <div class="etf-holdings-grid" style="grid-template-columns: repeat(5, 1fr);">
                 <!-- KoAct 삼성액티브 -->
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
-                        <div class="etf-card-title">KoAct 미국나스닥성장기업액티브</div>
-                        <div class="etf-card-sub">삼성액티브자산운용 &nbsp;|&nbsp; <span id="koact-update-date">기준일: 2026.06.17</span></div>
+                        <div class="etf-card-title">삼성액티브</div>
+                        <div class="etf-card-sub">465610 &nbsp;|&nbsp; <span id="koact-update-date">기준일: 2026.06.17</span></div>
                     </div>
                     <table class="etf-table">
                         <thead>
@@ -808,16 +825,16 @@
                             </tr>
                         </thead>
                         <tbody id="koact-holdings-body">
-                            <tr><td class="rank">1</td><td>Space Exploration Technologies (SpaceX)</td><td class="weight">8.60%</td></tr>
-                            <tr><td class="rank">2</td><td>Advanced Micro Devices (AMD)</td><td class="weight">7.40%</td></tr>
-                            <tr><td class="rank">3</td><td>ARM Holdings PLC</td><td class="weight">7.20%</td></tr>
-                            <tr><td class="rank">4</td><td>Sandisk Corp</td><td class="weight">6.00%</td></tr>
-                            <tr><td class="rank">5</td><td>Intel Corp</td><td class="weight">5.80%</td></tr>
-                            <tr><td class="rank">6</td><td>NVIDIA Corp</td><td class="weight">5.10%</td></tr>
-                            <tr><td class="rank">7</td><td>Alphabet Inc</td><td class="weight">4.90%</td></tr>
-                            <tr><td class="rank">8</td><td>Bloom Energy Corp</td><td class="weight">4.20%</td></tr>
-                            <tr><td class="rank">9</td><td>Micron Technology Inc</td><td class="weight">3.90%</td></tr>
-                            <tr><td class="rank">10</td><td>Amazon.com Inc</td><td class="weight">3.80%</td></tr>
+                            <tr><td class="rank">1</td><td>SPCX</td><td class="weight">8.60%</td></tr>
+                            <tr><td class="rank">2</td><td>AMD</td><td class="weight">7.40%</td></tr>
+                            <tr><td class="rank">3</td><td>ARM</td><td class="weight">7.20%</td></tr>
+                            <tr><td class="rank">4</td><td>SNDK</td><td class="weight">6.00%</td></tr>
+                            <tr><td class="rank">5</td><td>INTC</td><td class="weight">5.80%</td></tr>
+                            <tr><td class="rank">6</td><td>NVDA</td><td class="weight">5.10%</td></tr>
+                            <tr><td class="rank">7</td><td>GOOGL</td><td class="weight">4.90%</td></tr>
+                            <tr><td class="rank">8</td><td>BE</td><td class="weight">4.20%</td></tr>
+                            <tr><td class="rank">9</td><td>MU</td><td class="weight">3.90%</td></tr>
+                            <tr><td class="rank">10</td><td>AMZN</td><td class="weight">3.80%</td></tr>
                         </tbody>
                     </table>
                     <div class="etf-source-link">
@@ -828,8 +845,8 @@
                 <!-- TIME 타임폴리오 -->
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
-                        <div class="etf-card-title">TIME 미국나스닥100액티브</div>
-                        <div class="etf-card-sub">타임폴리오자산운용 &nbsp;|&nbsp; <span id="time-update-date">기준일: 2026.06.17</span></div>
+                        <div class="etf-card-title">타임폴리오</div>
+                        <div class="etf-card-sub">465620 &nbsp;|&nbsp; <span id="time-update-date">기준일: 2026.06.17</span></div>
                     </div>
                     <table class="etf-table">
                         <thead>
@@ -840,20 +857,87 @@
                             </tr>
                         </thead>
                         <tbody id="time-holdings-body">
-                            <tr><td class="rank">1</td><td>Micron Technology Inc</td><td class="weight">6.73%</td></tr>
-                            <tr><td class="rank">2</td><td>Sandisk Corp</td><td class="weight">6.66%</td></tr>
-                            <tr><td class="rank">3</td><td>Intel Corp</td><td class="weight">5.54%</td></tr>
-                            <tr><td class="rank">4</td><td>ARM Holdings PLC</td><td class="weight">5.32%</td></tr>
-                            <tr><td class="rank">5</td><td>NVIDIA Corp</td><td class="weight">4.67%</td></tr>
-                            <tr><td class="rank">6</td><td>Marvell Technology Inc</td><td class="weight">4.02%</td></tr>
-                            <tr><td class="rank">7</td><td>Advanced Micro Devices (AMD)</td><td class="weight">3.46%</td></tr>
-                            <tr><td class="rank">8</td><td>Dell Technologies Inc</td><td class="weight">3.15%</td></tr>
-                            <tr><td class="rank">9</td><td>Credo Technology Group</td><td class="weight">3.02%</td></tr>
-                            <tr><td class="rank">10</td><td>Space Exploration Technologies (SpaceX)</td><td class="weight">3.02%</td></tr>
+                            <tr><td class="rank">1</td><td>MU</td><td class="weight">6.73%</td></tr>
+                            <tr><td class="rank">2</td><td>SNDK</td><td class="weight">6.66%</td></tr>
+                            <tr><td class="rank">3</td><td>INTC</td><td class="weight">5.54%</td></tr>
+                            <tr><td class="rank">4</td><td>ARM</td><td class="weight">5.32%</td></tr>
+                            <tr><td class="rank">5</td><td>NVDA</td><td class="weight">4.67%</td></tr>
+                            <tr><td class="rank">6</td><td>MRVL</td><td class="weight">4.02%</td></tr>
+                            <tr><td class="rank">7</td><td>AMD</td><td class="weight">3.46%</td></tr>
+                            <tr><td class="rank">8</td><td>DELL</td><td class="weight">3.15%</td></tr>
+                            <tr><td class="rank">9</td><td>CRDO</td><td class="weight">3.02%</td></tr>
+                            <tr><td class="rank">10</td><td>SPCX</td><td class="weight">3.02%</td></tr>
                         </tbody>
                     </table>
                     <div class="etf-source-link">
                         <a href="https://timeetf.co.kr/m11_view.php?idx=2&cate=" target="_blank" rel="noopener">TIME ETF 공식 페이지 →</a>
+                    </div>
+                </div>
+
+                <!-- ARKK -->
+                <div class="etf-holdings-card">
+                    <div class="etf-card-header">
+                        <div class="etf-card-title">캐시 우드</div>
+                        <div class="etf-card-sub">ARKK &nbsp;|&nbsp; <span id="arkk-update-date">기준일: -</span></div>
+                    </div>
+                    <table class="etf-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>종목명</th>
+                                <th>비중(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="arkk-holdings-body">
+                        </tbody>
+                    </table>
+                    <div class="etf-source-link">
+                        <a href="https://stockanalysis.com/etf/arkk/holdings/" target="_blank" rel="noopener">ARKK 상세 정보 →</a>
+                    </div>
+                </div>
+
+                <!-- IVES -->
+                <div class="etf-holdings-card">
+                    <div class="etf-card-header">
+                        <div class="etf-card-title">웨드 부시</div>
+                        <div class="etf-card-sub">IVES &nbsp;|&nbsp; <span id="ives-update-date">기준일: -</span></div>
+                    </div>
+                    <table class="etf-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>종목명</th>
+                                <th>비중(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ives-holdings-body">
+                        </tbody>
+                    </table>
+                    <div class="etf-source-link">
+                        <a href="https://stockanalysis.com/etf/ives/holdings/" target="_blank" rel="noopener">IVES 상세 정보 →</a>
+                    </div>
+                </div>
+
+                <!-- GRNY -->
+                <div class="etf-holdings-card">
+                    <div class="etf-card-header">
+                        <div class="etf-card-title">댄 아이브스</div>
+                        <div class="etf-card-sub">GRNY &nbsp;|&nbsp; <span id="grny-update-date">기준일: -</span></div>
+                    </div>
+                    <table class="etf-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>종목명</th>
+                                <th>비중(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="grny-holdings-body">
+                            <tr><td colspan="3" style="text-align: center;">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="etf-source-link">
+                        <a href="https://stockanalysis.com/etf/grny/holdings/" target="_blank" rel="noopener">GRNY 상세 정보 →</a>
                     </div>
                 </div>
             </div>
@@ -1080,7 +1164,7 @@
                     const star = isStar ? '<span style="color: #fbbf24; font-size: 0.7rem;">⭐⭐</span> ' : '';
                     const row = `<tr data-ticker="${item.ticker || ''}">
                         <td class="rank">${idx + 1}</td>
-                        <td>${star}${item.name}</td>
+                        <td>${star}${item.ticker || item.name}</td>
                         <td class="weight">${item.weight.toFixed(2)}%</td>
                     </tr>`;
                     koactTbody.innerHTML += row;
@@ -1111,7 +1195,7 @@
                     const star = isStar ? '<span style="color: #fbbf24; font-size: 0.7rem;">⭐⭐</span> ' : '';
                     const row = `<tr data-ticker="${item.ticker || ''}">
                         <td class="rank">${idx + 1}</td>
-                        <td>${star}${item.name}</td>
+                        <td>${star}${item.ticker || item.name}</td>
                         <td class="weight">${item.weight.toFixed(2)}%</td>
                     </tr>`;
                     timeTbody.innerHTML += row;
@@ -1121,7 +1205,47 @@
                 }
             }
 
-            // 독자(비공통) 보유 종목 돋보이게 하이라이트 실행
+
+
+            // US ETF Holdings 반영 (ARKK, IVES, GRNY)
+            const targetEtfs = ['ARKK', 'IVES', 'GRNY'];
+            let usEtfData = null;
+            for (const d of dates) {
+                if (data[d] && data[d].us_etfs) {
+                    usEtfData = data[d].us_etfs;
+                    break;
+                }
+            }
+            if (usEtfData) {
+                targetEtfs.forEach(ticker => {
+                    const etfData = usEtfData[ticker];
+                    const tbody = document.getElementById(`${ticker.toLowerCase()}-holdings-body`);
+                    const dateEl = document.getElementById(`${ticker.toLowerCase()}-update-date`);
+                    if (etfData && etfData.holdings && tbody) {
+                        tbody.innerHTML = '';
+                        etfData.holdings.forEach((item, idx) => {
+                            const etfWatchlist = ['SPACEX', 'SPCX', 'TESLA', 'TSLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON', 'MU'];
+                            const nUp = (item.name || '').toUpperCase();
+                            const tUp = (item.ticker || '').toUpperCase();
+                            const isStar = etfWatchlist.some(w => nUp.includes(w) || tUp === w);
+                            const star = isStar ? '<span style="color: #fbbf24; font-size: 0.7rem;">⭐⭐</span> ' : '';
+                            const row = `<tr data-ticker="${item.ticker || ''}">
+                                <td class="rank">${idx + 1}</td>
+                                <td>${star}${item.ticker || item.name}</td>
+                                <td class="weight">${item.weight.toFixed(2)}%</td>
+                            </tr>`;
+                            tbody.innerHTML += row;
+                        });
+                        if (dateEl && etfData.date) {
+                            dateEl.innerText = `기준일: ${etfData.date}`;
+                        }
+                    } else if (tbody) {
+                        tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 20px;">데이터 없음</td></tr>';
+                    }
+                });
+            }
+
+            // 공통 보유 종목 돋보이게 하이라이트 실행
             highlightUniqueHoldings();
         }
 
@@ -1198,44 +1322,31 @@
             return `<span style="color: ${color}; font-weight: 600;">${sign}${change.toFixed(2)}%</span>`;
         }
 
-        // 두 ETF 테이블에서 서로 다른(한쪽에만 있는) 종목을 강조 표시하는 함수
+        // 두 ETF 테이블에서 서로 같은(공통으로 있는) 종목을 강조 표시하는 함수
         function highlightUniqueHoldings() {
-            const koactRows = document.querySelectorAll('#koact-holdings-body tr');
-            const timeRows = document.querySelectorAll('#time-holdings-body tr');
-            
-            const koactKeys = [];
-            const timeKeys = [];
-            
-            // 헬퍼 함수: 이름을 표준화하여 비교하기 편하게 만듬 (티커가 없을 때 백업용)
+            // 헬퍼 함수: 이름을 표준화하여 비교하기 편하게 만듬
             function normalizeName(name) {
                 if (!name) return '';
                 return name.toUpperCase()
-                    .replace(/[\s\.,\-\/]/g, '') // 공백, 마침표, 쉼표, 하이픈, 슬래시 제거
-                    .replace(/(CORP|CORPORATION|INC|INCORPORATED|PLC|LTD|LIMITED|CO|COMPANY)$/g, ''); // 사명 접미사 제거
+                    .replace(/[\s\.,\-\/]/g, '')
+                    .replace(/(CORP|CORPORATION|INC|INCORPORATED|PLC|LTD|LIMITED|CO|COMPANY)$/g, '');
             }
-            
-            koactRows.forEach(row => {
-                const ticker = row.getAttribute('data-ticker');
-                const nameCell = row.cells[1];
-                const name = nameCell ? nameCell.innerText.trim() : '';
-                if (ticker) {
-                    koactKeys.push({ type: 'ticker', value: ticker });
-                } else if (name) {
-                    koactKeys.push({ type: 'name', value: normalizeName(name) });
-                }
-            });
-            
-            timeRows.forEach(row => {
-                const ticker = row.getAttribute('data-ticker');
-                const nameCell = row.cells[1];
-                const name = nameCell ? nameCell.innerText.trim() : '';
-                if (ticker) {
-                    timeKeys.push({ type: 'ticker', value: ticker });
-                } else if (name) {
-                    timeKeys.push({ type: 'name', value: normalizeName(name) });
-                }
-            });
-            
+
+            function getKeys(rows) {
+                const keys = [];
+                rows.forEach(row => {
+                    const ticker = row.getAttribute('data-ticker');
+                    const nameCell = row.cells[1];
+                    const name = nameCell ? nameCell.innerText.trim() : '';
+                    if (ticker) {
+                        keys.push({ type: 'ticker', value: ticker });
+                    } else if (name) {
+                        keys.push({ type: 'name', value: normalizeName(name) });
+                    }
+                });
+                return keys;
+            }
+
             function hasMatch(key, list) {
                 return list.some(item => {
                     if (key.type === 'ticker' && item.type === 'ticker') {
@@ -1244,32 +1355,48 @@
                     return normalizeName(key.value) === normalizeName(item.value);
                 });
             }
+
+            function applyHighlight(rows, highlightClass, ...otherKeyLists) {
+                rows.forEach(row => {
+                    const ticker = row.getAttribute('data-ticker');
+                    const nameCell = row.cells[1];
+                    const name = nameCell ? nameCell.innerText.trim() : '';
+                    const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
+                    
+                    row.classList.remove('common-holding', 'common-holding-us');
+                    
+                    if (name) {
+                        // 다른 리스트 중 하나라도 일치하면 하이라이트
+                        const isCommon = otherKeyLists.some(list => hasMatch(key, list));
+                        if (isCommon) {
+                            row.classList.add(highlightClass);
+                        }
+                    }
+                });
+            }
+
+            // 1. KoAct vs TIME
+            const koactRows = document.querySelectorAll('#koact-holdings-body tr');
+            const timeRows = document.querySelectorAll('#time-holdings-body tr');
             
-            // KoAct 테이블 하이라이트
-            koactRows.forEach((row, idx) => {
-                const ticker = row.getAttribute('data-ticker');
-                const nameCell = row.cells[1];
-                const name = nameCell ? nameCell.innerText.trim() : '';
-                const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
-                
-                row.classList.remove('unique-holding');
-                if (name && !hasMatch(key, timeKeys)) {
-                    row.classList.add('unique-holding');
-                }
-            });
+            const koactKeys = getKeys(koactRows);
+            const timeKeys = getKeys(timeRows);
             
-            // TIME 테이블 하이라이트
-            timeRows.forEach((row, idx) => {
-                const ticker = row.getAttribute('data-ticker');
-                const nameCell = row.cells[1];
-                const name = nameCell ? nameCell.innerText.trim() : '';
-                const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
-                
-                row.classList.remove('unique-holding');
-                if (name && !hasMatch(key, koactKeys)) {
-                    row.classList.add('unique-holding');
-                }
-            });
+            applyHighlight(koactRows, 'common-holding', timeKeys);
+            applyHighlight(timeRows, 'common-holding', koactKeys);
+
+            // 2. US Theme ETFs (ARKK, IVES, GRNY)
+            const arkkRows = document.querySelectorAll('#arkk-holdings-body tr');
+            const ivesRows = document.querySelectorAll('#ives-holdings-body tr');
+            const grnyRows = document.querySelectorAll('#grny-holdings-body tr');
+
+            const arkkKeys = getKeys(arkkRows);
+            const ivesKeys = getKeys(ivesRows);
+            const grnyKeys = getKeys(grnyRows);
+
+            applyHighlight(arkkRows, 'common-holding-us', ivesKeys, grnyKeys);
+            applyHighlight(ivesRows, 'common-holding-us', arkkKeys, grnyKeys);
+            applyHighlight(grnyRows, 'common-holding-us', arkkKeys, ivesKeys);
         }
     </script>
 </body>
