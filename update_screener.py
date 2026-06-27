@@ -553,7 +553,13 @@ print("🧮 모멘텀 지표 연산 중...")
 stocks_output = []
 
 # Base date in KST matching script execution date (Google Finance baseline)
-run_date_str = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d")
+# If weekend (Saturday/Sunday), adjust to the previous Friday to capture Friday's final market close
+now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
+if now_kst.weekday() == 5:    # Saturday
+    now_kst = now_kst - datetime.timedelta(days=1)
+elif now_kst.weekday() == 6:  # Sunday
+    now_kst = now_kst - datetime.timedelta(days=2)
+run_date_str = now_kst.strftime("%Y-%m-%d")
 baseline_date = pd.Timestamp(run_date_str)
 
 for t, s in stock_map.items():
@@ -715,7 +721,7 @@ for t, s in stock_map.items():
     })
 
 results = {
-    'date': datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d"),
+    'date': run_date_str,
     'stocks': stocks_output
 }
 

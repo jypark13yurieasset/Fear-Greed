@@ -1696,139 +1696,139 @@ window.fng_data = {
     },
     "2026-06-26": {
         "fear_and_greed": 25,
-        "sp500_price": 7357.49,
-        "sp500_change": -0.01,
-        "nasdaq_price": 25358.6,
-        "nasdaq_change": -0.46,
-        "vix_price": 18.89,
-        "vix_change": 1.4,
-        "dxy_price": 101.44,
-        "dxy_change": -0.17,
+        "sp500_price": 7354.02,
+        "sp500_change": -0.05,
+        "nasdaq_price": 25297.62,
+        "nasdaq_change": -0.24,
+        "vix_price": 18.41,
+        "vix_change": -2.54,
+        "dxy_price": 101.37,
+        "dxy_change": -0.06,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$28.076 T"
+                "mcap": "$28.527 T"
             },
             {
                 "rank": 2,
                 "name": "NVIDIA",
                 "code": "NVDA",
-                "mcap": "$4.741 T"
+                "mcap": "$4.663 T"
             },
             {
                 "rank": 3,
-                "name": "Alphabet (Google)",
-                "code": "GOOG",
-                "mcap": "$4.175 T"
+                "name": "Apple",
+                "code": "AAPL",
+                "mcap": "$4.167 T"
             },
             {
                 "rank": 4,
-                "name": "Apple",
-                "code": "AAPL",
-                "mcap": "$4.041 T"
+                "name": "Alphabet (Google)",
+                "code": "GOOG",
+                "mcap": "$4.084 T"
             },
             {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.248 T"
+                "mcap": "$3.355 T"
             },
             {
                 "rank": 6,
                 "name": "Microsoft",
                 "code": "MSFT",
-                "mcap": "$2.620 T"
+                "mcap": "$2.770 T"
             },
             {
                 "rank": 7,
                 "name": "Amazon",
                 "code": "AMZN",
-                "mcap": "$2.441 T"
+                "mcap": "$2.503 T"
             },
             {
                 "rank": 8,
                 "name": "TSMC",
                 "code": "TSM",
-                "mcap": "$2.256 T"
+                "mcap": "$2.242 T"
             },
             {
                 "rank": 9,
                 "name": "SpaceX",
                 "code": "SPCX",
-                "mcap": "$2.015 T"
+                "mcap": "$2.018 T"
             },
             {
                 "rank": 10,
                 "name": "Broadcom",
                 "code": "AVGO",
-                "mcap": "$1.802 T"
+                "mcap": "$1.736 T"
             },
             {
                 "rank": 11,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.684 T"
+                "mcap": "$1.683 T"
             },
             {
                 "rank": 12,
                 "name": "Samsung",
                 "code": "005930.KS",
-                "mcap": "$1.523 T"
+                "mcap": "$1.451 T"
             },
             {
                 "rank": 13,
                 "name": "Tesla",
                 "code": "TSLA",
-                "mcap": "$1.408 T"
+                "mcap": "$1.426 T"
             },
             {
                 "rank": 14,
                 "name": "Meta Platforms (Facebook)",
                 "code": "META",
-                "mcap": "$1.378 T"
+                "mcap": "$1.396 T"
             },
             {
                 "rank": 15,
                 "name": "Micron Technology",
                 "code": "MU",
-                "mcap": "$1.368 T"
+                "mcap": "$1.278 T"
             },
             {
                 "rank": 16,
                 "name": "SK Hynix",
                 "code": "000660.KS",
-                "mcap": "$1.339 T"
+                "mcap": "$1.235 T"
             },
             {
                 "rank": 17,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.197 T"
+                "mcap": "$1.206 T"
             },
             {
                 "rank": 18,
-                "name": "Berkshire Hathaway",
-                "code": "BRK-B",
-                "mcap": "$1.052 T"
+                "name": "Eli Lilly",
+                "code": "LLY",
+                "mcap": "$1.077 T"
             },
             {
                 "rank": 19,
-                "name": "Eli Lilly",
-                "code": "LLY",
-                "mcap": "$1.005 T"
+                "name": "Berkshire Hathaway",
+                "code": "BRK-B",
+                "mcap": "$1.075 T"
             },
             {
                 "rank": 20,
                 "name": "Vanguard S&P 500 ETF",
                 "code": "VOO",
-                "mcap": "$967.38 B"
+                "mcap": "$959.57 B"
             }
         ],
-        "aaii_bullish": 37.1,
-        "aaii_neutral": 22.9,
-        "aaii_bearish": 40.0,
+        "aaii_bullish": 36.2,
+        "aaii_neutral": 23.2,
+        "aaii_bearish": 40.6,
         "aaii_date": "2026-06-24",
         "koact_date": "2026-06-26",
         "koact_holdings": [
@@ -1883,7 +1883,7 @@ window.fng_data = {
                 "weight": 3.73
             }
         ],
-        "time_date": "2026-06-26",
+        "time_date": "2026-06-25",
         "time_holdings": [
             {
                 "name": "Sandisk Corp",

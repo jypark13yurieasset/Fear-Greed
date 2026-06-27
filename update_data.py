@@ -396,7 +396,7 @@ def get_koact_holdings():
         print(f"Error scraping KoAct: {e}")
         return None
 
-def get_timefolio_holdings():
+def get_timefolio_holdings(date_override=None):
     print("Scraping Timefolio...")
     try:
         url = "https://timeetf.co.kr/m11_view.php?idx=2&cate="
@@ -434,10 +434,26 @@ def get_timefolio_holdings():
         # Top 10
         top10 = holdings[:10]
         
-        # 기준일을 스크래핑한 과거 날짜가 아닌 '오늘 날짜(업데이트 실행일)'로 설정
-        import datetime
-        kst_tz = datetime.timezone(datetime.timedelta(hours=9))
-        date_str = datetime.datetime.now(kst_tz).strftime("%Y-%m-%d")
+        # Extract the actual base date from the page (e.g. "2026.06.25 기준")
+        date_str = None
+        date_divs = soup.find_all('div', class_='standard')
+        for div in date_divs:
+            text = div.get_text(strip=True)
+            date_match = re.search(r'(\d{4})\.(\d{2})\.(\d{2})\s*기준$', text)
+            if date_match:
+                date_str = f"{date_match.group(1)}-{date_match.group(2)}-{date_match.group(3)}"
+                print(f"Timefolio 기준일 추출 성공: {date_str}")
+                break
+        
+        # Fallback to date_override or current KST date
+        if not date_str:
+            if date_override:
+                date_str = date_override
+                print(f"Timefolio 기준일 추출 실패, date_override 사용: {date_str}")
+            else:
+                kst_tz = datetime.timezone(datetime.timedelta(hours=9))
+                date_str = datetime.datetime.now(kst_tz).strftime("%Y-%m-%d")
+                print(f"Timefolio 기준일 추출 실패, 현재 날짜 사용: {date_str}")
             
         return {
             'date': date_str,
@@ -450,6 +466,13 @@ def get_timefolio_holdings():
 def main():
     kst_tz = datetime.timezone(datetime.timedelta(hours=9))
     today = datetime.datetime.now(kst_tz).date()
+    
+    # If weekend (Saturday=5, Sunday=6), adjust to the previous Friday to capture Friday's final market close
+    if today.weekday() == 5:
+        today = today - datetime.timedelta(days=1)
+    elif today.weekday() == 6:
+        today = today - datetime.timedelta(days=2)
+        
     today_str = today.isoformat()
     
     # 1. 주말(토요일=5, 일요일=6)인 경우 업데이트를 건너뜀
@@ -529,7 +552,7 @@ def main():
             }
             print("KoAct 수집 실패 -> 이전 영업일 데이터 적용")
             
-    timefolio_holdings = get_timefolio_holdings()
+    timefolio_holdings = get_timefolio_holdings(date_override=today_str)
     if timefolio_holdings is None:
         if prev_data and "time_holdings" in prev_data:
             timefolio_holdings = {
