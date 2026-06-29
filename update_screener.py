@@ -313,7 +313,7 @@ for idx, batch in enumerate(batches):
                 orig_ticker = ticker_mapping[yf_ticker]
                 if yf_ticker in df.columns.levels[0]:
                     ticker_df = df[yf_ticker]
-                    series = ticker_df['Close'].dropna()
+                    series = ticker_df[['Close', 'Volume']].dropna()
                     if not series.empty:
                         if series.index.tz is not None:
                             series.index = series.index.tz_localize(None)
@@ -321,7 +321,7 @@ for idx, batch in enumerate(batches):
         else:
             yf_ticker = batch[0]
             orig_ticker = ticker_mapping[yf_ticker]
-            series = df['Close'].dropna()
+            series = df[['Close', 'Volume']].dropna()
             if not series.empty:
                 if series.index.tz is not None:
                     series.index = series.index.tz_localize(None)
@@ -537,6 +537,7 @@ for t, s in stock_map.items():
     dist_low = None
     dist_ma50 = None
     dist_ma200 = None
+    rel_vol = None
     # New technical indicators
     ema_signal = None    # 1=below both, 2=between, 3=above both
     macd_state = None    # 1=Strong Bear, 2=Bear Turn, 3=Bull Turn, 4=Strong Bull
@@ -544,7 +545,8 @@ for t, s in stock_map.items():
     rsi14 = None         # Wilder's RSI-14
     
     if series is not None and not series.empty:
-        closes = series.tolist()
+        closes = series['Close'].tolist()
+        volumes = series['Volume'].tolist()
         price = closes[-1]
         latest_trading_date = series.index[-1]
         today_date = baseline_date
@@ -554,7 +556,7 @@ for t, s in stock_map.items():
             """Return % change vs the Nth trading day before the latest close."""
             idx = -(n + 1)  # e.g. n=5 → iloc[-6]
             if len(series) >= (n + 1):
-                past_price = series.iloc[idx]
+                past_price = series['Close'].iloc[idx]
                 if past_price and past_price > 0:
                     return (price - past_price) / past_price * 100
             return None
@@ -565,7 +567,7 @@ for t, s in stock_map.items():
             asof_date = series.index.asof(ts)
             if pd.notna(asof_date):
                 if asof_date < latest_trading_date:
-                    past_price = series.loc[asof_date]
+                    past_price = series['Close'].loc[asof_date]
                     if past_price and past_price > 0:
                         return (price - past_price) / past_price * 100
             return None
@@ -635,8 +637,8 @@ for t, s in stock_map.items():
         rsi14_m = None
         if series is not None and len(series) >= 15:
             try:
-                closes_w = series.resample("W").last().dropna().tolist()
-                closes_m = series.resample("ME").last().dropna().tolist()
+                closes_w = series['Close'].resample("W").last().dropna().tolist()
+                closes_m = series['Close'].resample("ME").last().dropna().tolist()
                 rsi14_w = calc_rsi(closes_w, 14)
                 rsi14_m = calc_rsi(closes_m, 14)
             except Exception:
@@ -644,6 +646,20 @@ for t, s in stock_map.items():
                 
         # MACD
         macd_state = calc_macd_state(closes)
+
+        # Relative Volume (3-month average, approx 63 trading days)
+        if len(volumes) >= 63:
+            avg_vol_3m = sum(volumes[-63:]) / 63
+        elif len(volumes) > 0:
+            avg_vol_3m = sum(volumes) / len(volumes)
+        else:
+            avg_vol_3m = 0
+            
+        current_vol = volumes[-1] if len(volumes) > 0 else 0
+        if avg_vol_3m > 0:
+            rel_vol = current_vol / avg_vol_3m
+        else:
+            rel_vol = None
 
     def rnd(val):
         return round(val, 2) if val is not None else None
@@ -674,6 +690,7 @@ for t, s in stock_map.items():
         'rsi14': rnd(rsi14),            # RSI-14 수치
         'rsi14_w': rnd(rsi14_w),
         'rsi14_m': rnd(rsi14_m),
+        'rel_vol': rnd(rel_vol),
         'dist_high': rnd(dist_high),
         'dist_low': rnd(dist_low),
         'dist_ma50': rnd(dist_ma50),

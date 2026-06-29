@@ -989,12 +989,13 @@
                             <th data-sort="rsi14" style="text-align:right; width:70px;" title="일봉 RSI-14 (≥70 과매수·붉은색, ≤30 과매도·초록색)">일봉 RSI</th>
                             <th data-sort="rsi14_w" style="text-align:right; width:70px;" title="주봉 RSI-14">주봉 RSI</th>
                             <th data-sort="rsi14_m" style="text-align:right; width:70px;" title="월봉 RSI-14">월봉 RSI</th>
+                            <th data-sort="rel_vol" style="text-align:right; width:70px;" title="상대 거래량 (최근 1일 거래량 / 3개월 평균 거래량)">Rel Vol</th>
                             <th data-sort="dist_high" style="text-align:right; width:110px;">52W High</th>
                             <th class="no-sort" style="text-align:center; width:120px;">52W Range</th>
                         </tr>
                     </thead>
                     <tbody id="screener-body">
-                        <tr><td colspan="29" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
+                        <tr><td colspan="30" style="text-align:center; padding:40px; color:var(--text-secondary);">데이터 로딩 중...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -1512,7 +1513,7 @@
             const tbody = document.getElementById('screener-body');
 
             if (filteredStocks.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="28" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="30" style="text-align:center; padding:40px; color:var(--text-secondary);">검색 결과가 없습니다</td></tr>`;
                 return;
             }
 
@@ -1549,6 +1550,7 @@
                     <td style="text-align:right;">${formatRsi(stock.rsi14)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_w)}</td>
                     <td style="text-align:right;">${formatRsi(stock.rsi14_m)}</td>
+                    <td style="text-align:right; font-variant-numeric: tabular-nums;">${stock.rel_vol !== null && stock.rel_vol !== undefined ? stock.rel_vol.toFixed(2) : '<span style="opacity:0.3">-</span>'}</td>
                     <td class="col-high-dist">${formatHighDist(stock.dist_high)}</td>
                     <td class="col-range">${renderRangeBar(stock)}</td>
                 </tr>`;
