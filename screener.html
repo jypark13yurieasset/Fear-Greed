@@ -974,7 +974,7 @@
                             <th data-sort="trailingPE" style="text-align:right; width:60px;" title="Trailing P/E">PER</th>
                             <th data-sort="forwardPE" style="text-align:right; width:80px;" title="Forward P/E">Fwd PER</th>
                             <th data-sort="eps_growth" style="text-align:right; width:90px;" title="1년 예상 EPS 성장률 = (PER / Fwd PER - 1) * 100">EPS Gr.</th>
-                            <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA8 · EMA21 기준: 🔥강세(모두 상회) / ➖중립 / ❄️약세(모두 하회)">EMA8/21</th>
+                            <th data-sort="ema_signal" style="text-align:center; width:90px;" title="EMA 8/21 4단계: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">EMA8/21</th>
                             <th data-sort="macd_state" style="text-align:center; width:95px;" title="MACD 사이클: 🚀강력 상승 / 📈상승 반전 / 📉하락 반전 / ❄️강력 하락">MACD</th>
                             <th data-sort="momentum_score" style="text-align:center; width:95px;" title="종합 모멘텀 스코어 (EMA 점수 + MACD 점수)">모멘텀 스코어</th>
                             <th data-sort="pct_1d" style="text-align:right; width:70px;">1D</th>
@@ -1034,9 +1034,10 @@
                         <div class="filter-item">
                             <span class="filter-label">EMA8/21 상태</span>
                             <div class="checkbox-grid">
-                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="🔥 강세"> 🔥 강세</label>
-                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="➖ 중립"> ➖ 중립</label>
-                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="❄️ 약세"> ❄️ 약세</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="🚀 강력 상승"> 🚀 상승</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="📈 상승 반전"> 📈 반전</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="📉 하락 반전"> 📉 반전</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-ema" value="❄️ 강력 하락"> ❄️ 하락</label>
                             </div>
                         </div>
                         <div class="filter-item">
@@ -1250,10 +1251,10 @@
                         if (!allowed.includes(stock.macd_state)) return false;
                     }
                     
-                    // EMA (1:약세, 2:중립, 3:강세)
+                    // EMA (1:강력 하락, 2:하락 반전, 3:상승 반전, 4:강력 상승)
                     if (df.ema.length > 0) {
                         if (stock.ema_signal === null) return false;
-                        const matchMap = { "❄️ 약세": 1, "➖ 중립": 2, "🔥 강세": 3 };
+                        const matchMap = { "❄️ 강력 하락": 1, "📉 하락 반전": 2, "📈 상승 반전": 3, "🚀 강력 상승": 4 };
                         const allowed = df.ema.map(k => matchMap[k]);
                         if (!allowed.includes(stock.ema_signal)) return false;
                     }
@@ -1468,9 +1469,10 @@
         // ─── EMA Signal formatter ───
         function formatEmaSignal(val) {
             if (val === null || val === undefined) return '<span style="color:var(--text-secondary)">-</span>';
-            if (val === 3) return '<span style="color:#ef4444; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="단기 추세 강세 (Price > EMA8,21)">🔥 강세</span>';
-            if (val === 2) return '<span style="color:#fbbf24; font-weight:500; font-size:0.85rem; white-space:nowrap;" title="추세 전환 시도 중 (두 선 사이)">➖ 중립</span>';
-            return '<span style="color:#3b82f6; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="추세 하락 (Price < EMA8,21)">❄️ 약세</span>';
+            if (val === 4) return '<span style="color:#ef4444; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="강력 상승 (EMA8>21 & 주가>EMA8)">🚀 상승</span>';
+            if (val === 3) return '<span style="color:#fca5a5; font-weight:500; font-size:0.85rem; white-space:nowrap;" title="상승 반전 (EMA8<21 & 주가>EMA8)">📈 반전</span>';
+            if (val === 2) return '<span style="color:#93c5fd; font-weight:500; font-size:0.85rem; white-space:nowrap;" title="하락 반전 (EMA8>21 & 주가<EMA8)">📉 반전</span>';
+            return '<span style="color:#3b82f6; font-weight:600; font-size:0.85rem; white-space:nowrap;" title="강력 하락 (EMA8<21 & 주가<EMA8)">❄️ 하락</span>';
         }
 
         // ─── MACD formatter ───
@@ -1485,12 +1487,13 @@
         // ─── Momentum Score formatter ───
         function formatMomentumScore(score) {
             if (score === null || score === undefined) return '<span style="opacity:0.3">-</span>';
-            if (score === 7) return '<span style="color:#ef4444; font-weight:700; font-size:0.9rem; white-space:nowrap;" title="7점: S 등급 (초강세 주도주)">🏆 S <span style="font-size:0.75rem; opacity:0.7;">(7)</span></span>';
-            if (score === 6) return '<span style="color:#22c55e; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="6점: A 등급 (강한 매수)">🟢 A <span style="font-size:0.75rem; opacity:0.7;">(6)</span></span>';
-            if (score === 5) return '<span style="color:#eab308; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="5점: B 등급 (관망 / 조정 중)">🟡 B <span style="font-size:0.75rem; opacity:0.7;">(5)</span></span>';
-            if (score === 4) return '<span style="color:#f97316; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="4점: C 등급 (바닥권 반등 시도)">🟠 C <span style="font-size:0.75rem; opacity:0.7;">(4)</span></span>';
-            if (score === 3) return '<span style="color:#ef4444; font-weight:500; font-size:0.9rem; white-space:nowrap;" title="3점: D 등급 (추세 이탈 주의)">🔴 D <span style="font-size:0.75rem; opacity:0.7;">(3)</span></span>';
-            if (score === 2) return '<span style="color:#3b82f6; font-weight:700; font-size:0.9rem; white-space:nowrap;" title="2점: F 등급 (초약세장)">☠️ F <span style="font-size:0.75rem; opacity:0.7;">(2)</span></span>';
+            if (score === 8) return '<span style="color:#ef4444; font-weight:700; font-size:0.9rem; white-space:nowrap;" title="8점: S 등급 (퍼펙트 초강세장)">🏆 S <span style="font-size:0.75rem; opacity:0.7;">(8)</span></span>';
+            if (score === 7) return '<span style="color:#f97316; font-weight:700; font-size:0.9rem; white-space:nowrap;" title="7점: A 등급 (강력한 매수세)">🔥 A <span style="font-size:0.75rem; opacity:0.7;">(7)</span></span>';
+            if (score === 6) return '<span style="color:#22c55e; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="6점: B 등급 (안정적 상승세)">🟢 B <span style="font-size:0.75rem; opacity:0.7;">(6)</span></span>';
+            if (score === 5) return '<span style="color:#eab308; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="5점: C 등급 (관망 / 횡보 조정 중)">🟡 C <span style="font-size:0.75rem; opacity:0.7;">(5)</span></span>';
+            if (score === 4) return '<span style="color:#8b5cf6; font-weight:600; font-size:0.9rem; white-space:nowrap;" title="4점: D 등급 (바닥 탈출 반등 시도)">🟣 D <span style="font-size:0.75rem; opacity:0.7;">(4)</span></span>';
+            if (score === 3) return '<span style="color:#ef4444; font-weight:500; font-size:0.9rem; white-space:nowrap;" title="3점: E 등급 (하락장 진입 / 추세 이탈)">🔴 E <span style="font-size:0.75rem; opacity:0.7;">(3)</span></span>';
+            if (score === 2) return '<span style="color:#3b82f6; font-weight:700; font-size:0.9rem; white-space:nowrap;" title="2점: F 등급 (퍼펙트 초약세장)">☠️ F <span style="font-size:0.75rem; opacity:0.7;">(2)</span></span>';
             return '<span style="opacity:0.3">-</span>';
         }
 

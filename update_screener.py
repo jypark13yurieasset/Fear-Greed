@@ -615,18 +615,21 @@ for t, s in stock_map.items():
         
         # --- New Technical Indicators ---
         
-        # EMA8 & EMA21 → Star Rating
+        # EMA8 & EMA21 → 4-tier State (MACD-style)
         ema8 = calc_ema(closes, 8)
         ema21 = calc_ema(closes, 21)
         if ema8 is not None and ema21 is not None:
-            above_ema8 = price > ema8
-            above_ema21 = price > ema21
-            if above_ema8 and above_ema21:
-                ema_signal = 3   # ⭐⭐⭐ above both
-            elif (above_ema8 and not above_ema21) or (not above_ema8 and above_ema21):
-                ema_signal = 2   # ⭐⭐ between
+            trend_bull = ema8 > ema21
+            momentum_bull = price > ema8
+            
+            if trend_bull and momentum_bull:
+                ema_signal = 4   # 🚀 강력 상승
+            elif not trend_bull and momentum_bull:
+                ema_signal = 3   # 📈 상승 반전
+            elif trend_bull and not momentum_bull:
+                ema_signal = 2   # 📉 하락 반전
             else:
-                ema_signal = 1   # ⭐ below both
+                ema_signal = 1   # ❄️ 강력 하락
         
         # SMA20 이격도
         sma20 = calc_sma(closes, 20)
