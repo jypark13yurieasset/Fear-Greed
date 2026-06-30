@@ -445,6 +445,18 @@ def calc_ema(closes, period):
         ema = price * k + ema * (1 - k)
     return ema
 
+def get_ema_array(data, period):
+    if len(data) < period:
+        return [None]*len(data)
+    emas = []
+    k = 2.0 / (period + 1)
+    ema = sum(data[:period]) / period
+    emas.append(ema)
+    for price in data[period:]:
+        ema = price * k + ema * (1 - k)
+        emas.append(ema)
+    return [None]*(period-1) + emas
+
 def calc_sma(closes, period):
     """Simple Moving Average."""
     if len(closes) < period:
@@ -475,16 +487,6 @@ def calc_macd_state(closes):
     if len(closes) < 35:
         return None
         
-    def get_ema_array(data, period):
-        emas = []
-        k = 2.0 / (period + 1)
-        ema = sum(data[:period]) / period
-        emas.append(ema)
-        for price in data[period:]:
-            ema = price * k + ema * (1 - k)
-            emas.append(ema)
-        return [None]*(period-1) + emas
-
     ema12 = get_ema_array(closes, 12)
     ema26 = get_ema_array(closes, 26)
     
