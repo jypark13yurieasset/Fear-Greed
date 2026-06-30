@@ -685,6 +685,40 @@
             border-color: var(--accent);
             font-weight: 600;
         }
+        
+        /* Sexy Preset Button for Today's Picks */
+        .btn-sexy-preset {
+            position: relative;
+            font-weight: 700;
+            color: #fff !important;
+            background: linear-gradient(135deg, rgba(124, 140, 245, 0.3), rgba(56, 189, 248, 0.3)) !important;
+            border: 1px solid rgba(124, 140, 245, 0.6) !important;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(124, 140, 245, 0.15);
+            backdrop-filter: blur(8px);
+        }
+        .btn-sexy-preset::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.25), transparent);
+            transform: skewX(-20deg);
+            transition: 0.5s;
+        }
+        .btn-sexy-preset:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 140, 245, 0.35);
+            border-color: rgba(56, 189, 248, 0.8) !important;
+            background: linear-gradient(135deg, rgba(124, 140, 245, 0.45), rgba(56, 189, 248, 0.45)) !important;
+        }
+        .btn-sexy-preset:hover::before {
+            left: 150%;
+        }
+        .btn-sexy-preset.active {
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.5) inset !important;
+            border-color: rgba(56, 189, 248, 1) !important;
+        }
 
 
 
@@ -935,6 +969,7 @@
                 <span class="preset-label">🔥 모멘텀 프리셋:</span>
                 <div class="preset-buttons">
                     <button class="preset-btn active" id="preset-all" onclick="selectPreset('all')">전체 종목</button>
+                    <button class="preset-btn btn-sexy-preset" id="preset-today" onclick="selectPreset('today')">오늘의 종목 🚨</button>
                     <button class="preset-btn" id="preset-watchlist" onclick="selectPreset('watchlist')">나의 관심종목 ⭐⭐</button>
                     <button class="preset-btn" id="preset-epsgrowth" onclick="selectPreset('epsgrowth')">실적 성장 모멘텀 📈</button>
                     <button class="preset-btn" id="preset-macdgolden" onclick="selectPreset('macdgolden')">MACD 골든 📈</button>
@@ -950,13 +985,29 @@
 
         <!-- Main Table -->
         <div class="table-card">
-            <div class="table-info-bar">
-                <span class="table-count" id="table-count">로딩 중...</span>
-                <div style="display: flex; align-items: center; gap: 16px;">
-                    <a href="https://app.hyperliquid.xyz/trade" target="_blank" style="font-size: 0.75rem; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; display: flex; align-items: center; gap: 4px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent)'">
-                        Hyperliquid Trade ↗
-                    </a>
-                    <span style="font-size: 0.75rem; color: var(--text-secondary);">⭐⭐ 관심종목 하이라이트</span>
+            <div class="table-info-bar" style="flex-wrap: wrap; align-items: flex-start; flex-direction: column;">
+                <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                    <span class="table-count" id="table-count">로딩 중...</span>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <a href="https://app.hyperliquid.xyz/trade" target="_blank" style="font-size: 0.75rem; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; display: flex; align-items: center; gap: 4px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent)'">
+                            Hyperliquid Trade ↗
+                        </a>
+                        <span style="font-size: 0.75rem; color: var(--text-secondary);">⭐⭐ 관심종목 하이라이트</span>
+                    </div>
+                </div>
+                <!-- Golden Cross Box -->
+                <div id="golden-cross-box" style="margin-top: 15px; padding: 15px; width: 100%; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 8px; display: none; box-sizing: border-box;">
+                    <div style="color: #22c55e; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">🚀 최적 매수 타이밍 (상승 모멘텀 + 최근 2일 골든크로스 발생)</div>
+                    <div id="golden-cross-list" style="font-size: 0.9rem; color: var(--text-primary); line-height: 2;">
+                        <!-- Tickers will be injected here -->
+                    </div>
+                </div>
+                <!-- Danger Dead Cross Box -->
+                <div id="danger-dead-cross-box" style="margin-top: 10px; padding: 15px; width: 100%; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; display: none; box-sizing: border-box;">
+                    <div style="color: #ef4444; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">💀 최악의 투매 경고 (하락 모멘텀 + 최근 2일 데드크로스 발생)</div>
+                    <div id="danger-dead-cross-list" style="font-size: 0.9rem; color: var(--text-primary); line-height: 2;">
+                        <!-- Tickers will be injected here -->
+                    </div>
                 </div>
             </div>
             <div class="table-wrapper">
@@ -1222,7 +1273,9 @@
                 }
 
                 // Preset filters
-                if (activePreset === 'breakout') {
+                if (activePreset === 'today') {
+                    if (!stock.is_golden_cross_opportunity) return false;
+                } else if (activePreset === 'breakout') {
                     if (stock.dist_high === null || stock.dist_high < -3.0) return false;
                 } else if (activePreset === 'momentumtop') {
                     if (stock.momentum_score === null || stock.momentum_score < 6) return false;
@@ -1566,6 +1619,28 @@
         function updateFilteredCount() {
             document.getElementById('stat-filtered').textContent = filteredStocks.length;
             document.getElementById('table-count').innerHTML = `<strong>${filteredStocks.length}</strong>개 종목 표시 중`;
+            
+            // Populate golden cross box
+            const goldenStocks = filteredStocks.filter(s => s.is_golden_cross_opportunity);
+            const goldenBox = document.getElementById('golden-cross-box');
+            const goldenList = document.getElementById('golden-cross-list');
+            if (goldenStocks.length > 0) {
+                goldenList.innerHTML = goldenStocks.map(s => `<span style="display:inline-block; margin-right:8px; margin-bottom:4px; background:rgba(34,197,94,0.2); padding:2px 8px; border-radius:4px; font-weight:600; font-size:0.85rem;">${s.ticker}</span>`).join('');
+                goldenBox.style.display = 'block';
+            } else {
+                goldenBox.style.display = 'none';
+            }
+
+            // Populate danger dead cross box
+            const dangerStocks = filteredStocks.filter(s => s.is_danger_dead_cross);
+            const dangerBox = document.getElementById('danger-dead-cross-box');
+            const dangerList = document.getElementById('danger-dead-cross-list');
+            if (dangerStocks.length > 0) {
+                dangerList.innerHTML = dangerStocks.map(s => `<span style="display:inline-block; margin-right:8px; margin-bottom:4px; background:rgba(239,68,68,0.2); padding:2px 8px; border-radius:4px; font-weight:600; font-size:0.85rem;">${s.ticker}</span>`).join('');
+                dangerBox.style.display = 'block';
+            } else {
+                dangerBox.style.display = 'none';
+            }
         }
 
         function updateGlobalStats() {

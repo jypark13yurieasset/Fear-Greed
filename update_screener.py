@@ -651,6 +651,30 @@ for t, s in stock_map.items():
                 
         # MACD
         macd_state = calc_macd_state(closes)
+        
+        # Danger Dead Cross (MACD Histogram < 0 AND EMA 8 crossed below EMA 21 in last 2 days)
+        is_danger_dead_cross = False
+        if macd_state in [1, 2] and ema8 is not None and ema21 is not None and ema8 < ema21: # Histogram < 0 AND Currently in Dead Cross state
+            ema8_arr = get_ema_array(closes, 8)
+            ema21_arr = get_ema_array(closes, 21)
+            if len(ema8_arr) >= 3:
+                for i in range(-2, 0):
+                    if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
+                        if ema8_arr[i] < ema21_arr[i] and ema8_arr[i-1] >= ema21_arr[i-1]:
+                            is_danger_dead_cross = True
+                            break
+                            
+        # Golden Cross Opportunity (MACD Histogram > 0 AND EMA 8 crossed above EMA 21 in last 2 days)
+        is_golden_cross_opportunity = False
+        if macd_state in [3, 4] and ema8 is not None and ema21 is not None and ema8 > ema21: # Histogram > 0 AND Currently in Golden Cross state
+            ema8_arr = get_ema_array(closes, 8)
+            ema21_arr = get_ema_array(closes, 21)
+            if len(ema8_arr) >= 3:
+                for i in range(-2, 0):
+                    if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
+                        if ema8_arr[i] > ema21_arr[i] and ema8_arr[i-1] <= ema21_arr[i-1]:
+                            is_golden_cross_opportunity = True
+                            break
 
         # Relative Volume (3-month average, approx 63 trading days)
         if len(volumes) >= 63:
@@ -691,6 +715,8 @@ for t, s in stock_map.items():
         'forwardPE': rnd(info_data.get(t, {}).get("forwardPE")),
         'ema_signal': ema_signal,       # int 1/2/3 or null
         'macd_state': macd_state,       # int 1/2/3/4 or null
+        'is_danger_dead_cross': is_danger_dead_cross,
+        'is_golden_cross_opportunity': is_golden_cross_opportunity,
         'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
         'rsi14': rnd(rsi14),            # RSI-14 수치
         'rsi14_w': rnd(rsi14_w),
