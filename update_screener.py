@@ -44,6 +44,18 @@ if os.path.exists(sectors_cache_path):
     except Exception as e:
         print(f"⚠️ 로컬 섹터 DB 로딩 실패: {e}")
 
+# Load signal history cache
+signal_history_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "screener_signals.json")
+signal_history = {}
+if os.path.exists(signal_history_path):
+    try:
+        with open(signal_history_path, 'r', encoding='utf-8') as f:
+            signal_history = json.load(f)
+    except Exception as e:
+        print(f"⚠️ 로컬 시그널 DB 로딩 실패: {e}")
+
+today_str = datetime.datetime.now().strftime('%Y-%m-%d')
+
 # --- 2. Fetch constituents from SlickCharts using curl_cffi ---
 def fetch_slickcharts(url):
     print("\n" + "=" * 60)
@@ -676,6 +688,41 @@ for t, s in stock_map.items():
                             is_golden_cross_opportunity = True
                             break
 
+        # Track Consecutive Signals (Streak)
+        if t not in signal_history or 'type' not in signal_history[t]:
+            signal_history[t] = {'type': None, 'count': 0, 'last_seen': ''}
+            
+        sh = signal_history[t]
+        
+        if is_golden_cross_opportunity:
+            if sh['type'] == 'golden':
+                if sh['last_seen'] != today_str:
+                    sh['count'] += 1
+                    sh['last_seen'] = today_str
+            else:
+                sh['type'] = 'golden'
+                sh['count'] = 1
+                sh['last_seen'] = today_str
+                
+        elif is_danger_dead_cross:
+            if sh['type'] == 'dead':
+                if sh['last_seen'] != today_str:
+                    sh['count'] += 1
+                    sh['last_seen'] = today_str
+            else:
+                sh['type'] = 'dead'
+                sh['count'] = 1
+                sh['last_seen'] = today_str
+                
+        else:
+            # Neither condition is met
+            sh['type'] = None
+            sh['count'] = 0
+            sh['last_seen'] = today_str
+                
+        golden_cross_count = sh['count'] if sh['type'] == 'golden' else 0
+        dead_cross_count = sh['count'] if sh['type'] == 'dead' else 0
+
         # Relative Volume (3-month average, approx 63 trading days)
         if len(volumes) >= 63:
             avg_vol_3m = sum(volumes[-63:]) / 63
@@ -717,6 +764,8 @@ for t, s in stock_map.items():
         'macd_state': macd_state,       # int 1/2/3/4 or null
         'is_danger_dead_cross': is_danger_dead_cross,
         'is_golden_cross_opportunity': is_golden_cross_opportunity,
+        'dead_cross_count': dead_cross_count,
+        'golden_cross_count': golden_cross_count,
         'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
         'rsi14': rnd(rsi14),            # RSI-14 수치
         'rsi14_w': rnd(rsi14_w),
@@ -745,7 +794,10 @@ if len(stocks_output) < 400:
 output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 os.makedirs(output_dir, exist_ok=True)
 
-# Save JSON
+# --- 7. Save to JSON and JS ---
+with open(signal_history_path, 'w', encoding='utf-8') as f:
+    json.dump(signal_history, f, ensure_ascii=False, indent=2)
+
 json_path = os.path.join(output_dir, "index_constituents.json")
 with open(json_path, 'w', encoding='utf-8') as f:
     json.dump(results, f, ensure_ascii=False, indent=2)

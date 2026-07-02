@@ -1625,7 +1625,11 @@
             const goldenBox = document.getElementById('golden-cross-box');
             const goldenList = document.getElementById('golden-cross-list');
             if (goldenStocks.length > 0) {
-                goldenList.innerHTML = goldenStocks.map(s => `<a href="https://kr.tradingview.com/chart/?symbol=${s.ticker}" target="_blank" style="display:inline-block; margin-right:8px; margin-bottom:4px; background:rgba(34,197,94,0.2); padding:2px 8px; border-radius:4px; font-weight:600; font-size:0.85rem; color:inherit; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(34,197,94,0.4)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='rgba(34,197,94,0.2)'; this.style.transform='translateY(0)';">${s.ticker}</a>`).join('');
+                goldenList.innerHTML = goldenStocks.map(s => {
+                    const countText = s.golden_cross_count > 1 ? ` <span style="font-size:0.75rem; opacity:0.8;">(${s.golden_cross_count})</span>` : '';
+                    const titleText = s.golden_cross_count > 1 ? `누적 추천: ${s.golden_cross_count}일 (최근 지속 포착)` : '최적 매수 타이밍';
+                    return `<a href="https://kr.tradingview.com/chart/?symbol=${s.ticker}" title="${titleText}" target="_blank" style="display:inline-block; margin-right:8px; margin-bottom:4px; background:rgba(34,197,94,0.2); padding:2px 8px; border-radius:4px; font-weight:600; font-size:0.85rem; color:inherit; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(34,197,94,0.4)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='rgba(34,197,94,0.2)'; this.style.transform='translateY(0)';">${s.ticker}${countText}</a>`;
+                }).join('');
                 goldenBox.style.display = 'block';
             } else {
                 goldenBox.style.display = 'none';
@@ -1636,7 +1640,11 @@
             const dangerBox = document.getElementById('danger-dead-cross-box');
             const dangerList = document.getElementById('danger-dead-cross-list');
             if (dangerStocks.length > 0) {
-                dangerList.innerHTML = dangerStocks.map(s => `<a href="https://kr.tradingview.com/chart/?symbol=${s.ticker}" target="_blank" style="display:inline-block; margin-right:8px; margin-bottom:4px; background:rgba(239,68,68,0.2); padding:2px 8px; border-radius:4px; font-weight:600; font-size:0.85rem; color:inherit; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(239,68,68,0.4)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='rgba(239,68,68,0.2)'; this.style.transform='translateY(0)';">${s.ticker}</a>`).join('');
+                dangerList.innerHTML = dangerStocks.map(s => {
+                    const countText = s.dead_cross_count > 1 ? ` <span style="font-size:0.75rem; opacity:0.8;">(${s.dead_cross_count})</span>` : '';
+                    const titleText = s.dead_cross_count > 1 ? `누적 경고: ${s.dead_cross_count}일 (최근 지속 하락)` : '투매 경고 발생';
+                    return `<a href="https://kr.tradingview.com/chart/?symbol=${s.ticker}" title="${titleText}" target="_blank" style="display:inline-block; margin-right:8px; margin-bottom:4px; background:rgba(239,68,68,0.2); padding:2px 8px; border-radius:4px; font-weight:600; font-size:0.85rem; color:inherit; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(239,68,68,0.4)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='rgba(239,68,68,0.2)'; this.style.transform='translateY(0)';">${s.ticker}${countText}</a>`;
+                }).join('');
                 dangerBox.style.display = 'block';
             } else {
                 dangerBox.style.display = 'none';
