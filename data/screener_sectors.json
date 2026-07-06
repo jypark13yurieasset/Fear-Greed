@@ -2598,5 +2598,10 @@
     "sector": "Industrials",
     "sub_industry": "Aerospace & Defense",
     "name": "SpaceX"
+  },
+  "HONA": {
+    "sector": "Industrials",
+    "sub_industry": "Aerospace & Defense",
+    "name": "Honeywell Aerospace Inc."
   }
 }

@@ -689,6 +689,10 @@ for t, s in stock_map.items():
                             break
 
         # Track Consecutive Signals (Streak)
+        # Use the actual latest trading date from price data, not calendar date,
+        # so that market holidays don't cause duplicate counting.
+        actual_trading_date = str(latest_trading_date.date()) if latest_trading_date is not None else today_str
+        
         if t not in signal_history or 'type' not in signal_history[t]:
             signal_history[t] = {'type': None, 'count': 0, 'last_seen': ''}
             
@@ -696,29 +700,29 @@ for t, s in stock_map.items():
         
         if is_golden_cross_opportunity:
             if sh['type'] == 'golden':
-                if sh['last_seen'] != today_str:
+                if sh['last_seen'] != actual_trading_date:
                     sh['count'] += 1
-                    sh['last_seen'] = today_str
+                    sh['last_seen'] = actual_trading_date
             else:
                 sh['type'] = 'golden'
                 sh['count'] = 1
-                sh['last_seen'] = today_str
+                sh['last_seen'] = actual_trading_date
                 
         elif is_danger_dead_cross:
             if sh['type'] == 'dead':
-                if sh['last_seen'] != today_str:
+                if sh['last_seen'] != actual_trading_date:
                     sh['count'] += 1
-                    sh['last_seen'] = today_str
+                    sh['last_seen'] = actual_trading_date
             else:
                 sh['type'] = 'dead'
                 sh['count'] = 1
-                sh['last_seen'] = today_str
+                sh['last_seen'] = actual_trading_date
                 
         else:
             # Neither condition is met
             sh['type'] = None
             sh['count'] = 0
-            sh['last_seen'] = today_str
+            sh['last_seen'] = actual_trading_date
                 
         golden_cross_count = sh['count'] if sh['type'] == 'golden' else 0
         dead_cross_count = sh['count'] if sh['type'] == 'dead' else 0
