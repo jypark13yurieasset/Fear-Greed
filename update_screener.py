@@ -712,6 +712,15 @@ for t, s in stock_map.items():
                 if sh['last_seen'] != actual_trading_date:
                     sh['count'] += 1
                     sh['last_seen'] = actual_trading_date
+                    if sh['count'] in [2, 3]:
+                        signal_log.append({
+                            "date": actual_trading_date,
+                            "ticker": t,
+                            "name": name,
+                            "type": "golden",
+                            "streak": sh['count'],
+                            "entry_price": price
+                        })
             else:
                 sh['type'] = 'golden'
                 sh['count'] = 1
@@ -722,6 +731,7 @@ for t, s in stock_map.items():
                     "ticker": t,
                     "name": name,
                     "type": "golden",
+                    "streak": 1,
                     "entry_price": price
                 })
                 
@@ -730,6 +740,15 @@ for t, s in stock_map.items():
                 if sh['last_seen'] != actual_trading_date:
                     sh['count'] += 1
                     sh['last_seen'] = actual_trading_date
+                    if sh['count'] in [2, 3]:
+                        signal_log.append({
+                            "date": actual_trading_date,
+                            "ticker": t,
+                            "name": name,
+                            "type": "dead",
+                            "streak": sh['count'],
+                            "entry_price": price
+                        })
             else:
                 sh['type'] = 'dead'
                 sh['count'] = 1
@@ -740,6 +759,7 @@ for t, s in stock_map.items():
                     "ticker": t,
                     "name": name,
                     "type": "dead",
+                    "streak": 1,
                     "entry_price": price
                 })
                 

@@ -166,6 +166,41 @@
             gap: 10px;
         }
 
+        /* ─── Tabs ─── */
+        .tab-container {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 5px;
+            border-radius: 12px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 8px 0;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-family: var(--font-family);
+        }
+
+        .tab-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #7c8cf5, #5a6de6);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(124, 140, 245, 0.3);
+        }
+
         /* ─── Sector Ranking ─── */
         .sector-list {
             display: flex;
@@ -321,7 +356,11 @@
             <!-- 섹터별 랭킹 -->
             <div class="insight-card">
                 <h2 class="card-title">🏆 Sector Momentum Ranking</h2>
-                <div id="sector-ranking-container" class="sector-list">
+                <div class="tab-container">
+                    <button class="tab-btn active" onclick="switchSectorTab('short')" id="btn-sector-short">단기 (5D)</button>
+                    <button class="tab-btn" onclick="switchSectorTab('mid')" id="btn-sector-mid">중기 (1M)</button>
+                </div>
+                <div id="sector-cards-container">
                     <!-- JS Injected -->
                 </div>
             </div>
@@ -329,24 +368,12 @@
             <!-- 시그널 히스토리 보드 -->
             <div class="insight-card">
                 <h2 class="card-title">🎯 Signal Win Rate (Past 30 Days)</h2>
-                <div class="winrate-summary">
-                    <div class="winrate-box golden">
-                        <div class="label">Golden Cross Win Rate</div>
-                        <div class="value" id="golden-winrate">--%</div>
-                    </div>
-                    <div class="winrate-box dead">
-                        <div class="label">Dead Cross Win Rate</div>
-                        <div class="value" id="dead-winrate">--%</div>
-                    </div>
+                <div class="tab-container">
+                    <button class="tab-btn active" onclick="switchSignalTab(1)" id="btn-signal-1">1일 포착</button>
+                    <button class="tab-btn" onclick="switchSignalTab(2)" id="btn-signal-2">2일 연속</button>
+                    <button class="tab-btn" onclick="switchSignalTab(3)" id="btn-signal-3">3일 연속</button>
                 </div>
-                
-                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; font-size: 0.75rem; color: var(--text-secondary); padding: 0 15px 10px; font-weight: 600;">
-                    <div>종목 / 발생일</div>
-                    <div style="text-align: right;">발생가</div>
-                    <div style="text-align: right;">현재가</div>
-                    <div style="text-align: right;">결과</div>
-                </div>
-                <div id="signal-history-container" class="signal-list">
+                <div id="signal-cards-container">
                     <!-- JS Injected -->
                 </div>
             </div>
@@ -366,53 +393,102 @@
             if (typeof INDEX_DATA === 'undefined') return;
 
             const stocks = INDEX_DATA.stocks || [];
-            const sectors = {};
+            
+            const mainContainer = document.getElementById('sector-cards-container');
+            mainContainer.innerHTML = '';
 
-            // 그룹핑
-            stocks.forEach(s => {
-                const sector = s.sector || 'Unknown';
-                if (!sectors[sector]) {
-                    sectors[sector] = { name: sector, count: 0, sum1w: 0, aboveEma8: 0 };
+            const configs = [
+                {
+                    title: '🏆 단기 모멘텀 랭킹 (5D 수익률 + EMA8)',
+                    periodKey: 'pct_1w',
+                    strengthKey: 'aboveEma8',
+                    strengthLabel: 'EMA8 돌파 비율 (단기 추세)'
+                },
+                {
+                    title: '🏆 중기 모멘텀 랭킹 (1M 수익률 + SMA20)',
+                    periodKey: 'pct_1m',
+                    strengthKey: 'aboveSma20',
+                    strengthLabel: 'SMA20 돌파 비율 (중기 추세)'
                 }
-                sectors[sector].count++;
-                if (s.pct_1w) sectors[sector].sum1w += s.pct_1w;
-                // ema_signal >= 3 means price > ema8 (단기 상승 모멘텀)
-                if (s.ema_signal && s.ema_signal >= 3) sectors[sector].aboveEma8++;
-            });
+            ];
 
-            // 평균 계산 및 정렬
-            const ranking = Object.values(sectors).map(sec => {
-                sec.avg1w = sec.sum1w / sec.count;
-                sec.strength = (sec.aboveEma8 / sec.count) * 100; // EMA8 위에 있는 비율
-                // 점수 산정: 1W 수익률 기준 정렬
-                return sec;
-            }).filter(sec => sec.count > 5 && sec.name !== 'Unknown')
-              .sort((a, b) => b.avg1w - a.avg1w);
+            configs.forEach(config => {
+                const sectors = {};
 
-            const container = document.getElementById('sector-ranking-container');
-            container.innerHTML = '';
+                // 그룹핑
+                stocks.forEach(s => {
+                    const sector = s.sector || 'Unknown';
+                    if (!sectors[sector]) {
+                        sectors[sector] = { name: sector, count: 0, sumReturn: 0, aboveStrength: 0 };
+                    }
+                    sectors[sector].count++;
+                    
+                    if (config.periodKey === 'pct_1w' && s.pct_1w) sectors[sector].sumReturn += s.pct_1w;
+                    if (config.periodKey === 'pct_1m' && s.pct_1m) sectors[sector].sumReturn += s.pct_1m;
 
-            ranking.forEach((sec, idx) => {
-                const isPos = sec.avg1w > 0;
-                const sign = isPos ? '+' : '';
-                const colorClass = isPos ? 'positive' : 'negative';
+                    if (config.strengthKey === 'aboveEma8' && s.ema_signal && s.ema_signal >= 3) {
+                        sectors[sector].aboveStrength++;
+                    }
+                    if (config.strengthKey === 'aboveSma20' && s.dist_sma20 && s.dist_sma20 > 0) {
+                        sectors[sector].aboveStrength++;
+                    }
+                });
 
-                const html = `
-                    <div class="sector-item">
-                        <div class="sector-header">
-                            <span>${idx + 1}. ${sec.name} <span style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 400;">(${sec.count} stocks)</span></span>
-                            <span class="stat-value ${colorClass}" style="font-weight: 700;">${sign}${sec.avg1w.toFixed(2)}%</span>
+                // 평균 계산 및 정렬
+                const ranking = Object.values(sectors).map(sec => {
+                    sec.avgReturn = sec.sumReturn / sec.count;
+                    sec.strengthPct = (sec.aboveStrength / sec.count) * 100;
+                    return sec;
+                }).filter(sec => sec.count > 5 && sec.name !== 'Unknown')
+                  .sort((a, b) => b.avgReturn - a.avgReturn);
+
+                let listHtml = '';
+                ranking.forEach((sec, idx) => {
+                    const isPos = sec.avgReturn > 0;
+                    const sign = isPos ? '+' : '';
+                    const colorClass = isPos ? 'positive' : 'negative';
+
+                    listHtml += `
+                        <div class="sector-item">
+                            <div class="sector-header">
+                                <span>${idx + 1}. ${sec.name} <span style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 400;">(${sec.count} stocks)</span></span>
+                                <span class="stat-value ${colorClass}" style="font-weight: 700;">${sign}${sec.avgReturn.toFixed(2)}%</span>
+                            </div>
+                            <div class="sector-stats">
+                                <div>${config.strengthLabel}: <span style="color: #fff;">${sec.strengthPct.toFixed(1)}%</span></div>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: ${sec.strengthPct}%"></div>
+                            </div>
                         </div>
-                        <div class="sector-stats">
-                            <div>EMA8 돌파 비율 (단기 추세): <span style="color: #fff;">${sec.strength.toFixed(1)}%</span></div>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-fill" style="width: ${sec.strength}%"></div>
-                        </div>
+                    `;
+                });
+
+                const displayStyle = config.periodKey === 'pct_1w' ? 'block' : 'none';
+                const idName = config.periodKey === 'pct_1w' ? 'sector-list-short' : 'sector-list-mid';
+
+                const sectionHtml = `
+                    <div id="${idName}" class="sector-list" style="display: ${displayStyle};">
+                        ${listHtml}
                     </div>
                 `;
-                container.insertAdjacentHTML('beforeend', html);
+                mainContainer.insertAdjacentHTML('beforeend', sectionHtml);
             });
+        }
+
+        function switchSectorTab(tab) {
+            document.getElementById('btn-sector-short').classList.remove('active');
+            document.getElementById('btn-sector-mid').classList.remove('active');
+            document.getElementById('sector-list-short').style.display = 'none';
+            document.getElementById('sector-list-mid').style.display = 'none';
+
+            if (tab === 'short') {
+                document.getElementById('btn-sector-short').classList.add('active');
+                document.getElementById('sector-list-short').style.display = 'block';
+            } else {
+                document.getElementById('btn-sector-mid').classList.add('active');
+                document.getElementById('sector-list-mid').style.display = 'block';
+            }
         }
 
         function renderSignalHistory() {
@@ -424,60 +500,102 @@
                 priceMap[s.ticker] = s.price;
             });
 
-            let goldenTotal = 0, goldenWins = 0;
-            let deadTotal = 0, deadWins = 0;
+            const mainContainer = document.getElementById('signal-cards-container');
+            mainContainer.innerHTML = ''; // clear
 
-            // 최신 날짜 순 정렬
-            const logs = [...SIGNAL_LOG_DATA].sort((a, b) => new Date(b.date) - new Date(a.date));
+            // 1일, 2일, 3일 연속 처리
+            [1, 2, 3].forEach(streakLevel => {
+                // 이 streakLevel에 해당하는 로그만 필터링
+                const logs = SIGNAL_LOG_DATA.filter(l => (l.streak || 1) === streakLevel)
+                                            .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-            const container = document.getElementById('signal-history-container');
-            container.innerHTML = '';
+                let goldenTotal = 0, goldenWins = 0;
+                let deadTotal = 0, deadWins = 0;
+                let listHtml = '';
 
-            logs.forEach(log => {
-                const currentPrice = priceMap[log.ticker];
-                let isWin = null;
-                let returnPct = 0;
+                logs.forEach(log => {
+                    const currentPrice = priceMap[log.ticker];
+                    let isWin = null;
+                    let returnPct = 0;
 
-                if (currentPrice && log.entry_price) {
-                    returnPct = ((currentPrice - log.entry_price) / log.entry_price) * 100;
-                    
-                    if (log.type === 'golden') {
-                        isWin = currentPrice > log.entry_price;
-                        goldenTotal++;
-                        if (isWin) goldenWins++;
-                    } else if (log.type === 'dead') {
-                        isWin = currentPrice < log.entry_price; // 데드크로스는 떨어져야 Win
-                        deadTotal++;
-                        if (isWin) deadWins++;
+                    if (currentPrice && log.entry_price) {
+                        returnPct = ((currentPrice - log.entry_price) / log.entry_price) * 100;
+                        
+                        if (log.type === 'golden') {
+                            isWin = currentPrice > log.entry_price;
+                            goldenTotal++;
+                            if (isWin) goldenWins++;
+                        } else if (log.type === 'dead') {
+                            isWin = currentPrice < log.entry_price; // 데드크로스는 떨어져야 Win
+                            deadTotal++;
+                            if (isWin) deadWins++;
+                        }
                     }
-                }
 
-                const sign = returnPct > 0 ? '+' : '';
-                const typeIcon = log.type === 'golden' ? '🚀' : '💀';
-                
-                let badgeHtml = `<div class="badge pending">Pending</div>`;
-                if (isWin === true) badgeHtml = `<div class="badge win">Win (${sign}${returnPct.toFixed(1)}%)</div>`;
-                else if (isWin === false) badgeHtml = `<div class="badge loss">Loss (${sign}${returnPct.toFixed(1)}%)</div>`;
+                    const sign = returnPct > 0 ? '+' : '';
+                    const typeIcon = log.type === 'golden' ? '🚀' : '💀';
+                    
+                    let badgeHtml = `<div class="badge pending">Pending</div>`;
+                    if (isWin === true) badgeHtml = `<div class="badge win">Win (${sign}${returnPct.toFixed(1)}%)</div>`;
+                    else if (isWin === false) badgeHtml = `<div class="badge loss">Loss (${sign}${returnPct.toFixed(1)}%)</div>`;
 
-                const html = `
-                    <div class="signal-item ${log.type}">
-                        <div class="signal-info">
-                            <div class="ticker">${typeIcon} ${log.ticker} <span style="font-weight: 400; font-size: 0.75rem;">${log.name}</span></div>
-                            <div class="date">${log.date}</div>
+                    listHtml += `
+                        <div class="signal-item ${log.type}">
+                            <div class="signal-info">
+                                <div class="ticker">${typeIcon} ${log.ticker} <span style="font-weight: 400; font-size: 0.75rem;">${log.name}</span></div>
+                                <div class="date">${log.date}</div>
+                            </div>
+                            <div style="text-align: right; font-family: monospace;">$${log.entry_price ? log.entry_price.toFixed(2) : '-'}</div>
+                            <div style="text-align: right; font-family: monospace; color: #fff;">$${currentPrice ? currentPrice.toFixed(2) : '-'}</div>
+                            <div style="text-align: right;">${badgeHtml}</div>
                         </div>
-                        <div style="text-align: right; font-family: monospace;">$${log.entry_price ? log.entry_price.toFixed(2) : '-'}</div>
-                        <div style="text-align: right; font-family: monospace; color: #fff;">$${currentPrice ? currentPrice.toFixed(2) : '-'}</div>
-                        <div style="text-align: right;">${badgeHtml}</div>
+                    `;
+                });
+
+                const goldenWinRate = goldenTotal > 0 ? ((goldenWins / goldenTotal) * 100).toFixed(1) : '--';
+                const deadWinRate = deadTotal > 0 ? ((deadWins / deadTotal) * 100).toFixed(1) : '--';
+
+                const displayStyle = streakLevel === 1 ? 'block' : 'none';
+
+                const sectionHtml = `
+                    <div id="signal-list-${streakLevel}" style="display: ${displayStyle};">
+                        <div class="winrate-summary">
+                            <div class="winrate-box golden">
+                                <div class="label">Golden Cross Win Rate</div>
+                                <div class="value">${goldenWinRate}%</div>
+                            </div>
+                            <div class="winrate-box dead">
+                                <div class="label">Dead Cross Win Rate</div>
+                                <div class="value">${deadWinRate}%</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; font-size: 0.75rem; color: var(--text-secondary); padding: 0 15px 10px; font-weight: 600;">
+                            <div>종목 / 발생일</div>
+                            <div style="text-align: right;">발생가</div>
+                            <div style="text-align: right;">현재가</div>
+                            <div style="text-align: right;">결과</div>
+                        </div>
+                        <div class="signal-list" style="max-height: 250px;">
+                            ${listHtml || '<div style="text-align:center; padding:20px; color:var(--text-secondary);">해당 조건의 시그널 기록이 없습니다.</div>'}
+                        </div>
                     </div>
                 `;
-                container.insertAdjacentHTML('beforeend', html);
+                
+                mainContainer.insertAdjacentHTML('beforeend', sectionHtml);
             });
+        }
 
-            // 승률 업데이트
-            const goldenWinRate = goldenTotal > 0 ? ((goldenWins / goldenTotal) * 100).toFixed(1) : '--';
-            const deadWinRate = deadTotal > 0 ? ((deadWins / deadTotal) * 100).toFixed(1) : '--';
+        function switchSignalTab(level) {
+            document.getElementById('btn-signal-1').classList.remove('active');
+            document.getElementById('btn-signal-2').classList.remove('active');
+            document.getElementById('btn-signal-3').classList.remove('active');
+            
+            document.getElementById('signal-list-1').style.display = 'none';
+            document.getElementById('signal-list-2').style.display = 'none';
+            document.getElementById('signal-list-3').style.display = 'none';
 
-            document.getElementById('golden-winrate').innerText = `${goldenWinRate}%`;
-            document.getElementById('dead-winrate').innerText = `${deadWinRate}%`;
+            document.getElementById(`btn-signal-${level}`).classList.add('active');
+            document.getElementById(`signal-list-${level}`).style.display = 'block';
         }
     </script>
