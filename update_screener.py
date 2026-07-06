@@ -54,6 +54,15 @@ if os.path.exists(signal_history_path):
     except Exception as e:
         print(f"⚠️ 로컬 시그널 DB 로딩 실패: {e}")
 
+signal_log_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "signal_log.json")
+signal_log = []
+if os.path.exists(signal_log_path):
+    try:
+        with open(signal_log_path, 'r', encoding='utf-8') as f:
+            signal_log = json.load(f)
+    except Exception:
+        pass
+
 today_str = datetime.datetime.now().strftime('%Y-%m-%d')
 
 # --- 2. Fetch constituents from SlickCharts using curl_cffi ---
@@ -707,6 +716,14 @@ for t, s in stock_map.items():
                 sh['type'] = 'golden'
                 sh['count'] = 1
                 sh['last_seen'] = actual_trading_date
+                # Log new golden cross
+                signal_log.append({
+                    "date": actual_trading_date,
+                    "ticker": t,
+                    "name": name,
+                    "type": "golden",
+                    "entry_price": price
+                })
                 
         elif is_danger_dead_cross:
             if sh['type'] == 'dead':
@@ -717,6 +734,14 @@ for t, s in stock_map.items():
                 sh['type'] = 'dead'
                 sh['count'] = 1
                 sh['last_seen'] = actual_trading_date
+                # Log new dead cross
+                signal_log.append({
+                    "date": actual_trading_date,
+                    "ticker": t,
+                    "name": name,
+                    "type": "dead",
+                    "entry_price": price
+                })
                 
         else:
             # Neither condition is met
@@ -812,3 +837,103 @@ js_path = os.path.join(output_dir, "index_constituents.js")
 with open(js_path, 'w', encoding='utf-8') as f:
     f.write(f"const INDEX_DATA = {json.dumps(results, ensure_ascii=False, indent=2)};\n")
 print(f"✅ JS 데이터가 {js_path}에 저장되었습니다.")
+
+# Save Signal Log
+# Keep only the last 30 days of signals approximately (e.g. 500 records max)
+if len(signal_log) > 1000:
+    signal_log = signal_log[-1000:]
+with open(signal_log_path, 'w', encoding='utf-8') as f:
+    json.dump(signal_log, f, ensure_ascii=False, indent=2)
+
+signal_log_js_path = os.path.join(output_dir, "signal_log.js")
+with open(signal_log_js_path, 'w', encoding='utf-8') as f:
+    f.write(f"const SIGNAL_LOG_DATA = {json.dumps(signal_log, ensure_ascii=False, indent=2)};\n")
+print(f"✅ JS 시그널 로그 데이터가 {signal_log_js_path}에 저장되었습니다.")
+
+# --- 8. Telegram Notification ---
+def send_telegram_notification():
+    """골든크로스 종목 리스트를 텔레그램으로 전송합니다."""
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if not os.path.exists(env_path):
+        print("\n⚠️ .env 파일이 없어 텔레그램 알림을 건너뜁니다.")
+        return
+    
+    # .env 파일에서 토큰과 채팅 ID 로드
+    env_vars = {}
+    with open(env_path, 'r') as f:
+        for line in f:
+            line = line.strip()
+            if '=' in line and not line.startswith('#'):
+                key, val = line.split('=', 1)
+                env_vars[key.strip()] = val.strip()
+    
+    bot_token = env_vars.get('TELEGRAM_BOT_TOKEN')
+    chat_id = env_vars.get('TELEGRAM_CHAT_ID')
+    
+    if not bot_token or not chat_id:
+        print("\n⚠️ TELEGRAM_BOT_TOKEN 또는 TELEGRAM_CHAT_ID가 .env에 없습니다.")
+        return
+    
+    # 골든크로스 종목 필터링
+    golden_stocks = [s for s in stocks_output if s.get('is_golden_cross_opportunity')]
+    dead_stocks = [s for s in stocks_output if s.get('is_danger_dead_cross')]
+    
+    if not golden_stocks and not dead_stocks:
+        print("\n📭 골든크로스/데드크로스 종목이 없어 텔레그램 알림을 건너뜁니다.")
+        return
+    
+    # 메시지 구성 (HTML 파싱 모드)
+    msg_lines = [f"📊 <b>Jypark13 스크리너 알림</b>", f"📅 기준일: <code>{run_date_str}</code>", ""]
+    
+    if golden_stocks:
+        msg_lines.append(f"🚀 <b>최적 매수 타이밍</b> ({len(golden_stocks)}종목)")
+        msg_lines.append("상승 모멘텀 + 최근 2일 골든크로스 발생")
+        msg_lines.append("")
+        for s in golden_stocks:
+            ticker = s['ticker']
+            name = s.get('name', '')
+            pct_1d = s.get('pct_1d')
+            streak = s.get('golden_cross_count', 0)
+            
+            pct_str = f"{pct_1d:+.1f}%" if pct_1d is not None else "-"
+            streak_str = f" ({streak}일)" if streak >= 2 else ""
+            
+            msg_lines.append(f"• <code>{ticker}</code> {name} | 1D: {pct_str}{streak_str}")
+        msg_lines.append("")
+    
+    if dead_stocks:
+        msg_lines.append(f"💀 <b>투매 경고</b> ({len(dead_stocks)}종목)")
+        msg_lines.append("하락 모멘텀 + 최근 2일 데드크로스 발생")
+        msg_lines.append("")
+        for s in dead_stocks:
+            ticker = s['ticker']
+            name = s.get('name', '')
+            pct_1d = s.get('pct_1d')
+            streak = s.get('dead_cross_count', 0)
+            
+            pct_str = f"{pct_1d:+.1f}%" if pct_1d is not None else "-"
+            streak_str = f" ({streak}일)" if streak >= 2 else ""
+            
+            msg_lines.append(f"• <code>{ticker}</code> {name} | 1D: {pct_str}{streak_str}")
+    
+    message = "\n".join(msg_lines)
+    
+    # 텔레그램 API 전송
+    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+    payload = {
+        "chat_id": chat_id,
+        "text": message,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": True
+    }
+    
+    try:
+        resp = requests.post(url, json=payload, timeout=10)
+        if resp.status_code == 200:
+            print(f"\n📲 텔레그램 알림 전송 성공! (골든크로스 {len(golden_stocks)}개, 데드크로스 {len(dead_stocks)}개)")
+        else:
+            print(f"\n❌ 텔레그램 전송 실패: {resp.status_code} - {resp.text}")
+    except Exception as e:
+        print(f"\n❌ 텔레그램 전송 에러: {e}")
+
+send_telegram_notification()
