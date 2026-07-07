@@ -549,6 +549,7 @@ baseline_date = pd.Timestamp(run_date_str)
 
 for t, s in stock_map.items():
     series = all_data.get(t)
+    name = s.get('name', t)
     
     price = None
     pct_1d = None

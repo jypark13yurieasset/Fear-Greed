@@ -2,7 +2,7 @@
   {
     "date": "2026-07-06",
     "ticker": "AAPL",
-    "name": "SpaceX",
+    "name": "Apple Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 312.6600036621094
@@ -10,7 +10,7 @@
   {
     "date": "2026-07-06",
     "ticker": "TSLA",
-    "name": "SpaceX",
+    "name": "Tesla, Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 419.7699890136719
@@ -18,7 +18,7 @@
   {
     "date": "2026-07-06",
     "ticker": "STX",
-    "name": "SpaceX",
+    "name": "Seagate Technology Holdings plc",
     "type": "dead",
     "streak": 1,
     "entry_price": 868.260009765625
@@ -26,7 +26,7 @@
   {
     "date": "2026-07-06",
     "ticker": "BA",
-    "name": "SpaceX",
+    "name": "The Boeing Company",
     "type": "golden",
     "streak": 1,
     "entry_price": 234.5399932861328
@@ -34,7 +34,7 @@
   {
     "date": "2026-07-06",
     "ticker": "GILD",
-    "name": "SpaceX",
+    "name": "Gilead Sciences, Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 129.61000061035156
@@ -42,7 +42,7 @@
   {
     "date": "2026-07-06",
     "ticker": "ISRG",
-    "name": "SpaceX",
+    "name": "Intuitive Surgical, Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 432.8299865722656
@@ -50,7 +50,7 @@
   {
     "date": "2026-07-06",
     "ticker": "BX",
-    "name": "SpaceX",
+    "name": "Blackstone Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 123.41999816894531
@@ -58,7 +58,7 @@
   {
     "date": "2026-07-06",
     "ticker": "SPGI",
-    "name": "SpaceX",
+    "name": "S&P Global Inc.",
     "type": "golden",
     "streak": 2,
     "entry_price": 447.2200012207031
@@ -66,7 +66,7 @@
   {
     "date": "2026-07-06",
     "ticker": "LMT",
-    "name": "SpaceX",
+    "name": "Lockheed Martin Corporation",
     "type": "golden",
     "streak": 1,
     "entry_price": 538.0
@@ -74,7 +74,7 @@
   {
     "date": "2026-07-06",
     "ticker": "VRT",
-    "name": "SpaceX",
+    "name": "Vertiv Holdings Co",
     "type": "dead",
     "streak": 2,
     "entry_price": 318.4700012207031
@@ -82,7 +82,7 @@
   {
     "date": "2026-07-06",
     "ticker": "NOW",
-    "name": "SpaceX",
+    "name": "ServiceNow, Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 107.93000030517578
@@ -90,7 +90,7 @@
   {
     "date": "2026-07-06",
     "ticker": "MCK",
-    "name": "SpaceX",
+    "name": "McKesson Corporation",
     "type": "golden",
     "streak": 2,
     "entry_price": 784.22998046875
@@ -98,7 +98,7 @@
   {
     "date": "2026-07-06",
     "ticker": "EMR",
-    "name": "SpaceX",
+    "name": "Emerson Electric Co.",
     "type": "dead",
     "streak": 2,
     "entry_price": 141.55999755859375
@@ -106,7 +106,7 @@
   {
     "date": "2026-07-06",
     "ticker": "CRH",
-    "name": "SpaceX",
+    "name": "CRH plc",
     "type": "dead",
     "streak": 1,
     "entry_price": 107.58000183105469
@@ -114,7 +114,7 @@
   {
     "date": "2026-07-06",
     "ticker": "CTAS",
-    "name": "SpaceX",
+    "name": "Cintas Corporation",
     "type": "golden",
     "streak": 2,
     "entry_price": 178.24000549316406
@@ -122,7 +122,7 @@
   {
     "date": "2026-07-06",
     "ticker": "KMI",
-    "name": "SpaceX",
+    "name": "Kinder Morgan, Inc.",
     "type": "dead",
     "streak": 1,
     "entry_price": 31.690000534057617
@@ -130,7 +130,7 @@
   {
     "date": "2026-07-06",
     "ticker": "REGN",
-    "name": "SpaceX",
+    "name": "Regeneron Pharmaceuticals, Inc.",
     "type": "golden",
     "streak": 2,
     "entry_price": 649.8099975585938
@@ -138,7 +138,7 @@
   {
     "date": "2026-07-06",
     "ticker": "COHR",
-    "name": "SpaceX",
+    "name": "Coherent Corp.",
     "type": "dead",
     "streak": 2,
     "entry_price": 335.70001220703125
@@ -146,7 +146,7 @@
   {
     "date": "2026-07-06",
     "ticker": "FIX",
-    "name": "SpaceX",
+    "name": "Comfort Systems USA, Inc.",
     "type": "dead",
     "streak": 2,
     "entry_price": 1793.030029296875
@@ -154,7 +154,7 @@
   {
     "date": "2026-07-06",
     "ticker": "HPE",
-    "name": "SpaceX",
+    "name": "Hewlett Packard Enterprise Company",
     "type": "dead",
     "streak": 2,
     "entry_price": 43.150001525878906
@@ -162,7 +162,7 @@
   {
     "date": "2026-07-06",
     "ticker": "TRGP",
-    "name": "SpaceX",
+    "name": "Targa Resources Corp.",
     "type": "dead",
     "streak": 2,
     "entry_price": 263.5199890136719
@@ -170,7 +170,7 @@
   {
     "date": "2026-07-06",
     "ticker": "CVNA",
-    "name": "SpaceX",
+    "name": "Carvana Co.",
     "type": "golden",
     "streak": 1,
     "entry_price": 70.37999725341797
@@ -178,7 +178,7 @@
   {
     "date": "2026-07-06",
     "ticker": "GRMN",
-    "name": "SpaceX",
+    "name": "Garmin Ltd.",
     "type": "golden",
     "streak": 2,
     "entry_price": 245.22000122070312
@@ -186,7 +186,7 @@
   {
     "date": "2026-07-06",
     "ticker": "WAB",
-    "name": "SpaceX",
+    "name": "Westinghouse Air Brake Technologies Corporation",
     "type": "dead",
     "streak": 1,
     "entry_price": 261.30999755859375
@@ -194,7 +194,7 @@
   {
     "date": "2026-07-06",
     "ticker": "CCL",
-    "name": "SpaceX",
+    "name": "Carnival Corporation Ltd.",
     "type": "dead",
     "streak": 1,
     "entry_price": 27.510000228881836
@@ -202,7 +202,7 @@
   {
     "date": "2026-07-06",
     "ticker": "JBL",
-    "name": "SpaceX",
+    "name": "Jabil Inc.",
     "type": "dead",
     "streak": 2,
     "entry_price": 338.2200012207031
@@ -210,7 +210,7 @@
   {
     "date": "2026-07-06",
     "ticker": "IRM",
-    "name": "SpaceX",
+    "name": "Iron Mountain Incorporated",
     "type": "dead",
     "streak": 2,
     "entry_price": 116.37999725341797
@@ -218,7 +218,7 @@
   {
     "date": "2026-07-06",
     "ticker": "WDAY",
-    "name": "SpaceX",
+    "name": "Workday, Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 137.99000549316406
@@ -226,7 +226,7 @@
   {
     "date": "2026-07-06",
     "ticker": "Q",
-    "name": "SpaceX",
+    "name": "Qnity Electronics, Inc.",
     "type": "dead",
     "streak": 2,
     "entry_price": 146.67999267578125
@@ -234,7 +234,7 @@
   {
     "date": "2026-07-06",
     "ticker": "DOV",
-    "name": "SpaceX",
+    "name": "Dover Corporation",
     "type": "dead",
     "streak": 1,
     "entry_price": 214.74000549316406
@@ -242,7 +242,7 @@
   {
     "date": "2026-07-06",
     "ticker": "OTIS",
-    "name": "SpaceX",
+    "name": "Otis Worldwide Corporation",
     "type": "golden",
     "streak": 2,
     "entry_price": 73.48999786376953
@@ -250,7 +250,7 @@
   {
     "date": "2026-07-06",
     "ticker": "CPAY",
-    "name": "SpaceX",
+    "name": "Corpay, Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 356.54998779296875
@@ -258,7 +258,7 @@
   {
     "date": "2026-07-06",
     "ticker": "DRI",
-    "name": "SpaceX",
+    "name": "Darden Restaurants, Inc.",
     "type": "dead",
     "streak": 1,
     "entry_price": 203.22000122070312
@@ -266,7 +266,7 @@
   {
     "date": "2026-07-06",
     "ticker": "OMC",
-    "name": "SpaceX",
+    "name": "Omnicom Group Inc.",
     "type": "golden",
     "streak": 2,
     "entry_price": 79.9000015258789
@@ -274,7 +274,7 @@
   {
     "date": "2026-07-06",
     "ticker": "FIS",
-    "name": "SpaceX",
+    "name": "Fidelity National Information Services, Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 41.27000045776367
@@ -282,7 +282,7 @@
   {
     "date": "2026-07-06",
     "ticker": "LEN",
-    "name": "SpaceX",
+    "name": "Lennar Corporation",
     "type": "dead",
     "streak": 2,
     "entry_price": 87.6500015258789
@@ -290,7 +290,7 @@
   {
     "date": "2026-07-06",
     "ticker": "EFX",
-    "name": "SpaceX",
+    "name": "Equifax Inc.",
     "type": "golden",
     "streak": 1,
     "entry_price": 171.94000244140625
@@ -298,7 +298,7 @@
   {
     "date": "2026-07-06",
     "ticker": "TXT",
-    "name": "SpaceX",
+    "name": "Textron Inc.",
     "type": "golden",
     "streak": 2,
     "entry_price": 93.83999633789062
@@ -306,7 +306,7 @@
   {
     "date": "2026-07-06",
     "ticker": "HST",
-    "name": "SpaceX",
+    "name": "Host Hotels & Resorts, Inc.",
     "type": "dead",
     "streak": 2,
     "entry_price": 23.25
@@ -314,7 +314,7 @@
   {
     "date": "2026-07-06",
     "ticker": "GNRC",
-    "name": "SpaceX",
+    "name": "Generac Holdings Inc.",
     "type": "dead",
     "streak": 1,
     "entry_price": 257.80999755859375
@@ -322,7 +322,7 @@
   {
     "date": "2026-07-06",
     "ticker": "TKO",
-    "name": "SpaceX",
+    "name": "TKO Group Holdings, Inc.",
     "type": "dead",
     "streak": 1,
     "entry_price": 192.3000030517578
@@ -330,7 +330,7 @@
   {
     "date": "2026-07-06",
     "ticker": "TYL",
-    "name": "SpaceX",
+    "name": "Tyler Technologies, Inc.",
     "type": "golden",
     "streak": 2,
     "entry_price": 319.010009765625
@@ -338,7 +338,7 @@
   {
     "date": "2026-07-06",
     "ticker": "BF.B",
-    "name": "SpaceX",
+    "name": "Brown-Forman Corporation",
     "type": "dead",
     "streak": 1,
     "entry_price": 25.75
@@ -346,7 +346,7 @@
   {
     "date": "2026-07-06",
     "ticker": "AES",
-    "name": "SpaceX",
+    "name": "The AES Corporation",
     "type": "dead",
     "streak": 2,
     "entry_price": 14.569999694824219
@@ -354,7 +354,7 @@
   {
     "date": "2026-07-06",
     "ticker": "NWSA",
-    "name": "SpaceX",
+    "name": "News Corporation",
     "type": "golden",
     "streak": 1,
     "entry_price": 26.639999389648438
@@ -362,7 +362,7 @@
   {
     "date": "2026-07-06",
     "ticker": "UHS",
-    "name": "SpaceX",
+    "name": "Universal Health Services, Inc.",
     "type": "golden",
     "streak": 2,
     "entry_price": 158.0500030517578
@@ -370,7 +370,7 @@
   {
     "date": "2026-07-06",
     "ticker": "FDS",
-    "name": "SpaceX",
+    "name": "FactSet Research Systems Inc.",
     "type": "golden",
     "streak": 2,
     "entry_price": 252.1999969482422
@@ -378,7 +378,7 @@
   {
     "date": "2026-07-06",
     "ticker": "ARM",
-    "name": "SpaceX",
+    "name": "Arm Holdings plc",
     "type": "dead",
     "streak": 2,
     "entry_price": 322.239990234375
@@ -386,7 +386,7 @@
   {
     "date": "2026-07-06",
     "ticker": "NBIS",
-    "name": "SpaceX",
+    "name": "Nebius Group N.V.",
     "type": "dead",
     "streak": 1,
     "entry_price": 213.02000427246094
@@ -394,7 +394,7 @@
   {
     "date": "2026-07-06",
     "ticker": "TRI",
-    "name": "SpaceX",
+    "name": "Thomson Reuters Corporation",
     "type": "golden",
     "streak": 2,
     "entry_price": 87.86000061035156
