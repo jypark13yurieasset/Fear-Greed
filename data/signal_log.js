@@ -398,5 +398,357 @@ const SIGNAL_LOG_DATA = [
     "type": "golden",
     "streak": 2,
     "entry_price": 87.86000061035156
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 310.6600036621094
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "META",
+    "name": "Meta Platforms, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 615.5800170898438
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "TSLA",
+    "name": "Tesla, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 402.8999938964844
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "SNDK",
+    "name": "Sandisk Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1617.699951171875
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 230.6999969482422
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 827.6400146484375
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "WDC",
+    "name": "Western Digital Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 532.0999755859375
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "BA",
+    "name": "The Boeing Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 231.67999267578125
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "GILD",
+    "name": "Gilead Sciences, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 136.36000061035156
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "ETN",
+    "name": "Eaton Corporation plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 395.67999267578125
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "ISRG",
+    "name": "Intuitive Surgical, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 427.29998779296875
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "BX",
+    "name": "Blackstone Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 120.88999938964844
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 535.3800048828125
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "NOW",
+    "name": "ServiceNow, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 110.7300033569336
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "CMI",
+    "name": "Cummins Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 660.1400146484375
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "JCI",
+    "name": "Johnson Controls International plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 140.6199951171875
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "KMI",
+    "name": "Kinder Morgan, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 32.4900016784668
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "PSX",
+    "name": "Phillips 66",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 178.83999633789062
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "ORLY",
+    "name": "O'Reilly Automotive, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 86.6500015258789
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "CRH",
+    "name": "CRH plc",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 106.20999908447266
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "TGT",
+    "name": "Target Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 127.55000305175781
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "OKE",
+    "name": "ONEOK, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 90.66999816894531
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "TER",
+    "name": "Teradyne, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 343.1099853515625
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "CVNA",
+    "name": "Carvana Co.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 67.48999786376953
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "FLEX",
+    "name": "Flex Ltd.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 131.52000427246094
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "IDXX",
+    "name": "IDEXX Laboratories, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 570.25
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "MSCI",
+    "name": "MSCI Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 608.0900268554688
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 259.19000244140625
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "CCL",
+    "name": "Carnival Corporation Ltd.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 26.68000030517578
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "WDAY",
+    "name": "Workday, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 143.64999389648438
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "DOV",
+    "name": "Dover Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 214.0500030517578
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "HUBB",
+    "name": "Hubbell Incorporated",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 478.8900146484375
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "DRI",
+    "name": "Darden Restaurants, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 204.5
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "CPAY",
+    "name": "Corpay, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 357.1000061035156
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "FIS",
+    "name": "Fidelity National Information Services, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 42.599998474121094
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "EFX",
+    "name": "Equifax Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 174.5800018310547
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "CF",
+    "name": "CF Industries Holdings, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 114.94000244140625
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "TKO",
+    "name": "TKO Group Holdings, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 193.5800018310547
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "GNRC",
+    "name": "Generac Holdings Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 235.8000030517578
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "BF.B",
+    "name": "Brown-Forman Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 25.90999984741211
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "NWSA",
+    "name": "News Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 26.920000076293945
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "NWS",
+    "name": "News Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 30.469999313354492
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "NBIS",
+    "name": "Nebius Group N.V.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 195.19000244140625
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "FER",
+    "name": "Ferrovial N.V.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 65.8499984741211
   }
 ];
