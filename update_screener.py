@@ -674,25 +674,25 @@ for t, s in stock_map.items():
         # MACD
         macd_state = calc_macd_state(closes)
         
-        # Danger Dead Cross (MACD Histogram < 0 AND EMA 8 crossed below EMA 21 in last 2 days)
+        # Danger Dead Cross (MACD Histogram < 0 AND EMA 8 crossed below EMA 21 in last 3 days)
         is_danger_dead_cross = False
         if macd_state in [1, 2] and ema8 is not None and ema21 is not None and ema8 < ema21: # Histogram < 0 AND Currently in Dead Cross state
             ema8_arr = get_ema_array(closes, 8)
             ema21_arr = get_ema_array(closes, 21)
-            if len(ema8_arr) >= 3:
-                for i in range(-2, 0):
+            if len(ema8_arr) >= 4:
+                for i in range(-3, 0):
                     if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
                         if ema8_arr[i] < ema21_arr[i] and ema8_arr[i-1] >= ema21_arr[i-1]:
                             is_danger_dead_cross = True
                             break
                             
-        # Golden Cross Opportunity (MACD Histogram > 0 AND EMA 8 crossed above EMA 21 in last 2 days)
+        # Golden Cross Opportunity (MACD Histogram > 0 AND EMA 8 crossed above EMA 21 in last 3 days)
         is_golden_cross_opportunity = False
         if macd_state in [3, 4] and ema8 is not None and ema21 is not None and ema8 > ema21: # Histogram > 0 AND Currently in Golden Cross state
             ema8_arr = get_ema_array(closes, 8)
             ema21_arr = get_ema_array(closes, 21)
-            if len(ema8_arr) >= 3:
-                for i in range(-2, 0):
+            if len(ema8_arr) >= 4:
+                for i in range(-3, 0):
                     if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
                         if ema8_arr[i] > ema21_arr[i] and ema8_arr[i-1] <= ema21_arr[i-1]:
                             is_golden_cross_opportunity = True
