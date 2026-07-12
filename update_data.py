@@ -459,33 +459,61 @@ def get_timefolio_holdings(date_override=None):
         r.raise_for_status()
         soup = BeautifulSoup(r.text, 'html.parser')
         
-        tables = soup.find_all('table')
-        if len(tables) < 3:
-            print("Timefolio page does not have enough tables.")
-            return None
-            
-        # Table 0 is holdings
-        holdings_table = tables[0]
-        rows = holdings_table.find_all('tr')
         holdings = []
-        for r in rows[1:]: # skip header
-            cells = [c.get_text(strip=True) for c in r.find_all('td')]
-            if len(cells) >= 5:
-                ticker_raw = cells[0]
-                name = cells[1]
-                weight_str = cells[4]
-                try:
-                    weight = float(weight_str)
-                    ticker = ''
-                    if ticker_raw:
-                        ticker = ticker_raw.strip().split()[0].upper()
-                    holdings.append({
-                        'name': name,
-                        'ticker': ticker,
-                        'weight': weight
-                    })
-                except ValueError:
-                    pass
+        
+        # Strategy 1: Parse the full holdings table (class="table3 moreList1")
+        full_table = soup.find('table', class_='moreList1')
+        if full_table:
+            rows = full_table.find_all('tr')
+            for row in rows[1:]:  # skip header
+                cells = [c.get_text(strip=True) for c in row.find_all('td')]
+                if len(cells) >= 5:
+                    ticker_raw = cells[0]  # e.g. "SNDK US EQUITY"
+                    name = cells[1]        # e.g. "Sandisk Corp"
+                    weight_str = cells[4]  # e.g. "7.14"
+                    try:
+                        weight = float(weight_str)
+                        ticker = ''
+                        if ticker_raw:
+                            ticker = ticker_raw.strip().split()[0].upper()
+                        holdings.append({
+                            'name': name,
+                            'ticker': ticker,
+                            'weight': weight
+                        })
+                    except ValueError:
+                        pass
+        
+        # Strategy 2 (fallback): Parse the TOP 10 list (ul#todayTop10)
+        if not holdings:
+            top10_ul = soup.find('ul', id='todayTop10')
+            if top10_ul:
+                items = top10_ul.find_all('li')
+                for item in items:
+                    name_div = item.find('div', class_='name')
+                    divs = item.find_all('div')
+                    if name_div and len(divs) >= 2:
+                        # Extract name (remove the rank number span)
+                        name_text = name_div.get_text(strip=True)
+                        rank_span = name_div.find('span')
+                        if rank_span:
+                            name_text = name_text.replace(rank_span.get_text(strip=True), '', 1).strip()
+                        # Weight is in the second div
+                        weight_text = divs[1].get_text(strip=True).replace('%', '')
+                        try:
+                            weight = float(weight_text)
+                            holdings.append({
+                                'name': name_text,
+                                'ticker': name_text,
+                                'weight': weight
+                            })
+                        except ValueError:
+                            pass
+        
+        if not holdings:
+            print("Timefolio: 구성종목을 찾을 수 없습니다.")
+            return None
+        
         # Top 10
         top10 = holdings[:10]
         

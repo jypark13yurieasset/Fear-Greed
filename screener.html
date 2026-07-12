@@ -1109,6 +1109,13 @@
                                 <label class="checkbox-label"><input type="checkbox" name="f-sma200" value="negative"> 📉 음수 (≤ 0%)</label>
                             </div>
                         </div>
+                        <div class="filter-item">
+                            <span class="filter-label">괴리율(%) (현재가 vs 목표가)</span>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label"><input type="checkbox" name="f-targetdist" value="positive"> 📈 양수 (목표가 > 현재가)</label>
+                                <label class="checkbox-label"><input type="checkbox" name="f-targetdist" value="negative"> 📉 음수 (목표가 ≤ 현재가)</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="filter-modal-footer">
@@ -1208,6 +1215,7 @@
                 ema: Array.from(document.querySelectorAll('input[name="f-ema"]:checked')).map(cb => cb.value),
                 sma50: Array.from(document.querySelectorAll('input[name="f-sma50"]:checked')).map(cb => cb.value),
                 sma200: Array.from(document.querySelectorAll('input[name="f-sma200"]:checked')).map(cb => cb.value),
+                targetDist: Array.from(document.querySelectorAll('input[name="f-targetdist"]:checked')).map(cb => cb.value),
             };
             closeFilterModal();
             applyFilters();
@@ -1331,6 +1339,15 @@
                         let valid = false;
                         if (df.sma200.includes('positive') && stock.dist_ma200 > 0) valid = true;
                         if (df.sma200.includes('negative') && stock.dist_ma200 <= 0) valid = true;
+                        if (!valid) return false;
+                    }
+
+                    // Target Dist (괴리율 +/-)
+                    if (df.targetDist && df.targetDist.length > 0) {
+                        if (stock.target_dist === null) return false;
+                        let valid = false;
+                        if (df.targetDist.includes('positive') && stock.target_dist > 0) valid = true;
+                        if (df.targetDist.includes('negative') && stock.target_dist <= 0) valid = true;
                         if (!valid) return false;
                     }
                 }

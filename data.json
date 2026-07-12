@@ -5385,75 +5385,75 @@
         ]
     },
     "2026-07-10": {
-        "fear_and_greed": 47,
-        "sp500_price": 7543.64,
-        "sp500_change": 0.81,
-        "nasdaq_price": 26206.89,
-        "nasdaq_change": 1.3,
-        "vix_price": 15.84,
-        "vix_change": -6.27,
-        "dxy_price": 100.94,
-        "dxy_change": -0.11,
+        "fear_and_greed": 49,
+        "sp500_price": 7575.39,
+        "sp500_change": 0.42,
+        "nasdaq_price": 26281.61,
+        "nasdaq_change": 0.29,
+        "vix_price": 15.03,
+        "vix_change": -5.11,
+        "dxy_price": 100.97,
+        "dxy_change": 0.02,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$28.730 T"
+                "mcap": "$28.707 T"
             },
             {
                 "rank": 2,
                 "name": "NVIDIA",
                 "code": "NVDA",
-                "mcap": "$4.911 T"
+                "mcap": "$5.109 T"
             },
             {
                 "rank": 3,
                 "name": "Apple",
                 "code": "AAPL",
-                "mcap": "$4.644 T"
+                "mcap": "$4.631 T"
             },
             {
                 "rank": 4,
                 "name": "Alphabet (Google)",
                 "code": "GOOG",
-                "mcap": "$4.347 T"
+                "mcap": "$4.332 T"
             },
             {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.397 T"
+                "mcap": "$3.394 T"
             },
             {
                 "rank": 6,
                 "name": "Microsoft",
                 "code": "MSFT",
-                "mcap": "$2.855 T"
+                "mcap": "$2.860 T"
             },
             {
                 "rank": 7,
                 "name": "Amazon",
                 "code": "AMZN",
-                "mcap": "$2.657 T"
+                "mcap": "$2.639 T"
             },
             {
                 "rank": 8,
                 "name": "TSMC",
                 "code": "TSM",
-                "mcap": "$2.266 T"
+                "mcap": "$2.251 T"
             },
             {
                 "rank": 9,
                 "name": "SpaceX",
                 "code": "SPCX",
-                "mcap": "$2.004 T"
+                "mcap": "$1.914 T"
             },
             {
                 "rank": 10,
                 "name": "Broadcom",
                 "code": "AVGO",
-                "mcap": "$1.908 T"
+                "mcap": "$1.902 T"
             },
             {
                 "rank": 11,
@@ -5465,43 +5465,43 @@
                 "rank": 12,
                 "name": "Meta Platforms (Facebook)",
                 "code": "META",
-                "mcap": "$1.602 T"
+                "mcap": "$1.698 T"
             },
             {
                 "rank": 13,
                 "name": "Tesla",
                 "code": "TSLA",
-                "mcap": "$1.526 T"
+                "mcap": "$1.531 T"
             },
             {
                 "rank": 14,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.269 T"
+                "mcap": "$1.277 T"
             },
             {
                 "rank": 15,
                 "name": "Samsung",
                 "code": "005930.KS",
-                "mcap": "$1.211 T"
+                "mcap": "$1.246 T"
             },
             {
                 "rank": 16,
                 "name": "Micron Technology",
                 "code": "MU",
-                "mcap": "$1.119 T"
+                "mcap": "$1.106 T"
             },
             {
                 "rank": 17,
-                "name": "Eli Lilly",
-                "code": "LLY",
-                "mcap": "$1.085 T"
+                "name": "Berkshire Hathaway",
+                "code": "BRK-B",
+                "mcap": "$1.064 T"
             },
             {
                 "rank": 18,
-                "name": "Berkshire Hathaway",
-                "code": "BRK-B",
-                "mcap": "$1.068 T"
+                "name": "Eli Lilly",
+                "code": "LLY",
+                "mcap": "$1.059 T"
             },
             {
                 "rank": 19,
@@ -5513,121 +5513,121 @@
                 "rank": 20,
                 "name": "Vanguard S&P 500 ETF",
                 "code": "VOO",
-                "mcap": "$988.82 B"
+                "mcap": "$993.36 B"
             }
         ],
-        "aaii_bullish": 37.7,
-        "aaii_neutral": 23.6,
-        "aaii_bearish": 38.7,
+        "aaii_bullish": 38.5,
+        "aaii_neutral": 24.8,
+        "aaii_bearish": 36.7,
         "aaii_date": "2026-07-08",
         "us_etfs": {
             "ARKK": {
-                "date": "2026-07-08",
+                "date": "2026-07-10",
                 "holdings": [
                     {
                         "ticker": "TSLA",
                         "name": "Tesla, Inc.",
-                        "weight": 10.12
+                        "weight": 10.21
                     },
                     {
                         "ticker": "TEM",
                         "name": "Tempus AI, Inc.",
-                        "weight": 5.75
+                        "weight": 5.88
                     },
                     {
                         "ticker": "CRSP",
                         "name": "CRISPR Therapeutics AG",
-                        "weight": 5.39
+                        "weight": 5.0
                     },
                     {
                         "ticker": "HOOD",
                         "name": "Robinhood Markets, Inc.",
-                        "weight": 5.02
+                        "weight": 4.82
                     },
                     {
                         "ticker": "SHOP",
                         "name": "Shopify Inc.",
-                        "weight": 4.43
-                    },
-                    {
-                        "ticker": "AMD",
-                        "name": "Advanced Micro Devices, Inc.",
-                        "weight": 4.21
+                        "weight": 4.48
                     },
                     {
                         "ticker": "SPCX",
                         "name": "Space Exploration Technologies Corp.",
-                        "weight": 4.0
+                        "weight": 4.33
+                    },
+                    {
+                        "ticker": "AMD",
+                        "name": "Advanced Micro Devices, Inc.",
+                        "weight": 4.32
                     },
                     {
                         "ticker": "COIN",
                         "name": "Coinbase Global, Inc.",
-                        "weight": 3.96
+                        "weight": 3.84
                     },
                     {
                         "ticker": "BEAM",
                         "name": "Beam Therapeutics Inc.",
-                        "weight": 3.63
+                        "weight": 3.43
                     },
                     {
                         "ticker": "RBLX",
                         "name": "Roblox Corporation",
-                        "weight": 3.42
+                        "weight": 3.4
                     }
                 ]
             },
             "IVES": {
-                "date": "2026-07-07",
+                "date": "2026-07-08",
                 "holdings": [
                     {
                         "ticker": "AAPL",
                         "name": "Apple Inc.",
-                        "weight": 5.2
+                        "weight": 5.25
                     },
                     {
                         "ticker": "META",
                         "name": "Meta Platforms, Inc.",
-                        "weight": 5.02
-                    },
-                    {
-                        "ticker": "AMZN",
-                        "name": "Amazon.com, Inc.",
-                        "weight": 4.89
+                        "weight": 4.93
                     },
                     {
                         "ticker": "TSM",
                         "name": "Taiwan Semiconductor Manufacturing Company Limited",
-                        "weight": 4.82
-                    },
-                    {
-                        "ticker": "GOOGL",
-                        "name": "Alphabet Inc.",
-                        "weight": 4.81
-                    },
-                    {
-                        "ticker": "MSFT",
-                        "name": "Microsoft Corporation",
-                        "weight": 4.76
+                        "weight": 4.88
                     },
                     {
                         "ticker": "NVDA",
                         "name": "NVIDIA Corporation",
+                        "weight": 4.88
+                    },
+                    {
+                        "ticker": "AMZN",
+                        "name": "Amazon.com, Inc.",
+                        "weight": 4.85
+                    },
+                    {
+                        "ticker": "AVGO",
+                        "name": "Broadcom Inc.",
+                        "weight": 4.78
+                    },
+                    {
+                        "ticker": "GOOGL",
+                        "name": "Alphabet Inc.",
+                        "weight": 4.75
+                    },
+                    {
+                        "ticker": "MSFT",
+                        "name": "Microsoft Corporation",
                         "weight": 4.7
                     },
                     {
                         "ticker": "AMD",
                         "name": "Advanced Micro Devices, Inc.",
-                        "weight": 4.6
+                        "weight": 4.62
                     },
                     {
                         "ticker": "TSLA",
                         "name": "Tesla, Inc.",
-                        "weight": 4.58
-                    },
-                    {
-                        "ticker": "AVGO",
-                        "name": "Broadcom Inc.",
-                        "weight": 4.55
+                        "weight": 4.48
                     }
                 ]
             },
