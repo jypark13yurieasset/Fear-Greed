@@ -239,7 +239,8 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-            margin-bottom: 0; /* Align with layout grid */
+            margin-bottom: 0;
+            /* Align with layout grid */
         }
 
         .card::before {
@@ -469,9 +470,17 @@
             letter-spacing: 0.02em;
         }
 
-        .aaii-labels .label-bull { color: #34d399; }
-        .aaii-labels .label-neutral { color: #fbbf24; }
-        .aaii-labels .label-bear { color: #f87171; }
+        .aaii-labels .label-bull {
+            color: #34d399;
+        }
+
+        .aaii-labels .label-neutral {
+            color: #fbbf24;
+        }
+
+        .aaii-labels .label-bear {
+            color: #f87171;
+        }
 
         .aaii-survey-date {
             font-size: 0.65rem;
@@ -488,8 +497,14 @@
             font-size: 0.78rem;
             font-weight: 600;
         }
-        .aaii-table-mini .t-bull { color: #34d399; }
-        .aaii-table-mini .t-bear { color: #f87171; }
+
+        .aaii-table-mini .t-bull {
+            color: #34d399;
+        }
+
+        .aaii-table-mini .t-bear {
+            color: #f87171;
+        }
 
         /* ETF Holdings Comparison Section */
         .etf-holdings-grid {
@@ -522,7 +537,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.1), rgba(255,255,255,0));
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
         }
 
         .etf-card-header {
@@ -629,15 +644,20 @@
         }
 
         /* Common holding & Close gap asset highlight (Sky Blue) */
-        .common-holding, .close-gap-highlight {
+        .common-holding,
+        .close-gap-highlight {
             background-color: rgba(56, 189, 248, 0.07) !important;
             transition: background-color 0.2s ease;
         }
-        .common-holding td, .close-gap-highlight td {
+
+        .common-holding td,
+        .close-gap-highlight td {
             color: #38bdf8 !important;
             font-weight: 600;
         }
-        .common-holding td.rank, .close-gap-highlight td.rank {
+
+        .common-holding td.rank,
+        .close-gap-highlight td.rank {
             color: rgba(56, 189, 248, 0.5) !important;
         }
 
@@ -646,10 +666,12 @@
             background-color: rgba(167, 139, 250, 0.08) !important;
             transition: background-color 0.2s ease;
         }
+
         .common-holding-us td {
             color: #a78bfa !important;
             font-weight: 600;
         }
+
         .common-holding-us td.rank {
             color: rgba(167, 139, 250, 0.5) !important;
         }
@@ -685,7 +707,6 @@
             background: rgba(124, 140, 245, 0.15);
             font-weight: 600;
         }
-
     </style>
 </head>
 
@@ -812,7 +833,8 @@
         </section>
 
         <section class="etf-holdings-section" style="margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary);">
+            <h3
+                style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary);">
                 2. 액티브 ETF 비교
             </h3>
             <div class="etf-holdings-grid" style="grid-template-columns: repeat(5, 1fr);">
@@ -820,7 +842,8 @@
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
                         <div class="etf-card-title">삼성액티브</div>
-                        <div class="etf-card-sub">465610 &nbsp;|&nbsp; <span id="koact-update-date">기준일: 2026.06.17</span></div>
+                        <div class="etf-card-sub">465610 &nbsp;|&nbsp; <span id="koact-update-date">기준일:
+                                2026.06.17</span></div>
                     </div>
                     <table class="etf-table">
                         <thead>
@@ -831,20 +854,61 @@
                             </tr>
                         </thead>
                         <tbody id="koact-holdings-body">
-                            <tr><td class="rank">1</td><td>SPCX</td><td class="weight">8.60%</td></tr>
-                            <tr><td class="rank">2</td><td>AMD</td><td class="weight">7.40%</td></tr>
-                            <tr><td class="rank">3</td><td>ARM</td><td class="weight">7.20%</td></tr>
-                            <tr><td class="rank">4</td><td>SNDK</td><td class="weight">6.00%</td></tr>
-                            <tr><td class="rank">5</td><td>INTC</td><td class="weight">5.80%</td></tr>
-                            <tr><td class="rank">6</td><td>NVDA</td><td class="weight">5.10%</td></tr>
-                            <tr><td class="rank">7</td><td>GOOGL</td><td class="weight">4.90%</td></tr>
-                            <tr><td class="rank">8</td><td>BE</td><td class="weight">4.20%</td></tr>
-                            <tr><td class="rank">9</td><td>MU</td><td class="weight">3.90%</td></tr>
-                            <tr><td class="rank">10</td><td>AMZN</td><td class="weight">3.80%</td></tr>
+                            <tr>
+                                <td class="rank">1</td>
+                                <td>SPCX</td>
+                                <td class="weight">8.60%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">2</td>
+                                <td>AMD</td>
+                                <td class="weight">7.40%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">3</td>
+                                <td>ARM</td>
+                                <td class="weight">7.20%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">4</td>
+                                <td>SNDK</td>
+                                <td class="weight">6.00%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">5</td>
+                                <td>INTC</td>
+                                <td class="weight">5.80%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">6</td>
+                                <td>NVDA</td>
+                                <td class="weight">5.10%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">7</td>
+                                <td>GOOGL</td>
+                                <td class="weight">4.90%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">8</td>
+                                <td>BE</td>
+                                <td class="weight">4.20%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">9</td>
+                                <td>MU</td>
+                                <td class="weight">3.90%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">10</td>
+                                <td>AMZN</td>
+                                <td class="weight">3.80%</td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="etf-source-link">
-                        <a href="https://www.samsungactive.co.kr/etf/view.do?id=2ETFQ1" target="_blank" rel="noopener">삼성액티브 공식 페이지 →</a>
+                        <a href="https://www.samsungactive.co.kr/etf/view.do?id=2ETFQ1" target="_blank"
+                            rel="noopener">삼성액티브 공식 페이지 →</a>
                     </div>
                 </div>
 
@@ -852,7 +916,8 @@
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
                         <div class="etf-card-title">타임폴리오</div>
-                        <div class="etf-card-sub">465620 &nbsp;|&nbsp; <span id="time-update-date">기준일: 2026.06.17</span></div>
+                        <div class="etf-card-sub">465620 &nbsp;|&nbsp; <span id="time-update-date">기준일:
+                                2026.06.17</span></div>
                     </div>
                     <table class="etf-table">
                         <thead>
@@ -863,20 +928,61 @@
                             </tr>
                         </thead>
                         <tbody id="time-holdings-body">
-                            <tr><td class="rank">1</td><td>MU</td><td class="weight">6.73%</td></tr>
-                            <tr><td class="rank">2</td><td>SNDK</td><td class="weight">6.66%</td></tr>
-                            <tr><td class="rank">3</td><td>INTC</td><td class="weight">5.54%</td></tr>
-                            <tr><td class="rank">4</td><td>ARM</td><td class="weight">5.32%</td></tr>
-                            <tr><td class="rank">5</td><td>NVDA</td><td class="weight">4.67%</td></tr>
-                            <tr><td class="rank">6</td><td>MRVL</td><td class="weight">4.02%</td></tr>
-                            <tr><td class="rank">7</td><td>AMD</td><td class="weight">3.46%</td></tr>
-                            <tr><td class="rank">8</td><td>DELL</td><td class="weight">3.15%</td></tr>
-                            <tr><td class="rank">9</td><td>CRDO</td><td class="weight">3.02%</td></tr>
-                            <tr><td class="rank">10</td><td>SPCX</td><td class="weight">3.02%</td></tr>
+                            <tr>
+                                <td class="rank">1</td>
+                                <td>MU</td>
+                                <td class="weight">6.73%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">2</td>
+                                <td>SNDK</td>
+                                <td class="weight">6.66%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">3</td>
+                                <td>INTC</td>
+                                <td class="weight">5.54%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">4</td>
+                                <td>ARM</td>
+                                <td class="weight">5.32%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">5</td>
+                                <td>NVDA</td>
+                                <td class="weight">4.67%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">6</td>
+                                <td>MRVL</td>
+                                <td class="weight">4.02%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">7</td>
+                                <td>AMD</td>
+                                <td class="weight">3.46%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">8</td>
+                                <td>DELL</td>
+                                <td class="weight">3.15%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">9</td>
+                                <td>CRDO</td>
+                                <td class="weight">3.02%</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">10</td>
+                                <td>SPCX</td>
+                                <td class="weight">3.02%</td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="etf-source-link">
-                        <a href="https://timeetf.co.kr/m11_view.php?idx=2&cate=" target="_blank" rel="noopener">TIME ETF 공식 페이지 →</a>
+                        <a href="https://timeetf.co.kr/m11_view.php?idx=2&cate=" target="_blank" rel="noopener">TIME ETF
+                            공식 페이지 →</a>
                     </div>
                 </div>
 
@@ -898,7 +1004,8 @@
                         </tbody>
                     </table>
                     <div class="etf-source-link">
-                        <a href="https://stockanalysis.com/etf/arkk/holdings/" target="_blank" rel="noopener">ARKK 상세 정보 →</a>
+                        <a href="https://stockanalysis.com/etf/arkk/holdings/" target="_blank" rel="noopener">ARKK 상세 정보
+                            →</a>
                     </div>
                 </div>
 
@@ -920,7 +1027,8 @@
                         </tbody>
                     </table>
                     <div class="etf-source-link">
-                        <a href="https://stockanalysis.com/etf/ives/holdings/" target="_blank" rel="noopener">IVES 상세 정보 →</a>
+                        <a href="https://stockanalysis.com/etf/ives/holdings/" target="_blank" rel="noopener">IVES 상세 정보
+                            →</a>
                     </div>
                 </div>
 
@@ -939,11 +1047,14 @@
                             </tr>
                         </thead>
                         <tbody id="grny-holdings-body">
-                            <tr><td colspan="3" style="text-align: center;">Loading...</td></tr>
+                            <tr>
+                                <td colspan="3" style="text-align: center;">Loading...</td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="etf-source-link">
-                        <a href="https://stockanalysis.com/etf/grny/holdings/" target="_blank" rel="noopener">GRNY 상세 정보 →</a>
+                        <a href="https://stockanalysis.com/etf/grny/holdings/" target="_blank" rel="noopener">GRNY 상세 정보
+                            →</a>
                     </div>
                 </div>
             </div>
@@ -951,11 +1062,14 @@
 
         <!-- Global Assets by Market Cap Section -->
         <section class="assets-mcap-section" style="margin-top: 30px; margin-bottom: 20px;">
-            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary); display: flex; align-items: baseline; gap: 10px;">
+            <h3
+                style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary); display: flex; align-items: baseline; gap: 10px;">
                 <span>3. 글로벌 시가총액 (Top 20)</span>
-                <span id="assets-mcap-update-date" style="font-size: 0.8rem; font-weight: 400; color: var(--text-secondary);">기준일: -</span>
+                <span id="assets-mcap-update-date"
+                    style="font-size: 0.8rem; font-weight: 400; color: var(--text-secondary);">기준일: -</span>
             </h3>
-            <div class="assets-mcap-container" style="background: var(--card-bg); border: 1px solid var(--card-border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 20px; padding: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);">
+            <div class="assets-mcap-container"
+                style="background: var(--card-bg); border: 1px solid var(--card-border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 20px; padding: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);">
                 <div class="assets-mcap-single-wrapper">
                     <table class="etf-table" style="width: 100%;">
                         <thead>
@@ -972,8 +1086,10 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="etf-source-link" style="margin-top: 15px; border-top: 1px solid var(--card-border); padding-top: 12px;">
-                    <a href="https://companiesmarketcap.com/assets-by-market-cap/" target="_blank" rel="noopener">CompaniesMarketCap Live Ranking →</a>
+                <div class="etf-source-link"
+                    style="margin-top: 15px; border-top: 1px solid var(--card-border); padding-top: 12px;">
+                    <a href="https://companiesmarketcap.com/assets-by-market-cap/" target="_blank"
+                        rel="noopener">CompaniesMarketCap Live Ranking →</a>
                 </div>
             </div>
         </section>
@@ -1051,14 +1167,14 @@
             // 4. 글로벌 자산 시가총액 TOP 20 반영
             const assetsTbody = document.getElementById('assets-mcap-list');
             const assetsDateEl = document.getElementById('assets-mcap-update-date');
-            
+
             if (assetsDateEl) {
                 assetsDateEl.innerText = `기준일: ${latestDate}`;
             }
-            
+
             if (latestData.assets_top20 && assetsTbody) {
                 assetsTbody.innerHTML = '';
-                
+
                 // 시가총액 문자열 파싱 헬퍼 함수
                 const parseMcap = (mcapStr) => {
                     if (!mcapStr) return 0;
@@ -1070,7 +1186,7 @@
                     }
                     return parseFloat(clean);
                 };
-                
+
                 latestData.assets_top20.forEach((asset, idx, arr) => {
                     let gapText = '-';
                     let shouldHighlight = false;
@@ -1080,23 +1196,23 @@
                         if (currentVal > 0) {
                             const percentage = ((prevVal - currentVal) / currentVal) * 100;
                             gapText = `+${percentage.toFixed(2)}%`;
-                            
+
                             // 0% 초과 10% 이하 격차 자산 조건부 음영 처리
                             if (percentage > 0 && percentage <= 10) {
                                 shouldHighlight = true;
                             }
                         }
                     }
-                    
+
                     const rowClass = shouldHighlight ? 'class="close-gap-highlight"' : '';
-                    
+
                     // 관심종목 별표 표시 (SpaceX, Tesla, Samsung, SK Hynix, Micron)
                     const watchlist = ['SPACEX', 'SPCX', 'TESLA', 'TSLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON', 'MU'];
                     const nameUpper = (asset.name || '').toUpperCase();
                     const codeUpper = (asset.code || '').toUpperCase();
                     const isWatchlist = watchlist.some(w => nameUpper.includes(w) || codeUpper.includes(w));
                     const starBadge = isWatchlist ? '<span style="color: #fbbf24; font-size: 0.75rem;">⭐⭐</span> ' : '';
-                    
+
                     const row = `<tr ${rowClass}>
                         <td class="rank" style="font-weight: 700; color: var(--text-secondary); text-align: center; width: 50px;">${asset.rank}</td>
                         <td style="font-weight: 600;">${starBadge}${asset.name}</td>
@@ -1114,7 +1230,7 @@
             dates.forEach(date => {
                 const dayData = data[date];
                 const fng = dayData.fear_and_greed;
-                
+
                 let fngColor = '';
                 if (fng <= 25) fngColor = 'var(--color-extreme-fear)';
                 else if (fng <= 45) fngColor = 'var(--color-fear)';
@@ -1151,7 +1267,7 @@
             // 5. Active ETF Holdings 반영
             const koactTbody = document.getElementById('koact-holdings-body');
             const koactDateEl = document.getElementById('koact-update-date');
-            
+
             let targetKoactData = null;
             for (const d of dates) {
                 if (data[d] && data[d].koact_holdings && data[d].koact_holdings.length > 0) {
@@ -1159,7 +1275,7 @@
                     break;
                 }
             }
-            
+
             if (targetKoactData && koactTbody) {
                 koactTbody.innerHTML = '';
                 targetKoactData.koact_holdings.forEach((item, idx) => {
@@ -1182,7 +1298,7 @@
 
             const timeTbody = document.getElementById('time-holdings-body');
             const timeDateEl = document.getElementById('time-update-date');
-            
+
             let targetTimeData = null;
             for (const d of dates) {
                 if (data[d] && data[d].time_holdings && data[d].time_holdings.length > 0) {
@@ -1190,7 +1306,7 @@
                     break;
                 }
             }
-            
+
             if (targetTimeData && timeTbody) {
                 timeTbody.innerHTML = '';
                 targetTimeData.time_holdings.forEach((item, idx) => {
@@ -1278,19 +1394,19 @@
         function updateMetricCard(id, price, change, suffix = '') {
             const priceEl = document.getElementById(`${id}-price`);
             const badgeEl = document.getElementById(`${id}-change`);
-            
+
             if (!priceEl || !badgeEl) return;
-            
+
             if (price === undefined || price === null) {
                 priceEl.innerText = '-';
                 badgeEl.innerText = '-';
                 badgeEl.className = 'change-badge change-neutral';
                 return;
             }
-            
+
             // 가격 포맷팅 (천단위 콤마)
             priceEl.innerText = price.toLocaleString('ko-KR') + suffix;
-            
+
             // 변동률 포맷팅
             if (change === undefined || change === null) {
                 badgeEl.innerText = '-';
@@ -1298,11 +1414,11 @@
             } else {
                 const sign = change > 0 ? '+' : '';
                 badgeEl.innerText = `${sign}${change.toFixed(2)}%`;
-                
+
                 // VIX는 변동성이 낮아질 때 호재(초록), 높아질 때 악재(빨강)
                 const isVix = id === 'vix';
                 const isPositive = change > 0;
-                
+
                 if (change === 0) {
                     badgeEl.className = 'change-badge change-neutral';
                 } else if ((isPositive && !isVix) || (!isPositive && isVix)) {
@@ -1316,15 +1432,15 @@
         // 테이블 셀 변동률 포맷팅 헬퍼 함수
         function formatTableChange(change, isVix = false) {
             if (change === undefined || change === null) return `<span style="color: var(--text-secondary); font-weight: 500;">-</span>`;
-            
+
             const sign = change > 0 ? '+' : '';
             const isPositive = change > 0;
             let color = '';
-            
+
             if (change === 0) color = 'var(--text-secondary)';
             else if ((isPositive && !isVix) || (!isPositive && isVix)) color = '#34d399'; // 초록
             else color = '#f87171'; // 빨강
-            
+
             return `<span style="color: ${color}; font-weight: 600;">${sign}${change.toFixed(2)}%</span>`;
         }
 
@@ -1368,9 +1484,9 @@
                     const nameCell = row.cells[1];
                     const name = nameCell ? nameCell.innerText.trim() : '';
                     const key = ticker ? { type: 'ticker', value: ticker } : { type: 'name', value: normalizeName(name) };
-                    
+
                     row.classList.remove('common-holding', 'common-holding-us');
-                    
+
                     if (name) {
                         // 다른 리스트 중 하나라도 일치하면 하이라이트
                         const isCommon = otherKeyLists.some(list => hasMatch(key, list));
@@ -1384,15 +1500,15 @@
             // 1. KoAct vs TIME
             const koactRows = document.querySelectorAll('#koact-holdings-body tr');
             const timeRows = document.querySelectorAll('#time-holdings-body tr');
-            
+
             const koactKeys = getKeys(koactRows);
             const timeKeys = getKeys(timeRows);
-            
+
             applyHighlight(koactRows, 'common-holding', timeKeys);
             applyHighlight(timeRows, 'common-holding', koactKeys);
 
             // 2. US Theme ETFs (ARKK, IVES, GRNY)
-            const arkkRows = document.querySelectorAll('#arkk-holdings-body tr');
+            const arkkRows = documesnt.querySelectorAll('#arkk-holdings-body tr');
             const ivesRows = document.querySelectorAll('#ives-holdings-body tr');
             const grnyRows = document.querySelectorAll('#grny-holdings-body tr');
 

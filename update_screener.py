@@ -358,7 +358,12 @@ print("🔍 Finviz(우선) 및 야후 파이낸스(대체)로부터 PER, Forward
 info_data = {}
 def fetch_info(item):
     yf_t, orig_t = item
-    pe, fpe, mcap, target_price = None, None, None, None
+    pe = fpe = mcap = target_price = exchange = None
+    
+    try:
+        exchange = yf.Ticker(yf_t).fast_info.get("exchange")
+    except Exception:
+        pass
     
     # Try Finviz first (only for US stocks)
     if not orig_t.endswith('.KS') and not orig_t.endswith('.KQ'):
@@ -426,9 +431,11 @@ def fetch_info(item):
             pass
             
     # Fallback to Yahoo Finance if Finviz failed or missing data
-    if pe is None or fpe is None:
+    if pe is None or fpe is None or exchange is None:
         try:
             info = yf.Ticker(yf_t).info
+            if exchange is None:
+                exchange = info.get("exchange")
             if pe is None:
                 pe = info.get("trailingPE")
             if fpe is None:
@@ -447,12 +454,12 @@ def fetch_info(item):
         except Exception:
             pass
 
-    return orig_t, pe, fpe, mcap, target_price
+    return orig_t, pe, fpe, mcap, target_price, exchange
 
 with ThreadPoolExecutor(max_workers=10) as executor:
     results_info = list(executor.map(fetch_info, ticker_mapping.items()))
-for orig_t, pe, fpe, mcap, target_price in results_info:
-    info_data[orig_t] = {"trailingPE": pe, "forwardPE": fpe, "marketCap": mcap, "targetPrice": target_price}
+for orig_t, pe, fpe, mcap, target_price, exchange in results_info:
+    info_data[orig_t] = {"trailingPE": pe, "forwardPE": fpe, "marketCap": mcap, "targetPrice": target_price, "exchange": exchange}
 
 # --- Helper functions for technical indicators ---
 
@@ -826,7 +833,8 @@ for t, s in stock_map.items():
         'dist_ma50': rnd(dist_ma50),
         'dist_ma200': rnd(dist_ma200),
         'marketCap': info_data.get(t, {}).get("marketCap", "-"),
-        'targetPrice': rnd(info_data.get(t, {}).get("targetPrice"))
+        'targetPrice': rnd(info_data.get(t, {}).get("targetPrice")),
+        'exchange': info_data.get(t, {}).get("exchange")
     })
 
 results = {
