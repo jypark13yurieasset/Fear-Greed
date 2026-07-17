@@ -344,10 +344,10 @@
             <div class="header-main">
                 <h1>Investment Insight</h1>
                 <div class="nav-tabs">
-                    <a href="./index.html" class="nav-tab">Dashboard</a>
-                    <a href="./screener.html" class="nav-tab">Screener</a>
-                    <a href="./earnings.html" class="nav-tab">Earnings</a>
-                    <a href="./insight.html" class="nav-tab active">Insight</a>
+                    <a href="./index.html" class="nav-tab">1. Dashboard</a>
+                    <a href="./screener.html" class="nav-tab">2. Screener</a>
+                    <a href="./insight.html" class="nav-tab active">3. Insight</a>
+                    <a href="./earnings.html" class="nav-tab">4. Earnings(작업 중)</a>
                 </div>
             </div>
             <p>투자 인사이트 &amp; 시장 분석</p>
@@ -373,6 +373,8 @@
                     <button class="tab-btn active" onclick="switchSignalTab(1)" id="btn-signal-1">1일 포착</button>
                     <button class="tab-btn" onclick="switchSignalTab(2)" id="btn-signal-2">2일 연속</button>
                     <button class="tab-btn" onclick="switchSignalTab(3)" id="btn-signal-3">3일 연속</button>
+                    <button class="tab-btn" onclick="switchSignalTab(4)" id="btn-signal-4">4일 연속</button>
+                    <button class="tab-btn" onclick="switchSignalTab(5)" id="btn-signal-5">5일 연속</button>
                 </div>
                 <div id="signal-cards-container">
                     <!-- JS Injected -->
@@ -504,8 +506,8 @@
             const mainContainer = document.getElementById('signal-cards-container');
             mainContainer.innerHTML = ''; // clear
 
-            // 1일, 2일, 3일 연속 처리
-            [1, 2, 3].forEach(streakLevel => {
+            // 1일, 2일, 3일, 4일, 5일 연속 처리
+            [1, 2, 3, 4, 5].forEach(streakLevel => {
                 // 이 streakLevel에 해당하는 로그만 필터링
                 const logs = SIGNAL_LOG_DATA.filter(l => (l.streak || 1) === streakLevel)
                                             .sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -588,15 +590,14 @@
         }
 
         function switchSignalTab(level) {
-            document.getElementById('btn-signal-1').classList.remove('active');
-            document.getElementById('btn-signal-2').classList.remove('active');
-            document.getElementById('btn-signal-3').classList.remove('active');
-            
-            document.getElementById('signal-list-1').style.display = 'none';
-            document.getElementById('signal-list-2').style.display = 'none';
-            document.getElementById('signal-list-3').style.display = 'none';
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById(`btn-signal-${i}`).classList.remove('active');
+                const list = document.getElementById(`signal-list-${i}`);
+                if (list) list.style.display = 'none';
+            }
 
             document.getElementById(`btn-signal-${level}`).classList.add('active');
-            document.getElementById(`signal-list-${level}`).style.display = 'block';
+            const targetList = document.getElementById(`signal-list-${level}`);
+            if (targetList) targetList.style.display = 'block';
         }
     </script>

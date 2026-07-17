@@ -720,7 +720,7 @@ for t, s in stock_map.items():
                 if sh['last_seen'] != actual_trading_date:
                     sh['count'] += 1
                     sh['last_seen'] = actual_trading_date
-                    if sh['count'] in [2, 3]:
+                    if 2 <= sh['count'] <= 5:
                         signal_log.append({
                             "date": actual_trading_date,
                             "ticker": t,
@@ -748,7 +748,7 @@ for t, s in stock_map.items():
                 if sh['last_seen'] != actual_trading_date:
                     sh['count'] += 1
                     sh['last_seen'] = actual_trading_date
-                    if sh['count'] in [2, 3]:
+                    if 2 <= sh['count'] <= 5:
                         signal_log.append({
                             "date": actual_trading_date,
                             "ticker": t,

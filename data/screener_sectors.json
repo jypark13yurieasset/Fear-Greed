@@ -2603,5 +2603,10 @@
     "sector": "Industrials",
     "sub_industry": "Aerospace & Defense",
     "name": "Honeywell Aerospace Inc."
+  },
+  "ECHO": {
+    "sector": "Communication Services",
+    "sub_industry": "Telecom Services",
+    "name": "EchoStar Corporation"
   }
 }

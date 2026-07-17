@@ -242,10 +242,10 @@
             <div class="header-main">
                 <h1 class="dashboard-title">Jypark13 Investment Dashboard</h1>
                 <div class="nav-tabs">
-                    <a href="./index.html" class="nav-tab">Dashboard</a>
-                    <a href="./screener.html" class="nav-tab">Screener</a>
-                    <a href="./earnings.html" class="nav-tab active">Earnings</a>
-                    <a href="./insight.html" class="nav-tab">Insight</a>
+                    <a href="./index.html" class="nav-tab">1. Dashboard</a>
+                    <a href="./screener.html" class="nav-tab">2. Screener</a>
+                    <a href="./insight.html" class="nav-tab">3. Insight</a>
+                    <a href="./earnings.html" class="nav-tab active">4. Earnings(작업 중)</a>
                 </div>
             </div>
             <p class="dashboard-subtitle">종목 검색 및 기업 실적 확인 (On-Demand)</p>
@@ -312,25 +312,9 @@
             
             // Clear current widgets
             container.innerHTML = `
-                <div class="widget-card" id="symbol-info-widget" style="grid-column: span 2;"></div>
                 <div class="widget-card widget-financials" id="financials-widget" style="grid-column: span 2;"></div>
                 <div class="widget-card" id="chart-widget" style="grid-column: span 2;"></div>
             `;
-
-            // 0. Symbol Info Widget (Overview Summary)
-            const infoContainer = document.getElementById('symbol-info-widget');
-            const infoScript = document.createElement('script');
-            infoScript.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js";
-            infoScript.type = "text/javascript";
-            infoScript.async = true;
-            infoScript.innerHTML = JSON.stringify({
-                "symbol": tvSymbol,
-                "width": "100%",
-                "locale": "kr",
-                "colorTheme": "dark",
-                "isTransparent": true
-            });
-            infoContainer.appendChild(infoScript);
 
             // 1. Financials Widget
             const finContainer = document.getElementById('financials-widget');
