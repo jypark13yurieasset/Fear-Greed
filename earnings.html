@@ -332,7 +332,7 @@
                     <a href="./index.html" class="nav-tab">1. Dashboard</a>
                     <a href="./screener.html" class="nav-tab">2. Screener</a>
                     <a href="./insight.html" class="nav-tab">3. Insight</a>
-                    <a href="./earnings.html" class="nav-tab active">4. Earnings(작업 중)</a>
+                    <a href="./earnings.html" class="nav-tab active">4. Earnings</a>
                 </div>
             </div>
             <p class="dashboard-subtitle">종목 검색 및 기업 실적 확인 (On-Demand) &nbsp;|&nbsp; <span id="update-date">기준일: -</span></p>
@@ -364,9 +364,9 @@
                 <div class="widget-inner" id="financials-inner"></div>
             </div>
 
-            <!-- 2. Advanced Chart (relative to SPY) -->
+            <!-- 2. Advanced Chart (relative to SPX) -->
             <div class="widget-card full-width" id="widget-chart-rel">
-                <div class="widget-label">📉 SPY 대비 상대강도 차트 (Relative to SPY)</div>
+                <div class="widget-label">📉 SPX 대비 상대강도 차트 (Relative to SPX)</div>
                 <div class="widget-inner" id="chart-rel-inner"></div>
             </div>
 
@@ -438,7 +438,7 @@
             if (!rawTicker) return;
 
             const tvSymbol = getTvSymbol(rawTicker);
-            const spreadSymbol = tvSymbol + "/AMEX:SPY";
+            const spreadSymbol = tvSymbol + "/SP:SPX";
 
             // Show widgets grid, hide empty state
             document.getElementById('empty-state').style.display = 'none';
