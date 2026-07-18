@@ -1111,7 +1111,7 @@
 
             // 1. 오늘의 CNN Fear & Greed 반영
             document.getElementById('today-fng').innerText = latestValue;
-            document.getElementById('update-date').innerText = `기준일: ${latestDate}`;
+            document.getElementById('update-date').innerText = `기준일: ${latestDate} (US)${latestData.updated_at ? ' | 업데이트: ' + latestData.updated_at : ''}`;
 
             // 지수 크기에 따라 상태 텍스트와 색상 다르게 지정
             const statusEl = document.getElementById('fng-status');

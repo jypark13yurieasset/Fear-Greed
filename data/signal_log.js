@@ -3782,5 +3782,109 @@ const SIGNAL_LOG_DATA = [
     "type": "golden",
     "streak": 1,
     "entry_price": 24.684999465942383
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "BRK.B",
+    "name": "Berkshire Hathaway Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 490.9100036621094
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "LIN",
+    "name": "Linde plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 513.219970703125
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 508.7699890136719
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "TT",
+    "name": "Trane Technologies plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 469.9800109863281
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "DUK",
+    "name": "Duke Energy Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 125.01000213623047
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "DAL",
+    "name": "Delta Air Lines, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 84.16999816894531
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "DVN",
+    "name": "Devon Energy Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 43.83000183105469
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "XEL",
+    "name": "Xcel Energy Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 78.7699966430664
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "DTE",
+    "name": "DTE Energy Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 148.19000244140625
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "CNP",
+    "name": "CenterPoint Energy, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 43.130001068115234
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "FOXA",
+    "name": "Fox Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 57.619998931884766
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "FOX",
+    "name": "Fox Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 51.630001068115234
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "AOS",
+    "name": "A. O. Smith Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 58.849998474121094
   }
 ];

@@ -547,21 +547,32 @@ def get_timefolio_holdings(date_override=None):
         return None
 
 def main():
+    import yfinance as yf
     kst_tz = datetime.timezone(datetime.timedelta(hours=9))
-    today = datetime.datetime.now(kst_tz).date()
+    now_kst = datetime.datetime.now(kst_tz)
+    updated_at_kst = now_kst.strftime("%m-%d %H:%M KST")
     
-    # If weekend (Saturday=5, Sunday=6), adjust to the previous Friday to capture Friday's final market close
-    if today.weekday() == 5:
-        today = today - datetime.timedelta(days=1)
-    elif today.weekday() == 6:
-        today = today - datetime.timedelta(days=2)
-        
-    today_str = today.isoformat()
-    
-    # 1. 주말(토요일=5, 일요일=6)인 경우 업데이트를 건너뜀
-    if today.weekday() in (5, 6):
-        print(f"주말({today_str})이므로 데이터를 업데이트하지 않고 건너뜁니다.")
-        return
+    # Determine the actual latest US trading date from Yahoo Finance
+    try:
+        spx_hist = yf.download('^GSPC', period='5d', progress=False)
+        if not spx_hist.empty:
+            us_trading_date = spx_hist.index[-1].date()
+            today_str = us_trading_date.isoformat()
+            us_weekday = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][us_trading_date.weekday()]
+            print(f"최신 미국 거래일 자동 감지: {today_str} ({us_weekday})")
+        else:
+            raise Exception("S&P 500 데이터가 비어있습니다.")
+    except Exception as e:
+        print(f"미국 거래일 자동 감지 실패: {e}")
+        # Fallback to KST-based date
+        today = now_kst.date()
+        if today.weekday() == 5:
+            today = today - datetime.timedelta(days=1)
+        elif today.weekday() == 6:
+            today = today - datetime.timedelta(days=2)
+        today_str = today.isoformat()
+        us_weekday = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][today.weekday()]
+        print(f"Fallback 날짜 사용: {today_str} ({us_weekday})")
         
     json_file = "data.json"
     
@@ -690,6 +701,9 @@ def main():
         today_entry["time_date"] = timefolio_holdings["date"]
         today_entry["time_holdings"] = timefolio_holdings["holdings"]
     
+    # 수집 시각(KST) 기록
+    today_entry["updated_at"] = updated_at_kst
+    
     dashboard_data[today_str] = today_entry
     
     # 혹시 모를 기존 주말(토/일) 데이터가 있다면 제거
@@ -714,7 +728,7 @@ def main():
         f.write(f"window.fng_data = {json.dumps(dashboard_data, indent=4, ensure_ascii=False)};\n")
         
     print(f"\n--- 작업 완료 ---")
-    print(f"최종 저장 결과 -> 날짜: {today_str}")
+    print(f"최종 저장 결과 -> 날짜: {today_str} ({us_weekday}) | 수집: {updated_at_kst}")
     print(f"  CNN Fear & Greed: {fng_value}")
     print(f"  S&P 500: Price={sp500['price']}, Change={sp500['change']}%")
     print(f"  Nasdaq Composite: Price={nasdaq['price']}, Change={nasdaq['change']}%")
