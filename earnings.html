@@ -364,9 +364,9 @@
                 <div class="widget-inner" id="financials-inner"></div>
             </div>
 
-            <!-- 2. Advanced Chart (relative to SPX) -->
+            <!-- 2. Advanced Chart (relative to SPY) -->
             <div class="widget-card full-width" id="widget-chart-rel">
-                <div class="widget-label">📉 SPX 대비 상대강도 차트 (Relative to SPX)</div>
+                <div class="widget-label">📉 SPY 대비 상대강도 차트 (Relative to SPY)</div>
                 <div class="widget-inner" id="chart-rel-inner"></div>
             </div>
 
@@ -438,7 +438,7 @@
             if (!rawTicker) return;
 
             const tvSymbol = getTvSymbol(rawTicker);
-            const spreadSymbol = tvSymbol + "/SP:SPX";
+            const spreadSymbol = tvSymbol + "/AMEX:SPY";
 
             // Show widgets grid, hide empty state
             document.getElementById('empty-state').style.display = 'none';
