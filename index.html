@@ -386,7 +386,10 @@
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border-radius: 20px;
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: 520px;
+            /* Approximately 10 rows + header */
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
@@ -397,7 +400,12 @@
         }
 
         .history-table th {
-            background: rgba(255, 255, 255, 0.01);
+            position: sticky;
+            top: 0;
+            background: rgba(20, 20, 30, 0.95);
+            /* Opaque background for sticky header */
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
             color: var(--text-secondary);
             font-size: 0.75rem;
             font-weight: 600;
@@ -405,6 +413,7 @@
             letter-spacing: 0.08em;
             padding: 14px 20px;
             border-bottom: 1px solid var(--card-border);
+            z-index: 10;
         }
 
         .history-table td {

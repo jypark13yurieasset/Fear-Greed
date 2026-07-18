@@ -84,7 +84,6 @@
             color: var(--text-secondary);
             text-decoration: none;
             transition: all 0.2s ease;
-            position: relative;
         }
 
         .nav-tab:hover {
@@ -93,8 +92,8 @@
         }
 
         .nav-tab.active {
-            color: var(--accent);
-            background: var(--accent-dim);
+            color: #7c8cf5;
+            background: rgba(124, 140, 245, 0.15);
             font-weight: 600;
         }
 
@@ -108,8 +107,8 @@
         }
 
         /* ─── Page Header ─── */
-        .page-header {
-            padding: 36px 0 28px;
+        .dashboard-header {
+            margin-bottom: 30px;
         }
 
         .header-main {
@@ -121,17 +120,17 @@
             flex-wrap: wrap;
         }
 
-        .page-header h1 {
+        h1.dashboard-title {
             font-size: 2.25rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #ffffff 0%, var(--accent) 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #7c8cf5 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: -0.025em;
             margin-bottom: 0;
         }
 
-        .page-header p {
+        .dashboard-subtitle {
             font-size: 0.95rem;
             color: var(--text-secondary);
             font-weight: 400;
@@ -915,9 +914,9 @@
 
     <main class="container">
         <!-- Page Header -->
-        <header class="page-header">
+        <header class="dashboard-header">
             <div class="header-main">
-                <h1>Index Constituents Screener</h1>
+                <h1 class="dashboard-title">Index Constituents Screener</h1>
                 <div class="nav-tabs">
                     <a href="./index.html" class="nav-tab">1. Dashboard</a>
                     <a href="./screener.html" class="nav-tab active">2. Screener</a>
@@ -925,7 +924,7 @@
                     <a href="./earnings.html" class="nav-tab">4. Earnings(작업 중)</a>
                 </div>
             </div>
-            <p>인덱스 구성종목 검색 & 비교 &nbsp;|&nbsp; <span id="screener-update-date">기준일: -</span></p>
+            <p class="dashboard-subtitle">인덱스 구성종목 검색 & 비교 &nbsp;|&nbsp; <span id="screener-update-date">기준일: -</span></p>
         </header>
 
         <!-- Stats Cards -->
@@ -1129,8 +1128,9 @@
     </main>
 
     <script src="./data/index_constituents.js"></script>
+    <script src="./data.js"></script>
     <script>
-        // ─── State ───
+        // ─── Global State ───
         let allStocks = [];
         let filteredStocks = [];
         let activeIndices = { sp500: true, nasdaq100: true, dowjones: true };
@@ -1146,7 +1146,16 @@
             applyFilters();
             updateGlobalStats();
             updateSortHeaders();
-            if (data.date) {
+            if (window.fng_data) {
+                const dates = Object.keys(window.fng_data).sort().reverse();
+                if (dates.length > 0) {
+                    const latestDate = dates[0];
+                    const latestData = window.fng_data[latestDate];
+                    document.getElementById('screener-update-date').textContent = `기준일: ${latestDate} (US)${latestData.updated_at ? ' | 업데이트: ' + latestData.updated_at : ''}`;
+                } else if (data.date) {
+                    document.getElementById('screener-update-date').textContent = `기준일: ${data.date}`;
+                }
+            } else if (data.date) {
                 document.getElementById('screener-update-date').textContent = `기준일: ${data.date}`;
             }
         }
