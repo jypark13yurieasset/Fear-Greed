@@ -7725,7 +7725,7 @@ window.fng_data = {
                 "rank": 14,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.281 T"
+                "mcap": "$1.282 T"
             },
             {
                 "rank": 15,
@@ -8041,6 +8041,6 @@ window.fng_data = {
                 "weight": 3.19
             }
         ],
-        "updated_at": "07-18 12:28 KST"
+        "updated_at": "07-18 14:53 KST"
     }
 };
