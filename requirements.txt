@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+pandas
+yfinance
+curl_cffi
+python-dateutil
+lxml
