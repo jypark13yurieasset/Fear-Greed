@@ -7640,14 +7640,14 @@
         "nasdaq_change": -1.4,
         "vix_price": 18.77,
         "vix_change": 12.19,
-        "dxy_price": 100.75,
-        "dxy_change": 0.02,
+        "dxy_price": 100.82,
+        "dxy_change": 0.07,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$27.971 T"
+                "mcap": "$27.813 T"
             },
             {
                 "rank": 2,
@@ -7671,7 +7671,7 @@
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.164 T"
+                "mcap": "$3.148 T"
             },
             {
                 "rank": 6,
@@ -7701,7 +7701,7 @@
                 "rank": 10,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.718 T"
+                "mcap": "$1.729 T"
             },
             {
                 "rank": 11,
@@ -7725,13 +7725,13 @@
                 "rank": 14,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.282 T"
+                "mcap": "$1.298 T"
             },
             {
                 "rank": 15,
                 "name": "Samsung",
                 "code": "005930.KS",
-                "mcap": "$1.123 T"
+                "mcap": "$1.126 T"
             },
             {
                 "rank": 16,
@@ -7765,8 +7765,8 @@
             }
         ],
         "aaii_bullish": 38.3,
-        "aaii_neutral": 23.9,
-        "aaii_bearish": 37.8,
+        "aaii_neutral": 23.6,
+        "aaii_bearish": 38.1,
         "aaii_date": "2026-07-15",
         "us_etfs": {
             "ARKK": {
@@ -7880,167 +7880,167 @@
                 ]
             },
             "GRNY": {
-                "date": "2026-07-02",
+                "date": "2026-07-16",
                 "holdings": [
                     {
                         "ticker": "HOOD",
                         "name": "Robinhood Markets, Inc.",
-                        "weight": 3.33
+                        "weight": 3.13
                     },
                     {
                         "ticker": "KLAC",
                         "name": "KLA Corporation",
-                        "weight": 2.9
-                    },
-                    {
-                        "ticker": "GE",
-                        "name": "GE Aerospace",
-                        "weight": 2.83
-                    },
-                    {
-                        "ticker": "LLY",
-                        "name": "Eli Lilly and Company",
                         "weight": 2.7
-                    },
-                    {
-                        "ticker": "AMD",
-                        "name": "Advanced Micro Devices, Inc.",
-                        "weight": 2.61
-                    },
-                    {
-                        "ticker": "PNC",
-                        "name": "The PNC Financial Services Group, Inc.",
-                        "weight": 2.57
-                    },
-                    {
-                        "ticker": "AXP",
-                        "name": "American Express Company",
-                        "weight": 2.54
                     },
                     {
                         "ticker": "ANET",
                         "name": "Arista Networks, Inc.",
-                        "weight": 2.53
+                        "weight": 2.67
                     },
                     {
-                        "ticker": "PKG",
-                        "name": "Packaging Corporation of America",
-                        "weight": 2.52
+                        "ticker": "PNC",
+                        "name": "The PNC Financial Services Group, Inc.",
+                        "weight": 2.63
+                    },
+                    {
+                        "ticker": "AXP",
+                        "name": "American Express Company",
+                        "weight": 2.61
+                    },
+                    {
+                        "ticker": "BNY",
+                        "name": "The Bank of New York Mellon Corporation",
+                        "weight": 2.61
+                    },
+                    {
+                        "ticker": "LLY",
+                        "name": "Eli Lilly and Company",
+                        "weight": 2.6
+                    },
+                    {
+                        "ticker": "GE",
+                        "name": "GE Aerospace",
+                        "weight": 2.59
                     },
                     {
                         "ticker": "MNST",
                         "name": "Monster Beverage Corporation",
-                        "weight": 2.5
+                        "weight": 2.56
+                    },
+                    {
+                        "ticker": "GS",
+                        "name": "The Goldman Sachs Group, Inc.",
+                        "weight": 2.55
                     }
                 ]
             }
         },
-        "koact_date": "2026-07-16",
+        "koact_date": "2026-07-20",
         "koact_holdings": [
             {
                 "name": "ADVANCED MICRO DEVICES",
                 "ticker": "AMD",
-                "weight": 7.14
+                "weight": 7.11
             },
             {
                 "name": "INTEL Corp",
                 "ticker": "INTC",
-                "weight": 5.27
+                "weight": 5.2
             },
             {
                 "name": "Sandisk Corp/DE",
                 "ticker": "SNDK",
-                "weight": 5.07
+                "weight": 4.8
             },
             {
                 "name": "MICRON TECH",
                 "ticker": "MU",
-                "weight": 4.92
+                "weight": 4.67
             },
             {
                 "name": "NVIDIA Corp",
                 "ticker": "NVDA",
-                "weight": 4.47
+                "weight": 4.62
             },
             {
                 "name": "Snowflake Inc   - CL A",
                 "ticker": "SNOW",
-                "weight": 4.17
-            },
-            {
-                "name": "TESLA MOTORS",
-                "ticker": "TSLA",
-                "weight": 3.42
+                "weight": 4.24
             },
             {
                 "name": "Amazon.com Inc",
                 "ticker": "AMZN",
-                "weight": 3.4
+                "weight": 3.61
             },
             {
-                "name": "WESTERN DIGITAL",
-                "ticker": "WDC",
-                "weight": 3.29
+                "name": "TESLA MOTORS",
+                "ticker": "TSLA",
+                "weight": 3.51
+            },
+            {
+                "name": "ALPHABET INC-CL A",
+                "ticker": "GOOGL",
+                "weight": 3.35
             },
             {
                 "name": "SEAGATE TECHNOLOGY",
                 "ticker": "STX",
-                "weight": 3.19
+                "weight": 3.1
             }
         ],
-        "time_date": "2026-07-15",
+        "time_date": "2026-07-16",
         "time_holdings": [
+            {
+                "name": "NVIDIA Corp",
+                "ticker": "NVDA",
+                "weight": 7.47
+            },
             {
                 "name": "Sandisk Corp",
                 "ticker": "SNDK",
-                "weight": 7.22
+                "weight": 5.68
             },
             {
                 "name": "Micron Technology Inc",
                 "ticker": "MU",
-                "weight": 5.99
+                "weight": 4.77
             },
             {
                 "name": "Advanced Micro Devices Inc",
                 "ticker": "AMD",
-                "weight": 5.75
-            },
-            {
-                "name": "NVIDIA Corp",
-                "ticker": "NVDA",
-                "weight": 5.31
-            },
-            {
-                "name": "Dell Technologies Inc",
-                "ticker": "DELL",
-                "weight": 4.28
+                "weight": 4.73
             },
             {
                 "name": "Lam Research Corp",
                 "ticker": "LRCX",
-                "weight": 4.12
+                "weight": 4.08
+            },
+            {
+                "name": "Robinhood Markets Inc",
+                "ticker": "HOOD",
+                "weight": 3.96
             },
             {
                 "name": "Intel Corp",
                 "ticker": "INTC",
-                "weight": 3.96
+                "weight": 3.88
             },
             {
                 "name": "NASDAQ 100 E-MINI INDEX SEPT 2026",
                 "ticker": "NQU6",
-                "weight": 3.38
+                "weight": 3.48
             },
             {
-                "name": "Seagate Technology Holdings PLC",
-                "ticker": "STX",
-                "weight": 3.24
+                "name": "Broadcom Inc",
+                "ticker": "AVGO",
+                "weight": 3.18
             },
             {
-                "name": "Western Digital Corp",
-                "ticker": "WDC",
-                "weight": 3.19
+                "name": "Alphabet Inc",
+                "ticker": "GOOGL",
+                "weight": 3.15
             }
         ],
-        "updated_at": "07-18 14:53 KST"
+        "updated_at": "07-20 07:26 KST"
     }
 }
