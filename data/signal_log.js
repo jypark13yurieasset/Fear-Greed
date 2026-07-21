@@ -4041,6 +4041,7 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "CMCSA",
     "name": "Comcast Corporation",
     "type": "golden",
@@ -4049,6 +4050,8 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+=======
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "JCI",
     "name": "Johnson Controls International plc",
     "type": "dead",
@@ -4057,6 +4060,17 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
+=======
+    "ticker": "CMCSA",
+    "name": "Comcast Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 23.780000686645508
+  },
+  {
+    "date": "2026-07-20",
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "ELV",
     "name": "Elevance Health, Inc.",
     "type": "dead",
@@ -4105,6 +4119,7 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "NKE",
     "name": "NIKE, Inc.",
     "type": "golden",
@@ -4113,6 +4128,8 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+=======
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "URI",
     "name": "United Rentals, Inc.",
     "type": "dead",
@@ -4121,6 +4138,17 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
+=======
+    "ticker": "NKE",
+    "name": "NIKE, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 43.470001220703125
+  },
+  {
+    "date": "2026-07-20",
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "SRE",
     "name": "Sempra",
     "type": "dead",
@@ -4129,6 +4157,7 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "DAL",
     "name": "Delta Air Lines, Inc.",
     "type": "dead",
@@ -4137,6 +4166,8 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+=======
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "PSA",
     "name": "Public Storage",
     "type": "dead",
@@ -4145,6 +4176,17 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
+=======
+    "ticker": "DAL",
+    "name": "Delta Air Lines, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 84.54000091552734
+  },
+  {
+    "date": "2026-07-20",
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "VST",
     "name": "Vistra Corp.",
     "type": "dead",
@@ -4169,6 +4211,7 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "XEL",
     "name": "Xcel Energy Inc.",
     "type": "dead",
@@ -4177,6 +4220,8 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+=======
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "EW",
     "name": "Edwards Lifesciences Corporation",
     "type": "dead",
@@ -4185,6 +4230,17 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
+=======
+    "ticker": "XEL",
+    "name": "Xcel Energy Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 78.66999816894531
+  },
+  {
+    "date": "2026-07-20",
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "EXC",
     "name": "Exelon Corporation",
     "type": "dead",
@@ -4289,6 +4345,7 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "BG",
     "name": "Bunge Global SA",
     "type": "golden",
@@ -4297,6 +4354,8 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+=======
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "CHD",
     "name": "Church & Dwight Co., Inc.",
     "type": "golden",
@@ -4313,6 +4372,17 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
+=======
+    "ticker": "BG",
+    "name": "Bunge Global SA",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 120.48999786376953
+  },
+  {
+    "date": "2026-07-20",
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "CMS",
     "name": "CMS Energy Corporation",
     "type": "dead",
@@ -4321,6 +4391,7 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "ULTA",
     "name": "Ulta Beauty, Inc.",
     "type": "golden",
@@ -4329,6 +4400,8 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+=======
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "PKG",
     "name": "Packaging Corporation of America",
     "type": "dead",
@@ -4337,11 +4410,19 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "LYB",
     "name": "LyondellBasell Industries N.V.",
     "type": "golden",
     "streak": 1,
     "entry_price": 60.72999954223633
+=======
+    "ticker": "ULTA",
+    "name": "Ulta Beauty, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 488.0799865722656
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
   },
   {
     "date": "2026-07-20",
@@ -4353,6 +4434,17 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
+=======
+    "ticker": "LYB",
+    "name": "LyondellBasell Industries N.V.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 60.72999954223633
+  },
+  {
+    "date": "2026-07-20",
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "BEN",
     "name": "Franklin Resources, Inc.",
     "type": "dead",
@@ -4361,6 +4453,7 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "TRMB",
     "name": "Trimble Inc.",
     "type": "golden",
@@ -4369,6 +4462,8 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+=======
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "APA",
     "name": "APA Corporation",
     "type": "golden",
@@ -4377,11 +4472,19 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
     "ticker": "MGM",
     "name": "MGM Resorts International",
     "type": "dead",
     "streak": 1,
     "entry_price": 46.34000015258789
+=======
+    "ticker": "TRMB",
+    "name": "Trimble Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 53.209999084472656
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
   },
   {
     "date": "2026-07-20",
@@ -4393,6 +4496,17 @@ const SIGNAL_LOG_DATA = [
   },
   {
     "date": "2026-07-20",
+<<<<<<< HEAD
+=======
+    "ticker": "MGM",
+    "name": "MGM Resorts International",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 46.34000015258789
+  },
+  {
+    "date": "2026-07-20",
+>>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     "ticker": "FOXA",
     "name": "Fox Corporation",
     "type": "golden",
