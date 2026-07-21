@@ -317,6 +317,84 @@
             font-size: 0.9rem;
             color: var(--text-secondary);
         }
+
+        /* ─── Insider Trading Table ─── */
+        .insider-table-wrap {
+            overflow-x: auto;
+            overflow-y: auto;
+            max-height: 420px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .insider-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        .insider-table thead th {
+            background: rgba(124, 140, 245, 0.12);
+            color: #b0b8d1;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(124, 140, 245, 0.15);
+            text-align: left;
+            position: sticky;
+            top: 0;
+        }
+
+        .insider-table tbody td {
+            padding: 8px 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            color: var(--text-primary);
+        }
+
+        .insider-table tbody tr:hover {
+            background: rgba(124, 140, 245, 0.06);
+        }
+
+        .insider-buy {
+            color: #22c55e !important;
+            font-weight: 600;
+        }
+
+        .insider-sell {
+            color: #ef4444 !important;
+            font-weight: 600;
+        }
+
+        .insider-loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .insider-error {
+            text-align: center;
+            padding: 40px;
+            color: #f59e0b;
+            font-size: 0.9rem;
+        }
+
+        .insider-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .insider-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -358,16 +436,19 @@
         <!-- Widgets Grid (hidden until search) -->
         <div class="widgets-grid" id="widgets-container" style="display: none;">
 
-            <!-- 1. Financials (income statement, balance sheet, etc.) -->
-            <div class="widget-card full-width" id="widget-financials">
-                <div class="widget-label">💰 재무제표 (Financials)</div>
-                <div class="widget-inner" id="financials-inner"></div>
-            </div>
 
             <!-- 2. Advanced Chart (relative to SPY) -->
             <div class="widget-card full-width" id="widget-chart-rel">
                 <div class="widget-label">📉 SPY 대비 상대강도 차트 (Relative to SPY)</div>
                 <div class="widget-inner" id="chart-rel-inner"></div>
+            </div>
+
+            <!-- 3. Insider Trading (OpenInsider) -->
+            <div class="widget-card full-width" id="widget-insider">
+                <div class="widget-label">🔍 내부자 거래 (Insider Trading - SEC Form 4)</div>
+                <div class="widget-inner" id="insider-inner">
+                    <div class="insider-loading">종목을 검색하면 내부자 거래 내역이 표시됩니다.</div>
+                </div>
             </div>
 
         </div>
@@ -449,20 +530,6 @@
             banner.style.display = 'flex';
             document.getElementById('banner-symbol').textContent = tvSymbol;
 
-            // ─── 1. Financials ───
-            injectWidget('financials-inner',
-                'https://s3.tradingview.com/external-embedding/embed-widget-financials.js',
-                {
-                    "isTransparent": true,
-                    "largeChartUrl": "",
-                    "displayMode": "regular",
-                    "width": "100%",
-                    "height": 700,
-                    "colorTheme": "dark",
-                    "symbol": tvSymbol,
-                    "locale": "kr"
-                }
-            );
 
             // ─── 2. Advanced Chart (relative to SPY) ───
             injectWidget('chart-rel-inner',
@@ -483,7 +550,113 @@
                     "isTransparent": true
                 }
             );
+
+            // ─── 3. Insider Trading (OpenInsider) ───
+            loadInsiderTrading(rawTicker);
         }
+
+        async function loadInsiderTrading(ticker) {
+            const container = document.getElementById('insider-inner');
+            container.innerHTML = '<div class="insider-loading">⏳ 내부자 거래 내역을 불러오는 중...</div>';
+
+            const openInsiderUrl = `http://openinsider.com/screener?s=${ticker}&o=&pl=&ph=&st=0&fdlb=&fdle=&td=0&tdr=&fdRangeStarts=&fdRangeEnde=&dtefRangeStarts=&dtefRangeEnde=&janession=0&vession=0&cession=0&sortcol=0&cnt=30&page=1`;
+
+            // Try multiple CORS proxies
+            const proxies = [
+                url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+                url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+                url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`
+            ];
+
+            let html = null;
+            for (const proxy of proxies) {
+                try {
+                    const resp = await fetch(proxy(openInsiderUrl), { signal: AbortSignal.timeout(12000) });
+                    if (resp.ok) {
+                        html = await resp.text();
+                        break;
+                    }
+                } catch (e) {
+                    continue;
+                }
+            }
+
+            if (!html) {
+                container.innerHTML = `<div class="insider-error">⚠️ 데이터를 불러올 수 없습니다. <a href="http://openinsider.com/screener?s=${ticker}" target="_blank" class="insider-link">OpenInsider에서 직접 확인 →</a></div>`;
+                return;
+            }
+
+            // Parse the HTML table
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const table = doc.querySelector('table.tinytable');
+
+            if (!table) {
+                container.innerHTML = `<div class="insider-error">⚠️ 내부자 거래 데이터가 없습니다. <a href="http://openinsider.com/screener?s=${ticker}" target="_blank" class="insider-link">OpenInsider에서 직접 확인 →</a></div>`;
+                return;
+            }
+
+            const rows = table.querySelectorAll('tr');
+            if (rows.length < 2) {
+                container.innerHTML = '<div class="insider-error">내부자 거래 내역이 없습니다.</div>';
+                return;
+            }
+
+            // Build our styled table
+            let tableHtml = `<div class="insider-table-wrap"><table class="insider-table">`;
+            tableHtml += `<thead><tr>
+                <th>Filing Date</th>
+                <th>Trade Date</th>
+                <th>Insider Name</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Owned</th>
+                <th>ΔOwn</th>
+                <th>Value</th>
+            </tr></thead><tbody>`;
+
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].querySelectorAll('td');
+                if (cells.length < 12) continue;
+
+                const filingDate = cells[1]?.textContent?.trim() || '';
+                const tradeDate = cells[2]?.textContent?.trim() || '';
+                const insiderName = cells[4]?.textContent?.trim() || '';
+                const title = cells[5]?.textContent?.trim() || '';
+                const tradeType = cells[6]?.textContent?.trim() || '';
+                const price = cells[7]?.textContent?.trim() || '';
+                const qty = cells[8]?.textContent?.trim() || '';
+                const owned = cells[9]?.textContent?.trim() || '';
+                const deltaOwn = cells[10]?.textContent?.trim() || '';
+                const value = cells[11]?.textContent?.trim() || '';
+
+                const isBuy = tradeType.includes('P') || tradeType.toLowerCase().includes('purchase');
+                const isSell = tradeType.includes('S') || tradeType.toLowerCase().includes('sale');
+                const typeClass = isBuy ? 'insider-buy' : (isSell ? 'insider-sell' : '');
+
+                tableHtml += `<tr>
+                    <td>${filingDate.split(' ')[0] || filingDate}</td>
+                    <td>${tradeDate.split(' ')[0] || tradeDate}</td>
+                    <td>${insiderName}</td>
+                    <td>${title}</td>
+                    <td class="${typeClass}">${tradeType}</td>
+                    <td>${price}</td>
+                    <td class="${typeClass}">${qty}</td>
+                    <td>${owned}</td>
+                    <td>${deltaOwn}</td>
+                    <td class="${typeClass}">${value}</td>
+                </tr>`;
+            }
+
+            tableHtml += `</tbody></table></div>`;
+            tableHtml += `<a href="http://openinsider.com/screener?s=${ticker}" target="_blank" class="insider-link">📎 OpenInsider에서 전체 내역 보기 →</a>`;
+
+            container.innerHTML = tableHtml;
+        }
+
+
     </script>
     <script src="./data.js"></script>
     <script>
