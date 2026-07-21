@@ -467,48 +467,6 @@ const INDEX_DATA = {
       "dist_ma200": 77.87,
       "marketCap": "977.44B",
       "targetPrice": 1570.27,
-<<<<<<< HEAD
-=======
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "WMT",
-      "name": "Walmart Inc.",
-      "sector": "Consumer Staples",
-      "sub_industry": "Discount Stores",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 112.2,
-      "pct_1d": -1.79,
-      "pct_1w": -2.25,
-      "pct_1m": -4.25,
-      "pct_3m": -13.43,
-      "pct_6m": -6.0,
-      "pct_ytd": 0.71,
-      "pct_1y": 17.28,
-      "trailingPE": 39.53,
-      "forwardPE": 34.19,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.55,
-      "rsi14": 41.88,
-      "rsi14_w": 42.19,
-      "rsi14_m": 62.25,
-      "rel_vol": 0.81,
-      "dist_high": -16.39,
-      "dist_low": 18.04,
-      "dist_ma50": -5.94,
-      "dist_ma200": -4.6,
-      "marketCap": "892.90B",
-      "targetPrice": 140.11,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -746,48 +704,6 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "MA",
-      "name": "Mastercard Incorporated",
-      "sector": "Financials",
-      "sub_industry": "Credit Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 547.44,
-      "pct_1d": 0.71,
-      "pct_1w": 1.81,
-      "pct_1m": 11.77,
-      "pct_3m": 7.06,
-      "pct_6m": 3.77,
-      "pct_ytd": -4.11,
-      "pct_1y": -1.3,
-      "trailingPE": 31.68,
-      "forwardPE": 23.98,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.0,
-      "rsi14": 65.38,
-      "rsi14_w": 60.18,
-      "rsi14_m": 59.72,
-      "rel_vol": 0.51,
-      "dist_high": -8.6,
-      "dist_low": 16.09,
-      "dist_ma50": 8.57,
-      "dist_ma200": 3.52,
-      "marketCap": "483.71B",
-      "targetPrice": 644.59,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "INTC",
       "name": "Intel Corporation",
       "sector": "Information Technology",
@@ -983,48 +899,6 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Semiconductor Equipment & Materials",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 525.7,
-      "pct_1d": -0.75,
-      "pct_1w": -8.64,
-      "pct_1m": -14.81,
-      "pct_3m": 33.31,
-      "pct_6m": 61.63,
-      "pct_ytd": 104.56,
-      "pct_1y": 172.93,
-      "trailingPE": 49.39,
-      "forwardPE": 31.16,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -12.8,
-      "rsi14": 43.44,
-      "rsi14_w": 62.37,
-      "rsi14_m": 64.55,
-      "rel_vol": 0.69,
-      "dist_high": -27.29,
-      "dist_low": 236.45,
-      "dist_ma50": -0.35,
-      "dist_ma200": 46.03,
-      "marketCap": "417.38B",
-      "targetPrice": 636.73,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "COST",
       "name": "Costco Wholesale Corporation",
       "sector": "Consumer Staples",
@@ -1220,48 +1094,6 @@ const INDEX_DATA = {
       "exchange": "NMS"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "UNH",
-      "name": "UnitedHealth Group Incorporated",
-      "sector": "Health Care",
-      "sub_industry": "Healthcare Plans",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 421.55,
-      "pct_1d": -1.07,
-      "pct_1w": -1.76,
-      "pct_1m": 5.14,
-      "pct_3m": 21.83,
-      "pct_6m": 21.22,
-      "pct_ytd": 27.7,
-      "pct_1y": 49.41,
-      "trailingPE": 27.11,
-      "forwardPE": 18.86,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.08,
-      "rsi14": 54.38,
-      "rsi14_w": 66.52,
-      "rsi14_m": 47.07,
-      "rel_vol": 0.66,
-      "dist_high": -2.35,
-      "dist_low": 77.29,
-      "dist_ma50": 4.35,
-      "dist_ma200": 23.33,
-      "marketCap": "382.83B",
-      "targetPrice": 479.52,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "CVX",
       "name": "Chevron Corporation",
       "sector": "Energy",
@@ -1298,48 +1130,6 @@ const INDEX_DATA = {
       "dist_ma200": 9.28,
       "marketCap": "377.83B",
       "targetPrice": 214.26,
-<<<<<<< HEAD
-=======
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ORCL",
-      "name": "Oracle Corporation",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Infrastructure",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 121.38,
-      "pct_1d": -3.98,
-      "pct_1w": -7.72,
-      "pct_1m": -34.14,
-      "pct_3m": -33.0,
-      "pct_6m": -30.19,
-      "pct_ytd": -37.73,
-      "pct_1y": -50.16,
-      "trailingPE": 20.84,
-      "forwardPE": 11.13,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -14.84,
-      "rsi14": 27.14,
-      "rsi14_w": 34.64,
-      "rsi14_m": 44.49,
-      "rel_vol": 1.2,
-      "dist_high": -63.03,
-      "dist_low": 0.0,
-      "dist_ma50": -31.51,
-      "dist_ma200": -36.36,
-      "marketCap": "349.63B",
-      "targetPrice": 250.87,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -1418,7 +1208,6 @@ const INDEX_DATA = {
       "dist_ma200": 9.13,
       "marketCap": "353.32B",
       "targetPrice": 89.14,
-<<<<<<< HEAD
       "exchange": "NYQ"
     },
     {
@@ -1458,8 +1247,6 @@ const INDEX_DATA = {
       "dist_ma200": -36.36,
       "marketCap": "349.63B",
       "targetPrice": 250.87,
-=======
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -1480,13 +1267,8 @@ const INDEX_DATA = {
       "pct_6m": 2.1,
       "pct_ytd": 4.06,
       "pct_1y": -3.81,
-<<<<<<< HEAD
       "trailingPE": 21.81,
       "forwardPE": 21.25,
-=======
-      "trailingPE": 21.8,
-      "forwardPE": 21.14,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -1503,56 +1285,10 @@ const INDEX_DATA = {
       "dist_ma50": 1.69,
       "dist_ma200": 0.61,
       "marketCap": "347.26B",
-<<<<<<< HEAD
       "targetPrice": 162.67,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 163.35,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MS",
-      "name": "Morgan Stanley",
-      "sector": "Financials",
-      "sub_industry": "Capital Markets",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 210.94,
-      "pct_1d": -2.12,
-      "pct_1w": -4.59,
-      "pct_1m": -5.48,
-      "pct_3m": 11.43,
-      "pct_6m": 15.07,
-      "pct_ytd": 18.82,
-      "pct_1y": 50.17,
-      "trailingPE": 17.05,
-      "forwardPE": 15.62,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.71,
-      "rsi14": 43.96,
-      "rsi14_w": 61.11,
-      "rsi14_m": 77.82,
-      "rel_vol": 0.9,
-      "dist_high": -7.71,
-      "dist_low": 51.66,
-      "dist_ma50": 0.12,
-      "dist_ma200": 16.0,
-      "marketCap": "331.60B",
-      "targetPrice": 232.43,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "HD",
       "name": "The Home Depot, Inc.",
       "sector": "Consumer Discretionary",
@@ -1570,13 +1306,8 @@ const INDEX_DATA = {
       "pct_6m": -13.42,
       "pct_ytd": -3.21,
       "pct_1y": -8.52,
-<<<<<<< HEAD
       "trailingPE": 23.65,
       "forwardPE": 20.71,
-=======
-      "trailingPE": 23.69,
-      "forwardPE": 20.7,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -1593,11 +1324,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.08,
       "dist_ma200": -5.25,
       "marketCap": "332.08B",
-<<<<<<< HEAD
       "targetPrice": 371.9,
-=======
-      "targetPrice": 370.34,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -1657,13 +1384,8 @@ const INDEX_DATA = {
       "pct_6m": -18.44,
       "pct_ytd": -24.14,
       "pct_1y": -11.16,
-<<<<<<< HEAD
       "trailingPE": 151.93,
       "forwardPE": 64.88,
-=======
-      "trailingPE": 151.52,
-      "forwardPE": 64.38,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -1680,56 +1402,10 @@ const INDEX_DATA = {
       "dist_ma50": 1.77,
       "dist_ma200": -13.22,
       "marketCap": "323.28B",
-<<<<<<< HEAD
       "targetPrice": 190.08,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 183.12,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck & Co., Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Drug Manufacturers - General",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 124.4,
-      "pct_1d": -2.43,
-      "pct_1w": 0.3,
-      "pct_1m": 9.25,
-      "pct_3m": 10.52,
-      "pct_6m": 11.96,
-      "pct_ytd": 18.18,
-      "pct_1y": 56.85,
-      "trailingPE": 35.14,
-      "forwardPE": 12.88,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.51,
-      "rsi14": 51.92,
-      "rsi14_w": 57.29,
-      "rsi14_m": 57.17,
-      "rel_vol": 0.75,
-      "dist_high": -3.98,
-      "dist_low": 60.31,
-      "dist_ma50": 3.89,
-      "dist_ma200": 13.4,
-      "marketCap": "307.25B",
-      "targetPrice": 134.04,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "GS",
       "name": "The Goldman Sachs Group, Inc.",
       "sector": "Financials",
@@ -1747,11 +1423,7 @@ const INDEX_DATA = {
       "pct_6m": 10.71,
       "pct_ytd": 20.03,
       "pct_1y": 49.44,
-<<<<<<< HEAD
       "trailingPE": 16.28,
-=======
-      "trailingPE": 16.29,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 14.59,
       "ema_signal": 2,
       "macd_state": 4,
@@ -1769,11 +1441,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.34,
       "dist_ma200": 16.63,
       "marketCap": "311.24B",
-<<<<<<< HEAD
       "targetPrice": 1146.76,
-=======
-      "targetPrice": 1112.85,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -1834,11 +1502,7 @@ const INDEX_DATA = {
       "pct_ytd": 20.15,
       "pct_1y": 6.78,
       "trailingPE": 27.14,
-<<<<<<< HEAD
       "forwardPE": 21.08,
-=======
-      "forwardPE": 21.09,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -1855,95 +1519,10 @@ const INDEX_DATA = {
       "dist_ma50": 5.89,
       "dist_ma200": 14.5,
       "marketCap": "300.37B",
-<<<<<<< HEAD
       "targetPrice": 195.58,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 194.86,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Infrastructure",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 348.66,
-      "pct_1d": -2.79,
-      "pct_1w": 5.56,
-      "pct_1m": 21.16,
-      "pct_3m": 99.28,
-      "pct_6m": 92.13,
-      "pct_ytd": 89.28,
-      "pct_1y": 74.43,
-      "trailingPE": 303.18,
-      "forwardPE": 84.52,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.48,
-      "rsi14": 62.08,
-      "rsi14_w": 73.82,
-      "rsi14_m": 75.04,
-      "rel_vol": 0.66,
-      "dist_high": -2.79,
-      "dist_low": 146.11,
-      "dist_ma50": 21.41,
-      "dist_ma200": 66.71,
-      "marketCap": "284.16B",
-      "targetPrice": 331.34,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "sub_industry": "Entertainment",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 67.6,
-      "pct_1d": -1.96,
-      "pct_1w": -8.44,
-      "pct_1m": -12.64,
-      "pct_3m": -26.98,
-      "pct_6m": -20.81,
-      "pct_ytd": -27.9,
-      "pct_1y": -45.19,
-      "trailingPE": 21.26,
-      "forwardPE": 17.71,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -7.89,
-      "rsi14": 28.65,
-      "rsi14_w": 29.72,
-      "rsi14_m": 44.65,
-      "rel_vol": 1.39,
-      "dist_high": -46.49,
-      "dist_low": 0.0,
-      "dist_ma50": -15.66,
-      "dist_ma200": -27.68,
-      "marketCap": "284.65B",
-      "targetPrice": 97.7,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "sector": "Industrials",
@@ -1961,13 +1540,8 @@ const INDEX_DATA = {
       "pct_6m": 61.58,
       "pct_ytd": 65.12,
       "pct_1y": 90.7,
-<<<<<<< HEAD
       "trailingPE": 31.44,
       "forwardPE": 43.83,
-=======
-      "trailingPE": 31.58,
-      "forwardPE": 43.85,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -1984,11 +1558,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.22,
       "dist_ma200": 31.68,
       "marketCap": "290.00B",
-<<<<<<< HEAD
       "targetPrice": 1226.85,
-=======
-      "targetPrice": 1221.48,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2087,13 +1657,8 @@ const INDEX_DATA = {
       "pct_6m": 36.58,
       "pct_ytd": 70.85,
       "pct_1y": 121.38,
-<<<<<<< HEAD
       "trailingPE": 58.69,
       "forwardPE": 39.91,
-=======
-      "trailingPE": 58.81,
-      "forwardPE": 40.46,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -2110,56 +1675,10 @@ const INDEX_DATA = {
       "dist_ma50": -4.83,
       "dist_ma200": 31.02,
       "marketCap": "271.18B",
-<<<<<<< HEAD
       "targetPrice": 243.77,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 234.57,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "WFC",
-      "name": "Wells Fargo & Company",
-      "sector": "Financials",
-      "sub_industry": "Banks - Diversified",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 86.33,
-      "pct_1d": -1.35,
-      "pct_1w": -1.53,
-      "pct_1m": 5.02,
-      "pct_3m": 5.86,
-      "pct_6m": 0.24,
-      "pct_ytd": -7.37,
-      "pct_1y": 7.54,
-      "trailingPE": 12.55,
-      "forwardPE": 10.97,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.67,
-      "rsi14": 54.84,
-      "rsi14_w": 55.31,
-      "rsi14_m": 62.22,
-      "rel_vol": 1.05,
-      "dist_high": -10.44,
-      "dist_low": 17.58,
-      "dist_ma50": 6.1,
-      "dist_ma200": 2.13,
-      "marketCap": "261.45B",
-      "targetPrice": 100.07,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "RTX",
       "name": "RTX Corporation",
       "sector": "Industrials",
@@ -2177,13 +1696,8 @@ const INDEX_DATA = {
       "pct_6m": -1.55,
       "pct_ytd": 6.02,
       "pct_1y": 28.29,
-<<<<<<< HEAD
       "trailingPE": 36.44,
       "forwardPE": 25.47,
-=======
-      "trailingPE": 36.55,
-      "forwardPE": 25.63,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -2200,11 +1714,7 @@ const INDEX_DATA = {
       "dist_ma50": 5.5,
       "dist_ma200": 4.64,
       "marketCap": "261.85B",
-<<<<<<< HEAD
       "targetPrice": 220.0,
-=======
-      "targetPrice": 215.36,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2264,13 +1774,8 @@ const INDEX_DATA = {
       "pct_6m": 46.12,
       "pct_ytd": 63.74,
       "pct_1y": 32.39,
-<<<<<<< HEAD
       "trailingPE": 48.6,
       "forwardPE": 31.09,
-=======
-      "trailingPE": 48.56,
-      "forwardPE": 29.67,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": true,
@@ -2287,11 +1792,7 @@ const INDEX_DATA = {
       "dist_ma50": -5.69,
       "dist_ma200": 28.0,
       "marketCap": "258.53B",
-<<<<<<< HEAD
       "targetPrice": 309.72,
-=======
-      "targetPrice": 303.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -2312,13 +1813,8 @@ const INDEX_DATA = {
       "pct_6m": 237.17,
       "pct_ytd": 203.37,
       "pct_1y": 196.12,
-<<<<<<< HEAD
       "trailingPE": 30.35,
       "forwardPE": 17.14,
-=======
-      "trailingPE": 30.4,
-      "forwardPE": 17.54,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -2334,13 +1830,8 @@ const INDEX_DATA = {
       "dist_low": 243.82,
       "dist_ma50": 3.71,
       "dist_ma200": 88.55,
-<<<<<<< HEAD
       "marketCap": "247.57B",
       "targetPrice": 506.0,
-=======
-      "marketCap": "246.75B",
-      "targetPrice": 501.04,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2379,11 +1870,7 @@ const INDEX_DATA = {
       "dist_ma50": 6.96,
       "dist_ma200": 3.84,
       "marketCap": "240.13B",
-<<<<<<< HEAD
       "targetPrice": 378.5,
-=======
-      "targetPrice": 374.94,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2404,11 +1891,7 @@ const INDEX_DATA = {
       "pct_6m": 16.55,
       "pct_ytd": 20.09,
       "pct_1y": 8.85,
-<<<<<<< HEAD
       "trailingPE": 33.99,
-=======
-      "trailingPE": 33.93,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 26.1,
       "ema_signal": 1,
       "macd_state": 2,
@@ -2425,13 +1908,8 @@ const INDEX_DATA = {
       "dist_low": 31.5,
       "dist_ma50": -0.45,
       "dist_ma200": 8.43,
-<<<<<<< HEAD
       "marketCap": "236.87B",
       "targetPrice": 549.0,
-=======
-      "marketCap": "236.74B",
-      "targetPrice": 548.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -2452,13 +1930,8 @@ const INDEX_DATA = {
       "pct_6m": 13.05,
       "pct_ytd": 10.31,
       "pct_1y": 38.93,
-<<<<<<< HEAD
       "trailingPE": 13.89,
       "forwardPE": 10.1,
-=======
-      "trailingPE": 13.87,
-      "forwardPE": 10.05,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -2474,13 +1947,8 @@ const INDEX_DATA = {
       "dist_low": 41.09,
       "dist_ma50": -3.83,
       "dist_ma200": 9.81,
-<<<<<<< HEAD
       "marketCap": "220.74B",
       "targetPrice": 155.09,
-=======
-      "marketCap": "215.91B",
-      "targetPrice": 154.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2501,13 +1969,8 @@ const INDEX_DATA = {
       "pct_6m": 33.04,
       "pct_ytd": 29.25,
       "pct_1y": 51.73,
-<<<<<<< HEAD
       "trailingPE": 57.99,
       "forwardPE": 37.92,
-=======
-      "trailingPE": 58.0,
-      "forwardPE": 37.91,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -2523,13 +1986,8 @@ const INDEX_DATA = {
       "dist_low": 54.26,
       "dist_ma50": 5.11,
       "dist_ma200": 16.91,
-<<<<<<< HEAD
       "marketCap": "213.25B",
       "targetPrice": 192.1,
-=======
-      "marketCap": "213.24B",
-      "targetPrice": 191.75,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2550,13 +2008,8 @@ const INDEX_DATA = {
       "pct_6m": 6.56,
       "pct_ytd": -3.64,
       "pct_1y": -15.9,
-<<<<<<< HEAD
       "trailingPE": 20.81,
       "forwardPE": 14.39,
-=======
-      "trailingPE": 20.79,
-      "forwardPE": 13.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -2573,50 +2026,7 @@ const INDEX_DATA = {
       "dist_ma50": 5.42,
       "dist_ma200": -2.78,
       "marketCap": "211.72B",
-<<<<<<< HEAD
       "targetPrice": 249.43,
-=======
-      "targetPrice": 252.73,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Infrastructure",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 198.49,
-      "pct_1d": -2.26,
-      "pct_1w": 5.63,
-      "pct_1m": 15.93,
-      "pct_3m": 76.59,
-      "pct_6m": 78.07,
-      "pct_ytd": 69.37,
-      "pct_1y": 64.87,
-      "trailingPE": null,
-      "forwardPE": 127.1,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.54,
-      "rsi14": 58.78,
-      "rsi14_w": 71.07,
-      "rsi14_m": 77.05,
-      "rel_vol": 0.56,
-      "dist_high": -5.81,
-      "dist_low": 126.68,
-      "dist_ma50": 14.34,
-      "dist_ma200": 52.75,
-      "marketCap": "202.11B",
-      "targetPrice": 189.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -2637,13 +2047,8 @@ const INDEX_DATA = {
       "pct_6m": 177.47,
       "pct_ytd": 485.96,
       "pct_1y": 3242.83,
-<<<<<<< HEAD
       "trailingPE": 48.35,
       "forwardPE": 6.73,
-=======
-      "trailingPE": 47.54,
-      "forwardPE": 6.54,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -2660,11 +2065,7 @@ const INDEX_DATA = {
       "dist_ma50": -19.31,
       "dist_ma200": 76.49,
       "marketCap": "205.99B",
-<<<<<<< HEAD
       "targetPrice": 2356.26,
-=======
-      "targetPrice": 2144.14,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -2724,13 +2125,8 @@ const INDEX_DATA = {
       "pct_6m": -28.41,
       "pct_ytd": -28.09,
       "pct_1y": -25.19,
-<<<<<<< HEAD
       "trailingPE": 18.83,
       "forwardPE": 16.43,
-=======
-      "trailingPE": 18.87,
-      "forwardPE": 16.34,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -2747,11 +2143,7 @@ const INDEX_DATA = {
       "dist_ma50": -18.52,
       "dist_ma200": -22.15,
       "marketCap": "200.20B",
-<<<<<<< HEAD
       "targetPrice": 273.4,
-=======
-      "targetPrice": 271.25,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2772,13 +2164,8 @@ const INDEX_DATA = {
       "pct_6m": -17.3,
       "pct_ytd": -9.18,
       "pct_1y": 29.95,
-<<<<<<< HEAD
       "trailingPE": 28.93,
       "forwardPE": 19.35,
-=======
-      "trailingPE": 28.9,
-      "forwardPE": 19.31,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -2795,11 +2182,7 @@ const INDEX_DATA = {
       "dist_ma50": 8.45,
       "dist_ma200": -0.61,
       "marketCap": "195.56B",
-<<<<<<< HEAD
       "targetPrice": 595.54,
-=======
-      "targetPrice": 591.27,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2820,13 +2203,8 @@ const INDEX_DATA = {
       "pct_6m": 5.99,
       "pct_ytd": 11.26,
       "pct_1y": 23.08,
-<<<<<<< HEAD
       "trailingPE": 25.33,
       "forwardPE": 15.54,
-=======
-      "trailingPE": 25.36,
-      "forwardPE": 15.53,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -2843,11 +2221,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.9,
       "dist_ma200": 7.09,
       "marketCap": "196.55B",
-<<<<<<< HEAD
       "targetPrice": 357.11,
-=======
-      "targetPrice": 356.62,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -2869,11 +2243,7 @@ const INDEX_DATA = {
       "pct_ytd": -12.43,
       "pct_1y": -9.5,
       "trailingPE": 22.06,
-<<<<<<< HEAD
       "forwardPE": 18.96,
-=======
-      "forwardPE": 18.91,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -2890,7 +2260,6 @@ const INDEX_DATA = {
       "dist_ma50": -3.27,
       "dist_ma200": -11.33,
       "marketCap": "190.16B",
-<<<<<<< HEAD
       "targetPrice": 325.83,
       "exchange": "NYQ"
     },
@@ -2931,9 +2300,6 @@ const INDEX_DATA = {
       "dist_ma200": 6.92,
       "marketCap": "185.16B",
       "targetPrice": 190.0,
-=======
-      "targetPrice": 326.65,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -2954,13 +2320,8 @@ const INDEX_DATA = {
       "pct_6m": -7.69,
       "pct_ytd": -5.62,
       "pct_1y": -4.4,
-<<<<<<< HEAD
       "trailingPE": 17.77,
       "forwardPE": 15.11,
-=======
-      "trailingPE": 17.78,
-      "forwardPE": 15.07,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -2976,58 +2337,11 @@ const INDEX_DATA = {
       "dist_low": 0.04,
       "dist_ma50": -5.75,
       "dist_ma200": -9.67,
-<<<<<<< HEAD
       "marketCap": "184.89B",
       "targetPrice": 154.8,
       "exchange": "NMS"
     },
     {
-=======
-      "marketCap": "185.04B",
-      "targetPrice": 155.73,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "APH",
-      "name": "Amphenol Corporation",
-      "sector": "Information Technology",
-      "sub_industry": "Electronic Components",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 150.51,
-      "pct_1d": -0.46,
-      "pct_1w": -3.51,
-      "pct_1m": -8.2,
-      "pct_3m": -0.93,
-      "pct_6m": -2.65,
-      "pct_ytd": 11.37,
-      "pct_1y": 45.13,
-      "trailingPE": 43.25,
-      "forwardPE": 25.77,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -6.72,
-      "rsi14": 43.01,
-      "rsi14_w": 53.68,
-      "rsi14_m": 65.51,
-      "rel_vol": 0.48,
-      "dist_high": -14.64,
-      "dist_low": 49.45,
-      "dist_ma50": 1.13,
-      "dist_ma200": 6.92,
-      "marketCap": "185.16B",
-      "targetPrice": 189.39,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "NEE",
       "name": "NextEra Energy, Inc.",
       "sector": "Utilities",
@@ -3046,11 +2360,7 @@ const INDEX_DATA = {
       "pct_ytd": 9.62,
       "pct_1y": 15.53,
       "trailingPE": 22.34,
-<<<<<<< HEAD
       "forwardPE": 19.9,
-=======
-      "forwardPE": 19.99,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -3067,167 +2377,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.21,
       "dist_ma200": 0.69,
       "marketCap": "183.53B",
-<<<<<<< HEAD
       "targetPrice": 102.04,
-=======
-      "targetPrice": 99.2,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ADI",
-      "name": "Analog Devices, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Semiconductors",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 372.46,
-      "pct_1d": -0.77,
-      "pct_1w": -3.51,
-      "pct_1m": -14.27,
-      "pct_3m": -0.75,
-      "pct_6m": 22.13,
-      "pct_ytd": 37.34,
-      "pct_1y": 54.88,
-      "trailingPE": 55.43,
-      "forwardPE": 24.81,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -5.3,
-      "rsi14": 40.51,
-      "rsi14_w": 52.35,
-      "rsi14_m": 64.12,
-      "rel_vol": 0.63,
-      "dist_high": -16.39,
-      "dist_low": 68.78,
-      "dist_ma50": -8.31,
-      "dist_ma200": 14.54,
-      "marketCap": "181.42B",
-      "targetPrice": 457.4,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "VZ",
-      "name": "Verizon Communications Inc.",
-      "sector": "Communication Services",
-      "sub_industry": "Telecom Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 43.5,
-      "pct_1d": -0.21,
-      "pct_1w": 1.92,
-      "pct_1m": -4.12,
-      "pct_3m": -5.99,
-      "pct_6m": 10.86,
-      "pct_ytd": 6.8,
-      "pct_1y": 2.38,
-      "trailingPE": 10.61,
-      "forwardPE": 8.26,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.21,
-      "rsi14": 45.74,
-      "rsi14_w": 44.68,
-      "rsi14_m": 50.87,
-      "rel_vol": 0.62,
-      "dist_high": -15.34,
-      "dist_low": 13.28,
-      "dist_ma50": -4.78,
-      "dist_ma200": -2.1,
-      "marketCap": "181.64B",
-      "targetPrice": 51.12,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
-      "sector": "Information Technology",
-      "sub_industry": "Semiconductors",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 170.32,
-      "pct_1d": -0.85,
-      "pct_1w": -7.42,
-      "pct_1m": -24.67,
-      "pct_3m": 25.64,
-      "pct_6m": 8.92,
-      "pct_ytd": -0.43,
-      "pct_1y": 7.14,
-      "trailingPE": 18.33,
-      "forwardPE": 15.48,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -8.88,
-      "rsi14": 37.38,
-      "rsi14_w": 47.5,
-      "rsi14_m": 48.67,
-      "rel_vol": 0.41,
-      "dist_high": -32.15,
-      "dist_low": 37.28,
-      "dist_ma50": -17.59,
-      "dist_ma200": 0.74,
-      "marketCap": "179.52B",
-      "targetPrice": 222.73,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "UNP",
-      "name": "Union Pacific Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Railroads",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 296.25,
-      "pct_1d": -1.82,
-      "pct_1w": 2.46,
-      "pct_1m": 15.33,
-      "pct_3m": 17.91,
-      "pct_6m": 29.15,
-      "pct_ytd": 28.07,
-      "pct_1y": 31.17,
-      "trailingPE": 24.36,
-      "forwardPE": 21.36,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.78,
-      "rsi14": 68.19,
-      "rsi14_w": 67.01,
-      "rsi14_m": 62.79,
-      "rel_vol": 0.95,
-      "dist_high": -1.82,
-      "dist_low": 37.85,
-      "dist_ma50": 8.82,
-      "dist_ma200": 19.54,
-      "marketCap": "175.89B",
-      "targetPrice": 306.67,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -3248,13 +2398,8 @@ const INDEX_DATA = {
       "pct_6m": 133.12,
       "pct_ytd": 191.39,
       "pct_1y": 436.29,
-<<<<<<< HEAD
       "trailingPE": 76.17,
       "forwardPE": 28.11,
-=======
-      "trailingPE": 76.06,
-      "forwardPE": 28.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -3271,11 +2416,7 @@ const INDEX_DATA = {
       "dist_ma50": -8.81,
       "dist_ma200": 63.47,
       "marketCap": "179.93B",
-<<<<<<< HEAD
       "targetPrice": 1023.55,
-=======
-      "targetPrice": 1008.61,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -3413,13 +2554,8 @@ const INDEX_DATA = {
       "pct_6m": 0.74,
       "pct_ytd": 2.63,
       "pct_1y": 6.54,
-<<<<<<< HEAD
       "trailingPE": 20.33,
       "forwardPE": 13.44,
-=======
-      "trailingPE": 20.39,
-      "forwardPE": 13.63,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -3436,11 +2572,7 @@ const INDEX_DATA = {
       "dist_ma50": 10.46,
       "dist_ma200": 7.8,
       "marketCap": "178.33B",
-<<<<<<< HEAD
       "targetPrice": 120.0,
-=======
-      "targetPrice": 120.74,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -3461,11 +2593,7 @@ const INDEX_DATA = {
       "pct_6m": -15.8,
       "pct_ytd": -18.86,
       "pct_1y": -18.29,
-<<<<<<< HEAD
       "trailingPE": 32.86,
-=======
-      "trailingPE": 28.48,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 16.76,
       "ema_signal": 4,
       "macd_state": 4,
@@ -3483,11 +2611,7 @@ const INDEX_DATA = {
       "dist_ma50": 13.0,
       "dist_ma200": -7.3,
       "marketCap": "177.07B",
-<<<<<<< HEAD
       "targetPrice": 118.73,
-=======
-      "targetPrice": 118.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -3587,11 +2711,7 @@ const INDEX_DATA = {
       "pct_ytd": 31.91,
       "pct_1y": 52.72,
       "trailingPE": 118.28,
-<<<<<<< HEAD
       "forwardPE": 75.39,
-=======
-      "forwardPE": 72.87,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -3608,11 +2728,7 @@ const INDEX_DATA = {
       "dist_ma50": 11.83,
       "dist_ma200": 21.86,
       "marketCap": "172.84B",
-<<<<<<< HEAD
       "targetPrice": 244.95,
-=======
-      "targetPrice": 242.55,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -3633,178 +2749,14 @@ const INDEX_DATA = {
       "pct_6m": -0.1,
       "pct_ytd": 1.36,
       "pct_1y": 24.62,
-<<<<<<< HEAD
       "trailingPE": 30.25,
       "forwardPE": 27.02,
       "ema_signal": 3,
       "macd_state": 3,
-=======
-      "trailingPE": 30.29,
-      "forwardPE": 27.04,
-      "ema_signal": 3,
-      "macd_state": 3,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": 0.78,
-      "rsi14": 51.16,
-      "rsi14_w": 50.52,
-      "rsi14_m": 66.68,
-      "rel_vol": 0.63,
-      "dist_high": -7.55,
-      "dist_low": 27.45,
-      "dist_ma50": -0.38,
-      "dist_ma200": 1.27,
-      "marketCap": "172.00B",
-      "targetPrice": 177.63,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DIS",
-      "name": "The Walt Disney Company",
-      "sector": "Communication Services",
-      "sub_industry": "Entertainment",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 96.41,
-      "pct_1d": -1.29,
-      "pct_1w": 0.43,
-      "pct_1m": -7.2,
-      "pct_3m": -7.56,
-      "pct_6m": -14.82,
-      "pct_ytd": -15.26,
-      "pct_1y": -20.22,
-      "trailingPE": 15.43,
-      "forwardPE": 12.91,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.63,
-      "rsi14": 43.78,
-      "rsi14_w": 41.66,
-      "rsi14_m": 48.11,
-      "rel_vol": 0.81,
-      "dist_high": -21.58,
-      "dist_low": 4.32,
-      "dist_ma50": -4.32,
-      "dist_ma200": -8.52,
-      "marketCap": "167.42B",
-      "targetPrice": 127.48,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Semiconductors",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 194.94,
-      "pct_1d": 3.32,
-      "pct_1w": -10.38,
-      "pct_1m": -37.23,
-      "pct_3m": 28.83,
-      "pct_6m": 136.15,
-      "pct_ytd": 129.4,
-      "pct_1y": 166.82,
-      "trailingPE": 66.99,
-      "forwardPE": 31.33,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -20.65,
-      "rsi14": 37.97,
-      "rsi14_w": 54.09,
-      "rsi14_m": 61.61,
-      "rel_vol": 0.58,
-      "dist_high": -38.39,
-      "dist_low": 212.86,
-      "dist_ma50": -17.4,
-      "dist_ma200": 49.48,
-      "marketCap": "174.97B",
-      "targetPrice": 253.69,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "BA",
-      "name": "The Boeing Company",
-      "sector": "Industrials",
-      "sub_industry": "Aerospace & Defense",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 209.48,
-      "pct_1d": -2.13,
-      "pct_1w": -2.8,
-      "pct_1m": -5.94,
-      "pct_3m": -4.42,
-      "pct_6m": -16.23,
-      "pct_ytd": -3.52,
-      "pct_1y": -8.65,
-      "trailingPE": 82.8,
-      "forwardPE": 51.05,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -4.66,
-      "rsi14": 38.81,
-      "rsi14_w": 45.09,
-      "rsi14_m": 51.3,
-      "rel_vol": 0.8,
-      "dist_high": -16.92,
-      "dist_low": 16.95,
-      "dist_ma50": -5.62,
-      "dist_ma200": -4.17,
-      "marketCap": "165.13B",
-      "targetPrice": 270.08,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "GILD",
-      "name": "Gilead Sciences, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Drug Manufacturers - General",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 133.21,
-      "pct_1d": -0.8,
-      "pct_1w": 1.38,
-      "pct_1m": 7.64,
-      "pct_3m": -0.06,
-      "pct_6m": 3.18,
-      "pct_ytd": 8.53,
-      "pct_1y": 23.02,
-      "trailingPE": 18.12,
-      "forwardPE": 13.81,
-      "ema_signal": 4,
-      "macd_state": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.78,
       "rsi14": 51.16,
       "rsi14_w": 50.52,
@@ -3816,58 +2768,6 @@ const INDEX_DATA = {
       "dist_ma200": 1.27,
       "marketCap": "172.00B",
       "targetPrice": 180.56,
-=======
-      "dist_sma20": 2.47,
-      "rsi14": 54.54,
-      "rsi14_w": 52.15,
-      "rsi14_m": 66.77,
-      "rel_vol": 0.55,
-      "dist_high": -14.5,
-      "dist_low": 23.09,
-      "dist_ma50": 2.54,
-      "dist_ma200": 1.65,
-      "marketCap": "165.39B",
-      "targetPrice": 158.3,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "BLK",
-      "name": "BlackRock, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 1054.11,
-      "pct_1d": -1.69,
-      "pct_1w": 2.19,
-      "pct_1m": 0.38,
-      "pct_3m": 1.08,
-      "pct_6m": -6.54,
-      "pct_ytd": -1.52,
-      "pct_1y": -3.56,
-      "trailingPE": 25.27,
-      "forwardPE": 16.44,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.83,
-      "rsi14": 55.5,
-      "rsi14_w": 51.73,
-      "rsi14_m": 55.55,
-      "rel_vol": 0.73,
-      "dist_high": -12.35,
-      "dist_low": 14.22,
-      "dist_ma50": 1.79,
-      "dist_ma200": -0.4,
-      "marketCap": "171.40B",
-      "targetPrice": 1313.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -3888,13 +2788,8 @@ const INDEX_DATA = {
       "pct_6m": 101.5,
       "pct_ytd": 182.94,
       "pct_1y": 609.08,
-<<<<<<< HEAD
       "trailingPE": 29.1,
       "forwardPE": 26.34,
-=======
-      "trailingPE": 29.19,
-      "forwardPE": 26.28,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -3911,11 +2806,7 @@ const INDEX_DATA = {
       "dist_ma50": -12.04,
       "dist_ma200": 55.24,
       "marketCap": "168.00B",
-<<<<<<< HEAD
       "targetPrice": 643.35,
-=======
-      "targetPrice": 633.83,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -4092,13 +2983,8 @@ const INDEX_DATA = {
       "pct_6m": 10.67,
       "pct_ytd": 25.87,
       "pct_1y": 18.09,
-<<<<<<< HEAD
       "trailingPE": 33.21,
       "forwardPE": 26.0,
-=======
-      "trailingPE": 33.14,
-      "forwardPE": 25.76,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -4114,13 +3000,8 @@ const INDEX_DATA = {
       "dist_low": 33.45,
       "dist_ma50": 0.63,
       "dist_ma200": 8.35,
-<<<<<<< HEAD
       "marketCap": "158.18B",
       "targetPrice": 653.09,
-=======
-      "marketCap": "158.28B",
-      "targetPrice": 648.03,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -4141,13 +3022,8 @@ const INDEX_DATA = {
       "pct_6m": 18.77,
       "pct_ytd": 26.03,
       "pct_1y": 7.43,
-<<<<<<< HEAD
       "trailingPE": 39.24,
       "forwardPE": 25.52,
-=======
-      "trailingPE": 39.2,
-      "forwardPE": 25.44,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": true,
@@ -4164,56 +3040,10 @@ const INDEX_DATA = {
       "dist_ma50": -0.56,
       "dist_ma200": 7.54,
       "marketCap": "155.87B",
-<<<<<<< HEAD
       "targetPrice": 469.41,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 455.79,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 123.61,
-      "pct_1d": -2.6,
-      "pct_1w": 1.29,
-      "pct_1m": -0.15,
-      "pct_3m": -3.81,
-      "pct_6m": -20.75,
-      "pct_ytd": -19.81,
-      "pct_1y": -25.84,
-      "trailingPE": 31.69,
-      "forwardPE": 16.64,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.07,
-      "rsi14": 52.75,
-      "rsi14_w": 48.09,
-      "rsi14_m": 45.53,
-      "rel_vol": 0.73,
-      "dist_high": -34.49,
-      "dist_low": 21.04,
-      "dist_ma50": 3.0,
-      "dist_ma200": -7.46,
-      "marketCap": "151.08B",
-      "targetPrice": 139.95,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "T",
       "name": "AT&T Inc.",
       "sector": "Communication Services",
@@ -4231,13 +3061,8 @@ const INDEX_DATA = {
       "pct_6m": -6.6,
       "pct_ytd": -11.63,
       "pct_1y": -19.83,
-<<<<<<< HEAD
       "trailingPE": 7.36,
       "forwardPE": 8.63,
-=======
-      "trailingPE": 7.39,
-      "forwardPE": 8.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -4254,7 +3079,6 @@ const INDEX_DATA = {
       "dist_ma50": -4.86,
       "dist_ma200": -13.32,
       "marketCap": "152.52B",
-<<<<<<< HEAD
       "targetPrice": 28.99,
       "exchange": "NYQ"
     },
@@ -4295,9 +3119,6 @@ const INDEX_DATA = {
       "dist_ma200": -7.46,
       "marketCap": "150.99B",
       "targetPrice": 138.41,
-=======
-      "targetPrice": 29.03,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -4318,13 +3139,8 @@ const INDEX_DATA = {
       "pct_6m": -14.35,
       "pct_ytd": -11.68,
       "pct_1y": -20.83,
-<<<<<<< HEAD
       "trailingPE": 17.99,
       "forwardPE": 16.13,
-=======
-      "trailingPE": 17.91,
-      "forwardPE": 16.21,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -4341,11 +3157,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.91,
       "dist_ma200": -9.55,
       "marketCap": "146.91B",
-<<<<<<< HEAD
       "targetPrice": 104.66,
-=======
-      "targetPrice": 104.01,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -4358,7 +3170,6 @@ const INDEX_DATA = {
       "dowjones": true,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 173.79,
       "pct_1d": 1.77,
       "pct_1w": 1.5,
@@ -4369,25 +3180,12 @@ const INDEX_DATA = {
       "pct_1y": -33.74,
       "trailingPE": 20.12,
       "forwardPE": 11.12,
-=======
-      "price": 201.11,
-      "pct_1d": -1.33,
-      "pct_1w": 0.47,
-      "pct_1m": 13.51,
-      "pct_3m": 3.38,
-      "pct_6m": -16.91,
-      "pct_ytd": -12.15,
-      "pct_1y": 6.93,
-      "trailingPE": 38.97,
-      "forwardPE": 21.69,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 6.64,
       "rsi14": 56.73,
       "rsi14_w": 44.34,
@@ -4399,58 +3197,6 @@ const INDEX_DATA = {
       "dist_ma200": -16.5,
       "marketCap": "142.33B",
       "targetPrice": 239.33,
-=======
-      "dist_sma20": 3.29,
-      "rsi14": 61.38,
-      "rsi14_w": 54.42,
-      "rsi14_m": 36.53,
-      "rel_vol": 1.3,
-      "dist_high": -16.91,
-      "dist_low": 24.21,
-      "dist_ma50": 9.76,
-      "dist_ma200": -1.64,
-      "marketCap": "142.34B",
-      "targetPrice": 242.52,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "PFE",
-      "name": "Pfizer Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Drug Manufacturers - General",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 24.75,
-      "pct_1d": -1.2,
-      "pct_1w": 1.1,
-      "pct_1m": -1.82,
-      "pct_3m": -9.37,
-      "pct_6m": -4.4,
-      "pct_ytd": -0.6,
-      "pct_1y": 2.02,
-      "trailingPE": 18.89,
-      "forwardPE": 8.73,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.6,
-      "rsi14": 49.59,
-      "rsi14_w": 43.4,
-      "rsi14_m": 37.18,
-      "rel_vol": 0.69,
-      "dist_high": -13.31,
-      "dist_low": 6.27,
-      "dist_ma50": -1.93,
-      "dist_ma200": -4.38,
-      "marketCap": "141.06B",
-      "targetPrice": 28.79,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -4471,13 +3217,8 @@ const INDEX_DATA = {
       "pct_6m": -20.27,
       "pct_ytd": -36.99,
       "pct_1y": 15.96,
-<<<<<<< HEAD
       "trailingPE": 37.46,
       "forwardPE": 19.66,
-=======
-      "trailingPE": 36.89,
-      "forwardPE": 19.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -4494,11 +3235,7 @@ const INDEX_DATA = {
       "dist_ma50": -15.8,
       "dist_ma200": -19.94,
       "marketCap": "142.64B",
-<<<<<<< HEAD
       "targetPrice": 666.62,
-=======
-      "targetPrice": 654.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -4511,7 +3248,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 201.11,
       "pct_1d": -1.33,
       "pct_1w": 0.47,
@@ -4524,25 +3260,10 @@ const INDEX_DATA = {
       "forwardPE": 22.04,
       "ema_signal": 4,
       "macd_state": 4,
-=======
-      "price": 179.45,
-      "pct_1d": -1.23,
-      "pct_1w": 2.08,
-      "pct_1m": 4.47,
-      "pct_3m": -5.98,
-      "pct_6m": -13.12,
-      "pct_ytd": -16.23,
-      "pct_1y": -20.98,
-      "trailingPE": 23.67,
-      "forwardPE": 14.59,
-      "ema_signal": 2,
-      "macd_state": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 3.29,
       "rsi14": 61.38,
       "rsi14_w": 54.42,
@@ -4554,58 +3275,6 @@ const INDEX_DATA = {
       "dist_ma200": -1.64,
       "marketCap": "142.34B",
       "targetPrice": 241.27,
-=======
-      "dist_sma20": 0.4,
-      "rsi14": 53.42,
-      "rsi14_w": 50.31,
-      "rsi14_m": 54.0,
-      "rel_vol": 0.51,
-      "dist_high": -22.32,
-      "dist_low": 16.43,
-      "dist_ma50": 5.63,
-      "dist_ma200": -3.81,
-      "marketCap": "139.05B",
-      "targetPrice": 224.06,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Application",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 173.79,
-      "pct_1d": 1.77,
-      "pct_1w": 1.5,
-      "pct_1m": 14.5,
-      "pct_3m": -7.12,
-      "pct_6m": -21.57,
-      "pct_ytd": -34.4,
-      "pct_1y": -33.74,
-      "trailingPE": 20.16,
-      "forwardPE": 11.2,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 6.64,
-      "rsi14": 56.73,
-      "rsi14_w": 44.34,
-      "rsi14_m": 39.62,
-      "rel_vol": 0.64,
-      "dist_high": -35.69,
-      "dist_low": 15.77,
-      "dist_ma50": 1.37,
-      "dist_ma200": -16.5,
-      "marketCap": "142.33B",
-      "targetPrice": 243.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -4626,13 +3295,8 @@ const INDEX_DATA = {
       "pct_6m": 19.07,
       "pct_ytd": 23.58,
       "pct_1y": 27.12,
-<<<<<<< HEAD
       "trailingPE": 19.67,
       "forwardPE": 13.34,
-=======
-      "trailingPE": 19.61,
-      "forwardPE": 12.81,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -4649,11 +3313,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.7,
       "dist_ma200": 8.53,
       "marketCap": "140.93B",
-<<<<<<< HEAD
       "targetPrice": 142.33,
-=======
-      "targetPrice": 140.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -4966,165 +3626,6 @@ const INDEX_DATA = {
       "dist_ma200": -0.41,
       "marketCap": "127.37B",
       "targetPrice": 257.59,
-<<<<<<< HEAD
-=======
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb Company",
-      "sector": "Health Care",
-      "sub_industry": "Drug Manufacturers - General",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 60.16,
-      "pct_1d": -0.95,
-      "pct_1w": 1.38,
-      "pct_1m": 11.41,
-      "pct_3m": 1.3,
-      "pct_6m": 10.39,
-      "pct_ytd": 11.53,
-      "pct_1y": 28.85,
-      "trailingPE": 16.85,
-      "forwardPE": 9.71,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.35,
-      "rsi14": 58.46,
-      "rsi14_w": 57.63,
-      "rsi14_m": 60.89,
-      "rel_vol": 0.7,
-      "dist_high": -3.54,
-      "dist_low": 41.22,
-      "dist_ma50": 5.48,
-      "dist_ma200": 9.84,
-      "marketCap": "122.85B",
-      "targetPrice": 62.96,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MO",
-      "name": "Altria Group, Inc.",
-      "sector": "Consumer Staples",
-      "sub_industry": "Tobacco",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 74.66,
-      "pct_1d": 0.61,
-      "pct_1w": 3.88,
-      "pct_1m": 8.02,
-      "pct_3m": 15.48,
-      "pct_6m": 22.23,
-      "pct_ytd": 29.48,
-      "pct_1y": 26.71,
-      "trailingPE": 15.59,
-      "forwardPE": 12.7,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
-      "dead_cross_count": 0,
-      "golden_cross_count": 2,
-      "dist_sma20": 3.27,
-      "rsi14": 60.79,
-      "rsi14_w": 59.26,
-      "rsi14_m": 66.84,
-      "rel_vol": 0.79,
-      "dist_high": 0.0,
-      "dist_low": 36.44,
-      "dist_ma50": 4.23,
-      "dist_ma200": 14.37,
-      "marketCap": "124.67B",
-      "targetPrice": 70.64,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "VRTX",
-      "name": "Vertex Pharmaceuticals Incorporated",
-      "sector": "Health Care",
-      "sub_industry": "Biotechnology",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 480.5,
-      "pct_1d": -1.06,
-      "pct_1w": 0.05,
-      "pct_1m": 6.39,
-      "pct_3m": 10.06,
-      "pct_6m": 4.2,
-      "pct_ytd": 5.99,
-      "pct_1y": 4.8,
-      "trailingPE": 28.52,
-      "forwardPE": 22.54,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.16,
-      "rsi14": 50.48,
-      "rsi14_w": 55.68,
-      "rsi14_m": 50.98,
-      "rel_vol": 0.74,
-      "dist_high": -9.27,
-      "dist_low": 31.09,
-      "dist_ma50": 4.24,
-      "dist_ma200": 6.84,
-      "marketCap": "121.95B",
-      "targetPrice": 554.43,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "sub_industry": "Medical Devices",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 319.14,
-      "pct_1d": -0.23,
-      "pct_1w": -3.71,
-      "pct_1m": 3.68,
-      "pct_3m": -2.49,
-      "pct_6m": -12.07,
-      "pct_ytd": -9.2,
-      "pct_1y": -17.6,
-      "trailingPE": 36.94,
-      "forwardPE": 19.09,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.73,
-      "rsi14": 50.04,
-      "rsi14_w": 45.52,
-      "rsi14_m": 46.43,
-      "rel_vol": 0.44,
-      "dist_high": -20.91,
-      "dist_low": 12.94,
-      "dist_ma50": 2.42,
-      "dist_ma200": -7.45,
-      "marketCap": "122.35B",
-      "targetPrice": 386.52,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -5146,11 +3647,7 @@ const INDEX_DATA = {
       "pct_ytd": -37.64,
       "pct_1y": -31.57,
       "trailingPE": 40.59,
-<<<<<<< HEAD
       "forwardPE": 29.41,
-=======
-      "forwardPE": 29.42,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -5266,13 +3763,8 @@ const INDEX_DATA = {
       "pct_6m": 4.55,
       "pct_ytd": -6.8,
       "pct_1y": -13.42,
-<<<<<<< HEAD
       "trailingPE": 10.64,
       "forwardPE": 13.1,
-=======
-      "trailingPE": 10.65,
-      "forwardPE": 13.07,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -5288,13 +3780,8 @@ const INDEX_DATA = {
       "dist_low": 11.47,
       "dist_ma50": 1.97,
       "dist_ma200": -0.0,
-<<<<<<< HEAD
       "marketCap": "124.01B",
       "targetPrice": 234.71,
-=======
-      "marketCap": "123.39B",
-      "targetPrice": 231.95,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -5393,13 +3880,8 @@ const INDEX_DATA = {
       "pct_6m": 8.69,
       "pct_ytd": 24.46,
       "pct_1y": 13.11,
-<<<<<<< HEAD
       "trailingPE": 80.0,
       "forwardPE": 34.32,
-=======
-      "trailingPE": 80.01,
-      "forwardPE": 34.87,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -5416,11 +3898,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.08,
       "dist_ma200": 11.62,
       "marketCap": "119.45B",
-<<<<<<< HEAD
       "targetPrice": 107.43,
-=======
-      "targetPrice": 106.45,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -5541,48 +4019,6 @@ const INDEX_DATA = {
       "exchange": "NMS"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Aerospace & Defense",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 509.54,
-      "pct_1d": 0.15,
-      "pct_1w": -2.14,
-      "pct_1m": -0.28,
-      "pct_3m": -10.91,
-      "pct_6m": -13.08,
-      "pct_ytd": 5.35,
-      "pct_1y": 10.64,
-      "trailingPE": 24.68,
-      "forwardPE": 15.9,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.11,
-      "rsi14": 44.08,
-      "rsi14_w": 42.89,
-      "rsi14_m": 46.48,
-      "rel_vol": 0.6,
-      "dist_high": -24.7,
-      "dist_low": 24.05,
-      "dist_ma50": -2.15,
-      "dist_ma200": -6.09,
-      "marketCap": "117.48B",
-      "targetPrice": 608.32,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "LOW",
       "name": "Lowe's Companies, Inc.",
       "sector": "Consumer Discretionary",
@@ -5617,11 +4053,7 @@ const INDEX_DATA = {
       "dist_low": 0.0,
       "dist_ma50": -5.68,
       "dist_ma200": -14.96,
-<<<<<<< HEAD
       "marketCap": "114.78B",
-=======
-      "marketCap": "114.84B",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "targetPrice": 263.73,
       "exchange": "NYQ"
     },
@@ -5682,13 +4114,8 @@ const INDEX_DATA = {
       "pct_6m": 20.88,
       "pct_ytd": 32.66,
       "pct_1y": 44.8,
-<<<<<<< HEAD
       "trailingPE": 63.1,
       "forwardPE": 44.87,
-=======
-      "trailingPE": 63.25,
-      "forwardPE": 44.94,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -5705,11 +4132,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.04,
       "dist_ma200": 17.16,
       "marketCap": "108.82B",
-<<<<<<< HEAD
       "targetPrice": 316.42,
-=======
-      "targetPrice": 311.68,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -5730,13 +4153,8 @@ const INDEX_DATA = {
       "pct_6m": 31.04,
       "pct_ytd": 35.18,
       "pct_1y": 59.16,
-<<<<<<< HEAD
       "trailingPE": 18.27,
       "forwardPE": 15.46,
-=======
-      "trailingPE": 19.47,
-      "forwardPE": 15.4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -5753,89 +4171,7 @@ const INDEX_DATA = {
       "dist_ma50": 9.16,
       "dist_ma200": 26.53,
       "marketCap": "107.71B",
-<<<<<<< HEAD
       "targetPrice": 169.21,
-=======
-      "targetPrice": 165.29,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "SO",
-      "name": "The Southern Company",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Regulated Electric",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 94.46,
-      "pct_1d": -0.88,
-      "pct_1w": -2.08,
-      "pct_1m": 1.47,
-      "pct_3m": 2.76,
-      "pct_6m": 5.96,
-      "pct_ytd": 8.33,
-      "pct_1y": -0.35,
-      "trailingPE": 24.16,
-      "forwardPE": 19.21,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.4,
-      "rsi14": 47.37,
-      "rsi14_w": 50.86,
-      "rsi14_m": 57.32,
-      "rel_vol": 0.66,
-      "dist_high": -5.27,
-      "dist_low": 12.35,
-      "dist_ma50": 0.44,
-      "dist_ma200": 1.74,
-      "marketCap": "106.48B",
-      "targetPrice": 101.45,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MDT",
-      "name": "Medtronic plc",
-      "sector": "Health Care",
-      "sub_industry": "Medical Devices",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 83.29,
-      "pct_1d": 0.11,
-      "pct_1w": -0.34,
-      "pct_1m": 4.98,
-      "pct_3m": 1.57,
-      "pct_6m": -16.95,
-      "pct_ytd": -13.29,
-      "pct_1y": -7.15,
-      "trailingPE": 22.33,
-      "forwardPE": 13.0,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.09,
-      "rsi14": 55.76,
-      "rsi14_w": 46.55,
-      "rsi14_m": 48.95,
-      "rel_vol": 0.54,
-      "dist_high": -20.94,
-      "dist_low": 12.94,
-      "dist_ma50": 4.84,
-      "dist_ma200": -8.13,
-      "marketCap": "106.61B",
-      "targetPrice": 97.84,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -5856,13 +4192,8 @@ const INDEX_DATA = {
       "pct_6m": -16.44,
       "pct_ytd": -31.65,
       "pct_1y": -45.46,
-<<<<<<< HEAD
       "trailingPE": 62.28,
       "forwardPE": 20.72,
-=======
-      "trailingPE": 62.32,
-      "forwardPE": 20.81,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -5879,7 +4210,6 @@ const INDEX_DATA = {
       "dist_ma50": 1.01,
       "dist_ma200": -18.46,
       "marketCap": "107.98B",
-<<<<<<< HEAD
       "targetPrice": 139.33,
       "exchange": "NYQ"
     },
@@ -5959,9 +4289,6 @@ const INDEX_DATA = {
       "dist_ma200": -8.13,
       "marketCap": "106.61B",
       "targetPrice": 96.7,
-=======
-      "targetPrice": 141.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -6021,11 +4348,7 @@ const INDEX_DATA = {
       "pct_6m": -0.68,
       "pct_ytd": -0.77,
       "pct_1y": -15.17,
-<<<<<<< HEAD
       "trailingPE": 23.79,
-=======
-      "trailingPE": 23.81,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 20.93,
       "ema_signal": 4,
       "macd_state": 4,
@@ -6043,56 +4366,10 @@ const INDEX_DATA = {
       "dist_ma50": 11.98,
       "dist_ma200": 7.52,
       "marketCap": "102.03B",
-<<<<<<< HEAD
       "targetPrice": 253.79,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 253.47,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "PNC",
-      "name": "The PNC Financial Services Group, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Banks - Regional",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 250.14,
-      "pct_1d": -1.08,
-      "pct_1w": -1.07,
-      "pct_1m": 7.8,
-      "pct_3m": 9.69,
-      "pct_6m": 10.93,
-      "pct_ytd": 19.84,
-      "pct_1y": 27.6,
-      "trailingPE": 13.77,
-      "forwardPE": 11.73,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.63,
-      "rsi14": 58.33,
-      "rsi14_w": 66.68,
-      "rsi14_m": 66.0,
-      "rel_vol": 1.14,
-      "dist_high": -1.98,
-      "dist_low": 40.24,
-      "dist_ma50": 7.43,
-      "dist_ma200": 16.91,
-      "marketCap": "99.81B",
-      "targetPrice": 276.48,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "EQIX",
       "name": "Equinix, Inc.",
       "sector": "Real Estate",
@@ -6110,13 +4387,8 @@ const INDEX_DATA = {
       "pct_6m": 27.89,
       "pct_ytd": 32.78,
       "pct_1y": 28.91,
-<<<<<<< HEAD
       "trailingPE": 70.35,
       "forwardPE": 53.57,
-=======
-      "trailingPE": 70.26,
-      "forwardPE": 52.67,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -6133,56 +4405,10 @@ const INDEX_DATA = {
       "dist_ma50": -4.06,
       "dist_ma200": 10.55,
       "marketCap": "100.33B",
-<<<<<<< HEAD
       "targetPrice": 1207.93,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 1199.66,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Integrated Freight & Logistics",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 113.15,
-      "pct_1d": -3.88,
-      "pct_1w": 0.23,
-      "pct_1m": 7.91,
-      "pct_3m": 6.43,
-      "pct_6m": 4.3,
-      "pct_ytd": 14.07,
-      "pct_1y": 14.41,
-      "trailingPE": 18.31,
-      "forwardPE": 14.12,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.16,
-      "rsi14": 56.0,
-      "rsi14_w": 58.21,
-      "rsi14_m": 48.41,
-      "rel_vol": 0.92,
-      "dist_high": -5.71,
-      "dist_low": 37.02,
-      "dist_ma50": 6.14,
-      "dist_ma200": 10.73,
-      "marketCap": "96.18B",
-      "targetPrice": 114.69,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "GD",
       "name": "General Dynamics Corporation",
       "sector": "Industrials",
@@ -6200,7 +4426,6 @@ const INDEX_DATA = {
       "pct_6m": 1.6,
       "pct_ytd": 10.08,
       "pct_1y": 24.76,
-<<<<<<< HEAD
       "trailingPE": 23.3,
       "forwardPE": 20.25,
       "ema_signal": 4,
@@ -6243,17 +4468,11 @@ const INDEX_DATA = {
       "trailingPE": 13.77,
       "forwardPE": 11.73,
       "ema_signal": 2,
-=======
-      "trailingPE": 23.32,
-      "forwardPE": 20.35,
-      "ema_signal": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.63,
       "rsi14": 58.33,
       "rsi14_w": 66.68,
@@ -6265,58 +4484,6 @@ const INDEX_DATA = {
       "dist_ma200": 16.91,
       "marketCap": "99.81B",
       "targetPrice": 276.48,
-=======
-      "dist_sma20": 2.1,
-      "rsi14": 59.52,
-      "rsi14_w": 59.26,
-      "rsi14_m": 68.77,
-      "rel_vol": 0.54,
-      "dist_high": -1.67,
-      "dist_low": 24.76,
-      "dist_ma50": 5.08,
-      "dist_ma200": 6.61,
-      "marketCap": "100.22B",
-      "targetPrice": 395.74,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MCK",
-      "name": "McKesson Corporation",
-      "sector": "Health Care",
-      "sub_industry": "Medical Distribution",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 831.46,
-      "pct_1d": -1.18,
-      "pct_1w": 2.36,
-      "pct_1m": 10.77,
-      "pct_3m": -1.28,
-      "pct_6m": 1.0,
-      "pct_ytd": 1.36,
-      "pct_1y": 16.91,
-      "trailingPE": 21.67,
-      "forwardPE": 16.51,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.28,
-      "rsi14": 61.65,
-      "rsi14_w": 53.07,
-      "rsi14_m": 56.76,
-      "rel_vol": 0.59,
-      "dist_high": -16.49,
-      "dist_low": 26.17,
-      "dist_ma50": 7.76,
-      "dist_ma200": -0.02,
-      "marketCap": "97.35B",
-      "targetPrice": 940.73,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -6338,11 +4505,7 @@ const INDEX_DATA = {
       "pct_ytd": 18.33,
       "pct_1y": 37.92,
       "trailingPE": 12.6,
-<<<<<<< HEAD
       "forwardPE": 10.86,
-=======
-      "forwardPE": 10.92,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -6359,11 +4522,7 @@ const INDEX_DATA = {
       "dist_ma50": 9.09,
       "dist_ma200": 17.07,
       "marketCap": "98.36B",
-<<<<<<< HEAD
       "targetPrice": 69.93,
-=======
-      "targetPrice": 69.66,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -6384,13 +4543,8 @@ const INDEX_DATA = {
       "pct_6m": 5.43,
       "pct_ytd": 7.37,
       "pct_1y": 5.02,
-<<<<<<< HEAD
       "trailingPE": 19.27,
       "forwardPE": 17.55,
-=======
-      "trailingPE": 19.36,
-      "forwardPE": 17.56,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -6407,7 +4561,6 @@ const INDEX_DATA = {
       "dist_ma50": 0.83,
       "dist_ma200": 1.07,
       "marketCap": "98.11B",
-<<<<<<< HEAD
       "targetPrice": 139.18,
       "exchange": "NYQ"
     },
@@ -6448,9 +4601,6 @@ const INDEX_DATA = {
       "dist_ma200": -0.02,
       "marketCap": "97.35B",
       "targetPrice": 939.27,
-=======
-      "targetPrice": 138.39,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -6471,13 +4621,8 @@ const INDEX_DATA = {
       "pct_6m": 14.47,
       "pct_ytd": 18.27,
       "pct_1y": 35.12,
-<<<<<<< HEAD
       "trailingPE": 38.5,
       "forwardPE": 28.16,
-=======
-      "trailingPE": 38.38,
-      "forwardPE": 28.02,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -6494,11 +4639,7 @@ const INDEX_DATA = {
       "dist_ma50": -2.19,
       "dist_ma200": 11.14,
       "marketCap": "96.76B",
-<<<<<<< HEAD
       "targetPrice": 388.74,
-=======
-      "targetPrice": 383.62,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -6619,48 +4760,6 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "sub_industry": "Beverages - Non-Alcoholic",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 95.45,
-      "pct_1d": -2.1,
-      "pct_1w": -1.67,
-      "pct_1m": 4.5,
-      "pct_3m": 26.81,
-      "pct_6m": 16.97,
-      "pct_ytd": 24.49,
-      "pct_1y": 60.61,
-      "trailingPE": 46.11,
-      "forwardPE": 36.78,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.15,
-      "rsi14": 51.58,
-      "rsi14_w": 68.89,
-      "rsi14_m": 72.27,
-      "rel_vol": 0.84,
-      "dist_high": -4.49,
-      "dist_low": 62.47,
-      "dist_ma50": 4.19,
-      "dist_ma200": 20.3,
-      "marketCap": "93.35B",
-      "targetPrice": 93.53,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "PWR",
       "name": "Quanta Services, Inc.",
       "sector": "Industrials",
@@ -6700,87 +4799,6 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Application",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 234.74,
-      "pct_1d": -1.06,
-      "pct_1w": 1.79,
-      "pct_1m": 20.28,
-      "pct_3m": -5.03,
-      "pct_6m": -20.22,
-      "pct_ytd": -32.93,
-      "pct_1y": -36.16,
-      "trailingPE": 13.42,
-      "forwardPE": 8.53,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 8.74,
-      "rsi14": 58.84,
-      "rsi14_w": 44.14,
-      "rsi14_m": 27.93,
-      "rel_vol": 0.76,
-      "dist_high": -37.05,
-      "dist_low": 21.37,
-      "dist_ma50": 1.94,
-      "dist_ma200": -16.57,
-      "marketCap": "93.31B",
-      "targetPrice": 273.28,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "CSX",
-      "name": "CSX Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Railroads",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 50.11,
-      "pct_1d": -1.26,
-      "pct_1w": 0.95,
-      "pct_1m": 9.82,
-      "pct_3m": 15.54,
-      "pct_6m": 37.17,
-      "pct_ytd": 38.23,
-      "pct_1y": 45.84,
-      "trailingPE": 30.74,
-      "forwardPE": 22.56,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.13,
-      "rsi14": 63.53,
-      "rsi14_w": 71.31,
-      "rsi14_m": 70.77,
-      "rel_vol": 1.02,
-      "dist_high": -1.53,
-      "dist_low": 56.35,
-      "dist_ma50": 6.45,
-      "dist_ma200": 23.38,
-      "marketCap": "93.11B",
-      "targetPrice": 50.63,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "DDOG",
       "name": "Datadog, Inc.",
       "sector": "Information Technology",
@@ -6798,7 +4816,6 @@ const INDEX_DATA = {
       "pct_6m": 113.19,
       "pct_ytd": 93.54,
       "pct_1y": 81.18,
-<<<<<<< HEAD
       "trailingPE": 702.43,
       "forwardPE": 92.49,
       "ema_signal": 4,
@@ -6841,17 +4858,11 @@ const INDEX_DATA = {
       "trailingPE": 46.32,
       "forwardPE": 36.67,
       "ema_signal": 2,
-=======
-      "trailingPE": 674.87,
-      "forwardPE": 91.35,
-      "ema_signal": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -1.15,
       "rsi14": 51.58,
       "rsi14_w": 68.89,
@@ -6863,19 +4874,6 @@ const INDEX_DATA = {
       "dist_ma200": 20.3,
       "marketCap": "93.35B",
       "targetPrice": 97.95,
-=======
-      "dist_sma20": 4.48,
-      "rsi14": 60.04,
-      "rsi14_w": 73.74,
-      "rsi14_m": 75.11,
-      "rel_vol": 0.53,
-      "dist_high": -5.15,
-      "dist_low": 156.49,
-      "dist_ma50": 11.72,
-      "dist_ma200": 61.59,
-      "marketCap": "93.69B",
-      "targetPrice": 254.97,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -6896,13 +4894,8 @@ const INDEX_DATA = {
       "pct_6m": 66.49,
       "pct_ytd": 92.46,
       "pct_1y": 114.19,
-<<<<<<< HEAD
       "trailingPE": 22.75,
       "forwardPE": 14.01,
-=======
-      "trailingPE": 22.89,
-      "forwardPE": 13.73,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -6919,11 +4912,7 @@ const INDEX_DATA = {
       "dist_ma50": 20.61,
       "dist_ma200": 47.73,
       "marketCap": "93.03B",
-<<<<<<< HEAD
       "targetPrice": 282.47,
-=======
-      "targetPrice": 276.83,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -7022,13 +5011,8 @@ const INDEX_DATA = {
       "pct_6m": 77.66,
       "pct_ytd": 93.88,
       "pct_1y": 80.3,
-<<<<<<< HEAD
       "trailingPE": 20.6,
       "forwardPE": 11.97,
-=======
-      "trailingPE": 20.76,
-      "forwardPE": 12.48,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -7045,11 +5029,7 @@ const INDEX_DATA = {
       "dist_ma50": 19.85,
       "dist_ma200": 45.81,
       "marketCap": "92.05B",
-<<<<<<< HEAD
       "targetPrice": 295.31,
-=======
-      "targetPrice": 290.65,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -7070,13 +5050,8 @@ const INDEX_DATA = {
       "pct_6m": 5.13,
       "pct_ytd": 5.55,
       "pct_1y": 4.3,
-<<<<<<< HEAD
       "trailingPE": 77.02,
       "forwardPE": 35.19,
-=======
-      "trailingPE": 76.91,
-      "forwardPE": 35.1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -7093,89 +5068,7 @@ const INDEX_DATA = {
       "dist_ma50": -11.88,
       "dist_ma200": 0.59,
       "marketCap": "91.00B",
-<<<<<<< HEAD
       "targetPrice": 389.14,
-=======
-      "targetPrice": 395.94,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "KKR",
-      "name": "KKR & Co. Inc.",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 96.97,
-      "pct_1d": -3.93,
-      "pct_1w": 0.06,
-      "pct_1m": -0.04,
-      "pct_3m": -7.16,
-      "pct_6m": -22.01,
-      "pct_ytd": -23.93,
-      "pct_1y": -32.79,
-      "trailingPE": 33.05,
-      "forwardPE": 13.26,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.8,
-      "rsi14": 51.25,
-      "rsi14_w": 45.91,
-      "rsi14_m": 44.28,
-      "rel_vol": 0.74,
-      "dist_high": -36.27,
-      "dist_low": 15.61,
-      "dist_ma50": 1.25,
-      "dist_ma200": -10.47,
-      "marketCap": "87.07B",
-      "targetPrice": 124.11,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Independent Power Producers",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 253.5,
-      "pct_1d": 0.44,
-      "pct_1w": -1.58,
-      "pct_1m": -7.5,
-      "pct_3m": -8.71,
-      "pct_6m": -13.88,
-      "pct_ytd": -28.24,
-      "pct_1y": -20.25,
-      "trailingPE": 22.01,
-      "forwardPE": 18.69,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.43,
-      "rsi14": 46.83,
-      "rsi14_w": 42.26,
-      "rsi14_m": 50.1,
-      "rel_vol": 0.61,
-      "dist_high": -37.24,
-      "dist_low": 7.19,
-      "dist_ma50": -4.75,
-      "dist_ma200": -18.87,
-      "marketCap": "91.03B",
-      "targetPrice": 359.8,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -7196,13 +5089,8 @@ const INDEX_DATA = {
       "pct_6m": 17.38,
       "pct_ytd": 23.37,
       "pct_1y": 28.57,
-<<<<<<< HEAD
       "trailingPE": 32.58,
       "forwardPE": 29.39,
-=======
-      "trailingPE": 32.53,
-      "forwardPE": 28.85,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -7219,11 +5107,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.14,
       "dist_ma200": 8.88,
       "marketCap": "90.70B",
-<<<<<<< HEAD
       "targetPrice": 84.38,
-=======
-      "targetPrice": 83.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -7283,13 +5167,8 @@ const INDEX_DATA = {
       "pct_6m": -6.27,
       "pct_ytd": -12.22,
       "pct_1y": -4.85,
-<<<<<<< HEAD
       "trailingPE": 48.01,
       "forwardPE": 37.12,
-=======
-      "trailingPE": 48.19,
-      "forwardPE": 32.28,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -7305,13 +5184,8 @@ const INDEX_DATA = {
       "dist_low": 52.36,
       "dist_ma50": 6.27,
       "dist_ma200": -2.21,
-<<<<<<< HEAD
       "marketCap": "89.48B",
       "targetPrice": 122.67,
-=======
-      "marketCap": "89.40B",
-      "targetPrice": 119.44,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -7371,13 +5245,8 @@ const INDEX_DATA = {
       "pct_6m": 9.86,
       "pct_ytd": 25.27,
       "pct_1y": 85.55,
-<<<<<<< HEAD
       "trailingPE": 33.19,
       "forwardPE": 18.73,
-=======
-      "trailingPE": 33.2,
-      "forwardPE": 18.77,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -7394,50 +5263,7 @@ const INDEX_DATA = {
       "dist_ma50": -5.52,
       "dist_ma200": 12.25,
       "marketCap": "88.23B",
-<<<<<<< HEAD
       "targetPrice": 785.8,
-=======
-      "targetPrice": 754.86,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MCO",
-      "name": "Moody's Corporation",
-      "sector": "Financials",
-      "sub_industry": "Financial Data & Stock Exchanges",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 505.37,
-      "pct_1d": -1.07,
-      "pct_1w": 1.95,
-      "pct_1m": 12.14,
-      "pct_3m": 9.96,
-      "pct_6m": -3.71,
-      "pct_ytd": -1.07,
-      "pct_1y": 1.04,
-      "trailingPE": 36.23,
-      "forwardPE": 27.09,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.47,
-      "rsi14": 63.35,
-      "rsi14_w": 60.72,
-      "rsi14_m": 56.47,
-      "rel_vol": 0.56,
-      "dist_high": -6.35,
-      "dist_low": 22.59,
-      "dist_ma50": 9.65,
-      "dist_ma200": 7.1,
-      "marketCap": "88.28B",
-      "targetPrice": 549.19,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -7458,13 +5284,8 @@ const INDEX_DATA = {
       "pct_6m": -12.17,
       "pct_ytd": -10.24,
       "pct_1y": -10.87,
-<<<<<<< HEAD
       "trailingPE": 20.92,
       "forwardPE": 19.12,
-=======
-      "trailingPE": 20.93,
-      "forwardPE": 19.08,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -7480,13 +5301,8 @@ const INDEX_DATA = {
       "dist_low": 12.14,
       "dist_ma50": -5.48,
       "dist_ma200": -12.14,
-<<<<<<< HEAD
       "marketCap": "88.82B",
       "targetPrice": 280.6,
-=======
-      "marketCap": "88.56B",
-      "targetPrice": 281.47,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -7508,11 +5324,7 @@ const INDEX_DATA = {
       "pct_ytd": -46.06,
       "pct_1y": -48.76,
       "trailingPE": 11.56,
-<<<<<<< HEAD
       "forwardPE": 9.88,
-=======
-      "forwardPE": 9.86,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -7529,11 +5341,7 @@ const INDEX_DATA = {
       "dist_ma50": -8.17,
       "dist_ma200": -32.74,
       "marketCap": "88.57B",
-<<<<<<< HEAD
       "targetPrice": 175.41,
-=======
-      "targetPrice": 178.89,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -7546,7 +5354,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 505.37,
       "pct_1d": -1.07,
       "pct_1w": 1.95,
@@ -7557,25 +5364,12 @@ const INDEX_DATA = {
       "pct_1y": 1.04,
       "trailingPE": 36.24,
       "forwardPE": 27.02,
-=======
-      "price": 182.1,
-      "pct_1d": -0.04,
-      "pct_1w": 0.31,
-      "pct_1m": 12.12,
-      "pct_3m": 1.73,
-      "pct_6m": 1.35,
-      "pct_ytd": -1.84,
-      "pct_1y": -13.29,
-      "trailingPE": 22.76,
-      "forwardPE": 16.13,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 5.47,
       "rsi14": 63.35,
       "rsi14_w": 60.72,
@@ -7626,19 +5420,6 @@ const INDEX_DATA = {
       "dist_ma200": -10.47,
       "marketCap": "87.07B",
       "targetPrice": 124.11,
-=======
-      "dist_sma20": 4.76,
-      "rsi14": 63.16,
-      "rsi14_w": 55.71,
-      "rsi14_m": 43.83,
-      "rel_vol": 1.05,
-      "dist_high": -14.22,
-      "dist_low": 15.75,
-      "dist_ma50": 8.69,
-      "dist_ma200": 2.26,
-      "marketCap": "87.73B",
-      "targetPrice": 200.52,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -7659,13 +5440,8 @@ const INDEX_DATA = {
       "pct_6m": 8.5,
       "pct_ytd": 6.79,
       "pct_1y": 4.98,
-<<<<<<< HEAD
       "trailingPE": 35.7,
       "forwardPE": 23.96,
-=======
-      "trailingPE": 35.88,
-      "forwardPE": 24.01,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -7681,7 +5457,6 @@ const INDEX_DATA = {
       "dist_low": 29.94,
       "dist_ma50": 4.13,
       "dist_ma200": 10.34,
-<<<<<<< HEAD
       "marketCap": "87.36B",
       "targetPrice": 156.64,
       "exchange": "NMS"
@@ -7723,10 +5498,6 @@ const INDEX_DATA = {
       "dist_ma200": -12.6,
       "marketCap": "84.95B",
       "targetPrice": 31.7,
-=======
-      "marketCap": "86.02B",
-      "targetPrice": 156.7,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -7747,13 +5518,8 @@ const INDEX_DATA = {
       "pct_6m": 20.68,
       "pct_ytd": 16.38,
       "pct_1y": 28.72,
-<<<<<<< HEAD
       "trailingPE": 24.93,
       "forwardPE": 24.19,
-=======
-      "trailingPE": 42.62,
-      "forwardPE": 24.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": true,
@@ -7770,56 +5536,10 @@ const INDEX_DATA = {
       "dist_ma50": -1.69,
       "dist_ma200": 7.92,
       "marketCap": "85.03B",
-<<<<<<< HEAD
       "targetPrice": 158.22,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 155.74,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "sub_industry": "Telecom Services",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 23.78,
-      "pct_1d": -0.04,
-      "pct_1w": -0.79,
-      "pct_1m": 6.02,
-      "pct_3m": -18.14,
-      "pct_6m": -17.69,
-      "pct_ytd": -15.11,
-      "pct_1y": -27.53,
-      "trailingPE": 4.66,
-      "forwardPE": 6.44,
-      "ema_signal": 4,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
-      "dead_cross_count": 0,
-      "golden_cross_count": 2,
-      "dist_sma20": 1.38,
-      "rsi14": 50.06,
-      "rsi14_w": 38.07,
-      "rsi14_m": 32.1,
-      "rel_vol": 0.96,
-      "dist_high": -29.11,
-      "dist_low": 6.54,
-      "dist_ma50": -1.27,
-      "dist_ma200": -12.6,
-      "marketCap": "84.95B",
-      "targetPrice": 30.94,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "FCX",
       "name": "Freeport-McMoRan Inc.",
       "sector": "Materials",
@@ -7837,13 +5557,8 @@ const INDEX_DATA = {
       "pct_6m": -2.95,
       "pct_ytd": 15.75,
       "pct_1y": 30.1,
-<<<<<<< HEAD
       "trailingPE": 31.28,
       "forwardPE": 15.0,
-=======
-      "trailingPE": 31.11,
-      "forwardPE": 14.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -7860,56 +5575,10 @@ const INDEX_DATA = {
       "dist_ma50": -7.67,
       "dist_ma200": 4.75,
       "marketCap": "84.51B",
-<<<<<<< HEAD
       "targetPrice": 72.88,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 70.93,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MMM",
-      "name": "3M Company",
-      "sector": "Industrials",
-      "sub_industry": "Conglomerates",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 159.11,
-      "pct_1d": -0.46,
-      "pct_1w": 0.89,
-      "pct_1m": -0.93,
-      "pct_3m": 7.17,
-      "pct_6m": 2.07,
-      "pct_ytd": -0.62,
-      "pct_1y": 4.12,
-      "trailingPE": 30.66,
-      "forwardPE": 16.77,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.8,
-      "rsi14": 51.53,
-      "rsi14_w": 53.33,
-      "rsi14_m": 57.61,
-      "rel_vol": 0.84,
-      "dist_high": -8.88,
-      "dist_low": 12.68,
-      "dist_ma50": 2.31,
-      "dist_ma200": 0.58,
-      "marketCap": "82.99B",
-      "targetPrice": 171.55,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "PSX",
       "name": "Phillips 66",
       "sector": "Energy",
@@ -7946,126 +5615,6 @@ const INDEX_DATA = {
       "dist_ma200": 33.28,
       "marketCap": "83.72B",
       "targetPrice": 201.47,
-<<<<<<< HEAD
-=======
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "HCA",
-      "name": "HCA Healthcare, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Care Facilities",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 370.42,
-      "pct_1d": -0.2,
-      "pct_1w": -5.2,
-      "pct_1m": -1.27,
-      "pct_3m": -21.38,
-      "pct_6m": -20.42,
-      "pct_ytd": -20.66,
-      "pct_1y": 1.61,
-      "trailingPE": 12.76,
-      "forwardPE": 11.31,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -5.54,
-      "rsi14": 40.5,
-      "rsi14_w": 35.46,
-      "rsi14_m": 45.68,
-      "rel_vol": 0.74,
-      "dist_high": -32.05,
-      "dist_low": 10.8,
-      "dist_ma50": -5.82,
-      "dist_ma200": -19.27,
-      "marketCap": "82.17B",
-      "targetPrice": 467.6,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CTAS",
-      "name": "Cintas Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Business Services",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 201.8,
-      "pct_1d": -1.3,
-      "pct_1w": 9.82,
-      "pct_1m": 18.12,
-      "pct_3m": 14.49,
-      "pct_6m": 3.27,
-      "pct_ytd": 7.3,
-      "pct_1y": -8.82,
-      "trailingPE": 41.1,
-      "forwardPE": 33.16,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 11.63,
-      "rsi14": 70.32,
-      "rsi14_w": 62.03,
-      "rsi14_m": 54.92,
-      "rel_vol": 0.99,
-      "dist_high": -10.81,
-      "dist_low": 23.39,
-      "dist_ma50": 14.74,
-      "dist_ma200": 9.39,
-      "marketCap": "80.75B",
-      "targetPrice": 214.5,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "SHW",
-      "name": "The Sherwin-Williams Company",
-      "sector": "Materials",
-      "sub_industry": "Specialty Chemicals",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 323.6,
-      "pct_1d": -2.33,
-      "pct_1w": -1.63,
-      "pct_1m": 0.88,
-      "pct_3m": -3.29,
-      "pct_6m": -9.18,
-      "pct_ytd": -0.13,
-      "pct_1y": -5.19,
-      "trailingPE": 31.12,
-      "forwardPE": 24.31,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.6,
-      "rsi14": 45.31,
-      "rsi14_w": 47.64,
-      "rsi14_m": 46.56,
-      "rel_vol": 0.65,
-      "dist_high": -13.76,
-      "dist_low": 10.44,
-      "dist_ma50": 1.35,
-      "dist_ma200": -2.8,
-      "marketCap": "79.81B",
-      "targetPrice": 379.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8086,13 +5635,8 @@ const INDEX_DATA = {
       "pct_6m": 3.34,
       "pct_ytd": 9.04,
       "pct_1y": 38.26,
-<<<<<<< HEAD
       "trailingPE": 16.99,
       "forwardPE": 12.93,
-=======
-      "trailingPE": 16.91,
-      "forwardPE": 12.89,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": true,
@@ -8109,11 +5653,7 @@ const INDEX_DATA = {
       "dist_ma50": -4.01,
       "dist_ma200": 9.28,
       "marketCap": "82.89B",
-<<<<<<< HEAD
       "targetPrice": 445.57,
-=======
-      "targetPrice": 449.1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8212,13 +5752,8 @@ const INDEX_DATA = {
       "pct_6m": -8.46,
       "pct_ytd": -16.54,
       "pct_1y": -21.42,
-<<<<<<< HEAD
       "trailingPE": 90.04,
       "forwardPE": 42.32,
-=======
-      "trailingPE": 89.16,
-      "forwardPE": 24.34,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -8235,11 +5770,7 @@ const INDEX_DATA = {
       "dist_ma50": 11.37,
       "dist_ma200": -3.06,
       "marketCap": "82.36B",
-<<<<<<< HEAD
       "targetPrice": 248.0,
-=======
-      "targetPrice": 245.2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -8299,13 +5830,8 @@ const INDEX_DATA = {
       "pct_6m": -44.03,
       "pct_ytd": -55.64,
       "pct_1y": -61.53,
-<<<<<<< HEAD
       "trailingPE": 17.79,
       "forwardPE": 10.74,
-=======
-      "trailingPE": 17.93,
-      "forwardPE": 10.76,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -8322,95 +5848,10 @@ const INDEX_DATA = {
       "dist_ma50": -4.58,
       "dist_ma200": -39.19,
       "marketCap": "80.37B",
-<<<<<<< HEAD
       "targetPrice": 458.86,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 473.68,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "ITW",
-      "name": "Illinois Tool Works Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Industrial Machinery",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 271.69,
-      "pct_1d": -1.58,
-      "pct_1w": 0.07,
-      "pct_1m": 2.88,
-      "pct_3m": 0.24,
-      "pct_6m": 4.52,
-      "pct_ytd": 10.31,
-      "pct_1y": 6.7,
-      "trailingPE": 25.23,
-      "forwardPE": 22.3,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.64,
-      "rsi14": 54.27,
-      "rsi14_w": 55.31,
-      "rsi14_m": 55.74,
-      "rel_vol": 0.66,
-      "dist_high": -9.32,
-      "dist_low": 12.7,
-      "dist_ma50": 4.63,
-      "dist_ma200": 4.17,
-      "marketCap": "78.17B",
-      "targetPrice": 280.05,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "AMT",
-      "name": "American Tower Corporation",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Specialty",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 167.06,
-      "pct_1d": -1.76,
-      "pct_1w": -1.44,
-      "pct_1m": -5.11,
-      "pct_3m": -4.41,
-      "pct_6m": -6.24,
-      "pct_ytd": -4.85,
-      "pct_1y": -26.24,
-      "trailingPE": 26.9,
-      "forwardPE": 24.36,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.09,
-      "rsi14": 41.7,
-      "rsi14_w": 41.67,
-      "rsi14_m": 38.93,
-      "rel_vol": 0.66,
-      "dist_high": -28.1,
-      "dist_low": 3.05,
-      "dist_ma50": -5.94,
-      "dist_ma200": -7.07,
-      "marketCap": "77.83B",
-      "targetPrice": 215.17,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "ICE",
       "name": "Intercontinental Exchange, Inc.",
       "sector": "Financials",
@@ -8447,7 +5888,6 @@ const INDEX_DATA = {
       "dist_ma200": -8.82,
       "marketCap": "80.06B",
       "targetPrice": 182.33,
-<<<<<<< HEAD
       "exchange": "NYQ"
     },
     {
@@ -8526,8 +5966,6 @@ const INDEX_DATA = {
       "dist_ma200": 4.17,
       "marketCap": "78.17B",
       "targetPrice": 284.77,
-=======
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8548,13 +5986,8 @@ const INDEX_DATA = {
       "pct_6m": 35.15,
       "pct_ytd": 27.04,
       "pct_1y": 39.99,
-<<<<<<< HEAD
       "trailingPE": 9.87,
       "forwardPE": 12.46,
-=======
-      "trailingPE": 9.91,
-      "forwardPE": 12.54,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -8571,7 +6004,6 @@ const INDEX_DATA = {
       "dist_ma50": 17.17,
       "dist_ma200": 24.64,
       "marketCap": "78.36B",
-<<<<<<< HEAD
       "targetPrice": 346.79,
       "exchange": "NYQ"
     },
@@ -8612,9 +6044,6 @@ const INDEX_DATA = {
       "dist_ma200": -7.07,
       "marketCap": "77.83B",
       "targetPrice": 215.64,
-=======
-      "targetPrice": 336.92,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8635,13 +6064,8 @@ const INDEX_DATA = {
       "pct_6m": 9.02,
       "pct_ytd": 2.81,
       "pct_1y": 3.38,
-<<<<<<< HEAD
       "trailingPE": 19.91,
       "forwardPE": 16.98,
-=======
-      "trailingPE": 19.92,
-      "forwardPE": 16.97,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -8658,11 +6082,7 @@ const INDEX_DATA = {
       "dist_ma50": 9.29,
       "dist_ma200": 7.83,
       "marketCap": "77.48B",
-<<<<<<< HEAD
       "targetPrice": 395.26,
-=======
-      "targetPrice": 393.11,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8683,13 +6103,8 @@ const INDEX_DATA = {
       "pct_6m": 5.09,
       "pct_ytd": 11.96,
       "pct_1y": -13.18,
-<<<<<<< HEAD
       "trailingPE": 29.88,
       "forwardPE": 17.96,
-=======
-      "trailingPE": 29.84,
-      "forwardPE": 17.87,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -8706,11 +6121,7 @@ const INDEX_DATA = {
       "dist_ma50": -1.16,
       "dist_ma200": 2.77,
       "marketCap": "77.37B",
-<<<<<<< HEAD
       "targetPrice": 67.29,
-=======
-      "targetPrice": 67.27,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -8731,13 +6142,8 @@ const INDEX_DATA = {
       "pct_6m": -8.68,
       "pct_ytd": 2.91,
       "pct_1y": -4.43,
-<<<<<<< HEAD
       "trailingPE": 31.51,
       "forwardPE": 19.0,
-=======
-      "trailingPE": 31.54,
-      "forwardPE": 19.05,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -8754,11 +6160,7 @@ const INDEX_DATA = {
       "dist_ma50": -2.56,
       "dist_ma200": -1.68,
       "marketCap": "76.50B",
-<<<<<<< HEAD
       "targetPrice": 166.38,
-=======
-      "targetPrice": 163.54,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8779,13 +6181,8 @@ const INDEX_DATA = {
       "pct_6m": 3.02,
       "pct_ytd": 2.6,
       "pct_1y": -17.41,
-<<<<<<< HEAD
       "trailingPE": 17.47,
       "forwardPE": 14.36,
-=======
-      "trailingPE": 17.46,
-      "forwardPE": 14.3,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -8802,11 +6199,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.01,
       "dist_ma200": -0.18,
       "marketCap": "76.75B",
-<<<<<<< HEAD
       "targetPrice": 336.8,
-=======
-      "targetPrice": 338.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8827,13 +6220,8 @@ const INDEX_DATA = {
       "pct_6m": -4.01,
       "pct_ytd": 2.34,
       "pct_1y": 0.2,
-<<<<<<< HEAD
       "trailingPE": 36.33,
       "forwardPE": 28.67,
-=======
-      "trailingPE": 36.35,
-      "forwardPE": 28.71,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -8850,50 +6238,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.62,
       "dist_ma200": -0.81,
       "marketCap": "75.61B",
-<<<<<<< HEAD
       "targetPrice": 321.19,
-=======
-      "targetPrice": 319.43,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "NSC",
-      "name": "Norfolk Southern Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Railroads",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 334.97,
-      "pct_1d": -1.53,
-      "pct_1w": 2.25,
-      "pct_1m": 11.63,
-      "pct_3m": 10.84,
-      "pct_6m": 15.87,
-      "pct_ytd": 16.02,
-      "pct_1y": 20.76,
-      "trailingPE": 28.22,
-      "forwardPE": 24.19,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.34,
-      "rsi14": 65.65,
-      "rsi14_w": 63.69,
-      "rsi14_m": 63.53,
-      "rel_vol": 0.9,
-      "dist_high": -1.53,
-      "dist_low": 22.99,
-      "dist_ma50": 6.24,
-      "dist_ma200": 11.64,
-      "marketCap": "75.23B",
-      "targetPrice": 341.72,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -8945,7 +6290,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 334.97,
       "pct_1d": -1.53,
       "pct_1w": 2.25,
@@ -8956,64 +6300,12 @@ const INDEX_DATA = {
       "pct_1y": 20.76,
       "trailingPE": 28.22,
       "forwardPE": 24.19,
-=======
-      "price": 306.22,
-      "pct_1d": -2.16,
-      "pct_1w": -2.4,
-      "pct_1m": -6.13,
-      "pct_3m": -3.69,
-      "pct_6m": 23.8,
-      "pct_ytd": 31.56,
-      "pct_1y": 68.35,
-      "trailingPE": 16.5,
-      "forwardPE": 14.94,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.98,
-      "rsi14": 40.69,
-      "rsi14_w": 54.08,
-      "rsi14_m": 59.92,
-      "rel_vol": 0.89,
-      "dist_high": -9.6,
-      "dist_low": 75.04,
-      "dist_ma50": -3.89,
-      "dist_ma200": 13.08,
-      "marketCap": "73.07B",
-      "targetPrice": 352.43,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources, Inc.",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas E&P",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 141.09,
-      "pct_1d": 0.86,
-      "pct_1w": 1.06,
-      "pct_1m": 8.55,
-      "pct_3m": 6.54,
-      "pct_6m": 30.58,
-      "pct_ytd": 34.36,
-      "pct_1y": 21.12,
-      "trailingPE": 13.87,
-      "forwardPE": 9.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 4.34,
       "rsi14": 65.65,
       "rsi14_w": 63.69,
@@ -9025,19 +6317,6 @@ const INDEX_DATA = {
       "dist_ma200": 11.64,
       "marketCap": "75.23B",
       "targetPrice": 341.72,
-=======
-      "dist_sma20": 4.78,
-      "rsi14": 59.98,
-      "rsi14_w": 58.74,
-      "rsi14_m": 58.0,
-      "rel_vol": 0.62,
-      "dist_high": -5.87,
-      "dist_low": 38.62,
-      "dist_ma50": 3.82,
-      "dist_ma200": 15.24,
-      "marketCap": "75.15B",
-      "targetPrice": 157.41,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -9058,13 +6337,8 @@ const INDEX_DATA = {
       "pct_6m": 3.28,
       "pct_ytd": 3.16,
       "pct_1y": -3.68,
-<<<<<<< HEAD
       "trailingPE": 12.03,
       "forwardPE": 8.49,
-=======
-      "trailingPE": 12.04,
-      "forwardPE": 8.48,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -9081,11 +6355,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.97,
       "dist_ma200": 1.23,
       "marketCap": "75.11B",
-<<<<<<< HEAD
       "targetPrice": 340.65,
-=======
-      "targetPrice": 340.92,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -9098,7 +6368,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 141.09,
       "pct_1d": 0.86,
       "pct_1w": 1.06,
@@ -9111,25 +6380,10 @@ const INDEX_DATA = {
       "forwardPE": 9.73,
       "ema_signal": 4,
       "macd_state": 4,
-=======
-      "price": 91.93,
-      "pct_1d": -1.13,
-      "pct_1w": -1.37,
-      "pct_1m": 2.74,
-      "pct_3m": 12.37,
-      "pct_6m": 8.5,
-      "pct_ytd": 16.34,
-      "pct_1y": 6.11,
-      "trailingPE": 35.63,
-      "forwardPE": 22.68,
-      "ema_signal": 2,
-      "macd_state": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 4.78,
       "rsi14": 59.98,
       "rsi14_w": 58.74,
@@ -9141,58 +6395,6 @@ const INDEX_DATA = {
       "dist_ma200": 15.24,
       "marketCap": "75.15B",
       "targetPrice": 158.57,
-=======
-      "dist_sma20": -0.43,
-      "rsi14": 50.88,
-      "rsi14_w": 56.12,
-      "rsi14_m": 49.4,
-      "rel_vol": 0.64,
-      "dist_high": -7.27,
-      "dist_low": 22.61,
-      "dist_ma50": 1.83,
-      "dist_ma200": 7.61,
-      "marketCap": "73.56B",
-      "targetPrice": 97.3,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "SPG",
-      "name": "Simon Property Group, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Retail",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 228.19,
-      "pct_1d": -0.22,
-      "pct_1w": 3.96,
-      "pct_1m": 7.98,
-      "pct_3m": 11.44,
-      "pct_6m": 23.23,
-      "pct_ytd": 23.27,
-      "pct_1y": 39.34,
-      "trailingPE": 15.86,
-      "forwardPE": 33.85,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.23,
-      "rsi14": 63.87,
-      "rsi14_w": 66.25,
-      "rsi14_m": 69.67,
-      "rel_vol": 0.44,
-      "dist_high": -0.22,
-      "dist_low": 42.02,
-      "dist_ma50": 7.01,
-      "dist_ma200": 17.25,
-      "marketCap": "86.71B",
-      "targetPrice": 224.42,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -9213,11 +6415,7 @@ const INDEX_DATA = {
       "pct_6m": -21.11,
       "pct_ytd": -8.11,
       "pct_1y": 1.68,
-<<<<<<< HEAD
       "trailingPE": 16.37,
-=======
-      "trailingPE": 16.41,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 17.32,
       "ema_signal": 1,
       "macd_state": 3,
@@ -9235,11 +6433,7 @@ const INDEX_DATA = {
       "dist_ma50": -2.65,
       "dist_ma200": -14.12,
       "marketCap": "74.42B",
-<<<<<<< HEAD
       "targetPrice": 676.4,
-=======
-      "targetPrice": 670.48,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -9438,87 +6632,6 @@ const INDEX_DATA = {
       "exchange": "NMS"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "HLT",
-      "name": "Hilton Worldwide Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Lodging",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 323.43,
-      "pct_1d": 0.66,
-      "pct_1w": 0.3,
-      "pct_1m": -7.28,
-      "pct_3m": -4.93,
-      "pct_6m": 9.1,
-      "pct_ytd": 12.6,
-      "pct_1y": 19.41,
-      "trailingPE": 49.38,
-      "forwardPE": 30.99,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.0,
-      "rsi14": 41.07,
-      "rsi14_w": 52.58,
-      "rsi14_m": 70.78,
-      "rel_vol": 0.69,
-      "dist_high": -7.65,
-      "dist_low": 25.97,
-      "dist_ma50": -2.51,
-      "dist_ma200": 6.75,
-      "marketCap": "73.63B",
-      "targetPrice": 349.71,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "AEP",
-      "name": "American Electric Power Company, Inc.",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Regulated Electric",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 131.05,
-      "pct_1d": -0.82,
-      "pct_1w": -3.38,
-      "pct_1m": 2.63,
-      "pct_3m": -0.64,
-      "pct_6m": 10.14,
-      "pct_ytd": 13.65,
-      "pct_1y": 20.74,
-      "trailingPE": 19.38,
-      "forwardPE": 19.13,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.97,
-      "rsi14": 43.92,
-      "rsi14_w": 52.08,
-      "rsi14_m": 61.11,
-      "rel_vol": 0.59,
-      "dist_high": -5.51,
-      "dist_low": 23.12,
-      "dist_ma50": -0.1,
-      "dist_ma200": 4.38,
-      "marketCap": "71.30B",
-      "targetPrice": 146.2,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "KMI",
       "name": "Kinder Morgan, Inc.",
       "sector": "Energy",
@@ -9536,13 +6649,8 @@ const INDEX_DATA = {
       "pct_6m": 14.0,
       "pct_ytd": 18.52,
       "pct_1y": 20.18,
-<<<<<<< HEAD
       "trailingPE": 21.98,
       "forwardPE": 21.74,
-=======
-      "trailingPE": 21.87,
-      "forwardPE": 21.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -9559,56 +6667,10 @@ const INDEX_DATA = {
       "dist_ma50": 1.03,
       "dist_ma200": 7.65,
       "marketCap": "72.48B",
-<<<<<<< HEAD
       "targetPrice": 35.89,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 35.33,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ORLY",
-      "name": "O'Reilly Automotive, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Auto Parts",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 84.53,
-      "pct_1d": -1.77,
-      "pct_1w": -3.15,
-      "pct_1m": -2.66,
-      "pct_3m": -9.89,
-      "pct_6m": -14.43,
-      "pct_ytd": -7.32,
-      "pct_1y": -10.22,
-      "trailingPE": 27.53,
-      "forwardPE": 23.35,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.98,
-      "rsi14": 43.33,
-      "rsi14_w": 39.98,
-      "rsi14_m": 49.36,
-      "rel_vol": 0.75,
-      "dist_high": -21.6,
-      "dist_low": 2.18,
-      "dist_ma50": -4.84,
-      "dist_ma200": -9.84,
-      "marketCap": "70.05B",
-      "targetPrice": 109.79,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "HON",
       "name": "Honeywell International Inc.",
       "sector": "Industrials",
@@ -9626,13 +6688,8 @@ const INDEX_DATA = {
       "pct_6m": -1.6,
       "pct_ytd": 10.55,
       "pct_1y": -2.72,
-<<<<<<< HEAD
       "trailingPE": 16.03,
       "forwardPE": 20.67,
-=======
-      "trailingPE": 18.08,
-      "forwardPE": 23.15,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -9649,11 +6706,7 @@ const INDEX_DATA = {
       "dist_ma50": -2.21,
       "dist_ma200": 0.18,
       "marketCap": "71.66B",
-<<<<<<< HEAD
       "targetPrice": 253.09,
-=======
-      "targetPrice": 246.25,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -9713,13 +6766,8 @@ const INDEX_DATA = {
       "pct_6m": -10.3,
       "pct_ytd": -12.92,
       "pct_1y": 23.21,
-<<<<<<< HEAD
       "trailingPE": 16.38,
       "forwardPE": 12.54,
-=======
-      "trailingPE": 16.42,
-      "forwardPE": 12.28,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -9736,7 +6784,6 @@ const INDEX_DATA = {
       "dist_ma50": 4.23,
       "dist_ma200": -4.64,
       "marketCap": "70.47B",
-<<<<<<< HEAD
       "targetPrice": 824.88,
       "exchange": "NMS"
     },
@@ -9777,9 +6824,6 @@ const INDEX_DATA = {
       "dist_ma200": -9.84,
       "marketCap": "70.05B",
       "targetPrice": 110.39,
-=======
-      "targetPrice": 819.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -9800,11 +6844,7 @@ const INDEX_DATA = {
       "pct_6m": -4.39,
       "pct_ytd": 20.87,
       "pct_1y": 38.31,
-<<<<<<< HEAD
       "trailingPE": 20.34,
-=======
-      "trailingPE": 20.44,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 14.1,
       "ema_signal": 1,
       "macd_state": 3,
@@ -9822,128 +6862,7 @@ const INDEX_DATA = {
       "dist_ma50": -10.68,
       "dist_ma200": 0.73,
       "marketCap": "69.36B",
-<<<<<<< HEAD
       "targetPrice": 61.29,
-=======
-      "targetPrice": 60.97,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "APO",
-      "name": "Apollo Global Management, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 118.24,
-      "pct_1d": -1.85,
-      "pct_1w": -0.5,
-      "pct_1m": -14.01,
-      "pct_3m": -7.09,
-      "pct_6m": -15.26,
-      "pct_ytd": -18.32,
-      "pct_1y": -20.48,
-      "trailingPE": 74.36,
-      "forwardPE": 11.1,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.32,
-      "rsi14": 41.11,
-      "rsi14_w": 44.1,
-      "rsi14_m": 47.58,
-      "rel_vol": 0.76,
-      "dist_high": -22.57,
-      "dist_low": 17.89,
-      "dist_ma50": -7.16,
-      "dist_ma200": -6.96,
-      "marketCap": "68.17B",
-      "targetPrice": 148.83,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CRH",
-      "name": "CRH plc",
-      "sector": "Materials",
-      "sub_industry": "Building Materials",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 99.95,
-      "pct_1d": -2.89,
-      "pct_1w": -2.69,
-      "pct_1m": -10.15,
-      "pct_3m": -14.83,
-      "pct_6m": -17.4,
-      "pct_ytd": -19.91,
-      "pct_1y": 6.05,
-      "trailingPE": 18.54,
-      "forwardPE": 14.95,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -6.25,
-      "rsi14": 37.54,
-      "rsi14_w": 40.08,
-      "rsi14_m": 49.23,
-      "rel_vol": 0.63,
-      "dist_high": -23.92,
-      "dist_low": 6.26,
-      "dist_ma50": -6.09,
-      "dist_ma200": -12.96,
-      "marketCap": "66.79B",
-      "targetPrice": 142.61,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MSI",
-      "name": "Motorola Solutions, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Communication Equipment",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 410.43,
-      "pct_1d": -0.7,
-      "pct_1w": -1.83,
-      "pct_1m": 3.86,
-      "pct_3m": -7.87,
-      "pct_6m": 3.92,
-      "pct_ytd": 7.07,
-      "pct_1y": -2.49,
-      "trailingPE": 33.1,
-      "forwardPE": 22.14,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.34,
-      "rsi14": 47.9,
-      "rsi14_w": 47.17,
-      "rsi14_m": 50.07,
-      "rel_vol": 0.46,
-      "dist_high": -16.29,
-      "dist_low": 12.81,
-      "dist_ma50": 0.62,
-      "dist_ma200": -1.7,
-      "marketCap": "68.13B",
-      "targetPrice": 507.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -9966,7 +6885,6 @@ const INDEX_DATA = {
       "pct_1y": 42.45,
       "trailingPE": 30.57,
       "forwardPE": 5.23,
-<<<<<<< HEAD
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -10045,15 +6963,12 @@ const INDEX_DATA = {
       "pct_1y": -20.48,
       "trailingPE": 77.75,
       "forwardPE": 11.11,
-=======
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
-      "macd_state": 1,
+      "macd_state": 3,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -2.32,
       "rsi14": 41.11,
       "rsi14_w": 44.1,
@@ -10065,19 +6980,6 @@ const INDEX_DATA = {
       "dist_ma200": -6.96,
       "marketCap": "68.17B",
       "targetPrice": 149.26,
-=======
-      "dist_sma20": -1.96,
-      "rsi14": 41.79,
-      "rsi14_w": 48.39,
-      "rsi14_m": 62.73,
-      "rel_vol": 1.15,
-      "dist_high": -12.25,
-      "dist_low": 55.04,
-      "dist_ma50": -3.79,
-      "dist_ma200": -0.46,
-      "marketCap": "68.35B",
-      "targetPrice": 98.43,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -10138,11 +7040,7 @@ const INDEX_DATA = {
       "pct_ytd": -9.41,
       "pct_1y": -23.93,
       "trailingPE": 37.58,
-<<<<<<< HEAD
       "forwardPE": 25.63,
-=======
-      "forwardPE": 25.65,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -10159,56 +7057,10 @@ const INDEX_DATA = {
       "dist_ma50": -3.94,
       "dist_ma200": -6.08,
       "marketCap": "67.38B",
-<<<<<<< HEAD
       "targetPrice": 1510.56,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 1508.95,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "WBD",
-      "name": "Warner Bros. Discovery, Inc.",
-      "sector": "Communication Services",
-      "sub_industry": "Entertainment",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 25.86,
-      "pct_1d": -3.76,
-      "pct_1w": -4.54,
-      "pct_1m": -1.3,
-      "pct_3m": -5.31,
-      "pct_6m": -9.36,
-      "pct_ytd": -10.27,
-      "pct_1y": 102.03,
-      "trailingPE": null,
-      "forwardPE": 808.12,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.38,
-      "rsi14": 38.68,
-      "rsi14_w": 47.51,
-      "rsi14_m": 71.29,
-      "rel_vol": 2.17,
-      "dist_high": -13.74,
-      "dist_low": 139.89,
-      "dist_ma50": -3.72,
-      "dist_ma200": -1.06,
-      "marketCap": "64.83B",
-      "targetPrice": 29.92,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "NXPI",
       "name": "NXP Semiconductors N.V.",
       "sector": "Information Technology",
@@ -10227,11 +7079,7 @@ const INDEX_DATA = {
       "pct_ytd": 23.09,
       "pct_1y": 17.05,
       "trailingPE": 25.57,
-<<<<<<< HEAD
       "forwardPE": 14.93,
-=======
-      "forwardPE": 14.96,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -10248,7 +7096,6 @@ const INDEX_DATA = {
       "dist_ma50": -10.12,
       "dist_ma200": 11.47,
       "marketCap": "67.46B",
-<<<<<<< HEAD
       "targetPrice": 315.88,
       "exchange": "NMS"
     },
@@ -10257,100 +7104,11 @@ const INDEX_DATA = {
       "name": "CRH plc",
       "sector": "Materials",
       "sub_industry": "Building Materials",
-=======
-      "targetPrice": 310.66,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Aerospace & Defense",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 202.47,
-      "pct_1d": -4.33,
-      "pct_1w": -4.97,
-      "pct_1m": -24.4,
-      "pct_3m": null,
-      "pct_6m": null,
-      "pct_ytd": null,
-      "pct_1y": null,
-      "trailingPE": 42.54,
-      "forwardPE": 20.31,
-      "ema_signal": 1,
-      "macd_state": null,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -10.18,
-      "rsi14": 47.73,
-      "rsi14_w": null,
-      "rsi14_m": null,
-      "rel_vol": 1.11,
-      "dist_high": -25.0,
-      "dist_low": 1.24,
-      "dist_ma50": null,
-      "dist_ma200": null,
-      "marketCap": "64.17B",
-      "targetPrice": 263.18,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "PCAR",
-      "name": "PACCAR Inc",
-      "sector": "Industrials",
-      "sub_industry": "Farm & Heavy Construction Machinery",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 124.33,
-      "pct_1d": -1.48,
-      "pct_1w": 0.06,
-      "pct_1m": 4.52,
-      "pct_3m": -1.47,
-      "pct_6m": 0.87,
-      "pct_ytd": 13.53,
-      "pct_1y": 33.82,
-      "trailingPE": 26.51,
-      "forwardPE": 18.13,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.66,
-      "rsi14": 56.03,
-      "rsi14_w": 58.76,
-      "rsi14_m": 60.56,
-      "rel_vol": 0.73,
-      "dist_high": -3.98,
-      "dist_low": 33.82,
-      "dist_ma50": 5.88,
-      "dist_ma200": 8.77,
-      "marketCap": "65.43B",
-      "targetPrice": 128.44,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "GWW",
-      "name": "W.W. Grainger, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Industrial Distribution",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "sp500": true,
       "nasdaq100": false,
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 99.95,
       "pct_1d": -2.89,
       "pct_1w": -2.69,
@@ -10363,25 +7121,10 @@ const INDEX_DATA = {
       "forwardPE": 14.99,
       "ema_signal": 1,
       "macd_state": 1,
-=======
-      "price": 1371.22,
-      "pct_1d": -1.71,
-      "pct_1w": -1.47,
-      "pct_1m": 0.43,
-      "pct_3m": 17.1,
-      "pct_6m": 29.53,
-      "pct_ytd": 35.89,
-      "pct_1y": 34.14,
-      "trailingPE": 36.81,
-      "forwardPE": 27.16,
-      "ema_signal": 2,
-      "macd_state": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -6.25,
       "rsi14": 37.54,
       "rsi14_w": 40.08,
@@ -10393,19 +7136,6 @@ const INDEX_DATA = {
       "dist_ma200": -12.96,
       "marketCap": "66.79B",
       "targetPrice": 144.25,
-=======
-      "dist_sma20": 0.65,
-      "rsi14": 55.88,
-      "rsi14_w": 68.98,
-      "rsi14_m": 70.52,
-      "rel_vol": 0.53,
-      "dist_high": -2.2,
-      "dist_low": 49.34,
-      "dist_ma50": 4.7,
-      "dist_ma200": 23.02,
-      "marketCap": "64.74B",
-      "targetPrice": 1292.29,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -10426,13 +7156,8 @@ const INDEX_DATA = {
       "pct_6m": 12.74,
       "pct_ytd": 20.08,
       "pct_1y": 0.99,
-<<<<<<< HEAD
       "trailingPE": 31.38,
       "forwardPE": 20.77,
-=======
-      "trailingPE": 31.26,
-      "forwardPE": 20.76,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -10449,11 +7174,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.31,
       "dist_ma200": 7.89,
       "marketCap": "66.05B",
-<<<<<<< HEAD
       "targetPrice": 338.0,
-=======
-      "targetPrice": 332.95,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -10466,7 +7187,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 124.33,
       "pct_1d": -1.48,
       "pct_1w": 0.06,
@@ -10495,36 +7215,6 @@ const INDEX_DATA = {
       "marketCap": "65.43B",
       "targetPrice": 130.11,
       "exchange": "NMS"
-=======
-      "price": 1012.71,
-      "pct_1d": -3.11,
-      "pct_1w": -6.69,
-      "pct_1m": -5.95,
-      "pct_3m": 25.61,
-      "pct_6m": 7.72,
-      "pct_ytd": 25.13,
-      "pct_1y": 30.17,
-      "trailingPE": 25.91,
-      "forwardPE": 18.73,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -6.69,
-      "rsi14": 40.25,
-      "rsi14_w": 55.68,
-      "rsi14_m": 58.39,
-      "rel_vol": 0.68,
-      "dist_high": -11.13,
-      "dist_low": 42.54,
-      "dist_ma50": -2.29,
-      "dist_ma200": 12.7,
-      "marketCap": "63.44B",
-      "targetPrice": 1164.14,
-      "exchange": "NYQ"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "BSX",
@@ -10566,126 +7256,6 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "TFC",
-      "name": "Truist Financial Corporation",
-      "sector": "Financials",
-      "sub_industry": "Banks - Regional",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 51.0,
-      "pct_1d": -2.86,
-      "pct_1w": -1.83,
-      "pct_1m": 5.52,
-      "pct_3m": -0.14,
-      "pct_6m": 1.96,
-      "pct_ytd": 3.64,
-      "pct_1y": 14.02,
-      "trailingPE": 11.72,
-      "forwardPE": 10.15,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.06,
-      "rsi14": 51.01,
-      "rsi14_w": 54.38,
-      "rsi14_m": 56.21,
-      "rel_vol": 1.0,
-      "dist_high": -8.62,
-      "dist_low": 24.12,
-      "dist_ma50": 3.14,
-      "dist_ma200": 5.34,
-      "marketCap": "62.30B",
-      "targetPrice": 55.18,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "sub_industry": "Insurance Brokers",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 253.66,
-      "pct_1d": -0.09,
-      "pct_1w": -2.9,
-      "pct_1m": 18.5,
-      "pct_3m": 13.01,
-      "pct_6m": 1.43,
-      "pct_ytd": -1.98,
-      "pct_1y": -17.71,
-      "trailingPE": 41.11,
-      "forwardPE": 17.06,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.98,
-      "rsi14": 63.33,
-      "rsi14_w": 60.77,
-      "rsi14_m": 49.18,
-      "rel_vol": 0.37,
-      "dist_high": -19.51,
-      "dist_low": 32.11,
-      "dist_ma50": 14.79,
-      "dist_ma200": 6.84,
-      "marketCap": "65.18B",
-      "targetPrice": 281.39,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "NKE",
-      "name": "NIKE, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Footwear & Accessories",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": true,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 43.47,
-      "pct_1d": -0.66,
-      "pct_1w": -0.66,
-      "pct_1m": -3.83,
-      "pct_3m": -6.29,
-      "pct_6m": -33.54,
-      "pct_ytd": -31.77,
-      "pct_1y": -41.27,
-      "trailingPE": 20.7,
-      "forwardPE": 18.71,
-      "ema_signal": 2,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
-      "dead_cross_count": 0,
-      "golden_cross_count": 2,
-      "dist_sma20": 1.51,
-      "rsi14": 50.05,
-      "rsi14_w": 39.28,
-      "rsi14_m": 34.44,
-      "rel_vol": 0.52,
-      "dist_high": -45.14,
-      "dist_low": 6.67,
-      "dist_ma50": -0.35,
-      "dist_ma200": -22.11,
-      "marketCap": "64.49B",
-      "targetPrice": 51.12,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "MPWR",
       "name": "Monolithic Power Systems, Inc.",
       "sector": "Information Technology",
@@ -10725,48 +7295,6 @@ const INDEX_DATA = {
       "exchange": "NMS"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "DLR",
-      "name": "Digital Realty Trust, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Specialty",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 176.25,
-      "pct_1d": 1.36,
-      "pct_1w": -0.94,
-      "pct_1m": -6.32,
-      "pct_3m": -12.43,
-      "pct_6m": 10.85,
-      "pct_ytd": 13.92,
-      "pct_1y": -0.49,
-      "trailingPE": 46.62,
-      "forwardPE": 74.64,
-      "ema_signal": 3,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.74,
-      "rsi14": 43.01,
-      "rsi14_w": 46.66,
-      "rsi14_m": 54.54,
-      "rel_vol": 0.62,
-      "dist_high": -13.56,
-      "dist_low": 19.14,
-      "dist_ma50": -5.2,
-      "dist_ma200": 0.44,
-      "marketCap": "63.04B",
-      "targetPrice": 219.26,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "ALL",
       "name": "The Allstate Corporation",
       "sector": "Financials",
@@ -10815,7 +7343,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 253.66,
       "pct_1d": -0.09,
       "pct_1w": -2.9,
@@ -10826,25 +7353,12 @@ const INDEX_DATA = {
       "pct_1y": -17.71,
       "trailingPE": 40.94,
       "forwardPE": 17.02,
-=======
-      "price": 124.08,
-      "pct_1d": -0.51,
-      "pct_1w": 0.63,
-      "pct_1m": 7.46,
-      "pct_3m": 6.99,
-      "pct_6m": 14.3,
-      "pct_ytd": 12.52,
-      "pct_1y": 22.71,
-      "trailingPE": 14.16,
-      "forwardPE": 16.42,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 4.98,
       "rsi14": 63.33,
       "rsi14_w": 60.77,
@@ -11090,19 +7604,6 @@ const INDEX_DATA = {
       "dist_ma200": 12.7,
       "marketCap": "63.44B",
       "targetPrice": 1174.35,
-=======
-      "dist_sma20": 2.82,
-      "rsi14": 63.24,
-      "rsi14_w": 64.96,
-      "rsi14_m": 66.26,
-      "rel_vol": 0.45,
-      "dist_high": -0.51,
-      "dist_low": 26.5,
-      "dist_ma50": 5.34,
-      "dist_ma200": 10.13,
-      "marketCap": "63.15B",
-      "targetPrice": 116.43,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -11123,13 +7624,8 @@ const INDEX_DATA = {
       "pct_6m": 31.64,
       "pct_ytd": 42.8,
       "pct_1y": 37.24,
-<<<<<<< HEAD
       "trailingPE": 18.42,
       "forwardPE": 15.55,
-=======
-      "trailingPE": 18.44,
-      "forwardPE": 15.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -11146,7 +7642,6 @@ const INDEX_DATA = {
       "dist_ma50": 7.85,
       "dist_ma200": 24.67,
       "marketCap": "63.40B",
-<<<<<<< HEAD
       "targetPrice": 135.87,
       "exchange": "NYQ"
     },
@@ -11226,9 +7721,6 @@ const INDEX_DATA = {
       "dist_ma200": 5.34,
       "marketCap": "63.54B",
       "targetPrice": 55.03,
-=======
-      "targetPrice": 133.84,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -11249,13 +7741,8 @@ const INDEX_DATA = {
       "pct_6m": 15.5,
       "pct_ytd": 20.09,
       "pct_1y": 21.96,
-<<<<<<< HEAD
       "trailingPE": 20.81,
       "forwardPE": 18.46,
-=======
-      "trailingPE": 20.76,
-      "forwardPE": 18.44,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -11272,11 +7759,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.24,
       "dist_ma200": 11.98,
       "marketCap": "61.88B",
-<<<<<<< HEAD
       "targetPrice": 70.09,
-=======
-      "targetPrice": 70.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -11297,13 +7780,8 @@ const INDEX_DATA = {
       "pct_6m": 5.49,
       "pct_ytd": 15.63,
       "pct_1y": 15.59,
-<<<<<<< HEAD
       "trailingPE": 53.55,
       "forwardPE": 37.51,
-=======
-      "trailingPE": 53.43,
-      "forwardPE": 38.41,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -11320,11 +7798,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.84,
       "dist_ma200": 6.68,
       "marketCap": "60.78B",
-<<<<<<< HEAD
       "targetPrice": 67.96,
-=======
-      "targetPrice": 68.21,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -11345,13 +7819,8 @@ const INDEX_DATA = {
       "pct_6m": 48.56,
       "pct_ytd": 53.04,
       "pct_1y": 72.9,
-<<<<<<< HEAD
       "trailingPE": 28.76,
       "forwardPE": 22.75,
-=======
-      "trailingPE": 28.84,
-      "forwardPE": 23.67,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -11372,48 +7841,6 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "sub_industry": "Communication Equipment",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 44.56,
-      "pct_1d": -2.75,
-      "pct_1w": -5.67,
-      "pct_1m": -6.01,
-      "pct_3m": 54.94,
-      "pct_6m": 111.99,
-      "pct_ytd": 85.51,
-      "pct_1y": 115.68,
-      "trailingPE": 41.64,
-      "forwardPE": 11.14,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.11,
-      "rsi14": 47.99,
-      "rsi14_w": 65.28,
-      "rsi14_m": 78.91,
-      "rel_vol": 0.46,
-      "dist_high": -20.64,
-      "dist_low": 124.94,
-      "dist_ma50": 3.07,
-      "dist_ma200": 56.56,
-      "marketCap": "59.01B",
-      "targetPrice": 64.13,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "MET",
       "name": "MetLife, Inc.",
       "sector": "Financials",
@@ -11432,11 +7859,7 @@ const INDEX_DATA = {
       "pct_ytd": 17.8,
       "pct_1y": 21.83,
       "trailingPE": 17.99,
-<<<<<<< HEAD
       "forwardPE": 8.45,
-=======
-      "forwardPE": 8.44,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -11453,134 +7876,10 @@ const INDEX_DATA = {
       "dist_ma50": 8.64,
       "dist_ma200": 17.54,
       "marketCap": "59.83B",
-<<<<<<< HEAD
       "targetPrice": 97.4,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 96.0,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "SRE",
-      "name": "Sempra",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Diversified",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 90.69,
-      "pct_1d": -1.69,
-      "pct_1w": -3.94,
-      "pct_1m": 0.0,
-      "pct_3m": -2.64,
-      "pct_6m": 5.48,
-      "pct_ytd": 2.72,
-      "pct_1y": 15.43,
-      "trailingPE": 30.85,
-      "forwardPE": 16.38,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.68,
-      "rsi14": 40.84,
-      "rsi14_w": 47.74,
-      "rsi14_m": 53.78,
-      "rel_vol": 0.47,
-      "dist_high": -9.08,
-      "dist_low": 15.9,
-      "dist_ma50": -1.31,
-      "dist_ma200": -1.36,
-      "marketCap": "59.28B",
-      "targetPrice": 104.69,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "COR",
-      "name": "Cencora, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Distribution",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 303.99,
-      "pct_1d": -1.27,
-      "pct_1w": -0.7,
-      "pct_1m": 11.83,
-      "pct_3m": -2.69,
-      "pct_6m": -13.58,
-      "pct_ytd": -10.0,
-      "pct_1y": 3.87,
-      "trailingPE": 23.29,
-      "forwardPE": 15.34,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.0,
-      "rsi14": 59.37,
-      "rsi14_w": 49.64,
-      "rsi14_m": 54.01,
-      "rel_vol": 0.49,
-      "dist_high": -18.88,
-      "dist_low": 20.28,
-      "dist_ma50": 8.79,
-      "dist_ma200": -6.34,
-      "marketCap": "59.14B",
-      "targetPrice": 353.5,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "TEL",
-      "name": "TE Connectivity plc",
-      "sector": "Information Technology",
-      "sub_industry": "Electronic Components",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 203.14,
-      "pct_1d": -0.08,
-      "pct_1w": 2.5,
-      "pct_1m": -6.66,
-      "pct_3m": -16.47,
-      "pct_6m": -12.06,
-      "pct_ytd": -10.71,
-      "pct_1y": 13.16,
-      "trailingPE": 20.73,
-      "forwardPE": 16.09,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.22,
-      "rsi14": 49.93,
-      "rsi14_w": 45.91,
-      "rsi14_m": 56.05,
-      "rel_vol": 0.92,
-      "dist_high": -18.42,
-      "dist_low": 13.51,
-      "dist_ma50": -1.3,
-      "dist_ma200": -7.82,
-      "marketCap": "59.30B",
-      "targetPrice": 257.4,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "FIX",
       "name": "Comfort Systems USA, Inc.",
       "sector": "Industrials",
@@ -11598,11 +7897,7 @@ const INDEX_DATA = {
       "pct_6m": 49.14,
       "pct_ytd": 83.46,
       "pct_1y": 214.19,
-<<<<<<< HEAD
       "trailingPE": 49.42,
-=======
-      "trailingPE": 49.41,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 31.61,
       "ema_signal": 1,
       "macd_state": 1,
@@ -11619,136 +7914,11 @@ const INDEX_DATA = {
       "dist_low": 221.75,
       "dist_ma50": -8.09,
       "dist_ma200": 26.06,
-<<<<<<< HEAD
       "marketCap": "60.27B",
       "targetPrice": 2120.75,
       "exchange": "NYQ"
     },
     {
-=======
-      "marketCap": "60.24B",
-      "targetPrice": 2064.0,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "OKE",
-      "name": "ONEOK, Inc.",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas Midstream",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 93.56,
-      "pct_1d": 0.04,
-      "pct_1w": 1.49,
-      "pct_1m": 10.03,
-      "pct_3m": 10.47,
-      "pct_6m": 23.4,
-      "pct_ytd": 27.29,
-      "pct_1y": 16.4,
-      "trailingPE": 16.68,
-      "forwardPE": 15.11,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.33,
-      "rsi14": 61.65,
-      "rsi14_w": 57.88,
-      "rsi14_m": 57.3,
-      "rel_vol": 0.56,
-      "dist_high": -1.76,
-      "dist_low": 45.48,
-      "dist_ma50": 4.97,
-      "dist_ma200": 15.54,
-      "marketCap": "58.95B",
-      "targetPrice": 95.76,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CTVA",
-      "name": "Corteva, Inc.",
-      "sector": "Materials",
-      "sub_industry": "Agricultural Inputs",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 86.78,
-      "pct_1d": -0.6,
-      "pct_1w": 0.82,
-      "pct_1m": 10.42,
-      "pct_3m": 8.0,
-      "pct_6m": 21.4,
-      "pct_ytd": 29.46,
-      "pct_1y": 18.88,
-      "trailingPE": 46.91,
-      "forwardPE": 21.05,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.08,
-      "rsi14": 63.2,
-      "rsi14_w": 65.93,
-      "rsi14_m": 69.21,
-      "rel_vol": 0.74,
-      "dist_high": -0.6,
-      "dist_low": 42.26,
-      "dist_ma50": 7.24,
-      "dist_ma200": 17.08,
-      "marketCap": "58.04B",
-      "targetPrice": 90.2,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CARR",
-      "name": "Carrier Global Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Building Products & Equipment",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 66.98,
-      "pct_1d": -2.49,
-      "pct_1w": -2.38,
-      "pct_1m": -6.73,
-      "pct_3m": 8.54,
-      "pct_6m": 16.0,
-      "pct_ytd": 26.76,
-      "pct_1y": -11.83,
-      "trailingPE": 44.65,
-      "forwardPE": 20.87,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -4.99,
-      "rsi14": 42.96,
-      "rsi14_w": 53.55,
-      "rsi14_m": 51.37,
-      "rel_vol": 0.64,
-      "dist_high": -17.03,
-      "dist_low": 33.0,
-      "dist_ma50": -1.76,
-      "dist_ma200": 10.54,
-      "marketCap": "55.63B",
-      "targetPrice": 76.94,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "sector": "Information Technology",
@@ -11766,60 +7936,14 @@ const INDEX_DATA = {
       "pct_6m": 111.22,
       "pct_ytd": 107.7,
       "pct_1y": 637.24,
-<<<<<<< HEAD
       "trailingPE": 142.08,
       "forwardPE": 41.28,
       "ema_signal": 3,
-=======
-      "trailingPE": 133.84,
-      "forwardPE": 41.78,
-      "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": -2.77,
-      "rsi14": 46.49,
-      "rsi14_w": 53.05,
-      "rsi14_m": 79.57,
-      "rel_vol": 0.79,
-      "dist_high": -27.3,
-      "dist_low": 668.39,
-      "dist_ma50": -11.58,
-      "dist_ma200": 33.08,
-      "marketCap": "59.56B",
-      "targetPrice": 1104.89,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "F",
-      "name": "Ford Motor Company",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Auto Manufacturers",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 13.99,
-      "pct_1d": -1.69,
-      "pct_1w": 1.01,
-      "pct_1m": -0.5,
-      "pct_3m": 9.47,
-      "pct_6m": 1.6,
-      "pct_ytd": 6.63,
-      "pct_1y": 23.7,
-      "trailingPE": null,
-      "forwardPE": 7.69,
-      "ema_signal": 1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -2.77,
       "rsi14": 46.49,
       "rsi14_w": 53.05,
@@ -11832,20 +7956,6 @@ const INDEX_DATA = {
       "marketCap": "59.56B",
       "targetPrice": 1126.41,
       "exchange": "NMS"
-=======
-      "dist_sma20": 0.65,
-      "rsi14": 49.18,
-      "rsi14_w": 52.49,
-      "rsi14_m": 55.81,
-      "rel_vol": 0.66,
-      "dist_high": -19.78,
-      "dist_low": 29.3,
-      "dist_ma50": -1.6,
-      "dist_ma200": 5.79,
-      "marketCap": "55.75B",
-      "targetPrice": 14.97,
-      "exchange": "NYQ"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "COR",
@@ -11857,7 +7967,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 303.99,
       "pct_1d": -1.27,
       "pct_1w": -0.7,
@@ -11947,25 +8056,11 @@ const INDEX_DATA = {
       "trailingPE": 41.91,
       "forwardPE": 11.11,
       "ema_signal": 2,
-=======
-      "price": 315.53,
-      "pct_1d": -0.79,
-      "pct_1w": -1.97,
-      "pct_1m": -0.81,
-      "pct_3m": 2.34,
-      "pct_6m": 9.29,
-      "pct_ytd": 21.59,
-      "pct_1y": 10.88,
-      "trailingPE": 32.63,
-      "forwardPE": 30.05,
-      "ema_signal": 1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
-      "is_danger_dead_cross": true,
+      "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
+      "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.11,
       "rsi14": 47.99,
       "rsi14_w": 65.28,
@@ -11984,71 +8079,11 @@ const INDEX_DATA = {
       "name": "Sempra",
       "sector": "Utilities",
       "sub_industry": "Utilities - Diversified",
-=======
-      "dist_sma20": -1.81,
-      "rsi14": 47.17,
-      "rsi14_w": 54.88,
-      "rsi14_m": 54.68,
-      "rel_vol": 0.86,
-      "dist_high": -4.28,
-      "dist_low": 22.09,
-      "dist_ma50": 0.53,
-      "dist_ma200": 7.79,
-      "marketCap": "55.40B",
-      "targetPrice": 332.88,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "BKR",
-      "name": "Baker Hughes Company",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas Equipment & Services",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 55.15,
-      "pct_1d": -1.43,
-      "pct_1w": -4.35,
-      "pct_1m": -5.58,
-      "pct_3m": -8.46,
-      "pct_6m": 2.91,
-      "pct_ytd": 21.1,
-      "pct_1y": 38.39,
-      "trailingPE": 17.58,
-      "forwardPE": 19.15,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.09,
-      "rsi14": 37.87,
-      "rsi14_w": 45.52,
-      "rsi14_m": 55.35,
-      "rel_vol": 0.65,
-      "dist_high": -20.84,
-      "dist_low": 38.85,
-      "dist_ma50": -9.52,
-      "dist_ma200": -1.59,
-      "marketCap": "54.71B",
-      "targetPrice": 70.81,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Airlines",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "sp500": true,
       "nasdaq100": false,
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 90.69,
       "pct_1d": -1.69,
       "pct_1w": -3.94,
@@ -12059,25 +8094,12 @@ const INDEX_DATA = {
       "pct_1y": 15.43,
       "trailingPE": 30.82,
       "forwardPE": 16.43,
-=======
-      "price": 84.54,
-      "pct_1d": 0.44,
-      "pct_1w": -1.91,
-      "pct_1m": 0.43,
-      "pct_3m": 20.39,
-      "pct_6m": 22.61,
-      "pct_ytd": 21.82,
-      "pct_1y": 50.86,
-      "trailingPE": 14.04,
-      "forwardPE": 9.55,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
       "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
+      "dead_cross_count": 1,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -2.68,
       "rsi14": 40.84,
       "rsi14_w": 47.74,
@@ -12096,71 +8118,11 @@ const INDEX_DATA = {
       "name": "TE Connectivity plc",
       "sector": "Information Technology",
       "sub_industry": "Electronic Components",
-=======
-      "dist_sma20": -4.89,
-      "rsi14": 46.14,
-      "rsi14_w": 60.12,
-      "rsi14_m": 66.24,
-      "rel_vol": 0.61,
-      "dist_high": -9.74,
-      "dist_low": 65.28,
-      "dist_ma50": 3.03,
-      "dist_ma200": 21.38,
-      "marketCap": "55.60B",
-      "targetPrice": 107.93,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "FANG",
-      "name": "Diamondback Energy, Inc.",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas E&P",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 195.38,
-      "pct_1d": -0.08,
-      "pct_1w": 1.97,
-      "pct_1m": 6.47,
-      "pct_3m": 2.94,
-      "pct_6m": 27.7,
-      "pct_ytd": 29.97,
-      "pct_1y": 39.72,
-      "trailingPE": 199.37,
-      "forwardPE": 11.46,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 6.15,
-      "rsi14": 59.52,
-      "rsi14_w": 57.01,
-      "rsi14_m": 52.84,
-      "rel_vol": 0.66,
-      "dist_high": -8.57,
-      "dist_low": 45.23,
-      "dist_ma50": 1.97,
-      "dist_ma200": 14.13,
-      "marketCap": "54.96B",
-      "targetPrice": 229.18,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum Corporation",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas E&P",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "sp500": true,
       "nasdaq100": false,
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 203.14,
       "pct_1d": -0.08,
       "pct_1w": 2.5,
@@ -12173,25 +8135,10 @@ const INDEX_DATA = {
       "forwardPE": 16.13,
       "ema_signal": 3,
       "macd_state": 3,
-=======
-      "price": 55.19,
-      "pct_1d": 0.6,
-      "pct_1w": 0.69,
-      "pct_1m": 6.5,
-      "pct_3m": -2.02,
-      "pct_6m": 26.84,
-      "pct_ytd": 34.22,
-      "pct_1y": 28.35,
-      "trailingPE": 74.58,
-      "forwardPE": 14.02,
-      "ema_signal": 4,
-      "macd_state": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 1.22,
       "rsi14": 49.93,
       "rsi14_w": 45.91,
@@ -12203,19 +8150,6 @@ const INDEX_DATA = {
       "dist_ma200": -7.82,
       "marketCap": "59.30B",
       "targetPrice": 261.89,
-=======
-      "dist_sma20": 6.43,
-      "rsi14": 57.35,
-      "rsi14_w": 53.44,
-      "rsi14_m": 49.53,
-      "rel_vol": 0.72,
-      "dist_high": -16.68,
-      "dist_low": 41.8,
-      "dist_ma50": 0.61,
-      "dist_ma200": 11.02,
-      "marketCap": "54.89B",
-      "targetPrice": 64.26,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -12228,7 +8162,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 86.78,
       "pct_1d": -0.6,
       "pct_1w": 0.82,
@@ -12239,25 +8172,12 @@ const INDEX_DATA = {
       "pct_1y": 18.88,
       "trailingPE": 46.91,
       "forwardPE": 21.05,
-=======
-      "price": 235.21,
-      "pct_1d": -0.76,
-      "pct_1w": 1.34,
-      "pct_1m": -0.93,
-      "pct_3m": 0.72,
-      "pct_6m": 6.71,
-      "pct_ytd": 14.56,
-      "pct_1y": 32.07,
-      "trailingPE": 35.58,
-      "forwardPE": 26.71,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 3.08,
       "rsi14": 63.2,
       "rsi14_w": 65.93,
@@ -12269,19 +8189,6 @@ const INDEX_DATA = {
       "dist_ma200": 17.08,
       "marketCap": "58.04B",
       "targetPrice": 90.2,
-=======
-      "dist_sma20": -0.27,
-      "rsi14": 52.14,
-      "rsi14_w": 60.18,
-      "rsi14_m": 62.92,
-      "rel_vol": 0.74,
-      "dist_high": -2.78,
-      "dist_low": 33.07,
-      "dist_ma50": 1.72,
-      "dist_ma200": 8.55,
-      "marketCap": "53.91B",
-      "targetPrice": 263.39,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -12333,7 +8240,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 66.98,
       "pct_1d": -2.49,
       "pct_1w": -2.38,
@@ -12344,25 +8250,12 @@ const INDEX_DATA = {
       "pct_1y": -11.83,
       "trailingPE": 44.65,
       "forwardPE": 20.87,
-=======
-      "price": 314.13,
-      "pct_1d": -0.56,
-      "pct_1w": -2.09,
-      "pct_1m": -13.62,
-      "pct_3m": -7.42,
-      "pct_6m": 44.97,
-      "pct_ytd": 54.6,
-      "pct_1y": 92.72,
-      "trailingPE": 50.5,
-      "forwardPE": 26.43,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -4.99,
       "rsi14": 42.96,
       "rsi14_w": 53.55,
@@ -12374,19 +8267,6 @@ const INDEX_DATA = {
       "dist_ma200": 10.54,
       "marketCap": "55.63B",
       "targetPrice": 76.94,
-=======
-      "dist_sma20": -4.92,
-      "rsi14": 42.06,
-      "rsi14_w": 54.08,
-      "rsi14_m": 68.32,
-      "rel_vol": 0.5,
-      "dist_high": -15.86,
-      "dist_low": 98.18,
-      "dist_ma50": -7.69,
-      "dist_ma200": 19.77,
-      "marketCap": "53.68B",
-      "targetPrice": 387.69,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -12399,7 +8279,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 13.99,
       "pct_1d": -1.69,
       "pct_1w": 1.01,
@@ -12410,25 +8289,12 @@ const INDEX_DATA = {
       "pct_1y": 23.7,
       "trailingPE": null,
       "forwardPE": 7.67,
-=======
-      "price": 230.74,
-      "pct_1d": -2.48,
-      "pct_1w": -0.97,
-      "pct_1m": -5.37,
-      "pct_3m": 10.9,
-      "pct_6m": 28.03,
-      "pct_ytd": 41.46,
-      "pct_1y": 62.32,
-      "trailingPE": 22.89,
-      "forwardPE": 13.27,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 3,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.65,
       "rsi14": 49.18,
       "rsi14_w": 52.49,
@@ -12440,19 +8306,6 @@ const INDEX_DATA = {
       "dist_ma200": 5.79,
       "marketCap": "55.75B",
       "targetPrice": 15.05,
-=======
-      "dist_sma20": -0.53,
-      "rsi14": 46.17,
-      "rsi14_w": 58.41,
-      "rsi14_m": 62.62,
-      "rel_vol": 0.95,
-      "dist_high": -13.37,
-      "dist_low": 75.09,
-      "dist_ma50": -3.46,
-      "dist_ma200": 23.87,
-      "marketCap": "52.55B",
-      "targetPrice": 267.12,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -12465,7 +8318,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 84.54,
       "pct_1d": 0.44,
       "pct_1w": -1.91,
@@ -12672,25 +8524,11 @@ const INDEX_DATA = {
       "trailingPE": 35.58,
       "forwardPE": 26.71,
       "ema_signal": 4,
-=======
-      "price": 225.75,
-      "pct_1d": -1.21,
-      "pct_1w": -3.39,
-      "pct_1m": 1.79,
-      "pct_3m": 10.16,
-      "pct_6m": 8.29,
-      "pct_ytd": 9.85,
-      "pct_1y": 42.36,
-      "trailingPE": 34.41,
-      "forwardPE": 18.74,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -0.27,
       "rsi14": 52.14,
       "rsi14_w": 60.18,
@@ -12702,19 +8540,6 @@ const INDEX_DATA = {
       "dist_ma200": 8.55,
       "marketCap": "53.91B",
       "targetPrice": 263.39,
-=======
-      "dist_sma20": -3.18,
-      "rsi14": 47.84,
-      "rsi14_w": 57.62,
-      "rsi14_m": 68.9,
-      "rel_vol": 0.5,
-      "dist_high": -5.82,
-      "dist_low": 54.58,
-      "dist_ma50": 5.05,
-      "dist_ma200": 9.86,
-      "marketCap": "52.87B",
-      "targetPrice": 249.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -12735,13 +8560,8 @@ const INDEX_DATA = {
       "pct_6m": 63.34,
       "pct_ytd": 61.96,
       "pct_1y": 343.16,
-<<<<<<< HEAD
       "trailingPE": 126.26,
       "forwardPE": 39.3,
-=======
-      "trailingPE": 126.08,
-      "forwardPE": 39.27,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -12758,11 +8578,7 @@ const INDEX_DATA = {
       "dist_ma50": -23.63,
       "dist_ma200": 11.0,
       "marketCap": "53.62B",
-<<<<<<< HEAD
       "targetPrice": 565.71,
-=======
-      "targetPrice": 588.75,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -12775,7 +8591,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 314.13,
       "pct_1d": -0.56,
       "pct_1w": -2.09,
@@ -12825,25 +8640,12 @@ const INDEX_DATA = {
       "pct_1y": 42.36,
       "trailingPE": 34.52,
       "forwardPE": 18.71,
-=======
-      "price": 111.91,
-      "pct_1d": -1.17,
-      "pct_1w": -2.55,
-      "pct_1m": 0.72,
-      "pct_3m": 0.6,
-      "pct_6m": 16.9,
-      "pct_ytd": 21.08,
-      "pct_1y": 28.59,
-      "trailingPE": 28.55,
-      "forwardPE": 22.02,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.18,
       "rsi14": 47.84,
       "rsi14_w": 57.62,
@@ -12855,97 +8657,6 @@ const INDEX_DATA = {
       "dist_ma200": 9.86,
       "marketCap": "52.87B",
       "targetPrice": 252.2,
-=======
-      "dist_sma20": -2.18,
-      "rsi14": 44.46,
-      "rsi14_w": 55.59,
-      "rsi14_m": 72.46,
-      "rel_vol": 0.47,
-      "dist_high": -5.09,
-      "dist_low": 29.53,
-      "dist_ma50": -0.2,
-      "dist_ma200": 8.22,
-      "marketCap": "52.22B",
-      "targetPrice": 123.5,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "FITB",
-      "name": "Fifth Third Bancorp",
-      "sector": "Financials",
-      "sub_industry": "Banks - Regional",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 57.4,
-      "pct_1d": -1.05,
-      "pct_1w": 0.38,
-      "pct_1m": 8.84,
-      "pct_3m": 12.33,
-      "pct_6m": 8.59,
-      "pct_ytd": 22.62,
-      "pct_1y": 33.61,
-      "trailingPE": 19.33,
-      "forwardPE": 11.64,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.07,
-      "rsi14": 58.0,
-      "rsi14_w": 65.18,
-      "rsi14_m": 66.14,
-      "rel_vol": 0.66,
-      "dist_high": -3.32,
-      "dist_low": 42.22,
-      "dist_ma50": 8.45,
-      "dist_ma200": 18.2,
-      "marketCap": "52.04B",
-      "targetPrice": 61.9,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "LHX",
-      "name": "L3Harris Technologies, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Aerospace & Defense",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 280.55,
-      "pct_1d": -0.52,
-      "pct_1w": -2.82,
-      "pct_1m": -4.84,
-      "pct_3m": -17.56,
-      "pct_6m": -19.34,
-      "pct_ytd": -4.44,
-      "pct_1y": 6.64,
-      "trailingPE": 30.43,
-      "forwardPE": 20.58,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.33,
-      "rsi14": 35.31,
-      "rsi14_w": 35.87,
-      "rsi14_m": 51.62,
-      "rel_vol": 0.61,
-      "dist_high": -25.87,
-      "dist_low": 6.64,
-      "dist_ma50": -6.65,
-      "dist_ma200": -11.35,
-      "marketCap": "52.27B",
-      "targetPrice": 378.17,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -12985,7 +8696,6 @@ const INDEX_DATA = {
       "dist_ma200": -4.77,
       "marketCap": "53.27B",
       "targetPrice": 223.17,
-<<<<<<< HEAD
       "exchange": "NYQ"
     },
     {
@@ -13064,8 +8774,6 @@ const INDEX_DATA = {
       "dist_ma200": -11.35,
       "marketCap": "52.27B",
       "targetPrice": 378.06,
-=======
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -13086,13 +8794,8 @@ const INDEX_DATA = {
       "pct_6m": 2.52,
       "pct_ytd": 2.43,
       "pct_1y": 36.44,
-<<<<<<< HEAD
       "trailingPE": 59.83,
       "forwardPE": 21.92,
-=======
-      "trailingPE": 59.63,
-      "forwardPE": 21.74,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -13109,60 +8812,12 @@ const INDEX_DATA = {
       "dist_ma50": 2.88,
       "dist_ma200": 3.42,
       "marketCap": "52.48B",
-<<<<<<< HEAD
       "targetPrice": 209.08,
       "exchange": "NMS"
     },
     {
       "ticker": "FITB",
       "name": "Fifth Third Bancorp",
-=======
-      "targetPrice": 205.79,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "FAST",
-      "name": "Fastenal Company",
-      "sector": "Industrials",
-      "sub_industry": "Industrial Distribution",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 44.76,
-      "pct_1d": -1.6,
-      "pct_1w": -4.87,
-      "pct_1m": -2.46,
-      "pct_3m": -2.06,
-      "pct_6m": 0.34,
-      "pct_ytd": 11.54,
-      "pct_1y": -2.74,
-      "trailingPE": 38.26,
-      "forwardPE": 32.03,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -4.12,
-      "rsi14": 41.34,
-      "rsi14_w": 48.04,
-      "rsi14_m": 57.28,
-      "rel_vol": 1.01,
-      "dist_high": -11.17,
-      "dist_low": 14.33,
-      "dist_ma50": -1.86,
-      "dist_ma200": 1.14,
-      "marketCap": "51.36B",
-      "targetPrice": 47.84,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "sector": "Financials",
       "sub_industry": "Banks - Regional",
       "sp500": true,
@@ -13170,7 +8825,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 57.4,
       "pct_1d": -1.05,
       "pct_1w": 0.38,
@@ -13183,142 +8837,10 @@ const INDEX_DATA = {
       "forwardPE": 11.56,
       "ema_signal": 2,
       "macd_state": 2,
-=======
-      "price": 91.87,
-      "pct_1d": 0.25,
-      "pct_1w": 2.98,
-      "pct_1m": 11.71,
-      "pct_3m": 4.87,
-      "pct_6m": -7.0,
-      "pct_ytd": -5.42,
-      "pct_1y": 2.95,
-      "trailingPE": 27.67,
-      "forwardPE": 20.23,
-      "ema_signal": 4,
-      "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": 7.88,
-      "rsi14": 60.11,
-      "rsi14_w": 54.56,
-      "rsi14_m": 58.31,
-      "rel_vol": 0.73,
-      "dist_high": -9.02,
-      "dist_low": 19.54,
-      "dist_ma50": 4.92,
-      "dist_ma200": 3.2,
-      "marketCap": "51.96B",
-      "targetPrice": 106.53,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "ROK",
-      "name": "Rockwell Automation, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Industrial Machinery",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 458.71,
-      "pct_1d": -0.68,
-      "pct_1w": -0.38,
-      "pct_1m": -3.18,
-      "pct_3m": 11.87,
-      "pct_6m": 9.14,
-      "pct_ytd": 17.9,
-      "pct_1y": 30.79,
-      "trailingPE": 47.53,
-      "forwardPE": 31.36,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.6,
-      "rsi14": 47.06,
-      "rsi14_w": 61.87,
-      "rsi14_m": 65.52,
-      "rel_vol": 0.53,
-      "dist_high": -7.35,
-      "dist_low": 39.57,
-      "dist_ma50": -0.37,
-      "dist_ma200": 12.99,
-      "marketCap": "51.04B",
-      "targetPrice": 472.61,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy Corporation",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas E&P",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 43.78,
-      "pct_1d": -0.11,
-      "pct_1w": 0.11,
-      "pct_1m": 3.94,
-      "pct_3m": -3.99,
-      "pct_6m": 15.97,
-      "pct_ytd": 19.52,
-      "pct_1y": 35.33,
-      "trailingPE": 12.19,
-      "forwardPE": 8.21,
-      "ema_signal": 4,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
-      "dead_cross_count": 0,
-      "golden_cross_count": 2,
-      "dist_sma20": 3.13,
-      "rsi14": 52.95,
-      "rsi14_w": 50.69,
-      "rsi14_m": 49.17,
-      "rel_vol": 0.42,
-      "dist_high": -15.92,
-      "dist_low": 37.93,
-      "dist_ma50": -1.53,
-      "dist_ma200": 5.81,
-      "marketCap": "50.50B",
-      "targetPrice": 59.42,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "STT",
-      "name": "State Street Corporation",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 182.58,
-      "pct_1d": 0.04,
-      "pct_1w": 2.48,
-      "pct_1m": 8.48,
-      "pct_3m": 18.89,
-      "pct_6m": 43.87,
-      "pct_ytd": 41.52,
-      "pct_1y": 68.91,
-      "trailingPE": 16.1,
-      "forwardPE": 12.04,
-      "ema_signal": 4,
-      "macd_state": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 1.07,
       "rsi14": 58.0,
       "rsi14_w": 65.18,
@@ -13330,19 +8852,6 @@ const INDEX_DATA = {
       "dist_ma200": 18.2,
       "marketCap": "52.02B",
       "targetPrice": 62.35,
-=======
-      "dist_sma20": 3.54,
-      "rsi14": 64.71,
-      "rsi14_w": 86.32,
-      "rsi14_m": 88.99,
-      "rel_vol": 1.0,
-      "dist_high": -2.15,
-      "dist_low": 68.91,
-      "dist_ma50": 10.26,
-      "dist_ma200": 33.47,
-      "marketCap": "50.53B",
-      "targetPrice": 201.75,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -13363,13 +8872,8 @@ const INDEX_DATA = {
       "pct_6m": 43.93,
       "pct_ytd": 72.43,
       "pct_1y": 251.99,
-<<<<<<< HEAD
       "trailingPE": 61.77,
       "forwardPE": 31.98,
-=======
-      "trailingPE": 62.04,
-      "forwardPE": 32.45,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -13386,11 +8890,7 @@ const INDEX_DATA = {
       "dist_ma50": -12.11,
       "dist_ma200": 19.23,
       "marketCap": "52.25B",
-<<<<<<< HEAD
       "targetPrice": 437.53,
-=======
-      "targetPrice": 426.35,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -13403,7 +8903,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 91.87,
       "pct_1d": 0.25,
       "pct_1w": 2.98,
@@ -13414,25 +8913,12 @@ const INDEX_DATA = {
       "pct_1y": 2.95,
       "trailingPE": 27.68,
       "forwardPE": 20.2,
-=======
-      "price": 56.82,
-      "pct_1d": 0.46,
-      "pct_1w": 19.24,
-      "pct_1m": 33.66,
-      "pct_3m": 11.67,
-      "pct_6m": 1.66,
-      "pct_ytd": -2.67,
-      "pct_1y": -24.06,
-      "trailingPE": 10.66,
-      "forwardPE": 9.88,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 7.88,
       "rsi14": 60.11,
       "rsi14_w": 54.56,
@@ -13444,19 +8930,6 @@ const INDEX_DATA = {
       "dist_ma200": 3.2,
       "marketCap": "51.96B",
       "targetPrice": 108.44,
-=======
-      "dist_sma20": 21.17,
-      "rsi14": 80.9,
-      "rsi14_w": 63.54,
-      "rsi14_m": 48.73,
-      "rel_vol": 1.37,
-      "dist_high": -27.36,
-      "dist_low": 45.39,
-      "dist_ma50": 26.48,
-      "dist_ma200": 7.65,
-      "marketCap": "50.12B",
-      "targetPrice": 52.42,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -13594,13 +9067,8 @@ const INDEX_DATA = {
       "pct_6m": 23.02,
       "pct_ytd": 31.1,
       "pct_1y": 44.49,
-<<<<<<< HEAD
       "trailingPE": 25.93,
       "forwardPE": 16.93,
-=======
-      "trailingPE": 26.37,
-      "forwardPE": 17.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -13617,11 +9085,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.52,
       "dist_ma200": 19.46,
       "marketCap": "50.70B",
-<<<<<<< HEAD
       "targetPrice": 112.12,
-=======
-      "targetPrice": 110.39,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -13798,11 +9262,7 @@ const INDEX_DATA = {
       "pct_6m": -18.45,
       "pct_ytd": -11.72,
       "pct_1y": -19.72,
-<<<<<<< HEAD
       "trailingPE": 20.59,
-=======
-      "trailingPE": 20.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 17.06,
       "ema_signal": 1,
       "macd_state": 1,
@@ -13820,11 +9280,7 @@ const INDEX_DATA = {
       "dist_ma50": -4.98,
       "dist_ma200": -15.23,
       "marketCap": "48.88B",
-<<<<<<< HEAD
       "targetPrice": 3973.86,
-=======
-      "targetPrice": 3969.38,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -13845,13 +9301,8 @@ const INDEX_DATA = {
       "pct_6m": -0.16,
       "pct_ytd": -0.29,
       "pct_1y": 11.02,
-<<<<<<< HEAD
       "trailingPE": 46.18,
       "forwardPE": 25.24,
-=======
-      "trailingPE": 45.95,
-      "forwardPE": 25.28,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -13868,56 +9319,10 @@ const INDEX_DATA = {
       "dist_ma50": -2.23,
       "dist_ma200": 2.06,
       "marketCap": "48.94B",
-<<<<<<< HEAD
       "targetPrice": 100.03,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 99.0,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "XEL",
-      "name": "Xcel Energy Inc.",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Regulated Electric",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 78.67,
-      "pct_1d": -0.13,
-      "pct_1w": -2.25,
-      "pct_1m": 1.63,
-      "pct_3m": -0.52,
-      "pct_6m": 2.82,
-      "pct_ytd": 6.51,
-      "pct_1y": 9.92,
-      "trailingPE": 22.67,
-      "forwardPE": 17.36,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.0,
-      "rsi14": 44.88,
-      "rsi14_w": 48.69,
-      "rsi14_m": 60.3,
-      "rel_vol": 0.67,
-      "dist_high": -6.24,
-      "dist_low": 11.78,
-      "dist_ma50": -1.07,
-      "dist_ma200": -0.54,
-      "marketCap": "49.11B",
-      "targetPrice": 92.83,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "ODFL",
       "name": "Old Dominion Freight Line, Inc.",
       "sector": "Industrials",
@@ -13935,13 +9340,8 @@ const INDEX_DATA = {
       "pct_6m": 29.91,
       "pct_ytd": 47.81,
       "pct_1y": 41.97,
-<<<<<<< HEAD
       "trailingPE": 48.46,
       "forwardPE": 35.65,
-=======
-      "trailingPE": 48.38,
-      "forwardPE": 35.79,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -13958,11 +9358,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.7,
       "dist_ma200": 25.73,
       "marketCap": "48.20B",
-<<<<<<< HEAD
       "targetPrice": 233.43,
-=======
-      "targetPrice": 229.86,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -13975,7 +9371,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 526.22,
       "pct_1d": -0.31,
       "pct_1w": 1.54,
@@ -13987,64 +9382,11 @@ const INDEX_DATA = {
       "trailingPE": 13.09,
       "forwardPE": 10.55,
       "ema_signal": 4,
-=======
-      "price": 64.14,
-      "pct_1d": -4.75,
-      "pct_1w": -1.31,
-      "pct_1m": -3.64,
-      "pct_3m": -20.01,
-      "pct_6m": -29.52,
-      "pct_ytd": -24.01,
-      "pct_1y": -6.21,
-      "trailingPE": 37.29,
-      "forwardPE": 32.58,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -4.22,
-      "rsi14": 43.66,
-      "rsi14_w": 45.63,
-      "rsi14_m": 56.4,
-      "rel_vol": 0.95,
-      "dist_high": -32.97,
-      "dist_low": 14.01,
-      "dist_ma50": -5.95,
-      "dist_ma200": -11.84,
-      "marketCap": "70.35B",
-      "targetPrice": 91.9,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "GRMN",
-      "name": "Garmin Ltd.",
-      "sector": "Information Technology",
-      "sub_industry": "Scientific & Technical Instruments",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 244.79,
-      "pct_1d": -1.91,
-      "pct_1w": 0.48,
-      "pct_1m": 4.52,
-      "pct_3m": -7.8,
-      "pct_6m": 19.66,
-      "pct_ytd": 20.68,
-      "pct_1y": 8.24,
-      "trailingPE": 27.32,
-      "forwardPE": 23.71,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 6.92,
       "rsi14": 68.98,
       "rsi14_w": 65.12,
@@ -14056,19 +9398,6 @@ const INDEX_DATA = {
       "dist_ma200": 11.0,
       "marketCap": "47.31B",
       "targetPrice": 553.4,
-=======
-      "dist_sma20": 1.43,
-      "rsi14": 53.94,
-      "rsi14_w": 54.82,
-      "rsi14_m": 60.24,
-      "rel_vol": 0.84,
-      "dist_high": -8.5,
-      "dist_low": 30.83,
-      "dist_ma50": 2.72,
-      "dist_ma200": 6.84,
-      "marketCap": "47.21B",
-      "targetPrice": 262.43,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -14089,13 +9418,8 @@ const INDEX_DATA = {
       "pct_6m": 47.12,
       "pct_ytd": 55.47,
       "pct_1y": 78.22,
-<<<<<<< HEAD
       "trailingPE": 42.62,
       "forwardPE": 24.69,
-=======
-      "trailingPE": 42.54,
-      "forwardPE": 24.84,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -14112,7 +9436,6 @@ const INDEX_DATA = {
       "dist_ma50": 13.44,
       "dist_ma200": 52.81,
       "marketCap": "47.81B",
-<<<<<<< HEAD
       "targetPrice": 351.79,
       "exchange": "NYQ"
     },
@@ -14153,9 +9476,6 @@ const INDEX_DATA = {
       "dist_ma200": 6.84,
       "marketCap": "47.21B",
       "targetPrice": 279.4,
-=======
-      "targetPrice": 346.71,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -14198,48 +9518,6 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "AMP",
-      "name": "Ameriprise Financial, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 526.22,
-      "pct_1d": -0.31,
-      "pct_1w": 1.54,
-      "pct_1m": 12.58,
-      "pct_3m": 14.13,
-      "pct_6m": 4.46,
-      "pct_ytd": 7.32,
-      "pct_1y": -1.55,
-      "trailingPE": 13.12,
-      "forwardPE": 10.56,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 6.92,
-      "rsi14": 68.98,
-      "rsi14_w": 65.12,
-      "rsi14_m": 58.76,
-      "rel_vol": 0.53,
-      "dist_high": -3.53,
-      "dist_low": 22.26,
-      "dist_ma50": 11.65,
-      "dist_ma200": 11.0,
-      "marketCap": "47.31B",
-      "targetPrice": 551.27,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "EXC",
       "name": "Exelon Corporation",
       "sector": "Utilities",
@@ -14257,13 +9535,8 @@ const INDEX_DATA = {
       "pct_6m": 2.13,
       "pct_ytd": 5.44,
       "pct_1y": 5.1,
-<<<<<<< HEAD
       "trailingPE": 16.83,
       "forwardPE": 15.14,
-=======
-      "trailingPE": 16.84,
-      "forwardPE": 15.13,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -14280,11 +9553,7 @@ const INDEX_DATA = {
       "dist_ma50": 0.34,
       "dist_ma200": -0.46,
       "marketCap": "47.03B",
-<<<<<<< HEAD
       "targetPrice": 49.75,
-=======
-      "targetPrice": 49.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -14305,13 +9574,8 @@ const INDEX_DATA = {
       "pct_6m": 23.75,
       "pct_ytd": 24.39,
       "pct_1y": 44.87,
-<<<<<<< HEAD
       "trailingPE": 174.33,
       "forwardPE": 94.05,
-=======
-      "trailingPE": 175.0,
-      "forwardPE": 113.68,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -14327,13 +9591,8 @@ const INDEX_DATA = {
       "dist_low": 47.55,
       "dist_ma50": 10.11,
       "dist_ma200": 18.01,
-<<<<<<< HEAD
       "marketCap": "47.89B",
       "targetPrice": 98.38,
-=======
-      "marketCap": "46.79B",
-      "targetPrice": 97.82,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -14432,59 +9691,14 @@ const INDEX_DATA = {
       "pct_6m": -15.4,
       "pct_ytd": -26.42,
       "pct_1y": -26.21,
-<<<<<<< HEAD
       "trailingPE": 31.82,
       "forwardPE": 15.33,
-=======
-      "trailingPE": 31.75,
-      "forwardPE": 15.27,
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": 6.89,
-      "rsi14": 57.08,
-      "rsi14_w": 42.69,
-      "rsi14_m": 41.8,
-      "rel_vol": 0.73,
-      "dist_high": -33.35,
-      "dist_low": 16.02,
-      "dist_ma50": -0.48,
-      "dist_ma200": -15.56,
-      "marketCap": "45.99B",
-      "targetPrice": 318.3,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "MSCI",
-      "name": "MSCI Inc.",
-      "sector": "Financials",
-      "sub_industry": "Financial Data & Stock Exchanges",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 625.11,
-      "pct_1d": -0.56,
-      "pct_1w": 0.79,
-      "pct_1m": 7.56,
-      "pct_3m": 4.64,
-      "pct_6m": 6.14,
-      "pct_ytd": 8.96,
-      "pct_1y": 8.16,
-      "trailingPE": 35.64,
-      "forwardPE": 27.2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 6.89,
       "rsi14": 57.08,
       "rsi14_w": 42.69,
@@ -14497,20 +9711,6 @@ const INDEX_DATA = {
       "marketCap": "45.96B",
       "targetPrice": 317.64,
       "exchange": "NMS"
-=======
-      "dist_sma20": 4.87,
-      "rsi14": 59.13,
-      "rsi14_w": 57.81,
-      "rsi14_m": 57.72,
-      "rel_vol": 1.12,
-      "dist_high": -2.91,
-      "dist_low": 22.13,
-      "dist_ma50": 4.68,
-      "dist_ma200": 9.25,
-      "marketCap": "45.46B",
-      "targetPrice": 704.59,
-      "exchange": "NYQ"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "IDXX",
@@ -14530,13 +9730,8 @@ const INDEX_DATA = {
       "pct_6m": -19.05,
       "pct_ytd": -16.66,
       "pct_1y": 8.24,
-<<<<<<< HEAD
       "trailingPE": 41.48,
       "forwardPE": 34.05,
-=======
-      "trailingPE": 41.58,
-      "forwardPE": 34.14,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -14553,134 +9748,10 @@ const INDEX_DATA = {
       "dist_ma50": 1.62,
       "dist_ma200": -9.61,
       "marketCap": "44.48B",
-<<<<<<< HEAD
       "targetPrice": 713.45,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 708.43,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "WAB",
-      "name": "Westinghouse Air Brake Technologies Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Railroads",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 257.85,
-      "pct_1d": -1.61,
-      "pct_1w": -1.15,
-      "pct_1m": -5.84,
-      "pct_3m": 0.09,
-      "pct_6m": 10.67,
-      "pct_ytd": 20.8,
-      "pct_1y": 22.86,
-      "trailingPE": 36.42,
-      "forwardPE": 21.18,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.74,
-      "rsi14": 42.57,
-      "rsi14_w": 53.98,
-      "rsi14_m": 66.31,
-      "rel_vol": 0.76,
-      "dist_high": -8.71,
-      "dist_low": 38.89,
-      "dist_ma50": -2.34,
-      "dist_ma200": 8.15,
-      "marketCap": "43.75B",
-      "targetPrice": 302.83,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Restaurants",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 33.13,
-      "pct_1d": -3.8,
-      "pct_1w": -9.56,
-      "pct_1m": 1.97,
-      "pct_3m": -8.1,
-      "pct_6m": -18.64,
-      "pct_ytd": -10.46,
-      "pct_1y": -36.85,
-      "trailingPE": 30.39,
-      "forwardPE": 24.45,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.16,
-      "rsi14": 47.5,
-      "rsi14_w": 45.79,
-      "rsi14_m": 36.72,
-      "rel_vol": 1.01,
-      "dist_high": -38.57,
-      "dist_low": 17.57,
-      "dist_ma50": 1.75,
-      "dist_ma200": -5.98,
-      "marketCap": "42.50B",
-      "targetPrice": 43.03,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MCHP",
-      "name": "Microchip Technology Incorporated",
-      "sector": "Information Technology",
-      "sub_industry": "Semiconductors",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 80.51,
-      "pct_1d": -0.56,
-      "pct_1w": -4.42,
-      "pct_1m": -19.3,
-      "pct_3m": -0.52,
-      "pct_6m": 5.66,
-      "pct_ytd": 26.35,
-      "pct_1y": 9.02,
-      "trailingPE": 365.95,
-      "forwardPE": 19.35,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -8.46,
-      "rsi14": 38.95,
-      "rsi14_w": 48.74,
-      "rsi14_m": 49.18,
-      "rel_vol": 0.56,
-      "dist_high": -21.77,
-      "dist_low": 64.24,
-      "dist_ma50": -12.7,
-      "dist_ma200": 7.55,
-      "marketCap": "43.72B",
-      "targetPrice": 113.38,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "TTWO",
       "name": "Take-Two Interactive Software, Inc.",
       "sector": "Communication Services",
@@ -14854,255 +9925,14 @@ const INDEX_DATA = {
       "pct_6m": -4.7,
       "pct_ytd": 1.25,
       "pct_1y": 12.07,
-<<<<<<< HEAD
       "trailingPE": 39.17,
       "forwardPE": 11.49,
       "ema_signal": 2,
-=======
-      "trailingPE": 26.96,
-      "forwardPE": 11.51,
-      "ema_signal": 2,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": 1.15,
-      "rsi14": 53.13,
-      "rsi14_w": 50.51,
-      "rsi14_m": 42.9,
-      "rel_vol": 0.46,
-      "dist_high": -16.67,
-      "dist_low": 13.97,
-      "dist_ma50": 3.59,
-      "dist_ma200": -0.07,
-      "marketCap": "42.57B",
-      "targetPrice": 179.36,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "AIG",
-      "name": "American International Group, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Insurance - Diversified",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 79.8,
-      "pct_1d": -0.87,
-      "pct_1w": -0.13,
-      "pct_1m": 7.81,
-      "pct_3m": 2.4,
-      "pct_6m": 11.0,
-      "pct_ytd": -6.72,
-      "pct_1y": -1.21,
-      "trailingPE": 14.05,
-      "forwardPE": 9.03,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.39,
-      "rsi14": 57.32,
-      "rsi14_w": 55.08,
-      "rsi14_m": 51.66,
-      "rel_vol": 0.36,
-      "dist_high": -7.84,
-      "dist_low": 11.0,
-      "dist_ma50": 4.34,
-      "dist_ma200": 2.77,
-      "marketCap": "42.31B",
-      "targetPrice": 88.35,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DHI",
-      "name": "D.R. Horton, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Residential Construction",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 144.79,
-      "pct_1d": -3.08,
-      "pct_1w": -2.73,
-      "pct_1m": -8.25,
-      "pct_3m": -10.73,
-      "pct_6m": -8.42,
-      "pct_ytd": 0.53,
-      "pct_1y": 10.34,
-      "trailingPE": 13.6,
-      "forwardPE": 12.07,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -7.06,
-      "rsi14": 39.44,
-      "rsi14_w": 46.35,
-      "rsi14_m": 43.89,
-      "rel_vol": 1.51,
-      "dist_high": -21.33,
-      "dist_low": 10.34,
-      "dist_ma50": -3.55,
-      "dist_ma200": -4.08,
-      "marketCap": "41.06B",
-      "targetPrice": 168.0,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "KDP",
-      "name": "Keurig Dr Pepper Inc.",
-      "sector": "Consumer Staples",
-      "sub_industry": "Beverages - Non-Alcoholic",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 30.44,
-      "pct_1d": -1.52,
-      "pct_1w": -2.59,
-      "pct_1m": -1.04,
-      "pct_3m": 15.13,
-      "pct_6m": 9.89,
-      "pct_ytd": 8.68,
-      "pct_1y": -8.64,
-      "trailingPE": 22.55,
-      "forwardPE": 12.04,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.84,
-      "rsi14": 44.75,
-      "rsi14_w": 52.72,
-      "rsi14_m": 47.95,
-      "rel_vol": 0.49,
-      "dist_high": -13.52,
-      "dist_low": 20.32,
-      "dist_ma50": -0.8,
-      "dist_ma200": 7.16,
-      "marketCap": "41.42B",
-      "targetPrice": 34.94,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "LYV",
-      "name": "Live Nation Entertainment, Inc.",
-      "sector": "Communication Services",
-      "sub_industry": "Entertainment",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 180.86,
-      "pct_1d": 0.36,
-      "pct_1w": -1.3,
-      "pct_1m": 5.62,
-      "pct_3m": 17.92,
-      "pct_6m": 29.45,
-      "pct_ytd": 26.92,
-      "pct_1y": 21.03,
-      "trailingPE": null,
-      "forwardPE": 82.88,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.55,
-      "rsi14": 56.65,
-      "rsi14_w": 63.0,
-      "rsi14_m": 69.64,
-      "rel_vol": 0.51,
-      "dist_high": -3.07,
-      "dist_low": 43.99,
-      "dist_ma50": 5.05,
-      "dist_ma200": 16.68,
-      "marketCap": "42.09B",
-      "targetPrice": 187.52,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ED",
-      "name": "Consolidated Edison, Inc.",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Regulated Electric",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 111.05,
-      "pct_1d": -1.17,
-      "pct_1w": -0.69,
-      "pct_1m": 4.41,
-      "pct_3m": 2.64,
-      "pct_6m": 6.94,
-      "pct_ytd": 11.81,
-      "pct_1y": 8.8,
-      "trailingPE": 18.73,
-      "forwardPE": 17.12,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.2,
-      "rsi14": 52.08,
-      "rsi14_w": 54.09,
-      "rsi14_m": 57.67,
-      "rel_vol": 0.57,
-      "dist_high": -3.82,
-      "dist_low": 16.39,
-      "dist_ma50": 2.48,
-      "dist_ma200": 5.01,
-      "marketCap": "40.93B",
-      "targetPrice": 110.74,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ADM",
-      "name": "Archer-Daniels-Midland Company",
-      "sector": "Consumer Staples",
-      "sub_industry": "Farm Products",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 85.67,
-      "pct_1d": -0.27,
-      "pct_1w": 4.42,
-      "pct_1m": 14.07,
-      "pct_3m": 22.68,
-      "pct_6m": 26.54,
-      "pct_ytd": 49.02,
-      "pct_1y": 58.21,
-      "trailingPE": 38.25,
-      "forwardPE": 15.82,
-      "ema_signal": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 1.15,
       "rsi14": 53.13,
       "rsi14_w": 50.51,
@@ -15114,136 +9944,6 @@ const INDEX_DATA = {
       "dist_ma200": -0.07,
       "marketCap": "42.57B",
       "targetPrice": 174.78,
-=======
-      "dist_sma20": 8.15,
-      "rsi14": 71.72,
-      "rsi14_w": 67.21,
-      "rsi14_m": 70.76,
-      "rel_vol": 0.66,
-      "dist_high": -0.27,
-      "dist_low": 59.09,
-      "dist_ma50": 7.69,
-      "dist_ma200": 24.94,
-      "marketCap": "41.29B",
-      "targetPrice": 74.8,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Financial Data & Stock Exchanges",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 160.43,
-      "pct_1d": 2.11,
-      "pct_1w": 1.94,
-      "pct_1m": -1.73,
-      "pct_3m": -18.13,
-      "pct_6m": -29.3,
-      "pct_ytd": -29.06,
-      "pct_1y": -61.21,
-      "trailingPE": 58.98,
-      "forwardPE": 33.81,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.52,
-      "rsi14": 48.45,
-      "rsi14_w": 41.23,
-      "rsi14_m": 44.18,
-      "rel_vol": 0.59,
-      "dist_high": -61.78,
-      "dist_low": 13.71,
-      "dist_ma50": -6.3,
-      "dist_ma200": -27.68,
-      "marketCap": "42.27B",
-      "targetPrice": 222.04,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "PRU",
-      "name": "Prudential Financial, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Insurance - Life",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 117.97,
-      "pct_1d": -0.92,
-      "pct_1w": 1.55,
-      "pct_1m": 10.74,
-      "pct_3m": 22.31,
-      "pct_6m": 7.75,
-      "pct_ytd": 4.51,
-      "pct_1y": 15.53,
-      "trailingPE": 12.16,
-      "forwardPE": 8.08,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.7,
-      "rsi14": 67.21,
-      "rsi14_w": 64.72,
-      "rsi14_m": 52.93,
-      "rel_vol": 0.57,
-      "dist_high": -0.92,
-      "dist_low": 28.23,
-      "dist_ma50": 10.11,
-      "dist_ma200": 12.44,
-      "marketCap": "40.97B",
-      "targetPrice": 104.27,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CBRE",
-      "name": "CBRE Group, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "Real Estate Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 138.62,
-      "pct_1d": -1.66,
-      "pct_1w": 0.43,
-      "pct_1m": 5.37,
-      "pct_3m": -7.49,
-      "pct_6m": -18.6,
-      "pct_ytd": -13.79,
-      "pct_1y": -1.99,
-      "trailingPE": 31.65,
-      "forwardPE": 15.6,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.44,
-      "rsi14": 51.45,
-      "rsi14_w": 47.72,
-      "rsi14_m": 53.17,
-      "rel_vol": 0.45,
-      "dist_high": -19.22,
-      "dist_low": 11.22,
-      "dist_ma50": 2.69,
-      "dist_ma200": -6.63,
-      "marketCap": "40.59B",
-      "targetPrice": 176.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -15264,13 +9964,8 @@ const INDEX_DATA = {
       "pct_6m": -13.56,
       "pct_ytd": -7.12,
       "pct_1y": -29.81,
-<<<<<<< HEAD
       "trailingPE": 211.14,
       "forwardPE": 49.56,
-=======
-      "trailingPE": 210.99,
-      "forwardPE": 49.89,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -15287,11 +9982,7 @@ const INDEX_DATA = {
       "dist_ma50": 12.06,
       "dist_ma200": 0.69,
       "marketCap": "42.52B",
-<<<<<<< HEAD
       "targetPrice": 688.65,
-=======
-      "targetPrice": 660.88,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -15624,13 +10315,8 @@ const INDEX_DATA = {
       "pct_6m": -4.56,
       "pct_ytd": -2.58,
       "pct_1y": 1.28,
-<<<<<<< HEAD
       "trailingPE": 23.76,
       "forwardPE": 19.93,
-=======
-      "trailingPE": 23.77,
-      "forwardPE": 19.74,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": true,
@@ -15647,11 +10333,7 @@ const INDEX_DATA = {
       "dist_ma50": -4.34,
       "dist_ma200": -4.35,
       "marketCap": "40.62B",
-<<<<<<< HEAD
       "targetPrice": 175.3,
-=======
-      "targetPrice": 174.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -15750,13 +10432,8 @@ const INDEX_DATA = {
       "pct_6m": 7.47,
       "pct_ytd": 2.69,
       "pct_1y": -19.25,
-<<<<<<< HEAD
       "trailingPE": 23.56,
       "forwardPE": 17.97,
-=======
-      "trailingPE": 23.61,
-      "forwardPE": 18.03,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -15773,11 +10450,7 @@ const INDEX_DATA = {
       "dist_ma50": 15.1,
       "dist_ma200": 10.71,
       "marketCap": "40.97B",
-<<<<<<< HEAD
       "targetPrice": 107.62,
-=======
-      "targetPrice": 107.79,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -15790,7 +10463,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 138.62,
       "pct_1d": -1.66,
       "pct_1w": 0.43,
@@ -15801,25 +10473,12 @@ const INDEX_DATA = {
       "pct_1y": -1.99,
       "trailingPE": 31.62,
       "forwardPE": 15.62,
-=======
-      "price": 91.68,
-      "pct_1d": 1.27,
-      "pct_1w": -2.01,
-      "pct_1m": -4.5,
-      "pct_3m": 15.15,
-      "pct_6m": 20.95,
-      "pct_ytd": 42.56,
-      "pct_1y": 47.87,
-      "trailingPE": 39.35,
-      "forwardPE": 30.56,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.44,
       "rsi14": 51.45,
       "rsi14_w": 47.72,
@@ -15832,20 +10491,6 @@ const INDEX_DATA = {
       "marketCap": "40.59B",
       "targetPrice": 179.45,
       "exchange": "NYQ"
-=======
-      "dist_sma20": -1.44,
-      "rsi14": 49.73,
-      "rsi14_w": 61.29,
-      "rsi14_m": 75.45,
-      "rel_vol": 0.75,
-      "dist_high": -5.88,
-      "dist_low": 52.39,
-      "dist_ma50": 2.72,
-      "dist_ma200": 22.1,
-      "marketCap": "155.51B",
-      "targetPrice": 99.99,
-      "exchange": "NMS"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "PEG",
@@ -15865,11 +10510,7 @@ const INDEX_DATA = {
       "pct_6m": -2.43,
       "pct_ytd": -3.08,
       "pct_1y": -7.8,
-<<<<<<< HEAD
       "trailingPE": 17.21,
-=======
-      "trailingPE": 17.22,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 16.6,
       "ema_signal": 1,
       "macd_state": 1,
@@ -15887,11 +10528,7 @@ const INDEX_DATA = {
       "dist_ma50": -2.03,
       "dist_ma200": -4.02,
       "marketCap": "38.78B",
-<<<<<<< HEAD
       "targetPrice": 90.0,
-=======
-      "targetPrice": 89.82,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -15912,13 +10549,8 @@ const INDEX_DATA = {
       "pct_6m": 5.0,
       "pct_ytd": 9.62,
       "pct_1y": 2.62,
-<<<<<<< HEAD
       "trailingPE": 22.41,
       "forwardPE": 16.32,
-=======
-      "trailingPE": 22.44,
-      "forwardPE": 16.31,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -15935,11 +10567,7 @@ const INDEX_DATA = {
       "dist_ma50": 3.09,
       "dist_ma200": 3.02,
       "marketCap": "38.63B",
-<<<<<<< HEAD
       "targetPrice": 87.62,
-=======
-      "targetPrice": 87.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -15960,13 +10588,8 @@ const INDEX_DATA = {
       "pct_6m": 8.44,
       "pct_ytd": 1.96,
       "pct_1y": 15.76,
-<<<<<<< HEAD
       "trailingPE": 9.87,
       "forwardPE": 10.16,
-=======
-      "trailingPE": 9.89,
-      "forwardPE": 10.17,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -15983,11 +10606,7 @@ const INDEX_DATA = {
       "dist_ma50": 5.56,
       "dist_ma200": 4.63,
       "marketCap": "38.52B",
-<<<<<<< HEAD
       "targetPrice": 149.48,
-=======
-      "targetPrice": 148.95,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16008,11 +10627,7 @@ const INDEX_DATA = {
       "pct_6m": 14.9,
       "pct_ytd": 8.46,
       "pct_1y": 30.27,
-<<<<<<< HEAD
       "trailingPE": 13.66,
-=======
-      "trailingPE": 13.51,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 9.67,
       "ema_signal": 4,
       "macd_state": 4,
@@ -16030,11 +10645,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.02,
       "dist_ma200": 4.77,
       "marketCap": "38.38B",
-<<<<<<< HEAD
       "targetPrice": 23.0,
-=======
-      "targetPrice": 22.84,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16086,7 +10697,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 124.23,
       "pct_1d": 0.33,
       "pct_1w": 1.52,
@@ -16099,25 +10709,10 @@ const INDEX_DATA = {
       "forwardPE": 47.74,
       "ema_signal": 3,
       "macd_state": 3,
-=======
-      "price": 280.62,
-      "pct_1d": -2.67,
-      "pct_1w": -4.15,
-      "pct_1m": -7.34,
-      "pct_3m": -3.47,
-      "pct_6m": -6.15,
-      "pct_ytd": -1.61,
-      "pct_1y": 5.89,
-      "trailingPE": 33.39,
-      "forwardPE": 26.0,
-      "ema_signal": 1,
-      "macd_state": 1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.14,
       "rsi14": 51.46,
       "rsi14_w": 57.69,
@@ -16129,19 +10724,6 @@ const INDEX_DATA = {
       "dist_ma200": 17.06,
       "marketCap": "36.96B",
       "targetPrice": 132.82,
-=======
-      "dist_sma20": -5.57,
-      "rsi14": 41.3,
-      "rsi14_w": 46.34,
-      "rsi14_m": 49.21,
-      "rel_vol": 0.8,
-      "dist_high": -15.06,
-      "dist_low": 9.18,
-      "dist_ma50": -1.91,
-      "dist_ma200": -3.74,
-      "marketCap": "36.41B",
-      "targetPrice": 331.95,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16163,11 +10745,7 @@ const INDEX_DATA = {
       "pct_ytd": -4.27,
       "pct_1y": 16.26,
       "trailingPE": 26.16,
-<<<<<<< HEAD
       "forwardPE": 19.73,
-=======
-      "forwardPE": 19.7,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -16184,11 +10762,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.36,
       "dist_ma200": -0.63,
       "marketCap": "36.79B",
-<<<<<<< HEAD
       "targetPrice": 159.33,
-=======
-      "targetPrice": 159.32,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16209,13 +10783,8 @@ const INDEX_DATA = {
       "pct_6m": -3.78,
       "pct_ytd": 4.09,
       "pct_1y": 7.44,
-<<<<<<< HEAD
       "trailingPE": 13.83,
       "forwardPE": 9.46,
-=======
-      "trailingPE": 13.89,
-      "forwardPE": 9.49,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -16232,11 +10801,7 @@ const INDEX_DATA = {
       "dist_ma50": 6.9,
       "dist_ma200": 7.85,
       "marketCap": "36.61B",
-<<<<<<< HEAD
       "targetPrice": 20.53,
-=======
-      "targetPrice": 20.45,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -16257,61 +10822,14 @@ const INDEX_DATA = {
       "pct_6m": 2.77,
       "pct_ytd": 6.72,
       "pct_1y": 3.94,
-<<<<<<< HEAD
       "trailingPE": 22.44,
       "forwardPE": 18.76,
       "ema_signal": 1,
       "macd_state": 1,
-=======
-      "trailingPE": 22.56,
-      "forwardPE": 18.76,
-      "ema_signal": 1,
-      "macd_state": 1,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": -2.71,
-      "rsi14": 43.19,
-      "rsi14_w": 48.45,
-      "rsi14_m": 60.09,
-      "rel_vol": 0.61,
-      "dist_high": -5.3,
-      "dist_low": 8.76,
-      "dist_ma50": -0.82,
-      "dist_ma200": -0.01,
-      "marketCap": "36.66B",
-      "targetPrice": 124.42,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "IRM",
-      "name": "Iron Mountain Incorporated",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Specialty",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 124.23,
-      "pct_1d": 0.33,
-      "pct_1w": 1.52,
-      "pct_1m": -2.82,
-      "pct_3m": 5.43,
-      "pct_6m": 32.43,
-      "pct_ytd": 49.76,
-      "pct_1y": 25.83,
-      "trailingPE": 135.03,
-      "forwardPE": 46.43,
-      "ema_signal": 3,
-      "macd_state": 3,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -2.71,
       "rsi14": 43.19,
       "rsi14_w": 48.45,
@@ -16323,19 +10841,6 @@ const INDEX_DATA = {
       "dist_ma200": -0.01,
       "marketCap": "36.66B",
       "targetPrice": 124.91,
-=======
-      "dist_sma20": 0.14,
-      "rsi14": 51.46,
-      "rsi14_w": 57.69,
-      "rsi14_m": 58.99,
-      "rel_vol": 0.61,
-      "dist_high": -6.64,
-      "dist_low": 57.53,
-      "dist_ma50": -1.1,
-      "dist_ma200": 17.06,
-      "marketCap": "36.96B",
-      "targetPrice": 132.82,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16356,13 +10861,8 @@ const INDEX_DATA = {
       "pct_6m": -10.33,
       "pct_ytd": -18.49,
       "pct_1y": -34.26,
-<<<<<<< HEAD
       "trailingPE": 22.67,
       "forwardPE": 15.18,
-=======
-      "trailingPE": 22.66,
-      "forwardPE": 15.2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -16379,11 +10879,7 @@ const INDEX_DATA = {
       "dist_ma50": 7.43,
       "dist_ma200": -6.9,
       "marketCap": "36.62B",
-<<<<<<< HEAD
       "targetPrice": 453.21,
-=======
-      "targetPrice": 445.92,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -16404,59 +10900,14 @@ const INDEX_DATA = {
       "pct_6m": 9.44,
       "pct_ytd": 10.26,
       "pct_1y": -14.05,
-<<<<<<< HEAD
       "trailingPE": 22.55,
       "forwardPE": 15.08,
-=======
-      "trailingPE": 22.64,
-      "forwardPE": 15.34,
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": -0.29,
-      "rsi14": 54.08,
-      "rsi14_w": 57.43,
-      "rsi14_m": 53.05,
-      "rel_vol": 0.4,
-      "dist_high": -16.73,
-      "dist_low": 34.8,
-      "dist_ma50": 4.7,
-      "dist_ma200": 9.46,
-      "marketCap": "36.52B",
-      "targetPrice": 19.75,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "WAT",
-      "name": "Waters Corporation",
-      "sector": "Health Care",
-      "sub_industry": "Diagnostics & Research",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 357.54,
-      "pct_1d": -3.1,
-      "pct_1w": -4.2,
-      "pct_1m": 0.59,
-      "pct_3m": 6.66,
-      "pct_6m": -9.87,
-      "pct_ytd": -5.87,
-      "pct_1y": 26.94,
-      "trailingPE": 45.49,
-      "forwardPE": 21.68,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -0.29,
       "rsi14": 54.08,
       "rsi14_w": 57.43,
@@ -16468,19 +10919,6 @@ const INDEX_DATA = {
       "dist_ma200": 9.46,
       "marketCap": "36.52B",
       "targetPrice": 19.6,
-=======
-      "dist_sma20": -3.91,
-      "rsi14": 42.02,
-      "rsi14_w": 51.83,
-      "rsi14_m": 51.89,
-      "rel_vol": 0.62,
-      "dist_high": -13.33,
-      "dist_low": 28.74,
-      "dist_ma50": -1.13,
-      "dist_ma200": 1.53,
-      "marketCap": "35.11B",
-      "targetPrice": 413.12,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16493,7 +10931,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 280.62,
       "pct_1d": -2.67,
       "pct_1w": -4.15,
@@ -16504,25 +10941,12 @@ const INDEX_DATA = {
       "pct_1y": 5.89,
       "trailingPE": 33.39,
       "forwardPE": 26.0,
-=======
-      "price": 26.04,
-      "pct_1d": -1.4,
-      "pct_1w": -2.14,
-      "pct_1m": -15.65,
-      "pct_3m": -4.82,
-      "pct_6m": -7.82,
-      "pct_ytd": -14.73,
-      "pct_1y": -12.59,
-      "trailingPE": 11.73,
-      "forwardPE": 9.9,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -5.57,
       "rsi14": 41.3,
       "rsi14_w": 46.34,
@@ -16534,97 +10958,6 @@ const INDEX_DATA = {
       "dist_ma200": -3.74,
       "marketCap": "36.41B",
       "targetPrice": 331.95,
-=======
-      "dist_sma20": -5.64,
-      "rsi14": 40.51,
-      "rsi14_w": 45.17,
-      "rsi14_m": 54.87,
-      "rel_vol": 0.56,
-      "dist_high": -23.39,
-      "dist_low": 9.0,
-      "dist_ma50": -4.65,
-      "dist_ma200": -7.1,
-      "marketCap": "35.67B",
-      "targetPrice": 35.47,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MTB",
-      "name": "M&T Bank Corporation",
-      "sector": "Financials",
-      "sub_industry": "Banks - Regional",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 249.44,
-      "pct_1d": 0.08,
-      "pct_1w": 2.84,
-      "pct_1m": 10.8,
-      "pct_3m": 13.95,
-      "pct_6m": 13.82,
-      "pct_ytd": 23.8,
-      "pct_1y": 27.73,
-      "trailingPE": 13.2,
-      "forwardPE": 11.84,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.84,
-      "rsi14": 66.34,
-      "rsi14_w": 68.71,
-      "rsi14_m": 67.02,
-      "rel_vol": 0.8,
-      "dist_high": -1.81,
-      "dist_low": 39.64,
-      "dist_ma50": 10.42,
-      "dist_ma200": 18.57,
-      "marketCap": "36.15B",
-      "targetPrice": 252.47,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "KR",
-      "name": "The Kroger Co.",
-      "sector": "Consumer Staples",
-      "sub_industry": "Grocery Stores",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 58.36,
-      "pct_1d": -0.78,
-      "pct_1w": -1.6,
-      "pct_1m": 3.09,
-      "pct_3m": -15.19,
-      "pct_6m": -8.7,
-      "pct_ytd": -6.59,
-      "pct_1y": -18.97,
-      "trailingPE": 34.13,
-      "forwardPE": 10.54,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.66,
-      "rsi14": 45.38,
-      "rsi14_w": 39.39,
-      "rsi14_m": 48.48,
-      "rel_vol": 0.41,
-      "dist_high": -22.8,
-      "dist_low": 5.1,
-      "dist_ma50": -5.66,
-      "dist_ma200": -11.02,
-      "marketCap": "35.75B",
-      "targetPrice": 70.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16645,13 +10978,8 @@ const INDEX_DATA = {
       "pct_6m": 8.46,
       "pct_ytd": 7.52,
       "pct_1y": -14.39,
-<<<<<<< HEAD
       "trailingPE": 17.06,
       "forwardPE": 14.39,
-=======
-      "trailingPE": 20.98,
-      "forwardPE": 14.36,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -16668,11 +10996,7 @@ const INDEX_DATA = {
       "dist_ma50": 5.33,
       "dist_ma200": 4.19,
       "marketCap": "36.01B",
-<<<<<<< HEAD
       "targetPrice": 114.86,
-=======
-      "targetPrice": 116.07,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -16771,13 +11095,8 @@ const INDEX_DATA = {
       "pct_6m": -19.73,
       "pct_ytd": -31.46,
       "pct_1y": -37.01,
-<<<<<<< HEAD
       "trailingPE": 45.93,
       "forwardPE": 11.65,
-=======
-      "trailingPE": 45.86,
-      "forwardPE": 11.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -16794,11 +11113,7 @@ const INDEX_DATA = {
       "dist_ma50": 11.56,
       "dist_ma200": -13.16,
       "marketCap": "36.36B",
-<<<<<<< HEAD
       "targetPrice": 170.64,
-=======
-      "targetPrice": 169.17,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -16858,13 +11173,8 @@ const INDEX_DATA = {
       "pct_6m": 10.35,
       "pct_ytd": 6.16,
       "pct_1y": 16.31,
-<<<<<<< HEAD
       "trailingPE": 7.82,
       "forwardPE": 10.36,
-=======
-      "trailingPE": 7.83,
-      "forwardPE": 10.38,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -16881,11 +11191,7 @@ const INDEX_DATA = {
       "dist_ma50": 7.07,
       "dist_ma200": 7.98,
       "marketCap": "35.58B",
-<<<<<<< HEAD
       "targetPrice": 109.78,
-=======
-      "targetPrice": 110.61,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -16945,13 +11251,8 @@ const INDEX_DATA = {
       "pct_6m": -12.43,
       "pct_ytd": -5.65,
       "pct_1y": -2.86,
-<<<<<<< HEAD
       "trailingPE": 31.94,
       "forwardPE": 17.29,
-=======
-      "trailingPE": 31.97,
-      "forwardPE": 17.39,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -16968,11 +11269,7 @@ const INDEX_DATA = {
       "dist_ma50": -5.72,
       "dist_ma200": -10.86,
       "marketCap": "34.83B",
-<<<<<<< HEAD
       "targetPrice": 211.0,
-=======
-      "targetPrice": 211.38,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -16993,13 +11290,8 @@ const INDEX_DATA = {
       "pct_6m": -10.31,
       "pct_ytd": -12.03,
       "pct_1y": -26.52,
-<<<<<<< HEAD
       "trailingPE": 15.9,
       "forwardPE": 27.02,
-=======
-      "trailingPE": 32.99,
-      "forwardPE": 26.49,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -17016,11 +11308,7 @@ const INDEX_DATA = {
       "dist_ma50": -8.95,
       "dist_ma200": -11.14,
       "marketCap": "34.12B",
-<<<<<<< HEAD
       "targetPrice": 98.28,
-=======
-      "targetPrice": 98.76,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -17041,13 +11329,8 @@ const INDEX_DATA = {
       "pct_6m": -15.53,
       "pct_ytd": -9.54,
       "pct_1y": 28.27,
-<<<<<<< HEAD
       "trailingPE": 25.27,
       "forwardPE": 14.43,
-=======
-      "trailingPE": 25.36,
-      "forwardPE": 14.39,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -17064,11 +11347,7 @@ const INDEX_DATA = {
       "dist_ma50": 9.98,
       "dist_ma200": 3.7,
       "marketCap": "34.03B",
-<<<<<<< HEAD
       "targetPrice": 230.0,
-=======
-      "targetPrice": 232.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -17089,13 +11368,8 @@ const INDEX_DATA = {
       "pct_6m": 26.56,
       "pct_ytd": 33.82,
       "pct_1y": 45.54,
-<<<<<<< HEAD
       "trailingPE": 19.13,
       "forwardPE": 14.74,
-=======
-      "trailingPE": 19.14,
-      "forwardPE": 14.8,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -17112,95 +11386,10 @@ const INDEX_DATA = {
       "dist_ma50": 5.82,
       "dist_ma200": 22.79,
       "marketCap": "33.82B",
-<<<<<<< HEAD
       "targetPrice": 182.35,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 179.35,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "ON",
-      "name": "ON Semiconductor Corporation",
-      "sector": "Information Technology",
-      "sub_industry": "Semiconductors",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 86.7,
-      "pct_1d": -0.77,
-      "pct_1w": -4.06,
-      "pct_1m": -28.71,
-      "pct_3m": -0.24,
-      "pct_6m": 37.34,
-      "pct_ytd": 60.11,
-      "pct_1y": 43.19,
-      "trailingPE": 63.75,
-      "forwardPE": 19.97,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -11.3,
-      "rsi14": 38.63,
-      "rsi14_w": 49.39,
-      "rsi14_m": 54.01,
-      "rel_vol": 0.42,
-      "dist_high": -35.26,
-      "dist_low": 93.1,
-      "dist_ma50": -20.56,
-      "dist_ma200": 18.23,
-      "marketCap": "33.74B",
-      "targetPrice": 113.52,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "STLD",
-      "name": "Steel Dynamics, Inc.",
-      "sector": "Materials",
-      "sub_industry": "Steel",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 230.49,
-      "pct_1d": -2.13,
-      "pct_1w": -1.56,
-      "pct_1m": -7.77,
-      "pct_3m": 4.67,
-      "pct_6m": 28.17,
-      "pct_ytd": 36.02,
-      "pct_1y": 71.33,
-      "trailingPE": 24.73,
-      "forwardPE": 12.21,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.47,
-      "rsi14": 43.2,
-      "rsi14_w": 54.98,
-      "rsi14_m": 65.97,
-      "rel_vol": 1.43,
-      "dist_high": -18.49,
-      "dist_low": 89.92,
-      "dist_ma50": -6.2,
-      "dist_ma200": 18.89,
-      "marketCap": "33.24B",
-      "targetPrice": 268.46,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "MLM",
       "name": "Martin Marietta Materials, Inc.",
       "sector": "Materials",
@@ -17218,13 +11407,8 @@ const INDEX_DATA = {
       "pct_6m": -13.65,
       "pct_ytd": -11.09,
       "pct_1y": -1.71,
-<<<<<<< HEAD
       "trailingPE": 13.2,
       "forwardPE": 24.29,
-=======
-      "trailingPE": 34.64,
-      "forwardPE": 24.08,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -17241,11 +11425,7 @@ const INDEX_DATA = {
       "dist_ma50": -4.23,
       "dist_ma200": -9.98,
       "marketCap": "33.24B",
-<<<<<<< HEAD
       "targetPrice": 689.27,
-=======
-      "targetPrice": 680.61,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -17305,11 +11485,7 @@ const INDEX_DATA = {
       "pct_6m": 4.98,
       "pct_ytd": 21.62,
       "pct_1y": 32.76,
-<<<<<<< HEAD
       "trailingPE": 24.9,
-=======
-      "trailingPE": 24.99,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 22.65,
       "ema_signal": 1,
       "macd_state": 1,
@@ -17326,11 +11502,7 @@ const INDEX_DATA = {
       "dist_low": 33.1,
       "dist_ma50": -10.54,
       "dist_ma200": 0.34,
-<<<<<<< HEAD
       "marketCap": "33.06B",
-=======
-      "marketCap": "33.13B",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "targetPrice": 1000.14,
       "exchange": "NYQ"
     },
@@ -17391,13 +11563,8 @@ const INDEX_DATA = {
       "pct_6m": -1.02,
       "pct_ytd": 4.81,
       "pct_1y": 5.61,
-<<<<<<< HEAD
       "trailingPE": 15.91,
       "forwardPE": 11.83,
-=======
-      "trailingPE": 15.89,
-      "forwardPE": 11.93,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -17414,206 +11581,7 @@ const INDEX_DATA = {
       "dist_ma50": 8.14,
       "dist_ma200": 6.57,
       "marketCap": "32.80B",
-<<<<<<< HEAD
       "targetPrice": 182.58,
-=======
-      "targetPrice": 182.67,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CNC",
-      "name": "Centene Corporation",
-      "sector": "Health Care",
-      "sub_industry": "Healthcare Plans",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 65.84,
-      "pct_1d": -0.9,
-      "pct_1w": -3.59,
-      "pct_1m": 7.9,
-      "pct_3m": 68.22,
-      "pct_6m": 45.47,
-      "pct_ytd": 60.0,
-      "pct_1y": 140.03,
-      "trailingPE": null,
-      "forwardPE": 14.71,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.18,
-      "rsi14": 53.16,
-      "rsi14_w": 68.43,
-      "rsi14_m": 52.94,
-      "rel_vol": 0.37,
-      "dist_high": -4.19,
-      "dist_low": 161.17,
-      "dist_ma50": 5.27,
-      "dist_ma200": 45.0,
-      "marketCap": "32.51B",
-      "targetPrice": 65.17,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "EXPE",
-      "name": "Expedia Group, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Travel Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 265.08,
-      "pct_1d": -1.37,
-      "pct_1w": -0.21,
-      "pct_1m": 10.04,
-      "pct_3m": -3.18,
-      "pct_6m": -2.39,
-      "pct_ytd": -6.43,
-      "pct_1y": 42.92,
-      "trailingPE": 23.42,
-      "forwardPE": 11.54,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.93,
-      "rsi14": 56.45,
-      "rsi14_w": 57.99,
-      "rsi14_m": 64.76,
-      "rel_vol": 0.99,
-      "dist_high": -12.02,
-      "dist_low": 48.87,
-      "dist_ma50": 10.11,
-      "dist_ma200": 8.21,
-      "marketCap": "31.82B",
-      "targetPrice": 287.77,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "IR",
-      "name": "Ingersoll Rand Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Industrial Machinery",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 80.18,
-      "pct_1d": -2.5,
-      "pct_1w": 2.06,
-      "pct_1m": 2.91,
-      "pct_3m": -5.46,
-      "pct_6m": -10.73,
-      "pct_ytd": 1.21,
-      "pct_1y": -4.42,
-      "trailingPE": 54.18,
-      "forwardPE": 20.82,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.46,
-      "rsi14": 53.66,
-      "rsi14_w": 50.27,
-      "rsi14_m": 43.9,
-      "rel_vol": 0.85,
-      "dist_high": -18.81,
-      "dist_low": 16.98,
-      "dist_ma50": 6.11,
-      "dist_ma200": -1.47,
-      "marketCap": "31.38B",
-      "targetPrice": 93.46,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NetApp, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Infrastructure",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 161.16,
-      "pct_1d": -1.66,
-      "pct_1w": -1.69,
-      "pct_1m": 0.91,
-      "pct_3m": 44.15,
-      "pct_6m": 65.99,
-      "pct_ytd": 50.49,
-      "pct_1y": 49.97,
-      "trailingPE": 25.42,
-      "forwardPE": 16.38,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.11,
-      "rsi14": 51.33,
-      "rsi14_w": 65.76,
-      "rsi14_m": 61.87,
-      "rel_vol": 0.58,
-      "dist_high": -11.0,
-      "dist_low": 71.25,
-      "dist_ma50": 5.98,
-      "dist_ma200": 35.8,
-      "marketCap": "31.57B",
-      "targetPrice": 177.25,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "ZTS",
-      "name": "Zoetis Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Drug Manufacturers - Specialty & Generic",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 76.2,
-      "pct_1d": -0.47,
-      "pct_1w": 1.07,
-      "pct_1m": -3.19,
-      "pct_3m": -35.52,
-      "pct_6m": -39.08,
-      "pct_ytd": -39.44,
-      "pct_1y": -48.29,
-      "trailingPE": 12.49,
-      "forwardPE": 10.31,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.04,
-      "rsi14": 46.49,
-      "rsi14_w": 27.3,
-      "rsi14_m": 23.51,
-      "rel_vol": 0.65,
-      "dist_high": -51.39,
-      "dist_low": 6.04,
-      "dist_ma50": -1.77,
-      "dist_ma200": -32.88,
-      "marketCap": "31.95B",
-      "targetPrice": 114.76,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -17665,7 +11633,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 76.2,
       "pct_1d": -0.47,
       "pct_1w": 1.07,
@@ -17678,25 +11645,10 @@ const INDEX_DATA = {
       "forwardPE": 10.34,
       "ema_signal": 3,
       "macd_state": 3,
-=======
-      "price": 197.41,
-      "pct_1d": 1.04,
-      "pct_1w": 0.3,
-      "pct_1m": 28.77,
-      "pct_3m": 17.65,
-      "pct_6m": -10.16,
-      "pct_ytd": -11.57,
-      "pct_1y": -29.75,
-      "trailingPE": 34.94,
-      "forwardPE": 19.67,
-      "ema_signal": 4,
-      "macd_state": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 1.04,
       "rsi14": 46.49,
       "rsi14_w": 27.3,
@@ -17708,19 +11660,6 @@ const INDEX_DATA = {
       "dist_ma200": -32.88,
       "marketCap": "31.95B",
       "targetPrice": 108.64,
-=======
-      "dist_sma20": 7.86,
-      "rsi14": 66.86,
-      "rsi14_w": 54.18,
-      "rsi14_m": 49.88,
-      "rel_vol": 0.33,
-      "dist_high": -35.53,
-      "dist_low": 30.36,
-      "dist_ma50": 14.7,
-      "dist_ma200": -5.31,
-      "marketCap": "32.07B",
-      "targetPrice": 244.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -17975,13 +11914,8 @@ const INDEX_DATA = {
       "pct_6m": 1.28,
       "pct_ytd": 13.1,
       "pct_1y": -0.35,
-<<<<<<< HEAD
       "trailingPE": 33.5,
       "forwardPE": 30.29,
-=======
-      "trailingPE": 33.17,
-      "forwardPE": 30.99,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -17998,11 +11932,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.43,
       "dist_ma200": 4.86,
       "marketCap": "32.50B",
-<<<<<<< HEAD
       "targetPrice": 156.37,
-=======
-      "targetPrice": 156.45,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -18062,13 +11992,8 @@ const INDEX_DATA = {
       "pct_6m": -10.54,
       "pct_ytd": -8.49,
       "pct_1y": -8.39,
-<<<<<<< HEAD
       "trailingPE": 9.3,
       "forwardPE": 11.72,
-=======
-      "trailingPE": 9.31,
-      "forwardPE": 11.78,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -18085,11 +12010,7 @@ const INDEX_DATA = {
       "dist_ma50": -7.95,
       "dist_ma200": -13.22,
       "marketCap": "30.68B",
-<<<<<<< HEAD
       "targetPrice": 67.88,
-=======
-      "targetPrice": 67.32,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -18110,13 +12031,8 @@ const INDEX_DATA = {
       "pct_6m": 6.04,
       "pct_ytd": 10.57,
       "pct_1y": 11.19,
-<<<<<<< HEAD
       "trailingPE": 19.84,
       "forwardPE": 19.01,
-=======
-      "trailingPE": 19.86,
-      "forwardPE": 19.02,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -18133,11 +12049,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.01,
       "dist_ma200": 3.19,
       "marketCap": "30.56B",
-<<<<<<< HEAD
       "targetPrice": 123.0,
-=======
-      "targetPrice": 121.8,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -18158,13 +12070,8 @@ const INDEX_DATA = {
       "pct_6m": 6.48,
       "pct_ytd": 13.16,
       "pct_1y": 5.85,
-<<<<<<< HEAD
       "trailingPE": 23.99,
       "forwardPE": 17.5,
-=======
-      "trailingPE": 24.0,
-      "forwardPE": 17.47,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -18181,134 +12088,10 @@ const INDEX_DATA = {
       "dist_ma50": -0.44,
       "dist_ma200": 3.23,
       "marketCap": "30.36B",
-<<<<<<< HEAD
       "targetPrice": 161.85,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 161.77,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "KHC",
-      "name": "The Kraft Heinz Company",
-      "sector": "Consumer Staples",
-      "sub_industry": "Packaged Foods",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 25.86,
-      "pct_1d": -0.08,
-      "pct_1w": 2.5,
-      "pct_1m": 13.32,
-      "pct_3m": 17.65,
-      "pct_6m": 15.45,
-      "pct_ytd": 6.64,
-      "pct_1y": -5.9,
-      "trailingPE": null,
-      "forwardPE": 12.34,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.31,
-      "rsi14": 62.25,
-      "rsi14_w": 58.01,
-      "rsi14_m": 38.91,
-      "rel_vol": 0.67,
-      "dist_high": -10.64,
-      "dist_low": 21.92,
-      "dist_ma50": 8.02,
-      "dist_ma200": 8.05,
-      "marketCap": "30.66B",
-      "targetPrice": 23.97,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "CFG",
-      "name": "Citizens Financial Group, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Banks - Regional",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 71.5,
-      "pct_1d": -1.23,
-      "pct_1w": 1.62,
-      "pct_1m": 6.59,
-      "pct_3m": 9.49,
-      "pct_6m": 11.61,
-      "pct_ytd": 22.41,
-      "pct_1y": 47.12,
-      "trailingPE": 15.58,
-      "forwardPE": 10.99,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.16,
-      "rsi14": 57.17,
-      "rsi14_w": 67.15,
-      "rsi14_m": 70.62,
-      "rel_vol": 0.91,
-      "dist_high": -3.9,
-      "dist_low": 53.3,
-      "dist_ma50": 7.68,
-      "dist_ma200": 18.08,
-      "marketCap": "30.22B",
-      "targetPrice": 79.24,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "BIIB",
-      "name": "Biogen Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Drug Manufacturers - General",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 199.95,
-      "pct_1d": -2.93,
-      "pct_1w": -4.34,
-      "pct_1m": 1.71,
-      "pct_3m": 7.53,
-      "pct_6m": 15.83,
-      "pct_ytd": 13.61,
-      "pct_1y": 62.98,
-      "trailingPE": 21.52,
-      "forwardPE": 12.09,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.43,
-      "rsi14": 48.49,
-      "rsi14_w": 55.73,
-      "rsi14_m": 50.58,
-      "rel_vol": 0.71,
-      "dist_high": -7.7,
-      "dist_low": 62.98,
-      "dist_ma50": 0.48,
-      "dist_ma200": 10.45,
-      "marketCap": "29.52B",
-      "targetPrice": 226.29,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "LVS",
       "name": "Las Vegas Sands Corp.",
       "sector": "Consumer Discretionary",
@@ -18326,13 +12109,8 @@ const INDEX_DATA = {
       "pct_6m": -23.14,
       "pct_ytd": -29.62,
       "pct_1y": -5.1,
-<<<<<<< HEAD
       "trailingPE": 16.96,
       "forwardPE": 12.83,
-=======
-      "trailingPE": 16.9,
-      "forwardPE": 12.51,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -18349,11 +12127,7 @@ const INDEX_DATA = {
       "dist_ma50": -6.44,
       "dist_ma200": -18.24,
       "marketCap": "30.36B",
-<<<<<<< HEAD
       "targetPrice": 66.18,
-=======
-      "targetPrice": 66.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -18366,7 +12140,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 71.5,
       "pct_1d": -1.23,
       "pct_1w": 1.62,
@@ -18379,25 +12152,10 @@ const INDEX_DATA = {
       "forwardPE": 11.01,
       "ema_signal": 2,
       "macd_state": 2,
-=======
-      "price": 77.25,
-      "pct_1d": -0.49,
-      "pct_1w": 1.68,
-      "pct_1m": 7.46,
-      "pct_3m": 10.78,
-      "pct_6m": 27.86,
-      "pct_ytd": 28.71,
-      "pct_1y": 51.71,
-      "trailingPE": 8.4,
-      "forwardPE": 11.86,
-      "ema_signal": 4,
-      "macd_state": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 1.16,
       "rsi14": 57.17,
       "rsi14_w": 67.15,
@@ -18409,19 +12167,6 @@ const INDEX_DATA = {
       "dist_ma200": 18.08,
       "marketCap": "30.24B",
       "targetPrice": 79.83,
-=======
-      "dist_sma20": 2.58,
-      "rsi14": 62.82,
-      "rsi14_w": 65.54,
-      "rsi14_m": 53.56,
-      "rel_vol": 0.5,
-      "dist_high": -1.02,
-      "dist_low": 51.71,
-      "dist_ma50": 6.36,
-      "dist_ma200": 17.1,
-      "marketCap": "29.73B",
-      "targetPrice": 75.96,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -18443,11 +12188,7 @@ const INDEX_DATA = {
       "pct_ytd": -20.13,
       "pct_1y": -2.79,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 26.3,
-=======
-      "forwardPE": 26.31,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -18464,11 +12205,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.07,
       "dist_ma200": -9.71,
       "marketCap": "30.26B",
-<<<<<<< HEAD
       "targetPrice": 94.16,
-=======
-      "targetPrice": 95.15,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -18606,13 +12343,8 @@ const INDEX_DATA = {
       "pct_6m": 5.32,
       "pct_ytd": 5.79,
       "pct_1y": 12.08,
-<<<<<<< HEAD
       "trailingPE": 21.83,
       "forwardPE": 19.67,
-=======
-      "trailingPE": 21.84,
-      "forwardPE": 19.66,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -18629,134 +12361,10 @@ const INDEX_DATA = {
       "dist_ma50": 1.72,
       "dist_ma200": 0.63,
       "marketCap": "29.60B",
-<<<<<<< HEAD
       "targetPrice": 190.09,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 188.42,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "VICI",
-      "name": "VICI Properties Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Diversified",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 26.84,
-      "pct_1d": -0.11,
-      "pct_1w": 1.67,
-      "pct_1m": 2.13,
-      "pct_3m": -5.56,
-      "pct_6m": -5.39,
-      "pct_ytd": -4.55,
-      "pct_1y": -18.05,
-      "trailingPE": 9.19,
-      "forwardPE": 9.14,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.96,
-      "rsi14": 49.42,
-      "rsi14_w": 43.25,
-      "rsi14_m": 41.36,
-      "rel_vol": 0.7,
-      "dist_high": -20.9,
-      "dist_low": 3.51,
-      "dist_ma50": -2.36,
-      "dist_ma200": -6.3,
-      "marketCap": "29.55B",
-      "targetPrice": 33.38,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DXCM",
-      "name": "DexCom, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Devices",
-      "sp500": true,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 75.69,
-      "pct_1d": -1.25,
-      "pct_1w": -0.86,
-      "pct_1m": 4.44,
-      "pct_3m": 20.91,
-      "pct_6m": 4.96,
-      "pct_ytd": 14.04,
-      "pct_1y": -9.93,
-      "trailingPE": 32.48,
-      "forwardPE": 24.59,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.73,
-      "rsi14": 56.6,
-      "rsi14_w": 59.3,
-      "rsi14_m": 54.61,
-      "rel_vol": 0.54,
-      "dist_high": -15.46,
-      "dist_low": 38.02,
-      "dist_ma50": 6.93,
-      "dist_ma200": 12.32,
-      "marketCap": "29.21B",
-      "targetPrice": 85.75,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "TDY",
-      "name": "Teledyne Technologies Incorporated",
-      "sector": "Information Technology",
-      "sub_industry": "Scientific & Technical Instruments",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 626.59,
-      "pct_1d": -1.41,
-      "pct_1w": 0.43,
-      "pct_1m": 1.13,
-      "pct_3m": -2.52,
-      "pct_6m": 0.77,
-      "pct_ytd": 22.69,
-      "pct_1y": 12.04,
-      "trailingPE": 31.71,
-      "forwardPE": 24.07,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.18,
-      "rsi14": 47.68,
-      "rsi14_w": 52.9,
-      "rsi14_m": 60.51,
-      "rel_vol": 1.09,
-      "dist_high": -9.0,
-      "dist_low": 29.34,
-      "dist_ma50": 0.12,
-      "dist_ma200": 5.19,
-      "marketCap": "29.03B",
-      "targetPrice": 741.31,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "HAL",
       "name": "Halliburton Company",
       "sector": "Energy",
@@ -18774,13 +12382,8 @@ const INDEX_DATA = {
       "pct_6m": 5.25,
       "pct_ytd": 24.24,
       "pct_1y": 65.77,
-<<<<<<< HEAD
       "trailingPE": 19.26,
       "forwardPE": 11.97,
-=======
-      "trailingPE": 19.4,
-      "forwardPE": 11.93,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -18797,50 +12400,7 @@ const INDEX_DATA = {
       "dist_ma50": -7.14,
       "dist_ma200": 5.27,
       "marketCap": "29.33B",
-<<<<<<< HEAD
       "targetPrice": 44.46,
-=======
-      "targetPrice": 44.04,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "XYL",
-      "name": "Xylem Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Industrial Machinery",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 120.62,
-      "pct_1d": -1.76,
-      "pct_1w": -0.49,
-      "pct_1m": 8.26,
-      "pct_3m": 0.53,
-      "pct_6m": -14.91,
-      "pct_ytd": -11.43,
-      "pct_1y": -8.58,
-      "trailingPE": 30.08,
-      "forwardPE": 19.76,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.8,
-      "rsi14": 57.33,
-      "rsi14_w": 49.19,
-      "rsi14_m": 44.33,
-      "rel_vol": 0.87,
-      "dist_high": -21.14,
-      "dist_low": 13.43,
-      "dist_ma50": 6.35,
-      "dist_ma200": -6.96,
-      "marketCap": "28.67B",
-      "targetPrice": 151.06,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -18861,13 +12421,8 @@ const INDEX_DATA = {
       "pct_6m": -17.69,
       "pct_ytd": -25.24,
       "pct_1y": -17.46,
-<<<<<<< HEAD
       "trailingPE": 40.05,
       "forwardPE": 23.29,
-=======
-      "trailingPE": 40.06,
-      "forwardPE": 23.19,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -18884,99 +12439,12 @@ const INDEX_DATA = {
       "dist_ma50": 5.68,
       "dist_ma200": -9.6,
       "marketCap": "29.31B",
-<<<<<<< HEAD
       "targetPrice": 1507.5,
       "exchange": "NYQ"
     },
     {
       "ticker": "DXCM",
       "name": "DexCom, Inc.",
-=======
-      "targetPrice": 1534.55,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "RMD",
-      "name": "ResMed Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Instruments & Supplies",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 198.61,
-      "pct_1d": -0.19,
-      "pct_1w": 0.06,
-      "pct_1m": 5.29,
-      "pct_3m": -10.22,
-      "pct_6m": -23.4,
-      "pct_ytd": -17.54,
-      "pct_1y": -23.92,
-      "trailingPE": 19.15,
-      "forwardPE": 16.59,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.33,
-      "rsi14": 48.02,
-      "rsi14_w": 39.3,
-      "rsi14_m": 42.77,
-      "rel_vol": 0.53,
-      "dist_high": -32.38,
-      "dist_low": 8.64,
-      "dist_ma50": -0.44,
-      "dist_ma200": -15.62,
-      "marketCap": "28.81B",
-      "targetPrice": 248.73,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DOV",
-      "name": "Dover Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Industrial Machinery",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 209.63,
-      "pct_1d": -2.12,
-      "pct_1w": -2.17,
-      "pct_1m": -6.24,
-      "pct_3m": -4.83,
-      "pct_6m": 0.52,
-      "pct_ytd": 7.37,
-      "pct_1y": 12.11,
-      "trailingPE": 26.12,
-      "forwardPE": 17.92,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.89,
-      "rsi14": 41.0,
-      "rsi14_w": 48.12,
-      "rsi14_m": 54.31,
-      "rel_vol": 0.57,
-      "dist_high": -10.15,
-      "dist_low": 30.08,
-      "dist_ma50": -3.08,
-      "dist_ma200": 2.29,
-      "marketCap": "28.23B",
-      "targetPrice": 256.38,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "sector": "Health Care",
       "sub_industry": "Medical Devices",
       "sp500": true,
@@ -18984,7 +12452,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 75.69,
       "pct_1d": -1.25,
       "pct_1w": -0.86,
@@ -18996,64 +12463,11 @@ const INDEX_DATA = {
       "trailingPE": 32.48,
       "forwardPE": 24.59,
       "ema_signal": 4,
-=======
-      "price": 62.83,
-      "pct_1d": -0.38,
-      "pct_1w": -3.8,
-      "pct_1m": 2.01,
-      "pct_3m": -13.05,
-      "pct_6m": -22.53,
-      "pct_ytd": -23.4,
-      "pct_1y": -15.28,
-      "trailingPE": 15.04,
-      "forwardPE": 11.62,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.21,
-      "rsi14": 45.71,
-      "rsi14_w": 40.89,
-      "rsi14_m": 37.66,
-      "rel_vol": 0.86,
-      "dist_high": -28.73,
-      "dist_low": 5.62,
-      "dist_ma50": -1.16,
-      "dist_ma200": -14.56,
-      "marketCap": "28.58B",
-      "targetPrice": 78.82,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "TPL",
-      "name": "Texas Pacific Land Corporation",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas E&P",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 405.87,
-      "pct_1d": -2.36,
-      "pct_1w": -0.75,
-      "pct_1m": 14.29,
-      "pct_3m": -7.28,
-      "pct_6m": 17.23,
-      "pct_ytd": 41.31,
-      "pct_1y": 25.53,
-      "trailingPE": 55.83,
-      "forwardPE": 5.55,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 4.73,
       "rsi14": 56.6,
       "rsi14_w": 59.3,
@@ -19104,19 +12518,6 @@ const INDEX_DATA = {
       "dist_ma200": 5.19,
       "marketCap": "29.03B",
       "targetPrice": 740.58,
-=======
-      "dist_sma20": 0.96,
-      "rsi14": 52.4,
-      "rsi14_w": 51.05,
-      "rsi14_m": 54.79,
-      "rel_vol": 0.62,
-      "dist_high": -24.81,
-      "dist_low": 48.36,
-      "dist_ma50": 3.26,
-      "dist_ma200": 6.55,
-      "marketCap": "27.99B",
-      "targetPrice": 443.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -19137,13 +12538,8 @@ const INDEX_DATA = {
       "pct_6m": 1.88,
       "pct_ytd": 10.84,
       "pct_1y": 17.76,
-<<<<<<< HEAD
       "trailingPE": 23.75,
       "forwardPE": 18.97,
-=======
-      "trailingPE": 23.78,
-      "forwardPE": 18.52,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -19160,11 +12556,7 @@ const INDEX_DATA = {
       "dist_ma50": -6.01,
       "dist_ma200": 0.55,
       "marketCap": "29.12B",
-<<<<<<< HEAD
       "targetPrice": 311.0,
-=======
-      "targetPrice": 308.93,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "BTS"
     },
     {
@@ -19372,7 +12764,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 209.63,
       "pct_1d": -2.12,
       "pct_1w": -2.17,
@@ -19383,25 +12774,12 @@ const INDEX_DATA = {
       "pct_1y": 12.11,
       "trailingPE": 26.17,
       "forwardPE": 18.1,
-=======
-      "price": 134.58,
-      "pct_1d": -1.3,
-      "pct_1w": -4.54,
-      "pct_1m": -20.36,
-      "pct_3m": -0.2,
-      "pct_6m": 31.04,
-      "pct_ytd": 64.83,
-      "pct_1y": null,
-      "trailingPE": 43.27,
-      "forwardPE": 27.56,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.89,
       "rsi14": 41.0,
       "rsi14_w": 48.12,
@@ -19413,97 +12791,6 @@ const INDEX_DATA = {
       "dist_ma200": 2.29,
       "marketCap": "28.23B",
       "targetPrice": 250.94,
-=======
-      "dist_sma20": -9.79,
-      "rsi14": 38.91,
-      "rsi14_w": 50.64,
-      "rsi14_m": null,
-      "rel_vol": 0.59,
-      "dist_high": -23.38,
-      "dist_low": 83.0,
-      "dist_ma50": -11.49,
-      "dist_ma200": null,
-      "marketCap": "28.17B",
-      "targetPrice": 174.75,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ARES",
-      "name": "Ares Management Corporation",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 121.27,
-      "pct_1d": -3.51,
-      "pct_1w": 0.68,
-      "pct_1m": -6.24,
-      "pct_3m": 1.19,
-      "pct_6m": -25.3,
-      "pct_ytd": -24.97,
-      "pct_1y": -32.21,
-      "trailingPE": 55.88,
-      "forwardPE": 16.6,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.19,
-      "rsi14": 49.34,
-      "rsi14_w": 46.59,
-      "rsi14_m": 44.03,
-      "rel_vol": 0.63,
-      "dist_high": -37.09,
-      "dist_low": 25.67,
-      "dist_ma50": -1.98,
-      "dist_ma200": -10.42,
-      "marketCap": "40.00B",
-      "targetPrice": 142.71,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CNP",
-      "name": "CenterPoint Energy, Inc.",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Regulated Electric",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 42.99,
-      "pct_1d": -0.32,
-      "pct_1w": -2.58,
-      "pct_1m": 0.4,
-      "pct_3m": 1.75,
-      "pct_6m": 8.75,
-      "pct_ytd": 12.13,
-      "pct_1y": 14.89,
-      "trailingPE": 26.37,
-      "forwardPE": 20.62,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.89,
-      "rsi14": 46.47,
-      "rsi14_w": 53.49,
-      "rsi14_m": 70.2,
-      "rel_vol": 0.64,
-      "dist_high": -4.55,
-      "dist_low": 15.81,
-      "dist_ma50": 0.14,
-      "dist_ma200": 4.39,
-      "marketCap": "28.12B",
-      "targetPrice": 46.38,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -19524,13 +12811,8 @@ const INDEX_DATA = {
       "pct_6m": -17.88,
       "pct_ytd": -15.88,
       "pct_1y": -25.4,
-<<<<<<< HEAD
       "trailingPE": 19.48,
       "forwardPE": 15.6,
-=======
-      "trailingPE": 19.54,
-      "forwardPE": 15.57,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -19547,11 +12829,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.75,
       "dist_ma200": -11.69,
       "marketCap": "28.20B",
-<<<<<<< HEAD
       "targetPrice": 94.9,
-=======
-      "targetPrice": 96.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -19612,11 +12890,7 @@ const INDEX_DATA = {
       "pct_ytd": 8.42,
       "pct_1y": 18.16,
       "trailingPE": 26.38,
-<<<<<<< HEAD
       "forwardPE": 16.47,
-=======
-      "forwardPE": 16.46,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -19633,11 +12907,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.01,
       "dist_ma200": 2.52,
       "marketCap": "28.08B",
-<<<<<<< HEAD
       "targetPrice": 53.25,
-=======
-      "targetPrice": 52.85,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -19650,7 +12920,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 42.99,
       "pct_1d": -0.32,
       "pct_1w": -2.58,
@@ -19664,25 +12933,9 @@ const INDEX_DATA = {
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
-=======
-      "price": 74.05,
-      "pct_1d": -0.76,
-      "pct_1w": -1.08,
-      "pct_1m": 6.41,
-      "pct_3m": 10.82,
-      "pct_6m": 3.74,
-      "pct_ytd": 9.98,
-      "pct_1y": 12.98,
-      "trailingPE": 15.84,
-      "forwardPE": 15.05,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 2,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -1.89,
       "rsi14": 46.47,
       "rsi14_w": 53.49,
@@ -19694,19 +12947,6 @@ const INDEX_DATA = {
       "dist_ma200": 4.39,
       "marketCap": "28.12B",
       "targetPrice": 46.6,
-=======
-      "dist_sma20": 0.84,
-      "rsi14": 56.48,
-      "rsi14_w": 57.72,
-      "rsi14_m": 56.94,
-      "rel_vol": 0.45,
-      "dist_high": -2.83,
-      "dist_low": 17.8,
-      "dist_ma50": 4.89,
-      "dist_ma200": 5.32,
-      "marketCap": "27.85B",
-      "targetPrice": 73.27,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -19727,13 +12967,8 @@ const INDEX_DATA = {
       "pct_6m": 11.48,
       "pct_ytd": 10.43,
       "pct_1y": 21.05,
-<<<<<<< HEAD
       "trailingPE": 10.31,
       "forwardPE": 19.74,
-=======
-      "trailingPE": 10.32,
-      "forwardPE": 19.57,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -19763,7 +12998,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 74.05,
       "pct_1d": -0.76,
       "pct_1w": -1.08,
@@ -19776,25 +13010,10 @@ const INDEX_DATA = {
       "forwardPE": 15.05,
       "ema_signal": 2,
       "macd_state": 2,
-=======
-      "price": 124.75,
-      "pct_1d": -0.8,
-      "pct_1w": 1.06,
-      "pct_1m": 9.96,
-      "pct_3m": 0.52,
-      "pct_6m": -15.23,
-      "pct_ytd": -6.04,
-      "pct_1y": 15.94,
-      "trailingPE": 17.64,
-      "forwardPE": 15.58,
-      "ema_signal": 4,
-      "macd_state": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.84,
       "rsi14": 56.48,
       "rsi14_w": 57.72,
@@ -19806,19 +13025,6 @@ const INDEX_DATA = {
       "dist_ma200": 5.32,
       "marketCap": "27.85B",
       "targetPrice": 73.27,
-=======
-      "dist_sma20": 5.14,
-      "rsi14": 61.63,
-      "rsi14_w": 53.63,
-      "rsi14_m": 51.45,
-      "rel_vol": 0.45,
-      "dist_high": -20.15,
-      "dist_low": 30.03,
-      "dist_ma50": 11.2,
-      "dist_ma200": 2.09,
-      "marketCap": "27.52B",
-      "targetPrice": 130.9,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -19839,13 +13045,8 @@ const INDEX_DATA = {
       "pct_6m": -8.06,
       "pct_ytd": -10.74,
       "pct_1y": -3.11,
-<<<<<<< HEAD
       "trailingPE": 17.17,
       "forwardPE": 13.26,
-=======
-      "trailingPE": 17.23,
-      "forwardPE": 13.23,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -19862,95 +13063,10 @@ const INDEX_DATA = {
       "dist_ma50": 10.61,
       "dist_ma200": -2.26,
       "marketCap": "27.70B",
-<<<<<<< HEAD
       "targetPrice": 341.15,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 339.68,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "JBHT",
-      "name": "J.B. Hunt Transport Services, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Integrated Freight & Logistics",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 290.61,
-      "pct_1d": -0.27,
-      "pct_1w": 2.69,
-      "pct_1m": 7.15,
-      "pct_3m": 15.74,
-      "pct_6m": 38.58,
-      "pct_ytd": 49.54,
-      "pct_1y": 96.89,
-      "trailingPE": 41.4,
-      "forwardPE": 28.79,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.19,
-      "rsi14": 57.64,
-      "rsi14_w": 69.72,
-      "rsi14_m": 73.92,
-      "rel_vol": 1.1,
-      "dist_high": -2.61,
-      "dist_low": 122.43,
-      "dist_ma50": 6.23,
-      "dist_ma200": 33.32,
-      "marketCap": "27.29B",
-      "targetPrice": 305.45,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "AVB",
-      "name": "AvalonBay Communities, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Residential",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 191.84,
-      "pct_1d": -0.36,
-      "pct_1w": -1.38,
-      "pct_1m": 8.19,
-      "pct_3m": 11.44,
-      "pct_6m": 7.2,
-      "pct_ytd": 5.81,
-      "pct_1y": -4.46,
-      "trailingPE": 23.77,
-      "forwardPE": 39.38,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.85,
-      "rsi14": 53.74,
-      "rsi14_w": 57.71,
-      "rsi14_m": 49.92,
-      "rel_vol": 0.48,
-      "dist_high": -6.2,
-      "dist_low": 19.3,
-      "dist_ma50": 2.57,
-      "dist_ma200": 6.64,
-      "marketCap": "27.25B",
-      "targetPrice": 198.44,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "NRG",
       "name": "NRG Energy, Inc.",
       "sector": "Utilities",
@@ -19968,13 +13084,8 @@ const INDEX_DATA = {
       "pct_6m": -13.34,
       "pct_ytd": -18.0,
       "pct_1y": -14.27,
-<<<<<<< HEAD
       "trailingPE": 152.4,
       "forwardPE": 11.54,
-=======
-      "trailingPE": 145.09,
-      "forwardPE": 11.37,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": true,
@@ -19991,11 +13102,7 @@ const INDEX_DATA = {
       "dist_ma50": -3.5,
       "dist_ma200": -15.48,
       "marketCap": "27.55B",
-<<<<<<< HEAD
       "targetPrice": 204.56,
-=======
-      "targetPrice": 198.35,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -20008,7 +13115,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 124.75,
       "pct_1d": -0.8,
       "pct_1w": 1.06,
@@ -20020,25 +13126,11 @@ const INDEX_DATA = {
       "trailingPE": 17.64,
       "forwardPE": 15.57,
       "ema_signal": 4,
-=======
-      "price": 31.11,
-      "pct_1d": -1.71,
-      "pct_1w": 0.13,
-      "pct_1m": 8.7,
-      "pct_3m": 9.74,
-      "pct_6m": 8.59,
-      "pct_ytd": 14.8,
-      "pct_1y": 19.42,
-      "trailingPE": 12.65,
-      "forwardPE": 10.91,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 5.14,
       "rsi14": 61.63,
       "rsi14_w": 53.63,
@@ -20050,19 +13142,6 @@ const INDEX_DATA = {
       "dist_ma200": 2.09,
       "marketCap": "27.52B",
       "targetPrice": 131.46,
-=======
-      "dist_sma20": 1.96,
-      "rsi14": 58.01,
-      "rsi14_w": 63.54,
-      "rsi14_m": 64.18,
-      "rel_vol": 1.36,
-      "dist_high": -3.98,
-      "dist_low": 33.23,
-      "dist_ma50": 7.46,
-      "dist_ma200": 13.53,
-      "marketCap": "26.55B",
-      "targetPrice": 32.22,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -20083,13 +13162,8 @@ const INDEX_DATA = {
       "pct_6m": -21.38,
       "pct_ytd": -23.06,
       "pct_1y": -68.77,
-<<<<<<< HEAD
       "trailingPE": 8.77,
       "forwardPE": 5.79,
-=======
-      "trailingPE": 8.76,
-      "forwardPE": 5.78,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -20106,11 +13180,7 @@ const INDEX_DATA = {
       "dist_ma50": -1.89,
       "dist_ma200": -22.44,
       "marketCap": "27.56B",
-<<<<<<< HEAD
       "targetPrice": 64.04,
-=======
-      "targetPrice": 67.37,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -20326,13 +13396,8 @@ const INDEX_DATA = {
       "pct_6m": -4.71,
       "pct_ytd": 1.17,
       "pct_1y": -2.13,
-<<<<<<< HEAD
       "trailingPE": 21.79,
       "forwardPE": 16.73,
-=======
-      "trailingPE": 21.74,
-      "forwardPE": 16.74,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -20349,11 +13414,7 @@ const INDEX_DATA = {
       "dist_ma50": -1.19,
       "dist_ma200": -3.15,
       "marketCap": "26.66B",
-<<<<<<< HEAD
       "targetPrice": 41.86,
-=======
-      "targetPrice": 41.67,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -20453,11 +13514,7 @@ const INDEX_DATA = {
       "pct_ytd": -16.9,
       "pct_1y": 218.85,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 76.61,
-=======
-      "forwardPE": -792.37,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -20474,95 +13531,10 @@ const INDEX_DATA = {
       "dist_ma50": -20.82,
       "dist_ma200": -14.12,
       "marketCap": "26.18B",
-<<<<<<< HEAD
       "targetPrice": 138.8,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 135.67,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "WRB",
-      "name": "W. R. Berkley Corporation",
-      "sector": "Financials",
-      "sub_industry": "Insurance - Property & Casualty",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 72.73,
-      "pct_1d": 1.56,
-      "pct_1w": -1.5,
-      "pct_1m": 8.26,
-      "pct_3m": 11.21,
-      "pct_6m": 7.68,
-      "pct_ytd": 3.72,
-      "pct_1y": 7.27,
-      "trailingPE": 15.41,
-      "forwardPE": 15.18,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.53,
-      "rsi14": 59.69,
-      "rsi14_w": 59.31,
-      "rsi14_m": 59.18,
-      "rel_vol": 0.83,
-      "dist_high": -7.3,
-      "dist_low": 14.46,
-      "dist_ma50": 6.27,
-      "dist_ma200": 3.88,
-      "marketCap": "27.08B",
-      "targetPrice": 68.29,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MTD",
-      "name": "Mettler-Toledo International Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Diagnostics & Research",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 1273.77,
-      "pct_1d": -2.77,
-      "pct_1w": -1.98,
-      "pct_1m": 11.26,
-      "pct_3m": -3.81,
-      "pct_6m": -11.72,
-      "pct_ytd": -8.64,
-      "pct_1y": 9.2,
-      "trailingPE": 29.91,
-      "forwardPE": 24.84,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.1,
-      "rsi14": 53.53,
-      "rsi14_w": 51.56,
-      "rsi14_m": 43.15,
-      "rel_vol": 0.69,
-      "dist_high": -15.42,
-      "dist_low": 24.21,
-      "dist_ma50": 7.53,
-      "dist_ma200": -3.25,
-      "marketCap": "25.74B",
-      "targetPrice": 1336.5,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "AWK",
       "name": "American Water Works Company, Inc.",
       "sector": "Utilities",
@@ -20580,11 +13552,7 @@ const INDEX_DATA = {
       "pct_6m": 2.03,
       "pct_ytd": 2.41,
       "pct_1y": -6.43,
-<<<<<<< HEAD
       "trailingPE": 23.65,
-=======
-      "trailingPE": 23.74,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 20.36,
       "ema_signal": 4,
       "macd_state": 4,
@@ -20602,56 +13570,10 @@ const INDEX_DATA = {
       "dist_ma50": 4.81,
       "dist_ma200": 1.62,
       "marketCap": "26.10B",
-<<<<<<< HEAD
       "targetPrice": 140.4,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 139.91,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "VRSK",
-      "name": "Verisk Analytics, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Consulting Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 201.79,
-      "pct_1d": 0.55,
-      "pct_1w": 4.16,
-      "pct_1m": 16.1,
-      "pct_3m": 10.82,
-      "pct_6m": -6.83,
-      "pct_ytd": -9.79,
-      "pct_1y": -32.64,
-      "trailingPE": 30.76,
-      "forwardPE": 23.27,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 8.02,
-      "rsi14": 67.02,
-      "rsi14_w": 54.62,
-      "rsi14_m": 41.07,
-      "rel_vol": 0.67,
-      "dist_high": -33.16,
-      "dist_low": 28.66,
-      "dist_ma50": 12.51,
-      "dist_ma200": 0.3,
-      "marketCap": "26.44B",
-      "targetPrice": 222.24,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "PPG",
       "name": "PPG Industries, Inc.",
       "sector": "Materials",
@@ -20670,11 +13592,7 @@ const INDEX_DATA = {
       "pct_ytd": 12.92,
       "pct_1y": 1.03,
       "trailingPE": 16.58,
-<<<<<<< HEAD
       "forwardPE": 13.44,
-=======
-      "forwardPE": 13.36,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -20691,11 +13609,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.14,
       "dist_ma200": 6.23,
       "marketCap": "25.79B",
-<<<<<<< HEAD
       "targetPrice": 126.25,
-=======
-      "targetPrice": 125.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -20716,13 +13630,8 @@ const INDEX_DATA = {
       "pct_6m": 12.14,
       "pct_ytd": 9.14,
       "pct_1y": 2.72,
-<<<<<<< HEAD
       "trailingPE": 27.75,
       "forwardPE": 44.06,
-=======
-      "trailingPE": 27.52,
-      "forwardPE": 43.94,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -20738,7 +13647,6 @@ const INDEX_DATA = {
       "dist_low": 18.66,
       "dist_ma50": 2.66,
       "dist_ma200": 9.19,
-<<<<<<< HEAD
       "marketCap": "25.79B",
       "targetPrice": 72.47,
       "exchange": "NYQ"
@@ -20780,10 +13688,6 @@ const INDEX_DATA = {
       "dist_ma200": -3.25,
       "marketCap": "25.74B",
       "targetPrice": 1348.91,
-=======
-      "marketCap": "26.58B",
-      "targetPrice": 72.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -20804,13 +13708,8 @@ const INDEX_DATA = {
       "pct_6m": 0.51,
       "pct_ytd": 9.2,
       "pct_1y": 14.85,
-<<<<<<< HEAD
       "trailingPE": 28.66,
       "forwardPE": 21.91,
-=======
-      "trailingPE": 28.68,
-      "forwardPE": 21.61,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -20827,11 +13726,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.67,
       "dist_ma200": 1.43,
       "marketCap": "25.63B",
-<<<<<<< HEAD
       "targetPrice": 564.89,
-=======
-      "targetPrice": 556.3,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -20852,13 +13747,8 @@ const INDEX_DATA = {
       "pct_6m": -33.45,
       "pct_ytd": -29.78,
       "pct_1y": -40.28,
-<<<<<<< HEAD
       "trailingPE": 17.13,
       "forwardPE": 16.37,
-=======
-      "trailingPE": 17.07,
-      "forwardPE": 16.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -20874,13 +13764,8 @@ const INDEX_DATA = {
       "dist_low": 0.77,
       "dist_ma50": -10.6,
       "dist_ma200": -24.84,
-<<<<<<< HEAD
       "marketCap": "25.45B",
       "targetPrice": 40.0,
-=======
-      "marketCap": "26.48B",
-      "targetPrice": 40.9,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -20901,59 +13786,14 @@ const INDEX_DATA = {
       "pct_6m": 7.51,
       "pct_ytd": 12.98,
       "pct_1y": 27.57,
-<<<<<<< HEAD
       "trailingPE": 14.28,
       "forwardPE": 10.79,
-=======
-      "trailingPE": 14.31,
-      "forwardPE": 10.85,
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": 0.33,
-      "rsi14": 54.99,
-      "rsi14_w": 63.5,
-      "rsi14_m": 65.44,
-      "rel_vol": 1.29,
-      "dist_high": -2.79,
-      "dist_low": 38.97,
-      "dist_ma50": 4.7,
-      "dist_ma200": 13.11,
-      "marketCap": "25.17B",
-      "targetPrice": 25.85,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "WST",
-      "name": "West Pharmaceutical Services, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Instruments & Supplies",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 352.32,
-      "pct_1d": -1.65,
-      "pct_1w": -2.05,
-      "pct_1m": 7.43,
-      "pct_3m": 28.25,
-      "pct_6m": 38.08,
-      "pct_ytd": 28.05,
-      "pct_1y": 67.71,
-      "trailingPE": 47.04,
-      "forwardPE": 36.62,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.33,
       "rsi14": 54.99,
       "rsi14_w": 63.5,
@@ -20965,19 +13805,6 @@ const INDEX_DATA = {
       "dist_ma200": 13.11,
       "marketCap": "25.17B",
       "targetPrice": 24.97,
-=======
-      "dist_sma20": -0.42,
-      "rsi14": 54.99,
-      "rsi14_w": 65.54,
-      "rsi14_m": 60.22,
-      "rel_vol": 0.55,
-      "dist_high": -3.67,
-      "dist_low": 67.71,
-      "dist_ma50": 6.01,
-      "dist_ma200": 25.16,
-      "marketCap": "24.89B",
-      "targetPrice": 382.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -20998,13 +13825,8 @@ const INDEX_DATA = {
       "pct_6m": 9.83,
       "pct_ytd": 14.27,
       "pct_1y": -2.31,
-<<<<<<< HEAD
       "trailingPE": 30.7,
       "forwardPE": 25.71,
-=======
-      "trailingPE": 30.68,
-      "forwardPE": 26.51,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -21021,11 +13843,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.5,
       "dist_ma200": 8.21,
       "marketCap": "25.26B",
-<<<<<<< HEAD
       "targetPrice": 325.25,
-=======
-      "targetPrice": 313.2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -21038,7 +13856,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 352.32,
       "pct_1d": -1.65,
       "pct_1w": -2.05,
@@ -21049,25 +13866,12 @@ const INDEX_DATA = {
       "pct_1y": 67.71,
       "trailingPE": 47.1,
       "forwardPE": 36.53,
-=======
-      "price": 116.49,
-      "pct_1d": -0.73,
-      "pct_1w": 2.5,
-      "pct_1m": 8.21,
-      "pct_3m": 17.5,
-      "pct_6m": 9.76,
-      "pct_ytd": 13.78,
-      "pct_1y": 11.26,
-      "trailingPE": 12.5,
-      "forwardPE": 11.23,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -0.42,
       "rsi14": 54.99,
       "rsi14_w": 65.54,
@@ -21080,20 +13884,6 @@ const INDEX_DATA = {
       "marketCap": "24.89B",
       "targetPrice": 390.71,
       "exchange": "NYQ"
-=======
-      "dist_sma20": 1.63,
-      "rsi14": 57.27,
-      "rsi14_w": 67.53,
-      "rsi14_m": 55.23,
-      "rel_vol": 0.72,
-      "dist_high": -3.05,
-      "dist_low": 35.15,
-      "dist_ma50": 7.1,
-      "dist_ma200": 14.29,
-      "marketCap": "24.96B",
-      "targetPrice": 110.08,
-      "exchange": "NMS"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "SYF",
@@ -21114,11 +13904,7 @@ const INDEX_DATA = {
       "pct_ytd": -12.01,
       "pct_1y": 5.72,
       "trailingPE": 7.6,
-<<<<<<< HEAD
       "forwardPE": 7.01,
-=======
-      "forwardPE": 6.97,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -21135,11 +13921,7 @@ const INDEX_DATA = {
       "dist_ma50": 0.5,
       "dist_ma200": -1.07,
       "marketCap": "24.69B",
-<<<<<<< HEAD
       "targetPrice": 89.43,
-=======
-      "targetPrice": 89.83,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -21238,13 +14020,8 @@ const INDEX_DATA = {
       "pct_6m": 23.02,
       "pct_ytd": 27.04,
       "pct_1y": 42.32,
-<<<<<<< HEAD
       "trailingPE": 16.02,
       "forwardPE": 10.81,
-=======
-      "trailingPE": 16.08,
-      "forwardPE": 10.9,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -21283,11 +14060,7 @@ const INDEX_DATA = {
       "pct_ytd": 28.02,
       "pct_1y": 112.56,
       "trailingPE": 41.66,
-<<<<<<< HEAD
       "forwardPE": 27.61,
-=======
-      "forwardPE": 27.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -21304,134 +14077,10 @@ const INDEX_DATA = {
       "dist_ma50": 12.04,
       "dist_ma200": 21.31,
       "marketCap": "24.26B",
-<<<<<<< HEAD
       "targetPrice": 205.25,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 202.32,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Biotechnology",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 59.49,
-      "pct_1d": -3.77,
-      "pct_1w": -11.22,
-      "pct_1m": -6.99,
-      "pct_3m": 9.7,
-      "pct_6m": 19.43,
-      "pct_ytd": 101.73,
-      "pct_1y": 92.09,
-      "trailingPE": null,
-      "forwardPE": -14.2,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -12.97,
-      "rsi14": 43.25,
-      "rsi14_w": 55.47,
-      "rsi14_m": 40.36,
-      "rel_vol": 0.59,
-      "dist_high": -27.27,
-      "dist_low": 166.06,
-      "dist_ma50": 3.82,
-      "dist_ma200": 36.57,
-      "marketCap": "23.60B",
-      "targetPrice": 48.42,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "DLTR",
-      "name": "Dollar Tree, Inc.",
-      "sector": "Consumer Staples",
-      "sub_industry": "Discount Stores",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 126.38,
-      "pct_1d": 0.35,
-      "pct_1w": 0.0,
-      "pct_1m": 13.19,
-      "pct_3m": 21.72,
-      "pct_6m": -4.93,
-      "pct_ytd": 2.74,
-      "pct_1y": 12.53,
-      "trailingPE": 20.29,
-      "forwardPE": 16.46,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.17,
-      "rsi14": 61.22,
-      "rsi14_w": 59.72,
-      "rsi14_m": 56.96,
-      "rel_vol": 0.67,
-      "dist_high": -10.5,
-      "dist_low": 48.61,
-      "dist_ma50": 14.41,
-      "dist_ma200": 12.98,
-      "marketCap": "24.29B",
-      "targetPrice": 127.2,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "PHM",
-      "name": "PulteGroup, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Residential Construction",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 123.18,
-      "pct_1d": -2.3,
-      "pct_1w": -0.46,
-      "pct_1m": -2.98,
-      "pct_3m": -4.24,
-      "pct_6m": -5.22,
-      "pct_ytd": 5.05,
-      "pct_1y": 13.37,
-      "trailingPE": 11.91,
-      "forwardPE": 11.11,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -4.78,
-      "rsi14": 44.64,
-      "rsi14_w": 49.2,
-      "rsi14_m": 48.02,
-      "rel_vol": 0.84,
-      "dist_high": -13.59,
-      "dist_low": 13.37,
-      "dist_ma50": 0.55,
-      "dist_ma200": -0.83,
-      "marketCap": "23.46B",
-      "targetPrice": 139.77,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "CPAY",
       "name": "Corpay, Inc.",
       "sector": "Information Technology",
@@ -21468,126 +14117,6 @@ const INDEX_DATA = {
       "dist_ma200": 16.58,
       "marketCap": "24.14B",
       "targetPrice": 395.14,
-<<<<<<< HEAD
-=======
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "EXPD",
-      "name": "Expeditors International of Washington, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Integrated Freight & Logistics",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 177.37,
-      "pct_1d": -2.97,
-      "pct_1w": 1.07,
-      "pct_1m": 9.95,
-      "pct_3m": 17.48,
-      "pct_6m": 9.14,
-      "pct_ytd": 19.03,
-      "pct_1y": 57.61,
-      "trailingPE": 28.61,
-      "forwardPE": 25.27,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.0,
-      "rsi14": 64.16,
-      "rsi14_w": 66.61,
-      "rsi14_m": 70.51,
-      "rel_vol": 0.76,
-      "dist_high": -2.97,
-      "dist_low": 59.26,
-      "dist_ma50": 8.64,
-      "dist_ma200": 18.98,
-      "marketCap": "23.20B",
-      "targetPrice": 156.57,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "L",
-      "name": "Loews Corporation",
-      "sector": "Financials",
-      "sub_industry": "Insurance - Property & Casualty",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 114.59,
-      "pct_1d": 0.12,
-      "pct_1w": -1.64,
-      "pct_1m": 6.81,
-      "pct_3m": 2.78,
-      "pct_6m": 11.93,
-      "pct_ytd": 8.81,
-      "pct_1y": 25.48,
-      "trailingPE": 14.58,
-      "forwardPE": 39.51,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.64,
-      "rsi14": 57.18,
-      "rsi14_w": 60.0,
-      "rsi14_m": 68.39,
-      "rel_vol": 0.54,
-      "dist_high": -2.02,
-      "dist_low": 26.91,
-      "dist_ma50": 4.73,
-      "dist_ma200": 7.33,
-      "marketCap": "23.58B",
-      "targetPrice": null,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "BRO",
-      "name": "Brown & Brown, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Insurance Brokers",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 68.94,
-      "pct_1d": -0.59,
-      "pct_1w": -0.39,
-      "pct_1m": 16.65,
-      "pct_3m": -0.01,
-      "pct_6m": -11.69,
-      "pct_ytd": -13.5,
-      "pct_1y": -32.73,
-      "trailingPE": 22.46,
-      "forwardPE": 14.25,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.07,
-      "rsi14": 62.29,
-      "rsi14_w": 51.87,
-      "rsi14_m": 40.89,
-      "rel_vol": 0.75,
-      "dist_high": -33.61,
-      "dist_low": 26.77,
-      "dist_ma50": 12.88,
-      "dist_ma200": -4.32,
-      "marketCap": "23.37B",
-      "targetPrice": 74.38,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -21608,13 +14137,8 @@ const INDEX_DATA = {
       "pct_6m": 12.81,
       "pct_ytd": 16.96,
       "pct_1y": 31.14,
-<<<<<<< HEAD
       "trailingPE": 30.8,
       "forwardPE": 9.94,
-=======
-      "trailingPE": 32.23,
-      "forwardPE": 9.91,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -21631,11 +14155,7 @@ const INDEX_DATA = {
       "dist_ma50": 7.19,
       "dist_ma200": 17.45,
       "marketCap": "23.63B",
-<<<<<<< HEAD
       "targetPrice": 53.43,
-=======
-      "targetPrice": 52.36,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -21648,7 +14168,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 59.49,
       "pct_1d": -3.77,
       "pct_1w": -11.22,
@@ -21660,25 +14179,11 @@ const INDEX_DATA = {
       "trailingPE": null,
       "forwardPE": -14.2,
       "ema_signal": 1,
-=======
-      "price": 115.65,
-      "pct_1d": -1.36,
-      "pct_1w": 1.24,
-      "pct_1m": 17.75,
-      "pct_3m": 20.19,
-      "pct_6m": 10.49,
-      "pct_ytd": 17.09,
-      "pct_1y": 71.64,
-      "trailingPE": 16.33,
-      "forwardPE": 13.26,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
       "is_danger_dead_cross": true,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 1,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -12.97,
       "rsi14": 43.25,
       "rsi14_w": 55.47,
@@ -21690,19 +14195,6 @@ const INDEX_DATA = {
       "dist_ma200": 36.57,
       "marketCap": "23.60B",
       "targetPrice": 52.16,
-=======
-      "dist_sma20": 1.61,
-      "rsi14": 59.59,
-      "rsi14_w": 63.17,
-      "rsi14_m": 73.96,
-      "rel_vol": 0.71,
-      "dist_high": -2.42,
-      "dist_low": 71.64,
-      "dist_ma50": 10.16,
-      "dist_ma200": 16.01,
-      "marketCap": "23.10B",
-      "targetPrice": 113.82,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -21715,7 +14207,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 114.59,
       "pct_1d": 0.12,
       "pct_1w": -1.64,
@@ -21727,25 +14218,11 @@ const INDEX_DATA = {
       "trailingPE": 14.58,
       "forwardPE": 39.51,
       "ema_signal": 4,
-=======
-      "price": 207.66,
-      "pct_1d": -1.43,
-      "pct_1w": 0.15,
-      "pct_1m": 6.49,
-      "pct_3m": 1.28,
-      "pct_6m": 12.46,
-      "pct_ytd": 19.67,
-      "pct_1y": 24.76,
-      "trailingPE": 22.92,
-      "forwardPE": 17.8,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.64,
       "rsi14": 57.18,
       "rsi14_w": 60.0,
@@ -21757,19 +14234,6 @@ const INDEX_DATA = {
       "dist_ma200": 7.33,
       "marketCap": "23.58B",
       "targetPrice": null,
-=======
-      "dist_sma20": -0.13,
-      "rsi14": 52.97,
-      "rsi14_w": 57.03,
-      "rsi14_m": 63.64,
-      "rel_vol": 0.69,
-      "dist_high": -3.87,
-      "dist_low": 24.76,
-      "dist_ma50": 3.76,
-      "dist_ma200": 8.16,
-      "marketCap": "22.99B",
-      "targetPrice": 223.94,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -21812,91 +14276,8 @@ const INDEX_DATA = {
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
       "ticker": "PHM",
       "name": "PulteGroup, Inc.",
-=======
-      "ticker": "CHD",
-      "name": "Church & Dwight Co., Inc.",
-      "sector": "Consumer Staples",
-      "sub_industry": "Household & Personal Products",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 97.79,
-      "pct_1d": -0.29,
-      "pct_1w": 0.65,
-      "pct_1m": 2.26,
-      "pct_3m": 4.91,
-      "pct_6m": 6.57,
-      "pct_ytd": 16.62,
-      "pct_1y": 1.35,
-      "trailingPE": 32.17,
-      "forwardPE": 24.16,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
-      "dead_cross_count": 0,
-      "golden_cross_count": 2,
-      "dist_sma20": 0.48,
-      "rsi14": 52.02,
-      "rsi14_w": 54.14,
-      "rsi14_m": 51.76,
-      "rel_vol": 0.44,
-      "dist_high": -7.1,
-      "dist_low": 19.84,
-      "dist_ma50": 1.43,
-      "dist_ma200": 5.6,
-      "marketCap": "23.17B",
-      "targetPrice": 103.47,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "LH",
-      "name": "Labcorp Holdings Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Diagnostics & Research",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 281.48,
-      "pct_1d": -0.66,
-      "pct_1w": 1.73,
-      "pct_1m": 10.03,
-      "pct_3m": 2.95,
-      "pct_6m": 4.58,
-      "pct_ytd": 12.2,
-      "pct_1y": 15.82,
-      "trailingPE": 24.95,
-      "forwardPE": 14.5,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.02,
-      "rsi14": 59.67,
-      "rsi14_w": 56.97,
-      "rsi14_m": 60.64,
-      "rel_vol": 0.79,
-      "dist_high": -3.25,
-      "dist_low": 15.82,
-      "dist_ma50": 5.81,
-      "dist_ma200": 5.31,
-      "marketCap": "23.08B",
-      "targetPrice": 312.35,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "SW",
-      "name": "Smurfit Westrock Plc",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "sector": "Consumer Discretionary",
       "sub_industry": "Residential Construction",
       "sp500": true,
@@ -21904,7 +14285,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 123.18,
       "pct_1d": -2.3,
       "pct_1w": -0.46,
@@ -21915,25 +14295,12 @@ const INDEX_DATA = {
       "pct_1y": 13.37,
       "trailingPE": 11.91,
       "forwardPE": 11.11,
-=======
-      "price": 43.14,
-      "pct_1d": -2.62,
-      "pct_1w": -0.02,
-      "pct_1m": -2.4,
-      "pct_3m": 4.66,
-      "pct_6m": 2.89,
-      "pct_ytd": 11.56,
-      "pct_1y": -5.06,
-      "trailingPE": 59.92,
-      "forwardPE": 12.84,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
-      "is_danger_dead_cross": true,
+      "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
+      "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -4.78,
       "rsi14": 44.64,
       "rsi14_w": 49.2,
@@ -21945,19 +14312,6 @@ const INDEX_DATA = {
       "dist_ma200": -0.83,
       "marketCap": "23.46B",
       "targetPrice": 139.77,
-=======
-      "dist_sma20": -3.75,
-      "rsi14": 47.29,
-      "rsi14_w": 51.53,
-      "rsi14_m": 50.27,
-      "rel_vol": 0.86,
-      "dist_high": -16.78,
-      "dist_low": 31.56,
-      "dist_ma50": 1.83,
-      "dist_ma200": 5.15,
-      "marketCap": "22.63B",
-      "targetPrice": 55.04,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -22019,7 +14373,6 @@ const INDEX_DATA = {
       "pct_1y": 37.25,
       "trailingPE": 33.79,
       "forwardPE": 23.3,
-<<<<<<< HEAD
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -22176,15 +14529,12 @@ const INDEX_DATA = {
       "pct_1y": 24.76,
       "trailingPE": 22.92,
       "forwardPE": 17.8,
-=======
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -0.13,
       "rsi14": 52.97,
       "rsi14_w": 57.03,
@@ -22235,19 +14585,6 @@ const INDEX_DATA = {
       "dist_ma200": 16.01,
       "marketCap": "23.10B",
       "targetPrice": 113.82,
-=======
-      "dist_sma20": 0.24,
-      "rsi14": 52.89,
-      "rsi14_w": 68.74,
-      "rsi14_m": 76.62,
-      "rel_vol": 0.56,
-      "dist_high": -4.48,
-      "dist_low": 83.9,
-      "dist_ma50": 4.38,
-      "dist_ma200": 33.71,
-      "marketCap": "23.24B",
-      "targetPrice": 419.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -22287,165 +14624,6 @@ const INDEX_DATA = {
       "dist_ma200": -1.21,
       "marketCap": "22.88B",
       "targetPrice": 108.12,
-<<<<<<< HEAD
-=======
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "FSLR",
-      "name": "First Solar, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Solar",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 205.31,
-      "pct_1d": -3.15,
-      "pct_1w": -7.11,
-      "pct_1m": -20.33,
-      "pct_3m": 10.02,
-      "pct_6m": -15.76,
-      "pct_ytd": -21.41,
-      "pct_1y": 15.13,
-      "trailingPE": 13.26,
-      "forwardPE": 8.76,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -10.93,
-      "rsi14": 31.56,
-      "rsi14_w": 43.22,
-      "rsi14_m": 47.15,
-      "rel_vol": 0.63,
-      "dist_high": -35.49,
-      "dist_low": 17.5,
-      "dist_ma50": -17.62,
-      "dist_ma200": -12.75,
-      "marketCap": "22.06B",
-      "targetPrice": 254.25,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "CMS",
-      "name": "CMS Energy Corporation",
-      "sector": "Utilities",
-      "sub_industry": "Utilities - Regulated Electric",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 72.88,
-      "pct_1d": -1.05,
-      "pct_1w": -3.79,
-      "pct_1m": -0.68,
-      "pct_3m": -3.57,
-      "pct_6m": 1.66,
-      "pct_ytd": 4.22,
-      "pct_1y": 0.87,
-      "trailingPE": 20.13,
-      "forwardPE": 17.46,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.81,
-      "rsi14": 40.89,
-      "rsi14_w": 46.21,
-      "rsi14_m": 53.78,
-      "rel_vol": 0.67,
-      "dist_high": -8.83,
-      "dist_low": 5.36,
-      "dist_ma50": -1.5,
-      "dist_ma200": -1.57,
-      "marketCap": "22.51B",
-      "targetPrice": 80.93,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DRI",
-      "name": "Darden Restaurants, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Restaurants",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 194.82,
-      "pct_1d": -1.87,
-      "pct_1w": -0.95,
-      "pct_1m": -8.73,
-      "pct_3m": -1.08,
-      "pct_6m": -6.04,
-      "pct_ytd": 5.87,
-      "pct_1y": -5.8,
-      "trailingPE": 18.66,
-      "forwardPE": 15.73,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -4.47,
-      "rsi14": 39.6,
-      "rsi14_w": 44.84,
-      "rsi14_m": 58.85,
-      "rel_vol": 1.12,
-      "dist_high": -10.9,
-      "dist_low": 15.14,
-      "dist_ma50": -3.62,
-      "dist_ma200": -0.69,
-      "marketCap": "22.31B",
-      "targetPrice": 228.33,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "HPQ",
-      "name": "HP Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Computer Hardware",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 24.22,
-      "pct_1d": -2.5,
-      "pct_1w": -2.22,
-      "pct_1m": 3.06,
-      "pct_3m": 14.84,
-      "pct_6m": 24.01,
-      "pct_ytd": 8.71,
-      "pct_1y": -2.46,
-      "trailingPE": 8.97,
-      "forwardPE": 8.05,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.31,
-      "rsi14": 53.57,
-      "rsi14_w": 54.41,
-      "rsi14_m": 41.18,
-      "rel_vol": 0.53,
-      "dist_high": -17.48,
-      "dist_low": 33.08,
-      "dist_ma50": 2.17,
-      "dist_ma200": 7.71,
-      "marketCap": "22.15B",
-      "targetPrice": 22.98,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -22468,8 +14646,6 @@ const INDEX_DATA = {
       "pct_1y": -20.0,
       "trailingPE": 12.8,
       "forwardPE": 10.86,
-<<<<<<< HEAD
-=======
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -22487,60 +14663,6 @@ const INDEX_DATA = {
       "dist_ma200": -7.83,
       "marketCap": "22.95B",
       "targetPrice": 171.0,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "FDXF",
-      "name": "FedEx Freight Holding Company, Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Integrated Freight & Logistics",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 150.14,
-      "pct_1d": -1.39,
-      "pct_1w": 1.19,
-      "pct_1m": -7.8,
-      "pct_3m": null,
-      "pct_6m": null,
-      "pct_ytd": null,
-      "pct_1y": null,
-      "trailingPE": 33.0,
-      "forwardPE": 29.97,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
-      "dist_sma20": -1.62,
-      "rsi14": 45.08,
-      "rsi14_w": 41.72,
-      "rsi14_m": 29.55,
-      "rel_vol": 0.65,
-      "dist_high": -23.7,
-      "dist_low": 5.26,
-      "dist_ma50": -4.45,
-      "dist_ma200": -7.83,
-      "marketCap": "22.95B",
-      "targetPrice": 171.0,
-=======
-      "dist_sma20": -1.28,
-      "rsi14": 49.19,
-      "rsi14_w": null,
-      "rsi14_m": null,
-      "rel_vol": 0.32,
-      "dist_high": -20.33,
-      "dist_low": 5.88,
-      "dist_ma50": null,
-      "dist_ma200": null,
-      "marketCap": "22.36B",
-      "targetPrice": 169.42,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -22553,7 +14675,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 43.14,
       "pct_1d": -2.62,
       "pct_1w": -0.02,
@@ -22564,25 +14685,12 @@ const INDEX_DATA = {
       "pct_1y": -5.06,
       "trailingPE": 59.92,
       "forwardPE": 12.84,
-=======
-      "price": 376.48,
-      "pct_1d": -1.04,
-      "pct_1w": 0.53,
-      "pct_1m": -8.84,
-      "pct_3m": -2.66,
-      "pct_6m": 1.87,
-      "pct_ytd": 6.47,
-      "pct_1y": 30.38,
-      "trailingPE": 24.93,
-      "forwardPE": 18.48,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 1,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.75,
       "rsi14": 47.29,
       "rsi14_w": 51.53,
@@ -22594,19 +14702,6 @@ const INDEX_DATA = {
       "dist_ma200": 5.15,
       "marketCap": "22.63B",
       "targetPrice": 55.04,
-=======
-      "dist_sma20": -4.27,
-      "rsi14": 44.89,
-      "rsi14_w": 52.07,
-      "rsi14_m": 70.59,
-      "rel_vol": 0.48,
-      "dist_high": -9.12,
-      "dist_low": 32.87,
-      "dist_ma50": -0.23,
-      "dist_ma200": 5.19,
-      "marketCap": "22.41B",
-      "targetPrice": 429.56,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -22619,7 +14714,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 72.88,
       "pct_1d": -1.05,
       "pct_1w": -3.79,
@@ -22630,25 +14724,12 @@ const INDEX_DATA = {
       "pct_1y": 0.87,
       "trailingPE": 20.13,
       "forwardPE": 17.46,
-=======
-      "price": 45.37,
-      "pct_1d": -1.33,
-      "pct_1w": -3.61,
-      "pct_1m": -4.0,
-      "pct_3m": -3.32,
-      "pct_6m": 3.61,
-      "pct_ytd": 8.64,
-      "pct_1y": 8.75,
-      "trailingPE": 22.57,
-      "forwardPE": 20.15,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": true,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 2,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.81,
       "rsi14": 40.89,
       "rsi14_w": 46.21,
@@ -22660,175 +14741,6 @@ const INDEX_DATA = {
       "dist_ma200": -1.57,
       "marketCap": "22.51B",
       "targetPrice": 80.93,
-=======
-      "dist_sma20": -3.65,
-      "rsi14": 39.37,
-      "rsi14_w": 46.41,
-      "rsi14_m": 64.68,
-      "rel_vol": 0.64,
-      "dist_high": -7.56,
-      "dist_low": 15.24,
-      "dist_ma50": -3.31,
-      "dist_ma200": 0.57,
-      "marketCap": "21.75B",
-      "targetPrice": 51.3,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ROL",
-      "name": "Rollins, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Personal Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 44.74,
-      "pct_1d": -0.82,
-      "pct_1w": -0.4,
-      "pct_1m": -0.49,
-      "pct_3m": -18.22,
-      "pct_6m": -29.32,
-      "pct_ytd": -25.46,
-      "pct_1y": -19.24,
-      "trailingPE": 41.05,
-      "forwardPE": 32.17,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.91,
-      "rsi14": 47.42,
-      "rsi14_w": 30.88,
-      "rsi14_m": 42.2,
-      "rel_vol": 1.24,
-      "dist_high": -31.8,
-      "dist_low": 7.19,
-      "dist_ma50": -5.65,
-      "dist_ma200": -19.62,
-      "marketCap": "21.54B",
-      "targetPrice": 58.88,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "FIS",
-      "name": "Fidelity National Information Services, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Information Technology Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 42.27,
-      "pct_1d": 0.86,
-      "pct_1w": 0.81,
-      "pct_1m": 10.63,
-      "pct_3m": -11.37,
-      "pct_6m": -30.22,
-      "pct_ytd": -36.4,
-      "pct_1y": -47.22,
-      "trailingPE": 8.19,
-      "forwardPE": 6.17,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.41,
-      "rsi14": 55.83,
-      "rsi14_w": 38.64,
-      "rsi14_m": 30.52,
-      "rel_vol": 0.51,
-      "dist_high": -48.41,
-      "dist_low": 12.06,
-      "dist_ma50": 2.65,
-      "dist_ma200": -21.17,
-      "marketCap": "21.85B",
-      "targetPrice": 56.64,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DOW",
-      "name": "Dow Inc.",
-      "sector": "Materials",
-      "sub_industry": "Chemicals",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 30.37,
-      "pct_1d": 1.5,
-      "pct_1w": 0.0,
-      "pct_1m": -4.29,
-      "pct_3m": -20.73,
-      "pct_6m": 6.9,
-      "pct_ytd": 29.9,
-      "pct_1y": 6.97,
-      "trailingPE": null,
-      "forwardPE": 15.91,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.48,
-      "rsi14": 49.23,
-      "rsi14_w": 45.81,
-      "rsi14_m": 37.68,
-      "rel_vol": 0.76,
-      "dist_high": -27.47,
-      "dist_low": 47.07,
-      "dist_ma50": -7.75,
-      "dist_ma200": 0.68,
-      "marketCap": "21.89B",
-      "targetPrice": 36.81,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "SNA",
-      "name": "Snap-on Incorporated",
-      "sector": "Industrials",
-      "sub_industry": "Tools & Accessories",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 406.53,
-      "pct_1d": -1.09,
-      "pct_1w": 1.35,
-      "pct_1m": 4.98,
-      "pct_3m": 5.98,
-      "pct_6m": 9.39,
-      "pct_ytd": 17.97,
-      "pct_1y": 23.79,
-      "trailingPE": 21.0,
-      "forwardPE": 19.04,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.0,
-      "rsi14": 57.3,
-      "rsi14_w": 64.12,
-      "rsi14_m": 67.35,
-      "rel_vol": 0.77,
-      "dist_high": -2.03,
-      "dist_low": 27.92,
-      "dist_ma50": 5.48,
-      "dist_ma200": 11.07,
-      "marketCap": "21.06B",
-      "targetPrice": 396.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -22880,7 +14792,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 376.48,
       "pct_1d": -1.04,
       "pct_1w": 0.53,
@@ -23048,25 +14959,11 @@ const INDEX_DATA = {
       "trailingPE": 8.97,
       "forwardPE": 8.05,
       "ema_signal": 4,
-=======
-      "price": 214.47,
-      "pct_1d": -1.55,
-      "pct_1w": -1.19,
-      "pct_1m": 5.85,
-      "pct_3m": -2.27,
-      "pct_6m": -17.88,
-      "pct_ytd": -15.4,
-      "pct_1y": -3.67,
-      "trailingPE": 27.05,
-      "forwardPE": 17.61,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 3.31,
       "rsi14": 53.57,
       "rsi14_w": 54.41,
@@ -23312,19 +15209,6 @@ const INDEX_DATA = {
       "dist_ma200": -7.48,
       "marketCap": "21.44B",
       "targetPrice": 218.0,
-=======
-      "dist_sma20": 0.87,
-      "rsi14": 51.51,
-      "rsi14_w": 43.55,
-      "rsi14_m": 42.09,
-      "rel_vol": 0.65,
-      "dist_high": -20.17,
-      "dist_low": 7.56,
-      "dist_ma50": 1.38,
-      "dist_ma200": -8.89,
-      "marketCap": "20.90B",
-      "targetPrice": 256.86,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -23376,7 +15260,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 406.53,
       "pct_1d": -1.09,
       "pct_1w": 1.35,
@@ -23388,103 +15271,11 @@ const INDEX_DATA = {
       "trailingPE": 20.99,
       "forwardPE": 19.2,
       "ema_signal": 2,
-=======
-      "price": 180.08,
-      "pct_1d": 1.69,
-      "pct_1w": 4.33,
-      "pct_1m": 16.99,
-      "pct_3m": -6.41,
-      "pct_6m": -15.06,
-      "pct_ytd": -17.01,
-      "pct_1y": -30.64,
-      "trailingPE": 31.7,
-      "forwardPE": 17.53,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 8.48,
-      "rsi14": 61.85,
-      "rsi14_w": 49.25,
-      "rsi14_m": 36.11,
-      "rel_vol": 1.46,
-      "dist_high": -31.55,
-      "dist_low": 18.53,
-      "dist_ma50": 8.68,
-      "dist_ma200": -7.48,
-      "marketCap": "21.72B",
-      "targetPrice": 219.67,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "EXE",
-      "name": "Expand Energy Corporation",
-      "sector": "Energy",
-      "sub_industry": "Oil & Gas E&P",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 86.95,
-      "pct_1d": -1.34,
-      "pct_1w": -0.17,
-      "pct_1m": -0.03,
-      "pct_3m": -7.76,
-      "pct_6m": -20.59,
-      "pct_ytd": -21.21,
-      "pct_1y": -12.53,
-      "trailingPE": 6.47,
-      "forwardPE": 10.35,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.88,
-      "rsi14": 40.48,
-      "rsi14_w": 36.65,
-      "rsi14_m": 47.67,
-      "rel_vol": 0.87,
-      "dist_high": -29.25,
-      "dist_low": 0.0,
-      "dist_ma50": -4.86,
-      "dist_ma200": -15.78,
-      "marketCap": "20.80B",
-      "targetPrice": 125.16,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "PKG",
-      "name": "Packaging Corporation of America",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Packaging & Containers",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 228.43,
-      "pct_1d": -1.99,
-      "pct_1w": 1.14,
-      "pct_1m": -0.26,
-      "pct_3m": 8.5,
-      "pct_6m": 3.83,
-      "pct_ytd": 10.76,
-      "pct_1y": 13.43,
-      "trailingPE": 27.76,
-      "forwardPE": 18.09,
-      "ema_signal": 1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
-      "is_danger_dead_cross": true,
+      "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
+      "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 1.0,
       "rsi14": 57.3,
       "rsi14_w": 64.12,
@@ -23496,19 +15287,6 @@ const INDEX_DATA = {
       "dist_ma200": 11.07,
       "marketCap": "21.06B",
       "targetPrice": 396.83,
-=======
-      "dist_sma20": -1.98,
-      "rsi14": 48.48,
-      "rsi14_w": 53.9,
-      "rsi14_m": 56.14,
-      "rel_vol": 0.52,
-      "dist_high": -7.26,
-      "dist_low": 19.34,
-      "dist_ma50": 1.22,
-      "dist_ma200": 5.74,
-      "marketCap": "20.35B",
-      "targetPrice": 246.2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -23529,13 +15307,8 @@ const INDEX_DATA = {
       "pct_6m": -28.59,
       "pct_ytd": -19.33,
       "pct_1y": -1.88,
-<<<<<<< HEAD
       "trailingPE": 18.29,
       "forwardPE": 15.28,
-=======
-      "trailingPE": 18.31,
-      "forwardPE": 15.32,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -23552,7 +15325,6 @@ const INDEX_DATA = {
       "dist_ma50": 1.6,
       "dist_ma200": -12.47,
       "marketCap": "20.98B",
-<<<<<<< HEAD
       "targetPrice": 632.1,
       "exchange": "NMS"
     },
@@ -23632,9 +15404,6 @@ const INDEX_DATA = {
       "dist_ma200": -15.78,
       "marketCap": "20.80B",
       "targetPrice": 126.35,
-=======
-      "targetPrice": 623.58,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -23655,13 +15424,8 @@ const INDEX_DATA = {
       "pct_6m": -3.32,
       "pct_ytd": -1.06,
       "pct_1y": 8.8,
-<<<<<<< HEAD
       "trailingPE": 44.51,
       "forwardPE": 12.98,
-=======
-      "trailingPE": 45.67,
-      "forwardPE": 12.94,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -23677,11 +15441,7 @@ const INDEX_DATA = {
       "dist_low": 14.35,
       "dist_ma50": -3.8,
       "dist_ma200": -2.84,
-<<<<<<< HEAD
       "marketCap": "20.02B",
-=======
-      "marketCap": "20.42B",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "targetPrice": 68.92,
       "exchange": "NYQ"
     },
@@ -23742,13 +15502,8 @@ const INDEX_DATA = {
       "pct_6m": 1.96,
       "pct_ytd": 3.67,
       "pct_1y": -8.12,
-<<<<<<< HEAD
       "trailingPE": 29.79,
       "forwardPE": 10.03,
-=======
-      "trailingPE": 34.86,
-      "forwardPE": 10.11,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -23765,11 +15520,7 @@ const INDEX_DATA = {
       "dist_ma50": 6.47,
       "dist_ma200": 3.36,
       "marketCap": "19.99B",
-<<<<<<< HEAD
       "targetPrice": 49.52,
-=======
-      "targetPrice": 48.53,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -23791,11 +15542,7 @@ const INDEX_DATA = {
       "pct_ytd": -19.18,
       "pct_1y": -23.59,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 11.69,
-=======
-      "forwardPE": 11.7,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -23812,11 +15559,7 @@ const INDEX_DATA = {
       "dist_ma50": 8.24,
       "dist_ma200": -9.59,
       "marketCap": "20.06B",
-<<<<<<< HEAD
       "targetPrice": 37.0,
-=======
-      "targetPrice": 37.56,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -23837,13 +15580,8 @@ const INDEX_DATA = {
       "pct_6m": -29.75,
       "pct_ytd": -19.36,
       "pct_1y": -24.24,
-<<<<<<< HEAD
       "trailingPE": 12.97,
       "forwardPE": 12.73,
-=======
-      "trailingPE": 12.99,
-      "forwardPE": 12.56,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -23859,13 +15597,8 @@ const INDEX_DATA = {
       "dist_low": 0.73,
       "dist_ma50": -5.87,
       "dist_ma200": -20.94,
-<<<<<<< HEAD
       "marketCap": "19.92B",
       "targetPrice": 84.25,
-=======
-      "marketCap": "19.97B",
-      "targetPrice": 87.31,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -23903,13 +15636,8 @@ const INDEX_DATA = {
       "dist_low": 94.39,
       "dist_ma50": 3.79,
       "dist_ma200": 24.83,
-<<<<<<< HEAD
       "marketCap": "19.94B",
       "targetPrice": 18.0,
-=======
-      "marketCap": "19.79B",
-      "targetPrice": 17.81,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -23930,13 +15658,8 @@ const INDEX_DATA = {
       "pct_6m": 8.37,
       "pct_ytd": 14.66,
       "pct_1y": 1.34,
-<<<<<<< HEAD
       "trailingPE": 23.67,
       "forwardPE": 16.33,
-=======
-      "trailingPE": 23.92,
-      "forwardPE": 16.15,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -23953,11 +15676,7 @@ const INDEX_DATA = {
       "dist_ma50": 0.83,
       "dist_ma200": 8.39,
       "marketCap": "19.73B",
-<<<<<<< HEAD
       "targetPrice": 91.64,
-=======
-      "targetPrice": 91.54,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -23970,7 +15689,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 60.73,
       "pct_1d": 2.64,
       "pct_1w": 4.13,
@@ -23983,24 +15701,9 @@ const INDEX_DATA = {
       "forwardPE": 8.97,
       "ema_signal": 4,
       "macd_state": 3,
-=======
-      "price": 36.25,
-      "pct_1d": -3.49,
-      "pct_1w": -2.03,
-      "pct_1m": -1.55,
-      "pct_3m": 2.29,
-      "pct_6m": -15.28,
-      "pct_ytd": -7.97,
-      "pct_1y": -29.42,
-      "trailingPE": null,
-      "forwardPE": 12.93,
-      "ema_signal": 2,
-      "macd_state": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": true,
       "dead_cross_count": 0,
-<<<<<<< HEAD
       "golden_cross_count": 1,
       "dist_sma20": 8.1,
       "rsi14": 56.92,
@@ -24013,20 +15716,6 @@ const INDEX_DATA = {
       "dist_ma200": 5.35,
       "marketCap": "19.60B",
       "targetPrice": 66.83,
-=======
-      "golden_cross_count": 0,
-      "dist_sma20": -3.74,
-      "rsi14": 47.34,
-      "rsi14_w": 47.07,
-      "rsi14_m": 43.62,
-      "rel_vol": 0.89,
-      "dist_high": -34.9,
-      "dist_low": 23.38,
-      "dist_ma50": 3.75,
-      "dist_ma200": -6.78,
-      "marketCap": "19.19B",
-      "targetPrice": 42.73,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -24047,11 +15736,7 @@ const INDEX_DATA = {
       "pct_6m": 10.73,
       "pct_ytd": 17.48,
       "pct_1y": 23.31,
-<<<<<<< HEAD
       "trailingPE": 22.56,
-=======
-      "trailingPE": 22.65,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 18.68,
       "ema_signal": 2,
       "macd_state": 2,
@@ -24069,11 +15754,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.35,
       "dist_ma200": 6.92,
       "marketCap": "19.63B",
-<<<<<<< HEAD
       "targetPrice": 92.32,
-=======
-      "targetPrice": 91.29,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -24094,13 +15775,8 @@ const INDEX_DATA = {
       "pct_6m": -2.23,
       "pct_ytd": -5.92,
       "pct_1y": -22.36,
-<<<<<<< HEAD
       "trailingPE": 19.13,
       "forwardPE": 21.79,
-=======
-      "trailingPE": 19.15,
-      "forwardPE": 22.6,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -24117,11 +15793,7 @@ const INDEX_DATA = {
       "dist_ma50": -7.18,
       "dist_ma200": -6.63,
       "marketCap": "19.30B",
-<<<<<<< HEAD
       "targetPrice": 230.45,
-=======
-      "targetPrice": 230.85,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -24142,7 +15814,6 @@ const INDEX_DATA = {
       "pct_6m": 9.67,
       "pct_ytd": 13.77,
       "pct_1y": 14.56,
-<<<<<<< HEAD
       "trailingPE": 23.25,
       "forwardPE": 20.09,
       "ema_signal": 1,
@@ -24224,17 +15895,11 @@ const INDEX_DATA = {
       "trailingPE": null,
       "forwardPE": 12.88,
       "ema_signal": 2,
-=======
-      "trailingPE": 23.26,
-      "forwardPE": 20.07,
-      "ema_signal": 1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
-      "is_danger_dead_cross": true,
+      "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
+      "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.74,
       "rsi14": 47.34,
       "rsi14_w": 47.07,
@@ -24247,20 +15912,6 @@ const INDEX_DATA = {
       "marketCap": "19.19B",
       "targetPrice": 43.4,
       "exchange": "NYQ"
-=======
-      "dist_sma20": -2.61,
-      "rsi14": 45.08,
-      "rsi14_w": 54.32,
-      "rsi14_m": 65.04,
-      "rel_vol": 0.85,
-      "dist_high": -5.22,
-      "dist_low": 16.25,
-      "dist_ma50": 0.2,
-      "dist_ma200": 5.64,
-      "marketCap": "19.10B",
-      "targetPrice": 79.5,
-      "exchange": "NMS"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "ESS",
@@ -24272,7 +15923,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 293.83,
       "pct_1d": 0.31,
       "pct_1w": -1.23,
@@ -24285,24 +15935,9 @@ const INDEX_DATA = {
       "forwardPE": 47.97,
       "ema_signal": 2,
       "macd_state": 2,
-=======
-      "price": 60.73,
-      "pct_1d": 2.64,
-      "pct_1w": 4.13,
-      "pct_1m": 1.1,
-      "pct_3m": -14.97,
-      "pct_6m": 17.19,
-      "pct_ytd": 40.25,
-      "pct_1y": -3.06,
-      "trailingPE": null,
-      "forwardPE": 9.23,
-      "ema_signal": 4,
-      "macd_state": 3,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
+      "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
-<<<<<<< HEAD
       "golden_cross_count": 0,
       "dist_sma20": 0.55,
       "rsi14": 55.55,
@@ -24315,20 +15950,6 @@ const INDEX_DATA = {
       "dist_ma200": 12.03,
       "marketCap": "19.52B",
       "targetPrice": 296.33,
-=======
-      "golden_cross_count": 1,
-      "dist_sma20": 8.1,
-      "rsi14": 56.92,
-      "rsi14_w": 48.5,
-      "rsi14_m": 40.78,
-      "rel_vol": 0.84,
-      "dist_high": -26.28,
-      "dist_low": 43.64,
-      "dist_ma50": -4.16,
-      "dist_ma200": 5.35,
-      "marketCap": "19.60B",
-      "targetPrice": 67.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -24349,13 +15970,8 @@ const INDEX_DATA = {
       "pct_6m": 3.32,
       "pct_ytd": 9.89,
       "pct_1y": -11.22,
-<<<<<<< HEAD
       "trailingPE": 24.02,
       "forwardPE": 20.02,
-=======
-      "trailingPE": 23.69,
-      "forwardPE": 19.94,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -24372,11 +15988,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.21,
       "dist_ma200": 4.39,
       "marketCap": "18.57B",
-<<<<<<< HEAD
       "targetPrice": 573.75,
-=======
-      "targetPrice": 572.92,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -24397,12 +16009,8 @@ const INDEX_DATA = {
       "pct_6m": 12.03,
       "pct_ytd": 10.47,
       "pct_1y": 21.64,
-<<<<<<< HEAD
       "trailingPE": 36.52,
       "forwardPE": 18.93,
-=======
-      "trailingPE": 35.67,
-      "forwardPE": 18.93,
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -24420,99 +16028,6 @@ const INDEX_DATA = {
       "dist_ma200": 8.26,
       "marketCap": "18.59B",
       "targetPrice": 64.23,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ESS",
-      "name": "Essex Property Trust, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Residential",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 293.83,
-      "pct_1d": 0.31,
-      "pct_1w": -1.23,
-      "pct_1m": 7.35,
-      "pct_3m": 16.06,
-      "pct_6m": 14.22,
-      "pct_ytd": 12.29,
-      "pct_1y": 3.1,
-      "trailingPE": 33.09,
-      "forwardPE": 48.02,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
-      "dist_sma20": -0.94,
-      "rsi14": 48.55,
-      "rsi14_w": 56.63,
-      "rsi14_m": 57.39,
-      "rel_vol": 0.41,
-      "dist_high": -4.1,
-      "dist_low": 31.02,
-      "dist_ma50": 0.58,
-      "dist_ma200": 8.26,
-      "marketCap": "18.59B",
-      "targetPrice": 64.23,
-=======
-      "dist_sma20": 0.55,
-      "rsi14": 55.55,
-      "rsi14_w": 64.58,
-      "rsi14_m": 56.78,
-      "rel_vol": 0.62,
-      "dist_high": -1.51,
-      "dist_low": 22.63,
-      "dist_ma50": 4.03,
-      "dist_ma200": 12.03,
-      "marketCap": "20.25B",
-      "targetPrice": 292.69,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CF",
-      "name": "CF Industries Holdings, Inc.",
-      "sector": "Materials",
-      "sub_industry": "Agricultural Inputs",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 123.57,
-      "pct_1d": 1.77,
-      "pct_1w": 2.19,
-      "pct_1m": 20.05,
-      "pct_3m": 1.86,
-      "pct_6m": 34.52,
-      "pct_ytd": 59.78,
-      "pct_1y": 35.81,
-      "trailingPE": 11.13,
-      "forwardPE": 11.03,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 9.84,
-      "rsi14": 66.46,
-      "rsi14_w": 59.52,
-      "rsi14_m": 65.15,
-      "rel_vol": 0.94,
-      "dist_high": -10.2,
-      "dist_low": 62.4,
-      "dist_ma50": 7.72,
-      "dist_ma200": 21.72,
-      "marketCap": "18.98B",
-      "targetPrice": 125.2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -24534,11 +16049,7 @@ const INDEX_DATA = {
       "pct_ytd": 12.56,
       "pct_1y": 42.39,
       "trailingPE": 119.08,
-<<<<<<< HEAD
       "forwardPE": 17.22,
-=======
-      "forwardPE": 17.91,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -24555,251 +16066,10 @@ const INDEX_DATA = {
       "dist_ma50": -4.14,
       "dist_ma200": 3.66,
       "marketCap": "18.33B",
-<<<<<<< HEAD
       "targetPrice": 169.06,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 169.63,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "BBY",
-      "name": "Best Buy Co., Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Specialty Retail",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 85.13,
-      "pct_1d": -0.33,
-      "pct_1w": 4.26,
-      "pct_1m": 13.92,
-      "pct_3m": 27.84,
-      "pct_6m": 27.9,
-      "pct_ytd": 27.19,
-      "pct_1y": 28.61,
-      "trailingPE": 15.76,
-      "forwardPE": 12.04,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 6.64,
-      "rsi14": 70.88,
-      "rsi14_w": 64.18,
-      "rsi14_m": 54.22,
-      "rel_vol": 0.48,
-      "dist_high": -0.33,
-      "dist_low": 53.33,
-      "dist_ma50": 17.5,
-      "dist_ma200": 21.05,
-      "marketCap": "17.94B",
-      "targetPrice": 79.15,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "INVH",
-      "name": "Invitation Homes Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Residential",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 30.08,
-      "pct_1d": -0.13,
-      "pct_1w": -0.1,
-      "pct_1m": 5.88,
-      "pct_3m": 11.66,
-      "pct_6m": 9.38,
-      "pct_ytd": 8.24,
-      "pct_1y": -6.18,
-      "trailingPE": 31.66,
-      "forwardPE": 45.12,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.47,
-      "rsi14": 53.97,
-      "rsi14_w": 58.18,
-      "rsi14_m": 46.26,
-      "rel_vol": 0.3,
-      "dist_high": -7.73,
-      "dist_low": 23.33,
-      "dist_ma50": 2.27,
-      "dist_ma200": 8.81,
-      "marketCap": "17.87B",
-      "targetPrice": 32.61,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "WY",
-      "name": "Weyerhaeuser Company",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Specialty",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 23.96,
-      "pct_1d": -2.16,
-      "pct_1w": 2.35,
-      "pct_1m": -1.48,
-      "pct_3m": -3.74,
-      "pct_6m": -11.49,
-      "pct_ytd": 1.14,
-      "pct_1y": -4.35,
-      "trailingPE": 42.79,
-      "forwardPE": 36.39,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.19,
-      "rsi14": 49.82,
-      "rsi14_w": 47.93,
-      "rsi14_m": 37.9,
-      "rel_vol": 0.58,
-      "dist_high": -11.59,
-      "dist_low": 12.22,
-      "dist_ma50": -0.07,
-      "dist_ma200": -0.72,
-      "marketCap": "17.28B",
-      "targetPrice": 31.09,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ZBH",
-      "name": "Zimmer Biomet Holdings, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Devices",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 89.72,
-      "pct_1d": -1.54,
-      "pct_1w": -4.63,
-      "pct_1m": 1.99,
-      "pct_3m": -3.2,
-      "pct_6m": 3.66,
-      "pct_ytd": -0.22,
-      "pct_1y": -3.1,
-      "trailingPE": 23.24,
-      "forwardPE": 9.97,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -0.06,
-      "rsi14": 50.69,
-      "rsi14_w": 49.6,
-      "rsi14_m": 43.2,
-      "rel_vol": 0.68,
-      "dist_high": -16.7,
-      "dist_low": 12.74,
-      "dist_ma50": 3.08,
-      "dist_ma200": -1.79,
-      "marketCap": "17.36B",
-      "targetPrice": 98.6,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "KIM",
-      "name": "Kimco Realty Corporation",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Retail",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 26.03,
-      "pct_1d": -0.34,
-      "pct_1w": 3.66,
-      "pct_1m": 6.77,
-      "pct_3m": 9.88,
-      "pct_6m": 24.43,
-      "pct_ytd": 28.42,
-      "pct_1y": 20.4,
-      "trailingPE": 29.92,
-      "forwardPE": 30.06,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.67,
-      "rsi14": 62.74,
-      "rsi14_w": 63.06,
-      "rsi14_m": 64.32,
-      "rel_vol": 0.6,
-      "dist_high": -0.34,
-      "dist_low": 31.6,
-      "dist_ma50": 5.69,
-      "dist_ma200": 15.95,
-      "marketCap": "17.55B",
-      "targetPrice": 26.43,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "NVR",
-      "name": "NVR, Inc.",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Residential Construction",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 6446.65,
-      "pct_1d": -0.67,
-      "pct_1w": 0.13,
-      "pct_1m": -0.68,
-      "pct_3m": -7.02,
-      "pct_6m": -17.32,
-      "pct_ytd": -11.6,
-      "pct_1y": -12.6,
-      "trailingPE": 15.74,
-      "forwardPE": 15.53,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.25,
-      "rsi14": 48.17,
-      "rsi14_w": 45.47,
-      "rsi14_m": 38.17,
-      "rel_vol": 1.28,
-      "dist_high": -24.54,
-      "dist_low": 15.87,
-      "dist_ma50": 2.46,
-      "dist_ma200": -8.04,
-      "marketCap": "17.40B",
-      "targetPrice": 7052.0,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "AKAM",
       "name": "Akamai Technologies, Inc.",
       "sector": "Information Technology",
@@ -24817,13 +16087,8 @@ const INDEX_DATA = {
       "pct_6m": 31.38,
       "pct_ytd": 41.12,
       "pct_1y": 56.44,
-<<<<<<< HEAD
       "trailingPE": 41.47,
       "forwardPE": 17.21,
-=======
-      "trailingPE": 41.6,
-      "forwardPE": 17.15,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -24840,11 +16105,7 @@ const INDEX_DATA = {
       "dist_ma50": -8.3,
       "dist_ma200": 19.15,
       "marketCap": "17.90B",
-<<<<<<< HEAD
       "targetPrice": 161.19,
-=======
-      "targetPrice": 159.3,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -25060,13 +16321,8 @@ const INDEX_DATA = {
       "pct_6m": -27.47,
       "pct_ytd": -32.78,
       "pct_1y": -37.94,
-<<<<<<< HEAD
       "trailingPE": 16.05,
       "forwardPE": 14.42,
-=======
-      "trailingPE": 16.04,
-      "forwardPE": 14.4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -25083,11 +16339,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.33,
       "dist_ma200": -19.92,
       "marketCap": "17.35B",
-<<<<<<< HEAD
       "targetPrice": 199.57,
-=======
-      "targetPrice": 206.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -25186,11 +16438,7 @@ const INDEX_DATA = {
       "pct_6m": -10.16,
       "pct_ytd": -0.46,
       "pct_1y": -1.2,
-<<<<<<< HEAD
       "trailingPE": 284.12,
-=======
-      "trailingPE": 278.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 14.66,
       "ema_signal": 2,
       "macd_state": 2,
@@ -25207,96 +16455,11 @@ const INDEX_DATA = {
       "dist_low": 32.37,
       "dist_ma50": 13.38,
       "dist_ma200": 2.31,
-<<<<<<< HEAD
       "marketCap": "16.85B",
-=======
-      "marketCap": "17.03B",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "targetPrice": 134.62,
       "exchange": "NYQ"
     },
     {
-<<<<<<< HEAD
-=======
-      "ticker": "CDW",
-      "name": "CDW Corporation",
-      "sector": "Information Technology",
-      "sub_industry": "Information Technology Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 130.01,
-      "pct_1d": -2.42,
-      "pct_1w": -9.94,
-      "pct_1m": 1.28,
-      "pct_3m": -8.06,
-      "pct_6m": 1.87,
-      "pct_ytd": -4.54,
-      "pct_1y": -26.49,
-      "trailingPE": 15.84,
-      "forwardPE": 11.04,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.89,
-      "rsi14": 45.83,
-      "rsi14_w": 49.33,
-      "rsi14_m": 34.99,
-      "rel_vol": 0.89,
-      "dist_high": -28.64,
-      "dist_low": 30.93,
-      "dist_ma50": 3.36,
-      "dist_ma200": -2.65,
-      "marketCap": "16.61B",
-      "targetPrice": 152.56,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "BEN",
-      "name": "Franklin Resources, Inc.",
-      "sector": "Financials",
-      "sub_industry": "Asset Management",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 32.23,
-      "pct_1d": -1.23,
-      "pct_1w": -1.83,
-      "pct_1m": -2.48,
-      "pct_3m": 18.32,
-      "pct_6m": 26.54,
-      "pct_ytd": 34.91,
-      "pct_1y": 32.74,
-      "trailingPE": 24.62,
-      "forwardPE": 10.38,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -3.49,
-      "rsi14": 44.1,
-      "rsi14_w": 63.78,
-      "rsi14_m": 64.4,
-      "rel_vol": 0.47,
-      "dist_high": -6.42,
-      "dist_low": 52.17,
-      "dist_ma50": -0.3,
-      "dist_ma200": 20.91,
-      "marketCap": "16.75B",
-      "targetPrice": 34.27,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "BALL",
       "name": "Ball Corporation",
       "sector": "Consumer Discretionary",
@@ -25314,11 +16477,7 @@ const INDEX_DATA = {
       "pct_6m": 11.32,
       "pct_ytd": 17.52,
       "pct_1y": 7.31,
-<<<<<<< HEAD
       "trailingPE": 18.04,
-=======
-      "trailingPE": 18.15,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 13.78,
       "ema_signal": 4,
       "macd_state": 2,
@@ -25336,11 +16495,7 @@ const INDEX_DATA = {
       "dist_ma50": 7.02,
       "dist_ma200": 10.09,
       "marketCap": "16.57B",
-<<<<<<< HEAD
       "targetPrice": 71.77,
-=======
-      "targetPrice": 71.14,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -25353,7 +16508,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 130.01,
       "pct_1d": -2.42,
       "pct_1w": -9.94,
@@ -25364,25 +16518,12 @@ const INDEX_DATA = {
       "pct_1y": -26.49,
       "trailingPE": 15.83,
       "forwardPE": 11.04,
-=======
-      "price": 221.24,
-      "pct_1d": -1.64,
-      "pct_1w": -0.11,
-      "pct_1m": -1.64,
-      "pct_3m": 8.03,
-      "pct_6m": 11.14,
-      "pct_ytd": 24.33,
-      "pct_1y": 22.3,
-      "trailingPE": 32.68,
-      "forwardPE": 23.92,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.89,
       "rsi14": 45.83,
       "rsi14_w": 49.33,
@@ -25395,20 +16536,6 @@ const INDEX_DATA = {
       "marketCap": "16.61B",
       "targetPrice": 152.56,
       "exchange": "NMS"
-=======
-      "dist_sma20": -1.11,
-      "rsi14": 49.23,
-      "rsi14_w": 61.68,
-      "rsi14_m": 55.7,
-      "rel_vol": 0.6,
-      "dist_high": -3.37,
-      "dist_low": 40.44,
-      "dist_ma50": 1.51,
-      "dist_ma200": 13.48,
-      "marketCap": "16.38B",
-      "targetPrice": 239.43,
-      "exchange": "NYQ"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "HST",
@@ -25428,13 +16555,8 @@ const INDEX_DATA = {
       "pct_6m": 28.8,
       "pct_ytd": 35.7,
       "pct_1y": 49.63,
-<<<<<<< HEAD
       "trailingPE": 16.43,
       "forwardPE": 24.33,
-=======
-      "trailingPE": 16.37,
-      "forwardPE": 24.01,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -25450,13 +16572,8 @@ const INDEX_DATA = {
       "dist_low": 57.56,
       "dist_ma50": 2.45,
       "dist_ma200": 21.61,
-<<<<<<< HEAD
       "marketCap": "16.48B",
       "targetPrice": 24.48,
-=======
-      "marketCap": "16.69B",
-      "targetPrice": 24.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -25555,13 +16672,8 @@ const INDEX_DATA = {
       "pct_6m": -31.07,
       "pct_ytd": -38.13,
       "pct_1y": -66.79,
-<<<<<<< HEAD
       "trailingPE": 3.5,
       "forwardPE": 2.93,
-=======
-      "trailingPE": 3.49,
-      "forwardPE": 2.9,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -25577,91 +16689,8 @@ const INDEX_DATA = {
       "dist_low": 2.88,
       "dist_ma50": -6.78,
       "dist_ma200": -34.92,
-<<<<<<< HEAD
       "marketCap": "20.24B",
       "targetPrice": 209.94,
-=======
-      "marketCap": "17.89B",
-      "targetPrice": 234.65,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "GEN",
-      "name": "Gen Digital Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Infrastructure",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 26.67,
-      "pct_1d": -0.24,
-      "pct_1w": 1.97,
-      "pct_1m": 10.32,
-      "pct_3m": 33.98,
-      "pct_6m": 5.85,
-      "pct_ytd": -1.89,
-      "pct_1y": -11.93,
-      "trailingPE": 16.99,
-      "forwardPE": 8.12,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.4,
-      "rsi14": 60.64,
-      "rsi14_w": 59.14,
-      "rsi14_m": 53.56,
-      "rel_vol": 0.55,
-      "dist_high": -17.06,
-      "dist_low": 49.11,
-      "dist_ma50": 6.99,
-      "dist_ma200": 9.72,
-      "marketCap": "16.07B",
-      "targetPrice": 29.71,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "NDSN",
-      "name": "Nordson Corporation",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Industrial Machinery",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 285.24,
-      "pct_1d": -1.29,
-      "pct_1w": -0.47,
-      "pct_1m": -3.61,
-      "pct_3m": 0.89,
-      "pct_6m": 4.45,
-      "pct_ytd": 18.64,
-      "pct_1y": 33.1,
-      "trailingPE": 30.47,
-      "forwardPE": 22.97,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -2.37,
-      "rsi14": 44.99,
-      "rsi14_w": 54.8,
-      "rsi14_m": 56.38,
-      "rel_vol": 0.63,
-      "dist_high": -6.37,
-      "dist_low": 36.32,
-      "dist_ma50": -0.86,
-      "dist_ma200": 7.29,
-      "marketCap": "15.89B",
-      "targetPrice": 319.12,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -25701,7 +16730,6 @@ const INDEX_DATA = {
       "dist_ma200": -33.38,
       "marketCap": "15.89B",
       "targetPrice": 39.44,
-<<<<<<< HEAD
       "exchange": "NMS"
     },
     {
@@ -25741,8 +16769,6 @@ const INDEX_DATA = {
       "dist_ma200": 7.29,
       "marketCap": "15.89B",
       "targetPrice": 319.12,
-=======
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -25763,13 +16789,8 @@ const INDEX_DATA = {
       "pct_6m": -5.74,
       "pct_ytd": 4.15,
       "pct_1y": 7.13,
-<<<<<<< HEAD
       "trailingPE": 17.34,
       "forwardPE": 12.42,
-=======
-      "trailingPE": 17.33,
-      "forwardPE": 12.46,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -25786,11 +16807,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.15,
       "dist_ma200": 1.64,
       "marketCap": "15.79B",
-<<<<<<< HEAD
       "targetPrice": 103.23,
-=======
-      "targetPrice": 101.89,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -25830,126 +16847,6 @@ const INDEX_DATA = {
       "dist_ma200": 13.73,
       "marketCap": "15.63B",
       "targetPrice": 81.82,
-<<<<<<< HEAD
-=======
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Computer Hardware",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 23.83,
-      "pct_1d": -1.45,
-      "pct_1w": -13.85,
-      "pct_1m": -22.28,
-      "pct_3m": -16.18,
-      "pct_6m": -26.09,
-      "pct_ytd": -18.59,
-      "pct_1y": -53.73,
-      "trailingPE": 12.54,
-      "forwardPE": 7.63,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -16.23,
-      "rsi14": 34.09,
-      "rsi14_w": 41.41,
-      "rsi14_m": 38.86,
-      "rel_vol": 0.47,
-      "dist_high": -60.75,
-      "dist_low": 16.07,
-      "dist_ma50": -28.0,
-      "dist_ma200": -29.79,
-      "marketCap": "15.41B",
-      "targetPrice": 37.38,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "J",
-      "name": "Jacobs Solutions Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Engineering & Construction",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 129.49,
-      "pct_1d": -1.72,
-      "pct_1w": 2.33,
-      "pct_1m": 7.04,
-      "pct_3m": -0.02,
-      "pct_6m": -6.49,
-      "pct_ytd": -2.24,
-      "pct_1y": -5.61,
-      "trailingPE": 39.89,
-      "forwardPE": 15.64,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.21,
-      "rsi14": 56.42,
-      "rsi14_w": 51.1,
-      "rsi14_m": 51.26,
-      "rel_vol": 0.42,
-      "dist_high": -21.25,
-      "dist_low": 20.71,
-      "dist_ma50": 6.1,
-      "dist_ma200": -4.0,
-      "marketCap": "15.29B",
-      "targetPrice": 158.08,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "DOC",
-      "name": "Healthpeak Properties, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Healthcare Facilities",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 22.29,
-      "pct_1d": -0.98,
-      "pct_1w": 2.58,
-      "pct_1m": 13.96,
-      "pct_3m": 35.34,
-      "pct_6m": 24.46,
-      "pct_ytd": 38.62,
-      "pct_1y": 21.14,
-      "trailingPE": 69.66,
-      "forwardPE": -148.6,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.23,
-      "rsi14": 66.08,
-      "rsi14_w": 67.07,
-      "rsi14_m": 58.33,
-      "rel_vol": 0.66,
-      "dist_high": -0.98,
-      "dist_low": 41.25,
-      "dist_ma50": 8.85,
-      "dist_ma200": 23.32,
-      "marketCap": "15.37B",
-      "targetPrice": 22.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -25970,13 +16867,8 @@ const INDEX_DATA = {
       "pct_6m": -1.23,
       "pct_ytd": -3.74,
       "pct_1y": -10.87,
-<<<<<<< HEAD
       "trailingPE": 40.55,
       "forwardPE": 40.03,
-=======
-      "trailingPE": 40.52,
-      "forwardPE": 40.77,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -25992,13 +16884,8 @@ const INDEX_DATA = {
       "dist_low": 10.9,
       "dist_ma50": -0.24,
       "dist_ma200": 1.12,
-<<<<<<< HEAD
       "marketCap": "15.95B",
       "targetPrice": 142.64,
-=======
-      "marketCap": "15.96B",
-      "targetPrice": 142.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26011,7 +16898,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 23.83,
       "pct_1d": -1.45,
       "pct_1w": -13.85,
@@ -26061,25 +16947,12 @@ const INDEX_DATA = {
       "pct_1y": 21.14,
       "trailingPE": 69.92,
       "forwardPE": 237.66,
-=======
-      "price": 234.1,
-      "pct_1d": -1.21,
-      "pct_1w": -0.63,
-      "pct_1m": 12.6,
-      "pct_3m": 56.17,
-      "pct_6m": 120.23,
-      "pct_ytd": 106.06,
-      "pct_1y": 67.9,
-      "trailingPE": 22.55,
-      "forwardPE": 13.59,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 3.23,
       "rsi14": 66.08,
       "rsi14_w": 67.07,
@@ -26091,19 +16964,6 @@ const INDEX_DATA = {
       "dist_ma200": 23.32,
       "marketCap": "15.75B",
       "targetPrice": 21.97,
-=======
-      "dist_sma20": 3.2,
-      "rsi14": 67.3,
-      "rsi14_w": 78.86,
-      "rsi14_m": 71.03,
-      "rel_vol": 0.48,
-      "dist_high": -1.21,
-      "dist_low": 125.38,
-      "dist_ma50": 11.61,
-      "dist_ma200": 54.25,
-      "marketCap": "15.03B",
-      "targetPrice": 208.57,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26116,7 +16976,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 129.49,
       "pct_1d": -1.72,
       "pct_1w": 2.33,
@@ -26127,25 +16986,12 @@ const INDEX_DATA = {
       "pct_1y": -5.61,
       "trailingPE": 38.2,
       "forwardPE": 15.72,
-=======
-      "price": 378.99,
-      "pct_1d": -0.94,
-      "pct_1w": 0.29,
-      "pct_1m": 12.92,
-      "pct_3m": 8.34,
-      "pct_6m": 17.36,
-      "pct_ytd": 11.68,
-      "pct_1y": 14.86,
-      "trailingPE": 7.72,
-      "forwardPE": 6.27,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 2.21,
       "rsi14": 56.42,
       "rsi14_w": 51.1,
@@ -26157,19 +17003,6 @@ const INDEX_DATA = {
       "dist_ma200": -4.0,
       "marketCap": "15.29B",
       "targetPrice": 156.4,
-=======
-      "dist_sma20": 4.06,
-      "rsi14": 64.46,
-      "rsi14_w": 64.33,
-      "rsi14_m": 53.39,
-      "rel_vol": 0.66,
-      "dist_high": -0.94,
-      "dist_low": 24.3,
-      "dist_ma50": 8.2,
-      "dist_ma200": 12.66,
-      "marketCap": "15.00B",
-      "targetPrice": 400.8,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26190,13 +17023,8 @@ const INDEX_DATA = {
       "pct_6m": 15.66,
       "pct_ytd": 18.99,
       "pct_1y": 17.75,
-<<<<<<< HEAD
       "trailingPE": 28.18,
       "forwardPE": 32.19,
-=======
-      "trailingPE": 28.23,
-      "forwardPE": 32.58,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -26212,11 +17040,7 @@ const INDEX_DATA = {
       "dist_low": 22.3,
       "dist_ma50": 4.15,
       "dist_ma200": 9.89,
-<<<<<<< HEAD
       "marketCap": "15.04B",
-=======
-      "marketCap": "15.35B",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "targetPrice": 86.11,
       "exchange": "NMS"
     },
@@ -26230,7 +17054,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 378.99,
       "pct_1d": -0.94,
       "pct_1w": 0.29,
@@ -26243,25 +17066,10 @@ const INDEX_DATA = {
       "forwardPE": 6.27,
       "ema_signal": 4,
       "macd_state": 4,
-=======
-      "price": 104.04,
-      "pct_1d": -2.3,
-      "pct_1w": -3.49,
-      "pct_1m": -4.65,
-      "pct_3m": -5.56,
-      "pct_6m": 2.06,
-      "pct_ytd": 0.36,
-      "pct_1y": -1.01,
-      "trailingPE": 14.82,
-      "forwardPE": 12.51,
-      "ema_signal": 2,
-      "macd_state": 3,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 4.06,
       "rsi14": 64.46,
       "rsi14_w": 64.33,
@@ -26312,19 +17120,6 @@ const INDEX_DATA = {
       "dist_ma200": 54.25,
       "marketCap": "15.03B",
       "targetPrice": 217.33,
-=======
-      "dist_sma20": -0.55,
-      "rsi14": 46.75,
-      "rsi14_w": 48.47,
-      "rsi14_m": 42.92,
-      "rel_vol": 0.8,
-      "dist_high": -16.04,
-      "dist_low": 30.8,
-      "dist_ma50": -1.2,
-      "dist_ma200": 1.81,
-      "marketCap": "14.45B",
-      "targetPrice": 127.81,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26345,13 +17140,8 @@ const INDEX_DATA = {
       "pct_6m": -22.62,
       "pct_ytd": -28.35,
       "pct_1y": -37.21,
-<<<<<<< HEAD
       "trailingPE": 11.91,
       "forwardPE": 14.51,
-=======
-      "trailingPE": 11.99,
-      "forwardPE": 14.47,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -26368,11 +17158,7 @@ const INDEX_DATA = {
       "dist_ma50": -4.28,
       "dist_ma200": -20.79,
       "marketCap": "14.42B",
-<<<<<<< HEAD
       "targetPrice": 178.42,
-=======
-      "targetPrice": 177.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -26432,13 +17218,8 @@ const INDEX_DATA = {
       "pct_6m": 32.81,
       "pct_ytd": 31.74,
       "pct_1y": 53.17,
-<<<<<<< HEAD
       "trailingPE": 12.74,
       "forwardPE": 11.11,
-=======
-      "trailingPE": 12.75,
-      "forwardPE": 11.09,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -26455,11 +17236,7 @@ const INDEX_DATA = {
       "dist_ma50": 10.94,
       "dist_ma200": 25.65,
       "marketCap": "14.31B",
-<<<<<<< HEAD
       "targetPrice": 190.67,
-=======
-      "targetPrice": 188.55,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26598,11 +17375,7 @@ const INDEX_DATA = {
       "pct_ytd": -16.43,
       "pct_1y": 53.21,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 9.94,
-=======
-      "forwardPE": 9.29,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -26619,7 +17392,6 @@ const INDEX_DATA = {
       "dist_ma50": -24.95,
       "dist_ma200": -21.9,
       "marketCap": "13.94B",
-<<<<<<< HEAD
       "targetPrice": 201.67,
       "exchange": "NYQ"
     },
@@ -26660,9 +17432,6 @@ const INDEX_DATA = {
       "dist_ma200": -7.34,
       "marketCap": "34.94B",
       "targetPrice": 233.0,
-=======
-      "targetPrice": 196.41,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26683,13 +17452,8 @@ const INDEX_DATA = {
       "pct_6m": -1.39,
       "pct_ytd": 0.01,
       "pct_1y": 9.55,
-<<<<<<< HEAD
       "trailingPE": 9.71,
       "forwardPE": 11.16,
-=======
-      "trailingPE": 9.7,
-      "forwardPE": 11.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -26706,11 +17470,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.98,
       "dist_ma200": 5.9,
       "marketCap": "13.72B",
-<<<<<<< HEAD
       "targetPrice": 84.42,
-=======
-      "targetPrice": 83.38,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26731,138 +17491,14 @@ const INDEX_DATA = {
       "pct_6m": 4.74,
       "pct_ytd": 17.8,
       "pct_1y": 25.77,
-<<<<<<< HEAD
       "trailingPE": 35.85,
       "forwardPE": 14.05,
       "ema_signal": 2,
-=======
-      "trailingPE": 35.86,
-      "forwardPE": 14.05,
-      "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": -2.18,
-      "rsi14": 50.78,
-      "rsi14_w": 57.62,
-      "rsi14_m": 47.94,
-      "rel_vol": 0.81,
-      "dist_high": -7.03,
-      "dist_low": 40.86,
-      "dist_ma50": 4.99,
-      "dist_ma200": 13.48,
-      "marketCap": "13.60B",
-      "targetPrice": 91.0,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "COO",
-      "name": "The Cooper Companies, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Instruments & Supplies",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 71.59,
-      "pct_1d": -0.17,
-      "pct_1w": 0.38,
-      "pct_1m": 8.62,
-      "pct_3m": 6.37,
-      "pct_6m": -13.27,
-      "pct_ytd": -12.65,
-      "pct_1y": 0.38,
-      "trailingPE": 60.67,
-      "forwardPE": 14.31,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.26,
-      "rsi14": 56.14,
-      "rsi14_w": 51.82,
-      "rsi14_m": 42.58,
-      "rel_vol": 0.75,
-      "dist_high": -15.1,
-      "dist_low": 21.38,
-      "dist_ma50": 8.4,
-      "dist_ma200": -1.92,
-      "marketCap": "13.96B",
-      "targetPrice": 81.69,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "HRL",
-      "name": "Hormel Foods Corporation",
-      "sector": "Consumer Staples",
-      "sub_industry": "Packaged Foods",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 25.28,
-      "pct_1d": -0.43,
-      "pct_1w": 3.35,
-      "pct_1m": 4.64,
-      "pct_3m": 18.96,
-      "pct_6m": 3.48,
-      "pct_ytd": 6.67,
-      "pct_1y": -12.5,
-      "trailingPE": 29.74,
-      "forwardPE": 16.2,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.86,
-      "rsi14": 57.34,
-      "rsi14_w": 56.49,
-      "rsi14_m": 43.9,
-      "rel_vol": 0.54,
-      "dist_high": -14.36,
-      "dist_low": 28.06,
-      "dist_ma50": 7.98,
-      "dist_ma200": 8.65,
-      "marketCap": "13.91B",
-      "targetPrice": 26.88,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "MKC",
-      "name": "McCormick & Company, Incorporated",
-      "sector": "Consumer Staples",
-      "sub_industry": "Packaged Foods",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 52.24,
-      "pct_1d": 1.04,
-      "pct_1w": -2.81,
-      "pct_1m": 12.01,
-      "pct_3m": 0.5,
-      "pct_6m": -21.51,
-      "pct_ytd": -23.3,
-      "pct_1y": -26.15,
-      "trailingPE": 8.69,
-      "forwardPE": 15.84,
-      "ema_signal": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -2.18,
       "rsi14": 50.78,
       "rsi14_w": 57.62,
@@ -26874,58 +17510,6 @@ const INDEX_DATA = {
       "dist_ma200": 13.48,
       "marketCap": "13.60B",
       "targetPrice": 90.1,
-=======
-      "dist_sma20": 2.14,
-      "rsi14": 55.25,
-      "rsi14_w": 45.71,
-      "rsi14_m": 36.67,
-      "rel_vol": 0.7,
-      "dist_high": -28.25,
-      "dist_low": 14.56,
-      "dist_ma50": 7.02,
-      "dist_ma200": -11.89,
-      "marketCap": "14.04B",
-      "targetPrice": 60.62,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "TKO",
-      "name": "TKO Group Holdings, Inc.",
-      "sector": "Communication Services",
-      "sub_industry": "Entertainment",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 182.79,
-      "pct_1d": -1.26,
-      "pct_1w": 1.01,
-      "pct_1m": -8.04,
-      "pct_3m": -0.17,
-      "pct_6m": -10.58,
-      "pct_ytd": -12.54,
-      "pct_1y": 8.35,
-      "trailingPE": 68.21,
-      "forwardPE": 39.21,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -5.98,
-      "rsi14": 37.77,
-      "rsi14_w": 43.08,
-      "rsi14_m": 57.04,
-      "rel_vol": 0.49,
-      "dist_high": -18.75,
-      "dist_low": 17.47,
-      "dist_ma50": -6.6,
-      "dist_ma200": -7.34,
-      "marketCap": "34.94B",
-      "targetPrice": 233.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -26946,13 +17530,8 @@ const INDEX_DATA = {
       "pct_6m": 15.63,
       "pct_ytd": 14.37,
       "pct_1y": 48.02,
-<<<<<<< HEAD
       "trailingPE": 14.02,
       "forwardPE": 12.28,
-=======
-      "trailingPE": 14.11,
-      "forwardPE": 12.24,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -26990,13 +17569,8 @@ const INDEX_DATA = {
       "pct_6m": -44.3,
       "pct_ytd": -40.68,
       "pct_1y": -33.42,
-<<<<<<< HEAD
       "trailingPE": 9.79,
       "forwardPE": 8.18,
-=======
-      "trailingPE": 9.8,
-      "forwardPE": 8.16,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -27013,11 +17587,7 @@ const INDEX_DATA = {
       "dist_ma50": -8.23,
       "dist_ma200": -34.55,
       "marketCap": "13.46B",
-<<<<<<< HEAD
       "targetPrice": 143.64,
-=======
-      "targetPrice": 150.67,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -27038,7 +17608,6 @@ const INDEX_DATA = {
       "pct_6m": -38.54,
       "pct_ytd": -43.86,
       "pct_1y": -47.73,
-<<<<<<< HEAD
       "trailingPE": 9.42,
       "forwardPE": 10.29,
       "ema_signal": 1,
@@ -27059,67 +17628,6 @@ const INDEX_DATA = {
       "marketCap": "13.85B",
       "targetPrice": 123.01,
       "exchange": "NMS"
-=======
-      "trailingPE": 9.45,
-      "forwardPE": 10.33,
-      "ema_signal": 1,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.13,
-      "rsi14": 47.66,
-      "rsi14_w": 35.51,
-      "rsi14_m": 37.04,
-      "rel_vol": 0.63,
-      "dist_high": -49.22,
-      "dist_low": 10.66,
-      "dist_ma50": -2.81,
-      "dist_ma200": -27.83,
-      "marketCap": "13.25B",
-      "targetPrice": 127.92,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "TYL",
-      "name": "Tyler Technologies, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Software - Application",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 317.96,
-      "pct_1d": -0.49,
-      "pct_1w": 1.19,
-      "pct_1m": 14.0,
-      "pct_3m": -6.88,
-      "pct_6m": -26.79,
-      "pct_ytd": -29.96,
-      "pct_1y": -43.22,
-      "trailingPE": 43.86,
-      "forwardPE": 21.44,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 4.82,
-      "rsi14": 56.65,
-      "rsi14_w": 41.84,
-      "rsi14_m": 27.92,
-      "rel_vol": 0.74,
-      "dist_high": -48.03,
-      "dist_low": 15.51,
-      "dist_ma50": 3.92,
-      "dist_ma200": -17.27,
-      "marketCap": "13.08B",
-      "targetPrice": 437.52,
-      "exchange": "NYQ"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "IVZ",
@@ -27140,11 +17648,7 @@ const INDEX_DATA = {
       "pct_ytd": 12.9,
       "pct_1y": 46.83,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 9.19,
-=======
-      "forwardPE": 9.28,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -27222,11 +17726,7 @@ const INDEX_DATA = {
       "pct_ytd": 19.84,
       "pct_1y": 14.12,
       "trailingPE": 19.83,
-<<<<<<< HEAD
       "forwardPE": 19.14,
-=======
-      "forwardPE": 19.07,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -27243,11 +17743,7 @@ const INDEX_DATA = {
       "dist_ma50": 2.65,
       "dist_ma200": 9.82,
       "marketCap": "12.88B",
-<<<<<<< HEAD
       "targetPrice": 106.83,
-=======
-      "targetPrice": 105.86,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -27268,13 +17764,8 @@ const INDEX_DATA = {
       "pct_6m": 5.5,
       "pct_ytd": 8.34,
       "pct_1y": -2.12,
-<<<<<<< HEAD
       "trailingPE": 27.04,
       "forwardPE": 74.19,
-=======
-      "trailingPE": 27.03,
-      "forwardPE": 70.96,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -27290,13 +17781,8 @@ const INDEX_DATA = {
       "dist_low": 18.41,
       "dist_ma50": 2.78,
       "dist_ma200": 8.4,
-<<<<<<< HEAD
       "marketCap": "20.86B",
       "targetPrice": 42.0,
-=======
-      "marketCap": "14.72B",
-      "targetPrice": 41.43,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -27317,13 +17803,8 @@ const INDEX_DATA = {
       "pct_6m": 8.93,
       "pct_ytd": 9.01,
       "pct_1y": -19.4,
-<<<<<<< HEAD
       "trailingPE": 32.0,
       "forwardPE": 12.86,
-=======
-      "trailingPE": 31.93,
-      "forwardPE": 12.78,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -27340,95 +17821,10 @@ const INDEX_DATA = {
       "dist_ma50": 6.4,
       "dist_ma200": 6.99,
       "marketCap": "12.61B",
-<<<<<<< HEAD
       "targetPrice": 336.13,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 333.18,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "ALGN",
-      "name": "Align Technology, Inc.",
-      "sector": "Health Care",
-      "sub_industry": "Medical Instruments & Supplies",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 175.05,
-      "pct_1d": -0.97,
-      "pct_1w": -3.07,
-      "pct_1m": -3.86,
-      "pct_3m": -10.32,
-      "pct_6m": 3.0,
-      "pct_ytd": 12.1,
-      "pct_1y": -7.39,
-      "trailingPE": 29.42,
-      "forwardPE": 14.14,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.43,
-      "rsi14": 48.15,
-      "rsi14_w": 51.06,
-      "rsi14_m": 45.17,
-      "rel_vol": 1.0,
-      "dist_high": -15.51,
-      "dist_low": 40.17,
-      "dist_ma50": 1.81,
-      "dist_ma200": 6.22,
-      "marketCap": "12.54B",
-      "targetPrice": 209.07,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "GNRC",
-      "name": "Generac Holdings Inc.",
-      "sector": "Industrials",
-      "sub_industry": "Specialty Industrial Machinery",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 213.25,
-      "pct_1d": -0.77,
-      "pct_1w": -6.04,
-      "pct_1m": -23.61,
-      "pct_3m": -0.28,
-      "pct_6m": 23.94,
-      "pct_ytd": 56.38,
-      "pct_1y": 41.93,
-      "trailingPE": 66.64,
-      "forwardPE": 18.91,
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -15.54,
-      "rsi14": 32.79,
-      "rsi14_w": 44.96,
-      "rsi14_m": 53.7,
-      "rel_vol": 0.49,
-      "dist_high": -27.84,
-      "dist_low": 56.38,
-      "dist_ma50": -18.32,
-      "dist_ma200": 5.01,
-      "marketCap": "12.55B",
-      "targetPrice": 290.27,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "GDDY",
       "name": "GoDaddy Inc.",
       "sector": "Information Technology",
@@ -27446,13 +17842,8 @@ const INDEX_DATA = {
       "pct_6m": -8.93,
       "pct_ytd": -23.57,
       "pct_1y": -43.71,
-<<<<<<< HEAD
       "trailingPE": 14.99,
       "forwardPE": 10.57,
-=======
-      "trailingPE": 15.03,
-      "forwardPE": 8.8,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -27482,7 +17873,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 213.25,
       "pct_1d": -0.77,
       "pct_1w": -6.04,
@@ -27495,24 +17885,9 @@ const INDEX_DATA = {
       "forwardPE": 18.91,
       "ema_signal": 1,
       "macd_state": 1,
-=======
-      "price": 34.84,
-      "pct_1d": -1.08,
-      "pct_1w": 0.49,
-      "pct_1m": 5.48,
-      "pct_3m": -7.34,
-      "pct_6m": 31.27,
-      "pct_ytd": 42.44,
-      "pct_1y": 87.31,
-      "trailingPE": 8.12,
-      "forwardPE": 8.51,
-      "ema_signal": 4,
-      "macd_state": 3,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
+      "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
-<<<<<<< HEAD
       "golden_cross_count": 0,
       "dist_sma20": -15.54,
       "rsi14": 32.79,
@@ -27564,20 +17939,6 @@ const INDEX_DATA = {
       "dist_ma200": 6.22,
       "marketCap": "12.54B",
       "targetPrice": 209.07,
-=======
-      "golden_cross_count": 1,
-      "dist_sma20": 3.38,
-      "rsi14": 51.56,
-      "rsi14_w": 52.73,
-      "rsi14_m": 54.42,
-      "rel_vol": 0.8,
-      "dist_high": -21.51,
-      "dist_low": 92.91,
-      "dist_ma50": -2.57,
-      "dist_ma200": 13.1,
-      "marketCap": "12.31B",
-      "targetPrice": 42.12,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -27598,7 +17959,6 @@ const INDEX_DATA = {
       "pct_6m": -24.25,
       "pct_ytd": -32.09,
       "pct_1y": -34.66,
-<<<<<<< HEAD
       "trailingPE": 27.91,
       "forwardPE": 13.05,
       "ema_signal": 4,
@@ -27679,16 +18039,11 @@ const INDEX_DATA = {
       "pct_1y": 87.31,
       "trailingPE": 8.12,
       "forwardPE": 8.51,
-=======
-      "trailingPE": 27.86,
-      "forwardPE": 13.05,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 3,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": true,
       "dead_cross_count": 0,
-<<<<<<< HEAD
       "golden_cross_count": 1,
       "dist_sma20": 3.38,
       "rsi14": 51.56,
@@ -27701,20 +18056,6 @@ const INDEX_DATA = {
       "dist_ma200": 13.1,
       "marketCap": "12.31B",
       "targetPrice": 42.12,
-=======
-      "golden_cross_count": 2,
-      "dist_sma20": 2.66,
-      "rsi14": 52.3,
-      "rsi14_w": 35.61,
-      "rsi14_m": 43.45,
-      "rel_vol": 0.92,
-      "dist_high": -37.58,
-      "dist_low": 8.88,
-      "dist_ma50": -0.65,
-      "dist_ma200": -22.26,
-      "marketCap": "12.40B",
-      "targetPrice": 82.25,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -27727,7 +18068,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 29.68,
       "pct_1d": -0.34,
       "pct_1w": 3.16,
@@ -27740,25 +18080,10 @@ const INDEX_DATA = {
       "forwardPE": 16.72,
       "ema_signal": 3,
       "macd_state": 3,
-=======
-      "price": 106.44,
-      "pct_1d": -3.37,
-      "pct_1w": -4.2,
-      "pct_1m": 6.44,
-      "pct_3m": 12.91,
-      "pct_6m": -8.66,
-      "pct_ytd": 10.02,
-      "pct_1y": 17.33,
-      "trailingPE": 50.45,
-      "forwardPE": 18.31,
-      "ema_signal": 2,
-      "macd_state": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 1.39,
       "rsi14": 47.7,
       "rsi14_w": 30.01,
@@ -27771,20 +18096,6 @@ const INDEX_DATA = {
       "marketCap": "12.12B",
       "targetPrice": 43.79,
       "exchange": "NMS"
-=======
-      "dist_sma20": -3.31,
-      "rsi14": 46.9,
-      "rsi14_w": 55.09,
-      "rsi14_m": 47.7,
-      "rel_vol": 0.68,
-      "dist_high": -9.61,
-      "dist_low": 29.39,
-      "dist_ma50": 2.89,
-      "dist_ma200": 8.58,
-      "marketCap": "11.87B",
-      "targetPrice": 116.79,
-      "exchange": "NYQ"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "AVY",
@@ -27804,13 +18115,8 @@ const INDEX_DATA = {
       "pct_6m": -14.8,
       "pct_ytd": -12.93,
       "pct_1y": -11.54,
-<<<<<<< HEAD
       "trailingPE": 17.81,
       "forwardPE": 14.2,
-=======
-      "trailingPE": 17.84,
-      "forwardPE": 14.26,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -27848,13 +18154,8 @@ const INDEX_DATA = {
       "pct_6m": -28.6,
       "pct_ytd": -24.68,
       "pct_1y": -16.94,
-<<<<<<< HEAD
       "trailingPE": 33.88,
       "forwardPE": 8.46,
-=======
-      "trailingPE": 34.11,
-      "forwardPE": 8.45,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -27871,56 +18172,10 @@ const INDEX_DATA = {
       "dist_ma50": -6.7,
       "dist_ma200": -20.39,
       "marketCap": "12.13B",
-<<<<<<< HEAD
       "targetPrice": 78.05,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 77.67,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CSGP",
-      "name": "CoStar Group, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "Real Estate Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 29.68,
-      "pct_1d": -0.34,
-      "pct_1w": 3.16,
-      "pct_1m": -1.46,
-      "pct_3m": -23.72,
-      "pct_6m": -54.18,
-      "pct_ytd": -55.86,
-      "pct_1y": -65.09,
-      "trailingPE": 424.0,
-      "forwardPE": 16.72,
-      "ema_signal": 3,
-      "macd_state": 3,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 1.39,
-      "rsi14": 47.7,
-      "rsi14_w": 30.01,
-      "rsi14_m": 27.0,
-      "rel_vol": 0.82,
-      "dist_high": -69.35,
-      "dist_low": 7.23,
-      "dist_ma50": -5.72,
-      "dist_ma200": -41.92,
-      "marketCap": "12.12B",
-      "targetPrice": 44.45,
-      "exchange": "NMS"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "SJM",
       "name": "The J. M. Smucker Company",
       "sector": "Consumer Staples",
@@ -27939,11 +18194,7 @@ const INDEX_DATA = {
       "pct_ytd": 15.02,
       "pct_1y": 6.92,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 10.44,
-=======
-      "forwardPE": 10.51,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -27960,95 +18211,10 @@ const INDEX_DATA = {
       "dist_ma50": 4.25,
       "dist_ma200": 8.3,
       "marketCap": "12.02B",
-<<<<<<< HEAD
       "targetPrice": 124.07,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 123.31,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "ERIE",
-      "name": "Erie Indemnity Company",
-      "sector": "Financials",
-      "sub_industry": "Insurance Brokers",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 225.01,
-      "pct_1d": -1.01,
-      "pct_1w": -8.97,
-      "pct_1m": 1.75,
-      "pct_3m": -11.36,
-      "pct_6m": -19.61,
-      "pct_ytd": -21.5,
-      "pct_1y": -36.13,
-      "trailingPE": 20.62,
-      "forwardPE": 16.06,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 2,
-      "golden_cross_count": 0,
-      "dist_sma20": -5.36,
-      "rsi14": 44.57,
-      "rsi14_w": 41.04,
-      "rsi14_m": 29.83,
-      "rel_vol": 0.87,
-      "dist_high": -39.02,
-      "dist_low": 8.57,
-      "dist_ma50": -0.93,
-      "dist_ma200": -14.83,
-      "marketCap": "11.77B",
-      "targetPrice": null,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "MGM",
-      "name": "MGM Resorts International",
-      "sector": "Consumer Discretionary",
-      "sub_industry": "Resorts & Casinos",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 46.34,
-      "pct_1d": 0.46,
-      "pct_1w": -1.91,
-      "pct_1m": -1.07,
-      "pct_3m": 18.49,
-      "pct_6m": 36.7,
-      "pct_ytd": 26.99,
-      "pct_1y": 24.67,
-      "trailingPE": 63.48,
-      "forwardPE": 20.66,
-      "ema_signal": 1,
-      "macd_state": 2,
-      "is_danger_dead_cross": true,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 1,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.68,
-      "rsi14": 49.41,
-      "rsi14_w": 62.11,
-      "rsi14_m": 58.0,
-      "rel_vol": 0.43,
-      "dist_high": -8.58,
-      "dist_low": 50.85,
-      "dist_ma50": 3.98,
-      "dist_ma200": 23.09,
-      "marketCap": "11.86B",
-      "targetPrice": 49.24,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "ALLE",
       "name": "Allegion plc",
       "sector": "Industrials",
@@ -28066,7 +18232,6 @@ const INDEX_DATA = {
       "pct_6m": -16.73,
       "pct_ytd": -13.25,
       "pct_1y": -7.67,
-<<<<<<< HEAD
       "trailingPE": 18.86,
       "forwardPE": 14.41,
       "ema_signal": 4,
@@ -28148,17 +18313,11 @@ const INDEX_DATA = {
       "trailingPE": 50.45,
       "forwardPE": 18.31,
       "ema_signal": 2,
-=======
-      "trailingPE": 18.9,
-      "forwardPE": 14.42,
-      "ema_signal": 4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -3.31,
       "rsi14": 46.9,
       "rsi14_w": 55.09,
@@ -28170,19 +18329,6 @@ const INDEX_DATA = {
       "dist_ma200": 8.58,
       "marketCap": "11.87B",
       "targetPrice": 116.79,
-=======
-      "dist_sma20": 0.8,
-      "rsi14": 54.62,
-      "rsi14_w": 44.32,
-      "rsi14_m": 46.41,
-      "rel_vol": 0.91,
-      "dist_high": -23.16,
-      "dist_low": 9.93,
-      "dist_ma50": 3.53,
-      "dist_ma200": -9.76,
-      "marketCap": "11.87B",
-      "targetPrice": 165.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -28195,7 +18341,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 225.01,
       "pct_1d": -1.01,
       "pct_1w": -8.97,
@@ -28247,25 +18392,10 @@ const INDEX_DATA = {
       "forwardPE": 16.05,
       "ema_signal": 2,
       "macd_state": 4,
-=======
-      "price": 26.41,
-      "pct_1d": 3.24,
-      "pct_1w": 0.61,
-      "pct_1m": -0.86,
-      "pct_3m": -8.14,
-      "pct_6m": -5.71,
-      "pct_ytd": 1.34,
-      "pct_1y": -6.84,
-      "trailingPE": 17.26,
-      "forwardPE": 15.41,
-      "ema_signal": 3,
-      "macd_state": 1,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 0.62,
       "rsi14": 51.29,
       "rsi14_w": 43.57,
@@ -28277,19 +18407,6 @@ const INDEX_DATA = {
       "dist_ma200": -8.58,
       "marketCap": "11.64B",
       "targetPrice": 99.4,
-=======
-      "dist_sma20": 0.13,
-      "rsi14": 51.92,
-      "rsi14_w": 47.92,
-      "rsi14_m": 31.78,
-      "rel_vol": 0.63,
-      "dist_high": -15.52,
-      "dist_low": 15.83,
-      "dist_ma50": 0.56,
-      "dist_ma200": -2.99,
-      "marketCap": "12.12B",
-      "targetPrice": 27.79,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -28311,11 +18428,7 @@ const INDEX_DATA = {
       "pct_ytd": 15.49,
       "pct_1y": -19.36,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 11.16,
-=======
-      "forwardPE": 11.01,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -28332,56 +18445,10 @@ const INDEX_DATA = {
       "dist_ma50": 9.47,
       "dist_ma200": 12.95,
       "marketCap": "11.40B",
-<<<<<<< HEAD
       "targetPrice": 20.0,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 21.95,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CLX",
-      "name": "The Clorox Company",
-      "sector": "Consumer Staples",
-      "sub_industry": "Household & Personal Products",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 96.29,
-      "pct_1d": -0.03,
-      "pct_1w": 1.3,
-      "pct_1m": 0.51,
-      "pct_3m": -3.33,
-      "pct_6m": -12.89,
-      "pct_ytd": -4.5,
-      "pct_1y": -23.92,
-      "trailingPE": 15.66,
-      "forwardPE": 15.99,
-      "ema_signal": 2,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.62,
-      "rsi14": 51.29,
-      "rsi14_w": 43.57,
-      "rsi14_m": 40.68,
-      "rel_vol": 0.59,
-      "dist_high": -26.74,
-      "dist_low": 11.81,
-      "dist_ma50": 1.94,
-      "dist_ma200": -8.58,
-      "marketCap": "11.64B",
-      "targetPrice": 104.41,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "HAS",
       "name": "Hasbro, Inc.",
       "sector": "Consumer Discretionary",
@@ -28477,13 +18544,8 @@ const INDEX_DATA = {
       "pct_6m": -20.94,
       "pct_ytd": -21.34,
       "pct_1y": 3.62,
-<<<<<<< HEAD
       "trailingPE": 15.17,
       "forwardPE": 9.88,
-=======
-      "trailingPE": 15.13,
-      "forwardPE": 9.91,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -28499,13 +18561,8 @@ const INDEX_DATA = {
       "dist_low": 17.81,
       "dist_ma50": -3.81,
       "dist_ma200": -8.95,
-<<<<<<< HEAD
       "marketCap": "22.82B",
       "targetPrice": 71.53,
-=======
-      "marketCap": "24.14B",
-      "targetPrice": 70.81,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -28526,13 +18583,8 @@ const INDEX_DATA = {
       "pct_6m": -21.26,
       "pct_ytd": -20.61,
       "pct_1y": 0.94,
-<<<<<<< HEAD
       "trailingPE": 13.61,
       "forwardPE": 8.86,
-=======
-      "trailingPE": 13.57,
-      "forwardPE": 9.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -28548,91 +18600,8 @@ const INDEX_DATA = {
       "dist_low": 16.13,
       "dist_ma50": -4.05,
       "dist_ma200": -9.16,
-<<<<<<< HEAD
       "marketCap": "22.84B",
       "targetPrice": 71.12,
-=======
-      "marketCap": "21.65B",
-      "targetPrice": null,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "sector": "Health Care",
-      "sub_industry": "Medical Devices",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 167.37,
-      "pct_1d": 2.02,
-      "pct_1w": 3.28,
-      "pct_1m": 14.83,
-      "pct_3m": -12.98,
-      "pct_6m": -41.27,
-      "pct_ytd": -41.12,
-      "pct_1y": -40.43,
-      "trailingPE": 39.11,
-      "forwardPE": 20.78,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 6.17,
-      "rsi14": 60.83,
-      "rsi14_w": 37.2,
-      "rsi14_m": 42.88,
-      "rel_vol": 1.04,
-      "dist_high": -52.56,
-      "dist_low": 20.44,
-      "dist_ma50": 9.15,
-      "dist_ma200": -29.92,
-      "marketCap": "11.59B",
-      "targetPrice": 238.22,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "TECH",
-      "name": "Bio-Techne Corporation",
-      "sector": "Health Care",
-      "sub_industry": "Biotechnology",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 71.64,
-      "pct_1d": -0.67,
-      "pct_1w": 0.39,
-      "pct_1m": 23.65,
-      "pct_3m": 20.06,
-      "pct_6m": 0.36,
-      "pct_ytd": 21.82,
-      "pct_1y": 42.51,
-      "trailingPE": 102.34,
-      "forwardPE": 35.03,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 3.8,
-      "rsi14": 74.37,
-      "rsi14_w": 65.06,
-      "rsi14_m": 51.14,
-      "rel_vol": 0.67,
-      "dist_high": -0.67,
-      "dist_low": 65.45,
-      "dist_ma50": 24.05,
-      "dist_ma200": 21.17,
-      "marketCap": "11.16B",
-      "targetPrice": 70.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -28654,11 +18623,7 @@ const INDEX_DATA = {
       "pct_ytd": 2.53,
       "pct_1y": -0.34,
       "trailingPE": 31.53,
-<<<<<<< HEAD
       "forwardPE": 93.35,
-=======
-      "forwardPE": 143.77,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -28674,7 +18639,6 @@ const INDEX_DATA = {
       "dist_low": 16.4,
       "dist_ma50": 2.01,
       "dist_ma200": 6.38,
-<<<<<<< HEAD
       "marketCap": "15.26B",
       "targetPrice": 115.35,
       "exchange": "NYQ"
@@ -28682,93 +18646,6 @@ const INDEX_DATA = {
     {
       "ticker": "TECH",
       "name": "Bio-Techne Corporation",
-=======
-      "marketCap": "11.18B",
-      "targetPrice": 114.62,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "BXP",
-      "name": "BXP, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Office",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 67.9,
-      "pct_1d": -2.79,
-      "pct_1w": 1.28,
-      "pct_1m": 4.95,
-      "pct_3m": 16.07,
-      "pct_6m": 2.99,
-      "pct_ytd": 0.62,
-      "pct_1y": -1.61,
-      "trailingPE": 34.12,
-      "forwardPE": 33.13,
-      "ema_signal": 2,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 0.73,
-      "rsi14": 54.86,
-      "rsi14_w": 58.51,
-      "rsi14_m": 50.67,
-      "rel_vol": 0.69,
-      "dist_high": -13.97,
-      "dist_low": 33.09,
-      "dist_ma50": 6.23,
-      "dist_ma200": 5.94,
-      "marketCap": "12.11B",
-      "targetPrice": 70.65,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "FRT",
-      "name": "Federal Realty Investment Trust",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Retail",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 125.59,
-      "pct_1d": -0.34,
-      "pct_1w": 3.08,
-      "pct_1m": 4.32,
-      "pct_3m": 13.01,
-      "pct_6m": 22.57,
-      "pct_ytd": 24.59,
-      "pct_1y": 33.08,
-      "trailingPE": 21.77,
-      "forwardPE": 40.83,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": true,
-      "dead_cross_count": 0,
-      "golden_cross_count": 2,
-      "dist_sma20": 2.17,
-      "rsi14": 61.83,
-      "rsi14_w": 65.23,
-      "rsi14_m": 64.64,
-      "rel_vol": 1.2,
-      "dist_high": -0.34,
-      "dist_low": 38.61,
-      "dist_ma50": 3.99,
-      "dist_ma200": 16.93,
-      "marketCap": "10.92B",
-      "targetPrice": 129.79,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "CRL",
-      "name": "Charles River Laboratories International, Inc.",
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "sector": "Health Care",
       "sub_industry": "Biotechnology",
       "sp500": true,
@@ -28776,7 +18653,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 71.64,
       "pct_1d": -0.67,
       "pct_1w": 0.39,
@@ -28788,25 +18664,11 @@ const INDEX_DATA = {
       "trailingPE": 102.9,
       "forwardPE": 34.88,
       "ema_signal": 4,
-=======
-      "price": 219.7,
-      "pct_1d": -2.07,
-      "pct_1w": -4.37,
-      "pct_1m": 18.76,
-      "pct_3m": 19.99,
-      "pct_6m": -3.12,
-      "pct_ytd": 10.14,
-      "pct_1y": 46.67,
-      "trailingPE": null,
-      "forwardPE": 17.82,
-      "ema_signal": 2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "macd_state": 2,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": 3.8,
       "rsi14": 74.37,
       "rsi14_w": 65.06,
@@ -28818,58 +18680,6 @@ const INDEX_DATA = {
       "dist_ma200": 21.17,
       "marketCap": "11.22B",
       "targetPrice": 70.33,
-=======
-      "dist_sma20": -0.69,
-      "rsi14": 55.59,
-      "rsi14_w": 60.82,
-      "rsi14_m": 51.19,
-      "rel_vol": 1.08,
-      "dist_high": -5.95,
-      "dist_low": 50.92,
-      "dist_ma50": 13.99,
-      "dist_ma200": 18.97,
-      "marketCap": "10.58B",
-      "targetPrice": 230.93,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "JKHY",
-      "name": "Jack Henry & Associates, Inc.",
-      "sector": "Information Technology",
-      "sub_industry": "Information Technology Services",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 153.16,
-      "pct_1d": 0.98,
-      "pct_1w": 1.61,
-      "pct_1m": 21.33,
-      "pct_3m": -1.5,
-      "pct_6m": -18.45,
-      "pct_ytd": -16.07,
-      "pct_1y": -13.4,
-      "trailingPE": 21.39,
-      "forwardPE": 21.57,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 7.54,
-      "rsi14": 66.24,
-      "rsi14_w": 51.79,
-      "rsi14_m": 45.11,
-      "rel_vol": 0.82,
-      "dist_high": -20.48,
-      "dist_low": 24.1,
-      "dist_ma50": 10.95,
-      "dist_ma200": -3.8,
-      "marketCap": "10.88B",
-      "targetPrice": 184.29,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -28890,7 +18700,6 @@ const INDEX_DATA = {
       "pct_6m": -17.53,
       "pct_ytd": -21.08,
       "pct_1y": -28.83,
-<<<<<<< HEAD
       "trailingPE": 18.93,
       "forwardPE": 15.82,
       "ema_signal": 4,
@@ -28971,16 +18780,11 @@ const INDEX_DATA = {
       "pct_1y": 33.08,
       "trailingPE": 21.78,
       "forwardPE": 41.26,
-=======
-      "trailingPE": 18.94,
-      "forwardPE": 15.8,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
+      "is_golden_cross_opportunity": true,
       "dead_cross_count": 0,
-<<<<<<< HEAD
       "golden_cross_count": 2,
       "dist_sma20": 2.17,
       "rsi14": 61.83,
@@ -29033,21 +18837,6 @@ const INDEX_DATA = {
       "marketCap": "11.89B",
       "targetPrice": 69.58,
       "exchange": "NYQ"
-=======
-      "golden_cross_count": 0,
-      "dist_sma20": 8.06,
-      "rsi14": 60.85,
-      "rsi14_w": 44.65,
-      "rsi14_m": 39.93,
-      "rel_vol": 2.73,
-      "dist_high": -32.25,
-      "dist_low": 16.23,
-      "dist_ma50": 6.18,
-      "dist_ma200": -12.52,
-      "marketCap": "10.94B",
-      "targetPrice": 390.86,
-      "exchange": "NMS"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     },
     {
       "ticker": "HII",
@@ -29067,13 +18856,8 @@ const INDEX_DATA = {
       "pct_6m": -36.11,
       "pct_ytd": -20.59,
       "pct_1y": 6.76,
-<<<<<<< HEAD
       "trailingPE": 17.58,
       "forwardPE": 13.43,
-=======
-      "trailingPE": 17.55,
-      "forwardPE": 13.39,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -29090,11 +18874,7 @@ const INDEX_DATA = {
       "dist_ma50": -9.46,
       "dist_ma200": -22.16,
       "marketCap": "10.64B",
-<<<<<<< HEAD
       "targetPrice": 359.7,
-=======
-      "targetPrice": 364.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -29154,13 +18934,8 @@ const INDEX_DATA = {
       "pct_6m": 3.93,
       "pct_ytd": 3.21,
       "pct_1y": 8.11,
-<<<<<<< HEAD
       "trailingPE": 7.66,
       "forwardPE": 5.98,
-=======
-      "trailingPE": 7.71,
-      "forwardPE": 6.22,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -29198,13 +18973,8 @@ const INDEX_DATA = {
       "pct_6m": 8.27,
       "pct_ytd": 8.31,
       "pct_1y": -2.98,
-<<<<<<< HEAD
       "trailingPE": 37.79,
       "forwardPE": 22.27,
-=======
-      "trailingPE": 35.81,
-      "forwardPE": 21.91,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -29220,13 +18990,8 @@ const INDEX_DATA = {
       "dist_low": 26.29,
       "dist_ma50": 6.88,
       "dist_ma200": 9.77,
-<<<<<<< HEAD
       "marketCap": "16.21B",
       "targetPrice": 35.77,
-=======
-      "marketCap": "15.34B",
-      "targetPrice": 35.17,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -29247,13 +19012,8 @@ const INDEX_DATA = {
       "pct_6m": -42.03,
       "pct_ytd": -40.35,
       "pct_1y": -40.76,
-<<<<<<< HEAD
       "trailingPE": 15.25,
       "forwardPE": 11.7,
-=======
-      "trailingPE": 15.61,
-      "forwardPE": 11.51,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -29270,11 +19030,7 @@ const INDEX_DATA = {
       "dist_ma50": -15.34,
       "dist_ma200": -33.39,
       "marketCap": "10.04B",
-<<<<<<< HEAD
       "targetPrice": 84.33,
-=======
-      "targetPrice": 82.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -29295,13 +19051,8 @@ const INDEX_DATA = {
       "pct_6m": -16.18,
       "pct_ytd": -20.5,
       "pct_1y": -10.06,
-<<<<<<< HEAD
       "trailingPE": 27.38,
       "forwardPE": 18.62,
-=======
-      "trailingPE": 27.41,
-      "forwardPE": 18.03,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -29318,11 +19069,7 @@ const INDEX_DATA = {
       "dist_ma50": -4.76,
       "dist_ma200": -14.0,
       "marketCap": "9.93B",
-<<<<<<< HEAD
       "targetPrice": 135.95,
-=======
-      "targetPrice": 134.0,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -29343,11 +19090,7 @@ const INDEX_DATA = {
       "pct_6m": 9.2,
       "pct_ytd": 14.05,
       "pct_1y": 24.8,
-<<<<<<< HEAD
       "trailingPE": 26.03,
-=======
-      "trailingPE": 26.04,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": 14.59,
       "ema_signal": 2,
       "macd_state": 2,
@@ -29365,11 +19108,7 @@ const INDEX_DATA = {
       "dist_ma50": 8.78,
       "dist_ma200": 14.38,
       "marketCap": "9.82B",
-<<<<<<< HEAD
       "targetPrice": 88.81,
-=======
-      "targetPrice": 88.5,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -29391,11 +19130,7 @@ const INDEX_DATA = {
       "pct_ytd": -36.04,
       "pct_1y": -34.23,
       "trailingPE": 428.5,
-<<<<<<< HEAD
       "forwardPE": 10.51,
-=======
-      "forwardPE": 9.67,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -29412,11 +19147,7 @@ const INDEX_DATA = {
       "dist_ma50": -15.01,
       "dist_ma200": -29.82,
       "marketCap": "9.59B",
-<<<<<<< HEAD
       "targetPrice": 11.36,
-=======
-      "targetPrice": 11.79,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -29438,11 +19169,7 @@ const INDEX_DATA = {
       "pct_ytd": -44.09,
       "pct_1y": -60.05,
       "trailingPE": 13.94,
-<<<<<<< HEAD
       "forwardPE": 9.17,
-=======
-      "forwardPE": 9.22,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -29459,56 +19186,10 @@ const INDEX_DATA = {
       "dist_ma50": -3.76,
       "dist_ma200": -25.25,
       "marketCap": "9.44B",
-<<<<<<< HEAD
       "targetPrice": 162.33,
       "exchange": "NYQ"
     },
     {
-=======
-      "targetPrice": 162.46,
-      "exchange": "NYQ"
-    },
-    {
-      "ticker": "FDS",
-      "name": "FactSet Research Systems Inc.",
-      "sector": "Financials",
-      "sub_industry": "Financial Data & Stock Exchanges",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 255.79,
-      "pct_1d": -0.89,
-      "pct_1w": -2.78,
-      "pct_1m": 15.59,
-      "pct_3m": 6.44,
-      "pct_6m": -9.97,
-      "pct_ytd": -11.85,
-      "pct_1y": -39.54,
-      "trailingPE": 16.85,
-      "forwardPE": 12.98,
-      "ema_signal": 4,
-      "macd_state": 4,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 5.62,
-      "rsi14": 56.24,
-      "rsi14_w": 53.03,
-      "rsi14_m": 38.31,
-      "rel_vol": 0.71,
-      "dist_high": -40.83,
-      "dist_low": 34.58,
-      "dist_ma50": 7.91,
-      "dist_ma200": 2.88,
-      "marketCap": "9.10B",
-      "targetPrice": 254.44,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "UHS",
       "name": "Universal Health Services, Inc.",
       "sector": "Health Care",
@@ -29526,13 +19207,8 @@ const INDEX_DATA = {
       "pct_6m": -26.04,
       "pct_ytd": -30.91,
       "pct_1y": -10.73,
-<<<<<<< HEAD
       "trailingPE": 6.27,
       "forwardPE": 5.96,
-=======
-      "trailingPE": 6.29,
-      "forwardPE": 5.99,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 2,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -29549,7 +19225,6 @@ const INDEX_DATA = {
       "dist_ma50": -1.6,
       "dist_ma200": -22.25,
       "marketCap": "9.12B",
-<<<<<<< HEAD
       "targetPrice": 204.81,
       "exchange": "NYQ"
     },
@@ -29590,9 +19265,6 @@ const INDEX_DATA = {
       "dist_ma200": 2.88,
       "marketCap": "9.10B",
       "targetPrice": 271.47,
-=======
-      "targetPrice": 206.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -29613,13 +19285,8 @@ const INDEX_DATA = {
       "pct_6m": -6.61,
       "pct_ytd": -12.68,
       "pct_1y": -15.96,
-<<<<<<< HEAD
       "trailingPE": 16.68,
       "forwardPE": 9.75,
-=======
-      "trailingPE": 15.72,
-      "forwardPE": 9.66,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": false,
@@ -29636,11 +19303,7 @@ const INDEX_DATA = {
       "dist_ma50": 4.5,
       "dist_ma200": -4.8,
       "marketCap": "8.95B",
-<<<<<<< HEAD
       "targetPrice": 21.62,
-=======
-      "targetPrice": 21.76,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -29661,13 +19324,8 @@ const INDEX_DATA = {
       "pct_6m": 2.13,
       "pct_ytd": -5.69,
       "pct_1y": -17.77,
-<<<<<<< HEAD
       "trailingPE": 24.86,
       "forwardPE": 11.61,
-=======
-      "trailingPE": 24.92,
-      "forwardPE": 11.65,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -29684,56 +19342,10 @@ const INDEX_DATA = {
       "dist_ma50": -14.11,
       "dist_ma200": -8.15,
       "marketCap": "8.99B",
-<<<<<<< HEAD
       "targetPrice": 72.21,
       "exchange": "NMS"
     },
     {
-=======
-      "targetPrice": 72.94,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "ARE",
-      "name": "Alexandria Real Estate Equities, Inc.",
-      "sector": "Real Estate",
-      "sub_industry": "REIT - Office",
-      "sp500": true,
-      "nasdaq100": false,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 50.05,
-      "pct_1d": -0.34,
-      "pct_1w": 4.1,
-      "pct_1m": -1.92,
-      "pct_3m": 4.69,
-      "pct_6m": -14.37,
-      "pct_ytd": 2.27,
-      "pct_1y": -36.05,
-      "trailingPE": null,
-      "forwardPE": -56.88,
-      "ema_signal": 3,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": -1.33,
-      "rsi14": 49.76,
-      "rsi14_w": 47.74,
-      "rsi14_m": 29.54,
-      "rel_vol": 0.47,
-      "dist_high": -42.77,
-      "dist_low": 23.86,
-      "dist_ma50": 0.31,
-      "dist_ma200": -5.52,
-      "marketCap": "8.72B",
-      "targetPrice": 51.0,
-      "exchange": "NYQ"
-    },
-    {
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ticker": "TTD",
       "name": "The Trade Desk, Inc.",
       "sector": "Communication Services",
@@ -29751,13 +19363,8 @@ const INDEX_DATA = {
       "pct_6m": -47.24,
       "pct_ytd": -50.9,
       "pct_1y": -76.71,
-<<<<<<< HEAD
       "trailingPE": 21.01,
       "forwardPE": 15.59,
-=======
-      "trailingPE": 21.18,
-      "forwardPE": 8.68,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -29774,11 +19381,7 @@ const INDEX_DATA = {
       "dist_ma50": -6.78,
       "dist_ma200": -39.52,
       "marketCap": "8.76B",
-<<<<<<< HEAD
       "targetPrice": 25.31,
-=======
-      "targetPrice": 24.32,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NGM"
     },
     {
@@ -29838,13 +19441,8 @@ const INDEX_DATA = {
       "pct_6m": -18.49,
       "pct_ytd": -11.96,
       "pct_1y": -14.75,
-<<<<<<< HEAD
       "trailingPE": 15.71,
       "forwardPE": 14.22,
-=======
-      "trailingPE": 15.7,
-      "forwardPE": 14.15,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -29861,11 +19459,7 @@ const INDEX_DATA = {
       "dist_ma50": 0.06,
       "dist_ma200": -11.23,
       "marketCap": "8.12B",
-<<<<<<< HEAD
       "targetPrice": 70.4,
-=======
-      "targetPrice": 70.45,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -29887,11 +19481,7 @@ const INDEX_DATA = {
       "pct_ytd": -29.34,
       "pct_1y": -40.36,
       "trailingPE": 27.75,
-<<<<<<< HEAD
       "forwardPE": 11.82,
-=======
-      "forwardPE": 12.17,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -29908,11 +19498,7 @@ const INDEX_DATA = {
       "dist_ma50": -5.63,
       "dist_ma200": -26.05,
       "marketCap": "7.82B",
-<<<<<<< HEAD
       "targetPrice": 96.86,
-=======
-      "targetPrice": 98.19,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -29934,11 +19520,7 @@ const INDEX_DATA = {
       "pct_ytd": -10.86,
       "pct_1y": -16.71,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 8.42,
-=======
-      "forwardPE": 8.36,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -29954,13 +19536,8 @@ const INDEX_DATA = {
       "dist_low": 8.27,
       "dist_ma50": 2.97,
       "dist_ma200": -7.07,
-<<<<<<< HEAD
       "marketCap": "7.83B",
       "targetPrice": 44.9,
-=======
-      "marketCap": "7.80B",
-      "targetPrice": 45.29,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -29981,13 +19558,8 @@ const INDEX_DATA = {
       "pct_6m": -18.95,
       "pct_ytd": -6.97,
       "pct_1y": -36.93,
-<<<<<<< HEAD
       "trailingPE": 175.9,
       "forwardPE": 12.13,
-=======
-      "trailingPE": 160.07,
-      "forwardPE": 11.96,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -30004,11 +19576,7 @@ const INDEX_DATA = {
       "dist_ma50": 1.34,
       "dist_ma200": -12.34,
       "marketCap": "7.12B",
-<<<<<<< HEAD
       "targetPrice": 26.76,
-=======
-      "targetPrice": 27.19,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NYQ"
     },
     {
@@ -30085,13 +19653,8 @@ const INDEX_DATA = {
       "dist_low": 0.0,
       "dist_ma50": null,
       "dist_ma200": null,
-<<<<<<< HEAD
       "marketCap": "1590.07B",
       "targetPrice": 240.65,
-=======
-      "marketCap": "1578.93B",
-      "targetPrice": 240.04,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30112,13 +19675,8 @@ const INDEX_DATA = {
       "pct_6m": 27.86,
       "pct_ytd": 62.55,
       "pct_1y": 141.64,
-<<<<<<< HEAD
       "trailingPE": 54.14,
       "forwardPE": 29.69,
-=======
-      "trailingPE": 59.95,
-      "forwardPE": 30.18,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 2,
       "is_danger_dead_cross": true,
@@ -30134,13 +19692,8 @@ const INDEX_DATA = {
       "dist_low": 152.17,
       "dist_ma50": 0.97,
       "dist_ma200": 27.78,
-<<<<<<< HEAD
       "marketCap": "670.25B",
       "targetPrice": 2310.86,
-=======
-      "marketCap": "667.96B",
-      "targetPrice": 2118.16,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30161,13 +19714,8 @@ const INDEX_DATA = {
       "pct_6m": 136.67,
       "pct_ytd": 146.65,
       "pct_1y": 66.51,
-<<<<<<< HEAD
       "trailingPE": 318.54,
       "forwardPE": 89.5,
-=======
-      "trailingPE": 313.5,
-      "forwardPE": 87.61,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -30183,13 +19731,8 @@ const INDEX_DATA = {
       "dist_low": 157.88,
       "dist_ma50": -14.91,
       "dist_ma200": 45.43,
-<<<<<<< HEAD
       "marketCap": "286.87B",
       "targetPrice": 310.76,
-=======
-      "marketCap": "287.96B",
-      "targetPrice": 304.78,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30210,13 +19753,8 @@ const INDEX_DATA = {
       "pct_6m": -10.15,
       "pct_ytd": -22.67,
       "pct_1y": -3.08,
-<<<<<<< HEAD
       "trailingPE": 122.36,
       "forwardPE": 52.34,
-=======
-      "trailingPE": 120.85,
-      "forwardPE": 53.2,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -30233,11 +19771,7 @@ const INDEX_DATA = {
       "dist_ma50": 10.52,
       "dist_ma200": -7.66,
       "marketCap": "161.53B",
-<<<<<<< HEAD
       "targetPrice": 150.92,
-=======
-      "targetPrice": 149.07,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30258,13 +19792,8 @@ const INDEX_DATA = {
       "pct_6m": -18.76,
       "pct_ytd": -24.11,
       "pct_1y": -22.94,
-<<<<<<< HEAD
       "trailingPE": 9.38,
       "forwardPE": 6.97,
-=======
-      "trailingPE": 9.07,
-      "forwardPE": 7.06,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -30281,11 +19810,7 @@ const INDEX_DATA = {
       "dist_ma50": -0.31,
       "dist_ma200": -18.76,
       "marketCap": "122.48B",
-<<<<<<< HEAD
       "targetPrice": 117.02,
-=======
-      "targetPrice": 116.41,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30306,13 +19831,8 @@ const INDEX_DATA = {
       "pct_6m": -10.95,
       "pct_ytd": -9.03,
       "pct_1y": -22.98,
-<<<<<<< HEAD
       "trailingPE": 48.38,
       "forwardPE": 32.49,
-=======
-      "trailingPE": 48.34,
-      "forwardPE": 31.4,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -30329,11 +19849,7 @@ const INDEX_DATA = {
       "dist_ma50": 8.6,
       "dist_ma200": -3.98,
       "marketCap": "92.90B",
-<<<<<<< HEAD
       "targetPrice": 2246.77,
-=======
-      "targetPrice": 2214.88,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30354,98 +19870,14 @@ const INDEX_DATA = {
       "pct_6m": 75.61,
       "pct_ytd": 85.8,
       "pct_1y": 153.58,
-<<<<<<< HEAD
       "trailingPE": 208.34,
       "forwardPE": 65.82,
-=======
-      "trailingPE": 207.44,
-      "forwardPE": 68.21,
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma20": -21.24,
-      "rsi14": 39.93,
-      "rsi14_w": 56.2,
-      "rsi14_m": 62.02,
-      "rel_vol": 0.48,
-      "dist_high": -36.01,
-      "dist_low": 208.26,
-      "dist_ma50": -9.31,
-      "dist_ma200": 51.77,
-      "marketCap": "52.98B",
-      "targetPrice": 297.01,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "CCEP",
-      "name": "Coca-Cola Europacific Partners PLC",
-      "sector": "Consumer Staples",
-      "sub_industry": "Beverages - Non-Alcoholic",
-      "sp500": false,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 106.14,
-      "pct_1d": 0.91,
-      "pct_1w": 0.13,
-      "pct_1m": 9.5,
-      "pct_3m": 10.7,
-      "pct_6m": 18.53,
-      "pct_ytd": 17.02,
-      "pct_1y": 8.74,
-      "trailingPE": 21.88,
-      "forwardPE": 18.93,
-      "ema_signal": 4,
-      "macd_state": 2,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-      "dist_sma20": 2.45,
-      "rsi14": 64.01,
-      "rsi14_w": 61.27,
-      "rsi14_m": 64.74,
-      "rel_vol": 0.83,
-      "dist_high": -3.88,
-      "dist_low": 24.24,
-      "dist_ma50": 8.43,
-      "dist_ma200": 12.16,
-      "marketCap": "46.97B",
-      "targetPrice": 107.06,
-      "exchange": "NMS"
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "sub_industry": "Engineering & Construction",
-      "sp500": false,
-      "nasdaq100": true,
-      "dowjones": false,
-      "is_watchlist": false,
-      "is_private": false,
-      "price": 63.45,
-      "pct_1d": -0.22,
-      "pct_1w": -0.39,
-      "pct_1m": -8.34,
-      "pct_3m": -9.68,
-      "pct_6m": -5.33,
-      "pct_ytd": -1.8,
-      "pct_1y": 19.97,
-      "trailingPE": 49.57,
-      "forwardPE": 43.07,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
-      "ema_signal": 1,
-      "macd_state": 1,
-      "is_danger_dead_cross": false,
-      "is_golden_cross_opportunity": false,
-      "dead_cross_count": 0,
-      "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -21.24,
       "rsi14": 39.93,
       "rsi14_w": 56.2,
@@ -30457,19 +19889,6 @@ const INDEX_DATA = {
       "dist_ma200": 51.77,
       "marketCap": "52.98B",
       "targetPrice": 313.21,
-=======
-      "dist_sma20": -4.61,
-      "rsi14": 34.89,
-      "rsi14_w": 42.76,
-      "rsi14_m": 61.3,
-      "rel_vol": 0.52,
-      "dist_high": -14.69,
-      "dist_low": 24.17,
-      "dist_ma50": -5.67,
-      "dist_ma200": -4.85,
-      "marketCap": "45.40B",
-      "targetPrice": 76.66,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30490,11 +19909,7 @@ const INDEX_DATA = {
       "pct_6m": 84.71,
       "pct_ytd": 118.17,
       "pct_1y": 248.71,
-<<<<<<< HEAD
       "trailingPE": 60.93,
-=======
-      "trailingPE": 70.51,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "forwardPE": -2442.1,
       "ema_signal": 1,
       "macd_state": 1,
@@ -30511,13 +19926,8 @@ const INDEX_DATA = {
       "dist_low": 262.34,
       "dist_ma50": -18.68,
       "dist_ma200": 32.14,
-<<<<<<< HEAD
       "marketCap": "45.96B",
       "targetPrice": 269.36,
-=======
-      "marketCap": "46.37B",
-      "targetPrice": 258.71,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30530,7 +19940,6 @@ const INDEX_DATA = {
       "dowjones": false,
       "is_watchlist": false,
       "is_private": false,
-<<<<<<< HEAD
       "price": 106.14,
       "pct_1d": 0.91,
       "pct_1w": 0.13,
@@ -30580,25 +19989,12 @@ const INDEX_DATA = {
       "pct_1y": 19.97,
       "trailingPE": 45.89,
       "forwardPE": 47.29,
-=======
-      "price": 65.74,
-      "pct_1d": -2.78,
-      "pct_1w": -14.32,
-      "pct_1m": -38.7,
-      "pct_3m": -24.12,
-      "pct_6m": -25.14,
-      "pct_ytd": -5.76,
-      "pct_1y": 39.31,
-      "trailingPE": null,
-      "forwardPE": 2191.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-<<<<<<< HEAD
       "dist_sma20": -4.61,
       "rsi14": 34.89,
       "rsi14_w": 42.76,
@@ -30610,19 +20006,6 @@ const INDEX_DATA = {
       "dist_ma200": -4.85,
       "marketCap": "45.72B",
       "targetPrice": 71.41,
-=======
-      "dist_sma20": -22.76,
-      "rsi14": 30.26,
-      "rsi14_w": 42.99,
-      "rsi14_m": 54.56,
-      "rel_vol": 0.65,
-      "dist_high": -56.24,
-      "dist_low": 66.51,
-      "dist_ma50": -38.04,
-      "dist_ma200": -15.18,
-      "marketCap": "41.08B",
-      "targetPrice": 114.33,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30643,13 +20026,8 @@ const INDEX_DATA = {
       "pct_6m": -20.55,
       "pct_ytd": -27.64,
       "pct_1y": -53.09,
-<<<<<<< HEAD
       "trailingPE": 28.06,
       "forwardPE": 18.98,
-=======
-      "trailingPE": 27.5,
-      "forwardPE": 18.91,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 4,
       "macd_state": 4,
       "is_danger_dead_cross": false,
@@ -30666,11 +20044,7 @@ const INDEX_DATA = {
       "dist_ma50": 10.93,
       "dist_ma200": -13.38,
       "marketCap": "41.66B",
-<<<<<<< HEAD
       "targetPrice": 120.56,
-=======
-      "targetPrice": 120.17,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30731,11 +20105,7 @@ const INDEX_DATA = {
       "pct_ytd": 2.02,
       "pct_1y": -41.51,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": -49.64,
-=======
-      "forwardPE": -49.94,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -30773,13 +20143,8 @@ const INDEX_DATA = {
       "pct_6m": -25.39,
       "pct_ytd": -31.43,
       "pct_1y": -14.93,
-<<<<<<< HEAD
       "trailingPE": 64.79,
       "forwardPE": 25.2,
-=======
-      "trailingPE": 68.34,
-      "forwardPE": 20.35,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -30796,11 +20161,7 @@ const INDEX_DATA = {
       "dist_ma50": -7.15,
       "dist_ma200": -23.87,
       "marketCap": "36.40B",
-<<<<<<< HEAD
       "targetPrice": 440.55,
-=======
-      "targetPrice": 434.83,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {
@@ -30822,11 +20183,7 @@ const INDEX_DATA = {
       "pct_ytd": -35.62,
       "pct_1y": -77.05,
       "trailingPE": null,
-<<<<<<< HEAD
       "forwardPE": 24.96,
-=======
-      "forwardPE": 21.92,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "ema_signal": 3,
       "macd_state": 3,
       "is_danger_dead_cross": false,
@@ -30842,13 +20199,8 @@ const INDEX_DATA = {
       "dist_low": 18.84,
       "dist_ma50": -23.45,
       "dist_ma200": -41.95,
-<<<<<<< HEAD
       "marketCap": "34.28B",
       "targetPrice": 295.38,
-=======
-      "marketCap": "35.47B",
-      "targetPrice": 303.64,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
       "exchange": "NMS"
     },
     {

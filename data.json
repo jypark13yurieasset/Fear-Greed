@@ -8058,11 +8058,7 @@
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-<<<<<<< HEAD
                 "mcap": "$27.881 T"
-=======
-                "mcap": "$27.866 T"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
             },
             {
                 "rank": 2,
@@ -8086,11 +8082,7 @@
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-<<<<<<< HEAD
                 "mcap": "$3.185 T"
-=======
-                "mcap": "$3.180 T"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
             },
             {
                 "rank": 6,
@@ -8144,11 +8136,7 @@
                 "rank": 14,
                 "name": "Bitcoin",
                 "code": "BTC",
-<<<<<<< HEAD
                 "mcap": "$1.307 T"
-=======
-                "mcap": "$1.306 T"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
             },
             {
                 "rank": 15,
@@ -8187,11 +8175,7 @@
                 "mcap": "$900.78 B"
             }
         ],
-<<<<<<< HEAD
         "aaii_bullish": 37.8,
-=======
-        "aaii_bullish": 37.7,
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
         "aaii_neutral": 24.5,
         "aaii_bearish": 37.8,
         "aaii_date": "2026-07-15",
@@ -8468,10 +8452,6 @@
                 "weight": 3.15
             }
         ],
-<<<<<<< HEAD
         "updated_at": "07-21 07:29 KST"
-=======
-        "updated_at": "07-21 08:15 KST"
->>>>>>> 492549f80c42ae623bdac2c977bfd9bf1fb8374a
     }
 }
