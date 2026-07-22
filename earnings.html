@@ -424,7 +424,6 @@
         <!-- Ticker Banner (shown after search) -->
         <div id="ticker-banner" class="ticker-banner" style="display: none;">
             <span class="ticker-banner-symbol" id="banner-symbol"></span>
-            <span class="ticker-banner-desc">TradingView에서 제공하는 실시간 데이터를 표시합니다. 아래에서 각 위젯을 확인하세요.</span>
         </div>
 
         <!-- Empty state (shown before search) -->
@@ -437,11 +436,15 @@
         <div class="widgets-grid" id="widgets-container" style="display: none;">
 
 
-            <!-- 2. Advanced Chart (relative to SPY) -->
-            <div class="widget-card full-width" id="widget-chart-rel">
-                <div class="widget-label">📉 SPY 대비 상대강도 차트 (Relative to SPY)</div>
-                <div class="widget-inner" id="chart-rel-inner"></div>
+            <!-- 4. EPS Estimates Revision -->
+            <div class="widget-card full-width" id="widget-eps-revision">
+                <div class="widget-label">📊 EPS 추정치 변화 (EPS Estimates Revision)</div>
+                <div class="widget-inner" id="eps-revision-inner">
+                    <div class="insider-loading">종목을 검색하면 EPS 추정치 데이터가 표시됩니다.</div>
+                </div>
             </div>
+
+
 
             <!-- 3. Insider Trading (OpenInsider) -->
             <div class="widget-card full-width" id="widget-insider">
@@ -455,6 +458,8 @@
     </main>
 
     <script src="./data/index_constituents.js"></script>
+    <script src="./data/eps_trend.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Mouse glow effect for widget cards
         document.addEventListener('mousemove', e => {
@@ -531,28 +536,11 @@
             document.getElementById('banner-symbol').textContent = tvSymbol;
 
 
-            // ─── 2. Advanced Chart (relative to SPY) ───
-            injectWidget('chart-rel-inner',
-                'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js',
-                {
-                    "width": "100%",
-                    "height": 550,
-                    "symbol": spreadSymbol,
-                    "interval": "D",
-                    "timezone": "America/New_York",
-                    "theme": "dark",
-                    "style": "2",
-                    "locale": "kr",
-                    "enable_publishing": false,
-                    "hide_top_toolbar": false,
-                    "hide_legend": false,
-                    "save_image": false,
-                    "isTransparent": true
-                }
-            );
-
             // ─── 3. Insider Trading (OpenInsider) ───
             loadInsiderTrading(rawTicker);
+
+            // ─── 4. EPS Estimates Revision ───
+            loadEpsRevision(rawTicker);
         }
 
         async function loadInsiderTrading(ticker) {
@@ -654,6 +642,96 @@
             tableHtml += `<a href="http://openinsider.com/screener?s=${ticker}" target="_blank" class="insider-link">📎 OpenInsider에서 전체 내역 보기 →</a>`;
 
             container.innerHTML = tableHtml;
+        }
+
+        function loadEpsRevision(ticker) {
+            const container = document.getElementById('eps-revision-inner');
+            
+            const noDataHtml = `
+                <div style="text-align: center; color: #a0aabc; padding: 60px 20px; background: rgba(0,0,0,0.15); border-radius: 8px; border: 1px dashed rgba(255,255,255,0.1);">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px; opacity: 0.8;">📡</div>
+                    <div style="font-size: 1.1rem; font-weight: 500; color: #e0e0e0; margin-bottom: 8px; letter-spacing: -0.5px;">데이터가 제공되지 않는 종목입니다</div>
+                    <div style="font-size: 0.9rem; line-height: 1.5;">(주로 Class B 주식 등에서 발생)</div>
+                </div>
+            `;
+
+            if (!window.eps_trend_data || !window.eps_trend_data[ticker]) {
+                container.innerHTML = noDataHtml;
+                return;
+            }
+
+            const data = window.eps_trend_data[ticker];
+            const data0q = data['0q'];
+            const data1q = data['+1q'];
+            const data0y = data['0y'];
+            const data1y = data['+1y'];
+
+            if (!data0q && !data1q && !data0y && !data1y) {
+                container.innerHTML = noDataHtml;
+                return;
+            }
+
+            let html = '<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%;">';
+            
+            const createChartDiv = (title, id) => {
+                return '<div style="position: relative; background: rgba(0,0,0,0.1); border-radius: 8px; padding: 15px;">' +
+                       '<h3 style="text-align: center; color: #e0e0e0; font-size: 1rem; margin-bottom: 10px; font-weight: 500;">' + title + '</h3>' +
+                       '<div style="position: relative; height: 280px; width: 100%;"><canvas id="' + id + '"></canvas></div></div>';
+            };
+
+            if (data0q) html += createChartDiv('Current Quarter', 'epsChart0q');
+            if (data1q) html += createChartDiv('Next Quarter', 'epsChart1q');
+            if (data0y) html += createChartDiv('Current Year', 'epsChart0y');
+            if (data1y) html += createChartDiv('Next Year', 'epsChart1y');
+            
+            html += '</div><div style="text-align: right; margin-top: 10px; font-size: 0.8rem; color: #a0aabc;"><a href="https://finance.yahoo.com/quote/' + ticker + '/analysis/" target="_blank" style="color: #a0aabc; text-decoration: underline;">출처: Yahoo Finance Analysis</a></div>';
+            container.innerHTML = html;
+
+            const labels = ['90 Days Ago', '60 Days Ago', '30 Days Ago', '7 Days Ago', 'Current'];
+            
+            const commonOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) { return Number(context.parsed.y).toFixed(2) + ' USD'; }
+                        }
+                    }
+                },
+                scales: {
+                    x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#e0e0e0', font: { family: "'Pretendard', sans-serif" } } },
+                    y: { grid: { color: 'rgba(255, 255, 255, 0.1)' }, ticks: { color: '#e0e0e0', font: { family: "'Pretendard', sans-serif" }, callback: function(value) { return Number(value).toFixed(2) + ' USD'; } } }
+                }
+            };
+
+            const renderChart = (id, label, chartData, color) => {
+                if (!chartData) return;
+                const ctx = document.getElementById(id).getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: label,
+                            data: chartData,
+                            borderColor: color,
+                            backgroundColor: color.replace('1)', '0.1)'),
+                            stepped: true,
+                            fill: true,
+                            pointBackgroundColor: color,
+                            pointRadius: 5
+                        }]
+                    },
+                    options: commonOptions
+                });
+            };
+
+            renderChart('epsChart0q', 'Current Quarter', data0q, 'rgba(54, 162, 235, 1)');
+            renderChart('epsChart1q', 'Next Quarter', data1q, 'rgba(255, 159, 64, 1)');
+            renderChart('epsChart0y', 'Current Year', data0y, 'rgba(75, 192, 192, 1)');
+            renderChart('epsChart1y', 'Next Year', data1y, 'rgba(255, 99, 132, 1)');
         }
 
 
