@@ -13,12 +13,41 @@ INPUT_JSON = os.path.join(DATA_DIR, 'index_constituents.json')
 OUTPUT_JSON = os.path.join(DATA_DIR, 'eps_trend.json')
 OUTPUT_JS = os.path.join(DATA_DIR, 'eps_trend.js')
 
+def _end_date_to_label(end_date_str, is_yearly=False):
+    """Convert '2026-09-30' to 'Sep 2026' for quarters, or '2026' for years."""
+    try:
+        from datetime import datetime
+        dt = datetime.strptime(end_date_str, '%Y-%m-%d')
+        if is_yearly:
+            return str(dt.year)
+        return dt.strftime('%b %Y')  # e.g. 'Sep 2026'
+    except Exception:
+        return None
+
 def fetch_eps_trend(ticker):
     try:
         t = yf.Ticker(ticker)
         df = t.eps_trend
         if df is None or df.empty:
             return ticker, None
+        
+        # Extract endDate labels from raw earnings trend data
+        labels = {}
+        try:
+            analysis = t._analysis
+            analysis._fetch_earnings_trend()
+            raw_trend = analysis._earnings_trend
+            if raw_trend:
+                for item in raw_trend:
+                    period = item.get('period')
+                    end_date = item.get('endDate')
+                    if period and end_date:
+                        is_yearly = period in ['0y', '+1y']
+                        label = _end_date_to_label(end_date, is_yearly)
+                        if label:
+                            labels[period] = label
+        except Exception:
+            pass
         
         # We want to extract '0y', '+1y', '0q', and '+1q' periods
         data = {}
@@ -35,6 +64,34 @@ def fetch_eps_trend(ticker):
         
         if not data:
             return ticker, None
+        
+        # Attach labels if available
+        if labels:
+            data['_labels'] = labels
+            
+        # Extract financial highlights
+        financial_highlights_keys = [
+            'nextFiscalYearEnd', 'mostRecentQuarter',
+            'profitMargins', 'operatingMargins',
+            'returnOnAssets', 'returnOnEquity', 'totalRevenue', 'revenuePerShare',
+            'revenueGrowth', 'grossProfits', 'ebitda', 'netIncomeToCommon',
+            'trailingEps', 'forwardEps', 'earningsGrowth', 'totalCash',
+            'totalCashPerShare', 'totalDebt', 'debtToEquity', 'currentRatio',
+            'bookValue', 'operatingCashflow', 'freeCashflow'
+        ]
+        
+        try:
+            info = t.info
+            if info:
+                highlights = {}
+                for k in financial_highlights_keys:
+                    val = info.get(k)
+                    if pd.notna(val):
+                        highlights[k] = val
+                if highlights:
+                    data['_financial_highlights'] = highlights
+        except Exception:
+            pass
             
         return ticker, data
     except Exception as e:

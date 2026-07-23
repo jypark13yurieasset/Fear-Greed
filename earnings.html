@@ -444,6 +444,14 @@
                 </div>
             </div>
 
+            <!-- 5. Financial Highlights -->
+            <div class="widget-card full-width" id="widget-financial-highlights">
+                <div class="widget-label">📑 주요 재무 지표 (Financial Highlights)</div>
+                <div class="widget-inner" id="financial-highlights-inner">
+                    <div class="insider-loading">종목을 검색하면 주요 재무 지표가 표시됩니다.</div>
+                </div>
+            </div>
+
 
 
             <!-- 3. Insider Trading (OpenInsider) -->
@@ -541,6 +549,9 @@
 
             // ─── 4. EPS Estimates Revision ───
             loadEpsRevision(rawTicker);
+            
+            // ─── 5. Financial Highlights ───
+            loadFinancialHighlights(rawTicker);
         }
 
         async function loadInsiderTrading(ticker) {
@@ -665,6 +676,7 @@
             const data1q = data['+1q'];
             const data0y = data['0y'];
             const data1y = data['+1y'];
+            const periodLabels = data['_labels'] || {};
 
             if (!data0q && !data1q && !data0y && !data1y) {
                 container.innerHTML = noDataHtml;
@@ -679,10 +691,15 @@
                        '<div style="position: relative; height: 280px; width: 100%;"><canvas id="' + id + '"></canvas></div></div>';
             };
 
-            if (data0q) html += createChartDiv('Current Quarter', 'epsChart0q');
-            if (data1q) html += createChartDiv('Next Quarter', 'epsChart1q');
-            if (data0y) html += createChartDiv('Current Year', 'epsChart0y');
-            if (data1y) html += createChartDiv('Next Year', 'epsChart1y');
+            const titleWithLabel = (base, period) => {
+                const lbl = periodLabels[period];
+                return lbl ? base + ' (' + lbl + ')' : base;
+            };
+
+            if (data0q) html += createChartDiv(titleWithLabel('Current Quarter', '0q'), 'epsChart0q');
+            if (data1q) html += createChartDiv(titleWithLabel('Next Quarter', '+1q'), 'epsChart1q');
+            if (data0y) html += createChartDiv(titleWithLabel('Current Year', '0y'), 'epsChart0y');
+            if (data1y) html += createChartDiv(titleWithLabel('Next Year', '+1y'), 'epsChart1y');
             
             html += '</div><div style="text-align: right; margin-top: 10px; font-size: 0.8rem; color: #a0aabc;"><a href="https://finance.yahoo.com/quote/' + ticker + '/analysis/" target="_blank" style="color: #a0aabc; text-decoration: underline;">출처: Yahoo Finance Analysis</a></div>';
             container.innerHTML = html;
@@ -732,6 +749,110 @@
             renderChart('epsChart1q', 'Next Quarter', data1q, 'rgba(255, 159, 64, 1)');
             renderChart('epsChart0y', 'Current Year', data0y, 'rgba(75, 192, 192, 1)');
             renderChart('epsChart1y', 'Next Year', data1y, 'rgba(255, 99, 132, 1)');
+        }
+
+        function formatNumber(num, isPercent = false, isCurrency = false) {
+            if (num === null || num === undefined || isNaN(num)) return '-';
+            if (isPercent) return (num * 100).toFixed(2) + '%';
+            if (isCurrency) {
+                if (Math.abs(num) >= 1e9) return '$' + (num / 1e9).toFixed(2) + 'B';
+                if (Math.abs(num) >= 1e6) return '$' + (num / 1e6).toFixed(2) + 'M';
+                return '$' + num.toLocaleString();
+            }
+            return num.toLocaleString();
+        }
+
+        function loadFinancialHighlights(ticker) {
+            const container = document.getElementById('financial-highlights-inner');
+            if (!window.eps_trend_data || !window.eps_trend_data[ticker]) {
+                container.innerHTML = '<div style="text-align:center;color:#a0aabc;padding:30px;">해당 종목의 데이터가 없습니다.</div>';
+                return;
+            }
+
+            const data = window.eps_trend_data[ticker];
+            const highlights = data['_financial_highlights'];
+            if (!highlights) {
+                container.innerHTML = '<div style="text-align:center;color:#a0aabc;padding:30px;">주요 재무 지표 정보가 없습니다.</div>';
+                return;
+            }
+
+            const formatTimestampToDate = (ts) => {
+                if (!ts) return '-';
+                const d = new Date(ts * 1000);
+                return `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
+            };
+
+            const groups = [
+                {
+                    title: "Income Statement",
+                    items: [
+                        { label: "Revenue (ttm)", value: formatNumber(highlights.totalRevenue, false, true) },
+                        { label: "Revenue Per Share (ttm)", value: formatNumber(highlights.revenuePerShare, false, true) },
+                        { label: "Quarterly Revenue Growth (yoy)", value: formatNumber(highlights.revenueGrowth, true) },
+                        { label: "Gross Profit (ttm)", value: formatNumber(highlights.grossProfits, false, true) },
+                        { label: "EBITDA", value: formatNumber(highlights.ebitda, false, true) },
+                        { label: "Net Income Avi to Common (ttm)", value: formatNumber(highlights.netIncomeToCommon, false, true) },
+                        { label: "Diluted EPS (ttm)", value: formatNumber(highlights.trailingEps, false, true) },
+                        { label: "Quarterly Earnings Growth (yoy)", value: formatNumber(highlights.earningsGrowth, true) }
+                    ]
+                },
+                {
+                    title: "Balance Sheet",
+                    items: [
+                        { label: "Total Cash (mrq)", value: formatNumber(highlights.totalCash, false, true) },
+                        { label: "Total Cash Per Share (mrq)", value: formatNumber(highlights.totalCashPerShare, false, true) },
+                        { label: "Total Debt (mrq)", value: formatNumber(highlights.totalDebt, false, true) },
+                        { label: "Total Debt/Equity (mrq)", value: formatNumber(highlights.debtToEquity) },
+                        { label: "Current Ratio (mrq)", value: formatNumber(highlights.currentRatio) },
+                        { label: "Book Value Per Share (mrq)", value: formatNumber(highlights.bookValue, false, true) }
+                    ]
+                },
+                {
+                    title: "Cash Flow Statement",
+                    items: [
+                        { label: "Operating Cash Flow (ttm)", value: formatNumber(highlights.operatingCashflow, false, true) },
+                        { label: "Levered Free Cash Flow (ttm)", value: formatNumber(highlights.freeCashflow, false, true) }
+                    ]
+                },
+                {
+                    title: "Profitability",
+                    items: [
+                        { label: "Profit Margin", value: formatNumber(highlights.profitMargins, true) },
+                        { label: "Operating Margin (ttm)", value: formatNumber(highlights.operatingMargins, true) }
+                    ]
+                },
+                {
+                    title: "Management Effectiveness",
+                    items: [
+                        { label: "Return on Assets (ttm)", value: formatNumber(highlights.returnOnAssets, true) },
+                        { label: "Return on Equity (ttm)", value: formatNumber(highlights.returnOnEquity, true) }
+                    ]
+                },
+                {
+                    title: "Fiscal Year",
+                    items: [
+                        { label: "Fiscal Year Ends", value: formatTimestampToDate(highlights.nextFiscalYearEnd) },
+                        { label: "Most Recent Quarter (mrq)", value: formatTimestampToDate(highlights.mostRecentQuarter) }
+                    ]
+                }
+            ];
+
+            let html = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 10px;">';
+            groups.forEach(g => {
+                html += '<div style="background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); padding: 15px;">';
+                html += '<h4 style="color: #64B5F6; margin-bottom: 12px; font-size: 0.95rem; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">' + g.title + '</h4>';
+                html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">';
+                g.items.forEach(item => {
+                    html += '<tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">';
+                    html += '<td style="padding: 8px 0; color: #a0aabc;">' + item.label + '</td>';
+                    html += '<td style="padding: 8px 0; color: #e0e0e0; text-align: right; font-weight: 500;">' + item.value + '</td>';
+                    html += '</tr>';
+                });
+                html += '</table></div>';
+            });
+            html += '</div>';
+
+            container.innerHTML = html;
         }
 
 
