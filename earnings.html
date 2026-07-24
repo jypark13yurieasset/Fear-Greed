@@ -17,6 +17,8 @@
             --card-border: rgba(130, 140, 180, 0.1);
             --text-primary: #e1e4ed;
             --text-secondary: #8b92a8;
+            --accent: #7c8cf5;
+            --accent-dim: rgba(124, 140, 245, 0.15);
             --accent-glow: 0 15px 35px -10px rgba(130, 140, 200, 0.08);
             --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             --color-primary: #7c8cf5;
@@ -416,6 +418,11 @@
             <p class="dashboard-subtitle">종목 검색 및 기업 실적 확인 (On-Demand) &nbsp;|&nbsp; <span id="update-date">기준일: -</span></p>
         </header>
 
+        <div style="display: flex; justify-content: flex-end; margin-bottom: 10px; width: 100%;">
+            <a id="marketscreener-link" href="https://www.marketscreener.com/" target="_blank" style="font-size: 0.75rem; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; display: flex; align-items: center; gap: 4px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent)'">
+                MarketScreener ↗
+            </a>
+        </div>
         <div class="search-container">
             <input type="text" id="ticker-input" class="search-input" placeholder="종목 티커를 입력하세요 (예: AAPL, TSLA, NVDA)" autocomplete="off" spellcheck="false">
             <button id="search-btn" class="search-button">검색</button>
@@ -533,6 +540,9 @@
 
             const tvSymbol = getTvSymbol(rawTicker);
             const spreadSymbol = tvSymbol + "/AMEX:SPY";
+
+            // Update MarketScreener link
+            document.getElementById('marketscreener-link').href = 'https://www.marketscreener.com/search/?q=' + rawTicker;
 
             // Show widgets grid, hide empty state
             document.getElementById('empty-state').style.display = 'none';
