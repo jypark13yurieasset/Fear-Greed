@@ -972,6 +972,7 @@
                     <button class="preset-btn active" id="preset-all" onclick="selectPreset('all')">전체 종목</button>
                     <button class="preset-btn btn-sexy-preset" id="preset-today" onclick="selectPreset('today')">오늘의 종목 🚨</button>
                     <button class="preset-btn" id="preset-watchlist" onclick="selectPreset('watchlist')">나의 관심종목 ⭐⭐</button>
+                    <button class="preset-btn" id="preset-targetgap" onclick="selectPreset('targetgap')">목표가 갭 랭킹 🚀</button>
                     <button class="preset-btn" id="preset-epsgrowth" onclick="selectPreset('epsgrowth')">실적 성장 모멘텀 📈</button>
                     <button class="preset-btn" id="preset-macdgolden" onclick="selectPreset('macdgolden')">MACD 골든 📈</button>
                     <!-- Removed momentumtop -->
@@ -1419,6 +1420,13 @@
                     .slice(0, 50);
                 const mcapTickers = new Set(mcapTop.map(s => s.ticker));
                 filteredStocks = filteredStocks.filter(s => mcapTickers.has(s.ticker));
+            } else if (activePreset === 'targetgap') {
+                const topGaps = [...filteredStocks]
+                    .filter(s => s.target_dist !== null)
+                    .sort((a, b) => b.target_dist - a.target_dist)
+                    .slice(0, 50);
+                const gapTickers = new Set(topGaps.map(s => s.ticker));
+                filteredStocks = filteredStocks.filter(s => gapTickers.has(s.ticker));
             }
 
             // Update stats
