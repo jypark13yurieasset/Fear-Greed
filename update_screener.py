@@ -684,26 +684,28 @@ for t, s in stock_map.items():
         # Danger Dead Cross (MACD Histogram < 0 AND EMA 8 crossed below EMA 21 in last 3 days)
         is_danger_dead_cross = False
         if macd_state in [1, 2] and ema8 is not None and ema21 is not None and ema8 < ema21: # Histogram < 0 AND Currently in Dead Cross state
-            ema8_arr = get_ema_array(closes, 8)
-            ema21_arr = get_ema_array(closes, 21)
-            if len(ema8_arr) >= 4:
-                for i in range(-3, 0):
-                    if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
-                        if ema8_arr[i] < ema21_arr[i] and ema8_arr[i-1] >= ema21_arr[i-1]:
-                            is_danger_dead_cross = True
-                            break
+            if dist_ma50 is not None and dist_ma50 < 0: # 🩸 SMA 50 하향 돌파 (핵심 지지선 붕괴)
+                ema8_arr = get_ema_array(closes, 8)
+                ema21_arr = get_ema_array(closes, 21)
+                if len(ema8_arr) >= 4:
+                    for i in range(-3, 0):
+                        if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
+                            if ema8_arr[i] < ema21_arr[i] and ema8_arr[i-1] >= ema21_arr[i-1]:
+                                is_danger_dead_cross = True
+                                break
                             
         # Golden Cross Opportunity (MACD Histogram > 0 AND EMA 8 crossed above EMA 21 in last 3 days)
         is_golden_cross_opportunity = False
         if macd_state in [3, 4] and ema8 is not None and ema21 is not None and ema8 > ema21: # Histogram > 0 AND Currently in Golden Cross state
-            ema8_arr = get_ema_array(closes, 8)
-            ema21_arr = get_ema_array(closes, 21)
-            if len(ema8_arr) >= 4:
-                for i in range(-3, 0):
-                    if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
-                        if ema8_arr[i] > ema21_arr[i] and ema8_arr[i-1] <= ema21_arr[i-1]:
-                            is_golden_cross_opportunity = True
-                            break
+            if dist_ma200 is not None and dist_ma200 > 0: # 🚀 SMA 200 상향 (장기 상승 추세 유지)
+                ema8_arr = get_ema_array(closes, 8)
+                ema21_arr = get_ema_array(closes, 21)
+                if len(ema8_arr) >= 4:
+                    for i in range(-3, 0):
+                        if ema8_arr[i] is not None and ema21_arr[i] is not None and ema8_arr[i-1] is not None and ema21_arr[i-1] is not None:
+                            if ema8_arr[i] > ema21_arr[i] and ema8_arr[i-1] <= ema21_arr[i-1]:
+                                is_golden_cross_opportunity = True
+                                break
 
         # Track Consecutive Signals (Streak)
         # Use the actual latest trading date from price data, not calendar date,
@@ -903,48 +905,47 @@ def send_telegram_notification():
         print("\n⚠️ TELEGRAM_BOT_TOKEN 또는 TELEGRAM_CHAT_ID가 .env에 없습니다.")
         return
     
-    # 골든크로스 종목 필터링
+    # 골든크로스 종목만 전송
     golden_stocks = [s for s in stocks_output if s.get('is_golden_cross_opportunity')]
-    dead_stocks = [s for s in stocks_output if s.get('is_danger_dead_cross')]
     
-    if not golden_stocks and not dead_stocks:
-        print("\n📭 골든크로스/데드크로스 종목이 없어 텔레그램 알림을 건너뜁니다.")
+    if not golden_stocks:
+        print("\n📭 골든크로스 종목이 없어 텔레그램 알림을 건너뜁니다.")
         return
+        
+    def parse_mcap(mcap_str):
+        if not mcap_str or mcap_str == '-': return 0
+        mcap_str = str(mcap_str).replace(',', '').strip()
+        if mcap_str.endswith('B'): return float(mcap_str[:-1]) * 1e9
+        if mcap_str.endswith('M'): return float(mcap_str[:-1]) * 1e6
+        if mcap_str.endswith('T'): return float(mcap_str[:-1]) * 1e12
+        if mcap_str.endswith('원'): return float(mcap_str[:-1]) * 0.00075
+        try: return float(mcap_str)
+        except: return 0
+        
+    golden_stocks.sort(key=lambda x: parse_mcap(x.get('marketCap', '')), reverse=True)
     
     # 메시지 구성 (HTML 파싱 모드)
     msg_lines = [f"📊 <b>Jypark13 스크리너 알림</b>", f"📅 기준일: <code>{run_date_str}</code>", ""]
     
-    if golden_stocks:
-        msg_lines.append(f"🚀 <b>최적 매수 타이밍</b> ({len(golden_stocks)}종목)")
-        msg_lines.append("상승 모멘텀 + 최근 2일 골든크로스 발생")
-        msg_lines.append("")
-        for s in golden_stocks:
-            ticker = s['ticker']
-            name = s.get('name', '')
-            pct_1d = s.get('pct_1d')
-            streak = s.get('golden_cross_count', 0)
-            
-            pct_str = f"{pct_1d:+.1f}%" if pct_1d is not None else "-"
-            streak_str = f" ({streak}일)" if streak >= 2 else ""
-            
-            msg_lines.append(f"• <code>{ticker}</code> {name} | 1D: {pct_str}{streak_str}")
-        msg_lines.append("")
+    msg_lines.append(f"🚀 <b>최적 매수 타이밍</b> ({len(golden_stocks)}종목)")
+    msg_lines.append("상승 모멘텀 + 최근 3일 골든크로스 발생")
+    msg_lines.append("")
     
-    if dead_stocks:
-        msg_lines.append(f"💀 <b>투매 경고</b> ({len(dead_stocks)}종목)")
-        msg_lines.append("하락 모멘텀 + 최근 2일 데드크로스 발생")
-        msg_lines.append("")
-        for s in dead_stocks:
-            ticker = s['ticker']
-            name = s.get('name', '')
-            pct_1d = s.get('pct_1d')
-            streak = s.get('dead_cross_count', 0)
+    for s in golden_stocks:
+        ticker = s['ticker']
+        rsi14 = s.get('rsi14')
+        rsi_str = f"{rsi14:.1f}" if rsi14 is not None else "-"
+        
+        pe = s.get('trailingPE')
+        fpe = s.get('forwardPE')
+        
+        eps_gr_str = "-"
+        if pe is not None and fpe is not None and fpe > 0:
+            eps_gr = (pe / fpe - 1) * 100
+            eps_gr_str = f"+{eps_gr:.2f}%" if eps_gr > 0 else f"{eps_gr:.2f}%"
             
-            pct_str = f"{pct_1d:+.1f}%" if pct_1d is not None else "-"
-            streak_str = f" ({streak}일)" if streak >= 2 else ""
-            
-            msg_lines.append(f"• <code>{ticker}</code> {name} | 1D: {pct_str}{streak_str}")
-    
+        msg_lines.append(f"• <code>{ticker}</code> | ({eps_gr_str} / {rsi_str})")
+        
     message = "\n".join(msg_lines)
     
     # 텔레그램 API 전송
@@ -959,7 +960,7 @@ def send_telegram_notification():
     try:
         resp = requests.post(url, json=payload, timeout=10)
         if resp.status_code == 200:
-            print(f"\n📲 텔레그램 알림 전송 성공! (골든크로스 {len(golden_stocks)}개, 데드크로스 {len(dead_stocks)}개)")
+            print(f"\n📲 텔레그램 알림 전송 성공! (골든크로스 {len(golden_stocks)}개)")
         else:
             print(f"\n❌ 텔레그램 전송 실패: {resp.status_code} - {resp.text}")
     except Exception as e:

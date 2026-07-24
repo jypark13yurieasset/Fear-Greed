@@ -272,111 +272,6 @@
         }
 
         /* ─── Signal History ─── */
-        .winrate-summary {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .winrate-box {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            padding: 15px;
-            text-align: center;
-        }
-
-        .winrate-box.golden .value {
-            color: #00d26a;
-        }
-
-        .winrate-box.dead .value {
-            color: #f93c65;
-        }
-
-        .winrate-box .label {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .winrate-box .value {
-            font-size: 1.8rem;
-            font-weight: 800;
-        }
-
-        .signal-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            overflow-y: auto;
-            max-height: 500px;
-            padding-right: 5px;
-        }
-
-        .signal-list::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .signal-list::-webkit-scrollbar-thumb {
-            background-color: rgba(130, 140, 180, 0.3);
-            border-radius: 3px;
-        }
-
-        .signal-item {
-            background: rgba(255, 255, 255, 0.02);
-            border-left: 3px solid transparent;
-            padding: 12px 15px;
-            border-radius: 8px;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            align-items: center;
-            font-size: 0.85rem;
-        }
-
-        .signal-item.golden {
-            border-left-color: #00d26a;
-        }
-
-        .signal-item.dead {
-            border-left-color: #f93c65;
-        }
-
-        .signal-info .ticker {
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .signal-info .date {
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-        }
-
-        .badge {
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .badge.win {
-            background: rgba(0, 210, 106, 0.15);
-            color: #00d26a;
-        }
-
-        .badge.loss {
-            background: rgba(249, 60, 101, 0.15);
-            color: #f93c65;
-        }
-
-        .badge.pending {
-            background: rgba(139, 146, 168, 0.15);
-            color: #8b92a8;
-        }
     </style>
 </head>
 
@@ -518,32 +413,14 @@
                 <div id="sector-cards-container">
                     <!-- JS Injected -->
                 </div>
-            </div>
-
-            <!-- 시그널 히스토리 보드 -->
-            <div class="insight-card">
-                <h2 class="card-title">🎯 Signal Win Rate (Past 30 Days)</h2>
-                <div class="tab-container">
-                    <button class="tab-btn active" onclick="switchSignalTab(1)" id="btn-signal-1">1일 포착</button>
-                    <button class="tab-btn" onclick="switchSignalTab(2)" id="btn-signal-2">2일 연속</button>
-                    <button class="tab-btn" onclick="switchSignalTab(3)" id="btn-signal-3">3일 연속</button>
-                    <button class="tab-btn" onclick="switchSignalTab(4)" id="btn-signal-4">4일 연속</button>
-                    <button class="tab-btn" onclick="switchSignalTab(5)" id="btn-signal-5">5일 연속</button>
-                </div>
-                <div id="signal-cards-container">
-                    <!-- JS Injected -->
-                </div>
-            </div>
         </div>
     </div>
 
     <!-- Data Scripts -->
     <script src="./data/index_constituents.js"></script>
-    <script src="./data/signal_log.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             renderSectorRanking();
-            renderSignalHistory();
         });
 
         function renderSectorRanking() {
@@ -648,112 +525,6 @@
             }
         }
 
-        function renderSignalHistory() {
-            if (typeof SIGNAL_LOG_DATA === 'undefined' || typeof INDEX_DATA === 'undefined') return;
-
-            // 현재가 매핑을 위한 딕셔너리
-            const priceMap = {};
-            (INDEX_DATA.stocks || []).forEach(s => {
-                priceMap[s.ticker] = s.price;
-            });
-
-            const mainContainer = document.getElementById('signal-cards-container');
-            mainContainer.innerHTML = ''; // clear
-
-            // 1일, 2일, 3일, 4일, 5일 연속 처리
-            [1, 2, 3, 4, 5].forEach(streakLevel => {
-                // 이 streakLevel에 해당하는 로그만 필터링
-                const logs = SIGNAL_LOG_DATA.filter(l => (l.streak || 1) === streakLevel)
-                    .sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                let goldenTotal = 0, goldenWins = 0;
-                let deadTotal = 0, deadWins = 0;
-                let listHtml = '';
-
-                logs.forEach(log => {
-                    const currentPrice = priceMap[log.ticker];
-                    let isWin = null;
-                    let returnPct = 0;
-
-                    if (currentPrice && log.entry_price) {
-                        returnPct = ((currentPrice - log.entry_price) / log.entry_price) * 100;
-
-                        if (log.type === 'golden') {
-                            isWin = currentPrice > log.entry_price;
-                            goldenTotal++;
-                            if (isWin) goldenWins++;
-                        } else if (log.type === 'dead') {
-                            isWin = currentPrice < log.entry_price; // 데드크로스는 떨어져야 Win
-                            deadTotal++;
-                            if (isWin) deadWins++;
-                        }
-                    }
-
-                    const sign = returnPct > 0 ? '+' : '';
-                    const typeIcon = log.type === 'golden' ? '🚀' : '💀';
-
-                    let badgeHtml = `<div class="badge pending">Pending</div>`;
-                    if (isWin === true) badgeHtml = `<div class="badge win">Win (${sign}${returnPct.toFixed(1)}%)</div>`;
-                    else if (isWin === false) badgeHtml = `<div class="badge loss">Loss (${sign}${returnPct.toFixed(1)}%)</div>`;
-
-                    listHtml += `
-                        <div class="signal-item ${log.type}">
-                            <div class="signal-info">
-                                <div class="ticker">${typeIcon} ${log.ticker} <span style="font-weight: 400; font-size: 0.75rem;">${log.name}</span></div>
-                                <div class="date">${log.date}</div>
-                            </div>
-                            <div style="text-align: right; font-family: monospace;">$${log.entry_price ? log.entry_price.toFixed(2) : '-'}</div>
-                            <div style="text-align: right; font-family: monospace; color: #fff;">$${currentPrice ? currentPrice.toFixed(2) : '-'}</div>
-                            <div style="text-align: right;">${badgeHtml}</div>
-                        </div>
-                    `;
-                });
-
-                const goldenWinRate = goldenTotal > 0 ? ((goldenWins / goldenTotal) * 100).toFixed(1) : '--';
-                const deadWinRate = deadTotal > 0 ? ((deadWins / deadTotal) * 100).toFixed(1) : '--';
-
-                const displayStyle = streakLevel === 1 ? 'block' : 'none';
-
-                const sectionHtml = `
-                    <div id="signal-list-${streakLevel}" style="display: ${displayStyle};">
-                        <div class="winrate-summary">
-                            <div class="winrate-box golden">
-                                <div class="label">Golden Cross Win Rate</div>
-                                <div class="value">${goldenWinRate}%</div>
-                            </div>
-                            <div class="winrate-box dead">
-                                <div class="label">Dead Cross Win Rate</div>
-                                <div class="value">${deadWinRate}%</div>
-                            </div>
-                        </div>
-                        
-                        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; font-size: 0.75rem; color: var(--text-secondary); padding: 0 15px 10px; font-weight: 600;">
-                            <div>종목 / 발생일</div>
-                            <div style="text-align: right;">발생가</div>
-                            <div style="text-align: right;">현재가</div>
-                            <div style="text-align: right;">결과</div>
-                        </div>
-                        <div class="signal-list" style="max-height: 250px;">
-                            ${listHtml || '<div style="text-align:center; padding:20px; color:var(--text-secondary);">해당 조건의 시그널 기록이 없습니다.</div>'}
-                        </div>
-                    </div>
-                `;
-
-                mainContainer.insertAdjacentHTML('beforeend', sectionHtml);
-            });
-        }
-
-        function switchSignalTab(level) {
-            for (let i = 1; i <= 5; i++) {
-                document.getElementById(`btn-signal-${i}`).classList.remove('active');
-                const list = document.getElementById(`signal-list-${i}`);
-                if (list) list.style.display = 'none';
-            }
-
-            document.getElementById(`btn-signal-${level}`).classList.add('active');
-            const targetList = document.getElementById(`signal-list-${level}`);
-            if (targetList) targetList.style.display = 'block';
-        }
     </script>
     <script src="./data.js"></script>
     <script>
