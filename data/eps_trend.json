@@ -24163,6 +24163,31 @@
       "+1q": "Oct 2026",
       "0y": "2026",
       "+1y": "2027"
+    },
+    "_financial_highlights": {
+      "nextFiscalYearEnd": 1793577600,
+      "mostRecentQuarter": 1777766400,
+      "profitMargins": 0.38848,
+      "operatingMargins": 0.48988,
+      "returnOnAssets": 0.121190004,
+      "returnOnEquity": 0.37280998,
+      "totalRevenue": 75464998912,
+      "revenuePerShare": 15.943,
+      "revenueGrowth": 0.479,
+      "grossProfits": 57568002048,
+      "ebitda": 42083999744,
+      "netIncomeToCommon": 29316999168,
+      "trailingEps": 5.99,
+      "forwardEps": 19.46067,
+      "earningsGrowth": 0.854,
+      "totalCash": 19627999232,
+      "totalCashPerShare": 4.126,
+      "totalDebt": 64907001856,
+      "debtToEquity": 74.018,
+      "currentRatio": 2.238,
+      "bookValue": 18.43,
+      "operatingCashflow": 33621999616,
+      "freeCashflow": 27212249088
     }
   },
   "ALLE": {
@@ -24782,5 +24807,66 @@
       7.14117,
       7.23352
     ]
+  },
+  "MSFT": {
+    "0q": [
+      4.24947,
+      4.23727,
+      4.23836,
+      4.2387,
+      4.23972
+    ],
+    "+1q": [
+      4.55108,
+      4.61434,
+      4.61418,
+      4.61858,
+      4.61628
+    ],
+    "0y": [
+      16.63312,
+      16.76359,
+      16.7956,
+      16.76952,
+      16.82922
+    ],
+    "+1y": [
+      18.94498,
+      19.34023,
+      19.34856,
+      19.36709,
+      19.37881
+    ],
+    "_labels": {
+      "0q": "Jun 2026",
+      "+1q": "Sep 2026",
+      "0y": "2026",
+      "+1y": "2027"
+    },
+    "_financial_highlights": {
+      "nextFiscalYearEnd": 1782777600,
+      "mostRecentQuarter": 1774915200,
+      "profitMargins": 0.39341998,
+      "operatingMargins": 0.46326,
+      "returnOnAssets": 0.14814,
+      "returnOnEquity": 0.34013999,
+      "totalRevenue": 318272995328,
+      "revenuePerShare": 42.836,
+      "revenueGrowth": 0.183,
+      "grossProfits": 217409994752,
+      "ebitda": 184457003008,
+      "netIncomeToCommon": 125215997952,
+      "trailingEps": 16.78,
+      "forwardEps": 19.37881,
+      "earningsGrowth": 0.234,
+      "totalCash": 78227996672,
+      "totalCashPerShare": 10.531,
+      "totalDebt": 125431996416,
+      "debtToEquity": 30.271,
+      "currentRatio": 1.283,
+      "bookValue": 55.777,
+      "operatingCashflow": 170141007872,
+      "freeCashflow": 37011251200
+    }
   }
 }

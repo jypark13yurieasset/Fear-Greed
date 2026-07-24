@@ -122,20 +122,46 @@ def main():
     
     results = {}
     
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        futures = {executor.submit(fetch_eps_trend, t): t for t in tickers}
-        
-        count = 0
-        for future in as_completed(futures):
-            ticker, data = future.result()
-            count += 1
-            if count % 50 == 0:
-                print(f"Progress: {count}/{len(tickers)}")
-                
-            if data:
-                results[ticker] = data
+    # Helper to fetch a batch
+    def fetch_batch(ticker_list, workers=10):
+        batch_results = {}
+        failed = []
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {executor.submit(fetch_eps_trend, t): t for t in ticker_list}
+            count = 0
+            for future in as_completed(futures):
+                t_str, data = future.result()
+                count += 1
+                if count % 50 == 0:
+                    print(f"Progress: {count}/{len(ticker_list)}")
+                if data:
+                    batch_results[t_str] = data
+                else:
+                    failed.append(t_str)
+        return batch_results, failed
 
-    print(f"Successfully fetched EPS trend for {len(results)} tickers.")
+    # First pass
+    print("Starting first pass...")
+    batch_data, failed_tickers = fetch_batch(tickers, workers=10)
+    results.update(batch_data)
+    
+    # Retry logic (up to 2 more times)
+    retries = 2
+    while retries > 0 and failed_tickers:
+        print(f"\nRate limit or failed to fetch {len(failed_tickers)} tickers. Retrying in 5 seconds...")
+        import time
+        time.sleep(5)
+        print(f"Retry {3 - retries}: Fetching {len(failed_tickers)} failed tickers...")
+        batch_data, failed_tickers = fetch_batch(failed_tickers, workers=5)
+        results.update(batch_data)
+        retries -= 1
+        
+    if failed_tickers:
+        print(f"\nWARNING: Could not fetch {len(failed_tickers)} tickers even after retries.")
+        print(f"Failed tickers: {', '.join(failed_tickers)}")
+        print("These tickers will display '데이터 없음' on the website. Please retry them later.")
+
+    print(f"\nSuccessfully populated EPS trend for {len(results)} tickers.")
     
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
