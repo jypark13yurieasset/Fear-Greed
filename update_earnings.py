@@ -90,6 +90,23 @@ def fetch_eps_trend(ticker):
                         highlights[k] = val
                 if highlights:
                     data['_financial_highlights'] = highlights
+                    
+                # Extract valuation measures (current from info)
+                valuation_keys = [
+                    'marketCap', 'enterpriseValue', 'trailingPE', 'forwardPE',
+                    'pegRatio', 'priceToSalesTrailing12Months', 'priceToBook',
+                    'enterpriseToRevenue', 'enterpriseToEbitda'
+                ]
+                valuation = {}
+                for k in valuation_keys:
+                    val = info.get(k)
+                    if pd.notna(val):
+                        valuation[k] = val
+                if valuation:
+                    data['_valuation_measures'] = valuation
+        except Exception:
+            pass
+        
         except Exception:
             pass
             

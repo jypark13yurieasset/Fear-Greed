@@ -147,18 +147,18 @@
             flex-grow: 1;
             background: rgba(0, 0, 0, 0.2);
             border: 1px solid var(--card-border);
-            border-radius: 8px;
-            padding: 16px 20px;
+            border-radius: 10px;
+            padding: 10px 20px;
             color: var(--text-primary);
             font-family: var(--font-family);
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             font-weight: 500;
             outline: none;
             transition: all 0.3s;
         }
 
         .search-input:focus {
-            border-color: var(--color-primary);
+            border-color: rgba(56, 189, 248, 0.8);
             background: rgba(0, 0, 0, 0.4);
             box-shadow: 0 0 0 2px rgba(124, 140, 245, 0.2);
         }
@@ -168,21 +168,51 @@
         }
 
         .search-button {
-            background: var(--color-primary);
+            position: relative;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 700;
             color: #fff;
-            border: none;
-            border-radius: 8px;
-            padding: 16px 32px;
-            font-family: var(--font-family);
-            font-size: 1.1rem;
-            font-weight: 600;
+            background: linear-gradient(135deg, rgba(124, 140, 245, 0.25), rgba(56, 189, 248, 0.25));
+            border: 1.5px solid rgba(124, 140, 245, 0.5);
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: var(--font-family);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(124, 140, 245, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
-
+        
+        .search-button::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-20deg);
+            transition: 0.5s;
+        }
+        
         .search-button:hover {
-            background: #6b7aec;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 140, 245, 0.35);
+            border-color: rgba(56, 189, 248, 0.8);
+            background: linear-gradient(135deg, rgba(124, 140, 245, 0.4), rgba(56, 189, 248, 0.4));
+        }
+        
+        .search-button:hover::before {
+            left: 150%;
+        }
+        
+        .search-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(124, 140, 245, 0.2);
         }
 
         /* ─── Widget Layout ─── */
@@ -411,8 +441,8 @@
                 <div class="nav-tabs">
                     <a href="./index.html" class="nav-tab">1. Dashboard</a>
                     <a href="./screener.html" class="nav-tab">2. Screener</a>
-                    <a href="./insight.html" class="nav-tab">3. Insight</a>
-                    <a href="./earnings.html" class="nav-tab active">4. Earnings</a>
+                    <a href="./earnings.html" class="nav-tab active">3. Earnings</a>
+                    <a href="./insight.html" class="nav-tab">4. Insight</a>
                 </div>
             </div>
             <p class="dashboard-subtitle">종목 검색 및 기업 실적 확인 (On-Demand) &nbsp;|&nbsp; <span id="update-date">기준일: -</span></p>
@@ -443,14 +473,6 @@
         <div class="widgets-grid" id="widgets-container" style="display: none;">
 
 
-            <!-- 4. EPS Estimates Revision -->
-            <div class="widget-card full-width" id="widget-eps-revision">
-                <div class="widget-label">📊 EPS 추정치 변화 (EPS Estimates Revision)</div>
-                <div class="widget-inner" id="eps-revision-inner">
-                    <div class="insider-loading">종목을 검색하면 EPS 추정치 데이터가 표시됩니다.</div>
-                </div>
-            </div>
-
             <!-- 5. Financial Highlights -->
             <div class="widget-card full-width" id="widget-financial-highlights">
                 <div class="widget-label">📑 주요 재무 지표 (Financial Highlights)</div>
@@ -459,7 +481,21 @@
                 </div>
             </div>
 
+            <!-- Valuation Measures -->
+            <div class="widget-card full-width" id="widget-valuation-measures">
+                <div class="widget-label">⚖️ 밸류에이션 지표 (Valuation Measures)</div>
+                <div class="widget-inner" id="valuation-measures-inner">
+                    <div class="insider-loading">종목을 검색하면 밸류에이션 지표가 표시됩니다.</div>
+                </div>
+            </div>
 
+            <!-- 4. EPS Estimates Revision -->
+            <div class="widget-card full-width" id="widget-eps-revision">
+                <div class="widget-label">📊 EPS 추정치 변화 (EPS Estimates Revision)</div>
+                <div class="widget-inner" id="eps-revision-inner">
+                    <div class="insider-loading">종목을 검색하면 EPS 추정치 데이터가 표시됩니다.</div>
+                </div>
+            </div>
 
             <!-- 3. Insider Trading (OpenInsider) -->
             <div class="widget-card full-width" id="widget-insider">
@@ -490,6 +526,8 @@
         let allStocks = [];
         if (typeof window.screenerData !== 'undefined' && window.screenerData.stocks) {
             allStocks = window.screenerData.stocks;
+        } else if (typeof INDEX_DATA !== 'undefined' && INDEX_DATA.stocks) {
+            allStocks = INDEX_DATA.stocks;
         }
 
         function getTvSymbol(ticker) {
@@ -551,16 +589,23 @@
             // Update banner
             const banner = document.getElementById('ticker-banner');
             banner.style.display = 'flex';
-            document.getElementById('banner-symbol').textContent = tvSymbol;
-
-
+            
+            const stockInfo = allStocks.find(s => s.ticker === rawTicker);
+            let bannerText = rawTicker;
+            if (stockInfo && stockInfo.name) {
+                bannerText = `${rawTicker} (${stockInfo.name})`;
+            }
+            document.getElementById('banner-symbol').textContent = bannerText;
             // ─── 3. Insider Trading (OpenInsider) ───
             loadInsiderTrading(rawTicker);
 
             // ─── 4. EPS Estimates Revision ───
             loadEpsRevision(rawTicker);
             
-            // ─── 5. Financial Highlights ───
+            // ─── 5. Valuation Measures ───
+            loadValuationMeasures(rawTicker);
+            
+            // ─── 6. Financial Highlights ───
             loadFinancialHighlights(rawTicker);
         }
 
@@ -770,6 +815,60 @@
                 return '$' + num.toLocaleString();
             }
             return num.toLocaleString();
+        }
+
+        function loadValuationMeasures(ticker) {
+            const container = document.getElementById('valuation-measures-inner');
+            if (!window.eps_trend_data || !window.eps_trend_data[ticker]) {
+                container.innerHTML = '<div style="text-align:center;color:#a0aabc;padding:30px;">해당 종목의 데이터가 없습니다.</div>';
+                return;
+            }
+
+            const data = window.eps_trend_data[ticker];
+            const measures = data['_valuation_measures'];
+            if (!measures) {
+                container.innerHTML = '<div style="text-align:center;color:#a0aabc;padding:30px;">밸류에이션 지표 정보가 없습니다.</div>';
+                return;
+            }
+
+            const groups = [
+                {
+                    title: "Price Metrics (Current)",
+                    items: [
+                        { label: "Market Cap", value: formatNumber(measures.marketCap, false, true) },
+                        { label: "Trailing P/E", value: formatNumber(measures.trailingPE) },
+                        { label: "Forward P/E", value: formatNumber(measures.forwardPE) },
+                        { label: "PEG Ratio (5yr expected)", value: formatNumber(measures.pegRatio) },
+                        { label: "Price/Sales", value: formatNumber(measures.priceToSalesTrailing12Months) },
+                        { label: "Price/Book", value: formatNumber(measures.priceToBook) }
+                    ]
+                },
+                {
+                    title: "Enterprise Metrics (Current)",
+                    items: [
+                        { label: "Enterprise Value", value: formatNumber(measures.enterpriseValue, false, true) },
+                        { label: "Enterprise Value/Revenue", value: formatNumber(measures.enterpriseToRevenue) },
+                        { label: "Enterprise Value/EBITDA", value: formatNumber(measures.enterpriseToEbitda) }
+                    ]
+                }
+            ];
+
+            let html = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 10px;">';
+            groups.forEach(g => {
+                html += '<div style="background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); padding: 15px;">';
+                html += '<h4 style="color: #64B5F6; margin-bottom: 12px; font-size: 0.95rem; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">' + g.title + '</h4>';
+                html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">';
+                g.items.forEach(item => {
+                    html += '<tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">';
+                    html += '<td style="padding: 8px 0; color: #a0aabc;">' + item.label + '</td>';
+                    html += '<td style="padding: 8px 0; color: #e0e0e0; text-align: right; font-weight: 500;">' + item.value + '</td>';
+                    html += '</tr>';
+                });
+                html += '</table></div>';
+            });
+            html += '</div>';
+
+            container.innerHTML = html;
         }
 
         function loadFinancialHighlights(ticker) {

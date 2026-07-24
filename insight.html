@@ -162,6 +162,7 @@
             .insight-grid {
                 grid-template-columns: 1fr;
             }
+
             .full-row-center {
                 width: 100%;
             }
@@ -246,13 +247,18 @@
             color: var(--text-secondary);
         }
 
-        .stat-value.positive { color: #00d26a; }
-        .stat-value.negative { color: #f93c65; }
+        .stat-value.positive {
+            color: #00d26a;
+        }
+
+        .stat-value.negative {
+            color: #f93c65;
+        }
 
         .progress-bar-container {
             width: 100%;
             height: 6px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 3px;
             overflow: hidden;
             margin-top: 10px;
@@ -281,8 +287,13 @@
             text-align: center;
         }
 
-        .winrate-box.golden .value { color: #00d26a; }
-        .winrate-box.dead .value { color: #f93c65; }
+        .winrate-box.golden .value {
+            color: #00d26a;
+        }
+
+        .winrate-box.dead .value {
+            color: #f93c65;
+        }
 
         .winrate-box .label {
             font-size: 0.8rem;
@@ -305,10 +316,11 @@
             max-height: 500px;
             padding-right: 5px;
         }
-        
+
         .signal-list::-webkit-scrollbar {
             width: 6px;
         }
+
         .signal-list::-webkit-scrollbar-thumb {
             background-color: rgba(130, 140, 180, 0.3);
             border-radius: 3px;
@@ -325,11 +337,23 @@
             font-size: 0.85rem;
         }
 
-        .signal-item.golden { border-left-color: #00d26a; }
-        .signal-item.dead { border-left-color: #f93c65; }
+        .signal-item.golden {
+            border-left-color: #00d26a;
+        }
 
-        .signal-info .ticker { font-weight: 700; color: #fff; }
-        .signal-info .date { font-size: 0.75rem; color: var(--text-secondary); }
+        .signal-item.dead {
+            border-left-color: #f93c65;
+        }
+
+        .signal-info .ticker {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .signal-info .date {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
 
         .badge {
             padding: 4px 8px;
@@ -339,10 +363,20 @@
             text-align: center;
         }
 
-        .badge.win { background: rgba(0, 210, 106, 0.15); color: #00d26a; }
-        .badge.loss { background: rgba(249, 60, 101, 0.15); color: #f93c65; }
-        .badge.pending { background: rgba(139, 146, 168, 0.15); color: #8b92a8; }
+        .badge.win {
+            background: rgba(0, 210, 106, 0.15);
+            color: #00d26a;
+        }
 
+        .badge.loss {
+            background: rgba(249, 60, 101, 0.15);
+            color: #f93c65;
+        }
+
+        .badge.pending {
+            background: rgba(139, 146, 168, 0.15);
+            color: #8b92a8;
+        }
     </style>
 </head>
 
@@ -357,8 +391,8 @@
                 <div class="nav-tabs">
                     <a href="./index.html" class="nav-tab">1. Dashboard</a>
                     <a href="./screener.html" class="nav-tab">2. Screener</a>
-                    <a href="./insight.html" class="nav-tab active">3. Insight</a>
-                    <a href="./earnings.html" class="nav-tab">4. Earnings</a>
+                    <a href="./earnings.html" class="nav-tab">3. Earnings</a>
+                    <a href="./insight.html" class="nav-tab active">4. Insight</a>
                 </div>
             </div>
             <p class="dashboard-subtitle">투자 인사이트 &amp; 시장 분석 &nbsp;|&nbsp; <span id="update-date">기준일: -</span></p>
@@ -370,24 +404,25 @@
                 <h2 class="card-title">📈 Memory Tech vs Magnificent 7 (DRAM / MAGS)</h2>
                 <div class="tradingview-widget-container" style="height: 630px; width: 100%;">
                     <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                    {
-                        "width": "100%",
-                        "height": "100%",
-                        "symbol": "DRAM/MAGS",
-                        "interval": "D",
-                        "timezone": "America/New_York",
-                        "theme": "dark",
-                        "style": "2",
-                        "locale": "kr",
-                        "enable_publishing": false,
-                        "hide_top_toolbar": false,
-                        "hide_legend": false,
-                        "save_image": false,
-                        "hide_volume": true,
-                        "isTransparent": true
-                    }
-                    </script>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "width": "100%",
+                                    "height": "100%",
+                                        "symbol": "DRAM/MAGS",
+                                            "interval": "D",
+                                                "timezone": "America/New_York",
+                                                    "theme": "dark",
+                                                        "style": "2",
+                                                            "locale": "kr",
+                                                                "enable_publishing": false,
+                                                                    "hide_top_toolbar": false,
+                                                                        "hide_legend": false,
+                                                                            "save_image": false,
+                                                                                "hide_volume": true,
+                                                                                    "isTransparent": true
+                            }
+                        </script>
                 </div>
             </div>
 
@@ -396,24 +431,25 @@
                 <h2 class="card-title">📈 Semiconductor vs Software (SOXX / IGV)</h2>
                 <div class="tradingview-widget-container" style="height: 630px; width: 100%;">
                     <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                    {
-                        "width": "100%",
-                        "height": "100%",
-                        "symbol": "NASDAQ:SOXX/BATS:IGV",
-                        "interval": "D",
-                        "timezone": "America/New_York",
-                        "theme": "dark",
-                        "style": "2",
-                        "locale": "kr",
-                        "enable_publishing": false,
-                        "hide_top_toolbar": false,
-                        "hide_legend": false,
-                        "save_image": false,
-                        "hide_volume": true,
-                        "isTransparent": true
-                    }
-                    </script>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "width": "100%",
+                                    "height": "100%",
+                                        "symbol": "NASDAQ:SOXX/BATS:IGV",
+                                            "interval": "D",
+                                                "timezone": "America/New_York",
+                                                    "theme": "dark",
+                                                        "style": "2",
+                                                            "locale": "kr",
+                                                                "enable_publishing": false,
+                                                                    "hide_top_toolbar": false,
+                                                                        "hide_legend": false,
+                                                                            "save_image": false,
+                                                                                "hide_volume": true,
+                                                                                    "isTransparent": true
+                            }
+                        </script>
                 </div>
             </div>
 
@@ -422,24 +458,25 @@
                 <h2 class="card-title">📈 Growth vs Value (SPYG / SPYV)</h2>
                 <div class="tradingview-widget-container" style="height: 630px; width: 100%;">
                     <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                    {
-                        "width": "100%",
-                        "height": "100%",
-                        "symbol": "AMEX:SPYG/AMEX:SPYV",
-                        "interval": "D",
-                        "timezone": "America/New_York",
-                        "theme": "dark",
-                        "style": "2",
-                        "locale": "kr",
-                        "enable_publishing": false,
-                        "hide_top_toolbar": false,
-                        "hide_legend": false,
-                        "save_image": false,
-                        "hide_volume": true,
-                        "isTransparent": true
-                    }
-                    </script>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "width": "100%",
+                                    "height": "100%",
+                                        "symbol": "AMEX:SPYG/AMEX:SPYV",
+                                            "interval": "D",
+                                                "timezone": "America/New_York",
+                                                    "theme": "dark",
+                                                        "style": "2",
+                                                            "locale": "kr",
+                                                                "enable_publishing": false,
+                                                                    "hide_top_toolbar": false,
+                                                                        "hide_legend": false,
+                                                                            "save_image": false,
+                                                                                "hide_volume": true,
+                                                                                    "isTransparent": true
+                            }
+                        </script>
                 </div>
             </div>
 
@@ -448,24 +485,25 @@
                 <h2 class="card-title">📈 WTI Crude Oil (USOIL)</h2>
                 <div class="tradingview-widget-container" style="height: 630px; width: 100%;">
                     <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                    {
-                        "width": "100%",
-                        "height": "100%",
-                        "symbol": "TVC:USOIL",
-                        "interval": "D",
-                        "timezone": "America/New_York",
-                        "theme": "dark",
-                        "style": "2",
-                        "locale": "kr",
-                        "enable_publishing": false,
-                        "hide_top_toolbar": false,
-                        "hide_legend": false,
-                        "save_image": false,
-                        "hide_volume": true,
-                        "isTransparent": true
-                    }
-                    </script>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "width": "100%",
+                                    "height": "100%",
+                                        "symbol": "TVC:USOIL",
+                                            "interval": "D",
+                                                "timezone": "America/New_York",
+                                                    "theme": "dark",
+                                                        "style": "2",
+                                                            "locale": "kr",
+                                                                "enable_publishing": false,
+                                                                    "hide_top_toolbar": false,
+                                                                        "hide_legend": false,
+                                                                            "save_image": false,
+                                                                                "hide_volume": true,
+                                                                                    "isTransparent": true
+                            }
+                        </script>
                 </div>
             </div>
 
@@ -473,7 +511,8 @@
             <div class="insight-card">
                 <h2 class="card-title">🏆 Sector Momentum Ranking</h2>
                 <div class="tab-container">
-                    <button class="tab-btn active" onclick="switchSectorTab('short')" id="btn-sector-short">단기 (5D)</button>
+                    <button class="tab-btn active" onclick="switchSectorTab('short')" id="btn-sector-short">단기
+                        (5D)</button>
                     <button class="tab-btn" onclick="switchSectorTab('mid')" id="btn-sector-mid">중기 (1M)</button>
                 </div>
                 <div id="sector-cards-container">
@@ -511,7 +550,7 @@
             if (typeof INDEX_DATA === 'undefined') return;
 
             const stocks = INDEX_DATA.stocks || [];
-            
+
             const mainContainer = document.getElementById('sector-cards-container');
             mainContainer.innerHTML = '';
 
@@ -540,7 +579,7 @@
                         sectors[sector] = { name: sector, count: 0, sumReturn: 0, aboveStrength: 0 };
                     }
                     sectors[sector].count++;
-                    
+
                     if (config.periodKey === 'pct_1w' && s.pct_1w) sectors[sector].sumReturn += s.pct_1w;
                     if (config.periodKey === 'pct_1m' && s.pct_1m) sectors[sector].sumReturn += s.pct_1m;
 
@@ -558,7 +597,7 @@
                     sec.strengthPct = (sec.aboveStrength / sec.count) * 100;
                     return sec;
                 }).filter(sec => sec.count > 5 && sec.name !== 'Unknown')
-                  .sort((a, b) => b.avgReturn - a.avgReturn);
+                    .sort((a, b) => b.avgReturn - a.avgReturn);
 
                 let listHtml = '';
                 ranking.forEach((sec, idx) => {
@@ -625,7 +664,7 @@
             [1, 2, 3, 4, 5].forEach(streakLevel => {
                 // 이 streakLevel에 해당하는 로그만 필터링
                 const logs = SIGNAL_LOG_DATA.filter(l => (l.streak || 1) === streakLevel)
-                                            .sort((a, b) => new Date(b.date) - new Date(a.date));
+                    .sort((a, b) => new Date(b.date) - new Date(a.date));
 
                 let goldenTotal = 0, goldenWins = 0;
                 let deadTotal = 0, deadWins = 0;
@@ -638,7 +677,7 @@
 
                     if (currentPrice && log.entry_price) {
                         returnPct = ((currentPrice - log.entry_price) / log.entry_price) * 100;
-                        
+
                         if (log.type === 'golden') {
                             isWin = currentPrice > log.entry_price;
                             goldenTotal++;
@@ -652,7 +691,7 @@
 
                     const sign = returnPct > 0 ? '+' : '';
                     const typeIcon = log.type === 'golden' ? '🚀' : '💀';
-                    
+
                     let badgeHtml = `<div class="badge pending">Pending</div>`;
                     if (isWin === true) badgeHtml = `<div class="badge win">Win (${sign}${returnPct.toFixed(1)}%)</div>`;
                     else if (isWin === false) badgeHtml = `<div class="badge loss">Loss (${sign}${returnPct.toFixed(1)}%)</div>`;
@@ -699,7 +738,7 @@
                         </div>
                     </div>
                 `;
-                
+
                 mainContainer.insertAdjacentHTML('beforeend', sectionHtml);
             });
         }
@@ -729,4 +768,5 @@
         }
     </script>
 </body>
+
 </html>
