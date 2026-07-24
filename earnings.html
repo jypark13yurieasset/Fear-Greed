@@ -784,6 +784,27 @@
 
             const groups = [
                 {
+                    title: "Fiscal Year",
+                    items: [
+                        { label: "Fiscal Year Ends", value: formatTimestampToDate(highlights.nextFiscalYearEnd) },
+                        { label: "Most Recent Quarter (mrq)", value: formatTimestampToDate(highlights.mostRecentQuarter) }
+                    ]
+                },
+                {
+                    title: "Profitability",
+                    items: [
+                        { label: "Profit Margin", value: formatNumber(highlights.profitMargins, true) },
+                        { label: "Operating Margin (ttm)", value: formatNumber(highlights.operatingMargins, true) }
+                    ]
+                },
+                {
+                    title: "Management Effectiveness",
+                    items: [
+                        { label: "Return on Assets (ttm)", value: formatNumber(highlights.returnOnAssets, true) },
+                        { label: "Return on Equity (ttm)", value: formatNumber(highlights.returnOnEquity, true) }
+                    ]
+                },
+                {
                     title: "Income Statement",
                     items: [
                         { label: "Revenue (ttm)", value: formatNumber(highlights.totalRevenue, false, true) },
@@ -812,27 +833,6 @@
                     items: [
                         { label: "Operating Cash Flow (ttm)", value: formatNumber(highlights.operatingCashflow, false, true) },
                         { label: "Levered Free Cash Flow (ttm)", value: formatNumber(highlights.freeCashflow, false, true) }
-                    ]
-                },
-                {
-                    title: "Profitability",
-                    items: [
-                        { label: "Profit Margin", value: formatNumber(highlights.profitMargins, true) },
-                        { label: "Operating Margin (ttm)", value: formatNumber(highlights.operatingMargins, true) }
-                    ]
-                },
-                {
-                    title: "Management Effectiveness",
-                    items: [
-                        { label: "Return on Assets (ttm)", value: formatNumber(highlights.returnOnAssets, true) },
-                        { label: "Return on Equity (ttm)", value: formatNumber(highlights.returnOnEquity, true) }
-                    ]
-                },
-                {
-                    title: "Fiscal Year",
-                    items: [
-                        { label: "Fiscal Year Ends", value: formatTimestampToDate(highlights.nextFiscalYearEnd) },
-                        { label: "Most Recent Quarter (mrq)", value: formatTimestampToDate(highlights.mostRecentQuarter) }
                     ]
                 }
             ];
