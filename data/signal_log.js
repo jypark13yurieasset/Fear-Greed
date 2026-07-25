@@ -5934,5 +5934,381 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 3,
     "entry_price": 151.27000427246094
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 232.11000061035156
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 122.91999816894531
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "GEV",
+    "name": "GE Vernova Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 1014.75
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "AXP",
+    "name": "American Express Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 326.1700134277344
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "TMUS",
+    "name": "T-Mobile US, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 180.08999633789062
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "VZ",
+    "name": "Verizon Communications Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 46.380001068115234
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "DE",
+    "name": "Deere & Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 628.1599731445312
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "ETN",
+    "name": "Eaton Corporation plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 404.07000732421875
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 582.5999755859375
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "CRM",
+    "name": "Salesforce, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 163.66000366210938
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "SO",
+    "name": "The Southern Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 97.25
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "NOW",
+    "name": "ServiceNow, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 98.77999877929688
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "DUK",
+    "name": "Duke Energy Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 130.52000427246094
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "FCX",
+    "name": "Freeport-McMoRan Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 62.599998474121094
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "JCI",
+    "name": "Johnson Controls International plc",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 143.3699951171875
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "HOOD",
+    "name": "Robinhood Markets, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 94.91000366210938
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "EMR",
+    "name": "Emerson Electric Co.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 147.94000244140625
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "CMCSA",
+    "name": "Comcast Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 22.295000076293945
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "SLB",
+    "name": "SLB N.V.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 52.41999816894531
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "MDLZ",
+    "name": "Mondelez International, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 60.52000045776367
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "HON",
+    "name": "Honeywell International Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 243.14999389648438
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "GM",
+    "name": "General Motors Company",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 82.63999938964844
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "DLR",
+    "name": "Digital Realty Trust, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 199.0800018310547
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "URI",
+    "name": "United Rentals, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1141.5899658203125
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "NKE",
+    "name": "NIKE, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 41.70000076293945
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "NUE",
+    "name": "Nucor Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 247.55999755859375
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "ETR",
+    "name": "Entergy Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 115.94999694824219
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 302.5
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "XEL",
+    "name": "Xcel Energy Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 81.66999816894531
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "EXC",
+    "name": "Exelon Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 47.529998779296875
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "EBAY",
+    "name": "eBay Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 109.38999938964844
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "IDXX",
+    "name": "IDEXX Laboratories, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 544.3200073242188
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "CMG",
+    "name": "Chipotle Mexican Grill, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 31.790000915527344
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "MSCI",
+    "name": "MSCI Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 550.7899780273438
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "IRM",
+    "name": "Iron Mountain Incorporated",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 128.30999755859375
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "STLD",
+    "name": "Steel Dynamics, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 247.11000061035156
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "CNP",
+    "name": "CenterPoint Energy, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 44.560001373291016
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "VRSN",
+    "name": "VeriSign, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 280.0
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "SW",
+    "name": "Smurfit Westrock Plc",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 48.560001373291016
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "PKG",
+    "name": "Packaging Corporation of America",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 254.38999938964844
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "FFIV",
+    "name": "F5, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 392.2099914550781
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "LUV",
+    "name": "Southwest Airlines Co.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 45.08000183105469
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "TXT",
+    "name": "Textron Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 95.52999877929688
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "NDSN",
+    "name": "Nordson Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 295.7699890136719
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "PTC",
+    "name": "PTC Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 118.5199966430664
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "TYL",
+    "name": "Tyler Technologies, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 297.1499938964844
+  },
+  {
+    "date": "2026-07-24",
+    "ticker": "ALGN",
+    "name": "Align Technology, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 167.01499938964844
   }
 ];
