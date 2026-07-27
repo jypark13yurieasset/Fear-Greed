@@ -137,14 +137,31 @@ def main():
             
     print(f"Total valid US tickers to fetch: {len(tickers)}")
     
+    # Load existing results to prevent wiping out data on rate limit failures
     results = {}
+    if os.path.exists(OUTPUT_JSON):
+        try:
+            with open(OUTPUT_JSON, 'r', encoding='utf-8') as f:
+                results = json.load(f)
+            print(f"Loaded {len(results)} existing tickers from cache.")
+        except Exception:
+            pass
+            
+    # Find which ones really need to be fetched (or we can just fetch all and overwrite)
+    # To be safe against rate limits, we will still fetch all, but if it fails, the old data remains in `results`
     
     # Helper to fetch a batch
-    def fetch_batch(ticker_list, workers=10):
+    def fetch_batch(ticker_list, workers=1):
+        import time
         batch_results = {}
         failed = []
         with ThreadPoolExecutor(max_workers=workers) as executor:
-            futures = {executor.submit(fetch_eps_trend, t): t for t in ticker_list}
+            # Add a small delay between submitting tasks to avoid rate limits
+            futures = {}
+            for t in ticker_list:
+                futures[executor.submit(fetch_eps_trend, t)] = t
+                time.sleep(0.5) # Prevent Yahoo Finance rate limit (429/404)
+            
             count = 0
             for future in as_completed(futures):
                 t_str, data = future.result()
@@ -159,7 +176,7 @@ def main():
 
     # First pass
     print("Starting first pass...")
-    batch_data, failed_tickers = fetch_batch(tickers, workers=10)
+    batch_data, failed_tickers = fetch_batch(tickers, workers=1)
     results.update(batch_data)
     
     # Retry logic (up to 2 more times)
@@ -169,7 +186,7 @@ def main():
         import time
         time.sleep(5)
         print(f"Retry {3 - retries}: Fetching {len(failed_tickers)} failed tickers...")
-        batch_data, failed_tickers = fetch_batch(failed_tickers, workers=5)
+        batch_data, failed_tickers = fetch_batch(failed_tickers, workers=1)
         results.update(batch_data)
         retries -= 1
         
