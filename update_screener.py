@@ -354,18 +354,33 @@ print(f"   다운로드 완료: {len(all_data)}개 종목 성공")
 
 # --- 4.5 Fetch trailingPE and forwardPE ---
 print("\n" + "=" * 60)
-print("🔍 Finviz(우선) 및 야후 파이낸스(대체)로부터 PER, Forward PER 정보 조회 중 (병렬 처리)...")
+print("🔍 야후 파이낸스(PER/FWD PER) 및 Finviz(시가총액/목표가) 정보 조회 중 (병렬 처리)...")
 info_data = {}
 def fetch_info(item):
     yf_t, orig_t = item
     pe = fpe = mcap = target_price = exchange = None
+    info_cache_item = None
     
+    # --- Yahoo Finance: PER, Forward PER, exchange (primary source) ---
     try:
-        exchange = yf.Ticker(yf_t).fast_info.get("exchange")
+        info = yf.Ticker(yf_t).info
+        info_cache_item = info
+        exchange = info.get("exchange")
+        pe = info.get("trailingPE")
+        fpe = info.get("forwardPE")
+        raw_mcap = info.get("marketCap")
+        if raw_mcap:
+            if raw_mcap >= 1e9:
+                mcap = f"{raw_mcap/1e9:.2f}B"
+            elif raw_mcap >= 1e6:
+                mcap = f"{raw_mcap/1e6:.2f}M"
+            else:
+                mcap = str(raw_mcap)
+        target_price = info.get("targetMeanPrice")
     except Exception:
         pass
     
-    # Try Finviz first (only for US stocks)
+    # --- Finviz: Market Cap & Target Price (supplement/override with Finviz formatting) ---
     if not orig_t.endswith('.KS') and not orig_t.endswith('.KQ'):
         try:
             finviz_t = orig_t.replace('-', '.')
@@ -375,14 +390,6 @@ def fetch_info(item):
                 soup = BeautifulSoup(r.text, 'html.parser')
                 tds = soup.find_all('td')
                 for i, td in enumerate(tds):
-                    if td.text == 'P/E':
-                        pe_val = tds[i+1].text
-                        if pe_val != '-':
-                            pe = float(pe_val)
-                    if td.text == 'Forward P/E':
-                        fpe_val = tds[i+1].text
-                        if fpe_val != '-':
-                            fpe = float(fpe_val)
                     if td.text == 'Market Cap':
                         mcap_val = tds[i+1].text
                         if mcap_val != '-':
@@ -430,36 +437,29 @@ def fetch_info(item):
         except Exception:
             pass
             
-    # Fallback to Yahoo Finance if Finviz failed or missing data
-    if pe is None or fpe is None or exchange is None:
+    # Fallback: if Yahoo didn't return exchange or mcap, try fast_info
+    if exchange is None:
         try:
-            info = yf.Ticker(yf_t).info
-            if exchange is None:
-                exchange = info.get("exchange")
-            if pe is None:
-                pe = info.get("trailingPE")
-            if fpe is None:
-                fpe = info.get("forwardPE")
-            if mcap is None:
-                raw_mcap = info.get("marketCap")
-                if raw_mcap:
-                    if raw_mcap >= 1e9:
-                        mcap = f"{raw_mcap/1e9:.2f}B"
-                    elif raw_mcap >= 1e6:
-                        mcap = f"{raw_mcap/1e6:.2f}M"
-                    else:
-                        mcap = str(raw_mcap)
-            if target_price is None:
-                target_price = info.get("targetMeanPrice")
+            exchange = yf.Ticker(yf_t).fast_info.get("exchange")
         except Exception:
             pass
 
-    return orig_t, pe, fpe, mcap, target_price, exchange
+    return orig_t, pe, fpe, mcap, target_price, exchange, info_cache_item
 
+info_cache_dict = {}
 with ThreadPoolExecutor(max_workers=10) as executor:
     results_info = list(executor.map(fetch_info, ticker_mapping.items()))
-for orig_t, pe, fpe, mcap, target_price, exchange in results_info:
+for orig_t, pe, fpe, mcap, target_price, exchange, info_data_item in results_info:
     info_data[orig_t] = {"trailingPE": pe, "forwardPE": fpe, "marketCap": mcap, "targetPrice": target_price, "exchange": exchange}
+    if info_data_item:
+        info_cache_dict[orig_t] = info_data_item
+
+# Save info cache for update_earnings.py to reuse (saves 500 API calls)
+DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
+if not os.path.exists(DATA_DIR):
+    os.makedirs(DATA_DIR)
+with open(os.path.join(DATA_DIR, 'yf_info_cache.json'), 'w', encoding='utf-8') as f:
+    json.dump(info_cache_dict, f, ensure_ascii=False)
 
 # --- Helper functions for technical indicators ---
 

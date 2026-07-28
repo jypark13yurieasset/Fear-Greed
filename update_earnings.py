@@ -12,6 +12,16 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 INPUT_JSON = os.path.join(DATA_DIR, 'index_constituents.json')
 OUTPUT_JSON = os.path.join(DATA_DIR, 'eps_trend.json')
 OUTPUT_JS = os.path.join(DATA_DIR, 'eps_trend.js')
+INFO_CACHE_JSON = os.path.join(DATA_DIR, 'yf_info_cache.json')
+
+yf_info_cache = {}
+try:
+    if os.path.exists(INFO_CACHE_JSON):
+        with open(INFO_CACHE_JSON, 'r', encoding='utf-8') as f:
+            yf_info_cache = json.load(f)
+        print(f"Loaded {len(yf_info_cache)} info records from cache.")
+except Exception:
+    pass
 
 def _end_date_to_label(end_date_str, is_yearly=False):
     """Convert '2026-09-30' to 'Sep 2026' for quarters, or '2026' for years."""
@@ -81,7 +91,7 @@ def fetch_eps_trend(ticker):
         ]
         
         try:
-            info = t.info
+            info = yf_info_cache.get(ticker) or t.info
             if info:
                 highlights = {}
                 for k in financial_highlights_keys:

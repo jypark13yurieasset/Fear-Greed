@@ -10099,21 +10099,21 @@ window.fng_data = {
         "updated_at": "07-25 11:01 KST"
     },
     "2026-07-27": {
-        "fear_and_greed": 40,
+        "fear_and_greed": 41,
         "sp500_price": 7413.18,
         "sp500_change": 0.02,
         "nasdaq_price": 24932.08,
         "nasdaq_change": -0.18,
-        "vix_price": 18.67,
-        "vix_change": 0.48,
-        "dxy_price": 101.51,
-        "dxy_change": 0.04,
+        "vix_price": 19.01,
+        "vix_change": 1.82,
+        "dxy_price": 101.5,
+        "dxy_change": 0.03,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$28.343 T"
+                "mcap": "$28.164 T"
             },
             {
                 "rank": 2,
@@ -10137,7 +10137,7 @@ window.fng_data = {
                 "rank": 5,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.304 T"
+                "mcap": "$3.247 T"
             },
             {
                 "rank": 6,
@@ -10167,7 +10167,7 @@ window.fng_data = {
                 "rank": 10,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.711 T"
+                "mcap": "$1.701 T"
             },
             {
                 "rank": 11,
@@ -10185,7 +10185,7 @@ window.fng_data = {
                 "rank": 13,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.294 T"
+                "mcap": "$1.272 T"
             },
             {
                 "rank": 14,
@@ -10195,27 +10195,27 @@ window.fng_data = {
             },
             {
                 "rank": 15,
-                "name": "Samsung",
-                "code": "005930.KS",
-                "mcap": "$1.137 T"
-            },
-            {
-                "rank": 16,
                 "name": "Berkshire Hathaway",
                 "code": "BRK-B",
                 "mcap": "$1.072 T"
             },
             {
-                "rank": 17,
+                "rank": 16,
                 "name": "Eli Lilly",
                 "code": "LLY",
                 "mcap": "$1.067 T"
             },
             {
-                "rank": 18,
+                "rank": 17,
                 "name": "Micron Technology",
                 "code": "MU",
                 "mcap": "$1.016 T"
+            },
+            {
+                "rank": 18,
+                "name": "Samsung",
+                "code": "005930.KS",
+                "mcap": "$987.61 B"
             },
             {
                 "rank": 19,
@@ -10230,9 +10230,9 @@ window.fng_data = {
                 "mcap": "$946.85 B"
             }
         ],
-        "aaii_bullish": 36.1,
+        "aaii_bullish": 36.0,
         "aaii_neutral": 26.2,
-        "aaii_bearish": 37.7,
+        "aaii_bearish": 37.8,
         "aaii_date": "2026-07-22",
         "us_etfs": {
             "ARKK": {
@@ -10507,6 +10507,6 @@ window.fng_data = {
                 "weight": 3.24
             }
         ],
-        "updated_at": "07-28 07:33 KST"
+        "updated_at": "07-28 16:51 KST"
     }
 };
