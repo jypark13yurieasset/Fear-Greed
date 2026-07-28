@@ -272,6 +272,103 @@
         }
 
         /* ─── Signal History ─── */
+
+        /* ─── Donut Chart ─── */
+        .donut-chart-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+        }
+        .donut-canvas-container {
+            position: relative;
+            width: 260px;
+            height: 260px;
+        }
+        .donut-canvas-container canvas {
+            display: block;
+        }
+        .donut-center-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            pointer-events: none;
+        }
+        .donut-center-label .count {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+        }
+        .donut-center-label .label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+        .donut-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+        }
+        .donut-legend-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
+        .donut-legend-item:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(124, 140, 245, 0.3);
+        }
+        .legend-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+        .legend-sector {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .legend-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .legend-count {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .legend-pct {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            min-width: 42px;
+            text-align: right;
+        }
+        .donut-empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            min-height: 200px;
+        }
     </style>
 </head>
 
@@ -413,7 +510,15 @@
                 <div id="sector-cards-container">
                     <!-- JS Injected -->
                 </div>
-        </div>
+            </div>
+
+            <!-- 골든크로스 섹터 분포 -->
+            <div class="insight-card">
+                <h2 class="card-title">🚀 Golden Cross Sector Distribution</h2>
+                <div id="golden-sector-donut" class="donut-chart-wrapper">
+                    <!-- JS Injected -->
+                </div>
+            </div>
     </div>
 
     <!-- Data Scripts -->
@@ -421,6 +526,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             renderSectorRanking();
+            renderGoldenSectorDonut();
         });
 
         function renderSectorRanking() {
@@ -508,6 +614,130 @@
                 `;
                 mainContainer.insertAdjacentHTML('beforeend', sectionHtml);
             });
+        }
+
+        // ─── Golden Cross Sector Donut Chart ───
+        function renderGoldenSectorDonut() {
+            if (typeof INDEX_DATA === 'undefined') return;
+            const container = document.getElementById('golden-sector-donut');
+            if (!container) return;
+
+            const stocks = INDEX_DATA.stocks || [];
+            const goldenStocks = stocks.filter(s => s.is_golden_cross_opportunity);
+
+            if (goldenStocks.length === 0) {
+                container.innerHTML = '<div class="donut-empty">오늘 골든크로스 종목이 없습니다</div>';
+                return;
+            }
+
+            // Count by sector
+            const sectorMap = {};
+            goldenStocks.forEach(s => {
+                const sec = s.sector || 'Unknown';
+                sectorMap[sec] = (sectorMap[sec] || 0) + 1;
+            });
+
+            // Sort descending
+            const sorted = Object.entries(sectorMap)
+                .sort((a, b) => b[1] - a[1]);
+            const total = goldenStocks.length;
+
+            // Premium color palette
+            const COLORS = [
+                '#7c8cf5', '#00d26a', '#f5a623', '#f93c65', '#36bffa',
+                '#a78bfa', '#ec4899', '#14b8a6', '#f59e0b', '#6366f1',
+                '#22d3ee'
+            ];
+
+            // Build canvas
+            const canvasSize = 260;
+            const canvasEl = document.createElement('canvas');
+            canvasEl.width = canvasSize * 2;
+            canvasEl.height = canvasSize * 2;
+            canvasEl.style.width = canvasSize + 'px';
+            canvasEl.style.height = canvasSize + 'px';
+
+            const ctx = canvasEl.getContext('2d');
+            const cx = canvasSize;
+            const cy = canvasSize;
+            const outerR = canvasSize - 16;
+            const innerR = outerR * 0.62;
+
+            let startAngle = -Math.PI / 2;
+            const slices = [];
+
+            sorted.forEach(([sector, count], idx) => {
+                const sweep = (count / total) * 2 * Math.PI;
+                const color = COLORS[idx % COLORS.length];
+
+                // Draw arc
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.arc(cx, cy, outerR, startAngle, startAngle + sweep);
+                ctx.closePath();
+                ctx.fillStyle = color;
+                ctx.fill();
+
+                // Gap line
+                ctx.beginPath();
+                ctx.moveTo(cx + innerR * Math.cos(startAngle), cy + innerR * Math.sin(startAngle));
+                ctx.lineTo(cx + outerR * Math.cos(startAngle), cy + outerR * Math.sin(startAngle));
+                ctx.strokeStyle = '#0f1017';
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
+                slices.push({ sector, count, color, startAngle, endAngle: startAngle + sweep });
+                startAngle += sweep;
+            });
+
+            // Inner circle (donut hole)
+            ctx.beginPath();
+            ctx.arc(cx, cy, innerR, 0, 2 * Math.PI);
+            ctx.fillStyle = '#1a1b26';
+            ctx.fill();
+
+            // Inner ring glow
+            const grad = ctx.createRadialGradient(cx, cy, innerR - 8, cx, cy, innerR);
+            grad.addColorStop(0, 'rgba(124,140,245,0)');
+            grad.addColorStop(1, 'rgba(124,140,245,0.08)');
+            ctx.beginPath();
+            ctx.arc(cx, cy, innerR, 0, 2 * Math.PI);
+            ctx.fillStyle = grad;
+            ctx.fill();
+
+            // Build HTML
+            const canvasContainer = document.createElement('div');
+            canvasContainer.className = 'donut-canvas-container';
+            canvasContainer.appendChild(canvasEl);
+
+            const centerLabel = document.createElement('div');
+            centerLabel.className = 'donut-center-label';
+            centerLabel.innerHTML = `<div class="count">${total}</div><div class="label">종목</div>`;
+            canvasContainer.appendChild(centerLabel);
+
+            // Legend
+            const legendEl = document.createElement('div');
+            legendEl.className = 'donut-legend';
+            sorted.forEach(([sector, count], idx) => {
+                const pct = ((count / total) * 100).toFixed(1);
+                const color = COLORS[idx % COLORS.length];
+                legendEl.innerHTML += `
+                    <div class="donut-legend-item">
+                        <div class="legend-left">
+                            <div class="legend-color" style="background:${color}"></div>
+                            <span class="legend-sector">${sector}</span>
+                        </div>
+                        <div class="legend-right">
+                            <span class="legend-count">${count}</span>
+                            <span class="legend-pct">${pct}%</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = '';
+            container.appendChild(canvasContainer);
+            container.appendChild(legendEl);
         }
 
         function switchSectorTab(tab) {
