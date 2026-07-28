@@ -928,7 +928,7 @@ def send_telegram_notification():
     msg_lines = [f"📊 <b>Jypark13 스크리너 알림</b>", f"📅 기준일: <code>{run_date_str}</code>", ""]
     
     msg_lines.append(f"🚀 <b>최적 매수 타이밍</b> ({len(golden_stocks)}종목)")
-    msg_lines.append("상승 모멘텀 + 최근 3일 골든크로스 발생")
+    msg_lines.append("상승 모멘텀 + 200일 이평선 상회 + 최근 3일 골든크로스 발생")
     msg_lines.append("")
     
     for s in golden_stocks:

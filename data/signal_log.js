@@ -6310,5 +6310,373 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 3,
     "entry_price": 167.01499938964844
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 196.50999450683594
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 231.38999938964844
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "META",
+    "name": "Meta Platforms, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 593.8699951171875
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 494.95001220703125
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 131.52999877929688
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "VZ",
+    "name": "Verizon Communications Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 47.31999969482422
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "TMUS",
+    "name": "T-Mobile US, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 177.2100067138672
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "DE",
+    "name": "Deere & Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 625.02001953125
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "ETN",
+    "name": "Eaton Corporation plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 398.6400146484375
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 580.0
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "SO",
+    "name": "The Southern Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 96.4800033569336
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "EQIX",
+    "name": "Equinix, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1046.7900390625
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "FCX",
+    "name": "Freeport-McMoRan Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 62.720001220703125
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "JCI",
+    "name": "Johnson Controls International plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 143.38999938964844
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "WMB",
+    "name": "The Williams Companies, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 70.79000091552734
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "HOOD",
+    "name": "Robinhood Markets, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 95.6500015258789
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "EMR",
+    "name": "Emerson Electric Co.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 149.3000030517578
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "CMCSA",
+    "name": "Comcast Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 22.799999237060547
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "MDLZ",
+    "name": "Mondelez International, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 60.66999816894531
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "HON",
+    "name": "Honeywell International Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 245.75
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "SLB",
+    "name": "SLB N.V.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 51.529998779296875
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "DLR",
+    "name": "Digital Realty Trust, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 195.75999450683594
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "MSI",
+    "name": "Motorola Solutions, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 423.79998779296875
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "URI",
+    "name": "United Rentals, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 1127.9100341796875
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "BKR",
+    "name": "Baker Hughes Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 60.59000015258789
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "NUE",
+    "name": "Nucor Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 247.86000061035156
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "FAST",
+    "name": "Fastenal Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 47.63999938964844
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "XEL",
+    "name": "Xcel Energy Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 80.70999908447266
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "EXC",
+    "name": "Exelon Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 47.150001525878906
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "IRM",
+    "name": "Iron Mountain Incorporated",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 126.98999786376953
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "STLD",
+    "name": "Steel Dynamics, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 250.27000427246094
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "EXR",
+    "name": "Extra Space Storage Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 148.2899932861328
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "TPR",
+    "name": "Tapestry, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 147.42999267578125
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "CNP",
+    "name": "CenterPoint Energy, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 44.0099983215332
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "SW",
+    "name": "Smurfit Westrock Plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 50.09000015258789
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "VRSN",
+    "name": "VeriSign, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 274.82000732421875
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "WST",
+    "name": "West Pharmaceutical Services, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 331.25
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "CHD",
+    "name": "Church & Dwight Co., Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 98.69999694824219
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "PKG",
+    "name": "Packaging Corporation of America",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 252.3699951171875
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "LUV",
+    "name": "Southwest Airlines Co.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 45.380001068115234
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "TSN",
+    "name": "Tyson Foods, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 60.709999084472656
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "FTV",
+    "name": "Fortive Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 62.91999816894531
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "DD",
+    "name": "DuPont de Nemours, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 139.9600067138672
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "NDSN",
+    "name": "Nordson Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 297.3900146484375
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "BF.B",
+    "name": "Brown-Forman Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 27.399999618530273
+  },
+  {
+    "date": "2026-07-27",
+    "ticker": "ASML",
+    "name": "ASML Holding N.V.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1655.260009765625
   }
 ];

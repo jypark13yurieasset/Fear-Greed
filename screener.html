@@ -1002,14 +1002,14 @@
                 </div>
                 <!-- Golden Cross Box -->
                 <div id="golden-cross-box" style="margin-top: 15px; padding: 15px; width: 100%; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 8px; display: none; box-sizing: border-box;">
-                    <div style="color: #22c55e; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">🚀 최적 매수 타이밍 (상승 모멘텀 + 최근 3일 골든크로스 발생)</div>
+                    <div style="color: #22c55e; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">🚀 최적 매수 타이밍 (상승 모멘텀 + 200일 이평선 상회 + 최근 3일 골든크로스 발생)</div>
                     <div id="golden-cross-list" style="font-size: 0.9rem; color: var(--text-primary); line-height: 2;">
                         <!-- Tickers will be injected here -->
                     </div>
                 </div>
                 <!-- Danger Dead Cross Box -->
                 <div id="danger-dead-cross-box" style="margin-top: 10px; padding: 15px; width: 100%; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; display: none; box-sizing: border-box;">
-                    <div style="color: #ef4444; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">💀 최악의 투매 경고 (하락 모멘텀 + 최근 3일 데드크로스 발생)</div>
+                    <div style="color: #ef4444; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">💀 최악의 투매 경고 (하락 모멘텀 + 50일 이평선 하회 + 최근 3일 데드크로스 발생)</div>
                     <div id="danger-dead-cross-list" style="font-size: 0.9rem; color: var(--text-primary); line-height: 2;">
                         <!-- Tickers will be injected here -->
                     </div>
@@ -1292,6 +1292,25 @@
             });
             const activeBtn = document.getElementById(`preset-${preset}`);
             if (activeBtn) activeBtn.classList.add('active');
+
+            // Apply default sorting for ranking presets
+            if (preset === 'targetgap') {
+                currentSortKey = 'target_dist';
+                currentSortOrder = 'desc';
+                updateSortHeaders();
+            } else if (preset === 'epsgrowth') {
+                currentSortKey = 'eps_growth';
+                currentSortOrder = 'desc';
+                updateSortHeaders();
+            } else if (preset === 'mcap') {
+                currentSortKey = 'marketCap';
+                currentSortOrder = 'desc';
+                updateSortHeaders();
+            } else if (preset === 'leaders') {
+                currentSortKey = 'pct_1m';
+                currentSortOrder = 'desc';
+                updateSortHeaders();
+            }
             
             applyFilters();
         }
