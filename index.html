@@ -847,7 +847,7 @@
                 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; padding-left: 5px; color: var(--text-primary);">
                 2. 액티브 ETF 비교
             </h3>
-            <div class="etf-holdings-grid" style="grid-template-columns: repeat(5, 1fr);">
+            <div class="etf-holdings-grid" style="grid-template-columns: repeat(2, 1fr);">
                 <!-- KoAct 삼성액티브 -->
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
@@ -996,77 +996,6 @@
                     </div>
                 </div>
 
-                <!-- ARKK -->
-                <div class="etf-holdings-card">
-                    <div class="etf-card-header">
-                        <div class="etf-card-title">캐시 우드</div>
-                        <div class="etf-card-sub">ARKK &nbsp;|&nbsp; <span id="arkk-update-date">기준일: -</span></div>
-                    </div>
-                    <table class="etf-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>종목명</th>
-                                <th>비중(%)</th>
-                            </tr>
-                        </thead>
-                        <tbody id="arkk-holdings-body">
-                        </tbody>
-                    </table>
-                    <div class="etf-source-link">
-                        <a href="https://stockanalysis.com/etf/arkk/holdings/" target="_blank" rel="noopener">ARKK 상세 정보
-                            →</a>
-                    </div>
-                </div>
-
-                <!-- IVES -->
-                <div class="etf-holdings-card">
-                    <div class="etf-card-header">
-                        <div class="etf-card-title">댄 아이브스</div>
-                        <div class="etf-card-sub">IVES &nbsp;|&nbsp; <span id="ives-update-date">기준일: -</span></div>
-                    </div>
-                    <table class="etf-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>종목명</th>
-                                <th>비중(%)</th>
-                            </tr>
-                        </thead>
-                        <tbody id="ives-holdings-body">
-                        </tbody>
-                    </table>
-                    <div class="etf-source-link">
-                        <a href="https://stockanalysis.com/etf/ives/holdings/" target="_blank" rel="noopener">IVES 상세 정보
-                            →</a>
-                    </div>
-                </div>
-
-                <!-- GRNY -->
-                <div class="etf-holdings-card">
-                    <div class="etf-card-header">
-                        <div class="etf-card-title">톰 리</div>
-                        <div class="etf-card-sub">GRNY &nbsp;|&nbsp; <span id="grny-update-date">기준일: -</span></div>
-                    </div>
-                    <table class="etf-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>종목명</th>
-                                <th>비중(%)</th>
-                            </tr>
-                        </thead>
-                        <tbody id="grny-holdings-body">
-                            <tr>
-                                <td colspan="3" style="text-align: center;">Loading...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="etf-source-link">
-                        <a href="https://stockanalysis.com/etf/grny/holdings/" target="_blank" rel="noopener">GRNY 상세 정보
-                            →</a>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -1339,43 +1268,7 @@
 
 
 
-            // US ETF Holdings 반영 (ARKK, IVES, GRNY)
-            const targetEtfs = ['ARKK', 'IVES', 'GRNY'];
-            let usEtfData = null;
-            for (const d of dates) {
-                if (data[d] && data[d].us_etfs) {
-                    usEtfData = data[d].us_etfs;
-                    break;
-                }
-            }
-            if (usEtfData) {
-                targetEtfs.forEach(ticker => {
-                    const etfData = usEtfData[ticker];
-                    const tbody = document.getElementById(`${ticker.toLowerCase()}-holdings-body`);
-                    const dateEl = document.getElementById(`${ticker.toLowerCase()}-update-date`);
-                    if (etfData && etfData.holdings && tbody) {
-                        tbody.innerHTML = '';
-                        etfData.holdings.forEach((item, idx) => {
-                            const etfWatchlist = ['SPACEX', 'SPCX', 'TESLA', 'TSLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON', 'MU'];
-                            const nUp = (item.name || '').toUpperCase();
-                            const tUp = (item.ticker || '').toUpperCase();
-                            const isStar = etfWatchlist.some(w => nUp.includes(w) || tUp === w);
-                            const star = isStar ? '<span style="color: #fbbf24; font-size: 0.7rem;">⭐⭐</span> ' : '';
-                            const row = `<tr data-ticker="${item.ticker || ''}">
-                                <td class="rank">${idx + 1}</td>
-                                <td>${star}${item.ticker || item.name}</td>
-                                <td class="weight">${item.weight.toFixed(2)}%</td>
-                            </tr>`;
-                            tbody.innerHTML += row;
-                        });
-                        if (dateEl && etfData.date) {
-                            dateEl.innerText = `기준일: ${etfData.date}`;
-                        }
-                    } else if (tbody) {
-                        tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 20px;">데이터 없음</td></tr>';
-                    }
-                });
-            }
+
 
             // 공통 보유 종목 돋보이게 하이라이트 실행
             highlightUniqueHoldings();
@@ -1517,18 +1410,7 @@
             applyHighlight(koactRows, 'common-holding', timeKeys);
             applyHighlight(timeRows, 'common-holding', koactKeys);
 
-            // 2. US Theme ETFs (ARKK, IVES, GRNY)
-            const arkkRows = document.querySelectorAll('#arkk-holdings-body tr');
-            const ivesRows = document.querySelectorAll('#ives-holdings-body tr');
-            const grnyRows = document.querySelectorAll('#grny-holdings-body tr');
 
-            const arkkKeys = getKeys(arkkRows);
-            const ivesKeys = getKeys(ivesRows);
-            const grnyKeys = getKeys(grnyRows);
-
-            applyHighlight(arkkRows, 'common-holding-us', ivesKeys, grnyKeys);
-            applyHighlight(ivesRows, 'common-holding-us', arkkKeys, grnyKeys);
-            applyHighlight(grnyRows, 'common-holding-us', arkkKeys, ivesKeys);
         }
     </script>
 </body>

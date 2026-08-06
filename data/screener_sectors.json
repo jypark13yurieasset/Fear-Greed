@@ -2608,5 +2608,10 @@
     "sector": "Communication Services",
     "sub_industry": "Telecom Services",
     "name": "EchoStar Corporation"
+  },
+  "FERG": {
+    "sector": "Industrials",
+    "sub_industry": "Industrial Distribution",
+    "name": "Ferguson Enterprises Inc."
   }
 }
