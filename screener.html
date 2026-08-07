@@ -941,10 +941,7 @@
                 <div class="stat-value" id="stat-ndx">-</div>
                 <div class="stat-label">Nasdaq-100</div>
             </div>
-            <div class="stat-card dow-stat">
-                <div class="stat-value" id="stat-dow">-</div>
-                <div class="stat-label">Dow Jones</div>
-            </div>
+
             <div class="stat-card overlap-stat">
                 <div class="stat-value" id="stat-filtered">-</div>
                 <div class="stat-label">필터 결과</div>
@@ -1134,7 +1131,7 @@
         // ─── Global State ───
         let allStocks = [];
         let filteredStocks = [];
-        let activeIndices = { sp500: true, nasdaq100: true, dowjones: true };
+        let activeIndices = { sp500: true, nasdaq100: true };
         let activePreset = 'all';
         // Sorting state
         let currentSortKey = '';
@@ -1335,7 +1332,7 @@
                     let inAnyActive = false;
                     if (activeIndices.sp500 && stock.sp500) inAnyActive = true;
                     if (activeIndices.nasdaq100 && stock.nasdaq100) inAnyActive = true;
-                    if (activeIndices.dowjones && stock.dowjones) inAnyActive = true;
+
                     if (!inAnyActive) return false;
                 }
 

@@ -100,8 +100,6 @@ def fetch_slickcharts(url):
 
 sp500_list = fetch_slickcharts("https://www.slickcharts.com/sp500")
 ndx_list = fetch_slickcharts("https://www.slickcharts.com/nasdaq100")
-dow_list = fetch_slickcharts("https://www.slickcharts.com/dowjones")
-
 # Fallback to local cache if scraping fails (e.g., due to IP blocks in GitHub Actions)
 existing_sp500 = []
 existing_ndx = []
@@ -119,9 +117,7 @@ if os.path.exists(existing_json_path):
                     existing_sp500.append({'ticker': ticker, 'name': name})
                 if stock.get('nasdaq100'):
                     existing_ndx.append({'ticker': ticker, 'name': name})
-                if stock.get('dowjones'):
-                    existing_dow.append({'ticker': ticker, 'name': name})
-        print(f"   [캐시] 기존 저장된 구성종목 로드 완료: S&P 500={len(existing_sp500)}개, NDX={len(existing_ndx)}개, Dow={len(existing_dow)}개")
+        print(f"   [캐시] 기존 저장된 구성종목 로드 완료: S&P 500={len(existing_sp500)}개, NDX={len(existing_ndx)}개")
     except Exception as e:
         print(f"   ⚠️ 기존 구성종목 캐시 로드 에러: {e}")
 
@@ -131,9 +127,6 @@ if not sp500_list and existing_sp500:
 if not ndx_list and existing_ndx:
     print("   ⚠️ Nasdaq-100 SlickCharts 수집 실패. 기존 캐시 데이터를 복원합니다.")
     ndx_list = existing_ndx
-if not dow_list and existing_dow:
-    print("   ⚠️ Dow Jones SlickCharts 수집 실패. 기존 캐시 데이터를 복원합니다.")
-    dow_list = existing_dow
 
 # --- 3. Sector Resolution with Cross-Checking ---
 print("\n" + "=" * 60)
@@ -237,32 +230,6 @@ for s in ndx_list:
         if force_check:
             time.sleep(0.15)
 
-# Dow Jones
-for s in dow_list:
-    t = s['ticker']
-    if t in stock_map:
-        stock_map[t]['dowjones'] = True
-        if not stock_map[t]['sector']:
-            sector, sub_industry, _ = get_sector_info(t, force=force_check)
-            if sector:
-                stock_map[t]['sector'] = sector
-                stock_map[t]['sub_industry'] = sub_industry
-                if force_check:
-                    time.sleep(0.15)
-    else:
-        sector, sub_industry, final_name = get_sector_info(t, force=force_check)
-        stock_map[t] = {
-            'ticker': t,
-            'name': final_name or s['name'],
-            'sector': sector,
-            'sub_industry': sub_industry,
-            'sp500': False,
-            'nasdaq100': False,
-            'dowjones': True,
-            'is_watchlist': False
-        }
-        if force_check:
-            time.sleep(0.15)
 
 # Inject Watchlist Stocks
 # 5 Watchlist: SpaceX (SPCX), Tesla, Samsung, SK Hynix, Micron
