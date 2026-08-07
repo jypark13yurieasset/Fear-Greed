@@ -98,7 +98,9 @@ def fetch_slickcharts(url):
         print(f"   ❌ SlickCharts 수집 에러: {e}")
     return []
 
-sp500_list = fetch_slickcharts("https://www.slickcharts.com/sp500")
+sp500_full = fetch_slickcharts("https://www.slickcharts.com/sp500")
+sp500_list = sp500_full[:250]  # 비중 상위 250개만 사용
+print(f"   → S&P 500 비중 상위 250개 종목만 사용 (전체 {len(sp500_full)}개 중 {len(sp500_list)}개)")
 ndx_list = fetch_slickcharts("https://www.slickcharts.com/nasdaq100")
 # Fallback to local cache if scraping fails (e.g., due to IP blocks in GitHub Actions)
 existing_sp500 = []
@@ -812,8 +814,8 @@ results = {
 }
 
 # --- Safety Check: Ensure we don't save a truncated dataset ---
-if len(stocks_output) < 400:
-    print(f"\n❌ 에러: 생성할 구성종목 개수가 {len(stocks_output)}개로 너무 적습니다 (기준: 400개 이상).")
+if len(stocks_output) < 200:
+    print(f"\n❌ 에러: 생성할 구성종목 개수가 {len(stocks_output)}개로 너무 적습니다 (기준: 200개 이상).")
     print("데이터 정합성 오류로 판단되어 저장 작업을 중단하고 종료합니다.")
     sys.exit(1)
 

@@ -13394,14 +13394,14 @@
         "nasdaq_change": -0.06,
         "vix_price": 15.15,
         "vix_change": -4.17,
-        "dxy_price": 99.97,
-        "dxy_change": 0.28,
+        "dxy_price": 99.95,
+        "dxy_change": -0.02,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$29.891 T"
+                "mcap": "$29.909 T"
             },
             {
                 "rank": 2,
@@ -13431,7 +13431,7 @@
                 "rank": 6,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.476 T"
+                "mcap": "$3.489 T"
             },
             {
                 "rank": 7,
@@ -13491,7 +13491,7 @@
                 "rank": 16,
                 "name": "Samsung",
                 "code": "005930.KS",
-                "mcap": "$1.063 T"
+                "mcap": "$1.073 T"
             },
             {
                 "rank": 17,
@@ -13518,8 +13518,8 @@
                 "mcap": "$947.11 B"
             }
         ],
-        "aaii_bullish": 35.7,
-        "aaii_neutral": 25.4,
+        "aaii_bullish": 35.8,
+        "aaii_neutral": 25.2,
         "aaii_bearish": 38.9,
         "aaii_date": "2026-08-05",
         "us_etfs": {
@@ -13795,6 +13795,6 @@
                 "weight": 3.49
             }
         ],
-        "updated_at": "08-07 07:31 KST"
+        "updated_at": "08-07 10:47 KST"
     }
 }
