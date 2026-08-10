@@ -1,134 +1,6 @@
 [
   {
     "date": "2026-07-10",
-    "ticker": "EXR",
-    "name": "Extra Space Storage Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 143.9600067138672
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "CASY",
-    "name": "Casey's General Stores, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 819.8300170898438
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "TPR",
-    "name": "Tapestry, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 140.72999572753906
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "PPL",
-    "name": "PPL Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 35.779998779296875
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "SYF",
-    "name": "Synchrony Financial",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 72.44000244140625
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "CHD",
-    "name": "Church & Dwight Co., Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 96.36000061035156
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "NI",
-    "name": "NiSource Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 46.900001525878906
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "BR",
-    "name": "Broadridge Financial Solutions, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 147.47000122070312
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "NDSN",
-    "name": "Nordson Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 286.6000061035156
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "SOLV",
-    "name": "Solventum Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 76.69999694824219
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "IVZ",
-    "name": "Invesco Ltd.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 28.979999542236328
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "TRMB",
-    "name": "Trimble Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 52.81999969482422
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "AES",
-    "name": "The AES Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 14.779999732971191
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "FRT",
-    "name": "Federal Realty Investment Trust",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 120.94000244140625
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "NCLH",
-    "name": "Norwegian Cruise Line Holdings Ltd.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 19.610000610351562
-  },
-  {
-    "date": "2026-07-10",
-    "ticker": "ARE",
-    "name": "Alexandria Real Estate Equities, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 47.880001068115234
-  },
-  {
-    "date": "2026-07-10",
     "ticker": "BLDR",
     "name": "Builders FirstSource, Inc.",
     "type": "dead",
@@ -7998,5 +7870,133 @@
     "type": "dead",
     "streak": 1,
     "entry_price": 30.010000228881836
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "LLY",
+    "name": "Eli Lilly and Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1231.93994140625
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "C",
+    "name": "Citigroup Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 135.22000122070312
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "UBER",
+    "name": "Uber Technologies, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 78.02999877929688
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorporated",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 523.9099731445312
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "TT",
+    "name": "Trane Technologies plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 476.989990234375
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "ELV",
+    "name": "Elevance Health, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 397.70001220703125
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "FDX",
+    "name": "FedEx Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 325.0799865722656
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "SPG",
+    "name": "Simon Property Group, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 220.5500030517578
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 1381.0999755859375
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "TDG",
+    "name": "TransDigm Group Incorporated",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1223.47998046875
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "WBD",
+    "name": "Warner Bros. Discovery, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 26.8700008392334
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "COHR",
+    "name": "Coherent Corp.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 325.1499938964844
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "F",
+    "name": "Ford Motor Company",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 14.0
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "DVN",
+    "name": "Devon Energy Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 45.36000061035156
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "TTWO",
+    "name": "Take-Two Interactive Software, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 253.57000732421875
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "RKLB",
+    "name": "Rocket Lab Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 80.04000091552734
   }
 ]
