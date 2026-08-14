@@ -1,109 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-07-13",
-    "ticker": "IVZ",
-    "name": "Invesco Ltd.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 28.399999618530273
-  },
-  {
-    "date": "2026-07-13",
-    "ticker": "TRMB",
-    "name": "Trimble Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 52.290000915527344
-  },
-  {
-    "date": "2026-07-13",
-    "ticker": "AVY",
-    "name": "Avery Dennison Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 159.24000549316406
-  },
-  {
-    "date": "2026-07-13",
-    "ticker": "AES",
-    "name": "The AES Corporation",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 14.760000228881836
-  },
-  {
-    "date": "2026-07-13",
-    "ticker": "TTD",
-    "name": "The Trade Desk, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 19.790000915527344
-  },
-  {
-    "date": "2026-07-13",
-    "ticker": "BLDR",
-    "name": "Builders FirstSource, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 73.51000213623047
-  },
-  {
-    "date": "2026-07-13",
-    "ticker": "ASML",
-    "name": "ASML Holding N.V.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 1726.0400390625
-  },
-  {
-    "date": "2026-07-13",
-    "ticker": "PDD",
-    "name": "PDD Holdings Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 84.55999755859375
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "NVDA",
-    "name": "NVIDIA Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 211.8000030517578
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "AMZN",
-    "name": "Amazon.com, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 247.49000549316406
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "TSLA",
-    "name": "Tesla, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 396.17999267578125
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "CAT",
-    "name": "Caterpillar Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 933.3400268554688
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "CVX",
-    "name": "Chevron Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 181.75999450683594
-  },
-  {
     "date": "2026-07-14",
     "ticker": "PG",
     "name": "The Procter & Gamble Company",
@@ -7998,5 +7894,109 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 2,
     "entry_price": 24.530000686645508
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "GOOG",
+    "name": "Alphabet Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 343.94000244140625
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "LRCX",
+    "name": "Lam Research Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 337.010009765625
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "MS",
+    "name": "Morgan Stanley",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 218.3800048828125
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "GEV",
+    "name": "GE Vernova Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1049.4200439453125
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 921.3699951171875
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 222.17999267578125
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "ADI",
+    "name": "Analog Devices, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 381.1700134277344
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "TJX",
+    "name": "The TJX Companies, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 153.80999755859375
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "CIEN",
+    "name": "Ciena Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 442.7900085449219
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "AFL",
+    "name": "Aflac Incorporated",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 121.0999984741211
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "OKE",
+    "name": "ONEOK, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 92.63999938964844
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "ASML",
+    "name": "ASML Holding N.V.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 1847.9000244140625
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "NBIS",
+    "name": "Nebius Group N.V.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 255.0399932861328
   }
 ];
