@@ -542,6 +542,7 @@ for t, s in stock_map.items():
     ema_signal = None    # 1=below both, 2=between, 3=above both
     macd_state = None    # 1=Strong Bear, 2=Bear Turn, 3=Bull Turn, 4=Strong Bull
     dist_sma20 = None    # (price - SMA20) / SMA20 * 100
+    dist_sma5 = None     # (price - SMA5) / SMA5 * 100
     rsi14 = None         # Wilder's RSI-14
     
     if series is not None and not series.empty:
@@ -628,6 +629,11 @@ for t, s in stock_map.items():
                 ema_signal = 2   # 📉 하락 반전
             else:
                 ema_signal = 1   # ❄️ 강력 하락
+        
+        # SMA5 이격도
+        sma5 = calc_sma(closes, 5)
+        if sma5 and sma5 > 0:
+            dist_sma5 = (price - sma5) / sma5 * 100
         
         # SMA20 이격도
         sma20 = calc_sma(closes, 20)
@@ -794,6 +800,7 @@ for t, s in stock_map.items():
         'is_golden_cross_opportunity': is_golden_cross_opportunity,
         'dead_cross_count': dead_cross_count,
         'golden_cross_count': golden_cross_count,
+        'dist_sma5': rnd(dist_sma5),    # SMA5 이격도 (%)
         'dist_sma20': rnd(dist_sma20),  # SMA20 이격도 (%)
         'rsi14': rnd(rsi14),            # RSI-14 수치
         'rsi14_w': rnd(rsi14_w),
