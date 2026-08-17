@@ -1,206 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-07-14",
-    "ticker": "HCA",
-    "name": "HCA Healthcare, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 363.6000061035156
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "ICE",
-    "name": "Intercontinental Exchange, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 137.61000061035156
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "EOG",
-    "name": "EOG Resources, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 138.00999450683594
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "WBD",
-    "name": "Warner Bros. Discovery, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 27.479999542236328
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "TDG",
-    "name": "TransDigm Group Incorporated",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 1215.3399658203125
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "OXY",
-    "name": "Occidental Petroleum Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 54.56999969482422
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "CVNA",
-    "name": "Carvana Co.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 70.37999725341797
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "NDAQ",
-    "name": "Nasdaq, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 88.01000213623047
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "ODFL",
-    "name": "Old Dominion Freight Line, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 228.61000061035156
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "KDP",
-    "name": "Keurig Dr Pepper Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 30.260000228881836
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "VMC",
-    "name": "Vulcan Materials Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 291.8900146484375
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "CASY",
-    "name": "Casey's General Stores, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 847.1900024414062
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "BIIB",
-    "name": "Biogen Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 191.9499969482422
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "GEHC",
-    "name": "GE HealthCare Technologies Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 61.65999984741211
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "PPL",
-    "name": "PPL Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 36.099998474121094
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "PPG",
-    "name": "PPG Industries, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 114.66000366210938
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "PHM",
-    "name": "PulteGroup, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 124.55999755859375
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "SW",
-    "name": "Smurfit Westrock Plc",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 42.90999984741211
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "CHD",
-    "name": "Church & Dwight Co., Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 95.41000366210938
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "HPQ",
-    "name": "HP Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 24.6299991607666
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "RL",
-    "name": "Ralph Lauren Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 368.9700012207031
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "PKG",
-    "name": "Packaging Corporation of America",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 225.75999450683594
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "IFF",
-    "name": "International Flavors & Fragrances Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 74.66999816894531
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "NVR",
-    "name": "NVR, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 6378.7998046875
-  },
-  {
-    "date": "2026-07-14",
-    "ticker": "MAA",
-    "name": "Mid-America Apartment Communities, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 133.67999267578125
-  },
-  {
-    "date": "2026-07-14",
     "ticker": "TXT",
     "name": "Textron Inc.",
     "type": "dead",
@@ -7998,5 +7798,205 @@ const SIGNAL_LOG_DATA = [
     "type": "golden",
     "streak": 3,
     "entry_price": 277.67999267578125
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 344.0
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "GOOG",
+    "name": "Alphabet Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 341.45001220703125
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "MU",
+    "name": "Micron Technology, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 1011.75
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "INTC",
+    "name": "Intel Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 103.48999786376953
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "CSCO",
+    "name": "Cisco Systems, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 112.9000015258789
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "LRCX",
+    "name": "Lam Research Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 343.8399963378906
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "PM",
+    "name": "Philip Morris International Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 184.52000427246094
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "GEV",
+    "name": "GE Vernova Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 1079.0
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "SNDK",
+    "name": "Sandisk Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1786.8499755859375
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "AXP",
+    "name": "American Express Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 336.2099914550781
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 994.7899780273438
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 234.3300018310547
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "TJX",
+    "name": "The TJX Companies, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 150.85000610351562
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "GLW",
+    "name": "Corning Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 173.2100067138672
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "VRT",
+    "name": "Vertiv Holdings Co",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 292.42999267578125
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "WMB",
+    "name": "The Williams Companies, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 73.44999694824219
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "HON",
+    "name": "Honeywell International Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 229.4499969482422
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "KMI",
+    "name": "Kinder Morgan, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 32.33000183105469
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "CL",
+    "name": "Colgate-Palmolive Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 90.20999908447266
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "FIX",
+    "name": "Comfort Systems USA, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1881.1800537109375
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "CIEN",
+    "name": "Ciena Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 445.17999267578125
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "TRGP",
+    "name": "Targa Resources Corp.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 277.94000244140625
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "FLEX",
+    "name": "Flex Ltd.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 130.0
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "FER",
+    "name": "Ferrovial N.V.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 63.91999816894531
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "IDXX",
+    "name": "IDEXX Laboratories, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 546.0900268554688
   }
 ];
