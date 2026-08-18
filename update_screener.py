@@ -881,8 +881,16 @@ def send_telegram_notification():
         print("\n⚠️ TELEGRAM_BOT_TOKEN 또는 TELEGRAM_CHAT_ID가 .env에 없습니다.")
         return
     
-    # 골든크로스 종목만 전송
-    golden_stocks = [s for s in stocks_output if s.get('is_golden_cross_opportunity')]
+    # 골든크로스 + EPS 성장률(>0) 종목만 전송 (웹과 동일한 필터링 기준)
+    def has_positive_eps_growth(stock):
+        if not stock.get('is_golden_cross_opportunity'): return False
+        pe = stock.get('trailingPE')
+        fpe = stock.get('forwardPE')
+        if pe and fpe and fpe > 0:
+            return (pe / fpe - 1) > 0
+        return False
+        
+    golden_stocks = [s for s in stocks_output if has_positive_eps_growth(s)]
     
     if not golden_stocks:
         print("\n📭 골든크로스 종목이 없어 텔레그램 알림을 건너뜁니다.")
@@ -890,13 +898,35 @@ def send_telegram_notification():
         
     def parse_mcap(mcap_str):
         if not mcap_str or mcap_str == '-': return 0
-        mcap_str = str(mcap_str).replace(',', '').strip()
-        if mcap_str.endswith('B'): return float(mcap_str[:-1]) * 1e9
-        if mcap_str.endswith('M'): return float(mcap_str[:-1]) * 1e6
-        if mcap_str.endswith('T'): return float(mcap_str[:-1]) * 1e12
-        if mcap_str.endswith('원'): return float(mcap_str[:-1]) * 0.00075
-        try: return float(mcap_str)
-        except: return 0
+        try:
+            mcap_str = str(mcap_str).replace(',', '').strip()
+            if mcap_str.endswith('B'): return float(mcap_str[:-1]) * 1e9
+            if mcap_str.endswith('M'): return float(mcap_str[:-1]) * 1e6
+            if mcap_str.endswith('T'): return float(mcap_str[:-1]) * 1e12
+            
+            if '조' in mcap_str or '억' in mcap_str or mcap_str.endswith('원'):
+                import re
+                jo = 0
+                eok = 0
+                match_jo = re.search(r'(\d+(?:\.\d+)?)조', mcap_str)
+                if match_jo: jo = float(match_jo.group(1)) * 1e12
+                match_eok = re.search(r'(\d+(?:\.\d+)?)억', mcap_str)
+                if match_eok: eok = float(match_eok.group(1)) * 1e8
+                
+                if not match_eok and '조' in mcap_str:
+                    parts = mcap_str.split('조')
+                    if len(parts) > 1 and parts[1].strip():
+                        eok_part = re.sub(r'[^\d.]', '', parts[1])
+                        if eok_part: eok = float(eok_part) * 1e8
+                        
+                val = jo + eok
+                if val == 0:
+                    nums = re.sub(r'[^\d.]', '', mcap_str)
+                    if nums: val = float(nums)
+                return val * 0.00075 # 원화를 달러로 임의 환산
+            return float(mcap_str)
+        except:
+            return 0
         
     golden_stocks.sort(key=lambda x: parse_mcap(x.get('marketCap', '')), reverse=True)
     
