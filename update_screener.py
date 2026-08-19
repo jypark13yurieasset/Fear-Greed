@@ -881,9 +881,12 @@ def send_telegram_notification():
         print("\n⚠️ TELEGRAM_BOT_TOKEN 또는 TELEGRAM_CHAT_ID가 .env에 없습니다.")
         return
     
-    # 골든크로스 + EPS 성장률(>0) 종목만 전송 (웹과 동일한 필터링 기준)
+    # 골든크로스 + EPS 성장률(>0) + 미국 주요 지수(S&P500 or 나스닥100) 종목만 전송 (웹의 '오늘의 종목'과 완벽히 동일한 필터링 기준)
     def has_positive_eps_growth(stock):
         if not stock.get('is_golden_cross_opportunity'): return False
+        # 웹페이지의 인덱스 필터(S&P500, Nasdaq100) 반영 (관심종목 등 제외)
+        if not (stock.get('sp500') or stock.get('nasdaq100')): return False
+        
         pe = stock.get('trailingPE')
         fpe = stock.get('forwardPE')
         if pe and fpe and fpe > 0:
