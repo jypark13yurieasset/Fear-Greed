@@ -4,61 +4,71 @@ const SMA20_TOP10_LOG = {
       "ticker": "MRNA",
       "name": "Moderna, Inc.",
       "sector": "Health Care",
-      "dist_sma20": 171.62
+      "dist_sma20": 171.62,
+      "rsi14": 92.21
     },
     {
       "ticker": "NEM",
       "name": "Newmont Corporation",
       "sector": "Materials",
-      "dist_sma20": 18.27
+      "dist_sma20": 18.27,
+      "rsi14": 71.94
     },
     {
       "ticker": "WDAY",
       "name": "Workday, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 15.36
+      "dist_sma20": 15.36,
+      "rsi14": 66.62
     },
     {
       "ticker": "PLTR",
       "name": "Palantir Technologies Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 15.34
+      "dist_sma20": 15.34,
+      "rsi14": 67.61
     },
     {
       "ticker": "MRK",
       "name": "Merck & Co., Inc.",
       "sector": "Health Care",
-      "dist_sma20": 15.11
+      "dist_sma20": 15.11,
+      "rsi14": 83.13
     },
     {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 15.07
+      "dist_sma20": 15.07,
+      "rsi14": 57.49
     },
     {
       "ticker": "SNDK",
       "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma20": 14.21
+      "dist_sma20": 14.21,
+      "rsi14": 52.86
     },
     {
       "ticker": "ABNB",
       "name": "Airbnb, Inc.",
       "sector": "Consumer Discretionary",
-      "dist_sma20": 13.45
+      "dist_sma20": 13.45,
+      "rsi14": 72.37
     },
     {
       "ticker": "CPRT",
       "name": "Copart, Inc.",
       "sector": "Industrials",
-      "dist_sma20": 13.31
+      "dist_sma20": 13.31,
+      "rsi14": 73.18
     },
     {
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
-      "dist_sma20": 12.61
+      "dist_sma20": 12.61,
+      "rsi14": 62.48
     }
   ]
 };

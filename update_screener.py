@@ -880,7 +880,8 @@ sma5_log[run_date_str] = [
         'ticker': s['ticker'],
         'name': s['name'],
         'sector': s.get('sector', '-'),
-        'dist_sma5': s['dist_sma5']
+        'dist_sma5': s['dist_sma5'],
+        'rsi14': s.get('rsi14', 0)
     }
     for s in sma5_top10
 ]
@@ -922,7 +923,8 @@ sma20_log[run_date_str] = [
         'ticker': s['ticker'],
         'name': s['name'],
         'sector': s.get('sector', '-'),
-        'dist_sma20': s['dist_sma20']
+        'dist_sma20': s['dist_sma20'],
+        'rsi14': s.get('rsi14', 0)
     }
     for s in sma20_top10
 ]
@@ -964,7 +966,8 @@ sma5_laggards_log[run_date_str] = [
         'ticker': s['ticker'],
         'name': s['name'],
         'sector': s.get('sector', '-'),
-        'dist_sma5': s['dist_sma5']
+        'dist_sma5': s['dist_sma5'],
+        'rsi14': s.get('rsi14', 0)
     }
     for s in sma5_laggards_top10
 ]
@@ -1005,7 +1008,8 @@ sma20_laggards_log[run_date_str] = [
         'ticker': s['ticker'],
         'name': s['name'],
         'sector': s.get('sector', '-'),
-        'dist_sma20': s['dist_sma20']
+        'dist_sma20': s['dist_sma20'],
+        'rsi14': s.get('rsi14', 0)
     }
     for s in sma20_laggards_top10
 ]

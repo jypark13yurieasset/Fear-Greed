@@ -472,6 +472,12 @@
             font-size: 0.88rem;
             color: var(--text-secondary);
         }
+        .sma5-table .sma5-rsi-val {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
         .sma5-empty-msg {
             text-align: center;
             color: var(--text-secondary);
@@ -487,6 +493,7 @@
         .common-holding td.sma5-sector,
         .common-holding td.sma5-company,
         .common-holding td.sma5-dist-val,
+        .common-holding td.sma5-rsi-val,
         .common-holding td a.sma5-ticker-link {
             color: #38bdf8 !important;
             font-weight: 600;
@@ -503,6 +510,7 @@
         .common-holding-laggard td.sma5-sector,
         .common-holding-laggard td.sma5-company,
         .common-holding-laggard td.sma5-dist-val,
+        .common-holding-laggard td.sma5-rsi-val,
         .common-holding-laggard td a.sma5-ticker-link {
             color: #f87171 !important;
             font-weight: 600;
@@ -867,13 +875,14 @@
                 return;
             }
 
-            const dates = Object.keys(logData).sort().reverse();
+            const dates = Object.keys(logData).sort();
 
             // Build date chips
             scroller.innerHTML = '';
             dates.forEach((date, idx) => {
+                const isLast = idx === dates.length - 1;
                 const chip = document.createElement('div');
-                chip.className = 'sma5-date-chip' + (idx === 0 ? ' active' : '');
+                chip.className = 'sma5-date-chip' + (isLast ? ' active' : '');
                 const d = new Date(date + 'T00:00:00');
                 chip.textContent = `${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')}`;
                 chip.dataset.date = date;
@@ -885,8 +894,8 @@
                 scroller.appendChild(chip);
             });
 
-            // Render first date
-            renderTable(dates[0]);
+            // Render first (latest) date by default
+            renderTable(dates[dates.length - 1]);
 
             function renderTable(date) {
                 const stocks = logData[date] || [];
@@ -906,6 +915,7 @@
                         <th>COMPANY</th>
                         <th>SECTOR</th>
                         <th style="text-align:right">${distLabel}</th>
+                        <th style="text-align:right">일봉 RSI</th>
                     </tr></thead><tbody>`;
 
                 stocks.forEach((s, i) => {
@@ -914,6 +924,7 @@
                     const sign = val >= 0 ? '+' : '';
                     const isCommon = otherStocks.includes(s.ticker);
                     const rowClass = isCommon ? ` class="${highlightClass}"` : '';
+                    const rsiVal = (typeof s.rsi14 === 'number' && s.rsi14 > 0) ? s.rsi14.toFixed(1) : '-';
                     
                     html += `<tr${rowClass}>
                         <td class="sma5-rank${rankClass}">${i+1}</td>
@@ -921,6 +932,7 @@
                         <td class="sma5-company">${s.name}</td>
                         <td class="sma5-sector">${s.sector}</td>
                         <td class="sma5-dist-val">${sign}${val.toFixed(2)}%</td>
+                        <td class="sma5-rsi-val">${rsiVal}</td>
                     </tr>`;
                 });
 

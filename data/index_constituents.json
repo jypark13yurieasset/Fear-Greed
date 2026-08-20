@@ -3838,7 +3838,7 @@
       "dist_ma50": 4.32,
       "dist_ma200": -0.23,
       "marketCap": "130.41B",
-      "targetPrice": 382.88,
+      "targetPrice": 388.57,
       "exchange": "NYQ"
     },
     {
@@ -3878,7 +3878,7 @@
       "dist_ma50": 4.67,
       "dist_ma200": 10.53,
       "marketCap": "129.02B",
-      "targetPrice": 1160.95,
+      "targetPrice": 1182.82,
       "exchange": "NYQ"
     },
     {
@@ -4118,7 +4118,7 @@
       "dist_ma50": 0.79,
       "dist_ma200": 9.03,
       "marketCap": "119.68B",
-      "targetPrice": 112.23,
+      "targetPrice": 113.44,
       "exchange": "NMS"
     },
     {
@@ -4158,7 +4158,7 @@
       "dist_ma50": 2.19,
       "dist_ma200": 17.08,
       "marketCap": "113.05B",
-      "targetPrice": 335.33,
+      "targetPrice": 341.6,
       "exchange": "NYQ"
     },
     {
@@ -4238,7 +4238,7 @@
       "dist_ma50": 19.8,
       "dist_ma200": -11.26,
       "marketCap": "112.09B",
-      "targetPrice": 179.11,
+      "targetPrice": 175.41,
       "exchange": "NYQ"
     },
     {
@@ -4397,8 +4397,8 @@
       "dist_low": 42.08,
       "dist_ma50": 13.49,
       "dist_ma200": 10.78,
-      "marketCap": "173.43B",
-      "targetPrice": 142.38,
+      "marketCap": "180.18B",
+      "targetPrice": 142.77,
       "exchange": "NYQ"
     },
     {
@@ -4438,7 +4438,7 @@
       "dist_ma50": 4.35,
       "dist_ma200": 23.11,
       "marketCap": "108.40B",
-      "targetPrice": 167.33,
+      "targetPrice": 169.93,
       "exchange": "NYQ"
     },
     {
@@ -4478,7 +4478,7 @@
       "dist_ma50": 17.84,
       "dist_ma200": 0.51,
       "marketCap": "108.31B",
-      "targetPrice": 269.72,
+      "targetPrice": 253.9,
       "exchange": "NMS"
     },
     {
@@ -4598,7 +4598,7 @@
       "dist_ma50": -2.52,
       "dist_ma200": -0.4,
       "marketCap": "106.05B",
-      "targetPrice": 100.61,
+      "targetPrice": 100.68,
       "exchange": "NYQ"
     },
     {
@@ -4998,7 +4998,7 @@
       "dist_ma50": -0.5,
       "dist_ma200": 11.45,
       "marketCap": "98.32B",
-      "targetPrice": 277.73,
+      "targetPrice": 278.18,
       "exchange": "NYQ"
     },
     {
@@ -5198,7 +5198,7 @@
       "dist_ma50": -1.67,
       "dist_ma200": -0.67,
       "marketCap": "96.37B",
-      "targetPrice": 137.78,
+      "targetPrice": 137.94,
       "exchange": "NYQ"
     },
     {
@@ -5277,8 +5277,8 @@
       "dist_low": 50.22,
       "dist_ma50": 16.67,
       "dist_ma200": 17.28,
-      "marketCap": "95.95B",
-      "targetPrice": 251.94,
+      "marketCap": "95.43B",
+      "targetPrice": 257.59,
       "exchange": "NMS"
     },
     {
@@ -5318,7 +5318,7 @@
       "dist_ma50": 10.72,
       "dist_ma200": -0.99,
       "marketCap": "94.36B",
-      "targetPrice": 30.08,
+      "targetPrice": 31.1,
       "exchange": "NMS"
     },
     {
@@ -5358,7 +5358,7 @@
       "dist_ma50": 2.98,
       "dist_ma200": 19.98,
       "marketCap": "93.88B",
-      "targetPrice": 53.14,
+      "targetPrice": 53.78,
       "exchange": "NMS"
     },
     {
@@ -5678,7 +5678,7 @@
       "dist_ma50": 3.08,
       "dist_ma200": -10.57,
       "marketCap": "88.13B",
-      "targetPrice": 454.57,
+      "targetPrice": 453.0,
       "exchange": "NYQ"
     },
     {
@@ -5718,7 +5718,7 @@
       "dist_ma50": 7.02,
       "dist_ma200": 11.46,
       "marketCap": "87.91B",
-      "targetPrice": 171.07,
+      "targetPrice": 175.12,
       "exchange": "NYQ"
     },
     {
@@ -6878,7 +6878,7 @@
       "dist_ma50": 0.15,
       "dist_ma200": 12.66,
       "marketCap": "75.28B",
-      "targetPrice": 262.29,
+      "targetPrice": 256.06,
       "exchange": "NMS"
     },
     {
@@ -6917,8 +6917,8 @@
       "dist_low": 53.5,
       "dist_ma50": 3.71,
       "dist_ma200": 7.73,
-      "marketCap": "74.55B",
-      "targetPrice": 102.83,
+      "marketCap": "76.84B",
+      "targetPrice": 100.04,
       "exchange": "NYQ"
     },
     {
@@ -6958,7 +6958,7 @@
       "dist_ma50": -0.27,
       "dist_ma200": 3.26,
       "marketCap": "73.91B",
-      "targetPrice": 406.21,
+      "targetPrice": 402.47,
       "exchange": "NYQ"
     },
     {
@@ -7558,7 +7558,7 @@
       "dist_ma50": 3.04,
       "dist_ma200": 3.24,
       "marketCap": "67.69B",
-      "targetPrice": 247.57,
+      "targetPrice": 245.92,
       "exchange": "NYQ"
     },
     {
@@ -7598,7 +7598,7 @@
       "dist_ma50": -3.56,
       "dist_ma200": -4.21,
       "marketCap": "67.60B",
-      "targetPrice": 1518.71,
+      "targetPrice": 1522.79,
       "exchange": "NYQ"
     },
     {
@@ -7638,7 +7638,7 @@
       "dist_ma50": 3.05,
       "dist_ma200": 8.54,
       "marketCap": "67.52B",
-      "targetPrice": 344.11,
+      "targetPrice": 343.37,
       "exchange": "NYQ"
     },
     {
@@ -7678,7 +7678,7 @@
       "dist_ma50": 1.24,
       "dist_ma200": 7.93,
       "marketCap": "67.10B",
-      "targetPrice": 143.64,
+      "targetPrice": 141.03,
       "exchange": "NMS"
     },
     {
@@ -7717,8 +7717,8 @@
       "dist_low": 34.09,
       "dist_ma50": 6.28,
       "dist_ma200": 10.41,
-      "marketCap": "65.98B",
-      "targetPrice": 295.0,
+      "marketCap": "65.99B",
+      "targetPrice": 290.44,
       "exchange": "NYQ"
     },
     {
@@ -7758,7 +7758,7 @@
       "dist_ma50": 4.56,
       "dist_ma200": 18.95,
       "marketCap": "65.68B",
-      "targetPrice": 275.68,
+      "targetPrice": 274.32,
       "exchange": "NYQ"
     },
     {
@@ -8158,7 +8158,7 @@
       "dist_ma50": 5.35,
       "dist_ma200": -2.06,
       "marketCap": "60.51B",
-      "targetPrice": 368.92,
+      "targetPrice": 372.58,
       "exchange": "NYQ"
     },
     {
@@ -9980,7 +9980,7 @@
       "pct_ytd": 3.92,
       "pct_1y": 0.94,
       "trailingPE": 16.65,
-      "forwardPE": 14.94,
+      "forwardPE": 14.93,
       "ema_signal": 1,
       "macd_state": 1,
       "is_danger_dead_cross": false,
@@ -10037,8 +10037,8 @@
       "dist_low": 28.98,
       "dist_ma50": null,
       "dist_ma200": null,
-      "marketCap": "1895.20B",
-      "targetPrice": 226.26,
+      "marketCap": "1840.84B",
+      "targetPrice": 222.73,
       "exchange": "NMS"
     },
     {
@@ -10077,8 +10077,8 @@
       "dist_low": 141.33,
       "dist_ma50": -1.67,
       "dist_ma200": 21.68,
-      "marketCap": "675.15B",
-      "targetPrice": 2373.23,
+      "marketCap": "672.84B",
+      "targetPrice": 2196.94,
       "exchange": "NMS"
     },
     {
@@ -10117,8 +10117,8 @@
       "dist_low": 138.49,
       "dist_ma50": -18.28,
       "dist_ma200": 26.98,
-      "marketCap": "266.30B",
-      "targetPrice": 295.01,
+      "marketCap": "266.29B",
+      "targetPrice": 287.79,
       "exchange": "NMS"
     },
     {
@@ -10278,7 +10278,7 @@
       "dist_ma50": 0.43,
       "dist_ma200": 50.97,
       "marketCap": "60.87B",
-      "targetPrice": 289.75,
+      "targetPrice": 276.46,
       "exchange": "NMS"
     },
     {
@@ -10358,7 +10358,7 @@
       "dist_ma50": 0.69,
       "dist_ma200": -1.62,
       "marketCap": "50.12B",
-      "targetPrice": 144.12,
+      "targetPrice": 143.26,
       "exchange": "NMS"
     },
     {
@@ -10397,8 +10397,8 @@
       "dist_low": 92.1,
       "dist_ma50": -9.07,
       "dist_ma200": -3.54,
-      "marketCap": "45.38B",
-      "targetPrice": 116.0,
+      "marketCap": "48.49B",
+      "targetPrice": 112.94,
       "exchange": "NMS"
     },
     {
@@ -10437,8 +10437,8 @@
       "dist_low": 24.87,
       "dist_ma50": 2.14,
       "dist_ma200": 10.42,
-      "marketCap": "47.28B",
-      "targetPrice": 110.51,
+      "marketCap": "47.12B",
+      "targetPrice": 113.68,
       "exchange": "NMS"
     },
     {
@@ -10477,8 +10477,8 @@
       "dist_low": 20.48,
       "dist_ma50": -1.83,
       "dist_ma200": -3.48,
-      "marketCap": "46.89B",
-      "targetPrice": 70.31,
+      "marketCap": "46.59B",
+      "targetPrice": 78.36,
       "exchange": "NMS"
     },
     {
@@ -10517,8 +10517,8 @@
       "dist_low": 37.1,
       "dist_ma50": 14.05,
       "dist_ma200": 0.95,
-      "marketCap": "45.81B",
-      "targetPrice": 126.18,
+      "marketCap": "45.47B",
+      "targetPrice": 122.29,
       "exchange": "NMS"
     },
     {
@@ -10558,7 +10558,7 @@
       "dist_ma50": -0.99,
       "dist_ma200": 3.57,
       "marketCap": "44.32B",
-      "targetPrice": 290.24,
+      "targetPrice": 286.89,
       "exchange": "NMS"
     },
     {
@@ -10758,7 +10758,7 @@
       "dist_ma50": -9.24,
       "dist_ma200": 0.92,
       "marketCap": "41.86B",
-      "targetPrice": 110.95,
+      "targetPrice": 109.21,
       "exchange": "NMS"
     },
     {
@@ -10838,7 +10838,7 @@
       "dist_ma50": 11.98,
       "dist_ma200": 7.77,
       "marketCap": "40.28B",
-      "targetPrice": 448.77,
+      "targetPrice": 445.2,
       "exchange": "NMS"
     },
     {
@@ -10878,7 +10878,7 @@
       "dist_ma50": 16.67,
       "dist_ma200": 30.26,
       "marketCap": "33.92B",
-      "targetPrice": 94.75,
+      "targetPrice": 94.12,
       "exchange": "NMS"
     },
     {
@@ -11051,15 +11051,15 @@
       "dowjones": false,
       "is_watchlist": true,
       "is_private": false,
-      "price": 269500.0,
-      "pct_1d": 8.89,
-      "pct_1w": 5.48,
-      "pct_1m": 10.45,
-      "pct_3m": -2.36,
-      "pct_6m": 41.77,
-      "pct_ytd": 124.77,
-      "pct_1y": 282.27,
-      "trailingPE": 12.0,
+      "price": 268000.0,
+      "pct_1d": 8.28,
+      "pct_1w": 4.89,
+      "pct_1m": 9.84,
+      "pct_3m": -2.9,
+      "pct_6m": 40.98,
+      "pct_ytd": 123.52,
+      "pct_1y": 280.14,
+      "trailingPE": 12.09,
       "forwardPE": 6.0,
       "ema_signal": 4,
       "macd_state": 3,
@@ -11067,17 +11067,17 @@
       "is_golden_cross_opportunity": true,
       "dead_cross_count": 0,
       "golden_cross_count": 3,
-      "dist_sma5": 1.47,
-      "dist_sma20": 9.74,
-      "rsi14": 53.13,
-      "rsi14_w": 54.84,
-      "rsi14_m": 67.12,
-      "rel_vol": 0.6,
-      "dist_high": -25.66,
-      "dist_low": 298.67,
-      "dist_ma50": -4.55,
-      "dist_ma200": 32.69,
-      "marketCap": "1,563조8,795원",
+      "dist_sma5": 1.02,
+      "dist_sma20": 9.16,
+      "rsi14": 52.76,
+      "rsi14_w": 54.51,
+      "rsi14_m": 66.98,
+      "rel_vol": 0.69,
+      "dist_high": -26.07,
+      "dist_low": 296.45,
+      "dist_ma50": -5.07,
+      "dist_ma200": 31.95,
+      "marketCap": "1,575조5,721원",
       "targetPrice": 491875.0,
       "exchange": "KSC"
     },
@@ -11091,15 +11091,15 @@
       "dowjones": false,
       "is_watchlist": true,
       "is_private": false,
-      "price": 1707000.0,
-      "pct_1d": 13.8,
-      "pct_1w": 13.5,
-      "pct_1m": -3.23,
-      "pct_3m": -2.18,
-      "pct_6m": 79.87,
-      "pct_ytd": 162.21,
-      "pct_1y": 568.1,
-      "trailingPE": 7.53,
+      "price": 1672000.0,
+      "pct_1d": 11.47,
+      "pct_1w": 11.17,
+      "pct_1m": -5.22,
+      "pct_3m": -4.18,
+      "pct_6m": 76.19,
+      "pct_ytd": 156.84,
+      "pct_1y": 554.4,
+      "trailingPE": 7.57,
       "forwardPE": 5.0,
       "ema_signal": 3,
       "macd_state": 3,
@@ -11107,17 +11107,17 @@
       "is_golden_cross_opportunity": false,
       "dead_cross_count": 0,
       "golden_cross_count": 0,
-      "dist_sma5": 5.28,
-      "dist_sma20": 7.8,
-      "rsi14": 50.22,
-      "rsi14_w": 52.12,
-      "rsi14_m": 64.54,
-      "rel_vol": 0.66,
-      "dist_high": -41.52,
-      "dist_low": 596.73,
-      "dist_ma50": -15.36,
-      "dist_ma200": 36.94,
-      "marketCap": "1,233조4,364원",
+      "dist_sma5": 3.57,
+      "dist_sma20": 5.71,
+      "rsi14": 49.09,
+      "rsi14_w": 51.4,
+      "rsi14_m": 63.82,
+      "rel_vol": 0.78,
+      "dist_high": -42.72,
+      "dist_low": 582.45,
+      "dist_ma50": -17.07,
+      "dist_ma200": 34.15,
+      "marketCap": "1,239조6,455원",
       "targetPrice": 3317917.0,
       "exchange": "KSC"
     }
