@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-07-15",
-    "ticker": "TDY",
-    "name": "Teledyne Technologies Incorporated",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 624.1500244140625
-  },
-  {
-    "date": "2026-07-15",
     "ticker": "BIIB",
     "name": "Biogen Inc.",
     "type": "dead",
@@ -7998,5 +7990,13 @@
     "type": "golden",
     "streak": 2,
     "entry_price": 247500.0
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "005930.KS",
+    "name": "Samsung Electronics Co., Ltd.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 269000.0
   }
 ]

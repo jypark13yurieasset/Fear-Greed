@@ -1,0 +1,64 @@
+{
+  "2026-08-20": [
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -12.12
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -10.06
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -10.01
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.42
+    },
+    {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.85
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.74
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.69
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.56
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma5": -7.24
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -7.22
+    }
+  ]
+}

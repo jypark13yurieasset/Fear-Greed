@@ -857,6 +857,172 @@ with open(signal_log_js_path, 'w', encoding='utf-8') as f:
     f.write(f"const SIGNAL_LOG_DATA = {json.dumps(signal_log, ensure_ascii=False, indent=2)};\n")
 print(f"✅ JS 시그널 로그 데이터가 {signal_log_js_path}에 저장되었습니다.")
 
+# --- 7.5 SMA5 Distance Top 10 Daily Log ---
+sma5_log_path = os.path.join(output_dir, "sma5_top10_log.json")
+sma5_log = {}
+if os.path.exists(sma5_log_path):
+    try:
+        with open(sma5_log_path, 'r', encoding='utf-8') as f:
+            sma5_log = json.load(f)
+    except Exception:
+        pass
+
+# 오늘의 SMA5 Dist 상위 10종목 추출 (S&P500 or Nasdaq100 소속만)
+sma5_candidates = [
+    s for s in stocks_output
+    if s.get('dist_sma5') is not None and (s.get('sp500') or s.get('nasdaq100'))
+]
+sma5_candidates.sort(key=lambda x: x['dist_sma5'], reverse=True)
+sma5_top10 = sma5_candidates[:10]
+
+sma5_log[run_date_str] = [
+    {
+        'ticker': s['ticker'],
+        'name': s['name'],
+        'sector': s.get('sector', '-'),
+        'dist_sma5': s['dist_sma5']
+    }
+    for s in sma5_top10
+]
+
+# 최근 7일분만 유지
+sorted_dates = sorted(sma5_log.keys(), reverse=True)
+if len(sorted_dates) > 7:
+    for old_date in sorted_dates[7:]:
+        del sma5_log[old_date]
+
+with open(sma5_log_path, 'w', encoding='utf-8') as f:
+    json.dump(sma5_log, f, ensure_ascii=False, indent=2)
+
+sma5_log_js_path = os.path.join(output_dir, "sma5_top10_log.js")
+with open(sma5_log_js_path, 'w', encoding='utf-8') as f:
+    f.write(f"const SMA5_TOP10_LOG = {json.dumps(sma5_log, ensure_ascii=False, indent=2)};\n")
+print(f"✅ SMA5 Top 10 로그 데이터가 {sma5_log_js_path}에 저장되었습니다.")
+
+# --- 7.6 SMA20 Distance Top 10 Daily Log ---
+sma20_log_path = os.path.join(output_dir, "sma20_top10_log.json")
+sma20_log = {}
+if os.path.exists(sma20_log_path):
+    try:
+        with open(sma20_log_path, 'r', encoding='utf-8') as f:
+            sma20_log = json.load(f)
+    except Exception:
+        pass
+
+# 오늘의 SMA20 Dist 상위 10종목 추출 (S&P500 or Nasdaq100 소속만)
+sma20_candidates = [
+    s for s in stocks_output
+    if s.get('dist_sma20') is not None and (s.get('sp500') or s.get('nasdaq100'))
+]
+sma20_candidates.sort(key=lambda x: x['dist_sma20'], reverse=True)
+sma20_top10 = sma20_candidates[:10]
+
+sma20_log[run_date_str] = [
+    {
+        'ticker': s['ticker'],
+        'name': s['name'],
+        'sector': s.get('sector', '-'),
+        'dist_sma20': s['dist_sma20']
+    }
+    for s in sma20_top10
+]
+
+# 최근 7일분만 유지
+sorted_dates_20 = sorted(sma20_log.keys(), reverse=True)
+if len(sorted_dates_20) > 7:
+    for old_date in sorted_dates_20[7:]:
+        del sma20_log[old_date]
+
+with open(sma20_log_path, 'w', encoding='utf-8') as f:
+    json.dump(sma20_log, f, ensure_ascii=False, indent=2)
+
+sma20_log_js_path = os.path.join(output_dir, "sma20_top10_log.js")
+with open(sma20_log_js_path, 'w', encoding='utf-8') as f:
+    f.write(f"const SMA20_TOP10_LOG = {json.dumps(sma20_log, ensure_ascii=False, indent=2)};\n")
+print(f"✅ SMA20 Top 10 로그 데이터가 {sma20_log_js_path}에 저장되었습니다.")
+
+# --- 7.7 SMA5 Distance Top 10 Laggards Daily Log ---
+sma5_laggards_log_path = os.path.join(output_dir, "sma5_laggards_log.json")
+sma5_laggards_log = {}
+if os.path.exists(sma5_laggards_log_path):
+    try:
+        with open(sma5_laggards_log_path, 'r', encoding='utf-8') as f:
+            sma5_laggards_log = json.load(f)
+    except Exception:
+        pass
+
+# 오늘의 SMA5 Dist 최하위 10종목 추출 (S&P500 or Nasdaq100 소속만)
+sma5_laggards_candidates = [
+    s for s in stocks_output
+    if s.get('dist_sma5') is not None and (s.get('sp500') or s.get('nasdaq100'))
+]
+sma5_laggards_candidates.sort(key=lambda x: x['dist_sma5'], reverse=False)
+sma5_laggards_top10 = sma5_laggards_candidates[:10]
+
+sma5_laggards_log[run_date_str] = [
+    {
+        'ticker': s['ticker'],
+        'name': s['name'],
+        'sector': s.get('sector', '-'),
+        'dist_sma5': s['dist_sma5']
+    }
+    for s in sma5_laggards_top10
+]
+
+# 최근 7일분만 유지
+sorted_dates_5_lag = sorted(sma5_laggards_log.keys(), reverse=True)
+if len(sorted_dates_5_lag) > 7:
+    for old_date in sorted_dates_5_lag[7:]:
+        del sma5_laggards_log[old_date]
+
+with open(sma5_laggards_log_path, 'w', encoding='utf-8') as f:
+    json.dump(sma5_laggards_log, f, ensure_ascii=False, indent=2)
+
+sma5_laggards_log_js_path = os.path.join(output_dir, "sma5_laggards_log.js")
+with open(sma5_laggards_log_js_path, 'w', encoding='utf-8') as f:
+    f.write(f"const SMA5_LAGGARDS_LOG = {json.dumps(sma5_laggards_log, ensure_ascii=False, indent=2)};\n")
+print(f"✅ SMA5 Laggards 로그 데이터가 {sma5_laggards_log_js_path}에 저장되었습니다.")
+
+# --- 7.8 SMA20 Distance Top 10 Laggards Daily Log ---
+sma20_laggards_log_path = os.path.join(output_dir, "sma20_laggards_log.json")
+sma20_laggards_log = {}
+if os.path.exists(sma20_laggards_log_path):
+    try:
+        with open(sma20_laggards_log_path, 'r', encoding='utf-8') as f:
+            sma20_laggards_log = json.load(f)
+    except Exception:
+        pass
+
+sma20_laggards_candidates = [
+    s for s in stocks_output
+    if s.get('dist_sma20') is not None and (s.get('sp500') or s.get('nasdaq100'))
+]
+sma20_laggards_candidates.sort(key=lambda x: x['dist_sma20'], reverse=False)
+sma20_laggards_top10 = sma20_laggards_candidates[:10]
+
+sma20_laggards_log[run_date_str] = [
+    {
+        'ticker': s['ticker'],
+        'name': s['name'],
+        'sector': s.get('sector', '-'),
+        'dist_sma20': s['dist_sma20']
+    }
+    for s in sma20_laggards_top10
+]
+
+sorted_dates_20_lag = sorted(sma20_laggards_log.keys(), reverse=True)
+if len(sorted_dates_20_lag) > 7:
+    for old_date in sorted_dates_20_lag[7:]:
+        del sma20_laggards_log[old_date]
+
+with open(sma20_laggards_log_path, 'w', encoding='utf-8') as f:
+    json.dump(sma20_laggards_log, f, ensure_ascii=False, indent=2)
+
+sma20_laggards_log_js_path = os.path.join(output_dir, "sma20_laggards_log.js")
+with open(sma20_laggards_log_js_path, 'w', encoding='utf-8') as f:
+    f.write(f"const SMA20_LAGGARDS_LOG = {json.dumps(sma20_laggards_log, ensure_ascii=False, indent=2)};\n")
+print(f"✅ SMA20 Laggards 로그 데이터가 {sma20_laggards_log_js_path}에 저장되었습니다.")
+
 # --- 8. Telegram Notification ---
 def send_telegram_notification():
     """골든크로스 종목 리스트를 텔레그램으로 전송합니다."""

@@ -1,0 +1,64 @@
+const SMA20_LAGGARDS_LOG = {
+  "2026-08-20": [
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -39.16
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -14.46
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -8.96
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.45
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -8.17
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -7.5
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -7.4
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -6.67
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sector": "Health Care",
+      "dist_sma20": -6.63
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -6.47
+    }
+  ]
+};
