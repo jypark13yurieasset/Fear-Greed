@@ -70,5 +70,77 @@ const SMA20_TOP10_LOG = {
       "dist_sma20": 12.61,
       "rsi14": 62.48
     }
+  ],
+  "2026-08-21": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 96.02,
+      "rsi14": 69.43
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 20.52,
+      "rsi14": 61.37
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma20": 18.84,
+      "rsi14": 73.59
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 16.57,
+      "rsi14": 53.88
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 15.64,
+      "rsi14": 61.84
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 13.56,
+      "rsi14": 74.63
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.65,
+      "rsi14": 66.3
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.45,
+      "rsi14": 65.79
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 11.9,
+      "rsi14": 75.38
+    },
+    {
+      "ticker": "TRGP",
+      "name": "Targa Resources Corp.",
+      "sector": "Energy",
+      "dist_sma20": 11.02,
+      "rsi14": 69.42
+    }
   ]
 };

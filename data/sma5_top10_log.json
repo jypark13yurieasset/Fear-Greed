@@ -70,5 +70,77 @@
       "dist_sma5": 4.82,
       "rsi14": 57.49
     }
+  ],
+  "2026-08-21": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 33.74,
+      "rsi14": 69.43
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": 12.42,
+      "rsi14": 61.84
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.14,
+      "rsi14": 61.37
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 5.31,
+      "rsi14": 74.63
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.19,
+      "rsi14": 75.38
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": 5.18,
+      "rsi14": 73.59
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.95,
+      "rsi14": 64.17
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
+      "sector": "Health Care",
+      "dist_sma5": 4.6,
+      "rsi14": 66.3
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.45,
+      "rsi14": 74.24
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma5": 4.28,
+      "rsi14": 61.57
+    }
   ]
 }

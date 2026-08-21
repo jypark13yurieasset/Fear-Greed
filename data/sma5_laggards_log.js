@@ -70,5 +70,77 @@ const SMA5_LAGGARDS_LOG = {
       "dist_sma5": -7.22,
       "rsi14": 44.02
     }
+  ],
+  "2026-08-21": [
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -11.17,
+      "rsi14": 49.9
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.11,
+      "rsi14": 41.51
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": -7.77,
+      "rsi14": 29.78
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.48,
+      "rsi14": 49.56
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor Corporation",
+      "sector": "Materials",
+      "dist_sma5": -7.15,
+      "rsi14": 37.1
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.1,
+      "rsi14": 45.05
+    },
+    {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.69,
+      "rsi14": 41.83
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -6.66,
+      "rsi14": 48.26
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -6.54,
+      "rsi14": 43.6
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.96,
+      "rsi14": 48.47
+    }
   ]
 };
