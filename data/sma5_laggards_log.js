@@ -76,71 +76,71 @@ const SMA5_LAGGARDS_LOG = {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "sector": "Communication Services",
-      "dist_sma5": -11.17,
-      "rsi14": 49.9
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.11,
-      "rsi14": 41.51
-    },
-    {
-      "ticker": "WMT",
-      "name": "Walmart Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": -7.77,
-      "rsi14": 29.78
+      "dist_sma5": -7.18,
+      "rsi14": 49.66
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -7.48,
-      "rsi14": 49.56
+      "dist_sma5": -6.07,
+      "rsi14": 48.06
     },
     {
-      "ticker": "NUE",
-      "name": "Nucor Corporation",
-      "sector": "Materials",
-      "dist_sma5": -7.15,
-      "rsi14": 37.1
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": -5.96,
+      "rsi14": 29.6
     },
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -5.92,
+      "rsi14": 43.66
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -7.1,
-      "rsi14": 45.05
+      "dist_sma5": -5.4,
+      "rsi14": 48.22
     },
     {
-      "ticker": "KEYS",
-      "name": "Keysight Technologies, Inc.",
+      "ticker": "INTC",
+      "name": "Intel Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -6.69,
-      "rsi14": 41.83
+      "dist_sma5": -5.23,
+      "rsi14": 39.6
     },
     {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -6.66,
-      "rsi14": 48.26
+      "dist_sma5": -5.18,
+      "rsi14": 43.84
     },
     {
       "ticker": "RKLB",
       "name": "Rocket Lab Corporation",
       "sector": "Industrials",
-      "dist_sma5": -6.54,
-      "rsi14": 43.6
+      "dist_sma5": -5.16,
+      "rsi14": 43.16
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "sector": "Information Technology",
-      "dist_sma5": -5.96,
-      "rsi14": 48.47
+      "dist_sma5": -5.05,
+      "rsi14": 44.97
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.04,
+      "rsi14": 42.79
     }
   ]
 };

@@ -76,71 +76,71 @@ const SMA5_TOP10_LOG = {
       "ticker": "MRNA",
       "name": "Moderna, Inc.",
       "sector": "Health Care",
-      "dist_sma5": 33.74,
-      "rsi14": 69.43
+      "dist_sma5": 25.06,
+      "rsi14": 71.6
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 14.3,
+      "rsi14": 66.96
     },
     {
       "ticker": "MSTR",
       "name": "Strategy Inc",
       "sector": "Information Technology",
-      "dist_sma5": 12.42,
-      "rsi14": 61.84
+      "dist_sma5": 13.34,
+      "rsi14": 66.07
     },
     {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 8.14,
-      "rsi14": 61.37
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 5.31,
-      "rsi14": 74.63
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck & Co., Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 5.19,
-      "rsi14": 75.38
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": 5.18,
-      "rsi14": 73.59
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.95,
-      "rsi14": 64.17
-    },
-    {
-      "ticker": "DHR",
-      "name": "Danaher Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 4.6,
-      "rsi14": 66.3
-    },
-    {
-      "ticker": "TMO",
-      "name": "Thermo Fisher Scientific Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.45,
-      "rsi14": 74.24
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 11.07,
+      "rsi14": 62.5
     },
     {
       "ticker": "FCX",
       "name": "Freeport-McMoRan Inc.",
       "sector": "Materials",
-      "dist_sma5": 4.28,
-      "rsi14": 61.57
+      "dist_sma5": 8.99,
+      "rsi14": 69.25
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "dist_sma5": 6.57,
+      "rsi14": 62.36
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.05,
+      "rsi14": 62.43
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": 6.01,
+      "rsi14": 75.93
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.22,
+      "rsi14": 77.85
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": 5.22,
+      "rsi14": 76.04
     }
   ]
 };

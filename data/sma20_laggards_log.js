@@ -76,71 +76,71 @@ const SMA20_LAGGARDS_LOG = {
       "ticker": "MNST",
       "name": "Monster Beverage Corporation",
       "sector": "Consumer Staples",
-      "dist_sma20": -37.14,
-      "rsi14": 15.65
+      "dist_sma20": -30.23,
+      "rsi14": 42.33
     },
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
-      "dist_sma20": -13.95,
-      "rsi14": 30.18
+      "dist_sma20": -13.75,
+      "rsi14": 29.62
     },
     {
       "ticker": "HONA",
       "name": "Honeywell Aerospace Inc.",
       "sector": "Industrials",
-      "dist_sma20": -10.14,
-      "rsi14": 40.5
+      "dist_sma20": -9.8,
+      "rsi14": 40.01
     },
     {
       "ticker": "TJX",
       "name": "The TJX Companies, Inc.",
       "sector": "Consumer Discretionary",
-      "dist_sma20": -9.47,
-      "rsi14": 25.54
-    },
-    {
-      "ticker": "NUE",
-      "name": "Nucor Corporation",
-      "sector": "Materials",
-      "dist_sma20": -8.77,
-      "rsi14": 37.1
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.51,
-      "rsi14": 35.16
+      "dist_sma20": -9.17,
+      "rsi14": 25.39
     },
     {
       "ticker": "HON",
       "name": "Honeywell International Inc.",
       "sector": "Industrials",
-      "dist_sma20": -8.39,
-      "rsi14": 34.49
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.34,
-      "rsi14": 42.37
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.24,
-      "rsi14": 36.19
+      "dist_sma20": -8.88,
+      "rsi14": 32.91
     },
     {
       "ticker": "WMT",
       "name": "Walmart Inc.",
       "sector": "Consumer Staples",
-      "dist_sma20": -7.7,
-      "rsi14": 29.78
+      "dist_sma20": -7.58,
+      "rsi14": 29.6
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor Corporation",
+      "sector": "Materials",
+      "dist_sma20": -7.5,
+      "rsi14": 40.03
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -7.34,
+      "rsi14": 40.67
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -6.97,
+      "rsi14": 38.71
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -6.92,
+      "rsi14": 43.89
     }
   ]
 };
