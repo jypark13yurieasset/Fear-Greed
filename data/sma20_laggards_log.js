@@ -142,5 +142,77 @@ const SMA20_LAGGARDS_LOG = {
       "dist_sma20": -6.92,
       "rsi14": 43.89
     }
+  ],
+  "2026-08-25": [
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -26.18,
+      "rsi14": 42.85
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -14.4,
+      "rsi14": 28.26
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.52,
+      "rsi14": 38.49
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -10.35,
+      "rsi14": 40.23
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -9.94,
+      "rsi14": 40.76
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.68,
+      "rsi14": 39.02
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.58,
+      "rsi14": 42.53
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.14,
+      "rsi14": 35.41
+    },
+    {
+      "ticker": "CMI",
+      "name": "Cummins Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.76,
+      "rsi14": 29.14
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.76,
+      "rsi14": 32.17
+    }
   ]
 };

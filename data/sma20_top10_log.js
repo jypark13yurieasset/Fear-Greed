@@ -142,5 +142,77 @@ const SMA20_TOP10_LOG = {
       "dist_sma20": 12.65,
       "rsi14": 55.8
     }
+  ],
+  "2026-08-25": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 81.01,
+      "rsi14": 68.82
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 22.92,
+      "rsi14": 67.96
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma20": 18.52,
+      "rsi14": 76.08
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 14.76,
+      "rsi14": 61.74
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma20": 14.65,
+      "rsi14": 70.57
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 11.57,
+      "rsi14": 78.97
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 11.42,
+      "rsi14": 73.63
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 11.14,
+      "rsi14": 73.46
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.28,
+      "rsi14": 65.03
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 10.1,
+      "rsi14": 65.75
+    }
   ]
 };

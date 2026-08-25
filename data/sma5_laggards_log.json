@@ -142,5 +142,77 @@
       "dist_sma5": -5.04,
       "rsi14": 42.79
     }
+  ],
+  "2026-08-25": [
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -7.43,
+      "rsi14": 38.42
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -6.33,
+      "rsi14": 39.7
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -6.25,
+      "rsi14": 40.76
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -6.09,
+      "rsi14": 43.24
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -6.05,
+      "rsi14": 47.65
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.37,
+      "rsi14": 41.43
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.31,
+      "rsi14": 49.65
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.94,
+      "rsi14": 37.23
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -4.93,
+      "rsi14": 35.43
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.93,
+      "rsi14": 42.53
+    }
   ]
 }

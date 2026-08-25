@@ -142,5 +142,77 @@ const SMA5_TOP10_LOG = {
       "dist_sma5": 5.22,
       "rsi14": 76.04
     }
+  ],
+  "2026-08-25": [
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": 11.27,
+      "rsi14": 67.96
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma5": 7.73,
+      "rsi14": 70.57
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.66,
+      "rsi14": 65.75
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 6.23,
+      "rsi14": 61.74
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 6.07,
+      "rsi14": 68.82
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": 5.51,
+      "rsi14": 78.97
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "dist_sma5": 5.08,
+      "rsi14": 62.64
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 4.85,
+      "rsi14": 56.81
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "dist_sma5": 4.51,
+      "rsi14": 68.23
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": 4.28,
+      "rsi14": 76.08
+    }
   ]
 };
