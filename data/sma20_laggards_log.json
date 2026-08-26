@@ -214,5 +214,77 @@
       "dist_sma20": -8.76,
       "rsi14": 32.17
     }
+  ],
+  "2026-08-26": [
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -23.78,
+      "rsi14": 42.78
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -10.96,
+      "rsi14": 39.23
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -9.94,
+      "rsi14": 37.03
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -9.59,
+      "rsi14": 38.12
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -9.58,
+      "rsi14": 33.71
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.55,
+      "rsi14": 38.83
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.37,
+      "rsi14": 34.75
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.99,
+      "rsi14": 37.59
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -8.76,
+      "rsi14": 24.64
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -8.43,
+      "rsi14": 37.54
+    }
   ]
 }

@@ -214,5 +214,77 @@ const SMA5_TOP10_LOG = {
       "dist_sma5": 4.28,
       "rsi14": 76.08
     }
+  ],
+  "2026-08-26": [
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 8.89,
+      "rsi14": 63.52
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": 8.34,
+      "rsi14": 70.18
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma5": 6.64,
+      "rsi14": 72.9
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.81,
+      "rsi14": 72.5
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 5.66,
+      "rsi14": 64.96
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 5.24,
+      "rsi14": 59.25
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "sector": "Health Care",
+      "dist_sma5": 4.51,
+      "rsi14": 61.83
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.02,
+      "rsi14": 49.35
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": 3.75,
+      "rsi14": 77.96
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 3.44,
+      "rsi14": 75.44
+    }
   ]
 };
