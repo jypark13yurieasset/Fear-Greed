@@ -286,5 +286,77 @@ const SMA5_TOP10_LOG = {
       "dist_sma5": 3.44,
       "rsi14": 75.44
     }
+  ],
+  "2026-08-27": [
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.69,
+      "rsi14": 57.4
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.03,
+      "rsi14": 60.16
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.21,
+      "rsi14": 55.11
+    },
+    {
+      "ticker": "WMB",
+      "name": "The Williams Companies, Inc.",
+      "sector": "Energy",
+      "dist_sma5": 3.74,
+      "rsi14": 55.49
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.61,
+      "rsi14": 51.33
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 3.5,
+      "rsi14": 49.46
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 3.43,
+      "rsi14": 77.05
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": 3.26,
+      "rsi14": 57.86
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.1,
+      "rsi14": 68.5
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 2.89,
+      "rsi14": 59.36
+    }
   ]
 };

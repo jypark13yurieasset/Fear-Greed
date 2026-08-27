@@ -1,118 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-07-20",
-    "ticker": "AEP",
-    "name": "American Electric Power Company, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 131.0500030517578
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "WBD",
-    "name": "Warner Bros. Discovery, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 25.860000610351562
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "NKE",
-    "name": "NIKE, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 43.470001220703125
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "URI",
-    "name": "United Rentals, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 1012.7100219726562
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "SRE",
-    "name": "Sempra",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 90.69000244140625
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "DAL",
-    "name": "Delta Air Lines, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 84.54000091552734
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "PSA",
-    "name": "Public Storage",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 315.5299987792969
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "VST",
-    "name": "Vistra Corp.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 157.99000549316406
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "ROK",
-    "name": "Rockwell Automation, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 458.7099914550781
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "DVN",
-    "name": "Devon Energy Corporation",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 43.779998779296875
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "XEL",
-    "name": "Xcel Energy Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 78.66999816894531
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "EW",
-    "name": "Edwards Lifesciences Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 85.0
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "EXC",
-    "name": "Exelon Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 45.959999084472656
-  },
-  {
-    "date": "2026-07-20",
-    "ticker": "YUM",
-    "name": "Yum! Brands, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 147.3699951171875
-  },
-  {
-    "date": "2026-07-20",
     "ticker": "PEG",
     "name": "Public Service Enterprise Group Incorporated",
     "type": "dead",
@@ -7998,5 +7886,117 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 2,
     "entry_price": 66.91000366210938
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 339.30999755859375
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "CRWD",
+    "name": "CrowdStrike Holdings, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 189.17999267578125
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 846.3699951171875
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "PLD",
+    "name": "Prologis, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 142.58999633789062
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "ISRG",
+    "name": "Intuitive Surgical, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 370.4200134277344
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "LOW",
+    "name": "Lowe's Companies, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 210.36000061035156
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "PWR",
+    "name": "Quanta Services, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 616.72998046875
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "URI",
+    "name": "United Rentals, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 1057.6600341796875
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "PSA",
+    "name": "Public Storage",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 317.3699951171875
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "TER",
+    "name": "Teradyne, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 363.1000061035156
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "CTVA",
+    "name": "Corteva, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 82.87999725341797
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "VTR",
+    "name": "Ventas, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 93.5
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "KHC",
+    "name": "The Kraft Heinz Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 24.790000915527344
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "000660.KS",
+    "name": "SK Hynix Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1741000.0
   }
 ];
