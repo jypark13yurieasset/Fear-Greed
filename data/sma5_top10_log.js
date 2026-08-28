@@ -358,5 +358,77 @@ const SMA5_TOP10_LOG = {
       "dist_sma5": 2.89,
       "rsi14": 59.36
     }
+  ],
+  "2026-08-28": [
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 16.52,
+      "rsi14": 79.97
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 15.7,
+      "rsi14": 64.05
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 11.96,
+      "rsi14": 71.74
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 9.43,
+      "rsi14": 64.73
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": 9.17,
+      "rsi14": 72.85
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.1,
+      "rsi14": 60.44
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.85,
+      "rsi14": 69.01
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.77,
+      "rsi14": 58.53
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 6.15,
+      "rsi14": 61.32
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.62,
+      "rsi14": 47.97
+    }
   ]
 };

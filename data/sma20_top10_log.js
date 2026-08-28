@@ -358,5 +358,77 @@ const SMA20_TOP10_LOG = {
       "dist_sma20": 10.25,
       "rsi14": 57.4
     }
+  ],
+  "2026-08-28": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 57.09,
+      "rsi14": 65.57
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 31.14,
+      "rsi14": 72.85
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 26.04,
+      "rsi14": 79.97
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 19.35,
+      "rsi14": 64.84
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.83,
+      "rsi14": 71.74
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma20": 12.82,
+      "rsi14": 71.95
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 12.76,
+      "rsi14": 60.32
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 11.81,
+      "rsi14": 69.01
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma20": 11.28,
+      "rsi14": 68.65
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.76,
+      "rsi14": 69.1
+    }
   ]
 };

@@ -358,5 +358,77 @@
       "dist_sma5": -2.71,
       "rsi14": 49.77
     }
+  ],
+  "2026-08-28": [
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -4.4,
+      "rsi14": 42.25
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma5": -4.38,
+      "rsi14": 27.61
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "sector": "Health Care",
+      "dist_sma5": -3.62,
+      "rsi14": 45.69
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.38,
+      "rsi14": 49.93
+    },
+    {
+      "ticker": "ROST",
+      "name": "Ross Stores, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.24,
+      "rsi14": 39.64
+    },
+    {
+      "ticker": "ABT",
+      "name": "Abbott Laboratories",
+      "sector": "Health Care",
+      "dist_sma5": -2.99,
+      "rsi14": 57.5
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -2.99,
+      "rsi14": 19.91
+    },
+    {
+      "ticker": "NKE",
+      "name": "NIKE, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -2.94,
+      "rsi14": 36.6
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -2.92,
+      "rsi14": 39.28
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -2.91,
+      "rsi14": 65.57
+    }
   ]
 }

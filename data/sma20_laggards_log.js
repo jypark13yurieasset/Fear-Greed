@@ -358,5 +358,77 @@ const SMA20_LAGGARDS_LOG = {
       "dist_sma20": -7.11,
       "rsi14": 30.61
     }
+  ],
+  "2026-08-28": [
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -20.73,
+      "rsi14": 41.95
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -10.74,
+      "rsi14": 19.91
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -9.73,
+      "rsi14": 38.76
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": -8.48,
+      "rsi14": 27.61
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma20": -7.24,
+      "rsi14": 31.79
+    },
+    {
+      "ticker": "CMI",
+      "name": "Cummins Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -7.24,
+      "rsi14": 31.39
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -7.21,
+      "rsi14": 37.43
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -7.15,
+      "rsi14": 39.17
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -7.12,
+      "rsi14": 37.33
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -6.87,
+      "rsi14": 35.71
+    }
   ]
 };
