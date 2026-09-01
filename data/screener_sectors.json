@@ -2613,5 +2613,10 @@
     "sector": "Industrials",
     "sub_industry": "Industrial Distribution",
     "name": "Ferguson Enterprises Inc."
+  },
+  "VMRK": {
+    "sector": "Real Estate",
+    "sub_industry": "REIT - Residential",
+    "name": "AvalonBay Communities, Inc."
   }
 }

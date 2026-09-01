@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-08-20": [
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -12.12,
-      "rsi14": 50.75
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -10.06,
-      "rsi14": 44.55
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -10.01,
-      "rsi14": 46.56
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.42,
-      "rsi14": 50.4
-    },
-    {
-      "ticker": "KEYS",
-      "name": "Keysight Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.85,
-      "rsi14": 42.95
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.74,
-      "rsi14": 49.05
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.69,
-      "rsi14": 49.09
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.56,
-      "rsi14": 49.82
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "dist_sma5": -7.24,
-      "rsi14": 41.47
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -7.22,
-      "rsi14": 44.02
-    }
-  ],
   "2026-08-21": [
     {
       "ticker": "NBIS",
@@ -429,6 +357,150 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Health Care",
       "dist_sma5": -2.91,
       "rsi14": 65.57
+    }
+  ],
+  "2026-09-01": [
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -12.19,
+      "rsi14": 33.03
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.38,
+      "rsi14": 45.68
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma5": -7.56,
+      "rsi14": 29.81
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -6.46,
+      "rsi14": 28.39
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -5.96,
+      "rsi14": 27.47
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -5.45,
+      "rsi14": 46.66
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -4.69,
+      "rsi14": 33.11
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -4.49,
+      "rsi14": 32.14
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.07,
+      "rsi14": 46.37
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": -4.05,
+      "rsi14": 61.64
+    }
+  ],
+  "2026-09-02": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -11.15,
+      "rsi14": 39.85
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -7.09,
+      "rsi14": 32.33
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -6.88,
+      "rsi14": 40.16
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.52,
+      "rsi14": 44.89
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.51,
+      "rsi14": 45.15
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.25,
+      "rsi14": 47.67
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.05,
+      "rsi14": 39.59
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma5": -6.01,
+      "rsi14": 53.89
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.68,
+      "rsi14": 34.25
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.65,
+      "rsi14": 40.76
     }
   ]
 };

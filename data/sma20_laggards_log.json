@@ -1,76 +1,4 @@
 {
-  "2026-08-20": [
-    {
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": -39.16,
-      "rsi14": 15.52
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -14.46,
-      "rsi14": 30.54
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.96,
-      "rsi14": 35.33
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.45,
-      "rsi14": 42.36
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.17,
-      "rsi14": 42.71
-    },
-    {
-      "ticker": "HON",
-      "name": "Honeywell International Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -7.5,
-      "rsi14": 36.82
-    },
-    {
-      "ticker": "TJX",
-      "name": "The TJX Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -7.4,
-      "rsi14": 29.4
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -6.67,
-      "rsi14": 41.45
-    },
-    {
-      "ticker": "CVS",
-      "name": "CVS Health Corporation",
-      "sector": "Health Care",
-      "dist_sma20": -6.63,
-      "rsi14": 35.29
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -6.47,
-      "rsi14": 44.02
-    }
-  ],
   "2026-08-21": [
     {
       "ticker": "MNST",
@@ -429,6 +357,150 @@
       "sector": "Consumer Discretionary",
       "dist_sma20": -6.87,
       "rsi14": 35.71
+    }
+  ],
+  "2026-09-01": [
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -18.47,
+      "rsi14": 41.61
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -14.5,
+      "rsi14": 34.84
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -12.14,
+      "rsi14": 28.39
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sector": "Financials",
+      "dist_sma20": -12.12,
+      "rsi14": 33.03
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -11.4,
+      "rsi14": 27.47
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -11.4,
+      "rsi14": 43.4
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -10.32,
+      "rsi14": 37.06
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.31,
+      "rsi14": 32.14
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -10.25,
+      "rsi14": 19.66
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -9.5,
+      "rsi14": 35.57
+    }
+  ],
+  "2026-09-02": [
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -19.9,
+      "rsi14": 41.17
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -15.33,
+      "rsi14": 33.31
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -13.6,
+      "rsi14": 39.85
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.9,
+      "rsi14": 34.25
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.41,
+      "rsi14": 42.13
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -11.99,
+      "rsi14": 39.34
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sector": "Financials",
+      "dist_sma20": -11.8,
+      "rsi14": 32.33
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -11.55,
+      "rsi14": 26.23
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -11.4,
+      "rsi14": 29.8
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.69,
+      "rsi14": 30.8
     }
   ]
 }

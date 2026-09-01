@@ -1,76 +1,4 @@
 {
-  "2026-08-20": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 103.35,
-      "rsi14": 92.21
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck & Co., Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 9.54,
-      "rsi14": 83.13
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 7.57,
-      "rsi14": 55.74
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 7.08,
-      "rsi14": 73.18
-    },
-    {
-      "ticker": "VRTX",
-      "name": "Vertex Pharmaceuticals Incorporated",
-      "sector": "Health Care",
-      "dist_sma5": 5.44,
-      "rsi14": 71.33
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": 5.4,
-      "rsi14": 71.94
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 5.34,
-      "rsi14": 48.97
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "dist_sma5": 5.32,
-      "rsi14": 64.94
-    },
-    {
-      "ticker": "TRGP",
-      "name": "Targa Resources Corp.",
-      "sector": "Energy",
-      "dist_sma5": 4.94,
-      "rsi14": 67.12
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.82,
-      "rsi14": 57.49
-    }
-  ],
   "2026-08-21": [
     {
       "ticker": "MRNA",
@@ -429,6 +357,150 @@
       "sector": "Information Technology",
       "dist_sma5": 5.62,
       "rsi14": 47.97
+    }
+  ],
+  "2026-09-01": [
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 13.96,
+      "rsi14": 81.1
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 12.77,
+      "rsi14": 65.16
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.89,
+      "rsi14": 74.33
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 9.21,
+      "rsi14": 80.38
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma5": 8.88,
+      "rsi14": 76.2
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.44,
+      "rsi14": 60.12
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.92,
+      "rsi14": 62.47
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 4.2,
+      "rsi14": 55.47
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.15,
+      "rsi14": 69.29
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 4.1,
+      "rsi14": 52.97
+    }
+  ],
+  "2026-09-02": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 6.39,
+      "rsi14": 67.47
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "dist_sma5": 5.02,
+      "rsi14": 65.57
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.98,
+      "rsi14": 81.25
+    },
+    {
+      "ticker": "CTVA",
+      "name": "Corteva, Inc.",
+      "sector": "Materials",
+      "dist_sma5": 4.27,
+      "rsi14": 68.22
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": 4.25,
+      "rsi14": 75.68
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "dist_sma5": 3.55,
+      "rsi14": 70.8
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma5": 3.5,
+      "rsi14": 74.5
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sector": "Health Care",
+      "dist_sma5": 3.47,
+      "rsi14": 51.3
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": 3.08,
+      "rsi14": 71.63
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma5": 3.07,
+      "rsi14": 69.15
     }
   ]
 }
