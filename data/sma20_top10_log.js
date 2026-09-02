@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-08-21": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 99.99,
-      "rsi14": 71.6
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 20.98,
-      "rsi14": 66.07
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma20": 20.36,
-      "rsi14": 75.93
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 19.7,
-      "rsi14": 66.96
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 15.56,
-      "rsi14": 53.7
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 15.18,
-      "rsi14": 62.5
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.41,
-      "rsi14": 69.41
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan Inc.",
-      "sector": "Materials",
-      "dist_sma20": 14.24,
-      "rsi14": 69.25
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck & Co., Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 13.65,
-      "rsi14": 77.85
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.65,
-      "rsi14": 55.8
-    }
-  ],
   "2026-08-25": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Consumer Discretionary",
       "dist_sma20": 7.6,
       "rsi14": 61.16
+    }
+  ],
+  "2026-09-03": [
+    {
+      "ticker": "APH",
+      "name": "Amphenol Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 87.23,
+      "rsi14": 89.74
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 38.49,
+      "rsi14": 65.83
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 20.22,
+      "rsi14": 80.05
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 15.03,
+      "rsi14": 62.66
+    },
+    {
+      "ticker": "CTVA",
+      "name": "Corteva, Inc.",
+      "sector": "Materials",
+      "dist_sma20": 12.44,
+      "rsi14": 71.96
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "dist_sma20": 11.57,
+      "rsi14": 69.49
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 11.0,
+      "rsi14": 57.65
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 10.53,
+      "rsi14": 76.83
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 9.75,
+      "rsi14": 64.76
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma20": 9.71,
+      "rsi14": 76.43
     }
   ]
 };

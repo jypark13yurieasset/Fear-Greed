@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-08-21": [
-    {
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": -30.23,
-      "rsi14": 42.33
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -13.75,
-      "rsi14": 29.62
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -9.8,
-      "rsi14": 40.01
-    },
-    {
-      "ticker": "TJX",
-      "name": "The TJX Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -9.17,
-      "rsi14": 25.39
-    },
-    {
-      "ticker": "HON",
-      "name": "Honeywell International Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.88,
-      "rsi14": 32.91
-    },
-    {
-      "ticker": "WMT",
-      "name": "Walmart Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma20": -7.58,
-      "rsi14": 29.6
-    },
-    {
-      "ticker": "NUE",
-      "name": "Nucor Corporation",
-      "sector": "Materials",
-      "dist_sma20": -7.5,
-      "rsi14": 40.03
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -7.34,
-      "rsi14": 40.67
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -6.97,
-      "rsi14": 38.71
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -6.92,
-      "rsi14": 43.89
-    }
-  ],
   "2026-08-25": [
     {
       "ticker": "MNST",
@@ -501,6 +429,78 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Industrials",
       "dist_sma20": -10.69,
       "rsi14": 30.8
+    }
+  ],
+  "2026-09-03": [
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -17.3,
+      "rsi14": 40.89
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -14.77,
+      "rsi14": 38.43
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -13.89,
+      "rsi14": 34.54
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.66,
+      "rsi14": 41.38
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.64,
+      "rsi14": 33.68
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.58,
+      "rsi14": 36.84
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -11.49,
+      "rsi14": 38.99
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -11.19,
+      "rsi14": 41.77
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.94,
+      "rsi14": 29.57
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -10.69,
+      "rsi14": 26.19
     }
   ]
 };

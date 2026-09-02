@@ -1,182 +1,6 @@
 [
   {
     "date": "2026-07-21",
-    "ticker": "ROK",
-    "name": "Rockwell Automation, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 464.82000732421875
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "XEL",
-    "name": "Xcel Energy Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 78.72000122070312
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "EW",
-    "name": "Edwards Lifesciences Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 84.55000305175781
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "EXC",
-    "name": "Exelon Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 45.88999938964844
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "CVNA",
-    "name": "Carvana Co.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 65.58000183105469
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "COIN",
-    "name": "Coinbase Global, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 175.85000610351562
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "TTWO",
-    "name": "Take-Two Interactive Software, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 235.92999267578125
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "UAL",
-    "name": "United Airlines Holdings, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 117.69999694824219
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "AEE",
-    "name": "Ameren Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 109.94000244140625
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "DTE",
-    "name": "DTE Energy Company",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 145.02999877929688
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "RMD",
-    "name": "ResMed Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 195.8000030517578
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "GEHC",
-    "name": "GE HealthCare Technologies Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 62.040000915527344
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "MRNA",
-    "name": "Moderna, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 59.65999984741211
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "BG",
-    "name": "Bunge Global SA",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 121.55000305175781
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "SW",
-    "name": "Smurfit Westrock Plc",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 43.060001373291016
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "ULTA",
-    "name": "Ulta Beauty, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 489.4700012207031
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "PKG",
-    "name": "Packaging Corporation of America",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 228.2100067138672
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "LYB",
-    "name": "LyondellBasell Industries N.V.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 61.189998626708984
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "LNT",
-    "name": "Alliant Energy Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 73.11000061035156
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "FTV",
-    "name": "Fortive Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 60.66999816894531
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "LII",
-    "name": "Lennox International Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 529.8800048828125
-  },
-  {
-    "date": "2026-07-21",
-    "ticker": "NVR",
-    "name": "NVR, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 6325.39990234375
-  },
-  {
-    "date": "2026-07-21",
     "ticker": "BEN",
     "name": "Franklin Resources, Inc.",
     "type": "dead",
@@ -7998,5 +7822,181 @@
     "type": "golden",
     "streak": 1,
     "entry_price": 1693000.0
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "LLY",
+    "name": "Eli Lilly and Company",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 1160.0799560546875
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "COST",
+    "name": "Costco Wholesale Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 928.47998046875
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "PG",
+    "name": "The Procter & Gamble Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 147.63999938964844
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "WFC",
+    "name": "Wells Fargo & Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 89.2699966430664
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 328.4800109863281
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "APH",
+    "name": "Amphenol Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 160.0800018310547
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 206.47999572753906
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 169.9600067138672
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 949.3800048828125
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "MO",
+    "name": "Altria Group, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 69.55999755859375
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "EQIX",
+    "name": "Equinix, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 1019.239990234375
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "CSX",
+    "name": "CSX Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 48.650001525878906
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "MMM",
+    "name": "3M Company",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 168.75
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "NSC",
+    "name": "Norfolk Southern Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 330.05999755859375
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "KMI",
+    "name": "Kinder Morgan, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 31.969999313354492
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "HLT",
+    "name": "Hilton Worldwide Holdings Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 311.510009765625
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "DLR",
+    "name": "Digital Realty Trust, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 183.75999450683594
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "FAST",
+    "name": "Fastenal Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 47.93000030517578
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 279.80999755859375
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "VTR",
+    "name": "Ventas, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 92.05999755859375
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "AXON",
+    "name": "Axon Enterprise, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 506.9800109863281
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "KHC",
+    "name": "The Kraft Heinz Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 26.260000228881836
   }
 ]
