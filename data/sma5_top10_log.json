@@ -1,76 +1,4 @@
 {
-  "2026-08-25": [
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 11.27,
-      "rsi14": 67.96
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan Inc.",
-      "sector": "Materials",
-      "dist_sma5": 7.73,
-      "rsi14": 70.57
-    },
-    {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 6.66,
-      "rsi14": 65.75
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 6.23,
-      "rsi14": 61.74
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 6.07,
-      "rsi14": 68.82
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma5": 5.51,
-      "rsi14": 78.97
-    },
-    {
-      "ticker": "DE",
-      "name": "Deere & Company",
-      "sector": "Industrials",
-      "dist_sma5": 5.08,
-      "rsi14": 62.64
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 4.85,
-      "rsi14": 56.81
-    },
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "dist_sma5": 4.51,
-      "rsi14": 68.23
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": 4.28,
-      "rsi14": 76.08
-    }
-  ],
   "2026-08-26": [
     {
       "ticker": "HOOD",
@@ -501,6 +429,78 @@
       "sector": "Energy",
       "dist_sma5": 3.52,
       "rsi14": 76.83
+    }
+  ],
+  "2026-09-04": [
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 14.57,
+      "rsi14": 68.92
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": 10.86,
+      "rsi14": 67.79
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.07,
+      "rsi14": 62.54
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 5.74,
+      "rsi14": 60.87
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.31,
+      "rsi14": 61.47
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 5.14,
+      "rsi14": 48.57
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "sector": "Industrials",
+      "dist_sma5": 4.29,
+      "rsi14": 60.16
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 4.19,
+      "rsi14": 60.54
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 4.13,
+      "rsi14": 60.69
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": 4.02,
+      "rsi14": 55.42
     }
   ]
 }

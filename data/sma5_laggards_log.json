@@ -1,76 +1,4 @@
 {
-  "2026-08-25": [
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -7.43,
-      "rsi14": 38.42
-    },
-    {
-      "ticker": "PWR",
-      "name": "Quanta Services, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -6.33,
-      "rsi14": 39.7
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -6.25,
-      "rsi14": 40.76
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -6.09,
-      "rsi14": 43.24
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -6.05,
-      "rsi14": 47.65
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -5.37,
-      "rsi14": 41.43
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -5.31,
-      "rsi14": 49.65
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -4.94,
-      "rsi14": 37.23
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -4.93,
-      "rsi14": 35.43
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.93,
-      "rsi14": 42.53
-    }
-  ],
   "2026-08-26": [
     {
       "ticker": "RKLB",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": -5.08,
       "rsi14": 48.11
+    }
+  ],
+  "2026-09-04": [
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.56,
+      "rsi14": 43.02
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.95,
+      "rsi14": 35.51
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.7,
+      "rsi14": 44.8
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.28,
+      "rsi14": 39.31
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.63,
+      "rsi14": 48.69
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.44,
+      "rsi14": 47.88
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -3.27,
+      "rsi14": 36.38
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.15,
+      "rsi14": 26.9
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -2.94,
+      "rsi14": 40.41
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -2.89,
+      "rsi14": 38.06
     }
   ]
 }

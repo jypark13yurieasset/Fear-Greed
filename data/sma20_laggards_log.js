@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-08-25": [
-    {
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": -26.18,
-      "rsi14": 42.85
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -14.4,
-      "rsi14": 28.26
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -10.52,
-      "rsi14": 38.49
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.35,
-      "rsi14": 40.23
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -9.94,
-      "rsi14": 40.76
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.68,
-      "rsi14": 39.02
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.58,
-      "rsi14": 42.53
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.14,
-      "rsi14": 35.41
-    },
-    {
-      "ticker": "CMI",
-      "name": "Cummins Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.76,
-      "rsi14": 29.14
-    },
-    {
-      "ticker": "HON",
-      "name": "Honeywell International Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.76,
-      "rsi14": 32.17
-    }
-  ],
   "2026-08-26": [
     {
       "ticker": "MNST",
@@ -501,6 +429,78 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Consumer Discretionary",
       "dist_sma20": -10.69,
       "rsi14": 26.19
+    }
+  ],
+  "2026-09-04": [
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -13.05,
+      "rsi14": 40.41
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -12.21,
+      "rsi14": 36.14
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -11.7,
+      "rsi14": 32.94
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -10.06,
+      "rsi14": 40.68
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": -9.72,
+      "rsi14": 40.65
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -9.59,
+      "rsi14": 43.9
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": -9.23,
+      "rsi14": 30.48
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.14,
+      "rsi14": 43.02
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -9.14,
+      "rsi14": 25.79
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.12,
+      "rsi14": 39.31
     }
   ]
 };
