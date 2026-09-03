@@ -1107,7 +1107,6 @@ def send_telegram_notification():
     msg_lines = [f"📊 <b>Jypark13 스크리너 알림</b>", f"📅 기준일: <code>{run_date_str}</code>", ""]
     
     msg_lines.append(f"🚀 <b>최적 매수 타이밍</b> ({len(golden_stocks)}종목)")
-    msg_lines.append("상승 모멘텀 + 200일 이평선 상회 + 최근 3일 골든크로스 발생")
     msg_lines.append("")
     
     for s in golden_stocks:
@@ -1115,15 +1114,7 @@ def send_telegram_notification():
         rsi14 = s.get('rsi14')
         rsi_str = f"{rsi14:.1f}" if rsi14 is not None else "-"
         
-        pe = s.get('trailingPE')
-        fpe = s.get('forwardPE')
-        
-        eps_gr_str = "-"
-        if pe is not None and fpe is not None and fpe > 0:
-            eps_gr = (pe / fpe - 1) * 100
-            eps_gr_str = f"+{eps_gr:.2f}%" if eps_gr > 0 else f"{eps_gr:.2f}%"
-            
-        msg_lines.append(f"• <code>{ticker}</code> | ({eps_gr_str} / {rsi_str})")
+        msg_lines.append(f"• <code>{ticker}</code> (RSI: {rsi_str})")
         
     message = "\n".join(msg_lines)
     
