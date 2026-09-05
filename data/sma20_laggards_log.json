@@ -433,74 +433,74 @@
   ],
   "2026-09-04": [
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -12.96,
+      "rsi14": 40.73
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -13.05,
-      "rsi14": 40.41
+      "dist_sma20": -12.95,
+      "rsi14": 35.3
     },
     {
       "ticker": "RKLB",
       "name": "Rocket Lab Corporation",
       "sector": "Industrials",
-      "dist_sma20": -12.21,
-      "rsi14": 36.14
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -11.7,
-      "rsi14": 32.94
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.06,
-      "rsi14": 40.68
-    },
-    {
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": -9.72,
-      "rsi14": 40.65
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -9.59,
-      "rsi14": 43.9
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -9.23,
-      "rsi14": 30.48
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.14,
-      "rsi14": 43.02
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -9.14,
-      "rsi14": 25.79
+      "dist_sma20": -10.44,
+      "rsi14": 37.19
     },
     {
       "ticker": "DDOG",
       "name": "Datadog, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -9.12,
-      "rsi14": 39.31
+      "dist_sma20": -9.49,
+      "rsi14": 38.65
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.17,
+      "rsi14": 31.05
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -8.4,
+      "rsi14": 25.61
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -8.39,
+      "rsi14": 43.5
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": -8.38,
+      "rsi14": 31.26
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -8.26,
+      "rsi14": 33.48
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.02,
+      "rsi14": 27.11
     }
   ]
 }

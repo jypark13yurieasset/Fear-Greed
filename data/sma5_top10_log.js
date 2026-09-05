@@ -433,74 +433,74 @@ const SMA5_TOP10_LOG = {
   ],
   "2026-09-04": [
     {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 9.41,
+      "rsi14": 61.24
+    },
+    {
       "ticker": "HOOD",
       "name": "Robinhood Markets, Inc.",
       "sector": "Financials",
-      "dist_sma5": 14.57,
-      "rsi14": 68.92
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 10.86,
-      "rsi14": 67.79
+      "dist_sma5": 8.61,
+      "rsi14": 65.94
     },
     {
       "ticker": "DELL",
       "name": "Dell Technologies Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 10.07,
-      "rsi14": 62.54
+      "dist_sma5": 8.57,
+      "rsi14": 63.66
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 5.74,
-      "rsi14": 60.87
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 5.31,
-      "rsi14": 61.47
-    },
-    {
-      "ticker": "PYPL",
-      "name": "PayPal Holdings, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 5.14,
-      "rsi14": 48.57
-    },
-    {
-      "ticker": "SPCX",
-      "name": "SpaceX",
-      "sector": "Industrials",
-      "dist_sma5": 4.29,
-      "rsi14": 60.16
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 4.19,
-      "rsi14": 60.54
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sector": "Communication Services",
-      "dist_sma5": 4.13,
-      "rsi14": 60.69
+      "dist_sma5": 8.12,
+      "rsi14": 53.53
     },
     {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 4.02,
-      "rsi14": 55.42
+      "dist_sma5": 7.46,
+      "rsi14": 52.22
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": 6.79,
+      "rsi14": 66.2
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma5": 6.2,
+      "rsi14": 54.88
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 5.99,
+      "rsi14": 60.94
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.98,
+      "rsi14": 52.01
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 5.8,
+      "rsi14": 47.38
     }
   ]
 };

@@ -433,74 +433,74 @@ const SMA5_LAGGARDS_LOG = {
   ],
   "2026-09-04": [
     {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -6.56,
-      "rsi14": 43.02
+      "dist_sma5": -9.46,
+      "rsi14": 35.3
     },
     {
       "ticker": "CDNS",
       "name": "Cadence Design Systems, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -4.95,
-      "rsi14": 35.51
+      "dist_sma5": -5.95,
+      "rsi14": 31.05
     },
     {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -4.7,
-      "rsi14": 44.8
+      "dist_sma5": -5.55,
+      "rsi14": 48.86
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -4.28,
-      "rsi14": 39.31
+      "dist_sma5": -5.35,
+      "rsi14": 42.59
     },
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.63,
-      "rsi14": 48.69
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -5.26,
+      "rsi14": 45.59
     },
     {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -3.44,
-      "rsi14": 47.88
+      "dist_sma5": -4.12,
+      "rsi14": 43.5
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -3.52,
+      "rsi14": 49.16
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.52,
+      "rsi14": 46.62
     },
     {
       "ticker": "SYK",
       "name": "Stryker Corporation",
       "sector": "Health Care",
-      "dist_sma5": -3.27,
-      "rsi14": 36.38
+      "dist_sma5": -3.12,
+      "rsi14": 34.06
     },
     {
-      "ticker": "ODFL",
-      "name": "Old Dominion Freight Line, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -3.15,
-      "rsi14": 26.9
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -2.94,
-      "rsi14": 40.41
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -2.89,
-      "rsi14": 38.06
+      "dist_sma5": -3.02,
+      "rsi14": 38.65
     }
   ]
 };

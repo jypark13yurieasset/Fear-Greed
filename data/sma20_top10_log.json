@@ -433,74 +433,74 @@
   ],
   "2026-09-04": [
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 31.0,
-      "rsi14": 64.88
-    },
-    {
       "ticker": "MSTR",
       "name": "Strategy Inc",
       "sector": "Information Technology",
-      "dist_sma20": 27.73,
-      "rsi14": 67.79
+      "dist_sma20": 23.61,
+      "rsi14": 66.2
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 23.39,
+      "rsi14": 63.19
     },
     {
       "ticker": "HOOD",
       "name": "Robinhood Markets, Inc.",
       "sector": "Financials",
-      "dist_sma20": 22.45,
-      "rsi14": 68.92
+      "dist_sma20": 18.21,
+      "rsi14": 65.94
     },
     {
       "ticker": "CRM",
       "name": "Salesforce, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 21.53,
-      "rsi14": 81.88
+      "dist_sma20": 17.34,
+      "rsi14": 76.62
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 14.41,
-      "rsi14": 60.87
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 12.41,
-      "rsi14": 61.47
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 13.74,
+      "rsi14": 61.24
     },
     {
       "ticker": "DELL",
       "name": "Dell Technologies Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 11.63,
-      "rsi14": 62.54
+      "dist_sma20": 12.45,
+      "rsi14": 63.66
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.31,
-      "rsi14": 65.74
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 11.98,
+      "rsi14": 62.18
     },
     {
       "ticker": "DE",
       "name": "Deere & Company",
       "sector": "Industrials",
-      "dist_sma20": 10.07,
-      "rsi14": 68.66
+      "dist_sma20": 9.3,
+      "rsi14": 68.29
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 8.63,
+      "rsi14": 56.4
     },
     {
       "ticker": "CTVA",
       "name": "Corteva, Inc.",
       "sector": "Materials",
-      "dist_sma20": 9.59,
-      "rsi14": 67.2
+      "dist_sma20": 7.92,
+      "rsi14": 64.3
     }
   ]
 }

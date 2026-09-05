@@ -1,134 +1,6 @@
 [
   {
     "date": "2026-07-22",
-    "ticker": "DHR",
-    "name": "Danaher Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 179.13999938964844
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "VRTX",
-    "name": "Vertex Pharmaceuticals Incorporated",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 472.57000732421875
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "SYK",
-    "name": "Stryker Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 309.239990234375
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "SO",
-    "name": "The Southern Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 95.80000305175781
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "NOW",
-    "name": "ServiceNow, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 95.45999908447266
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "CEG",
-    "name": "Constellation Energy Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 274.8999938964844
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "WMB",
-    "name": "The Williams Companies, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 74.48999786376953
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "SHW",
-    "name": "The Sherwin-Williams Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 319.9100036621094
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "MDLZ",
-    "name": "Mondelez International, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 60.86000061035156
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "ECL",
-    "name": "Ecolab Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 266.8800048828125
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "GM",
-    "name": "General Motors Company",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 82.12999725341797
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "AEP",
-    "name": "American Electric Power Company, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 133.07000732421875
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "MSI",
-    "name": "Motorola Solutions, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 404.3299865722656
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "WBD",
-    "name": "Warner Bros. Discovery, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 25.850000381469727
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "SRE",
-    "name": "Sempra",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 93.05000305175781
-  },
-  {
-    "date": "2026-07-22",
-    "ticker": "F",
-    "name": "Ford Motor Company",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 14.420000076293945
-  },
-  {
-    "date": "2026-07-22",
     "ticker": "VST",
     "name": "Vistra Corp.",
     "type": "golden",
@@ -7998,5 +7870,133 @@
     "type": "dead",
     "streak": 3,
     "entry_price": 538.1500244140625
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "MS",
+    "name": "Morgan Stanley",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 217.72000122070312
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "PM",
+    "name": "Philip Morris International Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 182.52999877929688
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "WFC",
+    "name": "Wells Fargo & Company",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 89.97000122070312
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 333.260009765625
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "C",
+    "name": "Citigroup Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 137.72000122070312
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "APH",
+    "name": "Amphenol Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 82.77999877929688
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "PEP",
+    "name": "PepsiCo, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 137.6300048828125
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "UNP",
+    "name": "Union Pacific Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 289.6199951171875
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "SBUX",
+    "name": "Starbucks Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 104.47000122070312
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "FTNT",
+    "name": "Fortinet, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 156.2899932861328
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "CI",
+    "name": "The Cigna Group",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 282.5199890136719
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "NSC",
+    "name": "Norfolk Southern Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 329.4599914550781
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "MET",
+    "name": "MetLife, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 97.62000274658203
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "NUE",
+    "name": "Nucor Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 261.07000732421875
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "F",
+    "name": "Ford Motor Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 14.619999885559082
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "ADSK",
+    "name": "Autodesk, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 217.89999389648438
   }
 ]
