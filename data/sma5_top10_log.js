@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-08-27": [
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.69,
-      "rsi14": 57.4
-    },
-    {
-      "ticker": "ANET",
-      "name": "Arista Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.03,
-      "rsi14": 60.16
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.21,
-      "rsi14": 55.11
-    },
-    {
-      "ticker": "WMB",
-      "name": "The Williams Companies, Inc.",
-      "sector": "Energy",
-      "dist_sma5": 3.74,
-      "rsi14": 55.49
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.61,
-      "rsi14": 51.33
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 3.5,
-      "rsi14": 49.46
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 3.43,
-      "rsi14": 77.05
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma5": 3.26,
-      "rsi14": 57.86
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.1,
-      "rsi14": 68.5
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 2.89,
-      "rsi14": 59.36
-    }
-  ],
   "2026-08-28": [
     {
       "ticker": "CRM",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 7.14,
       "rsi14": 65.08
+    }
+  ],
+  "2026-09-10": [
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 8.8,
+      "rsi14": 63.36
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.28,
+      "rsi14": 60.06
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 8.15,
+      "rsi14": 59.07
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": 7.8,
+      "rsi14": 62.79
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.77,
+      "rsi14": 60.43
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.0,
+      "rsi14": 54.53
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.89,
+      "rsi14": 55.54
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.84,
+      "rsi14": 52.09
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": 6.79,
+      "rsi14": 57.16
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 5.86,
+      "rsi14": 70.43
     }
   ]
 };

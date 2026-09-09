@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-08-27": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 72.74,
-      "rsi14": 68.5
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 19.84,
-      "rsi14": 65.92
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 14.73,
-      "rsi14": 61.08
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma20": 14.0,
-      "rsi14": 71.46
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan Inc.",
-      "sector": "Materials",
-      "dist_sma20": 13.3,
-      "rsi14": 70.32
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 12.85,
-      "rsi14": 59.36
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.51,
-      "rsi14": 57.81
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck & Co., Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 11.27,
-      "rsi14": 70.93
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 10.31,
-      "rsi14": 77.05
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.25,
-      "rsi14": 57.4
-    }
-  ],
   "2026-08-28": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Energy",
       "dist_sma20": 9.12,
       "rsi14": 79.25
+    }
+  ],
+  "2026-09-10": [
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.77,
+      "rsi14": 65.28
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 12.6,
+      "rsi14": 70.43
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 12.16,
+      "rsi14": 63.36
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 11.7,
+      "rsi14": 62.24
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 11.22,
+      "rsi14": 58.57
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 9.84,
+      "rsi14": 80.94
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 9.82,
+      "rsi14": 60.06
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 9.29,
+      "rsi14": 58.63
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 8.71,
+      "rsi14": 60.43
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": 8.71,
+      "rsi14": 59.07
     }
   ]
 };

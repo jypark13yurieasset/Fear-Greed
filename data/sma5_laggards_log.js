@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-08-27": [
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -4.61,
-      "rsi14": 36.27
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.04,
-      "rsi14": 55.24
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma5": -3.85,
-      "rsi14": 30.61
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "dist_sma5": -3.61,
-      "rsi14": 47.71
-    },
-    {
-      "ticker": "NKE",
-      "name": "NIKE, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.42,
-      "rsi14": 37.15
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources, Inc.",
-      "sector": "Energy",
-      "dist_sma5": -3.07,
-      "rsi14": 50.97
-    },
-    {
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "sector": "Energy",
-      "dist_sma5": -2.85,
-      "rsi14": 51.09
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -2.84,
-      "rsi14": 59.17
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -2.77,
-      "rsi14": 52.02
-    },
-    {
-      "ticker": "FANG",
-      "name": "Diamondback Energy, Inc.",
-      "sector": "Energy",
-      "dist_sma5": -2.71,
-      "rsi14": 49.77
-    }
-  ],
   "2026-08-28": [
     {
       "ticker": "BSX",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma5": -5.38,
       "rsi14": 28.34
+    }
+  ],
+  "2026-09-10": [
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.62,
+      "rsi14": 36.9
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -7.92,
+      "rsi14": 29.19
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.43,
+      "rsi14": 31.06
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -7.22,
+      "rsi14": 36.16
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -6.75,
+      "rsi14": 36.17
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -6.66,
+      "rsi14": 24.46
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -6.59,
+      "rsi14": 43.01
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": -6.05,
+      "rsi14": 39.02
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -5.98,
+      "rsi14": 58.13
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -5.96,
+      "rsi14": 30.37
     }
   ]
 };
