@@ -1,5 +1,5 @@
 {
-  "update_date": "2026-Q2 (2026.06.30 기준 - WhaleWisdom 공식 데이터)",
+  "update_date": "2026-Q2 (2026.06.30 기준)",
   "gurus": [
     {
       "id": "buffett",
@@ -10,16 +10,177 @@
       "top_buy": "GOOGL (+24.5M Shares)",
       "top_sell": "BAC (-30.2M Shares)",
       "holdings": [
-        { "ticker": "AAPL", "company": "Apple Inc.", "weight": 22.04, "change_type": "none", "change_pct": "No Change", "sector": "Information Technology" },
-        { "ticker": "AXP", "company": "American Express Co", "weight": 17.14, "change_type": "none", "change_pct": "No Change", "sector": "Finance" },
-        { "ticker": "KO", "company": "Coca-Cola Co", "weight": 10.86, "change_type": "none", "change_pct": "No Change", "sector": "Consumer Staples" },
-        { "ticker": "GOOGL", "company": "Alphabet Inc. Class A", "weight": 9.41, "change_type": "increase", "change_pct": "+24.5M Shares", "sector": "Communication Services" },
-        { "ticker": "BAC", "company": "Bank of America Corp", "weight": 9.20, "change_type": "decrease", "change_pct": "-30.2M Shares", "sector": "Finance" },
-        { "ticker": "CVX", "company": "Chevron Corp", "weight": 4.67, "change_type": "none", "change_pct": "No Change", "sector": "Energy" },
-        { "ticker": "OXY", "company": "Occidental Petroleum Corp", "weight": 4.30, "change_type": "none", "change_pct": "No Change", "sector": "Energy" },
-        { "ticker": "CB", "company": "Chubb Limited", "weight": 3.90, "change_type": "none", "change_pct": "No Change", "sector": "Finance" },
-        { "ticker": "MCO", "company": "Moody's Corp", "weight": 3.73, "change_type": "none", "change_pct": "No Change", "sector": "Finance" },
-        { "ticker": "GOOG", "company": "Alphabet Inc. Class C", "weight": 3.21, "change_type": "increase", "change_pct": "+23.6M Shares", "sector": "Communication Services" }
+        {
+          "ticker": "AAPL",
+          "company": "Apple Inc.",
+          "weight": 22.04,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "AXP",
+          "company": "American Express Co",
+          "weight": 17.14,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "KO",
+          "company": "Coca-Cola Co",
+          "weight": 10.86,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Consumer Staples"
+        },
+        {
+          "ticker": "GOOGL",
+          "company": "Alphabet Inc. Class A",
+          "weight": 9.41,
+          "change_type": "increase",
+          "change_pct": "+24.5M Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "BAC",
+          "company": "Bank of America Corp",
+          "weight": 9.2,
+          "change_type": "decrease",
+          "change_pct": "-30.2M Shares",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "CVX",
+          "company": "Chevron Corp",
+          "weight": 4.67,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Energy"
+        },
+        {
+          "ticker": "OXY",
+          "company": "Occidental Petroleum Corp",
+          "weight": 4.3,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Energy"
+        },
+        {
+          "ticker": "CB",
+          "company": "Chubb Limited",
+          "weight": 3.9,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "MCO",
+          "company": "Moody's Corp",
+          "weight": 3.73,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "GOOG",
+          "company": "Alphabet Inc. Class C",
+          "weight": 3.21,
+          "change_type": "increase",
+          "change_pct": "+23.6M Shares",
+          "sector": "Communication Services"
+        }
+      ]
+    },
+    {
+      "id": "baillie",
+      "name": "Baillie Gifford",
+      "fund": "Baillie Gifford & Co",
+      "aum": "$110.23B",
+      "top_sector": "Information Technology (20.0%)",
+      "top_buy": "SPCX (NEW)",
+      "top_sell": "NU (-16.6M Shares)",
+      "holdings": [
+        {
+          "ticker": "SPCX",
+          "company": "SpaceX",
+          "weight": 7.84,
+          "change_type": "new",
+          "change_pct": "NEW (+51.3M)",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "NVDA",
+          "company": "NVIDIA Corp",
+          "weight": 7.49,
+          "change_type": "increase",
+          "change_pct": "+1.14M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon.com Inc",
+          "weight": 5.73,
+          "change_type": "decrease",
+          "change_pct": "-1.17M Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "MELI",
+          "company": "MercadoLibre Inc",
+          "weight": 4.61,
+          "change_type": "decrease",
+          "change_pct": "-192K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "SE",
+          "company": "Sea Ltd",
+          "weight": 3.29,
+          "change_type": "decrease",
+          "change_pct": "-1.24M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "SPOT",
+          "company": "Spotify Technology SA",
+          "weight": 3.25,
+          "change_type": "decrease",
+          "change_pct": "-289K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "NET",
+          "company": "Cloudflare Inc",
+          "weight": 3.2,
+          "change_type": "decrease",
+          "change_pct": "-1.32M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "APP",
+          "company": "Applovin Corp",
+          "weight": 2.98,
+          "change_type": "decrease",
+          "change_pct": "-228K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "SHOP",
+          "company": "Shopify Inc",
+          "weight": 2.9,
+          "change_type": "decrease",
+          "change_pct": "-618K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "NU",
+          "company": "Nu Holdings Ltd",
+          "weight": 2.74,
+          "change_type": "decrease",
+          "change_pct": "-16.6M Shares",
+          "sector": "Information Technology"
+        }
       ]
     },
     {
@@ -31,95 +192,86 @@
       "top_buy": "BN (+57.4M Shares)",
       "top_sell": "GOOGL (SOLD OUT)",
       "holdings": [
-        { "ticker": "UBER", "company": "Uber Technologies Inc", "weight": 12.82, "change_type": "unknown", "change_pct": "N/A", "sector": "Consumer Discretionary" },
-        { "ticker": "BN", "company": "Brookfield Corp", "weight": 12.67, "change_type": "unknown", "change_pct": "N/A", "sector": "Real Estate" },
-        { "ticker": "MSFT", "company": "Microsoft Corp", "weight": 11.99, "change_type": "unknown", "change_pct": "N/A", "sector": "Information Technology" },
-        { "ticker": "AMZN", "company": "Amazon.com Inc", "weight": 10.57, "change_type": "unknown", "change_pct": "N/A", "sector": "Consumer Discretionary" },
-        { "ticker": "HHH", "company": "Howard Hughes Holdings Inc", "weight": 10.31, "change_type": "unknown", "change_pct": "N/A", "sector": "Real Estate" },
-        { "ticker": "QSR", "company": "Restaurant Brands Intl", "weight": 9.69, "change_type": "unknown", "change_pct": "N/A", "sector": "Consumer Discretionary" },
-        { "ticker": "META", "company": "Meta Platforms Inc", "weight": 9.32, "change_type": "unknown", "change_pct": "N/A", "sector": "Communication Services" },
-        { "ticker": "V", "company": "Visa Inc", "weight": 5.81, "change_type": "unknown", "change_pct": "N/A", "sector": "Finance" },
-        { "ticker": "MA", "company": "Mastercard Inc", "weight": 5.65, "change_type": "unknown", "change_pct": "N/A", "sector": "Finance" },
-        { "ticker": "SPGI", "company": "S&P Global Inc", "weight": 5.47, "change_type": "unknown", "change_pct": "N/A", "sector": "Communication Services" }
-      ]
-    },
-    {
-      "id": "druckenmiller",
-      "name": "Stanley Druckenmiller",
-      "fund": "Duquesne Family Office",
-      "aum": "$5.21B",
-      "top_sector": "Health Care (22.2%)",
-      "top_buy": "INSM CALL (NEW)",
-      "top_sell": "TBBB (-207K Shares)",
-      "holdings": [
-        { "ticker": "NTRA", "company": "Natera Inc", "weight": 16.60, "change_type": "increase", "change_pct": "+122K Shares", "sector": "Health Care" },
-        { "ticker": "TSM", "company": "Taiwan Semiconductor", "weight": 5.40, "change_type": "increase", "change_pct": "+94K Shares", "sector": "Information Technology" },
-        { "ticker": "STM", "company": "STMicroelectronics", "weight": 4.46, "change_type": "increase", "change_pct": "+490K Shares", "sector": "Information Technology" },
-        { "ticker": "RSP", "company": "Invesco S&P 500 ETF (CALL)", "weight": 3.35, "change_type": "none", "change_pct": "No Change", "sector": "Finance" },
-        { "ticker": "INSM", "company": "Insmed Inc", "weight": 2.92, "change_type": "increase", "change_pct": "+270K Shares", "sector": "Health Care" },
-        { "ticker": "EWZ", "company": "iShares Brazil ETF (CALL)", "weight": 2.80, "change_type": "none", "change_pct": "No Change", "sector": "Finance" },
-        { "ticker": "INSM", "company": "Insmed Inc (CALL)", "weight": 2.76, "change_type": "new", "change_pct": "NEW (+1.35M)", "sector": "Health Care" },
-        { "ticker": "YPF", "company": "YPF Sociedad Anonima", "weight": 2.74, "change_type": "decrease", "change_pct": "-97K Shares", "sector": "Energy" },
-        { "ticker": "AMZN", "company": "Amazon.com Inc", "weight": 2.48, "change_type": "increase", "change_pct": "+495K Shares", "sector": "Consumer Discretionary" },
-        { "ticker": "TBBB", "company": "BBB Foods Inc", "weight": 2.32, "change_type": "decrease", "change_pct": "-207K Shares", "sector": "Consumer Discretionary" }
-      ]
-    },
-    {
-      "id": "dalio",
-      "name": "Ray Dalio",
-      "fund": "Bridgewater Associates",
-      "aum": "$24.38B",
-      "top_sector": "Finance (27.9%)",
-      "top_buy": "SPY (+955K Shares)",
-      "top_sell": "AMZN (-2.36M Shares)",
-      "holdings": [
-        { "ticker": "SPY", "company": "SPDR S&P 500 ETF", "weight": 16.30, "change_type": "increase", "change_pct": "+955K Shares", "sector": "Finance" },
-        { "ticker": "IVV", "company": "iShares Core S&P 500 ETF", "weight": 9.22, "change_type": "increase", "change_pct": "+323K Shares", "sector": "Finance" },
-        { "ticker": "NVDA", "company": "NVIDIA Corp", "weight": 3.17, "change_type": "decrease", "change_pct": "-826K Shares", "sector": "Information Technology" },
-        { "ticker": "AVGO", "company": "Broadcom Inc", "weight": 2.04, "change_type": "decrease", "change_pct": "-517K Shares", "sector": "Information Technology" },
-        { "ticker": "AMZN", "company": "Amazon.com Inc", "weight": 1.98, "change_type": "decrease", "change_pct": "-2.36M Shares", "sector": "Consumer Discretionary" },
-        { "ticker": "GOOGL", "company": "Alphabet Inc. Class A", "weight": 1.94, "change_type": "decrease", "change_pct": "-675K Shares", "sector": "Communication Services" },
-        { "ticker": "LRCX", "company": "Lam Research Corp", "weight": 1.67, "change_type": "decrease", "change_pct": "-633K Shares", "sector": "Information Technology" },
-        { "ticker": "VOO", "company": "Vanguard S&P 500 ETF", "weight": 1.29, "change_type": "increase", "change_pct": "+299K Shares", "sector": "Finance" },
-        { "ticker": "AMD", "company": "Advanced Micro Devices", "weight": 1.28, "change_type": "decrease", "change_pct": "-754K Shares", "sector": "Information Technology" },
-        { "ticker": "EWY", "company": "iShares MSCI S.Korea ETF", "weight": 1.15, "change_type": "decrease", "change_pct": "-381K Shares", "sector": "Finance" }
-      ]
-    },
-    {
-      "id": "leopold",
-      "name": "Leopold Aschenbrenner",
-      "fund": "Situational Awareness LP",
-      "aum": "$20.24B",
-      "top_sector": "Information Technology (61.8%)",
-      "top_buy": "MU (+4.81M Shares)",
-      "top_sell": "BE (-212K Shares)",
-      "holdings": [
-        { "ticker": "SNDK", "company": "SanDisk", "weight": 28.03, "change_type": "increase", "change_pct": "+1.35M Shares", "sector": "Information Technology" },
-        { "ticker": "MU", "company": "Micron Technology", "weight": 27.54, "change_type": "increase", "change_pct": "+4.81M Shares", "sector": "Information Technology" },
-        { "ticker": "BE", "company": "Bloom Energy", "weight": 9.38, "change_type": "decrease", "change_pct": "-212K Shares", "sector": "Industrials" },
-        { "ticker": "TSM", "company": "Taiwan Semiconductor", "weight": 6.25, "change_type": "increase", "change_pct": "+2.62M Shares", "sector": "Information Technology" },
-        { "ticker": "NBIS", "company": "Nebius Group", "weight": 6.09, "change_type": "new", "change_pct": "NEW", "sector": "Communication Services" }
-      ]
-    },
-    {
-      "id": "tci",
-      "name": "Chris Hohn",
-      "fund": "TCI Fund Management",
-      "aum": "$52.77B",
-      "top_sector": "Finance (32.1%)",
-      "top_buy": "MLM (NEW)",
-      "top_sell": "CP (-1.19M Shares)",
-      "holdings": [
-        { "ticker": "GE", "company": "GE Aerospace", "weight": 33.59, "change_type": "decrease", "change_pct": "-82K Shares", "sector": "Industrials" },
-        { "ticker": "V", "company": "Visa Inc", "weight": 19.83, "change_type": "increase", "change_pct": "+26K Shares", "sector": "Finance" },
-        { "ticker": "MCO", "company": "Moody's Corp", "weight": 12.30, "change_type": "none", "change_pct": "No Change", "sector": "Finance" },
-        { "ticker": "SPGI", "company": "S&P Global Inc", "weight": 10.87, "change_type": "increase", "change_pct": "+49K Shares", "sector": "Communication Services" },
-        { "ticker": "CP", "company": "Canadian Pacific Kansas", "weight": 7.44, "change_type": "decrease", "change_pct": "-1.19M Shares", "sector": "Industrials" },
-        { "ticker": "GOOG", "company": "Alphabet Inc. Class C", "weight": 6.65, "change_type": "increase", "change_pct": "+1.08M Shares", "sector": "Communication Services" },
-        { "ticker": "FER", "company": "Ferrovial N.V.", "weight": 2.72, "change_type": "increase", "change_pct": "+200K Shares", "sector": "Industrials" },
-        { "ticker": "CNI", "company": "Canadian National Railway", "weight": 2.13, "change_type": "decrease", "change_pct": "-416K Shares", "sector": "Industrials" },
-        { "ticker": "GOOGL", "company": "Alphabet Inc. Class A", "weight": 1.66, "change_type": "none", "change_pct": "No Change", "sector": "Communication Services" },
-        { "ticker": "MLM", "company": "Martin Marietta Materials", "weight": 1.44, "change_type": "new", "change_pct": "NEW (+1.31M)", "sector": "Materials" }
+        {
+          "ticker": "UBER",
+          "company": "Uber Technologies Inc",
+          "weight": 12.82,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "BN",
+          "company": "Brookfield Corp",
+          "weight": 12.67,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Real Estate"
+        },
+        {
+          "ticker": "MSFT",
+          "company": "Microsoft Corp",
+          "weight": 11.99,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon.com Inc",
+          "weight": 10.57,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "HHH",
+          "company": "Howard Hughes Holdings Inc",
+          "weight": 10.31,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Real Estate"
+        },
+        {
+          "ticker": "QSR",
+          "company": "Restaurant Brands Intl",
+          "weight": 9.69,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "META",
+          "company": "Meta Platforms Inc",
+          "weight": 9.32,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "V",
+          "company": "Visa Inc",
+          "weight": 5.81,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "MA",
+          "company": "Mastercard Inc",
+          "weight": 5.65,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "SPGI",
+          "company": "S&P Global Inc",
+          "weight": 5.47,
+          "change_type": "unknown",
+          "change_pct": "N/A",
+          "sector": "Communication Services"
+        }
       ]
     },
     {
@@ -131,35 +283,394 @@
       "top_buy": "SPCX (NEW)",
       "top_sell": "None (Holdings Maintained)",
       "holdings": [
-        { "ticker": "INTC", "company": "Intel Corp", "weight": 44.23, "change_type": "none", "change_pct": "No Change", "sector": "Information Technology" },
-        { "ticker": "SPCX", "company": "SpaceX", "weight": 30.94, "change_type": "new", "change_pct": "NEW (+122.7M)", "sector": "Industrials" },
-        { "ticker": "CRWV", "company": "CoreWeave Inc", "weight": 6.93, "change_type": "none", "change_pct": "No Change", "sector": "Information Technology" },
-        { "ticker": "NBIS", "company": "Nebius Group NV", "weight": 6.91, "change_type": "increase", "change_pct": "+21.0M Shares", "sector": "Communication Services" },
-        { "ticker": "COHR", "company": "Coherent Corp", "weight": 4.53, "change_type": "none", "change_pct": "No Change", "sector": "Industrials" },
-        { "ticker": "NOK", "company": "Nokia Corp", "weight": 3.26, "change_type": "none", "change_pct": "No Change", "sector": "Information Technology" },
-        { "ticker": "SNPS", "company": "Synopsys Inc", "weight": 3.17, "change_type": "none", "change_pct": "No Change", "sector": "Information Technology" },
-        { "ticker": "GENB", "company": "Generate Biomedicines", "weight": 0.02, "change_type": "none", "change_pct": "No Change", "sector": "Health Care" }
+        {
+          "ticker": "INTC",
+          "company": "Intel Corp",
+          "weight": 44.23,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "SPCX",
+          "company": "SpaceX",
+          "weight": 30.94,
+          "change_type": "new",
+          "change_pct": "NEW (+122.7M)",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "CRWV",
+          "company": "CoreWeave Inc",
+          "weight": 6.93,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "NBIS",
+          "company": "Nebius Group NV",
+          "weight": 6.91,
+          "change_type": "increase",
+          "change_pct": "+21.0M Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "COHR",
+          "company": "Coherent Corp",
+          "weight": 4.53,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "NOK",
+          "company": "Nokia Corp",
+          "weight": 3.26,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "SNPS",
+          "company": "Synopsys Inc",
+          "weight": 3.17,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "GENB",
+          "company": "Generate Biomedicines",
+          "weight": 0.02,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Health Care"
+        }
       ]
     },
     {
-      "id": "baillie",
-      "name": "Baillie Gifford & Co",
-      "fund": "Baillie Gifford & Co",
-      "aum": "$110.23B",
-      "top_sector": "Information Technology (20.0%)",
-      "top_buy": "SPCX (NEW)",
-      "top_sell": "NU (-16.6M Shares)",
+      "id": "leopold",
+      "name": "Leopold Aschenbrenner",
+      "fund": "Situational Awareness LP",
+      "aum": "$20.24B",
+      "top_sector": "Information Technology (61.8%)",
+      "top_buy": "MU (+4.81M Shares)",
+      "top_sell": "BE (-212K Shares)",
       "holdings": [
-        { "ticker": "SPCX", "company": "SpaceX", "weight": 7.84, "change_type": "new", "change_pct": "NEW (+51.3M)", "sector": "Industrials" },
-        { "ticker": "NVDA", "company": "NVIDIA Corp", "weight": 7.49, "change_type": "increase", "change_pct": "+1.14M Shares", "sector": "Information Technology" },
-        { "ticker": "AMZN", "company": "Amazon.com Inc", "weight": 5.73, "change_type": "decrease", "change_pct": "-1.17M Shares", "sector": "Consumer Discretionary" },
-        { "ticker": "MELI", "company": "MercadoLibre Inc", "weight": 4.61, "change_type": "decrease", "change_pct": "-192K Shares", "sector": "Communication Services" },
-        { "ticker": "SE", "company": "Sea Ltd", "weight": 3.29, "change_type": "decrease", "change_pct": "-1.24M Shares", "sector": "Information Technology" },
-        { "ticker": "SPOT", "company": "Spotify Technology SA", "weight": 3.25, "change_type": "decrease", "change_pct": "-289K Shares", "sector": "Communication Services" },
-        { "ticker": "NET", "company": "Cloudflare Inc", "weight": 3.20, "change_type": "decrease", "change_pct": "-1.32M Shares", "sector": "Information Technology" },
-        { "ticker": "APP", "company": "Applovin Corp", "weight": 2.98, "change_type": "decrease", "change_pct": "-228K Shares", "sector": "Information Technology" },
-        { "ticker": "SHOP", "company": "Shopify Inc", "weight": 2.90, "change_type": "decrease", "change_pct": "-618K Shares", "sector": "Communication Services" },
-        { "ticker": "NU", "company": "Nu Holdings Ltd", "weight": 2.74, "change_type": "decrease", "change_pct": "-16.6M Shares", "sector": "Information Technology" }
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "weight": 28.03,
+          "change_type": "increase",
+          "change_pct": "+1.35M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "MU",
+          "company": "Micron Technology",
+          "weight": 27.54,
+          "change_type": "increase",
+          "change_pct": "+4.81M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "BE",
+          "company": "Bloom Energy",
+          "weight": 9.38,
+          "change_type": "decrease",
+          "change_pct": "-212K Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "TSM",
+          "company": "Taiwan Semiconductor",
+          "weight": 6.25,
+          "change_type": "increase",
+          "change_pct": "+2.62M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "NBIS",
+          "company": "Nebius Group",
+          "weight": 6.09,
+          "change_type": "new",
+          "change_pct": "NEW",
+          "sector": "Communication Services"
+        }
+      ]
+    },
+    {
+      "id": "druckenmiller",
+      "name": "Stanley Druckenmiller",
+      "fund": "Duquesne Family Office",
+      "aum": "$5.21B",
+      "top_sector": "Health Care (22.2%)",
+      "top_buy": "INSM CALL (NEW)",
+      "top_sell": "TBBB (-207K Shares)",
+      "holdings": [
+        {
+          "ticker": "NTRA",
+          "company": "Natera Inc",
+          "weight": 16.6,
+          "change_type": "increase",
+          "change_pct": "+122K Shares",
+          "sector": "Health Care"
+        },
+        {
+          "ticker": "TSM",
+          "company": "Taiwan Semiconductor",
+          "weight": 5.4,
+          "change_type": "increase",
+          "change_pct": "+94K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "STM",
+          "company": "STMicroelectronics",
+          "weight": 4.46,
+          "change_type": "increase",
+          "change_pct": "+490K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "RSP",
+          "company": "Invesco S&P 500 ETF (CALL)",
+          "weight": 3.35,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "INSM",
+          "company": "Insmed Inc",
+          "weight": 2.92,
+          "change_type": "increase",
+          "change_pct": "+270K Shares",
+          "sector": "Health Care"
+        },
+        {
+          "ticker": "EWZ",
+          "company": "iShares Brazil ETF (CALL)",
+          "weight": 2.8,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "INSM",
+          "company": "Insmed Inc (CALL)",
+          "weight": 2.76,
+          "change_type": "new",
+          "change_pct": "NEW (+1.35M)",
+          "sector": "Health Care"
+        },
+        {
+          "ticker": "YPF",
+          "company": "YPF Sociedad Anonima",
+          "weight": 2.74,
+          "change_type": "decrease",
+          "change_pct": "-97K Shares",
+          "sector": "Energy"
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon.com Inc",
+          "weight": 2.48,
+          "change_type": "increase",
+          "change_pct": "+495K Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "TBBB",
+          "company": "BBB Foods Inc",
+          "weight": 2.32,
+          "change_type": "decrease",
+          "change_pct": "-207K Shares",
+          "sector": "Consumer Discretionary"
+        }
+      ]
+    },
+    {
+      "id": "dalio",
+      "name": "Ray Dalio",
+      "fund": "Bridgewater Associates",
+      "aum": "$24.38B",
+      "top_sector": "Finance (27.9%)",
+      "top_buy": "SPY (+955K Shares)",
+      "top_sell": "AMZN (-2.36M Shares)",
+      "holdings": [
+        {
+          "ticker": "SPY",
+          "company": "SPDR S&P 500 ETF",
+          "weight": 16.3,
+          "change_type": "increase",
+          "change_pct": "+955K Shares",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "IVV",
+          "company": "iShares Core S&P 500 ETF",
+          "weight": 9.22,
+          "change_type": "increase",
+          "change_pct": "+323K Shares",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "NVDA",
+          "company": "NVIDIA Corp",
+          "weight": 3.17,
+          "change_type": "decrease",
+          "change_pct": "-826K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "AVGO",
+          "company": "Broadcom Inc",
+          "weight": 2.04,
+          "change_type": "decrease",
+          "change_pct": "-517K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon.com Inc",
+          "weight": 1.98,
+          "change_type": "decrease",
+          "change_pct": "-2.36M Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "GOOGL",
+          "company": "Alphabet Inc. Class A",
+          "weight": 1.94,
+          "change_type": "decrease",
+          "change_pct": "-675K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "LRCX",
+          "company": "Lam Research Corp",
+          "weight": 1.67,
+          "change_type": "decrease",
+          "change_pct": "-633K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "VOO",
+          "company": "Vanguard S&P 500 ETF",
+          "weight": 1.29,
+          "change_type": "increase",
+          "change_pct": "+299K Shares",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "AMD",
+          "company": "Advanced Micro Devices",
+          "weight": 1.28,
+          "change_type": "decrease",
+          "change_pct": "-754K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "EWY",
+          "company": "iShares MSCI S.Korea ETF",
+          "weight": 1.15,
+          "change_type": "decrease",
+          "change_pct": "-381K Shares",
+          "sector": "Finance"
+        }
+      ]
+    },
+    {
+      "id": "tci",
+      "name": "Chris Hohn",
+      "fund": "TCI Fund Management",
+      "aum": "$52.77B",
+      "top_sector": "Finance (32.1%)",
+      "top_buy": "MLM (NEW)",
+      "top_sell": "CP (-1.19M Shares)",
+      "holdings": [
+        {
+          "ticker": "GE",
+          "company": "GE Aerospace",
+          "weight": 33.59,
+          "change_type": "decrease",
+          "change_pct": "-82K Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "V",
+          "company": "Visa Inc",
+          "weight": 19.83,
+          "change_type": "increase",
+          "change_pct": "+26K Shares",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "MCO",
+          "company": "Moody's Corp",
+          "weight": 12.3,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "SPGI",
+          "company": "S&P Global Inc",
+          "weight": 10.87,
+          "change_type": "increase",
+          "change_pct": "+49K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "CP",
+          "company": "Canadian Pacific Kansas",
+          "weight": 7.44,
+          "change_type": "decrease",
+          "change_pct": "-1.19M Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "GOOG",
+          "company": "Alphabet Inc. Class C",
+          "weight": 6.65,
+          "change_type": "increase",
+          "change_pct": "+1.08M Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "FER",
+          "company": "Ferrovial N.V.",
+          "weight": 2.72,
+          "change_type": "increase",
+          "change_pct": "+200K Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "CNI",
+          "company": "Canadian National Railway",
+          "weight": 2.13,
+          "change_type": "decrease",
+          "change_pct": "-416K Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "GOOGL",
+          "company": "Alphabet Inc. Class A",
+          "weight": 1.66,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "MLM",
+          "company": "Martin Marietta Materials",
+          "weight": 1.44,
+          "change_type": "new",
+          "change_pct": "NEW (+1.31M)",
+          "sector": "Materials"
+        }
       ]
     }
   ]
