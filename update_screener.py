@@ -1115,6 +1115,37 @@ def send_telegram_notification():
         rsi_str = f"{rsi14:.1f}" if rsi14 is not None else "-"
         
         msg_lines.append(f"• <code>{ticker}</code> (RSI: {rsi_str})")
+    
+    # 황금눌림목 전략 (200일 이평선 상회 + EPS Top50 + SMA5 < 0 + RSI 30~50)
+    # EPS Top 50 추출
+    eps_candidates = []
+    for s in stocks_output:
+        pe = s.get('trailingPE')
+        fpe = s.get('forwardPE')
+        if pe and fpe and fpe > 0:
+            eg = (pe / fpe - 1) * 100
+            if eg > 0:
+                s['_eps_growth'] = eg
+                eps_candidates.append(s)
+    eps_candidates.sort(key=lambda x: x['_eps_growth'], reverse=True)
+    eps_top50_tickers = set(s['ticker'] for s in eps_candidates[:50])
+    
+    dip_stocks = [s for s in stocks_output if
+        s['ticker'] in eps_top50_tickers and
+        s.get('dist_sma5') is not None and s['dist_sma5'] < 0 and
+        s.get('rsi14') is not None and 30 <= s['rsi14'] <= 50 and
+        s.get('dist_ma200') is not None and s['dist_ma200'] > 0]
+    
+    if dip_stocks:
+        dip_stocks.sort(key=lambda x: parse_mcap(x.get('marketCap', '')), reverse=True)
+        msg_lines.append("")
+        msg_lines.append(f"🎯 <b>황금눌림목</b> ({len(dip_stocks)}종목)")
+        msg_lines.append("")
+        for s in dip_stocks:
+            ticker = s['ticker']
+            rsi14 = s.get('rsi14')
+            rsi_str = f"{rsi14:.1f}" if rsi14 is not None else "-"
+            msg_lines.append(f"• <code>{ticker}</code> (RSI: {rsi_str})")
         
     message = "\n".join(msg_lines)
     

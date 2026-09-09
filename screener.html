@@ -999,14 +999,14 @@
                 </div>
                 <!-- Golden Cross Box -->
                 <div id="golden-cross-box" style="margin-top: 15px; padding: 15px; width: 100%; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 8px; display: none; box-sizing: border-box;">
-                    <div style="color: #22c55e; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">🚀 최적 매수 타이밍 (상승 모멘텀 + 200일 이평선 상회 + 최근 3일 골든크로스 발생 + EPS 성장률 양수)</div>
+                    <div style="color: #22c55e; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">🚀 최적 매수 타이밍 (200일 이평선 상회 + EPS 성장률 양수 + 최근 3일 골든크로스 발생 + 상승 모멘텀)</div>
                     <div id="golden-cross-list" style="font-size: 0.9rem; color: var(--text-primary); line-height: 2;">
                         <!-- Tickers will be injected here -->
                     </div>
                 </div>
                 <!-- Rocket Boy Box -->
                 <div id="rocket-boy-box" style="margin-top: 10px; padding: 15px; width: 100%; background: rgba(124, 140, 245, 0.1); border: 1px solid rgba(124, 140, 245, 0.3); border-radius: 8px; display: none; box-sizing: border-box;">
-                    <div style="color: #7c8cf5; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">🚀 황금눌림목 전략 (EPS Top50 + SMA5 &lt; 0 + RSI 30~50)</div>
+                    <div style="color: #7c8cf5; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px;">🚀 황금눌림목 전략 (200일 이평선 상회 + EPS Top50 + SMA5 &lt; 0 + RSI 30~50)</div>
                     <div id="rocket-boy-list" style="font-size: 0.9rem; color: var(--text-primary); line-height: 2;">
                         <!-- Tickers will be injected here -->
                     </div>
@@ -1735,7 +1735,8 @@
                 const isEpsTop50 = epsTop50Tickers.has(s.ticker);
                 const isSma5Dip = s.dist_sma5 !== null && s.dist_sma5 < 0;
                 const isRsiOk = s.rsi14 !== null && s.rsi14 >= 30 && s.rsi14 <= 50;
-                return isEpsTop50 && isSma5Dip && isRsiOk;
+                const isAboveMa200 = s.dist_ma200 !== null && s.dist_ma200 > 0;
+                return isEpsTop50 && isSma5Dip && isRsiOk && isAboveMa200;
             });
             
             const rocketBox = document.getElementById('rocket-boy-box');
