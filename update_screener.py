@@ -54,6 +54,16 @@ if os.path.exists(signal_history_path):
     except Exception as e:
         print(f"⚠️ 로컬 시그널 DB 로딩 실패: {e}")
 
+# Load dip history cache (황금눌림목 연속 출현 추적)
+dip_history_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dip_signals.json")
+dip_history = {}
+if os.path.exists(dip_history_path):
+    try:
+        with open(dip_history_path, 'r', encoding='utf-8') as f:
+            dip_history = json.load(f)
+    except Exception as e:
+        print(f"⚠️ 로컬 눌림목 DB 로딩 실패: {e}")
+
 signal_log_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "signal_log.json")
 signal_log = []
 if os.path.exists(signal_log_path):
@@ -815,6 +825,43 @@ for t, s in stock_map.items():
         'exchange': info_data.get(t, {}).get("exchange")
     })
 
+# --- 황금눌림목 연속 출현 카운트 계산 ---
+# EPS Top 50 추출
+eps_candidates_for_dip = []
+for s in stocks_output:
+    pe = s.get('trailingPE')
+    fpe = s.get('forwardPE')
+    if pe and fpe and fpe > 0:
+        eg = (pe / fpe - 1) * 100
+        if eg > 0:
+            eps_candidates_for_dip.append((s['ticker'], eg))
+eps_candidates_for_dip.sort(key=lambda x: x[1], reverse=True)
+eps_top50_for_dip = set(t for t, _ in eps_candidates_for_dip[:50])
+
+actual_date_for_dip = run_date_str
+for s in stocks_output:
+    t = s['ticker']
+    is_dip = (
+        t in eps_top50_for_dip and
+        s.get('dist_sma5') is not None and s['dist_sma5'] < 0 and
+        s.get('rsi14') is not None and 30 <= s['rsi14'] <= 50 and
+        s.get('dist_ma200') is not None and s['dist_ma200'] > 0
+    )
+    
+    if t not in dip_history:
+        dip_history[t] = {'count': 0, 'last_seen': ''}
+    
+    dh = dip_history[t]
+    if is_dip:
+        if dh['last_seen'] != actual_date_for_dip:
+            dh['count'] += 1
+            dh['last_seen'] = actual_date_for_dip
+    else:
+        dh['count'] = 0
+        dh['last_seen'] = actual_date_for_dip
+    
+    s['dip_count'] = dh['count'] if is_dip else 0
+
 results = {
     'date': run_date_str,
     'stocks': stocks_output
@@ -833,6 +880,9 @@ os.makedirs(output_dir, exist_ok=True)
 # --- 7. Save to JSON and JS ---
 with open(signal_history_path, 'w', encoding='utf-8') as f:
     json.dump(signal_history, f, ensure_ascii=False, indent=2)
+
+with open(dip_history_path, 'w', encoding='utf-8') as f:
+    json.dump(dip_history, f, ensure_ascii=False, indent=2)
 
 json_path = os.path.join(output_dir, "index_constituents.json")
 with open(json_path, 'w', encoding='utf-8') as f:
@@ -1113,8 +1163,10 @@ def send_telegram_notification():
         ticker = s['ticker']
         rsi14 = s.get('rsi14')
         rsi_str = f"{rsi14:.1f}" if rsi14 is not None else "-"
+        gc_count = s.get('golden_cross_count', 0)
+        count_str = f" ({gc_count})" if gc_count > 1 else ""
         
-        msg_lines.append(f"• <code>{ticker}</code> (RSI: {rsi_str})")
+        msg_lines.append(f"• <code>{ticker}</code>{count_str} (RSI: {rsi_str})")
     
     # 황금눌림목 전략 (200일 이평선 상회 + EPS Top50 + SMA5 < 0 + RSI 30~50)
     # EPS Top 50 추출
@@ -1145,7 +1197,9 @@ def send_telegram_notification():
             ticker = s['ticker']
             rsi14 = s.get('rsi14')
             rsi_str = f"{rsi14:.1f}" if rsi14 is not None else "-"
-            msg_lines.append(f"• <code>{ticker}</code> (RSI: {rsi_str})")
+            dip_count = s.get('dip_count', 0)
+            count_str = f" ({dip_count})" if dip_count > 1 else ""
+            msg_lines.append(f"• <code>{ticker}</code>{count_str} (RSI: {rsi_str})")
         
     message = "\n".join(msg_lines)
     
