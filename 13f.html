@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13F | Jypark13 Investment Dashboard</title>
+    <meta name="description" content="글로벌 기관 투자자들의 13F 포트폴리오를 제공합니다.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at 50% 50%, #1a1b26 0%, #0f1017 100%);
+            --card-bg: rgba(26, 27, 38, 0.6);
+            --card-border: rgba(130, 140, 180, 0.1);
+            --text-primary: #e1e4ed;
+            --text-secondary: #8b92a8;
+            --accent-glow: 0 15px 35px -10px rgba(130, 140, 200, 0.08);
+            --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --accent: #7c8cf5;
+            --accent-dim: rgba(124, 140, 245, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Ambient glowing backgrounds */
+        .bg-glow-1 {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(100, 110, 180, 0.06) 0%, rgba(100, 110, 180, 0) 70%);
+            top: -10%;
+            left: -10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .bg-glow-2 {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(90, 100, 170, 0.05) 0%, rgba(90, 100, 170, 0) 70%);
+            bottom: -10%;
+            right: -10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            z-index: 1;
+            position: relative;
+        }
+
+        .dashboard-header {
+            margin-bottom: 30px;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        h1.dashboard-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #7c8cf5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.025em;
+            margin-bottom: 0;
+        }
+
+        .dashboard-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* ─── Navigation Bar ─── */
+        .nav-tabs {
+            display: flex;
+            gap: 4px;
+            background: rgba(26, 27, 38, 0.5);
+            padding: 4px;
+            border-radius: 12px;
+            border: 1px solid rgba(130, 140, 180, 0.1);
+        }
+
+        .nav-tab {
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .nav-tab:hover {
+            color: var(--text-primary);
+            background: rgba(124, 140, 245, 0.08);
+        }
+
+        .nav-tab.active {
+            color: #7c8cf5;
+            background: rgba(124, 140, 245, 0.15);
+            font-weight: 600;
+        }
+
+        /* ─── Main Content ─── */
+        .insight-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: var(--accent-glow);
+            display: flex;
+            flex-direction: column;
+            color: var(--text-secondary);
+        }
+
+        /* 13F Specific Styles */
+        .guru-tabs {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            justify-content: center;
+        }
+
+        .guru-tab {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            padding: 12px 30px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .guru-tab:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .guru-tab.active {
+            background: linear-gradient(135deg, rgba(124, 140, 245, 0.25), rgba(99, 102, 241, 0.15));
+            border-color: rgba(124, 140, 245, 0.5);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(124, 140, 245, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        .metric-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        .card-header {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        .holdings-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .holdings-table th {
+            text-align: left;
+            padding: 12px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .holdings-table th:nth-child(3), .holdings-table th:nth-child(4),
+        .holdings-table td:nth-child(3), .holdings-table td:nth-child(4) {
+            text-align: right;
+        }
+
+        .holdings-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+
+        .holdings-table td:nth-child(3), .holdings-table td:nth-child(4) {
+            text-align: right;
+        }
+
+        .holdings-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .row-new {
+            background: rgba(255, 215, 0, 0.05) !important;
+        }
+
+        .ticker-badge {
+            background: rgba(124, 140, 245, 0.15);
+            color: #a5b4fc;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .badge-increase { 
+            color: #00d26a; 
+            background: rgba(0, 210, 106, 0.1); 
+            border: 1px solid rgba(0, 210, 106, 0.25);
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            display: inline-block; 
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .badge-decrease { 
+            color: #f93c65; 
+            background: rgba(249, 60, 101, 0.1); 
+            border: 1px solid rgba(249, 60, 101, 0.25);
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .badge-new { 
+            color: #ffd700; 
+            background: rgba(255, 215, 0, 0.1); 
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            font-size: 0.85rem;
+            font-weight: 700; 
+            display: inline-block;
+        }
+        .badge-none { 
+            color: #94a3b8; 
+            background: rgba(148, 163, 184, 0.1); 
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .badge-unknown {
+            color: #64748b;
+            background: transparent;
+            border: 1px dashed rgba(100, 116, 139, 0.4);
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <div class="container">
+        <header class="dashboard-header">
+            <div class="header-main">
+                <h1 class="dashboard-title">13F Institutional Holdings</h1>
+                <div class="nav-tabs">
+                    <a href="./index.html" class="nav-tab">1. Dashboard</a>
+                    <a href="./screener.html" class="nav-tab">2. Screener</a>
+                    <a href="./earnings.html" class="nav-tab">3. Earnings</a>
+                    <a href="./insight.html" class="nav-tab">4. Insight</a>
+                    <a href="./13f.html" class="nav-tab active">5. 13F</a>
+                </div>
+            </div>
+            <div class="dashboard-subtitle" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <span>글로벌 구루 및 기관 투자자 포트폴리오 추적 &nbsp;|&nbsp; <span id="update-date">기준일: 로딩중...</span></span>
+                <a href="https://whalewisdom.com/" target="_blank" style="font-size: 0.8rem; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; display: flex; align-items: center; gap: 4px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent)'">
+                    WhaleWisdom ↗
+                </a>
+            </div>
+        </header>
+
+        <div id="13f-content" style="display: none;">
+            <!-- Guru Tabs -->
+            <div class="guru-tabs" id="guru-tabs-container">
+                <!-- Tabs injected by JS -->
+            </div>
+
+            <!-- Header Info -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h2 id="fund-name" style="color: #fff; font-size: 1.5rem; font-weight: 700;">-</h2>
+            </div>
+
+            <!-- Metrics -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-title">Portfolio Value (AUM)</div>
+                    <div class="metric-value" id="metric-aum">-</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Top Sector</div>
+                    <div class="metric-value" id="metric-sector" style="font-size: 1.1rem; padding-top: 5px;">-</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Top Buy / New</div>
+                    <div class="metric-value badge-increase" id="metric-buy" style="font-size: 1.1rem; padding-top: 5px;">-</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-title">Top Sell / Reduce</div>
+                    <div class="metric-value badge-decrease" id="metric-sell" style="font-size: 1.1rem; padding-top: 5px;">-</div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-grid">
+                <!-- Chart -->
+                <div class="insight-card">
+                    <div class="card-header">Sector Allocation</div>
+                    <div class="chart-container">
+                        <canvas id="sectorChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="insight-card">
+                    <div class="card-header">Top 10 Holdings</div>
+                    <table class="holdings-table">
+                        <thead>
+                            <tr>
+                                <th>Ticker</th>
+                                <th>Company (Sector)</th>
+                                <th>Weight</th>
+                                <th>QoQ Change</th>
+                            </tr>
+                        </thead>
+                        <tbody id="holdings-body">
+                            <!-- Rows injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let f13Data = null;
+        let chartInstance = null;
+
+        async function load13FData() {
+            try {
+                const response = await fetch('./data/13f_data.json?v=' + new Date().getTime());
+                if (!response.ok) throw new Error('Data load failed');
+                f13Data = await response.json();
+                
+                document.getElementById('update-date').innerText = `기준일: ${f13Data.update_date}`;
+                document.getElementById('13f-content').style.display = 'block';
+                
+                renderTabs();
+                // Select first guru by default
+                if (f13Data.gurus && f13Data.gurus.length > 0) {
+                    selectGuru(f13Data.gurus[0].id);
+                }
+            } catch (err) {
+                console.error('Failed to load 13F data:', err);
+                document.getElementById('13f-content').innerHTML = `
+                    <div class="insight-card" style="align-items:center; justify-content:center; min-height:300px;">
+                        <p style="color:var(--text-secondary);">13F 데이터를 불러오는데 실패했습니다.</p>
+                    </div>
+                `;
+                document.getElementById('13f-content').style.display = 'block';
+            }
+        }
+
+        function renderTabs() {
+            const container = document.getElementById('guru-tabs-container');
+            container.innerHTML = '';
+            f13Data.gurus.forEach(guru => {
+                const btn = document.createElement('div');
+                btn.className = 'guru-tab';
+                btn.id = `tab-${guru.id}`;
+                btn.innerText = guru.name;
+                btn.onclick = () => selectGuru(guru.id);
+                container.appendChild(btn);
+            });
+        }
+
+        function selectGuru(guruId) {
+            // Update active tab UI
+            document.querySelectorAll('.guru-tab').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(`tab-${guruId}`).classList.add('active');
+
+            const guru = f13Data.gurus.find(g => g.id === guruId);
+            if (!guru) return;
+
+            // Update Metrics
+            document.getElementById('fund-name').innerText = guru.fund;
+            document.getElementById('metric-aum').innerText = guru.aum;
+            document.getElementById('metric-sector').innerText = guru.top_sector;
+            document.getElementById('metric-buy').innerText = guru.top_buy;
+            document.getElementById('metric-sell').innerText = guru.top_sell;
+
+            // Render Table
+            const tbody = document.getElementById('holdings-body');
+            tbody.innerHTML = '';
+            
+            // Prepare data for chart (aggregate by sector)
+            const sectorData = {};
+
+            guru.holdings.forEach(h => {
+                // Table Row
+                const row = document.createElement('tr');
+                
+                let changeClass = 'badge-none';
+                let changeText = '➖';
+                
+                if (h.change_type === 'increase') {
+                    changeClass = 'badge-increase';
+                    changeText = '▲ Up';
+                } else if (h.change_type === 'decrease') {
+                    changeClass = 'badge-decrease';
+                    changeText = '▼ Down';
+                } else if (h.change_type === 'new') {
+                    changeClass = 'badge-new';
+                    changeText = '★ NEW';
+                    row.classList.add('row-new');
+                } else if (h.change_type === 'unknown') {
+                    changeClass = 'badge-unknown';
+                    changeText = 'N/A';
+                }
+
+                row.innerHTML = `
+                    <td><a href="https://finviz.com/quote.ashx?t=${h.ticker}" target="_blank" class="ticker-badge" style="text-decoration: none;">${h.ticker}</a></td>
+                    <td>
+                        <div style="font-weight:600;">${h.company}</div>
+                        <div style="font-size:0.75rem; color:var(--text-secondary);">${h.sector}</div>
+                    </td>
+                    <td style="font-weight:600;">${h.weight.toFixed(1)}%</td>
+                    <td><span class="${changeClass}">${changeText}</span></td>
+                `;
+                tbody.appendChild(row);
+
+                // Chart Data Aggregation
+                if (sectorData[h.sector]) {
+                    sectorData[h.sector] += h.weight;
+                } else {
+                    sectorData[h.sector] = h.weight;
+                }
+            });
+
+            // Render Chart
+            renderChart(sectorData);
+        }
+
+        function renderChart(sectorData) {
+            const ctx = document.getElementById('sectorChart').getContext('2d');
+            
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            // 상위 섹터부터 내림차순 정렬
+            const sortedSectors = Object.entries(sectorData).sort((a, b) => b[1] - a[1]);
+            const labels = sortedSectors.map(s => s[0]);
+            const data = sortedSectors.map(s => s[1]);
+            
+            // Generate some nice colors based on theme
+            const bgColors = [
+                '#7c8cf5', '#00d26a', '#f93c65', '#ffd700', 
+                '#a5b4fc', '#38bdf8', '#c084fc', '#fb923c', '#94a3b8'
+            ];
+
+            chartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                plugins: [ChartDataLabels],
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: bgColors.slice(0, labels.length),
+                        borderWidth: 0,
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        datalabels: {
+                            color: '#ffffff', // 폰트 색상을 흰색으로 원복
+                            textAlign: 'center',
+                            font: { family: "'Outfit', sans-serif", weight: '800', size: 11 },
+                            formatter: (value, context) => {
+                                if (context.dataIndex < 3) {
+                                    // 섹터명과 비중을 두 줄로 배열 처리하여 리턴
+                                    const sectorName = context.chart.data.labels[context.dataIndex];
+                                    return [sectorName, value.toFixed(1) + '%'];
+                                }
+                                return null;
+                            },
+                            anchor: 'center',
+                            align: 'center'
+                        },
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                color: '#e1e4ed',
+                                padding: 15,
+                                font: {
+                                    family: "'Outfit', sans-serif",
+                                    size: 11
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(26, 27, 38, 0.9)',
+                            titleFont: { family: "'Outfit', sans-serif", size: 13 },
+                            bodyFont: { family: "'Outfit', sans-serif", size: 12 },
+                            padding: 10,
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) label += ': ';
+                                    label += context.raw.toFixed(1) + '%';
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    cutout: '70%'
+                }
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', load13FData);
+    </script>
+
+    </div>
+</body>
+
+</html>
