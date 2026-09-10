@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-08-28": [
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 16.52,
-      "rsi14": 79.97
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 15.7,
-      "rsi14": 64.05
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 11.96,
-      "rsi14": 71.74
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 9.43,
-      "rsi14": 64.73
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 9.17,
-      "rsi14": 72.85
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 8.1,
-      "rsi14": 60.44
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.85,
-      "rsi14": 69.01
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.77,
-      "rsi14": 58.53
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 6.15,
-      "rsi14": 61.32
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.62,
-      "rsi14": 47.97
-    }
-  ],
   "2026-09-01": [
     {
       "ticker": "CRM",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Communication Services",
       "dist_sma5": 5.86,
       "rsi14": 70.43
+    }
+  ],
+  "2026-09-11": [
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 2.64,
+      "rsi14": 66.38
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": 2.4,
+      "rsi14": 65.95
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 2.28,
+      "rsi14": 61.63
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 2.27,
+      "rsi14": 56.57
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 2.23,
+      "rsi14": 54.78
+    },
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 2.21,
+      "rsi14": 60.17
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.18,
+      "rsi14": 55.09
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.18,
+      "rsi14": 44.53
+    },
+    {
+      "ticker": "PM",
+      "name": "Philip Morris International Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": 2.15,
+      "rsi14": 52.66
+    },
+    {
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "dist_sma5": 1.77,
+      "rsi14": 60.43
     }
   ]
 };

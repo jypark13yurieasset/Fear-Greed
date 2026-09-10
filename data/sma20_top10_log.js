@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-08-28": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 57.09,
-      "rsi14": 65.57
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 31.14,
-      "rsi14": 72.85
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 26.04,
-      "rsi14": 79.97
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 19.35,
-      "rsi14": 64.84
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.83,
-      "rsi14": 71.74
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma20": 12.82,
-      "rsi14": 71.95
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 12.76,
-      "rsi14": 60.32
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.81,
-      "rsi14": 69.01
-    },
-    {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan Inc.",
-      "sector": "Materials",
-      "dist_sma20": 11.28,
-      "rsi14": 68.65
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.76,
-      "rsi14": 69.1
-    }
-  ],
   "2026-09-01": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma20": 8.71,
       "rsi14": 59.07
+    }
+  ],
+  "2026-09-11": [
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 10.37,
+      "rsi14": 66.38
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 8.0,
+      "rsi14": 77.04
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": 6.56,
+      "rsi14": 61.63
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 6.51,
+      "rsi14": 56.6
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 6.49,
+      "rsi14": 57.67
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 6.43,
+      "rsi14": 62.64
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 6.25,
+      "rsi14": 55.61
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 5.99,
+      "rsi14": 57.34
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 5.95,
+      "rsi14": 54.8
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 5.59,
+      "rsi14": 58.51
     }
   ]
 };

@@ -1,76 +1,4 @@
 {
-  "2026-08-28": [
-    {
-      "ticker": "BSX",
-      "name": "Boston Scientific Corporation",
-      "sector": "Health Care",
-      "dist_sma5": -4.4,
-      "rsi14": 42.25
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma5": -4.38,
-      "rsi14": 27.61
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "dist_sma5": -3.62,
-      "rsi14": 45.69
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.38,
-      "rsi14": 49.93
-    },
-    {
-      "ticker": "ROST",
-      "name": "Ross Stores, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.24,
-      "rsi14": 39.64
-    },
-    {
-      "ticker": "ABT",
-      "name": "Abbott Laboratories",
-      "sector": "Health Care",
-      "dist_sma5": -2.99,
-      "rsi14": 57.5
-    },
-    {
-      "ticker": "TJX",
-      "name": "The TJX Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.99,
-      "rsi14": 19.91
-    },
-    {
-      "ticker": "NKE",
-      "name": "NIKE, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.94,
-      "rsi14": 36.6
-    },
-    {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.92,
-      "rsi14": 39.28
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -2.91,
-      "rsi14": 65.57
-    }
-  ],
   "2026-09-01": [
     {
       "ticker": "PYPL",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma5": -5.96,
       "rsi14": 30.37
+    }
+  ],
+  "2026-09-11": [
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma5": -8.18,
+      "rsi14": 41.21
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.7,
+      "rsi14": 36.77
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -6.64,
+      "rsi14": 33.11
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -6.22,
+      "rsi14": 55.61
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -5.97,
+      "rsi14": 41.7
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -5.96,
+      "rsi14": 28.71
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -5.79,
+      "rsi14": 23.01
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -5.49,
+      "rsi14": 43.35
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes Company",
+      "sector": "Energy",
+      "dist_sma5": -5.44,
+      "rsi14": 36.91
+    },
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -5.4,
+      "rsi14": 33.58
     }
   ]
 }
