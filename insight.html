@@ -745,6 +745,53 @@
                 </div>
             </div>
 
+            <!-- AAOI, RKLB, ORCL, SPGI 비교 차트 -->
+            <div class="insight-card">
+                <h2 class="card-title">📈 AAOI vs RKLB vs ORCL vs SPGI</h2>
+                <div class="tradingview-widget-container" style="aspect-ratio: 5/3; width: 100%;">
+                    <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "width": "100%",
+                                "height": "100%",
+                                "symbol": "NASDAQ:AAOI",
+                                "interval": "D",
+                                "range": "12M",
+                                "timezone": "America/New_York",
+                                "theme": "dark",
+                                "style": "2",
+                                "locale": "kr",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": false,
+                                "hide_legend": false,
+                                "save_image": false,
+                                "hide_volume": true,
+                                "isTransparent": true,
+                                "lineColor": "#2962FF",
+                                "compareSymbols": [
+                                    {
+                                        "symbol": "NASDAQ:RKLB",
+                                        "position": "SameScale",
+                                        "lineColor": "#FF6D00"
+                                    },
+                                    {
+                                        "symbol": "NYSE:ORCL",
+                                        "position": "SameScale",
+                                        "lineColor": "#00C853"
+                                    },
+                                    {
+                                        "symbol": "NYSE:SPGI",
+                                        "position": "SameScale",
+                                        "lineColor": "#D50000"
+                                    }
+                                ]
+                            }
+                        </script>
+                </div>
+            </div>
+
+
             <!-- SOXX vs USD vs SOXL 5년 비교 차트 -->
             <div class="insight-card" style="grid-column: 1 / -1;">
                 <h2 class="card-title">📈 SOXX vs USD vs SOXL</h2>
@@ -855,23 +902,34 @@
                 <div id="sma20-laggards-table-container"></div>
             </div>
 
-            <!-- 섹터별 랭킹 -->
+            <!-- 최적 매수 타이밍 섹터 분포 (왼쪽) -->
             <div class="insight-card">
-                <h2 class="card-title">🏆 Sector Momentum Ranking</h2>
-                <div class="tab-container">
-                    <button class="tab-btn active" onclick="switchSectorTab('short')" id="btn-sector-short">단기
-                        (5D)</button>
-                    <button class="tab-btn" onclick="switchSectorTab('mid')" id="btn-sector-mid">중기 (1M)</button>
-                </div>
-                <div id="sector-cards-container">
+                <h2 class="card-title">🚀 최적 매수 타이밍 (Golden Cross) Sector Distribution</h2>
+                <div id="golden-sector-donut" class="donut-chart-wrapper">
                     <!-- JS Injected -->
                 </div>
             </div>
 
-            <!-- 골든크로스 섹터 분포 -->
+            <!-- 황금눌림목 전략 섹터 분포 (오른쪽) -->
             <div class="insight-card">
-                <h2 class="card-title">🚀 Golden Cross Sector Distribution</h2>
-                <div id="golden-sector-donut" class="donut-chart-wrapper">
+                <h2 class="card-title">🚀 황금눌림목 (Golden Dip) Sector Distribution</h2>
+                <div id="dip-sector-donut" class="donut-chart-wrapper">
+                    <!-- JS Injected -->
+                </div>
+            </div>
+
+            <!-- 섹터별 랭킹 단기 (왼쪽) -->
+            <div class="insight-card">
+                <h2 class="card-title">🏆 단기 Sector Momentum (5D)</h2>
+                <div id="sector-short-container">
+                    <!-- JS Injected -->
+                </div>
+            </div>
+
+            <!-- 섹터별 랭킹 중기 (오른쪽) -->
+            <div class="insight-card">
+                <h2 class="card-title">🏆 중기 Sector Momentum (1M)</h2>
+                <div id="sector-mid-container">
                     <!-- JS Injected -->
                 </div>
             </div>
@@ -887,6 +945,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             renderSectorRanking();
             renderGoldenSectorDonut();
+            renderDipSectorDonut();
             
             // Leaders
             const sma5Log = typeof SMA5_TOP10_LOG !== 'undefined' ? SMA5_TOP10_LOG : {};
@@ -983,28 +1042,27 @@
 
             const stocks = INDEX_DATA.stocks || [];
 
-            const mainContainer = document.getElementById('sector-cards-container');
-            mainContainer.innerHTML = '';
-
             const configs = [
                 {
-                    title: '🏆 단기 모멘텀 랭킹 (5D 수익률 + EMA8)',
+                    containerId: 'sector-short-container',
                     periodKey: 'pct_1w',
                     strengthKey: 'aboveEma8',
-                    strengthLabel: 'EMA8 돌파 비율 (단기 추세)'
+                    strengthLabel: 'EMA8 돌파 비율'
                 },
                 {
-                    title: '🏆 중기 모멘텀 랭킹 (1M 수익률 + SMA20)',
+                    containerId: 'sector-mid-container',
                     periodKey: 'pct_1m',
                     strengthKey: 'aboveSma20',
-                    strengthLabel: 'SMA20 돌파 비율 (중기 추세)'
+                    strengthLabel: 'SMA20 돌파 비율'
                 }
             ];
 
             configs.forEach(config => {
+                const container = document.getElementById(config.containerId);
+                if (!container) return;
+
                 const sectors = {};
 
-                // 그룹핑
                 stocks.forEach(s => {
                     const sector = s.sector || 'Unknown';
                     if (!sectors[sector]) {
@@ -1023,7 +1081,6 @@
                     }
                 });
 
-                // 평균 계산 및 정렬
                 const ranking = Object.values(sectors).map(sec => {
                     sec.avgReturn = sec.sumReturn / sec.count;
                     sec.strengthPct = (sec.aboveStrength / sec.count) * 100;
@@ -1031,37 +1088,29 @@
                 }).filter(sec => sec.count > 5 && sec.name !== 'Unknown')
                     .sort((a, b) => b.avgReturn - a.avgReturn);
 
-                let listHtml = '';
+                let listHtml = '<div class="sector-list" style="display:block;">';
                 ranking.forEach((sec, idx) => {
                     const isPos = sec.avgReturn > 0;
                     const sign = isPos ? '+' : '';
                     const colorClass = isPos ? 'positive' : 'negative';
 
                     listHtml += `
-                        <div class="sector-item">
-                            <div class="sector-header">
-                                <span>${idx + 1}. ${sec.name} <span style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 400;">(${sec.count} stocks)</span></span>
+                        <div class="sector-item" style="padding:10px 12px;">
+                            <div class="sector-header" style="margin-bottom:4px; font-size:0.9rem;">
+                                <span>${idx + 1}. ${sec.name} <span style="font-size: 0.75rem; color: var(--text-secondary); font-weight: 400;">(${sec.count})</span></span>
                                 <span class="stat-value ${colorClass}" style="font-weight: 700;">${sign}${sec.avgReturn.toFixed(2)}%</span>
                             </div>
-                            <div class="sector-stats">
-                                <div>${config.strengthLabel}: <span style="color: #fff;">${sec.strengthPct.toFixed(1)}%</span></div>
+                            <div class="sector-stats" style="font-size:0.8rem;">
+                                <div>${config.strengthLabel}: <span style="color: #fff;">${sec.strengthPct.toFixed(0)}%</span></div>
                             </div>
-                            <div class="progress-bar-container">
+                            <div class="progress-bar-container" style="margin-top:6px; height:4px;">
                                 <div class="progress-bar-fill" style="width: ${sec.strengthPct}%"></div>
                             </div>
                         </div>
                     `;
                 });
-
-                const displayStyle = config.periodKey === 'pct_1w' ? 'block' : 'none';
-                const idName = config.periodKey === 'pct_1w' ? 'sector-list-short' : 'sector-list-mid';
-
-                const sectionHtml = `
-                    <div id="${idName}" class="sector-list" style="display: ${displayStyle};">
-                        ${listHtml}
-                    </div>
-                `;
-                mainContainer.insertAdjacentHTML('beforeend', sectionHtml);
+                listHtml += '</div>';
+                container.innerHTML = listHtml;
             });
         }
 
@@ -1136,6 +1185,148 @@
                 ctx.stroke();
 
                 slices.push({ sector, count, color, startAngle, endAngle: startAngle + sweep });
+                startAngle += sweep;
+            });
+
+            // Inner circle (donut hole)
+            ctx.beginPath();
+            ctx.arc(cx, cy, innerR, 0, 2 * Math.PI);
+            ctx.fillStyle = '#1a1b26';
+            ctx.fill();
+
+            // Inner ring glow
+            const grad = ctx.createRadialGradient(cx, cy, innerR - 8, cx, cy, innerR);
+            grad.addColorStop(0, 'rgba(124,140,245,0)');
+            grad.addColorStop(1, 'rgba(124,140,245,0.08)');
+            ctx.beginPath();
+            ctx.arc(cx, cy, innerR, 0, 2 * Math.PI);
+            ctx.fillStyle = grad;
+            ctx.fill();
+
+            // Build HTML
+            const canvasContainer = document.createElement('div');
+            canvasContainer.className = 'donut-canvas-container';
+            canvasContainer.appendChild(canvasEl);
+
+            const centerLabel = document.createElement('div');
+            centerLabel.className = 'donut-center-label';
+            centerLabel.innerHTML = `<div class="count">${total}</div><div class="label">종목</div>`;
+            canvasContainer.appendChild(centerLabel);
+
+            // Legend
+            const legendEl = document.createElement('div');
+            legendEl.className = 'donut-legend';
+            sorted.forEach(([sector, count], idx) => {
+                const pct = ((count / total) * 100).toFixed(1);
+                const color = COLORS[idx % COLORS.length];
+                legendEl.innerHTML += `
+                    <div class="donut-legend-item">
+                        <div class="legend-left">
+                            <div class="legend-color" style="background:${color}"></div>
+                            <span class="legend-sector">${sector}</span>
+                        </div>
+                        <div class="legend-right">
+                            <span class="legend-count">${count}</span>
+                            <span class="legend-pct">${pct}%</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = '';
+            container.appendChild(canvasContainer);
+            container.appendChild(legendEl);
+        }
+
+        // ─── 황금눌림목 Sector Distribution Donut ───
+        function renderDipSectorDonut() {
+            if (typeof INDEX_DATA === 'undefined') return;
+            const container = document.getElementById('dip-sector-donut');
+            if (!container) return;
+
+            const stocks = INDEX_DATA.stocks || [];
+
+            // EPS Top50 계산
+            const epsTop50Tickers = new Set(
+                stocks.filter(s => s.eps_growth !== undefined && s.eps_growth !== null)
+                    .sort((a, b) => b.eps_growth - a.eps_growth)
+                    .slice(0, 50)
+                    .map(s => s.ticker)
+            );
+            // eps_growth가 없는 경우 직접 계산
+            if (epsTop50Tickers.size === 0) {
+                const withEps = stocks.filter(s => s.trailingPE && s.forwardPE && s.forwardPE > 0)
+                    .map(s => ({ ...s, _eps: ((s.trailingPE / s.forwardPE) - 1) * 100 }))
+                    .sort((a, b) => b._eps - a._eps)
+                    .slice(0, 50);
+                withEps.forEach(s => epsTop50Tickers.add(s.ticker));
+            }
+
+            const dipStocks = stocks.filter(s => {
+                const isEpsTop50 = epsTop50Tickers.has(s.ticker);
+                const isSma5Dip = s.dist_sma5 !== null && s.dist_sma5 !== undefined && s.dist_sma5 < 0;
+                const isRsiOk = s.rsi14 !== null && s.rsi14 !== undefined && s.rsi14 >= 30 && s.rsi14 <= 50;
+                const isAboveMa200 = s.dist_ma200 !== null && s.dist_ma200 !== undefined && s.dist_ma200 > 0;
+                return isEpsTop50 && isSma5Dip && isRsiOk && isAboveMa200;
+            });
+
+            if (dipStocks.length === 0) {
+                container.innerHTML = '<div class="donut-empty">오늘 황금눌림목 (Golden Dip) 종목이 없습니다</div>';
+                return;
+            }
+
+            // Count by sector
+            const sectorMap = {};
+            dipStocks.forEach(s => {
+                const sec = s.sector || 'Unknown';
+                sectorMap[sec] = (sectorMap[sec] || 0) + 1;
+            });
+
+            // Sort descending
+            const sorted = Object.entries(sectorMap).sort((a, b) => b[1] - a[1]);
+            const total = dipStocks.length;
+
+            // Color palette (보라색 테마)
+            const COLORS = [
+                '#7c8cf5', '#00d26a', '#f5a623', '#f93c65', '#36bffa',
+                '#a78bfa', '#ec4899', '#14b8a6', '#f59e0b', '#6366f1',
+                '#22d3ee'
+            ];
+
+            // Build canvas
+            const canvasSize = 260;
+            const canvasEl = document.createElement('canvas');
+            canvasEl.width = canvasSize * 2;
+            canvasEl.height = canvasSize * 2;
+            canvasEl.style.width = canvasSize + 'px';
+            canvasEl.style.height = canvasSize + 'px';
+
+            const ctx = canvasEl.getContext('2d');
+            const cx = canvasSize;
+            const cy = canvasSize;
+            const outerR = canvasSize - 16;
+            const innerR = outerR * 0.62;
+
+            let startAngle = -Math.PI / 2;
+
+            sorted.forEach(([sector, count], idx) => {
+                const sweep = (count / total) * 2 * Math.PI;
+                const color = COLORS[idx % COLORS.length];
+
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.arc(cx, cy, outerR, startAngle, startAngle + sweep);
+                ctx.closePath();
+                ctx.fillStyle = color;
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.moveTo(cx + innerR * Math.cos(startAngle), cy + innerR * Math.sin(startAngle));
+                ctx.lineTo(cx + outerR * Math.cos(startAngle), cy + outerR * Math.sin(startAngle));
+                ctx.strokeStyle = '#0f1017';
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
                 startAngle += sweep;
             });
 
