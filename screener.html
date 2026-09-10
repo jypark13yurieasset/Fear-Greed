@@ -1746,7 +1746,8 @@
                 const isSma5Dip = s.dist_sma5 !== null && s.dist_sma5 < 0;
                 const isRsiOk = s.rsi14 !== null && s.rsi14 >= 30 && s.rsi14 <= 50;
                 const isAboveMa200 = s.dist_ma200 !== null && s.dist_ma200 > 0;
-                return isEpsTop50 && isSma5Dip && isRsiOk && isAboveMa200;
+                const isNotDanger = !s.is_danger_dead_cross;
+                return isEpsTop50 && isSma5Dip && isRsiOk && isAboveMa200 && isNotDanger;
             });
             
             const rocketBox = document.getElementById('rocket-boy-box');

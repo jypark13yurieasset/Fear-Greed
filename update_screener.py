@@ -845,7 +845,8 @@ for s in stocks_output:
         t in eps_top50_for_dip and
         s.get('dist_sma5') is not None and s['dist_sma5'] < 0 and
         s.get('rsi14') is not None and 30 <= s['rsi14'] <= 50 and
-        s.get('dist_ma200') is not None and s['dist_ma200'] > 0
+        s.get('dist_ma200') is not None and s['dist_ma200'] > 0 and
+        not s.get('is_danger_dead_cross', False)
     )
     
     if t not in dip_history:
