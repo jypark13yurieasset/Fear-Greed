@@ -436,71 +436,71 @@
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
-      "dist_sma20": -16.65,
-      "rsi14": 35.81
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma20": -15.19,
-      "rsi14": 23.01
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -13.61,
-      "rsi14": 28.71
+      "dist_sma20": -15.57,
+      "rsi14": 35.93
     },
     {
       "ticker": "BKNG",
       "name": "Booking Holdings Inc.",
       "sector": "Consumer Discretionary",
-      "dist_sma20": -13.4,
-      "rsi14": 30.27
+      "dist_sma20": -12.75,
+      "rsi14": 30.04
     },
     {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -13.28,
-      "rsi14": 36.77
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "dist_sma20": -12.55,
+      "rsi14": 27.78
     },
     {
       "ticker": "ADSK",
       "name": "Autodesk, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -13.27,
-      "rsi14": 34.92
+      "dist_sma20": -12.12,
+      "rsi14": 35.54
     },
     {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -11.98,
-      "rsi14": 38.67
-    },
-    {
-      "ticker": "BSX",
-      "name": "Boston Scientific Corporation",
-      "sector": "Health Care",
-      "dist_sma20": -11.16,
-      "rsi14": 33.58
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -12.08,
+      "rsi14": 30.19
     },
     {
       "ticker": "AMGN",
       "name": "Amgen Inc.",
       "sector": "Health Care",
-      "dist_sma20": -10.51,
-      "rsi14": 33.11
+      "dist_sma20": -11.29,
+      "rsi14": 31.45
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -10.51,
-      "rsi14": 35.31
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -10.87,
+      "rsi14": 39.32
+    },
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific Corporation",
+      "sector": "Health Care",
+      "dist_sma20": -10.6,
+      "rsi14": 33.28
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": -10.11,
+      "rsi14": 28.73
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -9.88,
+      "rsi14": 28.25
     }
   ]
 }

@@ -433,74 +433,74 @@
   ],
   "2026-09-11": [
     {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 18.34,
+      "rsi14": 66.57
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma20": 13.62,
+      "rsi14": 64.11
+    },
+    {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "sector": "Communication Services",
-      "dist_sma20": 10.37,
-      "rsi14": 66.38
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 8.0,
-      "rsi14": 77.04
+      "dist_sma20": 10.5,
+      "rsi14": 67.18
     },
     {
       "ticker": "QCOM",
       "name": "QUALCOMM Incorporated",
       "sector": "Information Technology",
-      "dist_sma20": 6.56,
-      "rsi14": 61.63
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 6.51,
-      "rsi14": 56.6
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 6.49,
-      "rsi14": 57.67
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 6.43,
-      "rsi14": 62.64
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 6.25,
-      "rsi14": 55.61
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 5.99,
-      "rsi14": 57.34
+      "dist_sma20": 9.06,
+      "rsi14": 66.29
     },
     {
       "ticker": "INTC",
       "name": "Intel Corporation",
       "sector": "Information Technology",
-      "dist_sma20": 5.95,
-      "rsi14": 54.8
+      "dist_sma20": 8.81,
+      "rsi14": 57.53
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 8.68,
+      "rsi14": 78.61
     },
     {
       "ticker": "MRNA",
       "name": "Moderna, Inc.",
       "sector": "Health Care",
-      "dist_sma20": 5.59,
-      "rsi14": 58.51
+      "dist_sma20": 7.92,
+      "rsi14": 61.25
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 7.41,
+      "rsi14": 64.89
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": 7.26,
+      "rsi14": 56.85
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 7.07,
+      "rsi14": 57.96
     }
   ]
 }

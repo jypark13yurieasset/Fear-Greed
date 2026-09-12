@@ -433,74 +433,74 @@
   ],
   "2026-09-11": [
     {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 2.64,
-      "rsi14": 66.38
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": 9.22,
+      "rsi14": 64.11
     },
     {
-      "ticker": "DVN",
-      "name": "Devon Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 2.4,
-      "rsi14": 65.95
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.35,
+      "rsi14": 66.57
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors N.V.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.95,
+      "rsi14": 53.86
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 3.76,
+      "rsi14": 43.31
+    },
+    {
+      "ticker": "FIX",
+      "name": "Comfort Systems USA, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 3.66,
+      "rsi14": 53.82
     },
     {
       "ticker": "QCOM",
       "name": "QUALCOMM Incorporated",
       "sector": "Information Technology",
-      "dist_sma5": 2.28,
-      "rsi14": 61.63
+      "dist_sma5": 3.62,
+      "rsi14": 66.29
     },
     {
-      "ticker": "HCA",
-      "name": "HCA Healthcare, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.27,
-      "rsi14": 56.57
-    },
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
+      "ticker": "ADI",
+      "name": "Analog Devices, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 2.23,
-      "rsi14": 54.78
+      "dist_sma5": 3.46,
+      "rsi14": 56.1
     },
     {
-      "ticker": "ELV",
-      "name": "Elevance Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.21,
-      "rsi14": 60.17
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 2.18,
-      "rsi14": 55.09
+      "dist_sma5": 3.17,
+      "rsi14": 62.79
     },
     {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 2.95,
+      "rsi14": 53.37
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 2.18,
-      "rsi14": 44.53
-    },
-    {
-      "ticker": "PM",
-      "name": "Philip Morris International Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": 2.15,
-      "rsi14": 52.66
-    },
-    {
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "sector": "Energy",
-      "dist_sma5": 1.77,
-      "rsi14": 60.43
+      "dist_sma5": 2.92,
+      "rsi14": 55.47
     }
   ]
 }

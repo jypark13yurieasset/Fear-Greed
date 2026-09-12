@@ -433,74 +433,74 @@
   ],
   "2026-09-11": [
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
       "sector": "Industrials",
-      "dist_sma5": -8.18,
-      "rsi14": 41.21
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -6.7,
-      "rsi14": 36.77
+      "dist_sma5": -5.85,
+      "rsi14": 39.39
     },
     {
       "ticker": "AMGN",
       "name": "Amgen Inc.",
       "sector": "Health Care",
-      "dist_sma5": -6.64,
-      "rsi14": 33.11
+      "dist_sma5": -4.78,
+      "rsi14": 31.45
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -6.22,
-      "rsi14": 55.61
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -5.97,
-      "rsi14": 41.7
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -5.96,
-      "rsi14": 28.71
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": -5.79,
-      "rsi14": 23.01
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -5.49,
-      "rsi14": 43.35
+      "dist_sma5": -4.68,
+      "rsi14": 53.58
     },
     {
       "ticker": "BKR",
       "name": "Baker Hughes Company",
       "sector": "Energy",
-      "dist_sma5": -5.44,
-      "rsi14": 36.91
+      "dist_sma5": -4.59,
+      "rsi14": 35.85
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.52,
+      "rsi14": 44.77
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.42,
+      "rsi14": 51.05
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.25,
+      "rsi14": 43.89
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -4.18,
+      "rsi14": 47.29
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma5": -4.04,
+      "rsi14": 45.14
     },
     {
       "ticker": "BSX",
       "name": "Boston Scientific Corporation",
       "sector": "Health Care",
-      "dist_sma5": -5.4,
-      "rsi14": 33.58
+      "dist_sma5": -3.99,
+      "rsi14": 33.28
     }
   ]
 }
