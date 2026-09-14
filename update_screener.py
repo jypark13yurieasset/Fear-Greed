@@ -329,6 +329,32 @@ for idx, batch in enumerate(batches):
     except Exception as e:
         print(f"   ❌ Batch {idx+1} 에러: {e}")
 
+# Check for missing tickers and retry individually
+missing_tickers = [yf_t for yf_t in tickers_to_fetch if ticker_mapping[yf_t] not in all_data]
+if missing_tickers:
+    import time
+    print(f"   ⚠️ 누락된 종목 {len(missing_tickers)}개 발견. 개별 재시도 시작...")
+    for yf_ticker in missing_tickers:
+        orig_ticker = ticker_mapping[yf_ticker]
+        success = False
+        for attempt in range(3):
+            try:
+                time.sleep(1) # wait a bit before retry
+                df = yf.download(yf_ticker, period="2y", interval="1d", auto_adjust=False, progress=False)
+                if not df.empty:
+                    series = df[['Close', 'Volume']].dropna()
+                    if not series.empty:
+                        if series.index.tz is not None:
+                            series.index = series.index.tz_localize(None)
+                        all_data[orig_ticker] = series
+                        success = True
+                        print(f"      ✅ {orig_ticker} 재시도 성공 (attempt {attempt+1})")
+                        break
+            except Exception as e:
+                pass
+        if not success:
+            print(f"      ❌ {orig_ticker} 최종 다운로드 실패")
+
 print(f"   다운로드 완료: {len(all_data)}개 종목 성공")
 
 # --- 4.5 Fetch trailingPE and forwardPE ---
