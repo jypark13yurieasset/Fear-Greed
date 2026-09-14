@@ -1,76 +1,4 @@
 {
-  "2026-09-01": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 47.48,
-      "rsi14": 64.52
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 26.46,
-      "rsi14": 81.1
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 24.52,
-      "rsi14": 68.17
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 18.36,
-      "rsi14": 80.38
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 17.79,
-      "rsi14": 74.33
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 16.2,
-      "rsi14": 62.94
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB N.V.",
-      "sector": "Energy",
-      "dist_sma20": 13.24,
-      "rsi14": 76.2
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.22,
-      "rsi14": 65.16
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 9.12,
-      "rsi14": 69.29
-    },
-    {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 9.1,
-      "rsi14": 64.3
-    }
-  ],
   "2026-09-02": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma20": 7.07,
       "rsi14": 57.96
+    }
+  ],
+  "2026-09-15": [
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.93,
+      "rsi14": 62.26
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 12.76,
+      "rsi14": 70.77
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.96,
+      "rsi14": 69.75
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.95,
+      "rsi14": 59.27
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 9.65,
+      "rsi14": 60.23
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 8.06,
+      "rsi14": 59.06
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": 7.51,
+      "rsi14": 63.33
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 7.28,
+      "rsi14": 59.88
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 6.8,
+      "rsi14": 50.73
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 6.63,
+      "rsi14": 62.24
     }
   ]
 }

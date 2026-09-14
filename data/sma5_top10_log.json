@@ -1,76 +1,4 @@
 {
-  "2026-09-01": [
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 13.96,
-      "rsi14": 81.1
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 12.77,
-      "rsi14": 65.16
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 10.89,
-      "rsi14": 74.33
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 9.21,
-      "rsi14": 80.38
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB N.V.",
-      "sector": "Energy",
-      "dist_sma5": 8.88,
-      "rsi14": 76.2
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.44,
-      "rsi14": 60.12
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.92,
-      "rsi14": 62.47
-    },
-    {
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": 4.2,
-      "rsi14": 55.47
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.15,
-      "rsi14": 69.29
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 4.1,
-      "rsi14": 52.97
-    }
-  ],
   "2026-09-02": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": 2.92,
       "rsi14": 55.47
+    }
+  ],
+  "2026-09-15": [
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.11,
+      "rsi14": 62.26
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 9.01,
+      "rsi14": 57.71
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 7.24,
+      "rsi14": 59.06
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 6.96,
+      "rsi14": 54.42
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 6.95,
+      "rsi14": 63.44
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.8,
+      "rsi14": 46.86
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.39,
+      "rsi14": 59.88
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.01,
+      "rsi14": 60.42
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.56,
+      "rsi14": 52.49
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 5.12,
+      "rsi14": 50.73
     }
   ]
 }

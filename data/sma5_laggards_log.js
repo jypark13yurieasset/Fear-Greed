@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-09-01": [
-    {
-      "ticker": "PYPL",
-      "name": "PayPal Holdings, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -12.19,
-      "rsi14": 33.03
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.38,
-      "rsi14": 45.68
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma5": -7.56,
-      "rsi14": 29.81
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -6.46,
-      "rsi14": 28.39
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -5.96,
-      "rsi14": 27.47
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -5.45,
-      "rsi14": 46.66
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -4.69,
-      "rsi14": 33.11
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -4.49,
-      "rsi14": 32.14
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.07,
-      "rsi14": 46.37
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": -4.05,
-      "rsi14": 61.64
-    }
-  ],
   "2026-09-02": [
     {
       "ticker": "AXON",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Health Care",
       "dist_sma5": -3.99,
       "rsi14": 33.28
+    }
+  ],
+  "2026-09-15": [
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -11.09,
+      "rsi14": 42.35
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -10.51,
+      "rsi14": 45.82
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -10.29,
+      "rsi14": 40.52
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.63,
+      "rsi14": 39.49
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.38,
+      "rsi14": 42.51
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -9.2,
+      "rsi14": 37.24
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.99,
+      "rsi14": 44.54
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma5": -8.44,
+      "rsi14": 38.96
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -7.67,
+      "rsi14": 47.23
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -7.4,
+      "rsi14": 48.84
     }
   ]
 };
