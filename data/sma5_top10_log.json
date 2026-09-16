@@ -1,76 +1,4 @@
 {
-  "2026-09-02": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 6.39,
-      "rsi14": 67.47
-    },
-    {
-      "ticker": "DE",
-      "name": "Deere & Company",
-      "sector": "Industrials",
-      "dist_sma5": 5.02,
-      "rsi14": 65.57
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.98,
-      "rsi14": 81.25
-    },
-    {
-      "ticker": "CTVA",
-      "name": "Corteva, Inc.",
-      "sector": "Materials",
-      "dist_sma5": 4.27,
-      "rsi14": 68.22
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 4.25,
-      "rsi14": 75.68
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron Corporation",
-      "sector": "Energy",
-      "dist_sma5": 3.55,
-      "rsi14": 70.8
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma5": 3.5,
-      "rsi14": 74.5
-    },
-    {
-      "ticker": "CVS",
-      "name": "CVS Health Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 3.47,
-      "rsi14": 51.3
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 3.08,
-      "rsi14": 71.63
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma5": 3.07,
-      "rsi14": 69.15
-    }
-  ],
   "2026-09-03": [
     {
       "ticker": "APH",
@@ -501,6 +429,78 @@
       "sector": "Communication Services",
       "dist_sma5": 5.12,
       "rsi14": 50.73
+    }
+  ],
+  "2026-09-16": [
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.1,
+      "rsi14": 64.59
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.97,
+      "rsi14": 58.02
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.79,
+      "rsi14": 61.4
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.48,
+      "rsi14": 59.94
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 4.43,
+      "rsi14": 61.68
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.34,
+      "rsi14": 67.25
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.28,
+      "rsi14": 45.59
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 3.96,
+      "rsi14": 69.49
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources, Inc.",
+      "sector": "Energy",
+      "dist_sma5": 3.3,
+      "rsi14": 65.06
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 2.99,
+      "rsi14": 49.5
     }
   ]
 }

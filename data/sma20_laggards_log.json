@@ -1,76 +1,4 @@
 {
-  "2026-09-02": [
-    {
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": -19.9,
-      "rsi14": 41.17
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -15.33,
-      "rsi14": 33.31
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -13.6,
-      "rsi14": 39.85
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.9,
-      "rsi14": 34.25
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.41,
-      "rsi14": 42.13
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -11.99,
-      "rsi14": 39.34
-    },
-    {
-      "ticker": "PYPL",
-      "name": "PayPal Holdings, Inc.",
-      "sector": "Financials",
-      "dist_sma20": -11.8,
-      "rsi14": 32.33
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -11.55,
-      "rsi14": 26.23
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -11.4,
-      "rsi14": 29.8
-    },
-    {
-      "ticker": "URI",
-      "name": "United Rentals, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -10.69,
-      "rsi14": 30.8
-    }
-  ],
   "2026-09-03": [
     {
       "ticker": "MNST",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma20": -9.92,
       "rsi14": 38.96
+    }
+  ],
+  "2026-09-16": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -20.13,
+      "rsi14": 32.14
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -12.51,
+      "rsi14": 29.51
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -11.87,
+      "rsi14": 38.58
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -11.84,
+      "rsi14": 28.28
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -11.44,
+      "rsi14": 27.23
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -10.88,
+      "rsi14": 32.27
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -10.82,
+      "rsi14": 36.51
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma20": -9.98,
+      "rsi14": 38.16
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -9.74,
+      "rsi14": 37.4
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.56,
+      "rsi14": 34.11
     }
   ]
 }

@@ -426,6 +426,21 @@
                 if (!response.ok) throw new Error('Data load failed');
                 f13Data = await response.json();
                 
+                // AUM 기준으로 기관들을 내림차순 정렬
+                if (f13Data.gurus) {
+                    f13Data.gurus.sort((a, b) => {
+                        const parseAUM = (val) => {
+                            if (!val) return 0;
+                            let num = parseFloat(val.replace(/[^0-9.]/g, ''));
+                            if (val.includes('B')) num *= 1e9;
+                            if (val.includes('M')) num *= 1e6;
+                            if (val.includes('T')) num *= 1e12;
+                            return num;
+                        };
+                        return parseAUM(b.aum) - parseAUM(a.aum);
+                    });
+                }
+                
                 document.getElementById('update-date').innerText = `기준일: ${f13Data.update_date}`;
                 document.getElementById('13f-content').style.display = 'block';
                 

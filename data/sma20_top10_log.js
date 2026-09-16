@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-09-02": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 48.1,
-      "rsi14": 67.47
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 22.61,
-      "rsi14": 81.25
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 13.79,
-      "rsi14": 59.0
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.29,
-      "rsi14": 67.34
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma20": 10.56,
-      "rsi14": 75.68
-    },
-    {
-      "ticker": "CTVA",
-      "name": "Corteva, Inc.",
-      "sector": "Materials",
-      "dist_sma20": 10.45,
-      "rsi14": 68.22
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma20": 9.14,
-      "rsi14": 74.5
-    },
-    {
-      "ticker": "DE",
-      "name": "Deere & Company",
-      "sector": "Industrials",
-      "dist_sma20": 8.71,
-      "rsi14": 65.57
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 8.03,
-      "rsi14": 71.63
-    },
-    {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 7.6,
-      "rsi14": 61.16
-    }
-  ],
   "2026-09-03": [
     {
       "ticker": "APH",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Health Care",
       "dist_sma20": 6.63,
       "rsi14": 62.24
+    }
+  ],
+  "2026-09-16": [
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.55,
+      "rsi14": 64.59
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 12.59,
+      "rsi14": 71.65
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.13,
+      "rsi14": 60.57
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": 11.22,
+      "rsi14": 69.49
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 9.14,
+      "rsi14": 75.7
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 8.53,
+      "rsi14": 79.41
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 8.09,
+      "rsi14": 61.4
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 7.86,
+      "rsi14": 66.55
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 6.35,
+      "rsi14": 58.02
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma20": 6.02,
+      "rsi14": 75.16
     }
   ]
 };

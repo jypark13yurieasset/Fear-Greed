@@ -1719,8 +1719,19 @@
             document.getElementById('stat-filtered').textContent = filteredStocks.length;
             document.getElementById('table-count').innerHTML = `<strong>${filteredStocks.length}</strong>개 종목 표시 중`;
             
+            const parseMcap = (val) => {
+                if (!val || val === '-') return -1;
+                let num = parseFloat(val);
+                if (val.includes('B')) return num * 1e9;
+                if (val.includes('M')) return num * 1e6;
+                if (val.includes('T')) return num * 1e12;
+                return num;
+            };
+
             // Populate golden cross box
             const goldenStocks = filteredStocks.filter(s => s.is_golden_cross_opportunity && s.eps_growth > 0);
+            goldenStocks.sort((a, b) => parseMcap(b.marketCap) - parseMcap(a.marketCap));
+            
             const goldenBox = document.getElementById('golden-cross-box');
             const goldenList = document.getElementById('golden-cross-list');
             if (goldenStocks.length > 0) {
@@ -1750,6 +1761,8 @@
                 return isEpsTop50 && isSma5Dip && isRsiOk && isAboveMa200 && isNotDanger;
             });
             
+            rocketBoyStocks.sort((a, b) => parseMcap(b.marketCap) - parseMcap(a.marketCap));
+
             const rocketBox = document.getElementById('rocket-boy-box');
             const rocketList = document.getElementById('rocket-boy-list');
             
@@ -1766,6 +1779,8 @@
 
             // Populate danger dead cross box
             const dangerStocks = filteredStocks.filter(s => s.is_danger_dead_cross);
+            dangerStocks.sort((a, b) => parseMcap(b.marketCap) - parseMcap(a.marketCap));
+            
             const dangerBox = document.getElementById('danger-dead-cross-box');
             const dangerList = document.getElementById('danger-dead-cross-list');
             if (dangerStocks.length > 0) {
