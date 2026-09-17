@@ -1,76 +1,4 @@
 {
-  "2026-09-04": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -12.96,
-      "rsi14": 40.73
-    },
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.95,
-      "rsi14": 35.3
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -10.44,
-      "rsi14": 37.19
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.49,
-      "rsi14": 38.65
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.17,
-      "rsi14": 31.05
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -8.4,
-      "rsi14": 25.61
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.39,
-      "rsi14": 43.5
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -8.38,
-      "rsi14": 31.26
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -8.26,
-      "rsi14": 33.48
-    },
-    {
-      "ticker": "ODFL",
-      "name": "Old Dominion Freight Line, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.02,
-      "rsi14": 27.11
-    }
-  ],
   "2026-09-09": [
     {
       "ticker": "SYK",
@@ -501,6 +429,78 @@
       "sector": "Communication Services",
       "dist_sma20": -9.05,
       "rsi14": 34.77
+    }
+  ],
+  "2026-09-18": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -15.44,
+      "rsi14": 36.27
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -11.57,
+      "rsi14": 30.48
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -11.12,
+      "rsi14": 29.06
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -10.03,
+      "rsi14": 36.12
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -9.91,
+      "rsi14": 36.08
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": -9.64,
+      "rsi14": 29.88
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -9.22,
+      "rsi14": 30.41
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -8.69,
+      "rsi14": 35.4
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -8.67,
+      "rsi14": 40.6
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -8.63,
+      "rsi14": 33.81
     }
   ]
 }

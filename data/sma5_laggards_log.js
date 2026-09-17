@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-09-04": [
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.46,
-      "rsi14": 35.3
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.95,
-      "rsi14": 31.05
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.55,
-      "rsi14": 48.86
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.35,
-      "rsi14": 42.59
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -5.26,
-      "rsi14": 45.59
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.12,
-      "rsi14": 43.5
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -3.52,
-      "rsi14": 49.16
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.52,
-      "rsi14": 46.62
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": -3.12,
-      "rsi14": 34.06
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.02,
-      "rsi14": 38.65
-    }
-  ],
   "2026-09-09": [
     {
       "ticker": "SYK",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma5": -4.15,
       "rsi14": 47.03
+    }
+  ],
+  "2026-09-18": [
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -6.32,
+      "rsi14": 33.65
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": -5.44,
+      "rsi14": 30.48
+    },
+    {
+      "ticker": "BA",
+      "name": "The Boeing Company",
+      "sector": "Industrials",
+      "dist_sma5": -4.31,
+      "rsi14": 31.46
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.02,
+      "rsi14": 42.44
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon Communications Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -3.89,
+      "rsi14": 43.33
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.43,
+      "rsi14": 41.55
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.34,
+      "rsi14": 56.62
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -3.29,
+      "rsi14": 32.4
+    },
+    {
+      "ticker": "COR",
+      "name": "Cencora, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -3.25,
+      "rsi14": 39.79
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.2,
+      "rsi14": 40.32
     }
   ]
 };

@@ -672,6 +672,97 @@
           "sector": "Materials"
         }
       ]
+    },
+    {
+      "id": "tepper",
+      "name": "David Tepper",
+      "fund": "Appaloosa Management LP",
+      "aum": "$7.73B",
+      "top_sector": "Information Technology (36.3%)",
+      "top_buy": "AAPL PUT (+3.13% Portfolio)",
+      "top_sell": "BABA (-4.84% Portfolio)",
+      "holdings": [
+        {
+          "ticker": "AMZN",
+          "company": "Amazon.com Inc",
+          "weight": 15.43,
+          "change_type": "increase",
+          "change_pct": "+680K Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "MU",
+          "company": "Micron Technology Inc",
+          "weight": 14.57,
+          "change_type": "decrease",
+          "change_pct": "-690K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "TSM",
+          "company": "Taiwan Semiconductor Manufacturing",
+          "weight": 10.20,
+          "change_type": "increase",
+          "change_pct": "+322.5K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "GOOG",
+          "company": "Alphabet Inc. Class C",
+          "weight": 8.46,
+          "change_type": "increase",
+          "change_pct": "+117.3K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "UBER",
+          "company": "Uber Technologies Inc",
+          "weight": 7.19,
+          "change_type": "increase",
+          "change_pct": "+1.36M Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "EWY",
+          "company": "iShares MSCI South Korea ETF",
+          "weight": 6.34,
+          "change_type": "increase",
+          "change_pct": "+25K Shares",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "META",
+          "company": "Meta Platforms Inc",
+          "weight": 4.92,
+          "change_type": "increase",
+          "change_pct": "+238.5K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "VST",
+          "company": "Vistra Corp",
+          "weight": 4.55,
+          "change_type": "increase",
+          "change_pct": "+192.9K Shares",
+          "sector": "Energy"
+        },
+        {
+          "ticker": "NVDA",
+          "company": "NVIDIA Corp",
+          "weight": 3.95,
+          "change_type": "increase",
+          "change_pct": "+53.5K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "NRG",
+          "company": "NRG Energy Inc",
+          "weight": 3.33,
+          "change_type": "increase",
+          "change_pct": "+25.6K Shares",
+          "sector": "Utilities"
+        }
+      ]
     }
   ]
 }

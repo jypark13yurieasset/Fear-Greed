@@ -1,76 +1,4 @@
 {
-  "2026-09-04": [
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 9.41,
-      "rsi14": 61.24
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 8.61,
-      "rsi14": 65.94
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 8.57,
-      "rsi14": 63.66
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": 8.12,
-      "rsi14": 53.53
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.46,
-      "rsi14": 52.22
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 6.79,
-      "rsi14": 66.2
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "dist_sma5": 6.2,
-      "rsi14": 54.88
-    },
-    {
-      "ticker": "ORCL",
-      "name": "Oracle Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 5.99,
-      "rsi14": 60.94
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.98,
-      "rsi14": 52.01
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 5.8,
-      "rsi14": 47.38
-    }
-  ],
   "2026-09-09": [
     {
       "ticker": "CRWV",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma5": 2.77,
       "rsi14": 49.1
+    }
+  ],
+  "2026-09-18": [
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.65,
+      "rsi14": 50.39
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 7.27,
+      "rsi14": 62.01
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 7.08,
+      "rsi14": 65.96
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.99,
+      "rsi14": 62.78
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 5.78,
+      "rsi14": 50.13
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": 5.58,
+      "rsi14": 54.0
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.19,
+      "rsi14": 66.43
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.94,
+      "rsi14": 56.78
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.85,
+      "rsi14": 65.41
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": 4.84,
+      "rsi14": 59.84
     }
   ]
 }
