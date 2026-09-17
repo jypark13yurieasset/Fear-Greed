@@ -1,76 +1,4 @@
 {
-  "2026-09-03": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -9.81,
-      "rsi14": 38.43
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.49,
-      "rsi14": 41.72
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.29,
-      "rsi14": 36.84
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.19,
-      "rsi14": 49.26
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -6.86,
-      "rsi14": 38.99
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -6.68,
-      "rsi14": 52.2
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -6.54,
-      "rsi14": 37.1
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.5,
-      "rsi14": 46.46
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.12,
-      "rsi14": 40.46
-    },
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.08,
-      "rsi14": 48.11
-    }
-  ],
   "2026-09-04": [
     {
       "ticker": "ADSK",
@@ -501,6 +429,78 @@
       "sector": "Communication Services",
       "dist_sma5": -6.81,
       "rsi14": 45.66
+    }
+  ],
+  "2026-09-17": [
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -5.94,
+      "rsi14": 47.02
+    },
+    {
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -5.29,
+      "rsi14": 30.42
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -5.26,
+      "rsi14": 42.77
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy, Inc.",
+      "sector": "Energy",
+      "dist_sma5": -4.84,
+      "rsi14": 42.4
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.56,
+      "rsi14": 39.03
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.52,
+      "rsi14": 36.03
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.35,
+      "rsi14": 32.98
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "sector": "Utilities",
+      "dist_sma5": -4.21,
+      "rsi14": 37.95
+    },
+    {
+      "ticker": "BAC",
+      "name": "Bank of America Corporation",
+      "sector": "Financials",
+      "dist_sma5": -4.18,
+      "rsi14": 28.51
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.15,
+      "rsi14": 47.03
     }
   ]
 }

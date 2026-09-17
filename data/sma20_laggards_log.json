@@ -1,76 +1,4 @@
 {
-  "2026-09-03": [
-    {
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": -17.3,
-      "rsi14": 40.89
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -14.77,
-      "rsi14": 38.43
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -13.89,
-      "rsi14": 34.54
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.66,
-      "rsi14": 41.38
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.64,
-      "rsi14": 33.68
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.58,
-      "rsi14": 36.84
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -11.49,
-      "rsi14": 38.99
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -11.19,
-      "rsi14": 41.77
-    },
-    {
-      "ticker": "URI",
-      "name": "United Rentals, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -10.94,
-      "rsi14": 29.57
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -10.69,
-      "rsi14": 26.19
-    }
-  ],
   "2026-09-04": [
     {
       "ticker": "AXON",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma20": -9.56,
       "rsi14": 34.11
+    }
+  ],
+  "2026-09-17": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -14.19,
+      "rsi14": 38.26
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -11.64,
+      "rsi14": 29.63
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -10.5,
+      "rsi14": 36.03
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -10.19,
+      "rsi14": 32.79
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.85,
+      "rsi14": 32.98
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma20": -9.63,
+      "rsi14": 32.4
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -9.55,
+      "rsi14": 37.62
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -9.48,
+      "rsi14": 31.29
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -9.21,
+      "rsi14": 39.03
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -9.05,
+      "rsi14": 34.77
     }
   ]
 }

@@ -1,76 +1,4 @@
 {
-  "2026-09-03": [
-    {
-      "ticker": "APH",
-      "name": "Amphenol Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 66.89,
-      "rsi14": 89.74
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 8.72,
-      "rsi14": 62.66
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.92,
-      "rsi14": 58.86
-    },
-    {
-      "ticker": "DE",
-      "name": "Deere & Company",
-      "sector": "Industrials",
-      "dist_sma5": 6.25,
-      "rsi14": 69.49
-    },
-    {
-      "ticker": "CTVA",
-      "name": "Corteva, Inc.",
-      "sector": "Materials",
-      "dist_sma5": 5.2,
-      "rsi14": 71.96
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.97,
-      "rsi14": 70.35
-    },
-    {
-      "ticker": "NUE",
-      "name": "Nucor Corporation",
-      "sector": "Materials",
-      "dist_sma5": 3.87,
-      "rsi14": 57.85
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.84,
-      "rsi14": 65.83
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma5": 3.54,
-      "rsi14": 76.43
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 3.52,
-      "rsi14": 76.83
-    }
-  ],
   "2026-09-04": [
     {
       "ticker": "SNDK",
@@ -501,6 +429,78 @@
       "sector": "Communication Services",
       "dist_sma5": 2.99,
       "rsi14": 49.5
+    }
+  ],
+  "2026-09-17": [
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.34,
+      "rsi14": 63.92
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.71,
+      "rsi14": 58.18
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.03,
+      "rsi14": 69.3
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.74,
+      "rsi14": 63.28
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.57,
+      "rsi14": 60.72
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma5": 3.41,
+      "rsi14": 52.48
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.16,
+      "rsi14": 53.23
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": 2.99,
+      "rsi14": 80.27
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": 2.92,
+      "rsi14": 77.5
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 2.77,
+      "rsi14": 49.1
     }
   ]
 }

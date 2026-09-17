@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-09-03": [
-    {
-      "ticker": "APH",
-      "name": "Amphenol Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 87.23,
-      "rsi14": 89.74
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 38.49,
-      "rsi14": 65.83
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 20.22,
-      "rsi14": 80.05
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 15.03,
-      "rsi14": 62.66
-    },
-    {
-      "ticker": "CTVA",
-      "name": "Corteva, Inc.",
-      "sector": "Materials",
-      "dist_sma20": 12.44,
-      "rsi14": 71.96
-    },
-    {
-      "ticker": "DE",
-      "name": "Deere & Company",
-      "sector": "Industrials",
-      "dist_sma20": 11.57,
-      "rsi14": 69.49
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 11.0,
-      "rsi14": 57.65
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma20": 10.53,
-      "rsi14": 76.83
-    },
-    {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 9.75,
-      "rsi14": 64.76
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma20": 9.71,
-      "rsi14": 76.43
-    }
-  ],
   "2026-09-04": [
     {
       "ticker": "MSTR",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Energy",
       "dist_sma20": 6.02,
       "rsi14": 75.16
+    }
+  ],
+  "2026-09-17": [
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.08,
+      "rsi14": 63.28
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.23,
+      "rsi14": 63.92
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 11.88,
+      "rsi14": 72.24
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 10.05,
+      "rsi14": 77.5
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": 8.68,
+      "rsi14": 64.94
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 8.66,
+      "rsi14": 80.27
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 7.26,
+      "rsi14": 60.72
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 7.22,
+      "rsi14": 54.74
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 6.48,
+      "rsi14": 58.18
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 6.26,
+      "rsi14": 56.08
     }
   ]
 };
