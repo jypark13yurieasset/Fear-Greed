@@ -436,22 +436,29 @@
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
-      "dist_sma20": -15.44,
-      "rsi14": 36.27
+      "dist_sma20": -15.19,
+      "rsi14": 35.5
     },
     {
       "ticker": "CMCSA",
       "name": "Comcast Corporation",
       "sector": "Communication Services",
-      "dist_sma20": -11.57,
-      "rsi14": 30.48
+      "dist_sma20": -11.6,
+      "rsi14": 29.66
     },
     {
       "ticker": "BKNG",
       "name": "Booking Holdings Inc.",
       "sector": "Consumer Discretionary",
-      "dist_sma20": -11.12,
-      "rsi14": 29.06
+      "dist_sma20": -11.52,
+      "rsi14": 27.4
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -10.04,
+      "rsi14": 38.0
     },
     {
       "ticker": "DASH",
@@ -461,32 +468,32 @@
       "rsi14": 36.12
     },
     {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -9.91,
-      "rsi14": 36.08
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": -9.03,
+      "rsi14": 36.28
     },
     {
       "ticker": "AON",
       "name": "Aon plc",
       "sector": "Financials",
-      "dist_sma20": -9.64,
-      "rsi14": 29.88
+      "dist_sma20": -8.98,
+      "rsi14": 29.72
     },
     {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -9.22,
-      "rsi14": 30.41
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen Inc.",
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
       "sector": "Health Care",
-      "dist_sma20": -8.69,
-      "rsi14": 35.4
+      "dist_sma20": -8.83,
+      "rsi14": 31.26
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.73,
+      "rsi14": 38.72
     },
     {
       "ticker": "SHOP",
@@ -494,13 +501,6 @@
       "sector": "Information Technology",
       "dist_sma20": -8.67,
       "rsi14": 40.6
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.63,
-      "rsi14": 33.81
     }
   ]
 }

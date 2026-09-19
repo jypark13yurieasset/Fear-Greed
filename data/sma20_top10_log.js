@@ -440,6 +440,13 @@ const SMA20_TOP10_LOG = {
       "rsi14": 66.43
     },
     {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 16.92,
+      "rsi14": 66.08
+    },
+    {
       "ticker": "CRWD",
       "name": "CrowdStrike Holdings, Inc.",
       "sector": "Information Technology",
@@ -447,11 +454,18 @@ const SMA20_TOP10_LOG = {
       "rsi14": 65.41
     },
     {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.07,
+      "rsi14": 65.35
+    },
+    {
       "ticker": "INTC",
       "name": "Intel Corporation",
       "sector": "Information Technology",
-      "dist_sma20": 14.47,
-      "rsi14": 62.01
+      "dist_sma20": 13.28,
+      "rsi14": 61.74
     },
     {
       "ticker": "META",
@@ -461,20 +475,6 @@ const SMA20_TOP10_LOG = {
       "rsi14": 73.97
     },
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.1,
-      "rsi14": 62.78
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 11.56,
-      "rsi14": 79.89
-    },
-    {
       "ticker": "HPE",
       "name": "Hewlett Packard Enterprise Company",
       "sector": "Information Technology",
@@ -482,25 +482,25 @@ const SMA20_TOP10_LOG = {
       "rsi14": 59.84
     },
     {
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "sector": "Information Technology",
-      "dist_sma20": 10.08,
-      "rsi14": 67.9
+      "dist_sma20": 10.74,
+      "rsi14": 56.14
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 10.69,
+      "rsi14": 80.07
     },
     {
       "ticker": "MPC",
       "name": "Marathon Petroleum Corporation",
       "sector": "Energy",
-      "dist_sma20": 9.89,
-      "rsi14": 82.34
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 9.12,
-      "rsi14": 65.96
+      "dist_sma20": 9.7,
+      "rsi14": 83.04
     }
   ]
 };

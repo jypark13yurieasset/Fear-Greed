@@ -433,25 +433,60 @@ const SMA5_LAGGARDS_LOG = {
   ],
   "2026-09-18": [
     {
-      "ticker": "TMUS",
-      "name": "T-Mobile US, Inc.",
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -6.29,
+      "rsi14": 41.61
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
       "sector": "Communication Services",
-      "dist_sma5": -6.32,
-      "rsi14": 33.65
+      "dist_sma5": -5.97,
+      "rsi14": 36.28
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.42,
+      "rsi14": 38.0
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.56,
+      "rsi14": 53.23
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": -4.55,
+      "rsi14": 49.25
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.53,
+      "rsi14": 43.96
     },
     {
       "ticker": "CMCSA",
       "name": "Comcast Corporation",
       "sector": "Communication Services",
-      "dist_sma5": -5.44,
-      "rsi14": 30.48
+      "dist_sma5": -4.2,
+      "rsi14": 29.66
     },
     {
-      "ticker": "BA",
-      "name": "The Boeing Company",
-      "sector": "Industrials",
-      "dist_sma5": -4.31,
-      "rsi14": 31.46
+      "ticker": "VMRK",
+      "name": "AvalonBay Communities, Inc.",
+      "sector": "Real Estate",
+      "dist_sma5": -4.09,
+      "rsi14": 31.26
     },
     {
       "ticker": "CRWV",
@@ -461,46 +496,11 @@ const SMA5_LAGGARDS_LOG = {
       "rsi14": 42.44
     },
     {
-      "ticker": "VZ",
-      "name": "Verizon Communications Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -3.89,
-      "rsi14": 43.33
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.43,
-      "rsi14": 41.55
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.34,
-      "rsi14": 56.62
-    },
-    {
-      "ticker": "CVS",
-      "name": "CVS Health Corporation",
-      "sector": "Health Care",
-      "dist_sma5": -3.29,
-      "rsi14": 32.4
-    },
-    {
-      "ticker": "COR",
-      "name": "Cencora, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -3.25,
-      "rsi14": 39.79
-    },
-    {
       "ticker": "CPRT",
       "name": "Copart, Inc.",
       "sector": "Industrials",
-      "dist_sma5": -3.2,
-      "rsi14": 40.32
+      "dist_sma5": -4.02,
+      "rsi14": 38.72
     }
   ]
 };

@@ -1,110 +1,6 @@
 [
   {
     "date": "2026-07-28",
-    "ticker": "SYK",
-    "name": "Stryker Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 346.6000061035156
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "TT",
-    "name": "Trane Technologies plc",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 470.0299987792969
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "MAR",
-    "name": "Marriott International, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 383.5199890136719
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "FCX",
-    "name": "Freeport-McMoRan Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 61.63999938964844
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "SHW",
-    "name": "The Sherwin-Williams Company",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 354.2699890136719
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "JCI",
-    "name": "Johnson Controls International plc",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 140.27999877929688
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "WMB",
-    "name": "The Williams Companies, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 70.16000366210938
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "RCL",
-    "name": "Royal Caribbean Cruises Ltd.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 322.5
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "HOOD",
-    "name": "Robinhood Markets, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 92.76000213623047
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "MDLZ",
-    "name": "Mondelez International, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 62.47999954223633
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "CI",
-    "name": "The Cigna Group",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 301.05999755859375
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "SLB",
-    "name": "SLB N.V.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 49.97999954223633
-  },
-  {
-    "date": "2026-07-28",
-    "ticker": "MSI",
-    "name": "Motorola Solutions, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 440.30999755859375
-  },
-  {
-    "date": "2026-07-28",
     "ticker": "DLR",
     "name": "Digital Realty Trust, Inc.",
     "type": "golden",
@@ -7998,5 +7894,109 @@
     "type": "dead",
     "streak": 3,
     "entry_price": 252500.0
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 349.5400085449219
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "C",
+    "name": "Citigroup Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 131.77000427246094
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "DIS",
+    "name": "The Walt Disney Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 102.66999816894531
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "PGR",
+    "name": "The Progressive Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 213.47999572753906
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "SLB",
+    "name": "SLB N.V.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 51.119998931884766
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "CI",
+    "name": "The Cigna Group",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 275.2799987792969
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "GM",
+    "name": "General Motors Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 82.19999694824219
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "COHR",
+    "name": "Coherent Corp.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 317.3599853515625
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "COR",
+    "name": "Cencora, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 308.7799987792969
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "STT",
+    "name": "State Street Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 182.8699951171875
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "AMP",
+    "name": "Ameriprise Financial, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 544.3300170898438
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "KDP",
+    "name": "Keurig Dr Pepper Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 30.959999084472656
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "ALNY",
+    "name": "Alnylam Pharmaceuticals, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 239.55999755859375
   }
 ]
