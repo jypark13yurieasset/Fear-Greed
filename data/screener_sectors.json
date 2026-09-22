@@ -2618,5 +2618,10 @@
     "sector": "Real Estate",
     "sub_industry": "REIT - Residential",
     "name": "AvalonBay Communities, Inc."
+  },
+  "BE": {
+    "sector": "Industrials",
+    "sub_industry": "Electrical Equipment & Parts",
+    "name": "Bloom Energy Corporation"
   }
 }

@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-09-10": [
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.77,
-      "rsi14": 65.28
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": 12.6,
-      "rsi14": 70.43
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 12.16,
-      "rsi14": 63.36
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 11.7,
-      "rsi14": 62.24
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 11.22,
-      "rsi14": 58.57
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 9.84,
-      "rsi14": 80.94
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 9.82,
-      "rsi14": 60.06
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 9.29,
-      "rsi14": 58.63
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 8.71,
-      "rsi14": 60.43
-    },
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
-      "sector": "Information Technology",
-      "dist_sma20": 8.71,
-      "rsi14": 59.07
-    }
-  ],
   "2026-09-11": [
     {
       "ticker": "DELL",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma20": 12.64,
       "rsi14": 62.42
+    }
+  ],
+  "2026-09-23": [
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": 29.16,
+      "rsi14": 71.36
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 24.75,
+      "rsi14": 72.06
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 24.14,
+      "rsi14": 64.49
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 23.22,
+      "rsi14": 73.88
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 22.73,
+      "rsi14": 70.04
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 22.14,
+      "rsi14": 72.17
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 16.51,
+      "rsi14": 64.69
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 16.36,
+      "rsi14": 76.04
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.0,
+      "rsi14": 63.95
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.79,
+      "rsi14": 64.89
     }
   ]
 };
