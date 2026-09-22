@@ -1,76 +1,4 @@
 {
-  "2026-09-09": [
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": -8.9,
-      "rsi14": 24.74
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -8.8,
-      "rsi14": 36.84
-    },
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.3,
-      "rsi14": 33.11
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -8.06,
-      "rsi14": 29.49
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -7.72,
-      "rsi14": 38.0
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -6.51,
-      "rsi14": 44.91
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -6.48,
-      "rsi14": 32.8
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -6.48,
-      "rsi14": 44.16
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.75,
-      "rsi14": 49.76
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.38,
-      "rsi14": 28.34
-    }
-  ],
   "2026-09-10": [
     {
       "ticker": "SHOP",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma5": -4.02,
       "rsi14": 38.72
+    }
+  ],
+  "2026-09-22": [
+    {
+      "ticker": "NUE",
+      "name": "Nucor Corporation",
+      "sector": "Materials",
+      "dist_sma5": -4.97,
+      "rsi14": 39.49
+    },
+    {
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -4.31,
+      "rsi14": 30.98
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma5": -4.3,
+      "rsi14": 42.98
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": -4.03,
+      "rsi14": 40.54
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy, Inc.",
+      "sector": "Energy",
+      "dist_sma5": -3.89,
+      "rsi14": 38.55
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -3.53,
+      "rsi14": 33.85
+    },
+    {
+      "ticker": "UNP",
+      "name": "Union Pacific Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -3.45,
+      "rsi14": 24.3
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.45,
+      "rsi14": 37.17
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "dist_sma5": -3.39,
+      "rsi14": 46.23
+    },
+    {
+      "ticker": "ALL",
+      "name": "The Allstate Corporation",
+      "sector": "Financials",
+      "dist_sma5": -3.39,
+      "rsi14": 35.38
     }
   ]
 }
