@@ -1,76 +1,4 @@
 {
-  "2026-09-11": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -15.57,
-      "rsi14": 35.93
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -12.75,
-      "rsi14": 30.04
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma20": -12.55,
-      "rsi14": 27.78
-    },
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.12,
-      "rsi14": 35.54
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -12.08,
-      "rsi14": 30.19
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -11.29,
-      "rsi14": 31.45
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.87,
-      "rsi14": 39.32
-    },
-    {
-      "ticker": "BSX",
-      "name": "Boston Scientific Corporation",
-      "sector": "Health Care",
-      "dist_sma20": -10.6,
-      "rsi14": 33.28
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": -10.11,
-      "rsi14": 28.73
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -9.88,
-      "rsi14": 28.25
-    }
-  ],
   "2026-09-15": [
     {
       "ticker": "AXON",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma20": -8.91,
       "rsi14": 36.68
+    }
+  ],
+  "2026-09-24": [
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -14.66,
+      "rsi14": 27.0
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -14.5,
+      "rsi14": 21.37
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -13.02,
+      "rsi14": 32.89
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.76,
+      "rsi14": 25.32
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -11.96,
+      "rsi14": 36.36
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -11.39,
+      "rsi14": 20.54
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": -11.37,
+      "rsi14": 24.69
+    },
+    {
+      "ticker": "ALL",
+      "name": "The Allstate Corporation",
+      "sector": "Financials",
+      "dist_sma20": -11.31,
+      "rsi14": 25.2
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -10.43,
+      "rsi14": 32.93
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma20": -10.14,
+      "rsi14": 31.04
     }
   ]
 }

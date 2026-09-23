@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-09-11": [
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma5": 9.22,
-      "rsi14": 64.11
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.35,
-      "rsi14": 66.57
-    },
-    {
-      "ticker": "NXPI",
-      "name": "NXP Semiconductors N.V.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.95,
-      "rsi14": 53.86
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 3.76,
-      "rsi14": 43.31
-    },
-    {
-      "ticker": "FIX",
-      "name": "Comfort Systems USA, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 3.66,
-      "rsi14": 53.82
-    },
-    {
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": 3.62,
-      "rsi14": 66.29
-    },
-    {
-      "ticker": "ADI",
-      "name": "Analog Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.46,
-      "rsi14": 56.1
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.17,
-      "rsi14": 62.79
-    },
-    {
-      "ticker": "PWR",
-      "name": "Quanta Services, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 2.95,
-      "rsi14": 53.37
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.92,
-      "rsi14": 55.47
-    }
-  ],
   "2026-09-15": [
     {
       "ticker": "CRWD",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 8.41,
       "rsi14": 59.66
+    }
+  ],
+  "2026-09-24": [
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 9.88,
+      "rsi14": 61.42
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": 8.78,
+      "rsi14": 60.05
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": 8.74,
+      "rsi14": 71.07
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.48,
+      "rsi14": 63.6
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 7.16,
+      "rsi14": 71.86
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.76,
+      "rsi14": 52.65
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.14,
+      "rsi14": 68.69
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 6.12,
+      "rsi14": 54.23
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.95,
+      "rsi14": 56.69
+    },
+    {
+      "ticker": "WBD",
+      "name": "Warner Bros. Discovery, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 5.58,
+      "rsi14": 75.25
     }
   ]
 };
