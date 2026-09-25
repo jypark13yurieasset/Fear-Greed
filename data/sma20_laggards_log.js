@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-09-15": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -12.71,
-      "rsi14": 38.64
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -11.98,
-      "rsi14": 29.24
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -11.34,
-      "rsi14": 39.49
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -11.21,
-      "rsi14": 31.95
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -11.03,
-      "rsi14": 37.24
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.6,
-      "rsi14": 40.52
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.5,
-      "rsi14": 28.92
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.01,
-      "rsi14": 34.69
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -9.96,
-      "rsi14": 34.33
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "dist_sma20": -9.92,
-      "rsi14": 38.96
-    }
-  ],
   "2026-09-16": [
     {
       "ticker": "AXON",
@@ -501,6 +429,78 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Financials",
       "dist_sma20": -10.14,
       "rsi14": 31.04
+    }
+  ],
+  "2026-09-25": [
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -14.21,
+      "rsi14": 29.95
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -13.97,
+      "rsi14": 22.17
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -12.44,
+      "rsi14": 23.87
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -11.99,
+      "rsi14": 29.42
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": -11.05,
+      "rsi14": 22.79
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -10.83,
+      "rsi14": 28.58
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.28,
+      "rsi14": 36.12
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma20": -10.16,
+      "rsi14": 28.73
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -10.11,
+      "rsi14": 23.64
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.01,
+      "rsi14": 33.57
     }
   ]
 };

@@ -1,76 +1,4 @@
 {
-  "2026-09-15": [
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": -11.09,
-      "rsi14": 42.35
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -10.51,
-      "rsi14": 45.82
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -10.29,
-      "rsi14": 40.52
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.63,
-      "rsi14": 39.49
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.38,
-      "rsi14": 42.51
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -9.2,
-      "rsi14": 37.24
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.99,
-      "rsi14": 44.54
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "dist_sma5": -8.44,
-      "rsi14": 38.96
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -7.67,
-      "rsi14": 47.23
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -7.4,
-      "rsi14": 48.84
-    }
-  ],
   "2026-09-16": [
     {
       "ticker": "ALAB",
@@ -501,6 +429,78 @@
       "sector": "Financials",
       "dist_sma5": -4.38,
       "rsi14": 32.92
+    }
+  ],
+  "2026-09-25": [
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.94,
+      "rsi14": 22.17
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.68,
+      "rsi14": 47.97
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.33,
+      "rsi14": 29.95
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.89,
+      "rsi14": 29.42
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -4.69,
+      "rsi14": 23.64
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.36,
+      "rsi14": 42.52
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma5": -4.22,
+      "rsi14": 28.73
+    },
+    {
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.62,
+      "rsi14": 28.56
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.58,
+      "rsi14": 44.38
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy, Inc.",
+      "sector": "Utilities",
+      "dist_sma5": -3.55,
+      "rsi14": 19.26
     }
   ]
 }

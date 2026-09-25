@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-09-15": [
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 10.11,
-      "rsi14": 62.26
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 9.01,
-      "rsi14": 57.71
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 7.24,
-      "rsi14": 59.06
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 6.96,
-      "rsi14": 54.42
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 6.95,
-      "rsi14": 63.44
-    },
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.8,
-      "rsi14": 46.86
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.39,
-      "rsi14": 59.88
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.01,
-      "rsi14": 60.42
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.56,
-      "rsi14": 52.49
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 5.12,
-      "rsi14": 50.73
-    }
-  ],
   "2026-09-16": [
     {
       "ticker": "CRWD",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Communication Services",
       "dist_sma5": 5.58,
       "rsi14": 75.25
+    }
+  ],
+  "2026-09-25": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 9.89,
+      "rsi14": 75.12
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.49,
+      "rsi14": 59.42
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 6.07,
+      "rsi14": 80.51
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 5.42,
+      "rsi14": 73.01
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 5.05,
+      "rsi14": 58.93
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.9,
+      "rsi14": 75.24
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": 4.72,
+      "rsi14": 58.3
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.66,
+      "rsi14": 53.93
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.45,
+      "rsi14": 59.51
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.37,
+      "rsi14": 62.45
     }
   ]
 };
