@@ -436,71 +436,71 @@
       "ticker": "PAYX",
       "name": "Paychex, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -7.94,
-      "rsi14": 22.17
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.68,
-      "rsi14": 47.97
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.33,
-      "rsi14": 29.95
-    },
-    {
-      "ticker": "ABNB",
-      "name": "Airbnb, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.89,
-      "rsi14": 29.42
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -4.69,
-      "rsi14": 23.64
+      "dist_sma5": -5.61,
+      "rsi14": 21.99
     },
     {
       "ticker": "ORCL",
       "name": "Oracle Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -4.36,
-      "rsi14": 42.52
+      "dist_sma5": -4.65,
+      "rsi14": 40.6
     },
     {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma5": -4.22,
-      "rsi14": 28.73
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.99,
+      "rsi14": 29.57
     },
     {
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
-      "dist_sma5": -3.62,
-      "rsi14": 28.56
+      "dist_sma5": -3.87,
+      "rsi14": 33.72
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -3.35,
+      "rsi14": 61.19
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -3.08,
+      "rsi14": 63.49
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix, Inc.",
+      "sector": "Real Estate",
+      "dist_sma5": -3.01,
+      "rsi14": 41.97
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.0,
+      "rsi14": 31.74
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": -2.9,
+      "rsi14": 44.29
     },
     {
       "ticker": "HONA",
       "name": "Honeywell Aerospace Inc.",
       "sector": "Industrials",
-      "dist_sma5": -3.58,
-      "rsi14": 44.38
-    },
-    {
-      "ticker": "NEE",
-      "name": "NextEra Energy, Inc.",
-      "sector": "Utilities",
-      "dist_sma5": -3.55,
-      "rsi14": 19.26
+      "dist_sma5": -2.82,
+      "rsi14": 44.69
     }
   ]
 }

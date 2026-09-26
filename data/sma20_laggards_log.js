@@ -436,71 +436,71 @@ const SMA20_LAGGARDS_LOG = {
       "ticker": "INTU",
       "name": "Intuit Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -14.21,
-      "rsi14": 29.95
+      "dist_sma20": -13.66,
+      "rsi14": 29.57
     },
     {
       "ticker": "PAYX",
       "name": "Paychex, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -13.97,
-      "rsi14": 22.17
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -12.44,
-      "rsi14": 23.87
-    },
-    {
-      "ticker": "ABNB",
-      "name": "Airbnb, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -11.99,
-      "rsi14": 29.42
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": -11.05,
-      "rsi14": 22.79
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -10.83,
-      "rsi14": 28.58
+      "dist_sma20": -13.23,
+      "rsi14": 21.99
     },
     {
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
-      "dist_sma20": -10.28,
-      "rsi14": 36.12
+      "dist_sma20": -11.67,
+      "rsi14": 33.72
     },
     {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma20": -10.16,
-      "rsi14": 28.73
-    },
-    {
-      "ticker": "FDX",
-      "name": "FedEx Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -10.11,
-      "rsi14": 23.64
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -10.91,
+      "rsi14": 27.46
     },
     {
       "ticker": "CPRT",
       "name": "Copart, Inc.",
       "sector": "Industrials",
-      "dist_sma20": -10.01,
-      "rsi14": 33.57
+      "dist_sma20": -10.71,
+      "rsi14": 31.74
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": -9.39,
+      "rsi14": 24.83
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.33,
+      "rsi14": 36.63
+    },
+    {
+      "ticker": "ALL",
+      "name": "The Allstate Corporation",
+      "sector": "Financials",
+      "dist_sma20": -8.89,
+      "rsi14": 27.83
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma20": -8.34,
+      "rsi14": 31.52
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -8.03,
+      "rsi14": 29.47
     }
   ]
 };

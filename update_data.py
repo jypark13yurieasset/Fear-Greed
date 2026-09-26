@@ -208,12 +208,12 @@ def get_combined_metric(name, google_path, yahoo_ticker):
     # 4.2 변동률 결정 및 검증
     if g_change is not None and y_change is not None:
         change_diff = abs(g_change - y_change)
-        if change_diff < 1.0: # 오차범위 1% 이내
+        if change_diff < 0.15: # 오차범위 0.15% 이내 (엄격한 교차 점검)
             final_change = y_change
             print(f"[{name}] 교차 점검 성공! 최종 반영 변동률: {final_change:+.2f}% (오차: {change_diff:.4f}%)")
         else:
             final_change = g_change
-            print(f"[{name}] 경고: 변동률 오차범위 초과! Google={g_change:+.2f}%, Yahoo={y_change:+.2f}%. 페이지 텍스트 기반인 Google 값 사용: {final_change:+.2f}%")
+            print(f"⚠️  [{name}] 교차 점검 불일치! Google={g_change:+.2f}%, Yahoo={y_change:+.2f}% (오차: {change_diff:.4f}%). Google 값 사용: {final_change:+.2f}% — 수동 확인 필요!")
     elif g_change is not None:
         final_change = g_change
         print(f"[{name}] Yahoo 수집 실패. Google 변동률 사용: {final_change:+.2f}%")
@@ -272,12 +272,12 @@ def get_dxy_metric():
     # 변동률 검증
     if f_change is not None and y_change is not None:
         change_diff = abs(f_change - y_change)
-        if change_diff < 1.0:
+        if change_diff < 0.15: # 오차범위 0.15% 이내 (엄격한 교차 점검)
             final_change = y_change
             print(f"[DXY] 교차 점검 성공! 최종 반영 변동률: {final_change:+.2f}% (오차: {change_diff:.4f}%)")
         else:
             final_change = f_change
-            print(f"[DXY] 경고: 변동률 오차범위 초과! Finviz={f_change:+.2f}%, Yahoo={y_change:+.2f}%. Finviz 값 사용: {final_change:+.2f}%")
+            print(f"⚠️  [DXY] 교차 점검 불일치! Finviz={f_change:+.2f}%, Yahoo={y_change:+.2f}% (오차: {change_diff:.4f}%). Finviz 값 사용: {final_change:+.2f}% — 수동 확인 필요!")
     elif f_change is not None:
         final_change = f_change
         print(f"[DXY] Yahoo 수집 실패. Finviz 변동률 사용: {final_change:+.2f}%")
