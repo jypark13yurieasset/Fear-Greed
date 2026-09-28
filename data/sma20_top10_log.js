@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-09-16": [
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.55,
-      "rsi14": 64.59
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": 12.59,
-      "rsi14": 71.65
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.13,
-      "rsi14": 60.57
-    },
-    {
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
-      "sector": "Information Technology",
-      "dist_sma20": 11.22,
-      "rsi14": 69.49
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 9.14,
-      "rsi14": 75.7
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma20": 8.53,
-      "rsi14": 79.41
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 8.09,
-      "rsi14": 61.4
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 7.86,
-      "rsi14": 66.55
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 6.35,
-      "rsi14": 58.02
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma20": 6.02,
-      "rsi14": 75.16
-    }
-  ],
   "2026-09-17": [
     {
       "ticker": "DELL",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma20": 12.42,
       "rsi14": 63.49
+    }
+  ],
+  "2026-09-29": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 24.34,
+      "rsi14": 74.85
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.05,
+      "rsi14": 67.19
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.69,
+      "rsi14": 59.92
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.57,
+      "rsi14": 65.62
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 12.45,
+      "rsi14": 76.77
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 11.59,
+      "rsi14": 64.76
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": 10.21,
+      "rsi14": 62.33
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 9.75,
+      "rsi14": 58.83
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 9.6,
+      "rsi14": 58.52
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 9.31,
+      "rsi14": 61.54
     }
   ]
 };

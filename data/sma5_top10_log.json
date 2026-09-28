@@ -1,76 +1,4 @@
 {
-  "2026-09-16": [
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 10.1,
-      "rsi14": 64.59
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.97,
-      "rsi14": 58.02
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.79,
-      "rsi14": 61.4
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.48,
-      "rsi14": 59.94
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 4.43,
-      "rsi14": 61.68
-    },
-    {
-      "ticker": "TMO",
-      "name": "Thermo Fisher Scientific Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.34,
-      "rsi14": 67.25
-    },
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.28,
-      "rsi14": 45.59
-    },
-    {
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": 3.96,
-      "rsi14": 69.49
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources, Inc.",
-      "sector": "Energy",
-      "dist_sma5": 3.3,
-      "rsi14": 65.06
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 2.99,
-      "rsi14": 49.5
-    }
-  ],
   "2026-09-17": [
     {
       "ticker": "CRWD",
@@ -501,6 +429,78 @@
       "sector": "Health Care",
       "dist_sma5": 2.83,
       "rsi14": 75.14
+    }
+  ],
+  "2026-09-29": [
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.93,
+      "rsi14": 67.19
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.22,
+      "rsi14": 74.85
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.94,
+      "rsi14": 61.54
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 2.68,
+      "rsi14": 69.59
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 2.65,
+      "rsi14": 76.77
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 2.52,
+      "rsi14": 58.22
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb Company",
+      "sector": "Health Care",
+      "dist_sma5": 2.49,
+      "rsi14": 50.25
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 2.39,
+      "rsi14": 66.38
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 1.97,
+      "rsi14": 34.53
+    },
+    {
+      "ticker": "PGR",
+      "name": "The Progressive Corporation",
+      "sector": "Financials",
+      "dist_sma5": 1.96,
+      "rsi14": 44.56
     }
   ]
 }
