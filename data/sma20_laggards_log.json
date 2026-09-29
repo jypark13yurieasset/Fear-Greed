@@ -1,76 +1,4 @@
 {
-  "2026-09-17": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -14.19,
-      "rsi14": 38.26
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -11.64,
-      "rsi14": 29.63
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -10.5,
-      "rsi14": 36.03
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -10.19,
-      "rsi14": 32.79
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.85,
-      "rsi14": 32.98
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma20": -9.63,
-      "rsi14": 32.4
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -9.55,
-      "rsi14": 37.62
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -9.48,
-      "rsi14": 31.29
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -9.21,
-      "rsi14": 39.03
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -9.05,
-      "rsi14": 34.77
-    }
-  ],
   "2026-09-18": [
     {
       "ticker": "AXON",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma20": -10.0,
       "rsi14": 34.51
+    }
+  ],
+  "2026-09-30": [
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -13.66,
+      "rsi14": 27.37
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.92,
+      "rsi14": 20.33
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.88,
+      "rsi14": 32.03
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -10.48,
+      "rsi14": 29.95
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -10.29,
+      "rsi14": 25.86
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma20": -9.77,
+      "rsi14": 27.28
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -8.64,
+      "rsi14": 25.63
+    },
+    {
+      "ticker": "ALL",
+      "name": "The Allstate Corporation",
+      "sector": "Financials",
+      "dist_sma20": -8.57,
+      "rsi14": 26.49
+    },
+    {
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -8.56,
+      "rsi14": 31.1
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": -8.14,
+      "rsi14": 26.93
     }
   ]
 }

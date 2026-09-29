@@ -1,76 +1,4 @@
 {
-  "2026-09-17": [
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -5.94,
-      "rsi14": 47.02
-    },
-    {
-      "ticker": "GS",
-      "name": "The Goldman Sachs Group, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -5.29,
-      "rsi14": 30.42
-    },
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": -5.26,
-      "rsi14": 42.77
-    },
-    {
-      "ticker": "FANG",
-      "name": "Diamondback Energy, Inc.",
-      "sector": "Energy",
-      "dist_sma5": -4.84,
-      "rsi14": 42.4
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.56,
-      "rsi14": 39.03
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -4.52,
-      "rsi14": 36.03
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.35,
-      "rsi14": 32.98
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "sector": "Utilities",
-      "dist_sma5": -4.21,
-      "rsi14": 37.95
-    },
-    {
-      "ticker": "BAC",
-      "name": "Bank of America Corporation",
-      "sector": "Financials",
-      "dist_sma5": -4.18,
-      "rsi14": 28.51
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -4.15,
-      "rsi14": 47.03
-    }
-  ],
   "2026-09-18": [
     {
       "ticker": "TRI",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": -4.57,
       "rsi14": 45.71
+    }
+  ],
+  "2026-09-30": [
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -4.62,
+      "rsi14": 51.79
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.18,
+      "rsi14": 58.41
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.14,
+      "rsi14": 44.8
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.83,
+      "rsi14": 45.44
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -3.79,
+      "rsi14": 54.77
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -3.5,
+      "rsi14": 37.27
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor Corporation",
+      "sector": "Materials",
+      "dist_sma5": -3.41,
+      "rsi14": 35.91
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.32,
+      "rsi14": 32.03
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -3.13,
+      "rsi14": 50.91
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.09,
+      "rsi14": 33.29
     }
   ]
 }

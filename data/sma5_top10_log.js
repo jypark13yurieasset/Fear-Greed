@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-09-17": [
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.34,
-      "rsi14": 63.92
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.71,
-      "rsi14": 58.18
-    },
-    {
-      "ticker": "TMO",
-      "name": "Thermo Fisher Scientific Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.03,
-      "rsi14": 69.3
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.74,
-      "rsi14": 63.28
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.57,
-      "rsi14": 60.72
-    },
-    {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 3.41,
-      "rsi14": 52.48
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.16,
-      "rsi14": 53.23
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 2.99,
-      "rsi14": 80.27
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 2.92,
-      "rsi14": 77.5
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 2.77,
-      "rsi14": 49.1
-    }
-  ],
   "2026-09-18": [
     {
       "ticker": "MSTR",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Financials",
       "dist_sma5": 1.96,
       "rsi14": 44.56
+    }
+  ],
+  "2026-09-30": [
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 7.25,
+      "rsi14": 50.18
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.25,
+      "rsi14": 63.01
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 5.17,
+      "rsi14": 60.27
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.17,
+      "rsi14": 76.42
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.03,
+      "rsi14": 63.15
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 3.59,
+      "rsi14": 60.97
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.51,
+      "rsi14": 57.34
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 3.27,
+      "rsi14": 59.54
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.67,
+      "rsi14": 58.42
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 2.55,
+      "rsi14": 61.17
     }
   ]
 };
