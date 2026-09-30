@@ -1,0 +1,82 @@
+name: 📊 Daily Data Update
+
+on:
+  schedule:
+    # 평일(월~금) 아침 7시 KST = UTC 22:00 (일~목)
+    - cron: '0 22 * * 0-4'
+  workflow_dispatch: # 수동 실행 버튼 (테스트용)
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🔐 Create .env file
+        run: |
+          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> .env
+
+      - name: 📈 Step 1 - Update general data (update_data.py)
+        run: python3 update_data.py
+
+      - name: 🔍 Step 2 - Update screener data (update_screener.py)
+        run: python3 update_screener.py
+
+      - name: 💰 Step 3 - Update earnings data (update_earnings.py)
+        run: python3 update_earnings.py
+
+      - name: 📋 Show update summary
+        run: |
+          echo "=== Update Summary ==="
+          # data.js의 가장 최신 엔트리에서 주요 지표 출력
+          python3 -c "
+          import json, re
+          with open('data.js', 'r') as f:
+              text = f.read()
+          # 'var historicalData = ' 제거 후 JSON 파싱
+          json_text = re.sub(r'^var\s+\w+\s*=\s*', '', text).rstrip().rstrip(';')
+          data = json.loads(json_text)
+          latest_date = sorted(data.keys())[-1]
+          d = data[latest_date]
+          print(f'📅 기준일: {latest_date}')
+          print(f'😱 Fear & Greed: {d.get(\"fear_and_greed\", \"N/A\")}')
+          print(f'📊 S&P 500: {d.get(\"sp500_price\", \"N/A\")} ({d.get(\"sp500_change\", \"N/A\")}%)')
+          print(f'📊 Nasdaq: {d.get(\"nasdaq_price\", \"N/A\")} ({d.get(\"nasdaq_change\", \"N/A\")}%)')
+          print(f'📊 VIX: {d.get(\"vix_price\", \"N/A\")} ({d.get(\"vix_change\", \"N/A\")}%)')
+          print(f'💵 DXY: {d.get(\"dxy_price\", \"N/A\")} ({d.get(\"dxy_change\", \"N/A\")}%)')
+          "
+
+      - name: 🚀 Commit & Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 변경된 데이터 파일만 추가
+          git add data.js data/*.js data/*.json
+          
+          # 변경사항이 있을 때만 커밋
+          if git diff --cached --quiet; then
+            echo "✅ No data changes detected. Skipping commit."
+          else
+            DATE=$(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST')
+            git commit -m "📊 auto-update: ${DATE}"
+            git push
+            echo "✅ Changes committed and pushed successfully!"
+          fi
