@@ -2623,5 +2623,10 @@
     "sector": "Industrials",
     "sub_industry": "Electrical Equipment & Parts",
     "name": "Bloom Energy Corporation"
+  },
+  "P": {
+    "sector": "Information Technology",
+    "sub_industry": "Computer Hardware",
+    "name": "Everpure, Inc."
   }
 }

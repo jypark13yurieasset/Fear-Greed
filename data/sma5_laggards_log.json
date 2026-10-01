@@ -1,148 +1,4 @@
 {
-  "2026-09-18": [
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -6.29,
-      "rsi14": 41.61
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -5.97,
-      "rsi14": 36.28
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.42,
-      "rsi14": 38.0
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.56,
-      "rsi14": 53.23
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": -4.55,
-      "rsi14": 49.25
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -4.53,
-      "rsi14": 43.96
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": -4.2,
-      "rsi14": 29.66
-    },
-    {
-      "ticker": "VMRK",
-      "name": "AvalonBay Communities, Inc.",
-      "sector": "Real Estate",
-      "dist_sma5": -4.09,
-      "rsi14": 31.26
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.02,
-      "rsi14": 42.44
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -4.02,
-      "rsi14": 38.72
-    }
-  ],
-  "2026-09-22": [
-    {
-      "ticker": "NUE",
-      "name": "Nucor Corporation",
-      "sector": "Materials",
-      "dist_sma5": -4.97,
-      "rsi14": 39.49
-    },
-    {
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -4.31,
-      "rsi14": 30.98
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma5": -4.3,
-      "rsi14": 42.98
-    },
-    {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": -4.03,
-      "rsi14": 40.54
-    },
-    {
-      "ticker": "FANG",
-      "name": "Diamondback Energy, Inc.",
-      "sector": "Energy",
-      "dist_sma5": -3.89,
-      "rsi14": 38.55
-    },
-    {
-      "ticker": "TMUS",
-      "name": "T-Mobile US, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -3.53,
-      "rsi14": 33.85
-    },
-    {
-      "ticker": "UNP",
-      "name": "Union Pacific Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -3.45,
-      "rsi14": 24.3
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -3.45,
-      "rsi14": 37.17
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron Corporation",
-      "sector": "Energy",
-      "dist_sma5": -3.39,
-      "rsi14": 46.23
-    },
-    {
-      "ticker": "ALL",
-      "name": "The Allstate Corporation",
-      "sector": "Financials",
-      "dist_sma5": -3.39,
-      "rsi14": 35.38
-    }
-  ],
   "2026-09-23": [
     {
       "ticker": "ALL",
@@ -501,6 +357,150 @@
       "sector": "Information Technology",
       "dist_sma5": -3.09,
       "rsi14": 33.29
+    }
+  ],
+  "2026-10-01": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": -4.94,
+      "rsi14": 34.87
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -4.32,
+      "rsi14": 30.87
+    },
+    {
+      "ticker": "GM",
+      "name": "General Motors Company",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.06,
+      "rsi14": 34.57
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -3.91,
+      "rsi14": 49.33
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -3.82,
+      "rsi14": 26.62
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma5": -3.73,
+      "rsi14": 31.66
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor Corporation",
+      "sector": "Materials",
+      "dist_sma5": -3.38,
+      "rsi14": 34.33
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -3.33,
+      "rsi14": 51.74
+    },
+    {
+      "ticker": "OKE",
+      "name": "ONEOK, Inc.",
+      "sector": "Energy",
+      "dist_sma5": -3.23,
+      "rsi14": 28.19
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -3.17,
+      "rsi14": 51.73
+    }
+  ],
+  "2026-10-02": [
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -7.03,
+      "rsi14": 39.52
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": -6.0,
+      "rsi14": 32.01
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -4.72,
+      "rsi14": 47.23
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -3.71,
+      "rsi14": 65.83
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -3.47,
+      "rsi14": 47.83
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -3.32,
+      "rsi14": 59.95
+    },
+    {
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "dist_sma5": -3.2,
+      "rsi14": 39.49
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -3.12,
+      "rsi14": 27.56
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -3.11,
+      "rsi14": 50.16
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma5": -3.11,
+      "rsi14": 27.58
     }
   ]
 }

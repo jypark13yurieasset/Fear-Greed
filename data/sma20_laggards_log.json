@@ -1,148 +1,4 @@
 {
-  "2026-09-18": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -15.19,
-      "rsi14": 35.5
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -11.6,
-      "rsi14": 29.66
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -11.52,
-      "rsi14": 27.4
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.04,
-      "rsi14": 38.0
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -10.03,
-      "rsi14": 36.12
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -9.03,
-      "rsi14": 36.28
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": -8.98,
-      "rsi14": 29.72
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma20": -8.83,
-      "rsi14": 31.26
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.73,
-      "rsi14": 38.72
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.67,
-      "rsi14": 40.6
-    }
-  ],
-  "2026-09-22": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -12.93,
-      "rsi14": 36.58
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -10.22,
-      "rsi14": 28.44
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -10.18,
-      "rsi14": 31.86
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": -9.57,
-      "rsi14": 27.87
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -9.19,
-      "rsi14": 37.17
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -9.13,
-      "rsi14": 36.17
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.91,
-      "rsi14": 38.52
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.76,
-      "rsi14": 31.39
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma20": -8.3,
-      "rsi14": 30.87
-    },
-    {
-      "ticker": "TMUS",
-      "name": "T-Mobile US, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -7.68,
-      "rsi14": 33.85
-    }
-  ],
   "2026-09-23": [
     {
       "ticker": "INTU",
@@ -501,6 +357,150 @@
       "sector": "Financials",
       "dist_sma20": -8.14,
       "rsi14": 26.93
+    }
+  ],
+  "2026-10-01": [
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -12.59,
+      "rsi14": 19.65
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma20": -10.41,
+      "rsi14": 25.58
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -10.18,
+      "rsi14": 33.01
+    },
+    {
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -9.75,
+      "rsi14": 28.74
+    },
+    {
+      "ticker": "ALL",
+      "name": "The Allstate Corporation",
+      "sector": "Financials",
+      "dist_sma20": -9.35,
+      "rsi14": 24.42
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -9.33,
+      "rsi14": 33.07
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -9.24,
+      "rsi14": 31.33
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma20": -9.03,
+      "rsi14": 31.66
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -8.77,
+      "rsi14": 28.25
+    },
+    {
+      "ticker": "KKR",
+      "name": "KKR & Co. Inc.",
+      "sector": "Financials",
+      "dist_sma20": -8.62,
+      "rsi14": 31.0
+    }
+  ],
+  "2026-10-02": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -10.62,
+      "rsi14": 32.01
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -9.58,
+      "rsi14": 27.25
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma20": -9.4,
+      "rsi14": 25.97
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management, Inc.",
+      "sector": "Financials",
+      "dist_sma20": -8.78,
+      "rsi14": 27.56
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": -8.65,
+      "rsi14": 32.45
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.57,
+      "rsi14": 33.02
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.47,
+      "rsi14": 31.43
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma20": -8.33,
+      "rsi14": 31.49
+    },
+    {
+      "ticker": "BAC",
+      "name": "Bank of America Corporation",
+      "sector": "Financials",
+      "dist_sma20": -8.18,
+      "rsi14": 21.95
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -8.03,
+      "rsi14": 27.89
     }
   ]
 }

@@ -1,148 +1,4 @@
 {
-  "2026-09-18": [
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 13.36,
-      "rsi14": 66.08
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": 10.12,
-      "rsi14": 56.14
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.65,
-      "rsi14": 50.39
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.5,
-      "rsi14": 52.4
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 7.08,
-      "rsi14": 65.96
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.04,
-      "rsi14": 65.35
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": 6.75,
-      "rsi14": 52.85
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.44,
-      "rsi14": 58.28
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 5.89,
-      "rsi14": 61.74
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 5.78,
-      "rsi14": 50.13
-    }
-  ],
-  "2026-09-22": [
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": 19.66,
-      "rsi14": 69.49
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 18.59,
-      "rsi14": 70.9
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 16.75,
-      "rsi14": 60.63
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 13.31,
-      "rsi14": 70.92
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 12.44,
-      "rsi14": 72.96
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 11.65,
-      "rsi14": 69.56
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 10.97,
-      "rsi14": 60.44
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 8.58,
-      "rsi14": 62.31
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 7.97,
-      "rsi14": 51.36
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 7.96,
-      "rsi14": 77.81
-    }
-  ],
   "2026-09-23": [
     {
       "ticker": "ALAB",
@@ -501,6 +357,150 @@
       "sector": "Consumer Discretionary",
       "dist_sma5": 2.55,
       "rsi14": 61.17
+    }
+  ],
+  "2026-10-01": [
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.28,
+      "rsi14": 53.61
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.54,
+      "rsi14": 62.75
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 3.36,
+      "rsi14": 61.29
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 3.19,
+      "rsi14": 52.3
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.66,
+      "rsi14": 61.77
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 2.65,
+      "rsi14": 43.56
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.52,
+      "rsi14": 57.05
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.48,
+      "rsi14": 69.24
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.27,
+      "rsi14": 60.92
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 2.01,
+      "rsi14": 41.47
+    }
+  ],
+  "2026-10-02": [
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 14.96,
+      "rsi14": 70.0
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 12.31,
+      "rsi14": 74.41
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.02,
+      "rsi14": 56.55
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.73,
+      "rsi14": 63.71
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 6.08,
+      "rsi14": 55.76
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.77,
+      "rsi14": 70.6
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": 5.54,
+      "rsi14": 68.15
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 5.32,
+      "rsi14": 56.19
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 4.83,
+      "rsi14": 65.32
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.83,
+      "rsi14": 66.94
     }
   ]
 }

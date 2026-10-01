@@ -1,148 +1,4 @@
 {
-  "2026-09-18": [
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 18.39,
-      "rsi14": 66.43
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 16.92,
-      "rsi14": 66.08
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.09,
-      "rsi14": 65.41
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.07,
-      "rsi14": 65.35
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 13.28,
-      "rsi14": 61.74
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": 12.11,
-      "rsi14": 73.97
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma20": 11.31,
-      "rsi14": 59.84
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.74,
-      "rsi14": 56.14
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 10.69,
-      "rsi14": 80.07
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma20": 9.7,
-      "rsi14": 83.04
-    }
-  ],
-  "2026-09-22": [
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": 27.51,
-      "rsi14": 69.49
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 25.65,
-      "rsi14": 70.9
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 24.96,
-      "rsi14": 70.92
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 23.63,
-      "rsi14": 72.96
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": 18.76,
-      "rsi14": 77.81
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 18.11,
-      "rsi14": 60.63
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 17.42,
-      "rsi14": 69.56
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.0,
-      "rsi14": 64.64
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.73,
-      "rsi14": 62.8
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.64,
-      "rsi14": 62.42
-    }
-  ],
   "2026-09-23": [
     {
       "ticker": "ARM",
@@ -501,6 +357,150 @@
       "sector": "Information Technology",
       "dist_sma20": 9.43,
       "rsi14": 59.28
+    }
+  ],
+  "2026-10-01": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 17.62,
+      "rsi14": 68.33
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.24,
+      "rsi14": 69.24
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.67,
+      "rsi14": 60.68
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 11.99,
+      "rsi14": 66.74
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 11.36,
+      "rsi14": 62.75
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 11.3,
+      "rsi14": 66.25
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 10.55,
+      "rsi14": 61.82
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.43,
+      "rsi14": 62.6
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.12,
+      "rsi14": 61.91
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 9.47,
+      "rsi14": 61.29
+    }
+  ],
+  "2026-10-02": [
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 22.43,
+      "rsi14": 75.32
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 20.87,
+      "rsi14": 74.41
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 16.44,
+      "rsi14": 70.6
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 14.75,
+      "rsi14": 70.0
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.72,
+      "rsi14": 70.28
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.13,
+      "rsi14": 66.94
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 14.07,
+      "rsi14": 65.83
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.47,
+      "rsi14": 63.71
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 12.36,
+      "rsi14": 65.32
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.34,
+      "rsi14": 60.79
     }
   ]
 }
