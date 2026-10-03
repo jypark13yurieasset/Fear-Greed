@@ -433,74 +433,74 @@ const SMA5_TOP10_LOG = {
   ],
   "2026-10-02": [
     {
-      "ticker": "ACN",
-      "name": "Accenture plc",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "sector": "Information Technology",
-      "dist_sma5": 14.96,
-      "rsi14": 70.0
+      "dist_sma5": 10.96,
+      "rsi14": 60.7
     },
     {
       "ticker": "SNPS",
       "name": "Synopsys, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 12.31,
-      "rsi14": 74.41
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": 8.02,
-      "rsi14": 56.55
+      "dist_sma5": 8.96,
+      "rsi14": 74.1
     },
     {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 7.73,
-      "rsi14": 63.71
+      "dist_sma5": 8.6,
+      "rsi14": 66.68
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.46,
+      "rsi14": 69.59
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": 7.68,
+      "rsi14": 69.51
     },
     {
       "ticker": "CIEN",
       "name": "Ciena Corporation",
       "sector": "Information Technology",
-      "dist_sma5": 6.08,
-      "rsi14": 55.76
+      "dist_sma5": 7.43,
+      "rsi14": 59.0
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 5.77,
-      "rsi14": 70.6
+      "dist_sma5": 6.23,
+      "rsi14": 75.93
     },
     {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 5.54,
-      "rsi14": 68.15
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "sector": "Industrials",
+      "dist_sma5": 5.61,
+      "rsi14": 61.27
     },
     {
       "ticker": "RCL",
       "name": "Royal Caribbean Cruises Ltd.",
       "sector": "Consumer Discretionary",
-      "dist_sma5": 5.32,
-      "rsi14": 56.19
+      "dist_sma5": 5.46,
+      "rsi14": 60.62
     },
     {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
+      "ticker": "P",
+      "name": "Everpure, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 4.83,
-      "rsi14": 65.32
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.83,
-      "rsi14": 66.94
+      "dist_sma5": 5.45,
+      "rsi14": 78.17
     }
   ]
 };

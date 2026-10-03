@@ -436,71 +436,71 @@ const SMA20_LAGGARDS_LOG = {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
-      "dist_sma20": -10.62,
-      "rsi14": 32.01
+      "dist_sma20": -14.16,
+      "rsi14": 28.4
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -11.19,
+      "rsi14": 34.34
     },
     {
       "ticker": "PAYX",
       "name": "Paychex, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -9.58,
-      "rsi14": 27.25
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma20": -9.4,
-      "rsi14": 25.97
-    },
-    {
-      "ticker": "APO",
-      "name": "Apollo Global Management, Inc.",
-      "sector": "Financials",
-      "dist_sma20": -8.78,
-      "rsi14": 27.56
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -8.65,
-      "rsi14": 32.45
+      "dist_sma20": -10.24,
+      "rsi14": 25.17
     },
     {
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
-      "dist_sma20": -8.57,
-      "rsi14": 33.02
+      "dist_sma20": -9.26,
+      "rsi14": 31.34
     },
     {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.47,
-      "rsi14": 31.43
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB N.V.",
-      "sector": "Energy",
-      "dist_sma20": -8.33,
-      "rsi14": 31.49
-    },
-    {
-      "ticker": "BAC",
-      "name": "Bank of America Corporation",
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
       "sector": "Financials",
-      "dist_sma20": -8.18,
-      "rsi14": 21.95
+      "dist_sma20": -8.85,
+      "rsi14": 25.5
     },
     {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
       "sector": "Communication Services",
-      "dist_sma20": -8.03,
-      "rsi14": 27.89
+      "dist_sma20": -8.76,
+      "rsi14": 31.06
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management, Inc.",
+      "sector": "Financials",
+      "dist_sma20": -8.28,
+      "rsi14": 27.2
+    },
+    {
+      "ticker": "KKR",
+      "name": "KKR & Co. Inc.",
+      "sector": "Financials",
+      "dist_sma20": -8.04,
+      "rsi14": 29.59
+    },
+    {
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": -8.01,
+      "rsi14": 31.65
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": -7.81,
+      "rsi14": 24.77
     }
   ]
 };

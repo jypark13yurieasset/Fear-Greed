@@ -436,71 +436,71 @@
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals, Inc.",
       "sector": "Health Care",
-      "dist_sma5": -7.03,
-      "rsi14": 39.52
+      "dist_sma5": -8.99,
+      "rsi14": 34.34
     },
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
-      "dist_sma5": -6.0,
-      "rsi14": 32.01
+      "dist_sma5": -7.76,
+      "rsi14": 28.4
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -7.26,
+      "rsi14": 39.22
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -6.74,
+      "rsi14": 46.41
+    },
+    {
+      "ticker": "NKE",
+      "name": "NIKE, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.13,
+      "rsi14": 28.21
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -3.31,
+      "rsi14": 51.21
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Health Care",
+      "dist_sma5": -2.94,
+      "rsi14": 32.28
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -2.83,
+      "rsi14": 43.77
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -2.82,
+      "rsi14": 47.68
     },
     {
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "sector": "Health Care",
-      "dist_sma5": -4.72,
-      "rsi14": 47.23
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -3.71,
-      "rsi14": 65.83
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -3.47,
-      "rsi14": 47.83
-    },
-    {
-      "ticker": "A",
-      "name": "Agilent Technologies, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -3.32,
-      "rsi14": 59.95
-    },
-    {
-      "ticker": "DIS",
-      "name": "The Walt Disney Company",
-      "sector": "Communication Services",
-      "dist_sma5": -3.2,
-      "rsi14": 39.49
-    },
-    {
-      "ticker": "APO",
-      "name": "Apollo Global Management, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -3.12,
-      "rsi14": 27.56
-    },
-    {
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": -3.11,
-      "rsi14": 50.16
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma5": -3.11,
-      "rsi14": 27.58
+      "dist_sma5": -2.77,
+      "rsi14": 50.0
     }
   ]
 }

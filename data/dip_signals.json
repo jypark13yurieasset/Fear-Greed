@@ -84,7 +84,7 @@
     "last_seen": "2026-10-02"
   },
   "ABBV": {
-    "count": 1,
+    "count": 0,
     "last_seen": "2026-10-02"
   },
   "BAC": {
@@ -956,7 +956,7 @@
     "last_seen": "2026-10-02"
   },
   "XYZ": {
-    "count": 2,
+    "count": 0,
     "last_seen": "2026-10-02"
   },
   "ROK": {
@@ -1144,6 +1144,10 @@
     "last_seen": "2026-10-02"
   },
   "P": {
+    "count": 0,
+    "last_seen": "2026-10-02"
+  },
+  "NTAP": {
     "count": 0,
     "last_seen": "2026-10-02"
   }

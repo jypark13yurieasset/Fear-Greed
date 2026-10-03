@@ -436,71 +436,71 @@
       "ticker": "P",
       "name": "Everpure, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 22.43,
-      "rsi14": 75.32
+      "dist_sma20": 25.51,
+      "rsi14": 78.17
     },
     {
       "ticker": "SNPS",
       "name": "Synopsys, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 20.87,
-      "rsi14": 74.41
+      "dist_sma20": 19.63,
+      "rsi14": 74.1
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 17.92,
+      "rsi14": 69.59
     },
     {
       "ticker": "CDNS",
       "name": "Cadence Design Systems, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 16.44,
-      "rsi14": 70.6
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 14.75,
-      "rsi14": 70.0
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.72,
-      "rsi14": 70.28
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.13,
-      "rsi14": 66.94
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 14.07,
-      "rsi14": 65.83
+      "dist_sma20": 15.76,
+      "rsi14": 70.81
     },
     {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 12.47,
-      "rsi14": 63.71
+      "dist_sma20": 15.26,
+      "rsi14": 66.68
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.15,
+      "rsi14": 69.18
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma20": 14.83,
+      "rsi14": 69.51
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.35,
+      "rsi14": 75.93
     },
     {
       "ticker": "LRCX",
       "name": "Lam Research Corporation",
       "sector": "Information Technology",
-      "dist_sma20": 12.36,
-      "rsi14": 65.32
+      "dist_sma20": 13.77,
+      "rsi14": 67.63
     },
     {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 12.34,
-      "rsi14": 60.79
+      "dist_sma20": 13.56,
+      "rsi14": 70.59
     }
   ]
 }

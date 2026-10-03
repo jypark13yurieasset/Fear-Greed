@@ -1,110 +1,6 @@
 [
   {
     "date": "2026-08-03",
-    "ticker": "CTVA",
-    "name": "Corteva, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 76.04000091552734
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "XEL",
-    "name": "Xcel Energy Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 77.69000244140625
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "EBAY",
-    "name": "eBay Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 107.12999725341797
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "CMG",
-    "name": "Chipotle Mexican Grill, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 37.459999084472656
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "EXC",
-    "name": "Exelon Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 45.630001068115234
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "ODFL",
-    "name": "Old Dominion Freight Line, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 211.52000427246094
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "UAL",
-    "name": "United Airlines Holdings, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 128.38999938964844
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "ED",
-    "name": "Consolidated Edison, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 107.94999694824219
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "CCL",
-    "name": "Carnival Corporation Ltd.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 28.739999771118164
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "COIN",
-    "name": "Coinbase Global, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 146.5
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "ADM",
-    "name": "Archer-Daniels-Midland Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 78.05999755859375
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "ATO",
-    "name": "Atmos Energy Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 172.88999938964844
-  },
-  {
-    "date": "2026-08-03",
-    "ticker": "EIX",
-    "name": "Edison International",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 71.45999908447266
-  },
-  {
-    "date": "2026-08-03",
     "ticker": "CNP",
     "name": "CenterPoint Energy, Inc.",
     "type": "dead",
@@ -7998,5 +7894,109 @@
     "type": "dead",
     "streak": 1,
     "entry_price": 231.17999267578125
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "WMT",
+    "name": "Walmart Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 104.26000213623047
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 256.0299987792969
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "PG",
+    "name": "The Procter & Gamble Company",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 144.91000366210938
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "PM",
+    "name": "Philip Morris International Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 187.4600067138672
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 972.5499877929688
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "ACN",
+    "name": "Accenture plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 198.89999389648438
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "MO",
+    "name": "Altria Group, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 67.3499984741211
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "URI",
+    "name": "United Rentals, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1081.0400390625
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "COHR",
+    "name": "Coherent Corp.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 337.0400085449219
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "CIEN",
+    "name": "Ciena Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 391.3399963378906
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "BDX",
+    "name": "Becton, Dickinson and Company",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 176.8000030517578
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "EBAY",
+    "name": "eBay Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 106.4000015258789
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "ALNY",
+    "name": "Alnylam Pharmaceuticals, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 219.72000122070312
   }
 ]
