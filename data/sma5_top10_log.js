@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-09-23": [
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 15.74,
-      "rsi14": 64.49
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": 15.65,
-      "rsi14": 71.36
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 12.24,
-      "rsi14": 72.17
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 11.82,
-      "rsi14": 70.04
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 11.46,
-      "rsi14": 63.38
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 9.97,
-      "rsi14": 64.69
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 9.81,
-      "rsi14": 59.49
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 9.79,
-      "rsi14": 72.06
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 9.18,
-      "rsi14": 73.88
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": 8.41,
-      "rsi14": 59.66
-    }
-  ],
   "2026-09-24": [
     {
       "ticker": "MPWR",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 5.45,
       "rsi14": 78.17
+    }
+  ],
+  "2026-10-06": [
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "sector": "Industrials",
+      "dist_sma5": 9.92,
+      "rsi14": 68.76
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.98,
+      "rsi14": 55.11
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.26,
+      "rsi14": 59.53
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.95,
+      "rsi14": 69.35
+    },
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.95,
+      "rsi14": 79.73
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.73,
+      "rsi14": 67.61
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.63,
+      "rsi14": 67.13
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.32,
+      "rsi14": 73.38
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.17,
+      "rsi14": 67.71
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": 5.04,
+      "rsi14": 72.52
     }
   ]
 };

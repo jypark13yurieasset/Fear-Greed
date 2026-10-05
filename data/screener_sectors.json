@@ -2628,5 +2628,10 @@
     "sector": "Information Technology",
     "sub_industry": "Computer Hardware",
     "name": "Everpure, Inc."
+  },
+  "VYLR": {
+    "sector": "Financials",
+    "sub_industry": "Shell Companies",
+    "name": "Vylor Inc."
   }
 }
