@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-09-24": [
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": 26.68,
-      "rsi14": 71.07
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 21.5,
-      "rsi14": 63.6
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 21.34,
-      "rsi14": 70.26
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 20.9,
-      "rsi14": 71.86
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 19.81,
-      "rsi14": 71.0
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 18.07,
-      "rsi14": 68.69
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 17.44,
-      "rsi14": 66.25
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": 15.95,
-      "rsi14": 76.95
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.86,
-      "rsi14": 63.14
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 11.01,
-      "rsi14": 60.06
-    }
-  ],
   "2026-09-25": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Industrials",
       "dist_sma20": 13.09,
       "rsi14": 68.76
+    }
+  ],
+  "2026-10-08": [
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 28.33,
+      "rsi14": 82.97
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 22.67,
+      "rsi14": 70.12
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 18.17,
+      "rsi14": 74.97
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 16.38,
+      "rsi14": 71.19
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "sector": "Utilities",
+      "dist_sma20": 16.3,
+      "rsi14": 75.56
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.4,
+      "rsi14": 77.88
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma20": 15.21,
+      "rsi14": 71.49
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.01,
+      "rsi14": 66.64
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.01,
+      "rsi14": 64.65
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.45,
+      "rsi14": 70.51
     }
   ]
 };

@@ -544,6 +544,134 @@ def calc_macd_state(closes):
     else:
         return 1
 
+# --- 4.9 시그널 연속 출현(Streak) 관리 + 누락 거래일 보충 ---
+def apply_signal_streak(t, name, is_golden, is_dead, trading_date, price):
+    """골든/데드 크로스 연속 출현 카운트를 갱신하고 signal_log에 기록합니다."""
+    if t not in signal_history or 'type' not in signal_history[t]:
+        signal_history[t] = {'type': None, 'count': 0, 'last_seen': ''}
+    sh = signal_history[t]
+
+    for sig_type, active in (('golden', is_golden), ('dead', is_dead)):
+        if not active:
+            continue
+        if sh['type'] == sig_type:
+            if sh['last_seen'] != trading_date:
+                sh['count'] += 1
+                sh['last_seen'] = trading_date
+                if 2 <= sh['count'] <= 5:
+                    signal_log.append({"date": trading_date, "ticker": t, "name": name,
+                                       "type": sig_type, "streak": sh['count'], "entry_price": price})
+        else:
+            sh['type'] = sig_type
+            sh['count'] = 1
+            sh['last_seen'] = trading_date
+            signal_log.append({"date": trading_date, "ticker": t, "name": name,
+                               "type": sig_type, "streak": 1, "entry_price": price})
+        return sh
+
+    # Neither condition is met
+    sh['type'] = None
+    sh['count'] = 0
+    sh['last_seen'] = trading_date
+    return sh
+
+def compute_cross_flags(closes):
+    """메인 루프와 동일한 조건으로 (골든크로스 기회, 위험 데드크로스) 여부를 판정합니다."""
+    price = closes[-1]
+    ma50 = calc_sma(closes, 50)
+    ma200 = calc_sma(closes, 200)
+    dist_ma50 = (price - ma50) / ma50 * 100 if ma50 and ma50 > 0 else None
+    dist_ma200 = (price - ma200) / ma200 * 100 if ma200 and ma200 > 0 else None
+    ema8 = calc_ema(closes, 8)
+    ema21 = calc_ema(closes, 21)
+    macd_state = calc_macd_state(closes)
+    if ema8 is None or ema21 is None:
+        return False, False
+
+    def crossed(up):
+        a8 = get_ema_array(closes, 8)
+        a21 = get_ema_array(closes, 21)
+        if len(a8) < 4:
+            return False
+        for i in range(-3, 0):
+            if None in (a8[i], a21[i], a8[i-1], a21[i-1]):
+                continue
+            if up and a8[i] > a21[i] and a8[i-1] <= a21[i-1]:
+                return True
+            if not up and a8[i] < a21[i] and a8[i-1] >= a21[i-1]:
+                return True
+        return False
+
+    is_dead = bool(macd_state in [1, 2] and ema8 < ema21 and dist_ma50 is not None and dist_ma50 < 0 and crossed(False))
+    is_golden = bool(macd_state in [3, 4] and ema8 > ema21 and dist_ma200 is not None and dist_ma200 > 0 and crossed(True))
+    return is_golden, is_dead
+
+def us_date_to_log_key(us_date_str):
+    """미국 거래일 → 평소(한국 아침 실행) SMA 로그에 쓰이는 KST 날짜 키 (다음날, 토요일이면 금요일)"""
+    d = datetime.datetime.strptime(us_date_str, "%Y-%m-%d").date() + datetime.timedelta(days=1)
+    if d.weekday() == 5:
+        d = d - datetime.timedelta(days=1)
+    return d.isoformat()
+
+# 누락된 거래일 감지: 마지막 처리일(signal_history의 last_seen 최댓값)과 최신 거래일 사이
+backfill_log_rows = {}   # {KST 로그 키: [종목별 dist_sma5/dist_sma20/rsi14 ...]}
+_seen_dates = [v.get('last_seen') for v in signal_history.values() if isinstance(v, dict) and v.get('last_seen')]
+_last_done = max(_seen_dates) if _seen_dates else None
+_us_dates = sorted({str(d.date()) for t, s in all_data.items()
+                    if not t.endswith(('.KS', '.KQ')) for d in s.index[-30:]})
+missing_trading_dates = []
+if _last_done and _us_dates:
+    _latest = _us_dates[-1]
+    missing_trading_dates = [d for d in _us_dates if _last_done < d < _latest]
+
+if missing_trading_dates:
+    print("\n" + "=" * 60)
+    print(f"🩹 누락 거래일 발견: {', '.join(missing_trading_dates)} → 시그널/SMA 로그 보충 중...")
+    for bd in missing_trading_dates:
+        bd_ts = pd.Timestamp(bd)
+        rows = []
+        golden_n = 0
+        for t, s in stock_map.items():
+            series = all_data.get(t)
+            if series is None or series.empty:
+                continue
+            sub = series.loc[:bd_ts]
+            if sub.empty or sub.index[-1] != bd_ts:
+                continue  # 해당 날짜에 거래 기록이 없는 종목 (한국 종목 등)
+            closes_bd = sub['Close'].tolist()
+            price_bd = closes_bd[-1]
+            g, d_ = compute_cross_flags(closes_bd)
+            golden_n += int(g)
+            apply_signal_streak(t, s.get('name', t), g, d_, bd, price_bd)
+
+            sma5_bd = calc_sma(closes_bd, 5)
+            sma20_bd = calc_sma(closes_bd, 20)
+            rsi_bd = calc_rsi(closes_bd, 14)
+            rows.append({
+                'ticker': s['ticker'], 'name': s['name'], 'sector': s.get('sector', '-'),
+                'sp500': s.get('sp500'), 'nasdaq100': s.get('nasdaq100'),
+                'dist_sma5': round((price_bd - sma5_bd) / sma5_bd * 100, 2) if sma5_bd else None,
+                'dist_sma20': round((price_bd - sma20_bd) / sma20_bd * 100, 2) if sma20_bd else None,
+                'rsi14': round(rsi_bd, 2) if rsi_bd is not None else None,
+            })
+        backfill_log_rows[us_date_to_log_key(bd)] = rows
+        print(f"   [보충 완료] {bd} (로그 키 {us_date_to_log_key(bd)}): {len(rows)}개 종목, 골든크로스 {golden_n}개")
+else:
+    print("\n✅ 스크리너 누락 거래일 없음")
+
+def merge_backfill_log(log_dict, metric, reverse):
+    """보충된 날짜의 Top/Laggards 10 로그를 추가합니다 (이미 있는 날짜는 덮어쓰지 않음)."""
+    for key, rows in backfill_log_rows.items():
+        if key in log_dict:
+            continue
+        cands = [r for r in rows if r.get(metric) is not None and (r.get('sp500') or r.get('nasdaq100'))]
+        cands.sort(key=lambda x: x[metric], reverse=reverse)
+        log_dict[key] = [
+            {'ticker': r['ticker'], 'name': r['name'], 'sector': r['sector'],
+             metric: r[metric], 'rsi14': r.get('rsi14') or 0}
+            for r in cands[:10]
+        ]
+
 # --- 5. Calculate Momentum Metrics ---
 print("\n" + "=" * 60)
 print("🧮 모멘텀 지표 연산 중...")
@@ -723,72 +851,8 @@ for t, s in stock_map.items():
         # so that market holidays don't cause duplicate counting.
         actual_trading_date = str(latest_trading_date.date()) if latest_trading_date is not None else today_str
         
-        if t not in signal_history or 'type' not in signal_history[t]:
-            signal_history[t] = {'type': None, 'count': 0, 'last_seen': ''}
-            
-        sh = signal_history[t]
-        
-        if is_golden_cross_opportunity:
-            if sh['type'] == 'golden':
-                if sh['last_seen'] != actual_trading_date:
-                    sh['count'] += 1
-                    sh['last_seen'] = actual_trading_date
-                    if 2 <= sh['count'] <= 5:
-                        signal_log.append({
-                            "date": actual_trading_date,
-                            "ticker": t,
-                            "name": name,
-                            "type": "golden",
-                            "streak": sh['count'],
-                            "entry_price": price
-                        })
-            else:
-                sh['type'] = 'golden'
-                sh['count'] = 1
-                sh['last_seen'] = actual_trading_date
-                # Log new golden cross
-                signal_log.append({
-                    "date": actual_trading_date,
-                    "ticker": t,
-                    "name": name,
-                    "type": "golden",
-                    "streak": 1,
-                    "entry_price": price
-                })
-                
-        elif is_danger_dead_cross:
-            if sh['type'] == 'dead':
-                if sh['last_seen'] != actual_trading_date:
-                    sh['count'] += 1
-                    sh['last_seen'] = actual_trading_date
-                    if 2 <= sh['count'] <= 5:
-                        signal_log.append({
-                            "date": actual_trading_date,
-                            "ticker": t,
-                            "name": name,
-                            "type": "dead",
-                            "streak": sh['count'],
-                            "entry_price": price
-                        })
-            else:
-                sh['type'] = 'dead'
-                sh['count'] = 1
-                sh['last_seen'] = actual_trading_date
-                # Log new dead cross
-                signal_log.append({
-                    "date": actual_trading_date,
-                    "ticker": t,
-                    "name": name,
-                    "type": "dead",
-                    "streak": 1,
-                    "entry_price": price
-                })
-                
-        else:
-            # Neither condition is met
-            sh['type'] = None
-            sh['count'] = 0
-            sh['last_seen'] = actual_trading_date
+        sh = apply_signal_streak(t, name, is_golden_cross_opportunity, is_danger_dead_cross,
+                                 actual_trading_date, price)
                 
         golden_cross_count = sh['count'] if sh['type'] == 'golden' else 0
         dead_cross_count = sh['count'] if sh['type'] == 'dead' else 0
@@ -962,6 +1026,7 @@ sma5_log[run_date_str] = [
     }
     for s in sma5_top10
 ]
+merge_backfill_log(sma5_log, 'dist_sma5', True)
 
 # 최근 7일분만 유지
 sorted_dates = sorted(sma5_log.keys(), reverse=True)
@@ -1005,6 +1070,7 @@ sma20_log[run_date_str] = [
     }
     for s in sma20_top10
 ]
+merge_backfill_log(sma20_log, 'dist_sma20', True)
 
 # 최근 7일분만 유지
 sorted_dates_20 = sorted(sma20_log.keys(), reverse=True)
@@ -1048,6 +1114,7 @@ sma5_laggards_log[run_date_str] = [
     }
     for s in sma5_laggards_top10
 ]
+merge_backfill_log(sma5_laggards_log, 'dist_sma5', False)
 
 # 최근 7일분만 유지
 sorted_dates_5_lag = sorted(sma5_laggards_log.keys(), reverse=True)
@@ -1090,6 +1157,7 @@ sma20_laggards_log[run_date_str] = [
     }
     for s in sma20_laggards_top10
 ]
+merge_backfill_log(sma20_laggards_log, 'dist_sma20', False)
 
 sorted_dates_20_lag = sorted(sma20_laggards_log.keys(), reverse=True)
 if len(sorted_dates_20_lag) > 7:

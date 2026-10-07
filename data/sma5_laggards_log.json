@@ -1,76 +1,4 @@
 {
-  "2026-09-24": [
-    {
-      "ticker": "ABNB",
-      "name": "Airbnb, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -8.35,
-      "rsi14": 27.0
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.16,
-      "rsi14": 25.32
-    },
-    {
-      "ticker": "ALL",
-      "name": "The Allstate Corporation",
-      "sector": "Financials",
-      "dist_sma5": -7.92,
-      "rsi14": 25.2
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.99,
-      "rsi14": 32.89
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": -5.96,
-      "rsi14": 53.02
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -5.75,
-      "rsi14": 21.37
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": -5.34,
-      "rsi14": 53.69
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.91,
-      "rsi14": 20.54
-    },
-    {
-      "ticker": "WFC",
-      "name": "Wells Fargo & Company",
-      "sector": "Financials",
-      "dist_sma5": -4.43,
-      "rsi14": 33.97
-    },
-    {
-      "ticker": "PGR",
-      "name": "The Progressive Corporation",
-      "sector": "Financials",
-      "dist_sma5": -4.38,
-      "rsi14": 32.92
-    }
-  ],
   "2026-09-25": [
     {
       "ticker": "PAYX",
@@ -501,6 +429,78 @@
       "sector": "Health Care",
       "dist_sma5": -1.97,
       "rsi14": 32.87
+    }
+  ],
+  "2026-10-08": [
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -5.98,
+      "rsi14": 42.48
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.1,
+      "rsi14": 39.43
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -4.49,
+      "rsi14": 54.89
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.3,
+      "rsi14": 55.51
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -3.51,
+      "rsi14": 46.48
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.05,
+      "rsi14": 47.5
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -2.9,
+      "rsi14": 56.81
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma5": -2.87,
+      "rsi14": 24.12
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "dist_sma5": -2.72,
+      "rsi14": 43.55
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -2.67,
+      "rsi14": 52.67
     }
   ]
 }

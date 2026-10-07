@@ -1,142 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-08-04",
-    "ticker": "AVGO",
-    "name": "Broadcom Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 418.1600036621094
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "LLY",
-    "name": "Eli Lilly and Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 1115.6800537109375
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "CSCO",
-    "name": "Cisco Systems, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 121.73999786376953
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "PLTR",
-    "name": "Palantir Technologies Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 162.66000366210938
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "UNH",
-    "name": "UnitedHealth Group Incorporated",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 407.54998779296875
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "DELL",
-    "name": "Dell Technologies Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 467.2699890136719
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "ANET",
-    "name": "Arista Networks, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 190.50999450683594
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "CRWD",
-    "name": "CrowdStrike Holdings, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 211.22000122070312
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "APH",
-    "name": "Amphenol Corporation",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 171.3300018310547
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "BA",
-    "name": "The Boeing Company",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 237.16000366210938
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "NEE",
-    "name": "NextEra Energy, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 87.19999694824219
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "ETN",
-    "name": "Eaton Corporation plc",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 444.7699890136719
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "PLD",
-    "name": "Prologis, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 139.0500030517578
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "FTNT",
-    "name": "Fortinet, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 168.2899932861328
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "SO",
-    "name": "The Southern Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 93.25
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "PWR",
-    "name": "Quanta Services, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 693.0
-  },
-  {
-    "date": "2026-08-04",
-    "ticker": "DUK",
-    "name": "Duke Energy Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 124.2699966430664
-  },
-  {
-    "date": "2026-08-04",
     "ticker": "JCI",
     "name": "Johnson Controls International plc",
     "type": "golden",
@@ -7998,5 +7862,141 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 3,
     "entry_price": 219.88999938964844
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 259.9200134277344
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 350.5
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "GOOG",
+    "name": "Alphabet Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 347.3699951171875
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "AVGO",
+    "name": "Broadcom Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 376.510009765625
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "LLY",
+    "name": "Eli Lilly and Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1188.719970703125
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "CSCO",
+    "name": "Cisco Systems, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 117.38999938964844
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "PG",
+    "name": "The Procter & Gamble Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 147.82000732421875
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 807.5700073242188
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "CEG",
+    "name": "Constellation Energy Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 299.5899963378906
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "MCK",
+    "name": "McKesson Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 910.3300170898438
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "ECL",
+    "name": "Ecolab Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 278.1000061035156
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "ROST",
+    "name": "Ross Stores, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 225.52999877929688
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "KMI",
+    "name": "Kinder Morgan, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 31.81999969482422
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "VST",
+    "name": "Vistra Corp.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 166.72000122070312
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "CAH",
+    "name": "Cardinal Health, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 232.16000366210938
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "GRMN",
+    "name": "Garmin Ltd.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 276.1600036621094
+  },
+  {
+    "date": "2026-10-07",
+    "ticker": "HUM",
+    "name": "Humana Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 396.510009765625
   }
 ];

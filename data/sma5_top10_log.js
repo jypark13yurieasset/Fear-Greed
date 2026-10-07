@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-09-24": [
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 9.88,
-      "rsi14": 61.42
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": 8.78,
-      "rsi14": 60.05
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": 8.74,
-      "rsi14": 71.07
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 8.48,
-      "rsi14": 63.6
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 7.16,
-      "rsi14": 71.86
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.76,
-      "rsi14": 52.65
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.14,
-      "rsi14": 68.69
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 6.12,
-      "rsi14": 54.23
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.95,
-      "rsi14": 56.69
-    },
-    {
-      "ticker": "WBD",
-      "name": "Warner Bros. Discovery, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 5.58,
-      "rsi14": 75.25
-    }
-  ],
   "2026-09-25": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Energy",
       "dist_sma5": 5.04,
       "rsi14": 72.52
+    }
+  ],
+  "2026-10-08": [
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "sector": "Utilities",
+      "dist_sma5": 10.87,
+      "rsi14": 75.56
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 8.88,
+      "rsi14": 70.12
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "sector": "Utilities",
+      "dist_sma5": 8.23,
+      "rsi14": 66.54
+    },
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.31,
+      "rsi14": 82.97
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.76,
+      "rsi14": 59.98
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.94,
+      "rsi14": 71.19
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": 4.53,
+      "rsi14": 71.49
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.39,
+      "rsi14": 77.88
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 4.36,
+      "rsi14": 56.28
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.81,
+      "rsi14": 64.65
     }
   ]
 };

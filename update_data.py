@@ -546,6 +546,92 @@ def get_timefolio_holdings(date_override=None):
         print(f"Error scraping Timefolio: {e}")
         return None
 
+def backfill_missing_dates(dashboard_data, today_str, updated_at_kst):
+    """
+    마지막 저장일 ~ 최신 거래일(today_str) 사이에 누락된 미국 거래일을 찾아 보충합니다.
+    - 지수/환율(S&P, Nasdaq, VIX, DXY): Yahoo Finance 과거 종가로 가격/변동률 재계산
+    - CNN Fear & Greed: CNN API 과거 이력에서 해당 날짜 값 사용
+    - 그 외(TOP20 자산, ETF 구성종목, AAII 등): 과거 시점 조회가 불가하므로 직전 거래일 값 유지
+    보충된 항목에는 "backfilled": True 표시가 남습니다.
+    """
+    import copy
+    import yfinance as yf
+
+    prev_dates = sorted(d for d in dashboard_data.keys() if d < today_str)
+    if not prev_dates:
+        return []
+    last_saved = prev_dates[-1]
+
+    last_saved_dt = datetime.datetime.strptime(last_saved, "%Y-%m-%d").date()
+    today_dt = datetime.datetime.strptime(today_str, "%Y-%m-%d").date()
+    # 주말/공휴일만 사이에 있으면 바로 종료 (불필요한 다운로드 방지)
+    gap_weekdays = [last_saved_dt + datetime.timedelta(days=i) for i in range(1, (today_dt - last_saved_dt).days)]
+    if not any(d.weekday() < 5 for d in gap_weekdays):
+        print(f"누락 거래일 없음 (직전 저장일: {last_saved})")
+        return []
+
+    start = (last_saved_dt - datetime.timedelta(days=10)).isoformat()
+    end = (today_dt + datetime.timedelta(days=1)).isoformat()
+
+    # 1) Yahoo 과거 종가 수집
+    closes = {}
+    for key, ticker in [("sp500", "^GSPC"), ("nasdaq", "^IXIC"), ("vix", "^VIX"), ("dxy", "DX-Y.NYB")]:
+        try:
+            hist = yf.download(ticker, start=start, end=end, progress=False, auto_adjust=False)
+            series = hist["Close"]
+            if hasattr(series, "columns"):
+                series = series.iloc[:, 0]
+            closes[key] = {idx.strftime("%Y-%m-%d"): float(v) for idx, v in series.dropna().items()}
+        except Exception as e:
+            print(f"[보충] {ticker} 과거 종가 수집 실패: {e}")
+            closes[key] = {}
+
+    # 실제 미국 거래일 = S&P 500 종가가 존재하는 날 (공휴일 자동 제외)
+    missing = [d for d in sorted(closes.get("sp500", {}).keys()) if last_saved < d < today_str]
+    if not missing:
+        print(f"누락 거래일 없음 (직전 저장일: {last_saved})")
+        return []
+    print(f"\n=== 누락 거래일 발견: {', '.join(missing)} → 자동 보충 시작 ===")
+
+    # 2) CNN Fear & Greed 과거 이력
+    fng_hist = {}
+    try:
+        r = requests.get(f"https://production.dataviz.cnn.io/index/fearandgreed/graphdata/{start}",
+                         headers=headers, timeout=15)
+        r.raise_for_status()
+        for pt in r.json().get("fear_and_greed_historical", {}).get("data", []):
+            d = datetime.datetime.utcfromtimestamp(pt["x"] / 1000).strftime("%Y-%m-%d")
+            fng_hist[d] = round(pt["y"])
+    except Exception as e:
+        print(f"[보충] CNN 과거 이력 수집 실패 (직전 값 유지): {e}")
+
+    # 3) 날짜순으로 보충 (앞서 보충한 날짜를 다음 날짜의 base로 사용)
+    for d in missing:
+        base_date = sorted(k for k in dashboard_data.keys() if k < d)[-1]
+        entry = copy.deepcopy(dashboard_data[base_date])
+        summary = []
+        for key, series in closes.items():
+            days = sorted(series.keys())
+            if d not in series or days.index(d) == 0:
+                print(f"[보충] {d} {key}: Yahoo 종가 없음 → 직전 값 유지")
+                continue
+            price = series[d]
+            prev_close = series[days[days.index(d) - 1]]
+            entry[f"{key}_price"] = round(price, 2)
+            entry[f"{key}_change"] = round((price - prev_close) / prev_close * 100, 2)
+            summary.append(f"{key}={entry[f'{key}_price']}({entry[f'{key}_change']:+.2f}%)")
+        if d in fng_hist:
+            entry["fear_and_greed"] = fng_hist[d]
+        else:
+            print(f"[보충] {d} CNN F&G 이력 없음 → 직전 값 유지")
+        entry["updated_at"] = f"{updated_at_kst} (누락 보충)"
+        entry["backfilled"] = True
+        dashboard_data[d] = entry
+        print(f"[보충 완료] {d}: F&G={entry.get('fear_and_greed')} | " + ", ".join(summary))
+
+    return missing
+
+
 def main():
     import yfinance as yf
     kst_tz = datetime.timezone(datetime.timedelta(hours=9))
@@ -706,6 +792,16 @@ def main():
     
     dashboard_data[today_str] = today_entry
     
+    # 누락된 거래일 자동 보충 (실패해도 최신일 저장은 그대로 진행)
+    try:
+        backfilled_dates = backfill_missing_dates(dashboard_data, today_str, updated_at_kst)
+    except Exception as e:
+        backfilled_dates = []
+        print(f"⚠️ 누락 거래일 보충 중 오류 (최신일 저장은 정상 진행): {e}")
+    
+    # 날짜순 정렬
+    dashboard_data = {k: dashboard_data[k] for k in sorted(dashboard_data.keys())}
+    
     # 혹시 모를 기존 주말(토/일) 데이터가 있다면 제거
     cleaned_dashboard_data = {}
     for d, val in dashboard_data.items():
@@ -736,6 +832,10 @@ def main():
     print(f"  DXY: Price={dxy['price']}, Change={dxy['change']}%")
     if aaii_data:
         print(f"  AAII Sentiment: Bullish={aaii_data['bullish']}%, Neutral={aaii_data['neutral']}%, Bearish={aaii_data['bearish']}% (설문 마감: {aaii_data['date']})")
+    if backfilled_dates:
+        print(f"  누락 보충 날짜: {', '.join(backfilled_dates)}")
+    else:
+        print("  누락 보충 날짜: 없음")
 
 if __name__ == "__main__":
     main()
