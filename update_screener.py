@@ -619,6 +619,17 @@ _seen_dates = [v.get('last_seen') for v in signal_history.values() if isinstance
 _last_done = max(_seen_dates) if _seen_dates else None
 _us_dates = sorted({str(d.date()) for t, s in all_data.items()
                     if not t.endswith(('.KS', '.KQ')) for d in s.index[-30:]})
+
+data_is_stale = False
+if _last_done and _us_dates and _us_dates[-1] <= _last_done:
+    data_is_stale = True
+    print("\n" + "❗" * 30)
+    print(f"⚠️ [경고] 야후 파이낸스 데이터 지연 감지!")
+    print(f" - 수집된 최신 거래일: {_us_dates[-1]}")
+    print(f" - 마지막 처리 거래일: {_last_done}")
+    print("API 업데이트 지연으로 인해 스크리닝 결과가 이전과 동일하게 산출됩니다.")
+    print("❗" * 30 + "\n")
+
 missing_trading_dates = []
 if _last_done and _us_dates:
     _latest = _us_dates[-1]
@@ -1173,7 +1184,7 @@ with open(sma20_laggards_log_js_path, 'w', encoding='utf-8') as f:
 print(f"✅ SMA20 Laggards 로그 데이터가 {sma20_laggards_log_js_path}에 저장되었습니다.")
 
 # --- 8. Telegram Notification ---
-def send_telegram_notification():
+def send_telegram_notification(is_stale):
     """골든크로스 종목 리스트를 텔레그램으로 전송합니다."""
     env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
     if not os.path.exists(env_path):
@@ -1251,6 +1262,10 @@ def send_telegram_notification():
     # 메시지 구성 (HTML 파싱 모드)
     msg_lines = [f"📊 <b>Jypark13 스크리너 알림</b>", f"📅 기준일: <code>{run_date_str}</code>", ""]
     
+    if is_stale:
+        msg_lines.append("⚠️ <b>[야후 파이낸스 데이터 지연 감지]</b>")
+        msg_lines.append("현재 API 문제로 전일 종가가 반영되지 않아 어제와 동일한 결과가 송출됩니다.\n")
+
     msg_lines.append(f"🚀 <b>최적 매수 타이밍</b> ({len(golden_stocks)}종목)")
     msg_lines.append("")
     
@@ -1316,4 +1331,4 @@ def send_telegram_notification():
     except Exception as e:
         print(f"\n❌ 텔레그램 전송 에러: {e}")
 
-send_telegram_notification()
+send_telegram_notification(data_is_stale)
