@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-09-25": [
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -13.66,
-      "rsi14": 29.57
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -13.23,
-      "rsi14": 21.99
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -11.67,
-      "rsi14": 33.72
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -10.91,
-      "rsi14": 27.46
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -10.71,
-      "rsi14": 31.74
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": -9.39,
-      "rsi14": 24.83
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -9.33,
-      "rsi14": 36.63
-    },
-    {
-      "ticker": "ALL",
-      "name": "The Allstate Corporation",
-      "sector": "Financials",
-      "dist_sma20": -8.89,
-      "rsi14": 27.83
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma20": -8.34,
-      "rsi14": 31.52
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.03,
-      "rsi14": 29.47
-    }
-  ],
   "2026-09-29": [
     {
       "ticker": "INTU",
@@ -432,6 +360,78 @@ const SMA20_LAGGARDS_LOG = {
     }
   ],
   "2026-10-08": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -8.58,
+      "rsi14": 36.96
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -8.1,
+      "rsi14": 31.32
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -8.07,
+      "rsi14": 39.43
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -7.65,
+      "rsi14": 23.02
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -7.12,
+      "rsi14": 38.2
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": -7.07,
+      "rsi14": 24.12
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -7.03,
+      "rsi14": 30.35
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma20": -6.83,
+      "rsi14": 33.44
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -6.7,
+      "rsi14": 42.48
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -6.58,
+      "rsi14": 27.36
+    }
+  ],
+  "2026-10-09": [
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",

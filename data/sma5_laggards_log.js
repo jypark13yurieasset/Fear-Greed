@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-09-25": [
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.61,
-      "rsi14": 21.99
-    },
-    {
-      "ticker": "ORCL",
-      "name": "Oracle Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -4.65,
-      "rsi14": 40.6
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.99,
-      "rsi14": 29.57
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -3.87,
-      "rsi14": 33.72
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -3.35,
-      "rsi14": 61.19
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": -3.08,
-      "rsi14": 63.49
-    },
-    {
-      "ticker": "EQIX",
-      "name": "Equinix, Inc.",
-      "sector": "Real Estate",
-      "dist_sma5": -3.01,
-      "rsi14": 41.97
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -3.0,
-      "rsi14": 31.74
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": -2.9,
-      "rsi14": 44.29
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -2.82,
-      "rsi14": 44.69
-    }
-  ],
   "2026-09-29": [
     {
       "ticker": "ARM",
@@ -432,6 +360,78 @@ const SMA5_LAGGARDS_LOG = {
     }
   ],
   "2026-10-08": [
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -5.98,
+      "rsi14": 42.48
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.1,
+      "rsi14": 39.43
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -4.49,
+      "rsi14": 54.89
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.3,
+      "rsi14": 55.51
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -3.51,
+      "rsi14": 46.48
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.05,
+      "rsi14": 47.5
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -2.9,
+      "rsi14": 56.81
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma5": -2.87,
+      "rsi14": 24.12
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "dist_sma5": -2.72,
+      "rsi14": 43.55
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -2.67,
+      "rsi14": 52.67
+    }
+  ],
+  "2026-10-09": [
     {
       "ticker": "STX",
       "name": "Seagate Technology Holdings plc",
