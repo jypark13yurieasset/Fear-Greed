@@ -433,74 +433,74 @@ const SMA5_LAGGARDS_LOG = {
   ],
   "2026-10-09": [
     {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "sector": "Information Technology",
-      "dist_sma5": -5.98,
-      "rsi14": 42.48
+      "dist_sma5": -8.15,
+      "rsi14": 48.72
     },
     {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
       "sector": "Information Technology",
-      "dist_sma5": -5.1,
-      "rsi14": 39.43
+      "dist_sma5": -7.16,
+      "rsi14": 46.66
     },
     {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -7.07,
+      "rsi14": 46.17
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -4.49,
-      "rsi14": 54.89
+      "dist_sma5": -7.03,
+      "rsi14": 42.99
     },
     {
       "ticker": "TER",
       "name": "Teradyne, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -4.3,
-      "rsi14": 55.51
+      "dist_sma5": -6.6,
+      "rsi14": 51.4
     },
     {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -3.51,
-      "rsi14": 46.48
-    },
-    {
-      "ticker": "CAT",
-      "name": "Caterpillar Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -3.05,
-      "rsi14": 47.5
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
       "sector": "Information Technology",
-      "dist_sma5": -2.9,
-      "rsi14": 56.81
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma5": -2.87,
-      "rsi14": 24.12
-    },
-    {
-      "ticker": "DE",
-      "name": "Deere & Company",
-      "sector": "Industrials",
-      "dist_sma5": -2.72,
-      "rsi14": 43.55
+      "dist_sma5": -6.06,
+      "rsi14": 39.19
     },
     {
       "ticker": "INTC",
       "name": "Intel Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -2.67,
-      "rsi14": 52.67
+      "dist_sma5": -5.78,
+      "rsi14": 45.84
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -5.61,
+      "rsi14": 46.59
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -5.5,
+      "rsi14": 47.1
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.27,
+      "rsi14": 52.77
     }
   ]
 };

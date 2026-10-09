@@ -433,74 +433,74 @@ const SMA5_TOP10_LOG = {
   ],
   "2026-10-09": [
     {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "sector": "Utilities",
-      "dist_sma5": 10.87,
-      "rsi14": 75.56
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": 5.6,
+      "rsi14": 79.58
     },
     {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": 5.03,
+      "rsi14": 77.12
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
       "sector": "Information Technology",
-      "dist_sma5": 8.88,
-      "rsi14": 70.12
+      "dist_sma5": 4.98,
+      "rsi14": 63.12
     },
     {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "sector": "Utilities",
-      "dist_sma5": 8.23,
-      "rsi14": 66.54
-    },
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.31,
-      "rsi14": 82.97
-    },
-    {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.76,
-      "rsi14": 59.98
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.94,
-      "rsi14": 71.19
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma5": 4.53,
-      "rsi14": 71.49
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NetApp, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.39,
-      "rsi14": 77.88
-    },
-    {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
-      "sector": "Consumer Discretionary",
+      "ticker": "PM",
+      "name": "Philip Morris International Inc.",
+      "sector": "Consumer Staples",
       "dist_sma5": 4.36,
-      "rsi14": 56.28
+      "rsi14": 66.11
     },
     {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 3.81,
-      "rsi14": 64.65
+      "dist_sma5": 4.3,
+      "rsi14": 51.61
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 3.87,
+      "rsi14": 47.2
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma5": 3.73,
+      "rsi14": 74.73
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 3.65,
+      "rsi14": 62.22
+    },
+    {
+      "ticker": "MO",
+      "name": "Altria Group, Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": 3.63,
+      "rsi14": 64.41
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma5": 3.46,
+      "rsi14": 59.98
     }
   ]
 };

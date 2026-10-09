@@ -436,71 +436,71 @@
       "ticker": "P",
       "name": "Everpure, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 28.33,
-      "rsi14": 82.97
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 22.67,
-      "rsi14": 70.12
+      "dist_sma20": 23.64,
+      "rsi14": 79.62
     },
     {
       "ticker": "SNPS",
       "name": "Synopsys, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 18.17,
-      "rsi14": 74.97
+      "dist_sma20": 15.65,
+      "rsi14": 72.32
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": 15.59,
+      "rsi14": 62.73
     },
     {
       "ticker": "SHOP",
       "name": "Shopify Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 16.38,
-      "rsi14": 71.19
+      "dist_sma20": 13.84,
+      "rsi14": 69.04
     },
     {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "sector": "Utilities",
-      "dist_sma20": 16.3,
-      "rsi14": 75.56
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NetApp, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.4,
-      "rsi14": 77.88
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 12.74,
+      "rsi14": 79.58
     },
     {
       "ticker": "HPE",
       "name": "Hewlett Packard Enterprise Company",
       "sector": "Information Technology",
-      "dist_sma20": 15.21,
-      "rsi14": 71.49
+      "dist_sma20": 12.05,
+      "rsi14": 68.37
     },
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 15.01,
-      "rsi14": 66.64
+      "dist_sma20": 11.79,
+      "rsi14": 71.8
     },
     {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.01,
-      "rsi14": 64.65
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 10.92,
+      "rsi14": 77.12
     },
     {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
+      "ticker": "ACN",
+      "name": "Accenture plc",
       "sector": "Information Technology",
-      "dist_sma20": 13.45,
-      "rsi14": 70.51
+      "dist_sma20": 10.24,
+      "rsi14": 63.12
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.06,
+      "rsi14": 63.86
     }
   ]
 }

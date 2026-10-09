@@ -31476,16 +31476,16 @@
         "sp500_change": -0.47,
         "nasdaq_price": 27193.34,
         "nasdaq_change": -1.25,
-        "vix_price": 15.41,
-        "vix_change": 2.19,
-        "dxy_price": 102.07,
-        "dxy_change": -0.17,
+        "vix_price": 15.28,
+        "vix_change": 1.33,
+        "dxy_price": 102.03,
+        "dxy_change": -0.11,
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$28.990 T"
+                "mcap": "$29.330 T"
             },
             {
                 "rank": 2,
@@ -31515,7 +31515,7 @@
                 "rank": 6,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.367 T"
+                "mcap": "$3.418 T"
             },
             {
                 "rank": 7,
@@ -31551,13 +31551,13 @@
                 "rank": 12,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.659 T"
+                "mcap": "$1.658 T"
             },
             {
                 "rank": 13,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.642 T"
+                "mcap": "$1.657 T"
             },
             {
                 "rank": 14,
@@ -31569,7 +31569,7 @@
                 "rank": 15,
                 "name": "Samsung",
                 "code": "005930.KS",
-                "mcap": "$1.281 T"
+                "mcap": "$1.284 T"
             },
             {
                 "rank": 16,
@@ -31879,6 +31879,6 @@
                 "weight": 3.46
             }
         ],
-        "updated_at": "10-09 10:08 KST"
+        "updated_at": "10-09 16:46 KST"
     }
 }

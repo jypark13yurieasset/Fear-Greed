@@ -433,74 +433,74 @@ const SMA20_LAGGARDS_LOG = {
   ],
   "2026-10-09": [
     {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -8.58,
-      "rsi14": 36.96
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.1,
-      "rsi14": 31.32
-    },
-    {
       "ticker": "WDC",
       "name": "Western Digital Corporation",
       "sector": "Information Technology",
-      "dist_sma20": -8.07,
-      "rsi14": 39.43
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -7.65,
-      "rsi14": 23.02
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -7.12,
-      "rsi14": 38.2
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": -7.07,
-      "rsi14": 24.12
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -7.03,
-      "rsi14": 30.35
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB N.V.",
-      "sector": "Energy",
-      "dist_sma20": -6.83,
-      "rsi14": 33.44
+      "dist_sma20": -10.12,
+      "rsi14": 37.17
     },
     {
       "ticker": "STX",
       "name": "Seagate Technology Holdings plc",
       "sector": "Information Technology",
-      "dist_sma20": -6.7,
-      "rsi14": 42.48
+      "dist_sma20": -10.03,
+      "rsi14": 39.19
     },
     {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -8.45,
+      "rsi14": 36.54
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "sector": "Financials",
+      "dist_sma20": -7.8,
+      "rsi14": 42.89
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
       "sector": "Industrials",
-      "dist_sma20": -6.58,
-      "rsi14": 27.36
+      "dist_sma20": -7.19,
+      "rsi14": 23.36
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma20": -6.69,
+      "rsi14": 42.84
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -6.63,
+      "rsi14": 38.31
+    },
+    {
+      "ticker": "KKR",
+      "name": "KKR & Co. Inc.",
+      "sector": "Financials",
+      "dist_sma20": -5.98,
+      "rsi14": 29.84
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -5.85,
+      "rsi14": 45.84
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -5.63,
+      "rsi14": 28.01
     }
   ]
 };
