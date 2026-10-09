@@ -715,6 +715,32 @@ def main():
     carry_over_if_needed(vix, "VIX", "vix_price", "vix_change")
     carry_over_if_needed(dxy, "DXY", "dxy_price", "dxy_change")
     
+    # BTC Drawdown from ATH
+    def get_btc_drawdown():
+        import pandas as pd
+        try:
+            df = yf.download('BTC-USD', period='max', progress=False)
+            if not df.empty:
+                # If there's a MultiIndex (as in newer yfinance versions), select the column properly
+                if isinstance(df.columns, pd.MultiIndex):
+                    if 'BTC-USD' in df.columns.levels[1]:
+                        df = df.xs('BTC-USD', level=1, axis=1)
+                
+                if 'High' in df.columns and 'Close' in df.columns:
+                    ath = df['High'].max()
+                    current = df['Close'].iloc[-1]
+                    drawdown = (current - ath) / ath * 100
+                    print(f"[BTC] ATH: {ath:.2f}, Current: {current:.2f}, Drawdown: {drawdown:.2f}%")
+                    return {"price": round(float(current), 2), "ath": round(float(ath), 2), "drawdown": round(float(drawdown), 2)}
+        except Exception as e:
+            print(f"[BTC] Drawdown calculation error: {e}")
+        return None
+
+    btc_data = get_btc_drawdown()
+    if btc_data is None and prev_data and "btc_data" in prev_data:
+        btc_data = prev_data["btc_data"]
+        print("[BTC] 수집 실패 -> 이전 영업일 데이터 적용")
+    
     print("\n=== 글로벌 자산 시가총액 TOP 20 수집 시작 ===")
     assets_top20 = get_assets_by_market_cap()
     if assets_top20 is None:
@@ -753,6 +779,9 @@ def main():
         "dxy_price": dxy["price"],
         "dxy_change": dxy["change"]
     }
+    
+    if btc_data:
+        today_entry["btc_data"] = btc_data
     
     # TOP 20 자산 데이터 추가
     if assets_top20:

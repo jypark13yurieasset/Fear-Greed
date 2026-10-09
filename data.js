@@ -31476,16 +31476,21 @@ window.fng_data = {
         "sp500_change": -0.47,
         "nasdaq_price": 27193.34,
         "nasdaq_change": -1.25,
-        "vix_price": 15.28,
-        "vix_change": 1.33,
-        "dxy_price": 102.03,
-        "dxy_change": -0.11,
+        "vix_price": 15.26,
+        "vix_change": 1.19,
+        "dxy_price": 102.02,
+        "dxy_change": -0.12,
+        "btc_data": {
+            "price": 82538.65,
+            "ath": 126198.07,
+            "drawdown": -34.6
+        },
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$29.330 T"
+                "mcap": "$29.361 T"
             },
             {
                 "rank": 2,
@@ -31515,7 +31520,7 @@ window.fng_data = {
                 "rank": 6,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$3.418 T"
+                "mcap": "$3.419 T"
             },
             {
                 "rank": 7,
@@ -31557,7 +31562,7 @@ window.fng_data = {
                 "rank": 13,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.657 T"
+                "mcap": "$1.658 T"
             },
             {
                 "rank": 14,
@@ -31602,10 +31607,10 @@ window.fng_data = {
                 "mcap": "$1.013 T"
             }
         ],
-        "aaii_bullish": 40.3,
-        "aaii_neutral": 20.8,
-        "aaii_bearish": 39.0,
-        "aaii_date": "2026-10-07",
+        "aaii_bullish": 34.6,
+        "aaii_neutral": 18.9,
+        "aaii_bearish": 46.5,
+        "aaii_date": "2026-09-30",
         "us_etfs": {
             "ARKK": {
                 "date": "2026-10-08",
@@ -31879,6 +31884,6 @@ window.fng_data = {
                 "weight": 3.46
             }
         ],
-        "updated_at": "10-09 16:46 KST"
+        "updated_at": "10-09 17:28 KST"
     }
 };

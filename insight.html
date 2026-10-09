@@ -625,6 +625,34 @@
                 </div>
             </div>
 
+            <!-- BTC/USD 차트 -->
+            <div class="insight-card">
+                <h2 class="card-title">📈 Digital Gold Proxy (Bitcoin, BTC/USD) <span id="btc-drawdown" style="font-size: 0.85em; color: #fca5a5; margin-left: 8px; font-weight: normal;"></span></h2>
+                <div class="tradingview-widget-container" style="aspect-ratio: 5/3; width: 100%;">
+                    <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "width": "100%",
+                                "height": "100%",
+                                "symbol": "CRYPTO:BTCUSD",
+                                "interval": "D",
+                                "range": "12M",
+                                "timezone": "America/New_York",
+                                "theme": "dark",
+                                "style": "2",
+                                "locale": "kr",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": false,
+                                "hide_legend": false,
+                                "save_image": false,
+                                "hide_volume": true,
+                                "isTransparent": true
+                            }
+                        </script>
+                </div>
+            </div>
+
             <!-- SPYG vs SPYV 상대 주가 비율 차트 -->
             <div class="insight-card">
                 <h2 class="card-title">📈 Growth vs Value (SPYG / SPYV)</h2>
@@ -801,51 +829,7 @@
                 </div>
             </div>
 
-            <!-- AAOI, RKLB, ORCL, SPGI 비교 차트 -->
-            <div class="insight-card">
-                <h2 class="card-title">📈 AAOI vs RKLB vs ORCL vs SPGI</h2>
-                <div class="tradingview-widget-container" style="aspect-ratio: 5/3; width: 100%;">
-                    <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                    <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                            {
-                                "width": "100%",
-                                "height": "100%",
-                                "symbol": "NASDAQ:AAOI",
-                                "interval": "D",
-                                "range": "12M",
-                                "timezone": "America/New_York",
-                                "theme": "dark",
-                                "style": "2",
-                                "locale": "kr",
-                                "enable_publishing": false,
-                                "hide_top_toolbar": false,
-                                "hide_legend": false,
-                                "save_image": false,
-                                "hide_volume": true,
-                                "isTransparent": true,
-                                "lineColor": "#2962FF",
-                                "compareSymbols": [
-                                    {
-                                        "symbol": "NASDAQ:RKLB",
-                                        "position": "SameScale",
-                                        "lineColor": "#FF6D00"
-                                    },
-                                    {
-                                        "symbol": "NYSE:ORCL",
-                                        "position": "SameScale",
-                                        "lineColor": "#00C853"
-                                    },
-                                    {
-                                        "symbol": "NYSE:SPGI",
-                                        "position": "SameScale",
-                                        "lineColor": "#D50000"
-                                    }
-                                ]
-                            }
-                        </script>
-                </div>
-            </div>
+
 
 
             <!-- SOXX vs USD vs SOXL 5년 비교 차트 -->
@@ -1461,6 +1445,17 @@
                 const latestDate = dates[0];
                 const latestData = window.fng_data[latestDate];
                 document.getElementById('update-date').innerText = `기준일: ${latestDate} (US)${latestData.updated_at ? ' | 업데이트: ' + latestData.updated_at : ''}`;
+                
+                if (latestData.btc_data) {
+                    const btcEl = document.getElementById('btc-drawdown');
+                    if (btcEl) {
+                        const dd = latestData.btc_data.drawdown;
+                        // Determine color: slightly red if negative, green if positive (making new ATH)
+                        const color = dd < 0 ? '#fca5a5' : '#86efac';
+                        btcEl.style.color = color;
+                        btcEl.innerText = `(ATH 대비 ${dd > 0 ? '+' : ''}${dd}%)`;
+                    }
+                }
             }
         }
     </script>
