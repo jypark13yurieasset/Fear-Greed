@@ -2633,5 +2633,10 @@
     "sector": "Financials",
     "sub_industry": "Shell Companies",
     "name": "Vylor Inc."
+  },
+  "SKYD": {
+    "sector": "Communication Services",
+    "sub_industry": "Entertainment",
+    "name": "Skydance Corporation"
   }
 }

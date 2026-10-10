@@ -454,6 +454,13 @@ const SMA20_LAGGARDS_LOG = {
       "rsi14": 36.54
     },
     {
+      "ticker": "SKYD",
+      "name": "Skydance Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": -8.42,
+      "rsi14": 40.63
+    },
+    {
       "ticker": "COIN",
       "name": "Coinbase Global, Inc.",
       "sector": "Financials",
@@ -494,13 +501,6 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma20": -5.85,
       "rsi14": 45.84
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -5.63,
-      "rsi14": 28.01
     }
   ]
 };

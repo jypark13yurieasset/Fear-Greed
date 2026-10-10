@@ -1217,7 +1217,7 @@
   "XYZ": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-07"
+    "last_seen": "2026-10-08"
   },
   "DVN": {
     "type": "golden",
@@ -2628,5 +2628,10 @@
     "type": null,
     "count": 0,
     "last_seen": "2026-10-08"
+  },
+  "SKYD": {
+    "type": null,
+    "count": 0,
+    "last_seen": "2026-10-09"
   }
 }
