@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-09-29": [
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.93,
-      "rsi14": 67.19
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.22,
-      "rsi14": 74.85
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.94,
-      "rsi14": 61.54
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.68,
-      "rsi14": 69.59
-    },
-    {
-      "ticker": "A",
-      "name": "Agilent Technologies, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.65,
-      "rsi14": 76.77
-    },
-    {
-      "ticker": "HLT",
-      "name": "Hilton Worldwide Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 2.52,
-      "rsi14": 58.22
-    },
-    {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb Company",
-      "sector": "Health Care",
-      "dist_sma5": 2.49,
-      "rsi14": 50.25
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.39,
-      "rsi14": 66.38
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 1.97,
-      "rsi14": 34.53
-    },
-    {
-      "ticker": "PGR",
-      "name": "The Progressive Corporation",
-      "sector": "Financials",
-      "dist_sma5": 1.96,
-      "rsi14": 44.56
-    }
-  ],
   "2026-09-30": [
     {
       "ticker": "RCL",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Energy",
       "dist_sma5": 3.46,
       "rsi14": 59.98
+    }
+  ],
+  "2026-10-13": [
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.03,
+      "rsi14": 76.88
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower Corporation",
+      "sector": "Real Estate",
+      "dist_sma5": 5.83,
+      "rsi14": 67.31
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.56,
+      "rsi14": 66.65
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 5.09,
+      "rsi14": 66.17
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.81,
+      "rsi14": 65.62
+    },
+    {
+      "ticker": "MDT",
+      "name": "Medtronic plc",
+      "sector": "Health Care",
+      "dist_sma5": 4.29,
+      "rsi14": 58.9
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.19,
+      "rsi14": 76.2
+    },
+    {
+      "ticker": "KDP",
+      "name": "Keurig Dr Pepper Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": 4.01,
+      "rsi14": 60.43
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 3.57,
+      "rsi14": 67.38
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.53,
+      "rsi14": 56.89
     }
   ]
 };

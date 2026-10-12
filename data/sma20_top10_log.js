@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-09-29": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 24.34,
-      "rsi14": 74.85
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.05,
-      "rsi14": 67.19
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.69,
-      "rsi14": 59.92
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.57,
-      "rsi14": 65.62
-    },
-    {
-      "ticker": "A",
-      "name": "Agilent Technologies, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 12.45,
-      "rsi14": 76.77
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.59,
-      "rsi14": 64.76
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": 10.21,
-      "rsi14": 62.33
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 9.75,
-      "rsi14": 58.83
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 9.6,
-      "rsi14": 58.52
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 9.31,
-      "rsi14": 61.54
-    }
-  ],
   "2026-09-30": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Health Care",
       "dist_sma20": 10.06,
       "rsi14": 63.86
+    }
+  ],
+  "2026-10-13": [
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 21.65,
+      "rsi14": 81.47
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 20.34,
+      "rsi14": 76.88
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 14.67,
+      "rsi14": 65.62
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.67,
+      "rsi14": 70.69
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.29,
+      "rsi14": 75.42
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 12.35,
+      "rsi14": 66.17
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.71,
+      "rsi14": 76.2
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.6,
+      "rsi14": 66.65
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 10.01,
+      "rsi14": 74.45
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 9.63,
+      "rsi14": 67.88
     }
   ]
 };

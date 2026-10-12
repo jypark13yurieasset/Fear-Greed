@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-09-29": [
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -9.52,
-      "rsi14": 51.95
-    },
-    {
-      "ticker": "ORCL",
-      "name": "Oracle Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -5.69,
-      "rsi14": 37.27
-    },
-    {
-      "ticker": "BA",
-      "name": "The Boeing Company",
-      "sector": "Industrials",
-      "dist_sma5": -5.63,
-      "rsi14": 27.45
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -5.34,
-      "rsi14": 58.52
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -5.19,
-      "rsi14": 29.85
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -4.82,
-      "rsi14": 39.97
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": -4.81,
-      "rsi14": 40.98
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.75,
-      "rsi14": 20.3
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -4.59,
-      "rsi14": 37.69
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.57,
-      "rsi14": 45.71
-    }
-  ],
   "2026-09-30": [
     {
       "ticker": "QCOM",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma5": -5.27,
       "rsi14": 52.77
+    }
+  ],
+  "2026-10-13": [
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.23,
+      "rsi14": 46.42
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.62,
+      "rsi14": 45.0
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": -8.43,
+      "rsi14": 40.62
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -7.7,
+      "rsi14": 42.79
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.69,
+      "rsi14": 50.89
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -7.41,
+      "rsi14": 38.56
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -6.71,
+      "rsi14": 54.28
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -6.67,
+      "rsi14": 43.96
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -6.51,
+      "rsi14": 47.84
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.94,
+      "rsi14": 40.26
     }
   ]
 };
