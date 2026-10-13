@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-09-30": [
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 7.25,
-      "rsi14": 50.18
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.25,
-      "rsi14": 63.01
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 5.17,
-      "rsi14": 60.27
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.17,
-      "rsi14": 76.42
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML Holding N.V.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.03,
-      "rsi14": 63.15
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 3.59,
-      "rsi14": 60.97
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.51,
-      "rsi14": 57.34
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 3.27,
-      "rsi14": 59.54
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.67,
-      "rsi14": 58.42
-    },
-    {
-      "ticker": "HLT",
-      "name": "Hilton Worldwide Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 2.55,
-      "rsi14": 61.17
-    }
-  ],
   "2026-10-01": [
     {
       "ticker": "RCL",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Health Care",
       "dist_sma5": 3.53,
       "rsi14": 56.89
+    }
+  ],
+  "2026-10-14": [
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma5": 4.13,
+      "rsi14": 69.59
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma5": 4.13,
+      "rsi14": 77.21
+    },
+    {
+      "ticker": "MDT",
+      "name": "Medtronic plc",
+      "sector": "Health Care",
+      "dist_sma5": 4.11,
+      "rsi14": 61.55
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": 4.02,
+      "rsi14": 75.77
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 3.99,
+      "rsi14": 66.01
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.86,
+      "rsi14": 60.62
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": 3.85,
+      "rsi14": 78.48
+    },
+    {
+      "ticker": "VYLR",
+      "name": "Vylor Inc.",
+      "sector": "Financials",
+      "dist_sma5": 3.48,
+      "rsi14": null
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 3.41,
+      "rsi14": 70.27
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "sector": "Financials",
+      "dist_sma5": 3.25,
+      "rsi14": 73.97
     }
   ]
 };

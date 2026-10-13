@@ -1,76 +1,4 @@
 {
-  "2026-09-30": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 25.74,
-      "rsi14": 76.42
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.68,
-      "rsi14": 61.34
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.22,
-      "rsi14": 67.08
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.35,
-      "rsi14": 63.01
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.32,
-      "rsi14": 66.01
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.09,
-      "rsi14": 65.52
-    },
-    {
-      "ticker": "A",
-      "name": "Agilent Technologies, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 11.56,
-      "rsi14": 76.37
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.98,
-      "rsi14": 61.56
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 10.6,
-      "rsi14": 60.27
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 9.43,
-      "rsi14": 59.28
-    }
-  ],
   "2026-10-01": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma20": 9.63,
       "rsi14": 67.88
+    }
+  ],
+  "2026-10-14": [
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 20.13,
+      "rsi14": 82.12
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 16.7,
+      "rsi14": 73.09
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 13.8,
+      "rsi14": 66.34
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 13.47,
+      "rsi14": 78.48
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 11.91,
+      "rsi14": 75.77
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 11.91,
+      "rsi14": 75.19
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 11.08,
+      "rsi14": 65.0
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "sector": "Utilities",
+      "dist_sma20": 10.93,
+      "rsi14": 63.5
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.28,
+      "rsi14": 66.57
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma20": 9.77,
+      "rsi14": 77.21
     }
   ]
 }
