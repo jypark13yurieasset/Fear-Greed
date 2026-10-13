@@ -363,6 +363,86 @@
             border-color: rgba(6, 182, 212, 0.2);
         }
 
+        /* ===== F&G 구간 전환 강조 ===== */
+        .zone-shift {
+            display: none;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+            padding: 6px 10px;
+            border-radius: 10px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            width: fit-content;
+            border: 1px solid var(--shift-color);
+            background: color-mix(in srgb, var(--shift-color) 16%, transparent);
+            color: #fff;
+            animation: zonePulse 1.8s ease-in-out infinite;
+        }
+
+        .zone-shift.show { display: inline-flex; }
+        .zone-shift .zs-from { opacity: 0.6; font-weight: 500; }
+        .zone-shift .zs-arrow { color: var(--shift-color); font-size: 0.9rem; }
+        .zone-shift .zs-to { color: var(--shift-color); }
+
+        #fng-card.zone-changed {
+            border-color: var(--shift-color);
+            box-shadow: 0 0 0 1px var(--shift-color), 0 0 28px -4px var(--shift-color);
+        }
+
+        #fng-card.zone-changed::before {
+            content: 'ZONE CHANGE';
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 3px 10px;
+            font-size: 0.62rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: #0f1017;
+            background: var(--shift-color);
+            border-bottom-left-radius: 10px;
+        }
+
+        @keyframes zonePulse {
+            0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--shift-color) 50%, transparent); }
+            50% { box-shadow: 0 0 0 6px transparent; }
+        }
+
+        .zone-chip {
+            display: inline-block;
+            margin-left: 6px;
+            padding: 1px 6px;
+            border-radius: 6px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            vertical-align: middle;
+            border: 1px solid currentColor;
+        }
+
+        tr.zone-row td { background: rgba(255, 255, 255, 0.035); }
+
+        /* ===== AAII Bull–Bear Spread ===== */
+        .aaii-spread {
+            margin-left: 6px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.85em;
+        }
+
+        .spread-arrow {
+            display: inline-block;
+            margin-left: 5px;
+            padding: 0 5px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            font-weight: 800;
+            cursor: help;
+        }
+
+        .spread-arrow.up { color: #34d399; background: rgba(16, 185, 129, 0.18); }
+        .spread-arrow.down { color: #f87171; background: rgba(239, 68, 68, 0.18); }
+
         .date {
             font-size: 0.8rem;
             color: var(--text-secondary);
@@ -797,6 +877,7 @@
                 <div class="metric-value-container">
                     <div class="metric-value" id="today-fng">-</div>
                     <div class="status-badge" id="fng-status">-</div>
+                    <div class="zone-shift" id="fng-zone-shift"></div>
                 </div>
             </div>
 
@@ -852,7 +933,7 @@
                 <!-- KoAct 삼성액티브 -->
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
-                        <div class="etf-card-title">삼성액티브</div>
+                        <div class="etf-card-title">KOACT 자산운용</div>
                         <div class="etf-card-sub">0015B0 &nbsp;|&nbsp; <span id="koact-update-date">기준일:
                                 2026.06.17</span></div>
                     </div>
@@ -926,7 +1007,7 @@
                 <!-- TIME 타임폴리오 -->
                 <div class="etf-holdings-card">
                     <div class="etf-card-header">
-                        <div class="etf-card-title">타임폴리오</div>
+                        <div class="etf-card-title">TIMEFOLIO 자산운용</div>
                         <div class="etf-card-sub">426030 &nbsp;|&nbsp; <span id="time-update-date">기준일:
                                 2026.06.17</span></div>
                     </div>
@@ -1040,6 +1121,15 @@
         const isLocalFile = window.location.protocol === 'file:';
         const fetchUrl = isLocalFile ? './data.json' : `./data.json?_=${Date.now()}`;
 
+        // F&G 5개 구간 정의 (카드·표 공통)
+        function getFngZone(v) {
+            if (v <= 25) return { idx: 0, label: '극도 공포', color: '#ef4444' };
+            if (v <= 45) return { idx: 1, label: '공포', color: '#f59e0b' };
+            if (v <= 55) return { idx: 2, label: '중립', color: '#eab308' };
+            if (v <= 75) return { idx: 3, label: '탐욕', color: '#10b981' };
+            return { idx: 4, label: '극도 탐욕', color: '#7c8cf5' };
+        }
+
         function renderDashboard(data) {
             const dates = Object.keys(data).sort().reverse();
             if (dates.length === 0) return;
@@ -1078,6 +1168,25 @@
 
             statusEl.innerText = statusText;
             statusEl.classList.add(badgeClass);
+
+            // 전일 대비 구간 전환 강조
+            const fngCard = document.getElementById('fng-card');
+            const shiftEl = document.getElementById('fng-zone-shift');
+            fngCard.classList.remove('zone-changed');
+            shiftEl.classList.remove('show');
+            const prevDate = dates[1];
+            const prevValue = prevDate ? data[prevDate].fear_and_greed : undefined;
+            if (prevValue !== undefined && prevValue !== null) {
+                const cur = getFngZone(latestValue);
+                const prev = getFngZone(prevValue);
+                if (cur.idx !== prev.idx) {
+                    const up = cur.idx > prev.idx;
+                    fngCard.style.setProperty('--shift-color', cur.color);
+                    fngCard.classList.add('zone-changed');
+                    shiftEl.innerHTML = `<span class="zs-from">${prev.label} ${prevValue}</span><span class="zs-arrow">${up ? '▲' : '▼'}</span><span class="zs-to">${cur.label} 진입</span>`;
+                    shiftEl.classList.add('show');
+                }
+            }
 
             // 2. 오늘의 시장 지수 및 환율 카드 반영
             updateMetricCard('sp500', latestData.sp500_price, latestData.sp500_change);
@@ -1167,16 +1276,25 @@
             // 3. 밑에 표(Table) 형태로 누적 데이터 쌓기
             const tbody = document.getElementById('history-data');
             tbody.innerHTML = '';
-            dates.forEach(date => {
+            dates.forEach((date, i) => {
                 const dayData = data[date];
                 const fng = dayData.fear_and_greed;
 
-                let fngColor = '';
-                if (fng <= 25) fngColor = 'var(--color-extreme-fear)';
-                else if (fng <= 45) fngColor = 'var(--color-fear)';
-                else if (fng <= 55) fngColor = 'var(--color-neutral)';
-                else if (fng <= 75) fngColor = 'var(--color-greed)';
-                else fngColor = 'var(--color-extreme-greed)';
+                const zone = getFngZone(fng);
+                const fngColor = zone.color;
+
+                // 전일 대비 구간이 바뀐 날은 칩으로 표시
+                let zoneChip = '';
+                let rowClass = '';
+                const prevD = dates[i + 1];
+                if (prevD && data[prevD].fear_and_greed !== undefined) {
+                    const pz = getFngZone(data[prevD].fear_and_greed);
+                    if (pz.idx !== zone.idx) {
+                        const up = zone.idx > pz.idx;
+                        zoneChip = `<span class="zone-chip" style="color:${zone.color}">${up ? '▲' : '▼'} ${zone.label}</span>`;
+                        rowClass = 'zone-row';
+                    }
+                }
 
                 // 추가 지표들 포맷팅 (없는 경우 - 처리)
                 const sp500_val = formatTableChange(dayData.sp500_change);
@@ -1189,16 +1307,43 @@
                 if (dayData.aaii_bullish !== undefined) {
                     const b = dayData.aaii_bullish;
                     const br = dayData.aaii_bearish;
-                    aaii_cell = `<span class="aaii-table-mini"><span class="t-bull">${b}%</span> / <span class="t-bear">${br}%</span></span>`;
+                    // Bull–Bear Spread: 새 주간 설문이 처음 반영된 날에만 표시
+                    let spreadHtml = '';
+                    const surveyKey = d => (data[d].aaii_date || `${data[d].aaii_bullish}/${data[d].aaii_bearish}`);
+                    const prevDay = dates[i + 1];
+                    const isFirstDay = !prevDay || data[prevDay].aaii_bullish === undefined || surveyKey(prevDay) !== surveyKey(date);
+                    if (isFirstDay) {
+                        const spread = b - br;
+                        const sTxt = `${spread >= 0 ? '+' : ''}${spread.toFixed(1)}pp`;
+                        // 직전 설문(다른 주차) 찾기
+                        let prevSpread;
+                        for (let j = i + 1; j < dates.length; j++) {
+                            const pd = data[dates[j]];
+                            if (pd.aaii_bullish !== undefined && surveyKey(dates[j]) !== surveyKey(date)) {
+                                prevSpread = pd.aaii_bullish - pd.aaii_bearish;
+                                break;
+                            }
+                        }
+                        let arrow = '';
+                        if (prevSpread !== undefined) {
+                            const diff = spread - prevSpread;
+                            if (Math.abs(diff) >= 0.05) {
+                                const up = diff > 0;
+                                arrow = `<span class="spread-arrow ${up ? 'up' : 'down'}" title="직전 ${prevSpread >= 0 ? '+' : ''}${prevSpread.toFixed(1)}pp 대비 ${diff >= 0 ? '+' : ''}${diff.toFixed(1)}pp">${up ? '▲' : '▼'}</span>`;
+                            }
+                        }
+                        spreadHtml = ` <span class="aaii-spread">(${sTxt})</span>${arrow}`;
+                    }
+                    aaii_cell = `<span class="aaii-table-mini"><span class="t-bull">${b}%</span> / <span class="t-bear">${br}%</span>${spreadHtml}</span>`;
                 }
 
-                const row = `<tr>
+                const row = `<tr class="${rowClass}">
                     <td><strong>${date}</strong></td>
                     <td>${sp500_val}</td>
                     <td>${nasdaq_val}</td>
                     <td>${vix_val}</td>
                     <td>${dxy_val}</td>
-                    <td><span style="color: ${fngColor}; font-weight: 700;">${fng}</span></td>
+                    <td><span style="color: ${fngColor}; font-weight: 700;">${fng}</span>${zoneChip}</td>
                     <td>${aaii_cell}</td>
                 </tr>`;
                 tbody.innerHTML += row;

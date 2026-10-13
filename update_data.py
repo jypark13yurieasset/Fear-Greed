@@ -794,6 +794,8 @@ def main():
         today_entry["aaii_bearish"] = aaii_data["bearish"]
         today_entry["aaii_date"] = aaii_data["date"]
         
+
+
     # US ETF Holdings (ARKK, IVES, GRNY)
     print("\n=== US Theme ETF Holdings 수집 시작 ===")
     us_etfs_data = {}
@@ -827,6 +829,8 @@ def main():
     except Exception as e:
         backfilled_dates = []
         print(f"⚠️ 누락 거래일 보충 중 오류 (최신일 저장은 정상 진행): {e}")
+
+
     
     # 날짜순 정렬
     dashboard_data = {k: dashboard_data[k] for k in sorted(dashboard_data.keys())}
