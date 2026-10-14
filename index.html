@@ -711,6 +711,40 @@
             width: 80px;
         }
 
+        .etf-table th.type-col,
+        .etf-table td.type-col {
+            text-align: center;
+            width: 62px;
+        }
+
+        .type-badge {
+            display: inline-block;
+            min-width: 34px;
+            padding: 1px 7px;
+            border-radius: 6px;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            border: 1px solid transparent;
+        }
+
+        .type-badge.hw {
+            color: #67e8f9;
+            background: rgba(6, 182, 212, 0.14);
+            border-color: rgba(6, 182, 212, 0.35);
+        }
+
+        .type-badge.sw {
+            color: #fb923c;
+            background: rgba(249, 115, 22, 0.14);
+            border-color: rgba(249, 115, 22, 0.35);
+        }
+
+        .type-badge.etc {
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
         .etf-source-link {
             padding: 10px 16px 14px;
             text-align: right;
@@ -748,6 +782,33 @@
         .common-holding td.rank,
         .close-gap-highlight td.rank {
             color: rgba(56, 189, 248, 0.5) !important;
+        }
+
+        /* Top 20 관심 자산 강조 (삼성전자 / SK하이닉스 / 마이크론) - 앰버 글로우 */
+        tr.focus-asset,
+        tr.focus-asset.close-gap-highlight {
+            background: linear-gradient(90deg, rgba(245, 158, 11, 0.16), rgba(245, 158, 11, 0.05)) !important;
+        }
+
+        tr.focus-asset td,
+        tr.focus-asset.close-gap-highlight td {
+            color: #fcd34d !important;
+            font-weight: 700;
+            box-shadow: inset 0 1px 0 rgba(245, 158, 11, 0.85), inset 0 -1px 0 rgba(245, 158, 11, 0.85);
+            text-shadow: 0 0 12px rgba(245, 158, 11, 0.45);
+        }
+
+        tr.focus-asset td:first-child {
+            box-shadow: inset 3px 0 0 #f59e0b, inset 0 1px 0 rgba(245, 158, 11, 0.85), inset 0 -1px 0 rgba(245, 158, 11, 0.85);
+        }
+
+        tr.focus-asset td:last-child {
+            box-shadow: inset -1px 0 0 rgba(245, 158, 11, 0.85), inset 0 1px 0 rgba(245, 158, 11, 0.85), inset 0 -1px 0 rgba(245, 158, 11, 0.85);
+        }
+
+        tr.focus-asset td.rank,
+        tr.focus-asset.close-gap-highlight td.rank {
+            color: #f59e0b !important;
         }
 
         /* US Theme ETF Common holding highlight (Purple) */
@@ -942,6 +1003,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>종목명</th>
+                                <th class="type-col">구분</th>
                                 <th>비중(%)</th>
                             </tr>
                         </thead>
@@ -1016,6 +1078,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>종목명</th>
+                                <th class="type-col">구분</th>
                                 <th>비중(%)</th>
                             </tr>
                         </thead>
@@ -1253,13 +1316,19 @@
                         }
                     }
 
-                    const rowClass = shouldHighlight ? 'class="close-gap-highlight"' : '';
-
                     // 관심종목 별표 표시 (SpaceX, Tesla, Samsung, SK Hynix, Micron)
                     const watchlist = ['SPACEX', 'SPCX', 'TESLA', 'TSLA', 'SAMSUNG', 'SK HYNIX', 'HYNIX', 'MICRON', 'MU'];
                     const nameUpper = (asset.name || '').toUpperCase();
                     const codeUpper = (asset.code || '').toUpperCase();
                     const isWatchlist = watchlist.some(w => nameUpper.includes(w) || codeUpper.includes(w));
+
+                    // 삼성전자 / SK하이닉스 / 마이크론은 행 전체 강조
+                    const isFocus = nameUpper.includes('SAMSUNG') || nameUpper.includes('HYNIX') || nameUpper.includes('MICRON')
+                        || ['005930.KS', '000660.KS', 'MU'].includes(codeUpper);
+                    const rowClasses = [];
+                    if (shouldHighlight) rowClasses.push('close-gap-highlight');
+                    if (isFocus) rowClasses.push('focus-asset');
+                    const rowClass = rowClasses.length ? `class="${rowClasses.join(' ')}"` : '';
                     const starBadge = isWatchlist ? '<span style="color: #fbbf24; font-size: 0.75rem;">⭐⭐</span> ' : '';
 
                     const row = `<tr ${rowClass}>
@@ -1350,6 +1419,15 @@
             });
 
             // 5. Active ETF Holdings 반영
+            // H/W vs S/W 분류 (티커 기준, 미분류는 '-')
+            const HW_TICKERS = new Set(['AAOI', 'AAPL', 'AMAT', 'AMD', 'ARM', 'AVGO', 'BE', 'CRDO', 'DELL', 'INTC', 'LITE', 'LRCX', 'MRVL', 'MU', 'NVDA', 'SKHY', 'SNDK', 'STX', 'WDC', 'TSLA', 'SPCX']);
+            const SW_TICKERS = new Set(['AMZN', 'CRWV', 'GOOGL', 'MDB', 'MSFT', 'NBIS', 'PLTR', 'SNOW']);
+            const typeCell = (ticker) => {
+                const t = (ticker || '').toUpperCase();
+                if (HW_TICKERS.has(t)) return '<span class="type-badge hw">H/W</span>';
+                if (SW_TICKERS.has(t)) return '<span class="type-badge sw">S/W</span>';
+                return '<span class="type-badge etc">-</span>';
+            };
             const koactTbody = document.getElementById('koact-holdings-body');
             const koactDateEl = document.getElementById('koact-update-date');
 
@@ -1372,6 +1450,7 @@
                     const row = `<tr data-ticker="${item.ticker || ''}">
                         <td class="rank">${idx + 1}</td>
                         <td>${star}${item.ticker || item.name}</td>
+                        <td class="type-col">${typeCell(item.ticker)}</td>
                         <td class="weight">${item.weight.toFixed(2)}%</td>
                     </tr>`;
                     koactTbody.innerHTML += row;
@@ -1403,6 +1482,7 @@
                     const row = `<tr data-ticker="${item.ticker || ''}">
                         <td class="rank">${idx + 1}</td>
                         <td>${star}${item.ticker || item.name}</td>
+                        <td class="type-col">${typeCell(item.ticker)}</td>
                         <td class="weight">${item.weight.toFixed(2)}%</td>
                     </tr>`;
                     timeTbody.innerHTML += row;
