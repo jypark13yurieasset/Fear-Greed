@@ -1,341 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-08-06",
-    "ticker": "FRT",
-    "name": "Federal Realty Investment Trust",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 117.91000366210938
-  },
-  {
-    "date": "2026-08-06",
-    "ticker": "SWKS",
-    "name": "Skyworks Solutions, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 66.83999633789062
-  },
-  {
-    "date": "2026-08-06",
-    "ticker": "PODD",
-    "name": "Insulet Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 139.3000030517578
-  },
-  {
-    "date": "2026-08-06",
-    "ticker": "ARE",
-    "name": "Alexandria Real Estate Equities, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 48.47999954223633
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "DIS",
-    "name": "The Walt Disney Company",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 104.91000366210938
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "VRTX",
-    "name": "Vertex Pharmaceuticals Incorporated",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 496.07000732421875
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "CVS",
-    "name": "CVS Health Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 95.69999694824219
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "TT",
-    "name": "Trane Technologies plc",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 482.30999755859375
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "EQIX",
-    "name": "Equinix, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 1042.6199951171875
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "DDOG",
-    "name": "Datadog, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 233.92999267578125
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "CL",
-    "name": "Colgate-Palmolive Company",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 93.2699966430664
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "COHR",
-    "name": "Coherent Corp.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 379.1300048828125
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "EOG",
-    "name": "EOG Resources, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 134.74000549316406
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "LITE",
-    "name": "Lumentum Holdings Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 890.1699829101562
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "MPWR",
-    "name": "Monolithic Power Systems, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 1401.5400390625
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "O",
-    "name": "Realty Income Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 62.5099983215332
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "KEYS",
-    "name": "Keysight Technologies, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 340.9700012207031
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "F",
-    "name": "Ford Motor Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 13.979999542236328
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "FANG",
-    "name": "Diamondback Energy, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 188.0399932861328
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "EW",
-    "name": "Edwards Lifesciences Corporation",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 89.72000122070312
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "DVN",
-    "name": "Devon Energy Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 42.97999954223633
-  },
-  {
-    "date": "2026-08-07",
-    "ticker": "KDP",
-    "name": "Keurig Dr Pepper Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 30.010000228881836
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "LLY",
-    "name": "Eli Lilly and Company",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 1231.93994140625
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "C",
-    "name": "Citigroup Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 135.22000122070312
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "UBER",
-    "name": "Uber Technologies, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 78.02999877929688
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "VRTX",
-    "name": "Vertex Pharmaceuticals Incorporated",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 523.9099731445312
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "TT",
-    "name": "Trane Technologies plc",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 476.989990234375
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "ELV",
-    "name": "Elevance Health, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 397.70001220703125
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "FDX",
-    "name": "FedEx Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 325.0799865722656
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "SPG",
-    "name": "Simon Property Group, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 220.5500030517578
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "MPWR",
-    "name": "Monolithic Power Systems, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 1381.0999755859375
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "TDG",
-    "name": "TransDigm Group Incorporated",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 1223.47998046875
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "WBD",
-    "name": "Warner Bros. Discovery, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 26.8700008392334
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "COHR",
-    "name": "Coherent Corp.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 325.1499938964844
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "F",
-    "name": "Ford Motor Company",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 14.0
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "DVN",
-    "name": "Devon Energy Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 45.36000061035156
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "TTWO",
-    "name": "Take-Two Interactive Software, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 253.57000732421875
-  },
-  {
-    "date": "2026-08-10",
-    "ticker": "RKLB",
-    "name": "Rocket Lab Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 80.04000091552734
-  },
-  {
-    "date": "2026-08-11",
-    "ticker": "LLY",
-    "name": "Eli Lilly and Company",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 1215.02001953125
-  },
-  {
-    "date": "2026-08-11",
-    "ticker": "C",
-    "name": "Citigroup Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 135.77000427246094
-  },
-  {
-    "date": "2026-08-11",
-    "ticker": "ADI",
-    "name": "Analog Devices, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 385.29998779296875
-  },
-  {
-    "date": "2026-08-11",
-    "ticker": "WELL",
-    "name": "Welltower Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 226.00999450683594
-  },
-  {
     "date": "2026-08-11",
     "ticker": "UBER",
     "name": "Uber Technologies, Inc.",
@@ -7998,5 +7662,341 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 1,
     "entry_price": 1443000.0
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "MU",
+    "name": "Micron Technology, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 914.1300048828125
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "INTC",
+    "name": "Intel Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 98.12000274658203
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "KO",
+    "name": "The Coca-Cola Company",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 91.77999877929688
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "LRCX",
+    "name": "Lam Research Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 286.9200134277344
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 395.6199951171875
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "AMAT",
+    "name": "Applied Materials, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 446.6300048828125
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "KLAC",
+    "name": "KLA Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 178.80999755859375
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "UNP",
+    "name": "Union Pacific Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 286.42999267578125
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "ETN",
+    "name": "Eaton Corporation plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 408.8500061035156
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "MDT",
+    "name": "Medtronic plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 94.2300033569336
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "GLW",
+    "name": "Corning Incorporated",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 140.88999938964844
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "ADP",
+    "name": "Automatic Data Processing, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 280.32000732421875
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "FCX",
+    "name": "Freeport-McMoRan Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 69.62000274658203
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "ICE",
+    "name": "Intercontinental Exchange, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 155.11000061035156
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "MRSH",
+    "name": "Marsh & McLennan Companies, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 178.39999389648438
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "AMT",
+    "name": "American Tower Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 179.39999389648438
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "MDLZ",
+    "name": "Mondelez International, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 62.56999969482422
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "TRV",
+    "name": "The Travelers Companies, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 377.82000732421875
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "CL",
+    "name": "Colgate-Palmolive Company",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 92.77999877929688
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "NSC",
+    "name": "Norfolk Southern Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 323.7300109863281
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "BE",
+    "name": "Bloom Energy Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 239.33999633789062
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "RSG",
+    "name": "Republic Services, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 224.44000244140625
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "GWW",
+    "name": "W.W. Grainger, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 1330.6199951171875
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "AFL",
+    "name": "Aflac Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 118.20999908447266
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "NUE",
+    "name": "Nucor Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 257.1099853515625
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "OKE",
+    "name": "ONEOK, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 91.97000122070312
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "TER",
+    "name": "Teradyne, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 359.44000244140625
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "NXPI",
+    "name": "NXP Semiconductors N.V.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 220.8300018310547
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "FANG",
+    "name": "Diamondback Energy, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 197.50999450683594
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "FIX",
+    "name": "Comfort Systems USA, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1541.6800537109375
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "COHR",
+    "name": "Coherent Corp.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 263.32000732421875
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "DAL",
+    "name": "Delta Air Lines, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 76.6500015258789
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "ROK",
+    "name": "Rockwell Automation, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 423.4200134277344
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "KDP",
+    "name": "Keurig Dr Pepper Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 33.119998931884766
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "ASML",
+    "name": "ASML Holding N.V.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1650.0
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "ARM",
+    "name": "Arm Holdings plc",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 238.00999450683594
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "ALAB",
+    "name": "Astera Labs, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 300.2799987792969
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "NBIS",
+    "name": "Nebius Group N.V.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 186.00999450683594
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "CCEP",
+    "name": "Coca-Cola Europacific Partners PLC",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 107.22000122070312
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "MCHP",
+    "name": "Microchip Technology Incorporated",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 71.25
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "RKLB",
+    "name": "Rocket Lab Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 59.18000030517578
+  },
+  {
+    "date": "2026-10-14",
+    "ticker": "005930.KS",
+    "name": "Samsung Electronics Co., Ltd.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 232000.0
   }
 ];

@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-01": [
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 6.28,
-      "rsi14": 53.61
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.54,
-      "rsi14": 62.75
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 3.36,
-      "rsi14": 61.29
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 3.19,
-      "rsi14": 52.3
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.66,
-      "rsi14": 61.77
-    },
-    {
-      "ticker": "ABNB",
-      "name": "Airbnb, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 2.65,
-      "rsi14": 43.56
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.52,
-      "rsi14": 57.05
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.48,
-      "rsi14": 69.24
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.27,
-      "rsi14": 60.92
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 2.01,
-      "rsi14": 41.47
-    }
-  ],
   "2026-10-02": [
     {
       "ticker": "COHR",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Financials",
       "dist_sma5": 3.25,
       "rsi14": 73.97
+    }
+  ],
+  "2026-10-15": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.93,
+      "rsi14": 69.15
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "sector": "Health Care",
+      "dist_sma5": 3.99,
+      "rsi14": 62.18
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma5": 3.86,
+      "rsi14": 79.01
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": 3.66,
+      "rsi14": 79.96
+    },
+    {
+      "ticker": "MDT",
+      "name": "Medtronic plc",
+      "sector": "Health Care",
+      "dist_sma5": 3.46,
+      "rsi14": 64.36
+    },
+    {
+      "ticker": "CL",
+      "name": "Colgate-Palmolive Company",
+      "sector": "Consumer Staples",
+      "dist_sma5": 3.3,
+      "rsi14": 70.25
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma5": 3.28,
+      "rsi14": 71.25
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": 3.1,
+      "rsi14": 76.51
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": 3.08,
+      "rsi14": 69.06
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.05,
+      "rsi14": 69.68
     }
   ]
 };

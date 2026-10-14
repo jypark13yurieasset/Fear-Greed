@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-10-01": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 17.62,
-      "rsi14": 68.33
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.24,
-      "rsi14": 69.24
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.67,
-      "rsi14": 60.68
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.99,
-      "rsi14": 66.74
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.36,
-      "rsi14": 62.75
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.3,
-      "rsi14": 66.25
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 10.55,
-      "rsi14": 61.82
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.43,
-      "rsi14": 62.6
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.12,
-      "rsi14": 61.91
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 9.47,
-      "rsi14": 61.29
-    }
-  ],
   "2026-10-02": [
     {
       "ticker": "P",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Energy",
       "dist_sma20": 9.77,
       "rsi14": 77.21
+    }
+  ],
+  "2026-10-15": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 16.62,
+      "rsi14": 69.15
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 14.39,
+      "rsi14": 79.96
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.46,
+      "rsi14": 67.74
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma20": 11.95,
+      "rsi14": 76.51
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 11.08,
+      "rsi14": 65.7
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma20": 10.8,
+      "rsi14": 79.01
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma20": 9.09,
+      "rsi14": 71.25
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 8.3,
+      "rsi14": 71.38
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 8.13,
+      "rsi14": 62.0
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 7.96,
+      "rsi14": 69.68
     }
   ]
 };

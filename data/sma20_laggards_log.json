@@ -1,76 +1,4 @@
 {
-  "2026-10-01": [
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.59,
-      "rsi14": 19.65
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma20": -10.41,
-      "rsi14": 25.58
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -10.18,
-      "rsi14": 33.01
-    },
-    {
-      "ticker": "F",
-      "name": "Ford Motor Company",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -9.75,
-      "rsi14": 28.74
-    },
-    {
-      "ticker": "ALL",
-      "name": "The Allstate Corporation",
-      "sector": "Financials",
-      "dist_sma20": -9.35,
-      "rsi14": 24.42
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -9.33,
-      "rsi14": 33.07
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -9.24,
-      "rsi14": 31.33
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB N.V.",
-      "sector": "Energy",
-      "dist_sma20": -9.03,
-      "rsi14": 31.66
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -8.77,
-      "rsi14": 28.25
-    },
-    {
-      "ticker": "KKR",
-      "name": "KKR & Co. Inc.",
-      "sector": "Financials",
-      "dist_sma20": -8.62,
-      "rsi14": 31.0
-    }
-  ],
   "2026-10-02": [
     {
       "ticker": "APP",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma20": -8.15,
       "rsi14": 39.82
+    }
+  ],
+  "2026-10-15": [
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.13,
+      "rsi14": 29.18
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -18.44,
+      "rsi14": 35.3
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -17.96,
+      "rsi14": 35.87
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -16.76,
+      "rsi14": 34.35
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -16.2,
+      "rsi14": 33.62
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -15.11,
+      "rsi14": 32.13
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -15.08,
+      "rsi14": 33.22
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -14.06,
+      "rsi14": 37.89
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -13.86,
+      "rsi14": 39.3
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -13.36,
+      "rsi14": 40.56
     }
   ]
 }
