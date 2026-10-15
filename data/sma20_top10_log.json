@@ -1,76 +1,4 @@
 {
-  "2026-10-02": [
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 25.51,
-      "rsi14": 78.17
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 19.63,
-      "rsi14": 74.1
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 17.92,
-      "rsi14": 69.59
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.76,
-      "rsi14": 70.81
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.26,
-      "rsi14": 66.68
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.15,
-      "rsi14": 69.18
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma20": 14.83,
-      "rsi14": 69.51
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NetApp, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.35,
-      "rsi14": 75.93
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 13.77,
-      "rsi14": 67.63
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.56,
-      "rsi14": 70.59
-    }
-  ],
   "2026-10-06": [
     {
       "ticker": "P",
@@ -501,6 +429,78 @@
       "sector": "Health Care",
       "dist_sma20": 7.96,
       "rsi14": 69.68
+    }
+  ],
+  "2026-10-16": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 19.46,
+      "rsi14": 71.72
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 15.19,
+      "rsi14": 70.26
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 14.29,
+      "rsi14": 70.95
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.02,
+      "rsi14": 64.27
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 11.78,
+      "rsi14": 74.39
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 11.64,
+      "rsi14": 78.43
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.88,
+      "rsi14": 73.97
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.6,
+      "rsi14": 65.1
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 10.02,
+      "rsi14": 74.84
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 9.91,
+      "rsi14": 73.9
     }
   ]
 }

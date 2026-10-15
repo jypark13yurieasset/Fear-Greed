@@ -342,6 +342,13 @@ if missing_tickers:
                 time.sleep(1) # wait a bit before retry
                 df = yf.download(yf_ticker, period="2y", interval="1d", auto_adjust=False, progress=False)
                 if not df.empty:
+                    if isinstance(df.columns, pd.MultiIndex):
+                        if yf_ticker in df.columns.levels[1]:
+                            df = df.xs(yf_ticker, axis=1, level=1)
+                        elif yf_ticker in df.columns.levels[0]:
+                            df = df[yf_ticker]
+                        else:
+                            df.columns = df.columns.get_level_values(0)
                     series = df[['Close', 'Volume']].dropna()
                     if not series.empty:
                         if series.index.tz is not None:
