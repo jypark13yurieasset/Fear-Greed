@@ -433,74 +433,74 @@
   ],
   "2026-10-16": [
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -20.0,
-      "rsi14": 29.17
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": -18.33,
-      "rsi14": 31.61
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma20": -17.41,
-      "rsi14": 36.69
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -26.03,
+      "rsi14": 30.63
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -17.0,
-      "rsi14": 34.92
+      "dist_sma20": -26.0,
+      "rsi14": 29.46
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma20": -16.85,
-      "rsi14": 36.5
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -25.65,
+      "rsi14": 25.42
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -23.46,
+      "rsi14": 27.57
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.16,
+      "rsi14": 33.37
     },
     {
       "ticker": "SNDK",
       "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma20": -16.73,
-      "rsi14": 33.94
+      "dist_sma20": -21.27,
+      "rsi14": 29.69
     },
     {
       "ticker": "WDC",
       "name": "Western Digital Corporation",
       "sector": "Information Technology",
-      "dist_sma20": -16.24,
-      "rsi14": 30.8
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -15.97,
-      "rsi14": 35.57
+      "dist_sma20": -20.97,
+      "rsi14": 26.97
     },
     {
       "ticker": "ARM",
       "name": "Arm Holdings plc",
       "sector": "Information Technology",
-      "dist_sma20": -15.33,
-      "rsi14": 38.91
+      "dist_sma20": -20.55,
+      "rsi14": 34.49
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
+      "ticker": "INTC",
+      "name": "Intel Corporation",
       "sector": "Information Technology",
-      "dist_sma20": -14.42,
-      "rsi14": 36.27
+      "dist_sma20": -20.18,
+      "rsi14": 31.41
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -18.45,
+      "rsi14": 36.51
     }
   ]
 }

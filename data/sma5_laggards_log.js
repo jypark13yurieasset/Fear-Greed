@@ -433,74 +433,74 @@ const SMA5_LAGGARDS_LOG = {
   ],
   "2026-10-16": [
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -13.89,
+      "rsi14": 25.42
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -13.53,
+      "rsi14": 30.63
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -12.87,
-      "rsi14": 36.27
+      "dist_sma5": -13.52,
+      "rsi14": 29.46
     },
     {
       "ticker": "HPE",
       "name": "Hewlett Packard Enterprise Company",
       "sector": "Information Technology",
-      "dist_sma5": -12.32,
-      "rsi14": 41.7
+      "dist_sma5": -12.77,
+      "rsi14": 37.39
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -11.62,
-      "rsi14": 29.17
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -12.54,
+      "rsi14": 33.24
     },
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "sector": "Information Technology",
-      "dist_sma5": -10.79,
-      "rsi14": 36.69
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -10.41,
-      "rsi14": 40.52
+      "dist_sma5": -12.1,
+      "rsi14": 33.37
     },
     {
       "ticker": "CIEN",
       "name": "Ciena Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -9.57,
-      "rsi14": 43.81
+      "dist_sma5": -10.28,
+      "rsi14": 39.47
     },
     {
-      "ticker": "ANET",
-      "name": "Arista Networks, Inc.",
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -8.41,
-      "rsi14": 36.14
+      "dist_sma5": -9.9,
+      "rsi14": 37.37
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
       "sector": "Information Technology",
-      "dist_sma5": -8.33,
-      "rsi14": 32.93
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.21,
-      "rsi14": 36.74
+      "dist_sma5": -9.84,
+      "rsi14": 27.57
     },
     {
       "ticker": "BE",
       "name": "Bloom Energy Corporation",
       "sector": "Industrials",
-      "dist_sma5": -7.83,
-      "rsi14": 40.32
+      "dist_sma5": -9.5,
+      "rsi14": 36.51
     }
   ]
 };

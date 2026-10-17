@@ -433,74 +433,74 @@ const SMA5_TOP10_LOG = {
   ],
   "2026-10-16": [
     {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.45,
-      "rsi14": 64.27
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 5.79,
-      "rsi14": 71.72
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 5.4,
-      "rsi14": 78.43
-    },
-    {
       "ticker": "AJG",
       "name": "Arthur J. Gallagher & Co.",
       "sector": "Financials",
-      "dist_sma5": 5.38,
-      "rsi14": 62.29
+      "dist_sma5": 5.42,
+      "rsi14": 65.52
     },
     {
-      "ticker": "UNH",
-      "name": "UnitedHealth Group Incorporated",
-      "sector": "Health Care",
-      "dist_sma5": 4.93,
-      "rsi14": 68.0
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.87,
-      "rsi14": 65.37
-    },
-    {
-      "ticker": "WM",
-      "name": "Waste Management, Inc.",
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
       "sector": "Industrials",
-      "dist_sma5": 4.59,
-      "rsi14": 70.34
+      "dist_sma5": 5.25,
+      "rsi14": 64.71
     },
     {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "dist_sma5": 4.5,
-      "rsi14": 67.77
-    },
-    {
-      "ticker": "NKE",
-      "name": "NIKE, Inc.",
+      "ticker": "AZO",
+      "name": "AutoZone, Inc.",
       "sector": "Consumer Discretionary",
-      "dist_sma5": 4.43,
-      "rsi14": 58.08
+      "dist_sma5": 4.83,
+      "rsi14": 66.88
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 4.74,
+      "rsi14": 58.94
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 4.61,
+      "rsi14": 59.7
     },
     {
       "ticker": "ACN",
       "name": "Accenture plc",
       "sector": "Information Technology",
-      "dist_sma5": 4.38,
-      "rsi14": 70.26
+      "dist_sma5": 4.59,
+      "rsi14": 72.17
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.51,
+      "rsi14": 65.99
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma5": 4.17,
+      "rsi14": 53.5
+    },
+    {
+      "ticker": "CCEP",
+      "name": "Coca-Cola Europacific Partners PLC",
+      "sector": "Consumer Staples",
+      "dist_sma5": 4.1,
+      "rsi14": 73.46
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 4.09,
+      "rsi14": 72.84
     }
   ]
 };
