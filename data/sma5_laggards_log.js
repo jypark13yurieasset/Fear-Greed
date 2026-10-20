@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-10-06": [
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -6.16,
-      "rsi14": 34.48
-    },
-    {
-      "ticker": "BMY",
-      "name": "Bristol-Myers Squibb Company",
-      "sector": "Health Care",
-      "dist_sma5": -4.12,
-      "rsi14": 30.06
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck & Co., Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -3.4,
-      "rsi14": 37.66
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma5": -2.95,
-      "rsi14": 27.33
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "sector": "Health Care",
-      "dist_sma5": -2.71,
-      "rsi14": 29.23
-    },
-    {
-      "ticker": "NKE",
-      "name": "NIKE, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.54,
-      "rsi14": 29.13
-    },
-    {
-      "ticker": "PFE",
-      "name": "Pfizer Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -2.5,
-      "rsi14": 41.91
-    },
-    {
-      "ticker": "ROST",
-      "name": "Ross Stores, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.16,
-      "rsi14": 40.31
-    },
-    {
-      "ticker": "AMGN",
-      "name": "Amgen Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -2.12,
-      "rsi14": 47.65
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -1.97,
-      "rsi14": 32.87
-    }
-  ],
   "2026-10-08": [
     {
       "ticker": "STX",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Industrials",
       "dist_sma5": -9.5,
       "rsi14": 36.51
+    }
+  ],
+  "2026-10-20": [
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.99,
+      "rsi14": 29.3
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.57,
+      "rsi14": 33.21
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -8.56,
+      "rsi14": 26.62
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.47,
+      "rsi14": 34.26
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": -7.36,
+      "rsi14": 38.83
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -7.17,
+      "rsi14": 33.04
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.79,
+      "rsi14": 39.42
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -5.55,
+      "rsi14": 34.79
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -5.48,
+      "rsi14": 42.14
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.44,
+      "rsi14": 38.54
     }
   ]
 };

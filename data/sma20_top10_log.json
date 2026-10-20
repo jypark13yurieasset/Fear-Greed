@@ -1,76 +1,4 @@
 {
-  "2026-10-06": [
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 26.35,
-      "rsi14": 79.73
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 19.13,
-      "rsi14": 70.69
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 17.92,
-      "rsi14": 73.38
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.41,
-      "rsi14": 67.71
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.3,
-      "rsi14": 71.53
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.1,
-      "rsi14": 69.35
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.04,
-      "rsi14": 67.61
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.64,
-      "rsi14": 67.13
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 14.56,
-      "rsi14": 69.64
-    },
-    {
-      "ticker": "SPCX",
-      "name": "SpaceX",
-      "sector": "Industrials",
-      "dist_sma20": 13.09,
-      "rsi14": 68.76
-    }
-  ],
   "2026-10-08": [
     {
       "ticker": "P",
@@ -501,6 +429,78 @@
       "sector": "Consumer Staples",
       "dist_sma20": 8.86,
       "rsi14": 73.46
+    }
+  ],
+  "2026-10-20": [
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 18.34,
+      "rsi14": 74.82
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 11.29,
+      "rsi14": 64.26
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.64,
+      "rsi14": 61.11
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.16,
+      "rsi14": 73.75
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 9.78,
+      "rsi14": 76.53
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma20": 9.59,
+      "rsi14": 71.24
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma20": 9.43,
+      "rsi14": 71.53
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 8.41,
+      "rsi14": 70.26
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "dist_sma20": 8.25,
+      "rsi14": 63.24
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 8.14,
+      "rsi14": 71.43
     }
   ]
 }

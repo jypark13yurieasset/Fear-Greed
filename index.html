@@ -1421,7 +1421,7 @@
             // 5. Active ETF Holdings 반영
             // H/W vs S/W 분류 (티커 기준, 미분류는 '-')
             const HW_TICKERS = new Set(['AAOI', 'AAPL', 'AMAT', 'AMD', 'ARM', 'AVGO', 'BE', 'CRDO', 'DELL', 'INTC', 'LITE', 'LRCX', 'MRVL', 'MU', 'NVDA', 'SKHY', 'SNDK', 'STX', 'WDC', 'TSLA', 'SPCX']);
-            const SW_TICKERS = new Set(['AMZN', 'CRWV', 'GOOGL', 'MDB', 'MSFT', 'NBIS', 'PLTR', 'SNOW']);
+            const SW_TICKERS = new Set(['AMZN', 'CRWV', 'DT', 'FTNT', 'GOOGL', 'MDB', 'MSFT', 'NBIS', 'NTAP', 'OKTA', 'PLTR', 'SNOW']);
             const typeCell = (ticker) => {
                 const t = (ticker || '').toUpperCase();
                 if (HW_TICKERS.has(t)) return '<span class="type-badge hw">H/W</span>';

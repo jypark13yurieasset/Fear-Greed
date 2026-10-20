@@ -1,76 +1,4 @@
 {
-  "2026-10-06": [
-    {
-      "ticker": "SPCX",
-      "name": "SpaceX",
-      "sector": "Industrials",
-      "dist_sma5": 9.92,
-      "rsi14": 68.76
-    },
-    {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 6.98,
-      "rsi14": 55.11
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.26,
-      "rsi14": 59.53
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.95,
-      "rsi14": 69.35
-    },
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.95,
-      "rsi14": 79.73
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.73,
-      "rsi14": 67.61
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.63,
-      "rsi14": 67.13
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.32,
-      "rsi14": 73.38
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.17,
-      "rsi14": 67.71
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 5.04,
-      "rsi14": 72.52
-    }
-  ],
   "2026-10-08": [
     {
       "ticker": "VST",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma5": 4.09,
       "rsi14": 72.84
+    }
+  ],
+  "2026-10-20": [
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 5.77,
+      "rsi14": 74.82
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": 3.82,
+      "rsi14": 67.74
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 3.08,
+      "rsi14": 62.19
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "dist_sma5": 3.02,
+      "rsi14": 63.24
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 2.91,
+      "rsi14": 73.75
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": 2.74,
+      "rsi14": 58.81
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "dist_sma5": 2.74,
+      "rsi14": 61.14
+    },
+    {
+      "ticker": "AZO",
+      "name": "AutoZone, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 2.69,
+      "rsi14": 64.41
+    },
+    {
+      "ticker": "MRSH",
+      "name": "Marsh & McLennan Companies, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 2.58,
+      "rsi14": 71.48
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 2.53,
+      "rsi14": 57.26
     }
   ]
 }

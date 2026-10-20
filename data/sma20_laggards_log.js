@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-10-06": [
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -10.29,
-      "rsi14": 34.48
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -9.2,
-      "rsi14": 36.5
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -8.56,
-      "rsi14": 27.8
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -8.56,
-      "rsi14": 31.04
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma20": -8.01,
-      "rsi14": 25.4
-    },
-    {
-      "ticker": "KKR",
-      "name": "KKR & Co. Inc.",
-      "sector": "Financials",
-      "dist_sma20": -7.54,
-      "rsi14": 29.12
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -7.48,
-      "rsi14": 32.79
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -6.77,
-      "rsi14": 24.3
-    },
-    {
-      "ticker": "F",
-      "name": "Ford Motor Company",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": -6.76,
-      "rsi14": 32.82
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -6.6,
-      "rsi14": 27.08
-    }
-  ],
   "2026-10-08": [
     {
       "ticker": "APP",
@@ -501,6 +429,78 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Industrials",
       "dist_sma20": -18.45,
       "rsi14": 36.51
+    }
+  ],
+  "2026-10-20": [
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -25.23,
+      "rsi14": 29.3
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -23.85,
+      "rsi14": 26.62
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -22.81,
+      "rsi14": 33.04
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -21.28,
+      "rsi14": 33.21
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -19.81,
+      "rsi14": 31.53
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -19.13,
+      "rsi14": 34.61
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -17.15,
+      "rsi14": 34.66
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -16.56,
+      "rsi14": 37.73
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -15.92,
+      "rsi14": 38.56
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -15.91,
+      "rsi14": 36.16
     }
   ]
 };
