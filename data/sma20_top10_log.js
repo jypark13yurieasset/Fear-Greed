@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-10-08": [
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 28.33,
-      "rsi14": 82.97
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 22.67,
-      "rsi14": 70.12
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 18.17,
-      "rsi14": 74.97
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 16.38,
-      "rsi14": 71.19
-    },
-    {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "sector": "Utilities",
-      "dist_sma20": 16.3,
-      "rsi14": 75.56
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NetApp, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.4,
-      "rsi14": 77.88
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma20": 15.21,
-      "rsi14": 71.49
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.01,
-      "rsi14": 66.64
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.01,
-      "rsi14": 64.65
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.45,
-      "rsi14": 70.51
-    }
-  ],
   "2026-10-09": [
     {
       "ticker": "P",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Health Care",
       "dist_sma20": 8.14,
       "rsi14": 71.43
+    }
+  ],
+  "2026-10-21": [
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 17.8,
+      "rsi14": 75.57
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 17.03,
+      "rsi14": 68.22
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.1,
+      "rsi14": 65.17
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 11.08,
+      "rsi14": 79.15
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 10.74,
+      "rsi14": 69.89
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 10.25,
+      "rsi14": 79.3
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "dist_sma20": 10.25,
+      "rsi14": 67.33
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 9.7,
+      "rsi14": 74.46
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "sector": "Health Care",
+      "dist_sma20": 9.65,
+      "rsi14": 71.16
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 9.41,
+      "rsi14": 74.86
     }
   ]
 };
