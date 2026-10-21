@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-09": [
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 5.6,
-      "rsi14": 79.58
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 5.03,
-      "rsi14": 77.12
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 4.98,
-      "rsi14": 63.12
-    },
-    {
-      "ticker": "PM",
-      "name": "Philip Morris International Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": 4.36,
-      "rsi14": 66.11
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.3,
-      "rsi14": 51.61
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 3.87,
-      "rsi14": 47.2
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma5": 3.73,
-      "rsi14": 74.73
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 3.65,
-      "rsi14": 62.22
-    },
-    {
-      "ticker": "MO",
-      "name": "Altria Group, Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": 3.63,
-      "rsi14": 64.41
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma5": 3.46,
-      "rsi14": 59.98
-    }
-  ],
   "2026-10-13": [
     {
       "ticker": "SHOP",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Health Care",
       "dist_sma5": 3.41,
       "rsi14": 65.5
+    }
+  ],
+  "2026-10-22": [
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": 6.53,
+      "rsi14": 54.51
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "sector": "Industrials",
+      "dist_sma5": 6.25,
+      "rsi14": 55.83
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 6.11,
+      "rsi14": 42.61
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 5.12,
+      "rsi14": 69.87
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.11,
+      "rsi14": 69.12
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.77,
+      "rsi14": 55.34
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 4.71,
+      "rsi14": 59.77
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.36,
+      "rsi14": 42.44
+    },
+    {
+      "ticker": "MMM",
+      "name": "3M Company",
+      "sector": "Industrials",
+      "dist_sma5": 4.24,
+      "rsi14": 64.05
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 4.17,
+      "rsi14": 72.6
     }
   ]
 };

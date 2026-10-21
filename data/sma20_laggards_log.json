@@ -1,76 +1,4 @@
 {
-  "2026-10-09": [
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -10.12,
-      "rsi14": 37.17
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": -10.03,
-      "rsi14": 39.19
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -8.45,
-      "rsi14": 36.54
-    },
-    {
-      "ticker": "SKYD",
-      "name": "Skydance Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -8.42,
-      "rsi14": 40.63
-    },
-    {
-      "ticker": "COIN",
-      "name": "Coinbase Global, Inc.",
-      "sector": "Financials",
-      "dist_sma20": -7.8,
-      "rsi14": 42.89
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": -7.19,
-      "rsi14": 23.36
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma20": -6.69,
-      "rsi14": 42.84
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -6.63,
-      "rsi14": 38.31
-    },
-    {
-      "ticker": "KKR",
-      "name": "KKR & Co. Inc.",
-      "sector": "Financials",
-      "dist_sma20": -5.98,
-      "rsi14": 29.84
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -5.85,
-      "rsi14": 45.84
-    }
-  ],
   "2026-10-13": [
     {
       "ticker": "SNDK",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma20": -16.11,
       "rsi14": 37.3
+    }
+  ],
+  "2026-10-22": [
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.01,
+      "rsi14": 30.6
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -20.04,
+      "rsi14": 33.74
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -18.14,
+      "rsi14": 32.78
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma20": -17.42,
+      "rsi14": 35.51
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -16.41,
+      "rsi14": 35.65
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -15.33,
+      "rsi14": 31.78
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -15.01,
+      "rsi14": 31.01
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -13.91,
+      "rsi14": 36.4
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -13.67,
+      "rsi14": 39.47
+    },
+    {
+      "ticker": "FIX",
+      "name": "Comfort Systems USA, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -13.44,
+      "rsi14": 31.39
     }
   ]
 }

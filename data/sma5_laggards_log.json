@@ -1,76 +1,4 @@
 {
-  "2026-10-09": [
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.15,
-      "rsi14": 48.72
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -7.16,
-      "rsi14": 46.66
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -7.07,
-      "rsi14": 46.17
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.03,
-      "rsi14": 42.99
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -6.6,
-      "rsi14": 51.4
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -6.06,
-      "rsi14": 39.19
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -5.78,
-      "rsi14": 45.84
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -5.61,
-      "rsi14": 46.59
-    },
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": -5.5,
-      "rsi14": 47.1
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.27,
-      "rsi14": 52.77
-    }
-  ],
   "2026-10-13": [
     {
       "ticker": "ALAB",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": -3.76,
       "rsi14": 29.28
+    }
+  ],
+  "2026-10-22": [
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -6.21,
+      "rsi14": 32.61
+    },
+    {
+      "ticker": "DXCM",
+      "name": "DexCom, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -5.74,
+      "rsi14": 36.05
+    },
+    {
+      "ticker": "GM",
+      "name": "General Motors Company",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -5.7,
+      "rsi14": 35.45
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -5.13,
+      "rsi14": 31.77
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.68,
+      "rsi14": 29.4
+    },
+    {
+      "ticker": "GE",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "dist_sma5": -3.49,
+      "rsi14": 31.69
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.11,
+      "rsi14": 42.22
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -2.88,
+      "rsi14": 39.31
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -2.85,
+      "rsi14": 44.55
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -2.73,
+      "rsi14": 39.19
     }
   ]
 }
