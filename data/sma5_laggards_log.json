@@ -1,76 +1,4 @@
 {
-  "2026-10-13": [
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.23,
-      "rsi14": 46.42
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.62,
-      "rsi14": 45.0
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -8.43,
-      "rsi14": 40.62
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -7.7,
-      "rsi14": 42.79
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.69,
-      "rsi14": 50.89
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -7.41,
-      "rsi14": 38.56
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -6.71,
-      "rsi14": 54.28
-    },
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": -6.67,
-      "rsi14": 43.96
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -6.51,
-      "rsi14": 47.84
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -5.94,
-      "rsi14": 40.26
-    }
-  ],
   "2026-10-14": [
     {
       "ticker": "AMAT",
@@ -501,6 +429,78 @@
       "sector": "Consumer Discretionary",
       "dist_sma5": -2.73,
       "rsi14": 39.19
+    }
+  ],
+  "2026-10-23": [
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -10.83,
+      "rsi14": 24.56
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -10.77,
+      "rsi14": 51.02
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -9.31,
+      "rsi14": 22.48
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -9.17,
+      "rsi14": 28.62
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.25,
+      "rsi14": 32.12
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -8.2,
+      "rsi14": 24.09
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.97,
+      "rsi14": 26.56
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.88,
+      "rsi14": 34.09
+    },
+    {
+      "ticker": "DXCM",
+      "name": "DexCom, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -7.6,
+      "rsi14": 32.91
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -7.53,
+      "rsi14": 27.21
     }
   ]
 }

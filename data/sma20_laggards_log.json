@@ -1,76 +1,4 @@
 {
-  "2026-10-13": [
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -12.21,
-      "rsi14": 38.56
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": -12.02,
-      "rsi14": 37.43
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": -11.91,
-      "rsi14": 40.62
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -11.12,
-      "rsi14": 40.26
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -10.66,
-      "rsi14": 36.39
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": -9.84,
-      "rsi14": 33.19
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -9.15,
-      "rsi14": 30.03
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma20": -8.38,
-      "rsi14": 42.79
-    },
-    {
-      "ticker": "VZ",
-      "name": "Verizon Communications Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -8.15,
-      "rsi14": 30.2
-    },
-    {
-      "ticker": "TMUS",
-      "name": "T-Mobile US, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -8.05,
-      "rsi14": 33.6
-    }
-  ],
   "2026-10-14": [
     {
       "ticker": "STX",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma20": -13.44,
       "rsi14": 31.39
+    }
+  ],
+  "2026-10-23": [
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -28.29,
+      "rsi14": 26.56
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -24.34,
+      "rsi14": 24.56
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -24.33,
+      "rsi14": 30.35
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.07,
+      "rsi14": 32.12
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -21.86,
+      "rsi14": 34.09
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -21.13,
+      "rsi14": 25.37
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma20": -21.09,
+      "rsi14": 31.43
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -20.52,
+      "rsi14": 30.22
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -20.13,
+      "rsi14": 24.09
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -19.98,
+      "rsi14": 31.76
     }
   ]
 }

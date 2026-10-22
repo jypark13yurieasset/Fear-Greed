@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-13": [
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.03,
-      "rsi14": 76.88
-    },
-    {
-      "ticker": "AMT",
-      "name": "American Tower Corporation",
-      "sector": "Real Estate",
-      "dist_sma5": 5.83,
-      "rsi14": 67.31
-    },
-    {
-      "ticker": "HUM",
-      "name": "Humana Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 5.56,
-      "rsi14": 66.65
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 5.09,
-      "rsi14": 66.17
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.81,
-      "rsi14": 65.62
-    },
-    {
-      "ticker": "MDT",
-      "name": "Medtronic plc",
-      "sector": "Health Care",
-      "dist_sma5": 4.29,
-      "rsi14": 58.9
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.19,
-      "rsi14": 76.2
-    },
-    {
-      "ticker": "KDP",
-      "name": "Keurig Dr Pepper Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": 4.01,
-      "rsi14": 60.43
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 3.57,
-      "rsi14": 67.38
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.53,
-      "rsi14": 56.89
-    }
-  ],
   "2026-10-14": [
     {
       "ticker": "COP",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Industrials",
       "dist_sma5": 4.17,
       "rsi14": 72.6
+    }
+  ],
+  "2026-10-23": [
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 9.99,
+      "rsi14": 79.76
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 9.82,
+      "rsi14": 78.83
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 8.77,
+      "rsi14": 81.06
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 7.88,
+      "rsi14": 73.23
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma5": 7.57,
+      "rsi14": 54.08
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 6.42,
+      "rsi14": 74.6
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.41,
+      "rsi14": 65.48
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.19,
+      "rsi14": 71.63
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 5.67,
+      "rsi14": 62.88
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 5.57,
+      "rsi14": 73.26
     }
   ]
 };
