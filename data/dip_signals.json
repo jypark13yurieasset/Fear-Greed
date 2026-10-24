@@ -568,7 +568,7 @@
     "last_seen": "2026-10-23"
   },
   "DASH": {
-    "count": 2,
+    "count": 0,
     "last_seen": "2026-10-23"
   },
   "SLB": {
@@ -628,7 +628,7 @@
     "last_seen": "2026-10-23"
   },
   "HPE": {
-    "count": 1,
+    "count": 0,
     "last_seen": "2026-10-23"
   },
   "EOG": {
@@ -1129,7 +1129,7 @@
   },
   "IQV": {
     "count": 0,
-    "last_seen": "2026-09-29"
+    "last_seen": "2026-10-23"
   },
   "A": {
     "count": 0,

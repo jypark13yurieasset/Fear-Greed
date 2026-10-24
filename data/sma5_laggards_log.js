@@ -433,74 +433,74 @@ const SMA5_LAGGARDS_LOG = {
   ],
   "2026-10-23": [
     {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -10.83,
-      "rsi14": 24.56
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -12.01,
+      "rsi14": 33.05
     },
     {
       "ticker": "MRNA",
       "name": "Moderna, Inc.",
       "sector": "Health Care",
-      "dist_sma5": -10.77,
-      "rsi14": 51.02
+      "dist_sma5": -10.47,
+      "rsi14": 50.2
     },
     {
       "ticker": "HWM",
       "name": "Howmet Aerospace Inc.",
       "sector": "Industrials",
-      "dist_sma5": -9.31,
-      "rsi14": 22.48
+      "dist_sma5": -8.78,
+      "rsi14": 19.49
     },
     {
-      "ticker": "PWR",
-      "name": "Quanta Services, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -9.17,
-      "rsi14": 28.62
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -8.25,
-      "rsi14": 32.12
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -8.2,
-      "rsi14": 24.09
+      "dist_sma5": -8.45,
+      "rsi14": 24.55
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -7.97,
-      "rsi14": 26.56
+      "dist_sma5": -8.05,
+      "rsi14": 25.75
     },
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -7.88,
-      "rsi14": 34.09
+      "dist_sma5": -7.26,
+      "rsi14": 23.26
     },
     {
-      "ticker": "DXCM",
-      "name": "DexCom, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -7.6,
-      "rsi14": 32.91
+      "ticker": "T",
+      "name": "AT&T Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -6.73,
+      "rsi14": 31.14
     },
     {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "sector": "Industrials",
-      "dist_sma5": -7.53,
-      "rsi14": 27.21
+      "dist_sma5": -6.69,
+      "rsi14": 29.93
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.58,
+      "rsi14": 31.99
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.45,
+      "rsi14": 35.01
     }
   ]
 };

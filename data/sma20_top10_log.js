@@ -433,74 +433,74 @@ const SMA20_TOP10_LOG = {
   ],
   "2026-10-23": [
     {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 25.15,
-      "rsi14": 81.06
-    },
-    {
       "ticker": "TRI",
       "name": "Thomson Reuters Corporation",
       "sector": "Industrials",
-      "dist_sma20": 19.53,
-      "rsi14": 78.83
+      "dist_sma20": 17.22,
+      "rsi14": 78.97
     },
     {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
+      "ticker": "ACN",
+      "name": "Accenture plc",
       "sector": "Information Technology",
-      "dist_sma20": 18.35,
-      "rsi14": 71.63
+      "dist_sma20": 16.77,
+      "rsi14": 72.49
     },
     {
       "ticker": "ROP",
       "name": "Roper Technologies, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 17.96,
-      "rsi14": 79.76
-    },
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "dist_sma20": 14.23,
-      "rsi14": 73.33
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.45,
-      "rsi14": 69.28
+      "dist_sma20": 16.69,
+      "rsi14": 80.36
     },
     {
       "ticker": "LMT",
       "name": "Lockheed Martin Corporation",
       "sector": "Industrials",
-      "dist_sma20": 13.04,
-      "rsi14": 74.6
+      "dist_sma20": 14.54,
+      "rsi14": 77.98
     },
     {
-      "ticker": "ADP",
-      "name": "Automatic Data Processing, Inc.",
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 12.99,
-      "rsi14": 79.57
+      "dist_sma20": 12.2,
+      "rsi14": 69.96
     },
     {
-      "ticker": "MRSH",
-      "name": "Marsh & McLennan Companies, Inc.",
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.16,
+      "rsi14": 64.05
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
       "sector": "Financials",
-      "dist_sma20": 12.35,
-      "rsi14": 80.76
+      "dist_sma20": 11.39,
+      "rsi14": 69.53
     },
     {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 12.27,
-      "rsi14": 68.6
+      "dist_sma20": 11.25,
+      "rsi14": 67.44
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 10.77,
+      "rsi14": 78.29
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma20": 10.53,
+      "rsi14": 76.75
     }
   ]
 };

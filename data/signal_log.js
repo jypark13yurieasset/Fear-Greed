@@ -1,141 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-08-24",
-    "ticker": "HOOD",
-    "name": "Robinhood Markets, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 103.62000274658203
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "PWR",
-    "name": "Quanta Services, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 616.780029296875
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "WMB",
-    "name": "The Williams Companies, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 70.97000122070312
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "JCI",
-    "name": "Johnson Controls International plc",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 142.99000549316406
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "KMI",
-    "name": "Kinder Morgan, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 31.0
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "URI",
-    "name": "United Rentals, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 1083.56005859375
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "TFC",
-    "name": "Truist Financial Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 50.810001373291016
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "TEL",
-    "name": "TE Connectivity plc",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 202.41000366210938
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "FIX",
-    "name": "Comfort Systems USA, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 1609.68994140625
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "NUE",
-    "name": "Nucor Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 244.63999938964844
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "COHR",
-    "name": "Coherent Corp.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 275.489990234375
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "KEYS",
-    "name": "Keysight Technologies, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 310.6600036621094
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "CIEN",
-    "name": "Ciena Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 371.95001220703125
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "AZO",
-    "name": "AutoZone, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 3009.43994140625
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "XEL",
-    "name": "Xcel Energy Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 77.33000183105469
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "CMG",
-    "name": "Chipotle Mexican Grill, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 38.02000045776367
-  },
-  {
-    "date": "2026-08-24",
-    "ticker": "RKLB",
-    "name": "Rocket Lab Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 68.27999877929688
-  },
-  {
     "date": "2026-08-25",
     "ticker": "CRWD",
     "name": "CrowdStrike Holdings, Inc.",
@@ -7998,5 +7862,141 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 1,
     "entry_price": 276.4700012207031
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 248.0
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "META",
+    "name": "Meta Platforms, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 642.6199951171875
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorporated",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 523.9299926757812
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "BMY",
+    "name": "Bristol-Myers Squibb Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 61.47999954223633
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "TT",
+    "name": "Trane Technologies plc",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 444.8999938964844
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "USB",
+    "name": "U.S. Bancorp",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 59.58000183105469
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "MMM",
+    "name": "3M Company",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 173.4600067138672
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "SNPS",
+    "name": "Synopsys, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 430.1400146484375
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "SLB",
+    "name": "SLB N.V.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 53.060001373291016
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "SPG",
+    "name": "Simon Property Group, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 211.6300048828125
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "URI",
+    "name": "United Rentals, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 1098.8800048828125
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "TEL",
+    "name": "TE Connectivity plc",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 208.0500030517578
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "D",
+    "name": "Dominion Energy, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 65.19999694824219
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "AME",
+    "name": "AMETEK, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 240.02999877929688
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "FITB",
+    "name": "Fifth Third Bancorp",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 52.97999954223633
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "VST",
+    "name": "Vistra Corp.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 140.16000366210938
+  },
+  {
+    "date": "2026-10-23",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 272.3500061035156
   }
 ];

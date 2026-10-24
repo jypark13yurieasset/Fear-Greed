@@ -433,74 +433,74 @@ const SMA5_TOP10_LOG = {
   ],
   "2026-10-23": [
     {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.19,
+      "rsi14": 55.92
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.5,
+      "rsi14": 52.3
+    },
+    {
       "ticker": "ROP",
       "name": "Roper Technologies, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 9.99,
-      "rsi14": 79.76
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 9.82,
-      "rsi14": 78.83
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 8.77,
-      "rsi14": 81.06
-    },
-    {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 7.88,
-      "rsi14": 73.23
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma5": 7.57,
-      "rsi14": 54.08
+      "dist_sma5": 6.67,
+      "rsi14": 80.36
     },
     {
       "ticker": "LMT",
       "name": "Lockheed Martin Corporation",
       "sector": "Industrials",
-      "dist_sma5": 6.42,
-      "rsi14": 74.6
+      "dist_sma5": 6.27,
+      "rsi14": 77.98
     },
     {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.41,
-      "rsi14": 65.48
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.19,
-      "rsi14": 71.63
-    },
-    {
-      "ticker": "URI",
-      "name": "United Rentals, Inc.",
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
       "sector": "Industrials",
-      "dist_sma5": 5.67,
-      "rsi14": 62.88
+      "dist_sma5": 5.68,
+      "rsi14": 78.97
     },
     {
-      "ticker": "CSX",
-      "name": "CSX Corporation",
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma5": 4.95,
+      "rsi14": 60.2
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 4.66,
+      "rsi14": 71.13
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma5": 4.64,
+      "rsi14": 53.48
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
-      "dist_sma5": 5.57,
-      "rsi14": 73.26
+      "dist_sma5": 4.4,
+      "rsi14": 46.56
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.03,
+      "rsi14": 69.96
     }
   ]
 };
