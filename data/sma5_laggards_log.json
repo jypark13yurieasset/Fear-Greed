@@ -1,76 +1,4 @@
 {
-  "2026-10-15": [
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -15.12,
-      "rsi14": 29.18
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -11.89,
-      "rsi14": 44.4
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -10.93,
-      "rsi14": 42.48
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -10.89,
-      "rsi14": 35.3
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.87,
-      "rsi14": 41.92
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.59,
-      "rsi14": 39.3
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -9.23,
-      "rsi14": 41.13
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -9.16,
-      "rsi14": 33.22
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma5": -8.99,
-      "rsi14": 48.33
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.4,
-      "rsi14": 40.56
-    }
-  ],
   "2026-10-16": [
     {
       "ticker": "RKLB",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": -3.96,
       "rsi14": 33.0
+    }
+  ],
+  "2026-10-28": [
+    {
+      "ticker": "BA",
+      "name": "The Boeing Company",
+      "sector": "Industrials",
+      "dist_sma5": -9.06,
+      "rsi14": 25.31
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": -7.62,
+      "rsi14": 38.79
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "dist_sma5": -5.13,
+      "rsi14": 44.54
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.94,
+      "rsi14": 34.24
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.88,
+      "rsi14": 47.73
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": -4.85,
+      "rsi14": 47.51
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": -4.47,
+      "rsi14": 60.93
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -4.28,
+      "rsi14": 31.92
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.21,
+      "rsi14": 48.94
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.05,
+      "rsi14": 34.82
     }
   ]
 }

@@ -1,85 +1,5 @@
 [
   {
-    "date": "2026-08-25",
-    "ticker": "CIEN",
-    "name": "Ciena Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 387.6600036621094
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "KEYS",
-    "name": "Keysight Technologies, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 320.1199951171875
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "XEL",
-    "name": "Xcel Energy Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 77.19000244140625
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "VTR",
-    "name": "Ventas, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 93.83000183105469
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "RKLB",
-    "name": "Rocket Lab Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 66.91000366210938
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "PANW",
-    "name": "Palo Alto Networks, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 339.30999755859375
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "CRWD",
-    "name": "CrowdStrike Holdings, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 189.17999267578125
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "STX",
-    "name": "Seagate Technology Holdings plc",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 846.3699951171875
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "PLD",
-    "name": "Prologis, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 142.58999633789062
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "ISRG",
-    "name": "Intuitive Surgical, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 370.4200134277344
-  },
-  {
     "date": "2026-08-26",
     "ticker": "LOW",
     "name": "Lowe's Companies, Inc.",
@@ -7998,5 +7918,85 @@
     "type": "dead",
     "streak": 1,
     "entry_price": 1668.719970703125
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 253.10000610351562
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 268.7300109863281
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "MRK",
+    "name": "Merck & Co., Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 141.82000732421875
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "BMY",
+    "name": "Bristol-Myers Squibb Company",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 61.54999923706055
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "WMB",
+    "name": "The Williams Companies, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 74.08999633789062
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "SLB",
+    "name": "SLB N.V.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 54.08000183105469
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "TEL",
+    "name": "TE Connectivity plc",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 225.35000610351562
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "PDD",
+    "name": "PDD Holdings Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 78.4000015258789
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "MELI",
+    "name": "MercadoLibre, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 1680.510009765625
+  },
+  {
+    "date": "2026-10-27",
+    "ticker": "MCHP",
+    "name": "Microchip Technology Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 80.16999816894531
   }
 ]

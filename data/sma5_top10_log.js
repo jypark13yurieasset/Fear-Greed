@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-15": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.93,
-      "rsi14": 69.15
-    },
-    {
-      "ticker": "UNH",
-      "name": "UnitedHealth Group Incorporated",
-      "sector": "Health Care",
-      "dist_sma5": 3.99,
-      "rsi14": 62.18
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma5": 3.86,
-      "rsi14": 79.01
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 3.66,
-      "rsi14": 79.96
-    },
-    {
-      "ticker": "MDT",
-      "name": "Medtronic plc",
-      "sector": "Health Care",
-      "dist_sma5": 3.46,
-      "rsi14": 64.36
-    },
-    {
-      "ticker": "CL",
-      "name": "Colgate-Palmolive Company",
-      "sector": "Consumer Staples",
-      "dist_sma5": 3.3,
-      "rsi14": 70.25
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma5": 3.28,
-      "rsi14": 71.25
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 3.1,
-      "rsi14": 76.51
-    },
-    {
-      "ticker": "WMT",
-      "name": "Walmart Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": 3.08,
-      "rsi14": 69.06
-    },
-    {
-      "ticker": "CAH",
-      "name": "Cardinal Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.05,
-      "rsi14": 69.68
-    }
-  ],
   "2026-10-16": [
     {
       "ticker": "AJG",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Energy",
       "dist_sma5": 3.36,
       "rsi14": 60.26
+    }
+  ],
+  "2026-10-28": [
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 8.13,
+      "rsi14": 45.12
+    },
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.46,
+      "rsi14": 57.22
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.13,
+      "rsi14": 58.4
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.1,
+      "rsi14": 46.64
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma5": 6.44,
+      "rsi14": 59.52
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.25,
+      "rsi14": 57.06
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.15,
+      "rsi14": 48.87
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 6.09,
+      "rsi14": 69.98
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.08,
+      "rsi14": 43.84
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.06,
+      "rsi14": 58.05
     }
   ]
 };

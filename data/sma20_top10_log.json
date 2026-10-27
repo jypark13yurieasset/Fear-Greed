@@ -1,76 +1,4 @@
 {
-  "2026-10-15": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 16.62,
-      "rsi14": 69.15
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma20": 14.39,
-      "rsi14": 79.96
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.46,
-      "rsi14": 67.74
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 11.95,
-      "rsi14": 76.51
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 11.08,
-      "rsi14": 65.7
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma20": 10.8,
-      "rsi14": 79.01
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma20": 9.09,
-      "rsi14": 71.25
-    },
-    {
-      "ticker": "MCK",
-      "name": "McKesson Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 8.3,
-      "rsi14": 71.38
-    },
-    {
-      "ticker": "HUM",
-      "name": "Humana Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 8.13,
-      "rsi14": 62.0
-    },
-    {
-      "ticker": "CAH",
-      "name": "Cardinal Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 7.96,
-      "rsi14": 69.68
-    }
-  ],
   "2026-10-16": [
     {
       "ticker": "ACN",
@@ -501,6 +429,78 @@
       "sector": "Energy",
       "dist_sma20": 9.93,
       "rsi14": 77.28
+    }
+  ],
+  "2026-10-28": [
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 15.61,
+      "rsi14": 75.86
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.11,
+      "rsi14": 74.78
+    },
+    {
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 9.75,
+      "rsi14": 72.53
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 9.7,
+      "rsi14": 72.8
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 9.23,
+      "rsi14": 69.15
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 8.86,
+      "rsi14": 65.48
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 8.86,
+      "rsi14": 63.38
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma20": 8.58,
+      "rsi14": 63.43
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 8.47,
+      "rsi14": 63.14
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 7.95,
+      "rsi14": 71.28
     }
   ]
 }
