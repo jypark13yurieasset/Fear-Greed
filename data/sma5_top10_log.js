@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-14": [
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma5": 4.13,
-      "rsi14": 69.59
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma5": 4.13,
-      "rsi14": 77.21
-    },
-    {
-      "ticker": "MDT",
-      "name": "Medtronic plc",
-      "sector": "Health Care",
-      "dist_sma5": 4.11,
-      "rsi14": 61.55
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 4.02,
-      "rsi14": 75.77
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 3.99,
-      "rsi14": 66.01
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.86,
-      "rsi14": 60.62
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 3.85,
-      "rsi14": 78.48
-    },
-    {
-      "ticker": "VYLR",
-      "name": "Vylor Inc.",
-      "sector": "Financials",
-      "dist_sma5": 3.48,
-      "rsi14": null
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 3.41,
-      "rsi14": 70.27
-    },
-    {
-      "ticker": "V",
-      "name": "Visa Inc.",
-      "sector": "Financials",
-      "dist_sma5": 3.25,
-      "rsi14": 73.97
-    }
-  ],
   "2026-10-15": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 4.03,
       "rsi14": 69.96
+    }
+  ],
+  "2026-10-27": [
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 8.41,
+      "rsi14": 82.59
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.66,
+      "rsi14": 55.26
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.95,
+      "rsi14": 57.76
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.79,
+      "rsi14": 57.26
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 4.62,
+      "rsi14": 64.53
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.57,
+      "rsi14": 81.12
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 4.41,
+      "rsi14": 74.18
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.01,
+      "rsi14": 56.27
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "dist_sma5": 3.41,
+      "rsi14": 55.08
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "dist_sma5": 3.36,
+      "rsi14": 60.26
     }
   ]
 };

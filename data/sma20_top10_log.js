@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-10-14": [
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 20.13,
-      "rsi14": 82.12
-    },
-    {
-      "ticker": "SHOP",
-      "name": "Shopify Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 16.7,
-      "rsi14": 73.09
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 13.8,
-      "rsi14": 66.34
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma20": 13.47,
-      "rsi14": 78.48
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma20": 11.91,
-      "rsi14": 75.77
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NetApp, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.91,
-      "rsi14": 75.19
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 11.08,
-      "rsi14": 65.0
-    },
-    {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "sector": "Utilities",
-      "dist_sma20": 10.93,
-      "rsi14": 63.5
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.28,
-      "rsi14": 66.57
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma20": 9.77,
-      "rsi14": 77.21
-    }
-  ],
   "2026-10-15": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Energy",
       "dist_sma20": 10.53,
       "rsi14": 76.75
+    }
+  ],
+  "2026-10-27": [
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 19.1,
+      "rsi14": 82.59
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 16.27,
+      "rsi14": 81.12
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 14.83,
+      "rsi14": 76.08
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 13.83,
+      "rsi14": 70.6
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 12.18,
+      "rsi14": 71.48
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 10.8,
+      "rsi14": 74.18
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 10.64,
+      "rsi14": 79.27
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.61,
+      "rsi14": 68.67
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "dist_sma20": 10.02,
+      "rsi14": 68.02
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "dist_sma20": 9.93,
+      "rsi14": 77.28
     }
   ]
 };

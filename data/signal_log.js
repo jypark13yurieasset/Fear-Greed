@@ -1,134 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-08-25",
-    "ticker": "CRWD",
-    "name": "CrowdStrike Holdings, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 185.3800048828125
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "STX",
-    "name": "Seagate Technology Holdings plc",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 821.6699829101562
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "DE",
-    "name": "Deere & Company",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 630.6599731445312
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "WELL",
-    "name": "Welltower Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 241.14999389648438
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "ETN",
-    "name": "Eaton Corporation plc",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 409.20001220703125
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "ISRG",
-    "name": "Intuitive Surgical, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 371.8399963378906
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "HWM",
-    "name": "Howmet Aerospace Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 264.0400085449219
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "HOOD",
-    "name": "Robinhood Markets, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 112.08999633789062
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "USB",
-    "name": "U.S. Bancorp",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 62.40999984741211
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "PWR",
-    "name": "Quanta Services, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 603.780029296875
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "WMB",
-    "name": "The Williams Companies, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 71.08000183105469
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "JCI",
-    "name": "Johnson Controls International plc",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 141.82000732421875
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "KMI",
-    "name": "Kinder Morgan, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 30.940000534057617
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "URI",
-    "name": "United Rentals, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 1053.1400146484375
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "TER",
-    "name": "Teradyne, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 366.42999267578125
-  },
-  {
-    "date": "2026-08-25",
-    "ticker": "CTVA",
-    "name": "Corteva, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 83.05000305175781
-  },
-  {
-    "date": "2026-08-25",
     "ticker": "CIEN",
     "name": "Ciena Corporation",
     "type": "dead",
@@ -7998,5 +7870,133 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 2,
     "entry_price": 272.3500061035156
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 249.08999633789062
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "META",
+    "name": "Meta Platforms, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 630.5599975585938
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 266.29998779296875
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "MRK",
+    "name": "Merck & Co., Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 140.61000061035156
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorporated",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 517.489990234375
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "BMY",
+    "name": "Bristol-Myers Squibb Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 61.61000061035156
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "GD",
+    "name": "General Dynamics Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 357.0400085449219
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "USB",
+    "name": "U.S. Bancorp",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 59.70000076293945
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "SLB",
+    "name": "SLB N.V.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 53.08000183105469
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "D",
+    "name": "Dominion Energy, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 65.0999984741211
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "AME",
+    "name": "AMETEK, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 242.80999755859375
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "FITB",
+    "name": "Fifth Third Bancorp",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 53.099998474121094
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "VST",
+    "name": "Vistra Corp.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 141.72999572753906
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 277.6700134277344
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "PDD",
+    "name": "PDD Holdings Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 78.12999725341797
+  },
+  {
+    "date": "2026-10-26",
+    "ticker": "MELI",
+    "name": "MercadoLibre, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1668.719970703125
   }
 ];
