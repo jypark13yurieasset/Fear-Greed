@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-10-16": [
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 16.19,
-      "rsi14": 72.17
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma20": 11.35,
-      "rsi14": 74.66
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma20": 11.29,
-      "rsi14": 74.71
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 10.88,
-      "rsi14": 60.91
-    },
-    {
-      "ticker": "MCK",
-      "name": "McKesson Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 9.91,
-      "rsi14": 75.73
-    },
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "dist_sma20": 9.44,
-      "rsi14": 65.52
-    },
-    {
-      "ticker": "CAH",
-      "name": "Cardinal Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 9.38,
-      "rsi14": 74.13
-    },
-    {
-      "ticker": "KDP",
-      "name": "Keurig Dr Pepper Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma20": 9.29,
-      "rsi14": 69.72
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 8.97,
-      "rsi14": 71.19
-    },
-    {
-      "ticker": "CCEP",
-      "name": "Coca-Cola Europacific Partners PLC",
-      "sector": "Consumer Staples",
-      "dist_sma20": 8.86,
-      "rsi14": 73.46
-    }
-  ],
   "2026-10-20": [
     {
       "ticker": "ACN",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Industrials",
       "dist_sma20": 7.95,
       "rsi14": 71.28
+    }
+  ],
+  "2026-10-29": [
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 15.57,
+      "rsi14": 76.98
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 13.38,
+      "rsi14": 76.48
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.76,
+      "rsi14": 72.77
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": 10.24,
+      "rsi14": 66.58
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "dist_sma20": 10.16,
+      "rsi14": 74.49
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 10.13,
+      "rsi14": 66.41
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 9.52,
+      "rsi14": 70.61
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 9.1,
+      "rsi14": 64.5
+    },
+    {
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 8.58,
+      "rsi14": 70.6
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 8.42,
+      "rsi14": 63.86
     }
   ]
 };

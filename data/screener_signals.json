@@ -2,937 +2,937 @@
   "NVDA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AAPL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MSFT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AMZN": {
-    "type": "dead",
-    "count": 3,
-    "last_seen": "2026-10-27"
+    "type": null,
+    "count": 0,
+    "last_seen": "2026-10-28"
   },
   "GOOGL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GOOG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AVGO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "META": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TSLA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MU": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BRK.B": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LLY": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "JPM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WMT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AMD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "V": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "JNJ": {
     "type": "golden",
-    "count": 2,
-    "last_seen": "2026-10-27"
+    "count": 3,
+    "last_seen": "2026-10-28"
   },
   "INTC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "XOM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AMAT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ABBV": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CSCO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CAT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LRCX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "COST": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BAC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ORCL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "UNH": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "KO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CVX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NFLX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MRK": {
     "type": "dead",
-    "count": 2,
-    "last_seen": "2026-10-27"
+    "count": 3,
+    "last_seen": "2026-10-28"
   },
   "PLTR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "KLAC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GEV": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PANW": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "IBM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "RTX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TXN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WFC": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "SNDK": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DELL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LIN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AXP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "C": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MRVL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "APH": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AMGN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ANET": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MCD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CRWD": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "PEP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TMO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TMUS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WDC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "QCOM": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "STX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NEE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ADI": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "BA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "VZ": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "APP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DIS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TJX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GLW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SCHW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "UNP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WELL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ABT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GILD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ETN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BLK": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "UBER": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ISRG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BKNG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "T": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DHR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CB": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PFE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CRM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PGR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "VRTX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CVS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SPGI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PLD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "COP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LOW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "COF": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LMT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SYK": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PH": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SBUX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BMY": {
-    "type": "golden",
-    "count": 3,
-    "last_seen": "2026-10-27"
+    "type": null,
+    "count": 0,
+    "last_seen": "2026-10-28"
   },
   "VRT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FTNT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NOW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HWM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MDT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NEM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CDNS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HOOD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DUK": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BNY": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "PWR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PNC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EQIX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MAR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ADP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "USB": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MNST": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "UPS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DDOG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MCK": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CMI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HCA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CSX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ELV": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WMB": {
     "type": "golden",
-    "count": 1,
-    "last_seen": "2026-10-27"
+    "count": 2,
+    "last_seen": "2026-10-28"
   },
   "ABNB": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FCX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ADBE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SHW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MRSH": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "JCI": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "MCO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CME": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CEG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CMCSA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "KKR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ACN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SNPS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MMM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DASH": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ECL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "VLO": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "dead",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "RCL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ITW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HONA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MDLZ": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NOC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EMR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MPC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AMT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HLT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AON": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TDG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AEP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "INTU": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ICE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ORLY": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FDX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SPG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HON": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TRV": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CTAS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NSC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CRH": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "KMI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PSX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MSI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "APD": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EOG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NXPI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "URI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "REGN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ROST": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "APO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SLB": {
-    "type": "golden",
-    "count": 3,
-    "last_seen": "2026-10-27"
+    "type": null,
+    "count": 0,
+    "last_seen": "2026-10-28"
   },
   "BSX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "RSG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WBD": {
     "type": null,
@@ -942,117 +942,117 @@
   "NKE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "COHR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AJG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ALL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TFC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GWW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MPWR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PCAR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "DLR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AFL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "D": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FIX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-21"
+    "last_seen": "2026-10-28"
   },
   "DAL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SRE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CIEN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "O": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TGT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CARR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MET": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PSA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TER": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "COR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TEL": {
     "type": "golden",
-    "count": 1,
-    "last_seen": "2026-10-27"
+    "count": 2,
+    "last_seen": "2026-10-28"
   },
   "CTVA": {
     "type": null,
@@ -1062,82 +1062,82 @@
   "LITE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LHX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CAH": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FAST": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TRGP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "OKE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HPE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EW": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AME": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ETR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "KEYS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "F": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ROK": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "golden",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "BKR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FITB": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AZO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EA": {
     "type": null,
@@ -1147,22 +1147,22 @@
   "XEL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EBAY": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "VST": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NUE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FLEX": {
     "type": "golden",
@@ -1172,47 +1172,47 @@
   "CVNA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EXC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "OXY": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FANG": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AXON": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NDAQ": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HUM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TTWO": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "STT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "XYZ": {
     "type": null,
@@ -1222,17 +1222,17 @@
   "DVN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "GRMN": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MCHP": {
-    "type": "golden",
-    "count": 1,
-    "last_seen": "2026-10-27"
+    "type": null,
+    "count": 0,
+    "last_seen": "2026-10-28"
   },
   "YUM": {
     "type": null,
@@ -1247,12 +1247,12 @@
   "KDP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ODFL": {
-    "type": null,
-    "count": 0,
-    "last_seen": "2026-10-27"
+    "type": "dead",
+    "count": 1,
+    "last_seen": "2026-10-28"
   },
   "VTR": {
     "type": null,
@@ -1267,12 +1267,12 @@
   "WAB": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "IDXX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "AMP": {
     "type": null,
@@ -1287,7 +1287,7 @@
   "ADSK": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "COIN": {
     "type": null,
@@ -1297,7 +1297,7 @@
   "BDX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LYV": {
     "type": null,
@@ -1342,7 +1342,7 @@
   "PYPL": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "VMC": {
     "type": null,
@@ -1377,7 +1377,7 @@
   "PAYX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HIG": {
     "type": null,
@@ -1392,7 +1392,7 @@
   "WAT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-10-28"
   },
   "ADM": {
     "type": null,
@@ -1407,12 +1407,12 @@
   "A": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ROP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "HBAN": {
     "type": null,
@@ -1472,7 +1472,7 @@
   "WDAY": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CCI": {
     "type": null,
@@ -1522,7 +1522,7 @@
   "MRNA": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "EXR": {
     "type": null,
@@ -1542,7 +1542,7 @@
   "VEEV": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "LVS": {
     "type": null,
@@ -1587,7 +1587,7 @@
   "GEHC": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CINF": {
     "type": null,
@@ -1677,7 +1677,7 @@
   "CPRT": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PPL": {
     "type": null,
@@ -1697,7 +1697,7 @@
   "DXCM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "WTW": {
     "type": null,
@@ -2517,87 +2517,87 @@
   "ASML": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ARM": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SHOP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "PDD": {
-    "type": "dead",
-    "count": 2,
-    "last_seen": "2026-10-27"
+    "type": null,
+    "count": 0,
+    "last_seen": "2026-10-28"
   },
   "MELI": {
     "type": "dead",
-    "count": 2,
-    "last_seen": "2026-10-27"
+    "count": 3,
+    "last_seen": "2026-10-28"
   },
   "ALAB": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "RKLB": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NBIS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "FER": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CCEP": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "CRWV": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ALNY": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "TRI": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "MSTR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "005930.KS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "000660.KS": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SPCX": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "ECHO": {
     "type": null,
@@ -2612,12 +2612,12 @@
   "VMRK": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "BE": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "P": {
     "type": null,
@@ -2627,7 +2627,7 @@
   "VYLR": {
     "type": null,
     "count": 0,
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "SKYD": {
     "type": null,

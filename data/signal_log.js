@@ -1,125 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-08-26",
-    "ticker": "LOW",
-    "name": "Lowe's Companies, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 210.36000061035156
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "PWR",
-    "name": "Quanta Services, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 616.72998046875
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "URI",
-    "name": "United Rentals, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 1057.6600341796875
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "PSA",
-    "name": "Public Storage",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 317.3699951171875
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "TER",
-    "name": "Teradyne, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 363.1000061035156
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "CTVA",
-    "name": "Corteva, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 82.87999725341797
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "VTR",
-    "name": "Ventas, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 93.5
-  },
-  {
-    "date": "2026-08-26",
-    "ticker": "KHC",
-    "name": "The Kraft Heinz Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 24.790000915527344
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "000660.KS",
-    "name": "SK Hynix Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 1741000.0
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "ISRG",
-    "name": "Intuitive Surgical, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 367.07000732421875
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "FTNT",
-    "name": "Fortinet, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 172.77999877929688
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "LOW",
-    "name": "Lowe's Companies, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 206.74000549316406
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "WMB",
-    "name": "The Williams Companies, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 74.19000244140625
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "SNPS",
-    "name": "Synopsys, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 464.8900146484375
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "ORLY",
-    "name": "O'Reilly Automotive, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 87.83000183105469
-  },
-  {
     "date": "2026-08-27",
     "ticker": "TER",
     "name": "Teradyne, Inc.",
@@ -7998,5 +7878,125 @@ const SIGNAL_LOG_DATA = [
     "type": "golden",
     "streak": 1,
     "entry_price": 80.16999816894531
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 271.0400085449219
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "MRK",
+    "name": "Merck & Co., Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 140.92999267578125
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 394.489990234375
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "CRWD",
+    "name": "CrowdStrike Holdings, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 266.6600036621094
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "WFC",
+    "name": "Wells Fargo & Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 83.66999816894531
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "ADI",
+    "name": "Analog Devices, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 428.2699890136719
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 182.97000122070312
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "VLO",
+    "name": "Valero Energy Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 388.4800109863281
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "BNY",
+    "name": "The Bank of New York Mellon Cor",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 148.58999633789062
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "JCI",
+    "name": "Johnson Controls International plc",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 157.35000610351562
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "WMB",
+    "name": "The Williams Companies, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 74.2699966430664
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "TEL",
+    "name": "TE Connectivity plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 221.24000549316406
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "ROK",
+    "name": "Rockwell Automation, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 443.80999755859375
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "MELI",
+    "name": "MercadoLibre, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 1673.0899658203125
+  },
+  {
+    "date": "2026-10-28",
+    "ticker": "ODFL",
+    "name": "Old Dominion Freight Line, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 173.32000732421875
   }
 ];

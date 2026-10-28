@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-16": [
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "dist_sma5": 5.42,
-      "rsi14": 65.52
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 5.25,
-      "rsi14": 64.71
-    },
-    {
-      "ticker": "AZO",
-      "name": "AutoZone, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 4.83,
-      "rsi14": 66.88
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 4.74,
-      "rsi14": 58.94
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 4.61,
-      "rsi14": 59.7
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 4.59,
-      "rsi14": 72.17
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.51,
-      "rsi14": 65.99
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma5": 4.17,
-      "rsi14": 53.5
-    },
-    {
-      "ticker": "CCEP",
-      "name": "Coca-Cola Europacific Partners PLC",
-      "sector": "Consumer Staples",
-      "dist_sma5": 4.1,
-      "rsi14": 73.46
-    },
-    {
-      "ticker": "WM",
-      "name": "Waste Management, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 4.09,
-      "rsi14": 72.84
-    }
-  ],
   "2026-10-20": [
     {
       "ticker": "ACN",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 6.06,
       "rsi14": 58.05
+    }
+  ],
+  "2026-10-29": [
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma5": 16.66,
+      "rsi14": 57.01
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 11.27,
+      "rsi14": 51.05
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.79,
+      "rsi14": 40.9
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 10.7,
+      "rsi14": 57.6
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": 10.64,
+      "rsi14": 44.68
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 9.4,
+      "rsi14": 47.37
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 8.66,
+      "rsi14": 45.42
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 8.24,
+      "rsi14": 50.54
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.05,
+      "rsi14": 53.15
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.54,
+      "rsi14": 42.06
     }
   ]
 };

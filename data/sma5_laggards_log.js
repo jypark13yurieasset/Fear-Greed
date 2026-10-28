@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-10-16": [
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -13.89,
-      "rsi14": 25.42
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -13.53,
-      "rsi14": 30.63
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -13.52,
-      "rsi14": 29.46
-    },
-    {
-      "ticker": "HPE",
-      "name": "Hewlett Packard Enterprise Company",
-      "sector": "Information Technology",
-      "dist_sma5": -12.77,
-      "rsi14": 37.39
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -12.54,
-      "rsi14": 33.24
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -12.1,
-      "rsi14": 33.37
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -10.28,
-      "rsi14": 39.47
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.9,
-      "rsi14": 37.37
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -9.84,
-      "rsi14": 27.57
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -9.5,
-      "rsi14": 36.51
-    }
-  ],
   "2026-10-20": [
     {
       "ticker": "CRWV",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Consumer Discretionary",
       "dist_sma5": -4.05,
       "rsi14": 34.82
+    }
+  ],
+  "2026-10-29": [
+    {
+      "ticker": "BA",
+      "name": "The Boeing Company",
+      "sector": "Industrials",
+      "dist_sma5": -7.1,
+      "rsi14": 24.75
+    },
+    {
+      "ticker": "GRMN",
+      "name": "Garmin Ltd.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.63,
+      "rsi14": 39.1
+    },
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -5.61,
+      "rsi14": 40.15
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -5.33,
+      "rsi14": 37.13
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": -5.16,
+      "rsi14": 39.34
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.08,
+      "rsi14": 45.97
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -4.63,
+      "rsi14": 53.06
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.35,
+      "rsi14": 52.66
+    },
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -3.74,
+      "rsi14": 47.27
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.7,
+      "rsi14": 30.67
     }
   ]
 };
