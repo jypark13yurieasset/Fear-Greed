@@ -482,6 +482,38 @@
             font-size: 0.88rem;
             color: var(--text-secondary);
         }
+        .sma5-table .rank-chg-cell {
+            text-align: center;
+            white-space: nowrap;
+        }
+        .rank-chg {
+            display: inline-block;
+            min-width: 42px;
+            padding: 2px 7px;
+            border-radius: 999px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            border: 1px solid transparent;
+        }
+        .rank-chg.up {
+            color: #4ade80;
+            background: rgba(34, 197, 94, 0.15);
+            border-color: rgba(34, 197, 94, 0.4);
+        }
+        .rank-chg.down {
+            color: #f87171;
+            background: rgba(239, 68, 68, 0.12);
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+        .rank-chg.new {
+            color: #fbbf24;
+            background: rgba(245, 158, 11, 0.15);
+            border-color: rgba(245, 158, 11, 0.4);
+        }
+        .rank-chg.same {
+            color: var(--text-secondary);
+        }
         .sma5-empty-msg {
             text-align: center;
             color: var(--text-secondary);
@@ -1052,6 +1084,21 @@
 
                 const getFinvizUrl = (ticker) => `https://finviz.com/quote.ashx?t=${ticker}&p=d`;
 
+                // 전일(직전 로그 날짜) 순위 맵
+                const dateIdx = dates.indexOf(date);
+                const prevDate = dateIdx > 0 ? dates[dateIdx - 1] : null;
+                const prevRank = {};
+                if (prevDate) (logData[prevDate] || []).forEach((p, j) => { prevRank[p.ticker] = j + 1; });
+                const rankChgCell = (ticker, rank) => {
+                    if (!prevDate) return '<span class="rank-chg same">-</span>';
+                    const pr = prevRank[ticker];
+                    if (!pr) return '<span class="rank-chg new">NEW</span>';
+                    const diff = pr - rank;
+                    if (diff > 0) return `<span class="rank-chg up">▲${diff}</span>`;
+                    if (diff < 0) return `<span class="rank-chg down">▼${-diff}</span>`;
+                    return '<span class="rank-chg same">–</span>';
+                };
+
                 let html = `<table class="sma5-table">
                     <thead><tr>
                         <th style="width:30px;text-align:center">#</th>
@@ -1059,7 +1106,7 @@
                         <th>COMPANY</th>
                         <th>SECTOR</th>
                         <th style="text-align:right">${distLabel}</th>
-                        <th style="text-align:right">일봉 RSI</th>
+                        <th style="width:58px;text-align:center;line-height:1.25;white-space:nowrap">순위<br>변동</th>
                     </tr></thead><tbody>`;
 
                 stocks.forEach((s, i) => {
@@ -1068,7 +1115,6 @@
                     const sign = val >= 0 ? '+' : '';
                     const isCommon = otherStocks.includes(s.ticker);
                     const rowClass = isCommon ? ` class="${highlightClass}"` : '';
-                    const rsiVal = (typeof s.rsi14 === 'number' && s.rsi14 > 0) ? s.rsi14.toFixed(1) : '-';
                     
                     html += `<tr${rowClass}>
                         <td class="sma5-rank${rankClass}">${i+1}</td>
@@ -1076,7 +1122,7 @@
                         <td class="sma5-company">${s.name}</td>
                         <td class="sma5-sector">${s.sector}</td>
                         <td class="sma5-dist-val">${sign}${val.toFixed(2)}%</td>
-                        <td class="sma5-rsi-val">${rsiVal}</td>
+                        <td class="rank-chg-cell">${rankChgCell(s.ticker, i + 1)}</td>
                     </tr>`;
                 });
 
