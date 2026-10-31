@@ -416,7 +416,7 @@
     "last_seen": "2026-10-30"
   },
   "MPC": {
-    "count": 3,
+    "count": 0,
     "last_seen": "2026-10-30"
   },
   "LOW": {
@@ -608,7 +608,7 @@
     "last_seen": "2026-10-30"
   },
   "DDOG": {
-    "count": 1,
+    "count": 0,
     "last_seen": "2026-10-30"
   },
   "CTAS": {
@@ -996,7 +996,7 @@
     "last_seen": "2026-09-30"
   },
   "WDAY": {
-    "count": 1,
+    "count": 0,
     "last_seen": "2026-10-30"
   },
   "SPCX": {

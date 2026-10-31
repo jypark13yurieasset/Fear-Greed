@@ -433,74 +433,74 @@ const SMA5_LAGGARDS_LOG = {
   ],
   "2026-10-30": [
     {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -24.86,
+      "rsi14": 25.1
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -25.06,
-      "rsi14": 28.47
+      "dist_sma5": -22.46,
+      "rsi14": 26.86
     },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals, Inc.",
       "sector": "Health Care",
-      "dist_sma5": -19.81,
-      "rsi14": 23.96
+      "dist_sma5": -19.58,
+      "rsi14": 22.05
     },
     {
       "ticker": "FTNT",
       "name": "Fortinet, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -19.27,
-      "rsi14": 27.63
-    },
-    {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -9.4,
-      "rsi14": 22.32
-    },
-    {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -9.08,
-      "rsi14": 22.08
+      "dist_sma5": -16.78,
+      "rsi14": 26.63
     },
     {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -7.16,
-      "rsi14": 39.76
+      "dist_sma5": -14.14,
+      "rsi14": 33.96
     },
     {
-      "ticker": "CAT",
-      "name": "Caterpillar Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -6.26,
-      "rsi14": 26.23
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -4.59,
-      "rsi14": 43.68
+      "dist_sma5": -12.25,
+      "rsi14": 38.71
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -4.54,
-      "rsi14": 49.23
+      "dist_sma5": -10.73,
+      "rsi14": 32.73
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -10.21,
+      "rsi14": 35.65
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": -9.82,
+      "rsi14": 25.04
     },
     {
       "ticker": "TER",
       "name": "Teradyne, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -4.5,
-      "rsi14": 32.81
+      "dist_sma5": -9.54,
+      "rsi14": 28.85
     }
   ]
 };

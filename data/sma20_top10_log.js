@@ -433,74 +433,74 @@ const SMA20_TOP10_LOG = {
   ],
   "2026-10-30": [
     {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 16.64,
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 17.62,
       "rsi14": 79.11
     },
     {
       "ticker": "ROP",
       "name": "Roper Technologies, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 14.41,
-      "rsi14": 78.74
+      "dist_sma20": 17.05,
+      "rsi14": 82.2
     },
     {
-      "ticker": "LHX",
-      "name": "L3Harris Technologies, Inc.",
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
       "sector": "Industrials",
-      "dist_sma20": 13.06,
-      "rsi14": 77.47
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.33,
-      "rsi14": 62.68
-    },
-    {
-      "ticker": "NXPI",
-      "name": "NXP Semiconductors N.V.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.85,
-      "rsi14": 69.67
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 11.5,
-      "rsi14": 69.18
+      "dist_sma20": 14.07,
+      "rsi14": 75.5
     },
     {
       "ticker": "LLY",
       "name": "Eli Lilly and Company",
       "sector": "Health Care",
-      "dist_sma20": 11.48,
-      "rsi14": 74.44
+      "dist_sma20": 13.77,
+      "rsi14": 77.88
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma20": 13.36,
+      "rsi14": 70.11
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 11.88,
+      "rsi14": 62.63
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3Harris Technologies, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 11.79,
+      "rsi14": 76.23
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.51,
+      "rsi14": 74.28
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "dist_sma20": 10.43,
+      "rsi14": 69.52
     },
     {
       "ticker": "AON",
       "name": "Aon plc",
       "sector": "Financials",
-      "dist_sma20": 11.41,
-      "rsi14": 69.45
-    },
-    {
-      "ticker": "URI",
-      "name": "United Rentals, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 10.92,
-      "rsi14": 73.21
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 10.63,
-      "rsi14": 73.83
+      "dist_sma20": 10.43,
+      "rsi14": 69.46
     }
   ]
 };

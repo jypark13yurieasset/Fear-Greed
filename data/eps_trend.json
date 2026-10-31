@@ -3751,7 +3751,7 @@
       "grossProfits": 18276999168,
       "netIncomeToCommon": 4869000192,
       "trailingEps": 3.88,
-      "forwardEps": 4.91342,
+      "forwardEps": 4.91527,
       "earningsGrowth": -0.462,
       "totalCash": 54592999424,
       "totalCashPerShare": 45.552,
@@ -3762,7 +3762,7 @@
       "marketCap": 58474254336,
       "enterpriseValue": 75080228864,
       "trailingPE": 12.574742,
-      "forwardPE": 9.929947,
+      "forwardPE": 9.92621,
       "pegRatio": 1.12,
       "priceToSalesTrailing12Months": 3.1993356,
       "priceToBook": 1.0430562,
@@ -4812,7 +4812,7 @@
       "ebitda": 3616523008,
       "netIncomeToCommon": 1682315008,
       "trailingEps": 8.73,
-      "forwardEps": 20.5195,
+      "forwardEps": 20.76996,
       "earningsGrowth": 1.031,
       "totalCash": 2315270912,
       "totalCashPerShare": 15.38,
@@ -4825,7 +4825,7 @@
       "marketCap": 93529825280,
       "enterpriseValue": 98723160064,
       "trailingPE": 71.103096,
-      "forwardPE": 30.250734,
+      "forwardPE": 29.88595,
       "pegRatio": 1.41,
       "priceToSalesTrailing12Months": 2.508268,
       "priceToBook": 8.868965,
@@ -23097,13 +23097,13 @@
     },
     "_valuation_measures": {
       "marketCap": 1829640994816,
-      "enterpriseValue": 1778308612096,
+      "enterpriseValue": 1779003949056,
       "trailingPE": 585.73914,
       "forwardPE": 56.937576,
       "priceToSalesTrailing12Months": 57.099552,
       "priceToBook": 10.348748,
-      "enterpriseToRevenue": 55.498,
-      "enterpriseToEbitda": 151.526
+      "enterpriseToRevenue": 55.519,
+      "enterpriseToEbitda": 151.585
     }
   },
   "EFX": {
@@ -25102,14 +25102,14 @@
     },
     "_valuation_measures": {
       "marketCap": 141654245376,
-      "enterpriseValue": 135822532608,
+      "enterpriseValue": 135779442688,
       "trailingPE": 32.549797,
       "forwardPE": 27.40066,
       "pegRatio": 2.11,
       "priceToSalesTrailing12Months": 11.253833,
       "priceToBook": 6.9929056,
-      "enterpriseToRevenue": 10.791,
-      "enterpriseToEbitda": 26.629
+      "enterpriseToRevenue": 10.787,
+      "enterpriseToEbitda": 26.621
     }
   },
   "FANG": {

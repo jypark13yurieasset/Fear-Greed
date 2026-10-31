@@ -433,74 +433,74 @@
   ],
   "2026-10-30": [
     {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 10.89,
+      "rsi14": 79.11
+    },
+    {
       "ticker": "CVNA",
       "name": "Carvana Co.",
       "sector": "Consumer Discretionary",
-      "dist_sma5": 13.47,
-      "rsi14": 62.68
+      "dist_sma5": 9.62,
+      "rsi14": 62.63
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "dist_sma5": 12.65,
-      "rsi14": 58.16
-    },
-    {
-      "ticker": "PWR",
-      "name": "Quanta Services, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 8.35,
-      "rsi14": 52.01
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 8.06,
-      "rsi14": 46.01
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.57,
-      "rsi14": 51.55
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma5": 7.21,
-      "rsi14": 69.18
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "sector": "Health Care",
+      "dist_sma5": 6.73,
+      "rsi14": 77.88
     },
     {
       "ticker": "GM",
       "name": "General Motors Company",
       "sector": "Consumer Discretionary",
-      "dist_sma5": 6.89,
-      "rsi14": 59.69
+      "dist_sma5": 5.95,
+      "rsi14": 62.46
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
+      "ticker": "ICE",
+      "name": "Intercontinental Exchange, Inc.",
+      "sector": "Financials",
+      "dist_sma5": 5.09,
+      "rsi14": 65.5
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences, Inc.",
       "sector": "Health Care",
-      "dist_sma5": 6.7,
-      "rsi14": 57.8
+      "dist_sma5": 4.94,
+      "rsi14": 74.28
     },
     {
-      "ticker": "NXPI",
-      "name": "NXP Semiconductors N.V.",
+      "ticker": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 4.91,
+      "rsi14": 48.52
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
       "sector": "Information Technology",
-      "dist_sma5": 6.24,
-      "rsi14": 69.67
+      "dist_sma5": 4.87,
+      "rsi14": 70.11
     },
     {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 6.22,
-      "rsi14": 69.83
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorporated",
+      "sector": "Health Care",
+      "dist_sma5": 4.77,
+      "rsi14": 67.65
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 4.64,
+      "rsi14": 59.01
     }
   ]
 }

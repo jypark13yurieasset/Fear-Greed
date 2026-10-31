@@ -38137,9 +38137,9 @@
         "dxy_price": 101.96,
         "dxy_change": -0.07,
         "btc_data": {
-            "price": 77381.97,
+            "price": 77272.41,
             "ath": 126198.07,
-            "drawdown": -38.68
+            "drawdown": -38.77
         },
         "assets_top20": [
             {
@@ -38216,14 +38216,14 @@
             },
             {
                 "rank": 13,
-                "name": "Bitcoin",
-                "code": "BTC",
-                "mcap": "$1.557 T"
+                "name": "Broadcom",
+                "code": "AVGO",
+                "mcap": "$1.556 T"
             },
             {
                 "rank": 14,
-                "name": "Broadcom",
-                "code": "AVGO",
+                "name": "Bitcoin",
+                "code": "BTC",
                 "mcap": "$1.556 T"
             },
             {
@@ -38540,6 +38540,6 @@
                 "weight": 3.26
             }
         ],
-        "updated_at": "10-31 10:21 KST"
+        "updated_at": "10-31 10:32 KST"
     }
 }

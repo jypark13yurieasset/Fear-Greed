@@ -433,74 +433,74 @@ const SMA20_LAGGARDS_LOG = {
   ],
   "2026-10-30": [
     {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -31.78,
+      "rsi14": 25.1
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -23.66,
-      "rsi14": 28.47
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -22.71,
-      "rsi14": 27.63
+      "dist_sma20": -26.07,
+      "rsi14": 26.86
     },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals, Inc.",
       "sector": "Health Care",
-      "dist_sma20": -22.45,
-      "rsi14": 23.96
+      "dist_sma20": -25.56,
+      "rsi14": 22.05
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -23.43,
+      "rsi14": 26.63
     },
     {
       "ticker": "TER",
       "name": "Teradyne, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -17.78,
-      "rsi14": 32.81
-    },
-    {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -15.8,
-      "rsi14": 22.32
-    },
-    {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -15.39,
-      "rsi14": 22.08
-    },
-    {
-      "ticker": "CAT",
-      "name": "Caterpillar Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -14.27,
-      "rsi14": 26.23
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -13.85,
-      "rsi14": 38.02
+      "dist_sma20": -21.96,
+      "rsi14": 28.85
     },
     {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -13.28,
-      "rsi14": 39.76
+      "dist_sma20": -20.8,
+      "rsi14": 33.96
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -20.21,
+      "rsi14": 33.36
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -18.88,
+      "rsi14": 32.73
     },
     {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "sector": "Communication Services",
-      "dist_sma20": -11.1,
-      "rsi14": 41.01
+      "dist_sma20": -18.46,
+      "rsi14": 35.58
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -16.3,
+      "rsi14": 23.59
     }
   ]
 };
