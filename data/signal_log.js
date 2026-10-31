@@ -1,149 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-08-27",
-    "ticker": "TER",
-    "name": "Teradyne, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 372.05999755859375
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "PSA",
-    "name": "Public Storage",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 311.20001220703125
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "CTVA",
-    "name": "Corteva, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 82.4000015258789
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "VTR",
-    "name": "Ventas, Inc.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 92.88999938964844
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "ASML",
-    "name": "ASML Holding N.V.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 1735.010009765625
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "PDD",
-    "name": "PDD Holdings Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 84.69000244140625
-  },
-  {
-    "date": "2026-08-27",
-    "ticker": "CRWV",
-    "name": "CoreWeave, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 86.80000305175781
-  },
-  {
-    "date": "2026-08-28",
-    "ticker": "000660.KS",
-    "name": "SK Hynix Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 1705000.0
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "AAPL",
-    "name": "Apple Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 316.8500061035156
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "LLY",
-    "name": "Eli Lilly and Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 1156.72998046875
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "COST",
-    "name": "Costco Wholesale Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 943.8900146484375
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "CRWD",
-    "name": "CrowdStrike Holdings, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 231.0
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "FTNT",
-    "name": "Fortinet, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 170.92999267578125
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "PH",
-    "name": "Parker-Hannifin Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 979.4400024414062
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "LOW",
-    "name": "Lowe's Companies, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 204.6999969482422
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "GD",
-    "name": "General Dynamics Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 371.3500061035156
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "WMB",
-    "name": "The Williams Companies, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 75.05000305175781
-  },
-  {
-    "date": "2026-08-31",
-    "ticker": "SHW",
-    "name": "The Sherwin-Williams Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 338.80999755859375
-  },
-  {
     "date": "2026-08-31",
     "ticker": "NOC",
     "name": "Northrop Grumman Corporation",
@@ -7998,5 +7854,149 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 1,
     "entry_price": 173.32000732421875
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 343.5799865722656
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 380.57000732421875
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "CRWD",
+    "name": "CrowdStrike Holdings, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 261.1499938964844
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "WFC",
+    "name": "Wells Fargo & Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 84.80999755859375
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 185.41000366210938
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "NOW",
+    "name": "ServiceNow, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 109.66999816894531
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "VLO",
+    "name": "Valero Energy Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 384.57000732421875
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "BNY",
+    "name": "The Bank of New York Mellon Cor",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 149.3699951171875
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "FTNT",
+    "name": "Fortinet, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 139.10000610351562
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "JCI",
+    "name": "Johnson Controls International plc",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 158.27000427246094
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "CDNS",
+    "name": "Cadence Design Systems, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 342.75
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "PNC",
+    "name": "The PNC Financial Services Group, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 231.8300018310547
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "WMB",
+    "name": "The Williams Companies, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 74.87999725341797
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "TEL",
+    "name": "TE Connectivity plc",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 222.75999450683594
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "BSX",
+    "name": "Boston Scientific Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 42.689998626708984
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "ROK",
+    "name": "Rockwell Automation, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 451.3999938964844
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "MCHP",
+    "name": "Microchip Technology Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 81.12000274658203
+  },
+  {
+    "date": "2026-10-29",
+    "ticker": "ODFL",
+    "name": "Old Dominion Freight Line, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 172.35000610351562
   }
 ];

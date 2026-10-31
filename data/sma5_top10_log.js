@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-20": [
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 5.77,
-      "rsi14": 74.82
-    },
-    {
-      "ticker": "MNST",
-      "name": "Monster Beverage Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma5": 3.82,
-      "rsi14": 67.74
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 3.08,
-      "rsi14": 62.19
-    },
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "dist_sma5": 3.02,
-      "rsi14": 63.24
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.91,
-      "rsi14": 73.75
-    },
-    {
-      "ticker": "PEP",
-      "name": "PepsiCo, Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": 2.74,
-      "rsi14": 58.81
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 2.74,
-      "rsi14": 61.14
-    },
-    {
-      "ticker": "AZO",
-      "name": "AutoZone, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 2.69,
-      "rsi14": 64.41
-    },
-    {
-      "ticker": "MRSH",
-      "name": "Marsh & McLennan Companies, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 2.58,
-      "rsi14": 71.48
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 2.53,
-      "rsi14": 57.26
-    }
-  ],
   "2026-10-21": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 7.54,
       "rsi14": 42.06
+    }
+  ],
+  "2026-10-30": [
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 13.47,
+      "rsi14": 62.68
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "dist_sma5": 12.65,
+      "rsi14": 58.16
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 8.35,
+      "rsi14": 52.01
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 8.06,
+      "rsi14": 46.01
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.57,
+      "rsi14": 51.55
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma5": 7.21,
+      "rsi14": 69.18
+    },
+    {
+      "ticker": "GM",
+      "name": "General Motors Company",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.89,
+      "rsi14": 59.69
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 6.7,
+      "rsi14": 57.8
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors N.V.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.24,
+      "rsi14": 69.67
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.22,
+      "rsi14": 69.83
     }
   ]
 };
