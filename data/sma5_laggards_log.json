@@ -1,76 +1,4 @@
 {
-  "2026-10-21": [
-    {
-      "ticker": "GM",
-      "name": "General Motors Company",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -6.1,
-      "rsi14": 37.13
-    },
-    {
-      "ticker": "PWR",
-      "name": "Quanta Services, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -5.37,
-      "rsi14": 35.12
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -4.87,
-      "rsi14": 26.21
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -4.69,
-      "rsi14": 32.84
-    },
-    {
-      "ticker": "FIX",
-      "name": "Comfort Systems USA, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -4.61,
-      "rsi14": 30.86
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -4.54,
-      "rsi14": 29.27
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.27,
-      "rsi14": 33.17
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.12,
-      "rsi14": 37.25
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "sector": "Utilities",
-      "dist_sma5": -3.99,
-      "rsi14": 41.31
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.76,
-      "rsi14": 29.28
-    }
-  ],
   "2026-10-22": [
     {
       "ticker": "NFLX",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": -9.54,
       "rsi14": 28.85
+    }
+  ],
+  "2026-11-03": [
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -26.34,
+      "rsi14": 22.95
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -20.74,
+      "rsi14": 28.81
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -19.0,
+      "rsi14": 34.58
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -17.38,
+      "rsi14": 20.68
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -17.02,
+      "rsi14": 23.62
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -15.73,
+      "rsi14": 31.98
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -15.35,
+      "rsi14": 33.6
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -15.29,
+      "rsi14": 27.72
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -14.21,
+      "rsi14": 29.98
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -14.18,
+      "rsi14": 31.78
     }
   ]
 }

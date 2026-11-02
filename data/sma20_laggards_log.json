@@ -1,76 +1,4 @@
 {
-  "2026-10-21": [
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -23.34,
-      "rsi14": 26.21
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -22.84,
-      "rsi14": 30.82
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma20": -21.11,
-      "rsi14": 33.67
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma20": -20.29,
-      "rsi14": 33.17
-    },
-    {
-      "ticker": "ARM",
-      "name": "Arm Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": -20.01,
-      "rsi14": 32.84
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma20": -16.84,
-      "rsi14": 34.09
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -16.41,
-      "rsi14": 37.61
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -16.4,
-      "rsi14": 29.28
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -16.24,
-      "rsi14": 34.39
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -16.11,
-      "rsi14": 37.3
-    }
-  ],
   "2026-10-22": [
     {
       "ticker": "CRWV",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma20": -16.3,
       "rsi14": 23.59
+    }
+  ],
+  "2026-11-03": [
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -35.91,
+      "rsi14": 22.95
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -29.46,
+      "rsi14": 28.81
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -27.81,
+      "rsi14": 23.62
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -27.71,
+      "rsi14": 20.68
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -25.04,
+      "rsi14": 30.16
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -24.65,
+      "rsi14": 27.72
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -24.08,
+      "rsi14": 34.58
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -23.77,
+      "rsi14": 26.73
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -23.41,
+      "rsi14": 31.98
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -23.35,
+      "rsi14": 32.3
     }
   ]
 }

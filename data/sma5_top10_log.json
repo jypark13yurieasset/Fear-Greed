@@ -1,76 +1,4 @@
 {
-  "2026-10-21": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 5.27,
-      "rsi14": 68.22
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.56,
-      "rsi14": 63.22
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 4.36,
-      "rsi14": 75.57
-    },
-    {
-      "ticker": "HLT",
-      "name": "Hilton Worldwide Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 4.36,
-      "rsi14": 79.3
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 4.3,
-      "rsi14": 62.73
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 3.82,
-      "rsi14": 69.89
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 3.72,
-      "rsi14": 67.87
-    },
-    {
-      "ticker": "MMM",
-      "name": "3M Company",
-      "sector": "Industrials",
-      "dist_sma5": 3.49,
-      "rsi14": 59.86
-    },
-    {
-      "ticker": "FITB",
-      "name": "Fifth Third Bancorp",
-      "sector": "Financials",
-      "dist_sma5": 3.46,
-      "rsi14": 55.65
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 3.41,
-      "rsi14": 65.5
-    }
-  ],
   "2026-10-22": [
     {
       "ticker": "MSTR",
@@ -501,6 +429,78 @@
       "sector": "Communication Services",
       "dist_sma5": 4.64,
       "rsi14": 59.01
+    }
+  ],
+  "2026-11-03": [
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 14.89,
+      "rsi14": 76.72
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 10.81,
+      "rsi14": 81.85
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 10.13,
+      "rsi14": 67.77
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "dist_sma5": 7.24,
+      "rsi14": 75.4
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 7.01,
+      "rsi14": 52.86
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 6.8,
+      "rsi14": 72.21
+    },
+    {
+      "ticker": "SHW",
+      "name": "The Sherwin-Williams Company",
+      "sector": "Materials",
+      "dist_sma5": 6.01,
+      "rsi14": 63.95
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 5.93,
+      "rsi14": 49.28
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 5.83,
+      "rsi14": 63.65
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 5.79,
+      "rsi14": 73.0
     }
   ]
 }

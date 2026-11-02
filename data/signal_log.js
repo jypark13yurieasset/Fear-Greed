@@ -1,149 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-09-01",
-    "ticker": "MMM",
-    "name": "3M Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 170.24000549316406
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "EMR",
-    "name": "Emerson Electric Co.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 147.6300048828125
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "SHW",
-    "name": "The Sherwin-Williams Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 329.95001220703125
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "KMI",
-    "name": "Kinder Morgan, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 32.099998474121094
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "HLT",
-    "name": "Hilton Worldwide Holdings Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 311.989990234375
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "DLR",
-    "name": "Digital Realty Trust, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 183.27000427246094
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "WAB",
-    "name": "Westinghouse Air Brake Technologies Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 279.79998779296875
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "ASML",
-    "name": "ASML Holding N.V.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 1665.1400146484375
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "PDD",
-    "name": "PDD Holdings Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 83.16999816894531
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "NBIS",
-    "name": "Nebius Group N.V.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 199.5399932861328
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "PYPL",
-    "name": "PayPal Holdings, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 52.400001525878906
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "AXON",
-    "name": "Axon Enterprise, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 518.2999877929688
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "KHC",
-    "name": "The Kraft Heinz Company",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 25.8700008392334
-  },
-  {
-    "date": "2026-09-01",
-    "ticker": "000660.KS",
-    "name": "SK Hynix Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 1693000.0
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "LLY",
-    "name": "Eli Lilly and Company",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 1160.0799560546875
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "COST",
-    "name": "Costco Wholesale Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 928.47998046875
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "PG",
-    "name": "The Procter & Gamble Company",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 147.63999938964844
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "WFC",
-    "name": "Wells Fargo & Company",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 89.2699966430664
-  },
-  {
     "date": "2026-09-02",
     "ticker": "PANW",
     "name": "Palo Alto Networks, Inc.",
@@ -7998,5 +7854,149 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 3,
     "entry_price": 172.55999755859375
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 507.1199951171875
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 340.5799865722656
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 178.33999633789062
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "MRK",
+    "name": "Merck & Co., Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 148.36000061035156
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 351.7200012207031
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "CRM",
+    "name": "Salesforce, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 226.17999267578125
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "DE",
+    "name": "Deere & Company",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 667.5999755859375
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 162.0800018310547
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "CVS",
+    "name": "CVS Health Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 88.51000213623047
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "NOW",
+    "name": "ServiceNow, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 106.01000213623047
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "CVNA",
+    "name": "Carvana Co.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 72.0
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "DDOG",
+    "name": "Datadog, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 216.10000610351562
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "GM",
+    "name": "General Motors Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 89.94000244140625
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "ROST",
+    "name": "Ross Stores, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 230.58999633789062
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "BSX",
+    "name": "Boston Scientific Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 44.31999969482422
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "AME",
+    "name": "AMETEK, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 241.91000366210938
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "DAL",
+    "name": "Delta Air Lines, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 83.41999816894531
+  },
+  {
+    "date": "2026-11-02",
+    "ticker": "GRMN",
+    "name": "Garmin Ltd.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 274.2900085449219
   }
 ];
