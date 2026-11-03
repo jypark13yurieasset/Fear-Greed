@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-10-22": [
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -6.21,
-      "rsi14": 32.61
-    },
-    {
-      "ticker": "DXCM",
-      "name": "DexCom, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -5.74,
-      "rsi14": 36.05
-    },
-    {
-      "ticker": "GM",
-      "name": "General Motors Company",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -5.7,
-      "rsi14": 35.45
-    },
-    {
-      "ticker": "T",
-      "name": "AT&T Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -5.13,
-      "rsi14": 31.77
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -3.68,
-      "rsi14": 29.4
-    },
-    {
-      "ticker": "GE",
-      "name": "GE Aerospace",
-      "sector": "Industrials",
-      "dist_sma5": -3.49,
-      "rsi14": 31.69
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.11,
-      "rsi14": 42.22
-    },
-    {
-      "ticker": "UBER",
-      "name": "Uber Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -2.88,
-      "rsi14": 39.31
-    },
-    {
-      "ticker": "PDD",
-      "name": "PDD Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.85,
-      "rsi14": 44.55
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.73,
-      "rsi14": 39.19
-    }
-  ],
   "2026-10-23": [
     {
       "ticker": "BE",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma5": -14.18,
       "rsi14": 31.78
+    }
+  ],
+  "2026-11-04": [
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -19.02,
+      "rsi14": 23.66
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -15.8,
+      "rsi14": 34.35
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -14.85,
+      "rsi14": 29.07
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -10.81,
+      "rsi14": 33.42
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -10.1,
+      "rsi14": 22.09
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.92,
+      "rsi14": 33.26
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.34,
+      "rsi14": 35.7
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.96,
+      "rsi14": 25.37
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -7.47,
+      "rsi14": 34.03
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.96,
+      "rsi14": 38.41
     }
   ]
 };

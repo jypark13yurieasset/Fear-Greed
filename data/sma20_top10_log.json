@@ -1,76 +1,4 @@
 {
-  "2026-10-22": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 17.03,
-      "rsi14": 69.12
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 16.73,
-      "rsi14": 75.98
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.28,
-      "rsi14": 65.3
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 12.21,
-      "rsi14": 72.6
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": 10.28,
-      "rsi14": 69.87
-    },
-    {
-      "ticker": "HLT",
-      "name": "Hilton Worldwide Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 10.23,
-      "rsi14": 80.36
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 9.73,
-      "rsi14": 65.68
-    },
-    {
-      "ticker": "MAR",
-      "name": "Marriott International, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 9.6,
-      "rsi14": 81.72
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 9.41,
-      "rsi14": 75.19
-    },
-    {
-      "ticker": "EBAY",
-      "name": "eBay Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 9.33,
-      "rsi14": 73.45
-    }
-  ],
   "2026-10-23": [
     {
       "ticker": "TRI",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma20": 12.91,
       "rsi14": 71.02
+    }
+  ],
+  "2026-11-04": [
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 20.24,
+      "rsi14": 76.76
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 19.82,
+      "rsi14": 82.74
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.5,
+      "rsi14": 79.64
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 15.3,
+      "rsi14": 65.88
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 13.32,
+      "rsi14": 80.24
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 11.78,
+      "rsi14": 74.22
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 11.29,
+      "rsi14": 66.75
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": 11.1,
+      "rsi14": 71.02
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "sector": "Health Care",
+      "dist_sma20": 10.8,
+      "rsi14": 75.8
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3Harris Technologies, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 10.01,
+      "rsi14": 74.77
     }
   ]
 }

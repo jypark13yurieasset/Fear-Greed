@@ -1,76 +1,4 @@
 {
-  "2026-10-22": [
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": 6.53,
-      "rsi14": 54.51
-    },
-    {
-      "ticker": "SPCX",
-      "name": "SpaceX",
-      "sector": "Industrials",
-      "dist_sma5": 6.25,
-      "rsi14": 55.83
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 6.11,
-      "rsi14": 42.61
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 5.12,
-      "rsi14": 69.87
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 5.11,
-      "rsi14": 69.12
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.77,
-      "rsi14": 55.34
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 4.71,
-      "rsi14": 59.77
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.36,
-      "rsi14": 42.44
-    },
-    {
-      "ticker": "MMM",
-      "name": "3M Company",
-      "sector": "Industrials",
-      "dist_sma5": 4.24,
-      "rsi14": 64.05
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 4.17,
-      "rsi14": 72.6
-    }
-  ],
   "2026-10-23": [
     {
       "ticker": "CRWD",
@@ -501,6 +429,78 @@
       "sector": "Consumer Discretionary",
       "dist_sma5": 5.79,
       "rsi14": 73.0
+    }
+  ],
+  "2026-11-04": [
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 10.76,
+      "rsi14": 76.76
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 8.28,
+      "rsi14": 82.74
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 7.64,
+      "rsi14": 55.39
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.23,
+      "rsi14": 57.02
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 5.15,
+      "rsi14": 65.88
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 4.59,
+      "rsi14": 56.46
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 4.24,
+      "rsi14": 50.72
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.67,
+      "rsi14": 80.24
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 3.59,
+      "rsi14": 56.66
+    },
+    {
+      "ticker": "GE",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "dist_sma5": 3.28,
+      "rsi14": 57.89
     }
   ]
 }

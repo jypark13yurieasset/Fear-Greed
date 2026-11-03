@@ -1,118 +1,6 @@
 [
   {
     "date": "2026-09-02",
-    "ticker": "PANW",
-    "name": "Palo Alto Networks, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 328.4800109863281
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "APH",
-    "name": "Amphenol Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 160.0800018310547
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "MRVL",
-    "name": "Marvell Technology, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 206.47999572753906
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "QCOM",
-    "name": "QUALCOMM Incorporated",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 169.9600067138672
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "PH",
-    "name": "Parker-Hannifin Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 949.3800048828125
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "MO",
-    "name": "Altria Group, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 69.55999755859375
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "EQIX",
-    "name": "Equinix, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 1019.239990234375
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "CSX",
-    "name": "CSX Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 48.650001525878906
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "MMM",
-    "name": "3M Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 168.75
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "NSC",
-    "name": "Norfolk Southern Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 330.05999755859375
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "KMI",
-    "name": "Kinder Morgan, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 31.969999313354492
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "HLT",
-    "name": "Hilton Worldwide Holdings Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 311.510009765625
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "DLR",
-    "name": "Digital Realty Trust, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 183.75999450683594
-  },
-  {
-    "date": "2026-09-02",
-    "ticker": "FAST",
-    "name": "Fastenal Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 47.93000030517578
-  },
-  {
-    "date": "2026-09-02",
     "ticker": "WAB",
     "name": "Westinghouse Air Brake Technologies Corporation",
     "type": "dead",
@@ -7998,5 +7886,117 @@
     "type": "dead",
     "streak": 2,
     "entry_price": 274.2900085449219
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 175.39999389648438
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "MRK",
+    "name": "Merck & Co., Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 144.6699981689453
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 350.20001220703125
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "CRM",
+    "name": "Salesforce, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 222.1999969482422
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "DE",
+    "name": "Deere & Company",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 665.8300170898438
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 164.42999267578125
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "DDOG",
+    "name": "Datadog, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 220.52000427246094
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "CVNA",
+    "name": "Carvana Co.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 71.27999877929688
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "GM",
+    "name": "General Motors Company",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 88.33999633789062
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "DAL",
+    "name": "Delta Air Lines, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 83.27999877929688
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "GRMN",
+    "name": "Garmin Ltd.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 271.44000244140625
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "HONA",
+    "name": "Honeywell Aerospace Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 157.5
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 291.7799987792969
+  },
+  {
+    "date": "2026-11-03",
+    "ticker": "SHOP",
+    "name": "Shopify Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 142.57000732421875
   }
 ]
