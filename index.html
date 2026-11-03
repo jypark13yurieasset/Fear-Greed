@@ -380,10 +380,23 @@
             animation: zonePulse 1.8s ease-in-out infinite;
         }
 
-        .zone-shift.show { display: inline-flex; }
-        .zone-shift .zs-from { opacity: 0.6; font-weight: 500; }
-        .zone-shift .zs-arrow { color: var(--shift-color); font-size: 0.9rem; }
-        .zone-shift .zs-to { color: var(--shift-color); }
+        .zone-shift.show {
+            display: inline-flex;
+        }
+
+        .zone-shift .zs-from {
+            opacity: 0.6;
+            font-weight: 500;
+        }
+
+        .zone-shift .zs-arrow {
+            color: var(--shift-color);
+            font-size: 0.9rem;
+        }
+
+        .zone-shift .zs-to {
+            color: var(--shift-color);
+        }
 
         #fng-card.zone-changed {
             border-color: var(--shift-color);
@@ -405,8 +418,15 @@
         }
 
         @keyframes zonePulse {
-            0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--shift-color) 50%, transparent); }
-            50% { box-shadow: 0 0 0 6px transparent; }
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 color-mix(in srgb, var(--shift-color) 50%, transparent);
+            }
+
+            50% {
+                box-shadow: 0 0 0 6px transparent;
+            }
         }
 
         .zone-chip {
@@ -420,7 +440,9 @@
             border: 1px solid currentColor;
         }
 
-        tr.zone-row td { background: rgba(255, 255, 255, 0.035); }
+        tr.zone-row td {
+            background: rgba(255, 255, 255, 0.035);
+        }
 
         /* ===== AAII Bull–Bear Spread ===== */
         .aaii-spread {
@@ -440,8 +462,15 @@
             cursor: help;
         }
 
-        .spread-arrow.up { color: #34d399; background: rgba(16, 185, 129, 0.18); }
-        .spread-arrow.down { color: #f87171; background: rgba(239, 68, 68, 0.18); }
+        .spread-arrow.up {
+            color: #34d399;
+            background: rgba(16, 185, 129, 0.18);
+        }
+
+        .spread-arrow.down {
+            color: #f87171;
+            background: rgba(239, 68, 68, 0.18);
+        }
 
         .date {
             font-size: 0.8rem;
@@ -1539,7 +1568,7 @@
             // 변동률 포맷팅
             if (change === undefined || change === null) {
                 badgeEl.innerText = '-';
-                badgeEl.className = 'change-badge change-neutral';
+                badgeEl.className = 'change-badge chang수e-neutral';
             } else {
                 const sign = change > 0 ? '+' : '';
                 badgeEl.innerText = `${sign}${change.toFixed(2)}%`;
