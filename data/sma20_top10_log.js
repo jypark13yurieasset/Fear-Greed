@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-10-23": [
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 17.22,
-      "rsi14": 78.97
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 16.77,
-      "rsi14": 72.49
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 16.69,
-      "rsi14": 80.36
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 14.54,
-      "rsi14": 77.98
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.2,
-      "rsi14": 69.96
-    },
-    {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.16,
-      "rsi14": 64.05
-    },
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "dist_sma20": 11.39,
-      "rsi14": 69.53
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 11.25,
-      "rsi14": 67.44
-    },
-    {
-      "ticker": "WM",
-      "name": "Waste Management, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 10.77,
-      "rsi14": 78.29
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma20": 10.53,
-      "rsi14": 76.75
-    }
-  ],
   "2026-10-27": [
     {
       "ticker": "LMT",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Industrials",
       "dist_sma20": 10.01,
       "rsi14": 74.77
+    }
+  ],
+  "2026-11-05": [
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 23.97,
+      "rsi14": 72.98
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 22.88,
+      "rsi14": 79.44
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 18.8,
+      "rsi14": 85.25
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 18.12,
+      "rsi14": 82.84
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 16.82,
+      "rsi14": 68.15
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 14.78,
+      "rsi14": 74.78
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "dist_sma20": 14.64,
+      "rsi14": 72.19
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "dist_sma20": 14.55,
+      "rsi14": 76.35
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 14.12,
+      "rsi14": 72.43
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 13.88,
+      "rsi14": 70.53
     }
   ]
 };

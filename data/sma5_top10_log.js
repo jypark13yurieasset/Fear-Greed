@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-23": [
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike Holdings, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 8.19,
-      "rsi14": 55.92
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.5,
-      "rsi14": 52.3
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.67,
-      "rsi14": 80.36
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 6.27,
-      "rsi14": 77.98
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 5.68,
-      "rsi14": 78.97
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB N.V.",
-      "sector": "Energy",
-      "dist_sma5": 4.95,
-      "rsi14": 60.2
-    },
-    {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 4.66,
-      "rsi14": 71.13
-    },
-    {
-      "ticker": "BX",
-      "name": "Blackstone Inc.",
-      "sector": "Financials",
-      "dist_sma5": 4.64,
-      "rsi14": 53.48
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 4.4,
-      "rsi14": 46.56
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 4.03,
-      "rsi14": 69.96
-    }
-  ],
   "2026-10-27": [
     {
       "ticker": "LMT",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Industrials",
       "dist_sma5": 3.28,
       "rsi14": 57.89
+    }
+  ],
+  "2026-11-05": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 12.13,
+      "rsi14": 68.15
+    },
+    {
+      "ticker": "XYZ",
+      "name": "Block, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 11.24,
+      "rsi14": 70.84
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 10.51,
+      "rsi14": 50.81
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 10.2,
+      "rsi14": 79.44
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 9.74,
+      "rsi14": 61.14
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "dist_sma5": 8.82,
+      "rsi14": 70.26
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 8.49,
+      "rsi14": 72.98
+    },
+    {
+      "ticker": "MMM",
+      "name": "3M Company",
+      "sector": "Industrials",
+      "dist_sma5": 7.62,
+      "rsi14": 75.2
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 7.59,
+      "rsi14": 72.56
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 7.53,
+      "rsi14": 85.25
     }
   ]
 };
