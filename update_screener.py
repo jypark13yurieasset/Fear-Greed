@@ -622,7 +622,9 @@ def us_date_to_log_key(us_date_str):
 
 # 누락된 거래일 감지: 마지막 처리일(signal_history의 last_seen 최댓값)과 최신 거래일 사이
 backfill_log_rows = {}   # {KST 로그 키: [종목별 dist_sma5/dist_sma20/rsi14 ...]}
-_seen_dates = [v.get('last_seen') for v in signal_history.values() if isinstance(v, dict) and v.get('last_seen')]
+# 한국 종목(.KS/.KQ)은 한국 거래일 기준이라 미국 거래일 비교에서 제외 (_us_dates와 동일 기준)
+_seen_dates = [v.get('last_seen') for t, v in signal_history.items()
+               if not t.endswith(('.KS', '.KQ')) and isinstance(v, dict) and v.get('last_seen')]
 _last_done = max(_seen_dates) if _seen_dates else None
 _us_dates = sorted({str(d.date()) for t, s in all_data.items()
                     if not t.endswith(('.KS', '.KQ')) for d in s.index[-30:]})
