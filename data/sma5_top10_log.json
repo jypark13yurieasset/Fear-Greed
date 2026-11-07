@@ -436,71 +436,71 @@
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
-      "dist_sma5": 33.8,
-      "rsi14": 71.78
+      "dist_sma5": 30.98,
+      "rsi14": 76.31
     },
     {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 6.73,
-      "rsi14": 59.47
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 8.62,
+      "rsi14": 66.21
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.62,
+      "rsi14": 63.74
     },
     {
       "ticker": "NEM",
       "name": "Newmont Corporation",
       "sector": "Materials",
-      "dist_sma5": 6.7,
-      "rsi14": 56.68
+      "dist_sma5": 5.09,
+      "rsi14": 58.06
     },
     {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 5.82,
-      "rsi14": 58.43
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 5.77,
-      "rsi14": 67.15
-    },
-    {
-      "ticker": "BDX",
-      "name": "Becton, Dickinson and Company",
-      "sector": "Health Care",
-      "dist_sma5": 4.95,
-      "rsi14": 78.21
-    },
-    {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 4.88,
-      "rsi14": 75.25
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 4.89,
+      "rsi14": 60.69
     },
     {
       "ticker": "XYZ",
       "name": "Block, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 4.8,
-      "rsi14": 61.68
+      "dist_sma5": 4.19,
+      "rsi14": 63.71
     },
     {
-      "ticker": "HCA",
-      "name": "HCA Healthcare, Inc.",
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
       "sector": "Health Care",
-      "dist_sma5": 4.77,
-      "rsi14": 68.55
+      "dist_sma5": 4.06,
+      "rsi14": 76.83
     },
     {
-      "ticker": "MCK",
-      "name": "McKesson Corporation",
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
       "sector": "Health Care",
-      "dist_sma5": 4.4,
-      "rsi14": 74.31
+      "dist_sma5": 3.81,
+      "rsi14": 73.84
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.7,
+      "rsi14": 61.06
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 2.88,
+      "rsi14": 43.78
     }
   ]
 }

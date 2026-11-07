@@ -436,71 +436,71 @@ const SMA20_LAGGARDS_LOG = {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -40.37,
-      "rsi14": 22.64
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -38.89,
-      "rsi14": 20.59
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -38.41,
-      "rsi14": 26.49
+      "dist_sma20": -35.0,
+      "rsi14": 26.22
     },
     {
       "ticker": "SNDK",
       "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma20": -37.37,
-      "rsi14": 24.15
+      "dist_sma20": -33.22,
+      "rsi14": 26.25
     },
     {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -34.91,
-      "rsi14": 25.13
+      "dist_sma20": -32.63,
+      "rsi14": 29.51
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -32.25,
+      "rsi14": 25.72
     },
     {
       "ticker": "TER",
       "name": "Teradyne, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -32.89,
-      "rsi14": 22.15
+      "dist_sma20": -29.1,
+      "rsi14": 24.3
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -32.09,
-      "rsi14": 26.07
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -31.59,
-      "rsi14": 26.18
+      "dist_sma20": -28.88,
+      "rsi14": 29.11
     },
     {
       "ticker": "STX",
       "name": "Seagate Technology Holdings plc",
       "sector": "Information Technology",
-      "dist_sma20": -29.37,
-      "rsi14": 24.8
+      "dist_sma20": -28.47,
+      "rsi14": 24.49
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma20": -29.11,
-      "rsi14": 29.71
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -28.24,
+      "rsi14": 28.28
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -27.61,
+      "rsi14": 28.74
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -26.44,
+      "rsi14": 23.14
     }
   ]
 };

@@ -436,71 +436,71 @@ const SMA20_TOP10_LOG = {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
-      "dist_sma20": 33.6,
-      "rsi14": 71.78
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 16.37,
-      "rsi14": 70.28
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 16.06,
-      "rsi14": 81.9
+      "dist_sma20": 43.7,
+      "rsi14": 76.31
     },
     {
       "ticker": "CVNA",
       "name": "Carvana Co.",
       "sector": "Consumer Discretionary",
-      "dist_sma20": 14.4,
-      "rsi14": 61.04
+      "dist_sma20": 15.86,
+      "rsi14": 62.82
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 15.7,
+      "rsi14": 70.97
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 13.05,
+      "rsi14": 63.74
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 11.86,
+      "rsi14": 76.83
     },
     {
       "ticker": "GEHC",
       "name": "GE HealthCare Technologies Inc.",
       "sector": "Health Care",
-      "dist_sma20": 14.4,
-      "rsi14": 76.86
+      "dist_sma20": 11.26,
+      "rsi14": 71.8
     },
     {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": 13.2,
-      "rsi14": 76.07
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 11.18,
+      "rsi14": 71.92
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 10.8,
+      "rsi14": 66.21
     },
     {
       "ticker": "FER",
       "name": "Ferrovial N.V.",
       "sector": "Industrials",
-      "dist_sma20": 12.67,
-      "rsi14": 70.84
+      "dist_sma20": 10.78,
+      "rsi14": 67.9
     },
     {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
       "sector": "Consumer Discretionary",
-      "dist_sma20": 12.63,
-      "rsi14": 72.05
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 12.41,
-      "rsi14": 69.35
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 11.61,
-      "rsi14": 69.1
+      "dist_sma20": 10.44,
+      "rsi14": 66.73
     }
   ]
 };

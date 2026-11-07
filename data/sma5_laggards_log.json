@@ -433,74 +433,74 @@
   ],
   "2026-11-06": [
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -20.22,
+      "rsi14": 23.86
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology Incorporated",
       "sector": "Information Technology",
-      "dist_sma5": -23.74,
-      "rsi14": 26.49
+      "dist_sma5": -17.25,
+      "rsi14": 26.93
     },
     {
       "ticker": "SNDK",
       "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -22.4,
-      "rsi14": 24.15
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -20.22,
-      "rsi14": 25.13
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -19.85,
-      "rsi14": 22.64
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -18.68,
-      "rsi14": 24.8
+      "dist_sma5": -14.45,
+      "rsi14": 26.25
     },
     {
       "ticker": "WDC",
       "name": "Western Digital Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -18.58,
-      "rsi14": 28.76
+      "dist_sma5": -14.42,
+      "rsi14": 28.33
     },
     {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
       "sector": "Information Technology",
-      "dist_sma5": -18.46,
-      "rsi14": 27.05
+      "dist_sma5": -14.15,
+      "rsi14": 24.49
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -11.4,
+      "rsi14": 29.51
     },
     {
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
       "sector": "Industrials",
-      "dist_sma5": -17.8,
-      "rsi14": 34.08
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -17.25,
-      "rsi14": 26.07
+      "dist_sma5": -10.83,
+      "rsi14": 36.69
     },
     {
       "ticker": "TER",
       "name": "Teradyne, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": -16.14,
-      "rsi14": 22.15
+      "dist_sma5": -10.0,
+      "rsi14": 24.3
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.93,
+      "rsi14": 31.27
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -9.76,
+      "rsi14": 29.11
     }
   ]
 }
