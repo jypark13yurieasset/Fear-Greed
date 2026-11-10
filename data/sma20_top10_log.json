@@ -1,76 +1,4 @@
 {
-  "2026-10-28": [
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 15.61,
-      "rsi14": 75.86
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.11,
-      "rsi14": 74.78
-    },
-    {
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 9.75,
-      "rsi14": 72.53
-    },
-    {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 9.7,
-      "rsi14": 72.8
-    },
-    {
-      "ticker": "URI",
-      "name": "United Rentals, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 9.23,
-      "rsi14": 69.15
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 8.86,
-      "rsi14": 65.48
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 8.86,
-      "rsi14": 63.38
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB N.V.",
-      "sector": "Energy",
-      "dist_sma20": 8.58,
-      "rsi14": 63.43
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 8.47,
-      "rsi14": 63.14
-    },
-    {
-      "ticker": "CSX",
-      "name": "CSX Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 7.95,
-      "rsi14": 71.28
-    }
-  ],
   "2026-10-29": [
     {
       "ticker": "LMT",
@@ -501,6 +429,78 @@
       "sector": "Consumer Discretionary",
       "dist_sma20": 10.44,
       "rsi14": 66.73
+    }
+  ],
+  "2026-11-10": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 46.84,
+      "rsi14": 78.32
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 19.08,
+      "rsi14": 74.62
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 18.53,
+      "rsi14": 65.86
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 18.18,
+      "rsi14": 67.21
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 14.64,
+      "rsi14": 73.91
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 13.53,
+      "rsi14": 79.57
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 13.49,
+      "rsi14": 66.49
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 12.68,
+      "rsi14": 69.87
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 12.67,
+      "rsi14": 72.57
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.57,
+      "rsi14": 58.8
     }
   ]
 }

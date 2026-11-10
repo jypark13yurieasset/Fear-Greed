@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-28": [
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 8.13,
-      "rsi14": 45.12
-    },
-    {
-      "ticker": "P",
-      "name": "Everpure, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.46,
-      "rsi14": 57.22
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.13,
-      "rsi14": 58.4
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.1,
-      "rsi14": 46.64
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma5": 6.44,
-      "rsi14": 59.52
-    },
-    {
-      "ticker": "SNPS",
-      "name": "Synopsys, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.25,
-      "rsi14": 57.06
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.15,
-      "rsi14": 48.87
-    },
-    {
-      "ticker": "TXN",
-      "name": "Texas Instruments Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": 6.09,
-      "rsi14": 69.98
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.08,
-      "rsi14": 43.84
-    },
-    {
-      "ticker": "CDNS",
-      "name": "Cadence Design Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.06,
-      "rsi14": 58.05
-    }
-  ],
   "2026-10-29": [
     {
       "ticker": "VRT",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Industrials",
       "dist_sma5": 2.88,
       "rsi14": 43.78
+    }
+  ],
+  "2026-11-10": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 22.42,
+      "rsi14": 78.32
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 11.17,
+      "rsi14": 51.39
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.17,
+      "rsi14": 58.8
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.92,
+      "rsi14": 47.67
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "sector": "Utilities",
+      "dist_sma5": 8.29,
+      "rsi14": 55.7
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.67,
+      "rsi14": 51.51
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 7.47,
+      "rsi14": 67.21
+    },
+    {
+      "ticker": "FERG",
+      "name": "Ferguson Enterprises Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 6.55,
+      "rsi14": 70.42
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.46,
+      "rsi14": 66.38
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": 5.82,
+      "rsi14": 62.59
     }
   ]
 };

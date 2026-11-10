@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-10-28": [
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -18.46,
-      "rsi14": 34.61
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -17.5,
-      "rsi14": 31.07
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma20": -14.4,
-      "rsi14": 38.85
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -14.07,
-      "rsi14": 32.72
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -13.94,
-      "rsi14": 34.08
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "sector": "Information Technology",
-      "dist_sma20": -13.73,
-      "rsi14": 40.68
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma20": -12.85,
-      "rsi14": 42.45
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -12.68,
-      "rsi14": 38.86
-    },
-    {
-      "ticker": "GLW",
-      "name": "Corning Incorporated",
-      "sector": "Information Technology",
-      "dist_sma20": -12.54,
-      "rsi14": 36.08
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": -12.34,
-      "rsi14": 31.92
-    }
-  ],
   "2026-10-29": [
     {
       "ticker": "TER",
@@ -501,6 +429,78 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma20": -26.44,
       "rsi14": 23.14
+    }
+  ],
+  "2026-11-10": [
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -27.35,
+      "rsi14": 30.01
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -26.97,
+      "rsi14": 32.14
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -26.68,
+      "rsi14": 29.48
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -26.42,
+      "rsi14": 28.56
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -24.65,
+      "rsi14": 22.74
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -23.51,
+      "rsi14": 35.2
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.5,
+      "rsi14": 26.83
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": -22.25,
+      "rsi14": 22.41
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.21,
+      "rsi14": 28.61
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -21.7,
+      "rsi14": 32.74
     }
   ]
 };

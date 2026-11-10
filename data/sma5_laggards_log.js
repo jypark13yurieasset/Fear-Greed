@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-10-28": [
-    {
-      "ticker": "BA",
-      "name": "The Boeing Company",
-      "sector": "Industrials",
-      "dist_sma5": -9.06,
-      "rsi14": 25.31
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": -7.62,
-      "rsi14": 38.79
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma5": -5.13,
-      "rsi14": 44.54
-    },
-    {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.94,
-      "rsi14": 34.24
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.88,
-      "rsi14": 47.73
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": -4.85,
-      "rsi14": 47.51
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": -4.47,
-      "rsi14": 60.93
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -4.28,
-      "rsi14": 31.92
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.21,
-      "rsi14": 48.94
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.05,
-      "rsi14": 34.82
-    }
-  ],
   "2026-10-29": [
     {
       "ticker": "BA",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma5": -9.76,
       "rsi14": 29.11
+    }
+  ],
+  "2026-11-10": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -17.59,
+      "rsi14": 22.74
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -9.01,
+      "rsi14": 32.96
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -6.33,
+      "rsi14": 27.4
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.53,
+      "rsi14": 30.01
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -5.14,
+      "rsi14": 39.46
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.71,
+      "rsi14": 28.56
+    },
+    {
+      "ticker": "PM",
+      "name": "Philip Morris International Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": -4.57,
+      "rsi14": 40.76
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -4.39,
+      "rsi14": 46.18
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.91,
+      "rsi14": 33.52
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": -3.3,
+      "rsi14": 28.76
     }
   ]
 };
