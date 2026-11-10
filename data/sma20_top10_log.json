@@ -1,76 +1,4 @@
 {
-  "2026-10-29": [
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 15.57,
-      "rsi14": 76.98
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 13.38,
-      "rsi14": 76.48
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 10.76,
-      "rsi14": 72.77
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": 10.24,
-      "rsi14": 66.58
-    },
-    {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "sector": "Financials",
-      "dist_sma20": 10.16,
-      "rsi14": 74.49
-    },
-    {
-      "ticker": "HONA",
-      "name": "Honeywell Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 10.13,
-      "rsi14": 66.41
-    },
-    {
-      "ticker": "URI",
-      "name": "United Rentals, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 9.52,
-      "rsi14": 70.61
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 9.1,
-      "rsi14": 64.5
-    },
-    {
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 8.58,
-      "rsi14": 70.6
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 8.42,
-      "rsi14": 63.86
-    }
-  ],
   "2026-10-30": [
     {
       "ticker": "REGN",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma20": 12.57,
       "rsi14": 58.8
+    }
+  ],
+  "2026-11-11": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 38.59,
+      "rsi14": 73.17
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 15.68,
+      "rsi14": 71.46
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 15.16,
+      "rsi14": 55.69
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 13.1,
+      "rsi14": 66.97
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 12.8,
+      "rsi14": 71.75
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 12.54,
+      "rsi14": 70.74
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 12.39,
+      "rsi14": 59.55
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 11.64,
+      "rsi14": 76.9
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 11.39,
+      "rsi14": 72.27
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.65,
+      "rsi14": 72.6
     }
   ]
 }

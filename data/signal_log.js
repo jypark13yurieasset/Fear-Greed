@@ -1,109 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-09-09",
-    "ticker": "XYZ",
-    "name": "Block, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 79.4000015258789
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "SHOP",
-    "name": "Shopify Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 126.79000091552734
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "NBIS",
-    "name": "Nebius Group N.V.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 240.35000610351562
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "CRWV",
-    "name": "CoreWeave, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 94.94000244140625
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "CCEP",
-    "name": "Coca-Cola Europacific Partners PLC",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 103.81999969482422
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "ADSK",
-    "name": "Autodesk, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 206.6199951171875
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "TRI",
-    "name": "Thomson Reuters Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 96.9800033569336
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "PAYX",
-    "name": "Paychex, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 114.75
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "KHC",
-    "name": "The Kraft Heinz Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 24.610000610351562
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "005930.KS",
-    "name": "Samsung Electronics Co., Ltd.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 269500.0
-  },
-  {
-    "date": "2026-09-09",
-    "ticker": "000660.KS",
-    "name": "SK Hynix Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 1856000.0
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "AMD",
-    "name": "Advanced Micro Devices, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 503.6000061035156
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "INTC",
-    "name": "Intel Corporation",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 100.31999969482422
-  },
-  {
     "date": "2026-09-10",
     "ticker": "PG",
     "name": "The Procter & Gamble Company",
@@ -7998,5 +7894,109 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 3,
     "entry_price": 61.494998931884766
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "XOM",
+    "name": "Exxon Mobil Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 164.47000122070312
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "CVX",
+    "name": "Chevron Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 211.22000122070312
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "PM",
+    "name": "Philip Morris International Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 194.25
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "COP",
+    "name": "ConocoPhillips",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 135.58999633789062
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "NEM",
+    "name": "Newmont Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 119.95999908447266
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 965.1699829101562
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "COF",
+    "name": "Capital One Financial Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 195.83999633789062
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "SLB",
+    "name": "SLB N.V.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 49.900001525878906
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 1357.5999755859375
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "GRMN",
+    "name": "Garmin Ltd.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 288.6600036621094
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "SRE",
+    "name": "Sempra",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 78.37999725341797
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "WDAY",
+    "name": "Workday, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 188.88999938964844
+  },
+  {
+    "date": "2026-11-10",
+    "ticker": "TTWO",
+    "name": "Take-Two Interactive Software, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 224.63999938964844
   }
 ];

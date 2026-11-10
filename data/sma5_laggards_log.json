@@ -1,76 +1,4 @@
 {
-  "2026-10-29": [
-    {
-      "ticker": "BA",
-      "name": "The Boeing Company",
-      "sector": "Industrials",
-      "dist_sma5": -7.1,
-      "rsi14": 24.75
-    },
-    {
-      "ticker": "GRMN",
-      "name": "Garmin Ltd.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.63,
-      "rsi14": 39.1
-    },
-    {
-      "ticker": "BSX",
-      "name": "Boston Scientific Corporation",
-      "sector": "Health Care",
-      "dist_sma5": -5.61,
-      "rsi14": 40.15
-    },
-    {
-      "ticker": "ODFL",
-      "name": "Old Dominion Freight Line, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -5.33,
-      "rsi14": 37.13
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": -5.16,
-      "rsi14": 39.34
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -5.08,
-      "rsi14": 45.97
-    },
-    {
-      "ticker": "WM",
-      "name": "Waste Management, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -4.63,
-      "rsi14": 53.06
-    },
-    {
-      "ticker": "ADP",
-      "name": "Automatic Data Processing, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -4.35,
-      "rsi14": 52.66
-    },
-    {
-      "ticker": "ELV",
-      "name": "Elevance Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -3.74,
-      "rsi14": 47.27
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.7,
-      "rsi14": 30.67
-    }
-  ],
   "2026-10-30": [
     {
       "ticker": "INTC",
@@ -501,6 +429,78 @@
       "sector": "Energy",
       "dist_sma5": -3.3,
       "rsi14": 28.76
+    }
+  ],
+  "2026-11-11": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -12.33,
+      "rsi14": 22.66
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -7.8,
+      "rsi14": 23.95
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -6.5,
+      "rsi14": 37.0
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": -5.84,
+      "rsi14": 31.92
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -4.51,
+      "rsi14": 31.16
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -4.0,
+      "rsi14": 46.32
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.39,
+      "rsi14": 27.11
+    },
+    {
+      "ticker": "DXCM",
+      "name": "DexCom, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -3.32,
+      "rsi14": 44.21
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.26,
+      "rsi14": 48.44
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.03,
+      "rsi14": 41.66
     }
   ]
 }
