@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-10-30": [
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 17.62,
-      "rsi14": 79.11
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 17.05,
-      "rsi14": 82.2
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 14.07,
-      "rsi14": 75.5
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "dist_sma20": 13.77,
-      "rsi14": 77.88
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma20": 13.36,
-      "rsi14": 70.11
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 11.88,
-      "rsi14": 62.63
-    },
-    {
-      "ticker": "LHX",
-      "name": "L3Harris Technologies, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 11.79,
-      "rsi14": 76.23
-    },
-    {
-      "ticker": "GILD",
-      "name": "Gilead Sciences, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 10.51,
-      "rsi14": 74.28
-    },
-    {
-      "ticker": "AJG",
-      "name": "Arthur J. Gallagher & Co.",
-      "sector": "Financials",
-      "dist_sma20": 10.43,
-      "rsi14": 69.52
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": 10.43,
-      "rsi14": 69.46
-    }
-  ],
   "2026-11-03": [
     {
       "ticker": "IDXX",
@@ -432,6 +360,78 @@ const SMA20_TOP10_LOG = {
     }
   ],
   "2026-11-11": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 38.59,
+      "rsi14": 73.17
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 15.68,
+      "rsi14": 71.46
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 15.16,
+      "rsi14": 55.69
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 13.1,
+      "rsi14": 66.97
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 12.8,
+      "rsi14": 71.75
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 12.54,
+      "rsi14": 70.74
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 12.39,
+      "rsi14": 59.55
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 11.64,
+      "rsi14": 76.9
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 11.39,
+      "rsi14": 72.27
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.65,
+      "rsi14": 72.6
+    }
+  ],
+  "2026-11-12": [
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",

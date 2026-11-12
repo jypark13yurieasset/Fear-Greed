@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-10-30": [
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 10.89,
-      "rsi14": 79.11
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 9.62,
-      "rsi14": 62.63
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "dist_sma5": 6.73,
-      "rsi14": 77.88
-    },
-    {
-      "ticker": "GM",
-      "name": "General Motors Company",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 5.95,
-      "rsi14": 62.46
-    },
-    {
-      "ticker": "ICE",
-      "name": "Intercontinental Exchange, Inc.",
-      "sector": "Financials",
-      "dist_sma5": 5.09,
-      "rsi14": 65.5
-    },
-    {
-      "ticker": "GILD",
-      "name": "Gilead Sciences, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.94,
-      "rsi14": 74.28
-    },
-    {
-      "ticker": "TMUS",
-      "name": "T-Mobile US, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": 4.91,
-      "rsi14": 48.52
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": 4.87,
-      "rsi14": 70.11
-    },
-    {
-      "ticker": "VRTX",
-      "name": "Vertex Pharmaceuticals Incorporated",
-      "sector": "Health Care",
-      "dist_sma5": 4.77,
-      "rsi14": 67.65
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 4.64,
-      "rsi14": 59.01
-    }
-  ],
   "2026-11-03": [
     {
       "ticker": "IDXX",
@@ -432,6 +360,78 @@ const SMA5_TOP10_LOG = {
     }
   ],
   "2026-11-11": [
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 14.85,
+      "rsi14": 55.69
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.88,
+      "rsi14": 48.6
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 8.38,
+      "rsi14": 73.17
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.26,
+      "rsi14": 56.45
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.26,
+      "rsi14": 49.4
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sector": "Health Care",
+      "dist_sma5": 6.12,
+      "rsi14": 50.45
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 5.88,
+      "rsi14": 44.84
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 5.82,
+      "rsi14": 39.77
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.57,
+      "rsi14": 41.95
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "sector": "Industrials",
+      "dist_sma5": 5.37,
+      "rsi14": 49.09
+    }
+  ],
+  "2026-11-12": [
     {
       "ticker": "RKLB",
       "name": "Rocket Lab Corporation",
