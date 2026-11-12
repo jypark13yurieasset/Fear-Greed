@@ -433,74 +433,74 @@ const SMA5_LAGGARDS_LOG = {
   ],
   "2026-11-12": [
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -12.33,
-      "rsi14": 22.66
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -7.8,
-      "rsi14": 23.95
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -2.67,
+      "rsi14": 46.12
     },
     {
       "ticker": "MSTR",
       "name": "Strategy Inc",
       "sector": "Information Technology",
-      "dist_sma5": -6.5,
-      "rsi14": 37.0
+      "dist_sma5": -2.47,
+      "rsi14": 38.18
     },
     {
-      "ticker": "MCHP",
-      "name": "Microchip Technology Incorporated",
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -2.45,
+      "rsi14": 27.83
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -5.84,
-      "rsi14": 31.92
+      "dist_sma5": -2.35,
+      "rsi14": 28.74
     },
     {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.51,
-      "rsi14": 31.16
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -2.26,
+      "rsi14": 47.68
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "dist_sma5": -2.2,
+      "rsi14": 56.57
     },
     {
       "ticker": "TRI",
       "name": "Thomson Reuters Corporation",
       "sector": "Industrials",
-      "dist_sma5": -4.0,
-      "rsi14": 46.32
+      "dist_sma5": -2.17,
+      "rsi14": 46.88
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": -1.96,
+      "rsi14": 52.76
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
       "sector": "Information Technology",
-      "dist_sma5": -3.39,
-      "rsi14": 27.11
+      "dist_sma5": -1.85,
+      "rsi14": 59.4
     },
     {
-      "ticker": "DXCM",
-      "name": "DexCom, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -3.32,
-      "rsi14": 44.21
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
+      "ticker": "NKE",
+      "name": "NIKE, Inc.",
       "sector": "Consumer Discretionary",
-      "dist_sma5": -3.26,
-      "rsi14": 48.44
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.03,
-      "rsi14": 41.66
+      "dist_sma5": -1.75,
+      "rsi14": 51.89
     }
   ]
 };

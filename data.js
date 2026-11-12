@@ -41462,19 +41462,19 @@ window.fng_data = {
         "nasdaq_change": 1.6,
         "vix_price": 17.49,
         "vix_change": -10.12,
-        "dxy_price": 102.83,
-        "dxy_change": -0.04,
+        "dxy_price": 102.94,
+        "dxy_change": 0.03,
         "btc_data": {
-            "price": 73579.9,
+            "price": 73730.02,
             "ath": 126198.07,
-            "drawdown": -41.69
+            "drawdown": -41.58
         },
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$27.833 T"
+                "mcap": "$27.763 T"
             },
             {
                 "rank": 2,
@@ -41504,7 +41504,7 @@ window.fng_data = {
                 "rank": 6,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$2.911 T"
+                "mcap": "$2.910 T"
             },
             {
                 "rank": 7,
@@ -41552,7 +41552,7 @@ window.fng_data = {
                 "rank": 14,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.480 T"
+                "mcap": "$1.483 T"
             },
             {
                 "rank": 15,
@@ -41576,7 +41576,7 @@ window.fng_data = {
                 "rank": 18,
                 "name": "Samsung",
                 "code": "005930.KS",
-                "mcap": "$1.031 T"
+                "mcap": "$1.045 T"
             },
             {
                 "rank": 19,
@@ -41868,6 +41868,6 @@ window.fng_data = {
                 "weight": 2.91
             }
         ],
-        "updated_at": "11-12 10:24 KST"
+        "updated_at": "11-12 11:43 KST"
     }
 };

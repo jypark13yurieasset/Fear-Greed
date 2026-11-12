@@ -433,74 +433,74 @@ const SMA20_LAGGARDS_LOG = {
   ],
   "2026-11-12": [
     {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -27.68,
-      "rsi14": 29.18
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -26.18,
-      "rsi14": 28.85
-    },
-    {
       "ticker": "DDOG",
       "name": "Datadog, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -25.32,
-      "rsi14": 28.31
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -25.04,
-      "rsi14": 32.1
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -23.76,
-      "rsi14": 22.66
+      "dist_sma20": -21.42,
+      "rsi14": 31.54
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -23.47,
-      "rsi14": 27.11
+      "dist_sma20": -19.9,
+      "rsi14": 31.0
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -19.57,
+      "rsi14": 27.83
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -18.79,
+      "rsi14": 34.2
     },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals, Inc.",
       "sector": "Health Care",
-      "dist_sma20": -23.34,
-      "rsi14": 21.08
+      "dist_sma20": -17.85,
+      "rsi14": 28.61
     },
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -22.88,
-      "rsi14": 34.65
+      "dist_sma20": -16.49,
+      "rsi14": 38.27
     },
     {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma20": -22.31,
-      "rsi14": 31.46
+      "dist_sma20": -16.29,
+      "rsi14": 37.42
     },
     {
       "ticker": "FTNT",
       "name": "Fortinet, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -20.1,
-      "rsi14": 27.96
+      "dist_sma20": -15.65,
+      "rsi14": 32.57
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -14.76,
+      "rsi14": 28.74
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": -14.59,
+      "rsi14": 35.34
     }
   ]
 };

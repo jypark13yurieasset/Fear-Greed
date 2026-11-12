@@ -488,14 +488,14 @@
     },
     "_valuation_measures": {
       "marketCap": 55354441728,
-      "enterpriseValue": 56166109184,
+      "enterpriseValue": 56129867776,
       "trailingPE": 47.34434,
       "forwardPE": 41.615482,
       "pegRatio": 3.24,
       "priceToSalesTrailing12Months": 11.872977,
       "priceToBook": 29.615158,
-      "enterpriseToRevenue": 12.047,
-      "enterpriseToEbitda": 33.57
+      "enterpriseToRevenue": 12.039,
+      "enterpriseToEbitda": 33.548
     }
   },
   "WTW": {
@@ -1556,14 +1556,14 @@
     },
     "_valuation_measures": {
       "marketCap": 77717135360,
-      "enterpriseValue": 75073658880,
+      "enterpriseValue": 75043143680,
       "trailingPE": 73.9668,
       "forwardPE": 23.373732,
       "pegRatio": 1.02,
       "priceToSalesTrailing12Months": 4.5552506,
       "priceToBook": 7.2513523,
-      "enterpriseToRevenue": 4.4,
-      "enterpriseToEbitda": 43.903
+      "enterpriseToRevenue": 4.399,
+      "enterpriseToEbitda": 43.885
     }
   },
   "DOV": {
@@ -1842,14 +1842,14 @@
     },
     "_valuation_measures": {
       "marketCap": 2878132977664,
-      "enterpriseValue": 3068964372480,
+      "enterpriseValue": 3068748103680,
       "trailingPE": 21.517382,
       "forwardPE": 24.411116,
       "pegRatio": 1.26,
       "priceToSalesTrailing12Months": 3.6091478,
       "priceToBook": 4.689642,
       "enterpriseToRevenue": 3.848,
-      "enterpriseToEbitda": 16.705
+      "enterpriseToEbitda": 16.703
     }
   },
   "TROW": {
@@ -2331,7 +2331,7 @@
       "ebitda": 6848999936,
       "netIncomeToCommon": 4566000128,
       "trailingEps": 16.46,
-      "forwardEps": 26.92801,
+      "forwardEps": 26.93561,
       "earningsGrowth": -0.014,
       "totalCash": 7200000000,
       "totalCashPerShare": 26.942,
@@ -2344,14 +2344,14 @@
     },
     "_valuation_measures": {
       "marketCap": 91565744128,
-      "enterpriseValue": 92792086528,
+      "enterpriseValue": 92786745344,
       "trailingPE": 20.816526,
-      "forwardPE": 12.724298,
+      "forwardPE": 12.720708,
       "pegRatio": 1.08,
       "priceToSalesTrailing12Months": 4.2691975,
       "priceToBook": 4.8420105,
       "enterpriseToRevenue": 4.326,
-      "enterpriseToEbitda": 13.548
+      "enterpriseToEbitda": 13.547
     }
   },
   "IT": {
@@ -2559,14 +2559,14 @@
     },
     "_valuation_measures": {
       "marketCap": 90239287296,
-      "enterpriseValue": 92605931520,
+      "enterpriseValue": 92586082304,
       "trailingPE": 44.824455,
       "forwardPE": 36.887108,
       "pegRatio": 3.53,
       "priceToSalesTrailing12Months": 7.805748,
       "priceToBook": 17.445305,
-      "enterpriseToRevenue": 8.01,
-      "enterpriseToEbitda": 29.827
+      "enterpriseToRevenue": 8.009,
+      "enterpriseToEbitda": 29.821
     }
   },
   "MSTR": {
@@ -2631,13 +2631,13 @@
     },
     "_valuation_measures": {
       "marketCap": 51788505088,
-      "enterpriseValue": 65593204736,
+      "enterpriseValue": 65601650688,
       "forwardPE": 7.0968676,
       "pegRatio": 2.85,
       "priceToSalesTrailing12Months": 104.6057,
       "priceToBook": 0.93123966,
-      "enterpriseToRevenue": 132.489,
-      "enterpriseToEbitda": -12.046
+      "enterpriseToRevenue": 132.506,
+      "enterpriseToEbitda": -12.047
     }
   },
   "PANW": {
@@ -3552,14 +3552,14 @@
     },
     "_valuation_measures": {
       "marketCap": 1647952527360,
-      "enterpriseValue": 1684494483456,
+      "enterpriseValue": 1683396493312,
       "trailingPE": 44.0894,
       "forwardPE": 17.735357,
       "pegRatio": 0.33,
       "priceToSalesTrailing12Months": 18.494709,
       "priceToBook": 16.531942,
-      "enterpriseToRevenue": 18.905,
-      "enterpriseToEbitda": 32.233
+      "enterpriseToRevenue": 18.892,
+      "enterpriseToEbitda": 32.212
     }
   },
   "NEM": {
@@ -3696,14 +3696,14 @@
     },
     "_valuation_measures": {
       "marketCap": 209789976576,
-      "enterpriseValue": 211028410368,
+      "enterpriseValue": 211041435648,
       "trailingPE": 40.353382,
       "forwardPE": 22.68117,
       "pegRatio": 1.38,
       "priceToSalesTrailing12Months": 14.462495,
       "priceToBook": 32.169827,
-      "enterpriseToRevenue": 14.548,
-      "enterpriseToEbitda": 32.073
+      "enterpriseToRevenue": 14.549,
+      "enterpriseToEbitda": 32.075
     }
   },
   "TFC": {
@@ -5975,14 +5975,14 @@
     },
     "_valuation_measures": {
       "marketCap": 96597409792,
-      "enterpriseValue": 119718600704,
+      "enterpriseValue": 119708401664,
       "trailingPE": 22.084406,
       "forwardPE": 20.491383,
       "pegRatio": 3.74,
       "priceToSalesTrailing12Months": 2.8203623,
       "priceToBook": 2.9529428,
       "enterpriseToRevenue": 3.495,
-      "enterpriseToEbitda": 12.633
+      "enterpriseToEbitda": 12.631
     }
   },
   "GEHC": {
@@ -6047,14 +6047,14 @@
     },
     "_valuation_measures": {
       "marketCap": 37346582528,
-      "enterpriseValue": 45192146944,
+      "enterpriseValue": 45178585088,
       "trailingPE": 17.463001,
       "forwardPE": 15.011358,
       "pegRatio": 2.24,
       "priceToSalesTrailing12Months": 1.7260518,
       "priceToBook": 3.2156343,
-      "enterpriseToRevenue": 2.089,
-      "enterpriseToEbitda": 12.564
+      "enterpriseToRevenue": 2.088,
+      "enterpriseToEbitda": 12.56
     }
   },
   "NWS": {
@@ -6888,7 +6888,7 @@
       "grossProfits": 11006999552,
       "ebitda": 9456000000,
       "netIncomeToCommon": 3356000000,
-      "trailingEps": 6.12,
+      "trailingEps": 6.19,
       "forwardEps": 6.8981,
       "earningsGrowth": 0.193,
       "totalCash": 670000000,
@@ -6903,7 +6903,7 @@
     "_valuation_measures": {
       "marketCap": 70358253568,
       "enterpriseValue": 126081245184,
-      "trailingPE": 21.112747,
+      "trailingPE": 20.873991,
       "forwardPE": 18.731247,
       "pegRatio": 2.77,
       "priceToSalesTrailing12Months": 2.9797668,
@@ -7473,14 +7473,14 @@
     },
     "_valuation_measures": {
       "marketCap": 108087918592,
-      "enterpriseValue": 96352395264,
+      "enterpriseValue": 96346521600,
       "trailingPE": 33.983116,
       "forwardPE": 28.705957,
       "pegRatio": 1.6,
       "priceToSalesTrailing12Months": 7.757692,
       "priceToBook": 11.456673,
       "enterpriseToRevenue": 6.915,
-      "enterpriseToEbitda": 30.598
+      "enterpriseToEbitda": 30.596
     }
   },
   "GOOG": {
@@ -7545,14 +7545,14 @@
     },
     "_valuation_measures": {
       "marketCap": 3573005156352,
-      "enterpriseValue": 3476752957440,
+      "enterpriseValue": 3476261175296,
       "trailingPE": 15.176502,
       "forwardPE": 18.82915,
       "pegRatio": 1.01,
       "priceToSalesTrailing12Months": 7.58442,
       "priceToBook": 5.417552,
-      "enterpriseToRevenue": 7.38,
-      "enterpriseToEbitda": 18.741
+      "enterpriseToRevenue": 7.379,
+      "enterpriseToEbitda": 18.738
     }
   },
   "TSCO": {
@@ -7900,14 +7900,14 @@
     },
     "_valuation_measures": {
       "marketCap": 29800048640,
-      "enterpriseValue": 25424463872,
+      "enterpriseValue": 25415200768,
       "trailingPE": 20.754839,
       "forwardPE": 17.77348,
       "pegRatio": 3.24,
       "priceToSalesTrailing12Months": 6.386351,
       "priceToBook": 3.2756336,
-      "enterpriseToRevenue": 5.449,
-      "enterpriseToEbitda": 13.623
+      "enterpriseToRevenue": 5.447,
+      "enterpriseToEbitda": 13.618
     }
   },
   "SNA": {
@@ -9731,7 +9731,7 @@
       "ebitda": 5377999872,
       "netIncomeToCommon": 2227000064,
       "trailingEps": 7.22,
-      "forwardEps": 8.01288,
+      "forwardEps": 8.01275,
       "earningsGrowth": 0.097,
       "totalCash": 92000000,
       "totalCashPerShare": 0.302,
@@ -9746,7 +9746,7 @@
       "marketCap": 75958845440,
       "enterpriseValue": 90141851648,
       "trailingPE": 34.534626,
-      "forwardPE": 31.1174,
+      "forwardPE": 31.117907,
       "pegRatio": 3.17,
       "priceToSalesTrailing12Months": 4.406477,
       "priceToBook": 6.214081,
@@ -10679,14 +10679,14 @@
     },
     "_valuation_measures": {
       "marketCap": 397255049216,
-      "enterpriseValue": 412758605824,
+      "enterpriseValue": 412522053632,
       "trailingPE": 30.258259,
       "forwardPE": 17.916203,
       "pegRatio": 0.9,
       "priceToSalesTrailing12Months": 6.2732735,
       "priceToBook": 7.9070864,
-      "enterpriseToRevenue": 6.518,
-      "enterpriseToEbitda": 22.141
+      "enterpriseToRevenue": 6.514,
+      "enterpriseToEbitda": 22.129
     }
   },
   "KMB": {
@@ -10751,14 +10751,14 @@
     },
     "_valuation_measures": {
       "marketCap": 66804695040,
-      "enterpriseValue": 40982757376,
+      "enterpriseValue": 40989413376,
       "trailingPE": 20.77481,
       "forwardPE": 15.282351,
       "pegRatio": 2.29,
       "priceToSalesTrailing12Months": 4.032639,
       "priceToBook": 12.349405,
       "enterpriseToRevenue": 2.474,
-      "enterpriseToEbitda": 11.6
+      "enterpriseToEbitda": 11.602
     }
   },
   "HUBB": {
@@ -11541,14 +11541,14 @@
     },
     "_valuation_measures": {
       "marketCap": 906804330496,
-      "enterpriseValue": 900337631232,
+      "enterpriseValue": 900239261696,
       "trailingPE": 118.14104,
       "forwardPE": 31.255884,
       "pegRatio": 0.46,
       "priceToSalesTrailing12Months": 19.957838,
       "priceToBook": 13.258676,
-      "enterpriseToRevenue": 19.816,
-      "enterpriseToEbitda": 80.798
+      "enterpriseToRevenue": 19.813,
+      "enterpriseToEbitda": 80.79
     }
   },
   "MO": {
@@ -13532,14 +13532,14 @@
     },
     "_valuation_measures": {
       "marketCap": 66569027584,
-      "enterpriseValue": 62671556608,
+      "enterpriseValue": 62642671616,
       "trailingPE": 256.08334,
       "forwardPE": 57.928307,
       "pegRatio": 0.89,
       "priceToSalesTrailing12Months": 15.560186,
       "priceToBook": 14.115756,
-      "enterpriseToRevenue": 14.649,
-      "enterpriseToEbitda": 368.065
+      "enterpriseToRevenue": 14.642,
+      "enterpriseToEbitda": 367.896
     }
   },
   "RL": {
@@ -13747,14 +13747,14 @@
     },
     "_valuation_measures": {
       "marketCap": 155826749440,
-      "enterpriseValue": 151933190144,
+      "enterpriseValue": 151915855872,
       "trailingPE": 54.35671,
       "forwardPE": 36.052475,
       "pegRatio": 2.03,
       "priceToSalesTrailing12Months": 13.458865,
       "priceToBook": 9.74633,
-      "enterpriseToRevenue": 13.123,
-      "enterpriseToEbitda": 33.984
+      "enterpriseToRevenue": 13.121,
+      "enterpriseToEbitda": 33.98
     }
   },
   "NOW": {
@@ -14107,13 +14107,13 @@
     },
     "_valuation_measures": {
       "marketCap": 210522652672,
-      "enterpriseValue": 228730077184,
+      "enterpriseValue": 228717674496,
       "forwardPE": 16.77018,
       "pegRatio": 2.34,
       "priceToSalesTrailing12Months": 6.7936835,
       "priceToBook": 16.152454,
       "enterpriseToRevenue": 7.381,
-      "enterpriseToEbitda": 15.602
+      "enterpriseToEbitda": 15.601
     }
   },
   "BR": {
@@ -14321,13 +14321,13 @@
     },
     "_valuation_measures": {
       "marketCap": 58769264640,
-      "enterpriseValue": 58215129088,
+      "enterpriseValue": 58229641216,
       "forwardPE": 16.147194,
       "pegRatio": 0.63,
       "priceToSalesTrailing12Months": 15.701952,
       "priceToBook": 12.840499,
-      "enterpriseToRevenue": 15.554,
-      "enterpriseToEbitda": 50.609
+      "enterpriseToRevenue": 15.558,
+      "enterpriseToEbitda": 50.621
     }
   },
   "BDX": {
@@ -14534,14 +14534,14 @@
     },
     "_valuation_measures": {
       "marketCap": 265022291968,
-      "enterpriseValue": 274263228416,
+      "enterpriseValue": 274329108480,
       "trailingPE": 18.65318,
       "forwardPE": 17.113281,
       "pegRatio": 1.01,
       "priceToSalesTrailing12Months": 5.3287272,
       "priceToBook": 9.0493555,
-      "enterpriseToRevenue": 5.515,
-      "enterpriseToEbitda": 17.188
+      "enterpriseToRevenue": 5.516,
+      "enterpriseToEbitda": 17.192
     }
   },
   "LVS": {
@@ -14678,14 +14678,14 @@
     },
     "_valuation_measures": {
       "marketCap": 917923627008,
-      "enterpriseValue": 880460627968,
+      "enterpriseValue": 879668625408,
       "trailingPE": 10.914839,
       "forwardPE": 3.9049773,
       "pegRatio": 0.16,
       "priceToSalesTrailing12Months": 6.891939,
       "priceToBook": 6.6309767,
-      "enterpriseToRevenue": 6.611,
-      "enterpriseToEbitda": 8.089
+      "enterpriseToRevenue": 6.605,
+      "enterpriseToEbitda": 8.082
     }
   },
   "UDR": {
@@ -15325,14 +15325,14 @@
     },
     "_valuation_measures": {
       "marketCap": 3869975511040,
-      "enterpriseValue": 3940028776448,
+      "enterpriseValue": 3939397533696,
       "trailingPE": 27.198591,
       "forwardPE": 21.537926,
       "pegRatio": 1.58,
       "priceToSalesTrailing12Months": 11.170534,
       "priceToBook": 8.225995,
-      "enterpriseToRevenue": 11.373,
-      "enterpriseToEbitda": 19.155
+      "enterpriseToRevenue": 11.371,
+      "enterpriseToEbitda": 19.152
     }
   },
   "SYK": {
@@ -15684,14 +15684,14 @@
     },
     "_valuation_measures": {
       "marketCap": 44041289728,
-      "enterpriseValue": 52671401984,
+      "enterpriseValue": 52664188928,
       "trailingPE": 33.675823,
       "forwardPE": 43.590202,
       "pegRatio": 8.66,
       "priceToSalesTrailing12Months": 4.467115,
       "priceToBook": 6.874574,
       "enterpriseToRevenue": 5.342,
-      "enterpriseToEbitda": 34.025
+      "enterpriseToEbitda": 34.021
     }
   },
   "AIZ": {
@@ -16168,7 +16168,7 @@
       "ebitda": 5202999808,
       "netIncomeToCommon": -2556000000,
       "trailingEps": -3.69,
-      "forwardEps": -1.83088,
+      "forwardEps": -1.78145,
       "totalCash": 4184000000,
       "totalCashPerShare": 7.485,
       "totalDebt": 66218999808,
@@ -16180,12 +16180,12 @@
     },
     "_valuation_measures": {
       "marketCap": 33516877824,
-      "enterpriseValue": 96038969344,
-      "forwardPE": -33.19169,
+      "enterpriseValue": 96005431296,
+      "forwardPE": -34.11266,
       "priceToSalesTrailing12Months": 3.3903377,
       "priceToBook": 8.440278,
-      "enterpriseToRevenue": 9.715,
-      "enterpriseToEbitda": 18.458
+      "enterpriseToRevenue": 9.711,
+      "enterpriseToEbitda": 18.452
     }
   },
   "TXT": {
@@ -16895,14 +16895,14 @@
     },
     "_valuation_measures": {
       "marketCap": 95672369152,
-      "enterpriseValue": 113463582720,
+      "enterpriseValue": 113445158912,
       "trailingPE": 27.031252,
       "forwardPE": 22.145134,
       "pegRatio": 1.81,
       "priceToSalesTrailing12Months": 6.402916,
       "priceToBook": 6.650436,
-      "enterpriseToRevenue": 7.594,
-      "enterpriseToEbitda": 15.893
+      "enterpriseToRevenue": 7.592,
+      "enterpriseToEbitda": 15.891
     }
   },
   "TKO": {
@@ -18010,13 +18010,13 @@
     },
     "_valuation_measures": {
       "marketCap": 332187500544,
-      "enterpriseValue": 345011650560,
+      "enterpriseValue": 344958500864,
       "forwardPE": 34.90723,
       "pegRatio": 1.36,
       "priceToSalesTrailing12Months": 5.546442,
       "priceToBook": 2.8880365,
-      "enterpriseToRevenue": 5.761,
-      "enterpriseToEbitda": 18.03
+      "enterpriseToRevenue": 5.76,
+      "enterpriseToEbitda": 18.028
     }
   },
   "A": {
@@ -18440,14 +18440,14 @@
     },
     "_valuation_measures": {
       "marketCap": 29964740608,
-      "enterpriseValue": 29541607424,
+      "enterpriseValue": 29539741696,
       "trailingPE": 31.631891,
       "forwardPE": 25.62978,
       "pegRatio": 1.26,
       "priceToSalesTrailing12Months": 5.8703747,
       "priceToBook": 11.820657,
       "enterpriseToRevenue": 5.787,
-      "enterpriseToEbitda": 19.71
+      "enterpriseToEbitda": 19.709
     }
   },
   "CRH": {
@@ -18796,14 +18796,14 @@
     },
     "_valuation_measures": {
       "marketCap": 253206069248,
-      "enterpriseValue": 294098796544,
+      "enterpriseValue": 294023069696,
       "trailingPE": 27.13681,
       "forwardPE": 18.707518,
       "pegRatio": 2.8,
       "priceToSalesTrailing12Months": 6.5086513,
       "priceToBook": 17.641893,
-      "enterpriseToRevenue": 7.56,
-      "enterpriseToEbitda": 16.68
+      "enterpriseToRevenue": 7.558,
+      "enterpriseToEbitda": 16.676
     }
   },
   "COP": {
@@ -18855,7 +18855,7 @@
       "ebitda": 29834000384,
       "netIncomeToCommon": 11521000448,
       "trailingEps": 9.49,
-      "forwardEps": 11.24747,
+      "forwardEps": 11.25711,
       "earningsGrowth": 1.419,
       "totalCash": 9928999936,
       "totalCashPerShare": 8.398,
@@ -18870,7 +18870,7 @@
       "marketCap": 162996715520,
       "enterpriseValue": 176329703424,
       "trailingPE": 14.526871,
-      "forwardPE": 12.256979,
+      "forwardPE": 12.246483,
       "pegRatio": 1.0,
       "priceToSalesTrailing12Months": 2.363436,
       "priceToBook": 2.4699895,
@@ -19084,13 +19084,13 @@
     },
     "_valuation_measures": {
       "marketCap": 40358932480,
-      "enterpriseValue": 39064653824,
+      "enterpriseValue": 39025680384,
       "trailingPE": 91.268776,
       "forwardPE": 32.286346,
       "priceToSalesTrailing12Months": 25.933569,
       "priceToBook": 20.180912,
-      "enterpriseToRevenue": 25.102,
-      "enterpriseToEbitda": 94.674
+      "enterpriseToRevenue": 25.077,
+      "enterpriseToEbitda": 94.58
     }
   },
   "AMCR": {
@@ -19510,14 +19510,14 @@
     },
     "_valuation_measures": {
       "marketCap": 94116323328,
-      "enterpriseValue": 89907208192,
+      "enterpriseValue": 89877815296,
       "trailingPE": 41.862747,
       "forwardPE": 32.834198,
       "pegRatio": 1.44,
       "priceToSalesTrailing12Months": 11.942331,
       "priceToBook": 41.87643,
-      "enterpriseToRevenue": 11.408,
-      "enterpriseToEbitda": 32.648
+      "enterpriseToRevenue": 11.405,
+      "enterpriseToEbitda": 32.638
     }
   },
   "TT": {
@@ -19654,14 +19654,14 @@
     },
     "_valuation_measures": {
       "marketCap": 217595199488,
-      "enterpriseValue": 214495592448,
+      "enterpriseValue": 214474194944,
       "trailingPE": 233.74713,
       "forwardPE": 66.162384,
       "pegRatio": 1.49,
       "priceToSalesTrailing12Months": 39.823425,
       "priceToBook": 23.944426,
-      "enterpriseToRevenue": 39.256,
-      "enterpriseToEbitda": 190.206
+      "enterpriseToRevenue": 39.252,
+      "enterpriseToEbitda": 190.187
     }
   },
   "WDAY": {
@@ -20583,14 +20583,14 @@
     },
     "_valuation_measures": {
       "marketCap": 88871043072,
-      "enterpriseValue": 85305786368,
+      "enterpriseValue": 85256847360,
       "trailingPE": 41.272728,
       "forwardPE": 34.813816,
       "pegRatio": 29.06,
       "priceToSalesTrailing12Months": 9.272013,
       "priceToBook": 9.031232,
-      "enterpriseToRevenue": 8.9,
-      "enterpriseToEbitda": 28.638
+      "enterpriseToRevenue": 8.895,
+      "enterpriseToEbitda": 28.622
     }
   },
   "GEN": {
@@ -20725,14 +20725,14 @@
     },
     "_valuation_measures": {
       "marketCap": 110515732480,
-      "enterpriseValue": 127745884160,
+      "enterpriseValue": 127740739584,
       "trailingPE": 42.78963,
       "forwardPE": 31.921587,
       "pegRatio": 1.92,
       "priceToSalesTrailing12Months": 14.577989,
       "priceToBook": -21.813469,
-      "enterpriseToRevenue": 16.851,
-      "enterpriseToEbitda": 25.859
+      "enterpriseToRevenue": 16.85,
+      "enterpriseToEbitda": 25.858
     }
   },
   "APD": {
@@ -21011,14 +21011,14 @@
     },
     "_valuation_measures": {
       "marketCap": 151880482816,
-      "enterpriseValue": 149321400320,
+      "enterpriseValue": 149374025728,
       "trailingPE": 55.526318,
       "forwardPE": 22.9663,
       "pegRatio": 0.38,
       "priceToSalesTrailing12Months": 16.071497,
       "priceToBook": 7.986752,
-      "enterpriseToRevenue": 15.801,
-      "enterpriseToEbitda": 52.388
+      "enterpriseToRevenue": 15.806,
+      "enterpriseToEbitda": 52.406
     }
   },
   "ANET": {
@@ -21224,14 +21224,14 @@
     },
     "_valuation_measures": {
       "marketCap": 234542514176,
-      "enterpriseValue": 230412238848,
+      "enterpriseValue": 230386647040,
       "trailingPE": 3817.6667,
       "forwardPE": 142.24591,
       "pegRatio": 5.83,
       "priceToSalesTrailing12Months": 43.46483,
       "priceToBook": 45.968292,
-      "enterpriseToRevenue": 42.699,
-      "enterpriseToEbitda": 2156.187
+      "enterpriseToRevenue": 42.695,
+      "enterpriseToEbitda": 2155.947
     }
   },
   "ICE": {
@@ -21576,14 +21576,14 @@
     },
     "_valuation_measures": {
       "marketCap": 54342090752,
-      "enterpriseValue": 53896269824,
+      "enterpriseValue": 53892091904,
       "trailingPE": 33.723736,
       "forwardPE": 18.31135,
       "pegRatio": 0.87,
       "priceToSalesTrailing12Months": 6.9758782,
       "priceToBook": 16.062891,
-      "enterpriseToRevenue": 6.919,
-      "enterpriseToEbitda": 23.577
+      "enterpriseToRevenue": 6.918,
+      "enterpriseToEbitda": 23.575
     }
   },
   "COST": {
@@ -21648,14 +21648,14 @@
     },
     "_valuation_measures": {
       "marketCap": 481951907840,
-      "enterpriseValue": 470792044544,
+      "enterpriseValue": 470831923200,
       "trailingPE": 52.38969,
       "forwardPE": 43.44583,
       "pegRatio": 5.34,
       "priceToSalesTrailing12Months": 1.5897924,
       "priceToBook": 13.465352,
       "enterpriseToRevenue": 1.553,
-      "enterpriseToEbitda": 33.189
+      "enterpriseToEbitda": 33.192
     }
   },
   "CME": {
@@ -21720,14 +21720,14 @@
     },
     "_valuation_measures": {
       "marketCap": 113058783232,
-      "enterpriseValue": 114587656192,
+      "enterpriseValue": 114582282240,
       "trailingPE": 25.890574,
       "forwardPE": 23.847866,
       "pegRatio": 4.26,
       "priceToSalesTrailing12Months": 16.253185,
       "priceToBook": 4.2506394,
-      "enterpriseToRevenue": 16.473,
-      "enterpriseToEbitda": 23.193
+      "enterpriseToRevenue": 16.472,
+      "enterpriseToEbitda": 23.192
     }
   },
   "ABT": {
@@ -21864,14 +21864,14 @@
     },
     "_valuation_measures": {
       "marketCap": 76654575616,
-      "enterpriseValue": 85451227136,
+      "enterpriseValue": 85440577536,
       "trailingPE": 40.55848,
       "forwardPE": 27.77636,
       "pegRatio": 0.81,
       "priceToSalesTrailing12Months": 1.9898393,
       "priceToBook": 9.348114,
       "enterpriseToRevenue": 2.218,
-      "enterpriseToEbitda": 21.683
+      "enterpriseToEbitda": 21.68
     }
   },
   "DLR": {
@@ -22865,14 +22865,14 @@
     },
     "_valuation_measures": {
       "marketCap": 92473925632,
-      "enterpriseValue": 93638377472,
+      "enterpriseValue": 93618921472,
       "trailingPE": 13.266332,
       "forwardPE": 8.669261,
       "pegRatio": 0.57,
       "priceToSalesTrailing12Months": 3.5607982,
       "priceToBook": 7.8970985,
-      "enterpriseToRevenue": 3.606,
-      "enterpriseToEbitda": 9.442
+      "enterpriseToRevenue": 3.605,
+      "enterpriseToEbitda": 9.44
     }
   },
   "SJM": {
@@ -23504,14 +23504,14 @@
     },
     "_valuation_measures": {
       "marketCap": 198226034688,
-      "enterpriseValue": 205108772864,
+      "enterpriseValue": 205065175040,
       "trailingPE": 48.58432,
       "forwardPE": 24.791553,
       "pegRatio": 0.58,
       "priceToSalesTrailing12Months": 14.27962,
       "priceToBook": 5.908231,
-      "enterpriseToRevenue": 14.775,
-      "enterpriseToEbitda": 29.628
+      "enterpriseToRevenue": 14.772,
+      "enterpriseToEbitda": 29.622
     }
   },
   "DLTR": {
@@ -23860,14 +23860,14 @@
     },
     "_valuation_measures": {
       "marketCap": 53746409472,
-      "enterpriseValue": 68431384576,
+      "enterpriseValue": 68450406400,
       "trailingPE": 48.025497,
       "forwardPE": 19.401619,
       "pegRatio": 1.01,
       "priceToSalesTrailing12Months": 2.9816048,
       "priceToBook": -20.896093,
-      "enterpriseToRevenue": 3.796,
-      "enterpriseToEbitda": 16.064
+      "enterpriseToRevenue": 3.797,
+      "enterpriseToEbitda": 16.068
     }
   },
   "MLM": {
@@ -25076,14 +25076,14 @@
     },
     "_valuation_measures": {
       "marketCap": 83864117248,
-      "enterpriseValue": 97100570624,
+      "enterpriseValue": 97096114176,
       "trailingPE": 50.865047,
       "forwardPE": 36.043453,
       "pegRatio": 2.07,
       "priceToSalesTrailing12Months": 16.193111,
       "priceToBook": -12.753697,
-      "enterpriseToRevenue": 18.749,
-      "enterpriseToEbitda": 30.09
+      "enterpriseToRevenue": 18.748,
+      "enterpriseToEbitda": 30.089
     }
   },
   "VRTX": {
@@ -25580,14 +25580,14 @@
     },
     "_valuation_measures": {
       "marketCap": 52056272896,
-      "enterpriseValue": 91766104064,
+      "enterpriseValue": 91725275136,
       "trailingPE": 34.459457,
       "forwardPE": 15.079477,
       "pegRatio": 1.16,
       "priceToSalesTrailing12Months": 2.25079,
       "priceToBook": 2.0473156,
-      "enterpriseToRevenue": 3.968,
-      "enterpriseToEbitda": 17.124
+      "enterpriseToRevenue": 3.966,
+      "enterpriseToEbitda": 17.116
     }
   },
   "META": {
@@ -25652,13 +25652,13 @@
     },
     "_valuation_measures": {
       "marketCap": 1607659945984,
-      "enterpriseValue": 1639642431488,
+      "enterpriseValue": 1639680835584,
       "trailingPE": 21.452406,
       "forwardPE": 17.66811,
       "pegRatio": 0.83,
       "priceToSalesTrailing12Months": 6.6540837,
       "priceToBook": 5.900232,
-      "enterpriseToRevenue": 6.786,
+      "enterpriseToRevenue": 6.787,
       "enterpriseToEbitda": 14.112
     }
   },
@@ -25940,14 +25940,14 @@
     },
     "_valuation_measures": {
       "marketCap": 72112750592,
-      "enterpriseValue": 71045816320,
+      "enterpriseValue": 71042891776,
       "trailingPE": 81.06853,
       "forwardPE": 31.90637,
       "pegRatio": 0.77,
       "priceToSalesTrailing12Months": 19.289783,
       "priceToBook": 19.323217,
       "enterpriseToRevenue": 19.004,
-      "enterpriseToEbitda": 60.831
+      "enterpriseToEbitda": 60.829
     }
   },
   "AMAT": {
@@ -26012,14 +26012,14 @@
     },
     "_valuation_measures": {
       "marketCap": 313534480384,
-      "enterpriseValue": 311639539712,
+      "enterpriseValue": 311647469568,
       "trailingPE": 34.088005,
       "forwardPE": 21.22372,
       "pegRatio": 0.79,
       "priceToSalesTrailing12Months": 10.167477,
       "priceToBook": 12.234987,
       "enterpriseToRevenue": 10.106,
-      "enterpriseToEbitda": 30.688
+      "enterpriseToEbitda": 30.689
     }
   },
   "BBY": {
@@ -26155,12 +26155,12 @@
     },
     "_valuation_measures": {
       "marketCap": 100625186816,
-      "enterpriseValue": 99727695872,
+      "enterpriseValue": 99683188736,
       "forwardPE": -59.294636,
       "priceToSalesTrailing12Months": 39.85156,
       "priceToBook": 14.695385,
-      "enterpriseToRevenue": 39.496,
-      "enterpriseToEbitda": -55.933
+      "enterpriseToRevenue": 39.478,
+      "enterpriseToEbitda": -55.908
     }
   },
   "TSLA": {
@@ -26225,14 +26225,14 @@
     },
     "_valuation_measures": {
       "marketCap": 1544895987712,
-      "enterpriseValue": 1516400148480,
+      "enterpriseValue": 1516493864960,
       "trailingPE": 429.49448,
       "forwardPE": 181.00981,
       "pegRatio": 4.43,
       "priceToSalesTrailing12Months": 14.916443,
       "priceToBook": 17.302994,
-      "enterpriseToRevenue": 14.641,
-      "enterpriseToEbitda": 154.137
+      "enterpriseToRevenue": 14.642,
+      "enterpriseToEbitda": 154.147
     }
   },
   "XOM": {
@@ -26792,14 +26792,14 @@
     },
     "_valuation_measures": {
       "marketCap": 294654443520,
-      "enterpriseValue": 290740142080,
+      "enterpriseValue": 290952511488,
       "trailingPE": 35.153503,
       "forwardPE": 19.277021,
       "pegRatio": 0.97,
       "priceToSalesTrailing12Months": 11.277371,
       "priceToBook": 21.185558,
-      "enterpriseToRevenue": 11.128,
-      "enterpriseToEbitda": 28.74
+      "enterpriseToRevenue": 11.136,
+      "enterpriseToEbitda": 28.76
     }
   },
   "SO": {
@@ -27721,14 +27721,14 @@
     },
     "_valuation_measures": {
       "marketCap": 415397380096,
-      "enterpriseValue": 405322792960,
+      "enterpriseValue": 405178220544,
       "trailingPE": 121.40845,
       "forwardPE": 67.9069,
       "pegRatio": 1.38,
       "priceToSalesTrailing12Months": 56.99541,
       "priceToBook": 36.98777,
-      "enterpriseToRevenue": 55.613,
-      "enterpriseToEbitda": 120.801
+      "enterpriseToRevenue": 55.593,
+      "enterpriseToEbitda": 120.758
     }
   },
   "LULU": {
@@ -28286,14 +28286,14 @@
     },
     "_valuation_measures": {
       "marketCap": 119148380160,
-      "enterpriseValue": 124683124736,
+      "enterpriseValue": 124653379584,
       "trailingPE": 17.376356,
       "forwardPE": 13.070856,
       "pegRatio": 0.59,
       "priceToSalesTrailing12Months": 4.2362366,
       "priceToBook": -11.484589,
-      "enterpriseToRevenue": 4.433,
-      "enterpriseToEbitda": 12.681
+      "enterpriseToRevenue": 4.432,
+      "enterpriseToEbitda": 12.678
     }
   },
   "MRSH": {
@@ -28994,13 +28994,13 @@
     },
     "_valuation_measures": {
       "marketCap": 76163555328,
-      "enterpriseValue": 73981558784,
+      "enterpriseValue": 73963552768,
       "trailingPE": 38.97696,
       "forwardPE": 24.789562,
       "pegRatio": 1.32,
       "priceToSalesTrailing12Months": 14.986926,
       "priceToBook": 7.6198196,
-      "enterpriseToRevenue": 14.558
+      "enterpriseToRevenue": 14.554
     }
   },
   "DIS": {
@@ -29052,7 +29052,7 @@
       "ebitda": 20963000320,
       "netIncomeToCommon": 8600000512,
       "trailingEps": 4.85,
-      "forwardEps": 7.49981,
+      "forwardEps": 7.49241,
       "earningsGrowth": -0.483,
       "totalCash": 5184999936,
       "totalCashPerShare": 3.003,
@@ -29067,7 +29067,7 @@
       "marketCap": 206598078464,
       "enterpriseValue": 254264082432,
       "trailingPE": 24.670103,
-      "forwardPE": 15.953737,
+      "forwardPE": 15.969494,
       "pegRatio": 3.88,
       "priceToSalesTrailing12Months": 2.0897834,
       "priceToBook": 1.8812301,
@@ -30708,14 +30708,14 @@
     },
     "_valuation_measures": {
       "marketCap": 241730551808,
-      "enterpriseValue": 266150379520,
+      "enterpriseValue": 266058563584,
       "trailingPE": 34.963478,
       "forwardPE": 26.938795,
       "pegRatio": 2.05,
       "priceToSalesTrailing12Months": 6.670637,
       "priceToBook": 6.1318717,
-      "enterpriseToRevenue": 7.345,
-      "enterpriseToEbitda": 19.261
+      "enterpriseToRevenue": 7.342,
+      "enterpriseToEbitda": 19.254
     }
   },
   "SHOP": {
@@ -31781,14 +31781,14 @@
     },
     "_valuation_measures": {
       "marketCap": 120938487808,
-      "enterpriseValue": 123220541440,
+      "enterpriseValue": 123200798720,
       "trailingPE": 27.159575,
       "forwardPE": 22.640404,
       "pegRatio": 2.81,
       "priceToSalesTrailing12Months": 5.432288,
       "priceToBook": 23.800497,
-      "enterpriseToRevenue": 5.535,
-      "enterpriseToEbitda": 18.82
+      "enterpriseToRevenue": 5.534,
+      "enterpriseToEbitda": 18.817
     }
   },
   "PPL": {
@@ -32400,13 +32400,40 @@
       "+1y": "2027"
     },
     "_financial_highlights": {
-      "bookValue": 45.187
+      "nextFiscalYearEnd": 1798675200,
+      "mostRecentQuarter": 1790726400,
+      "profitMargins": 0.31898,
+      "operatingMargins": 0.51254004,
+      "returnOnAssets": 0.21062,
+      "returnOnEquity": 0.86024004,
+      "totalRevenue": 86461997056,
+      "revenuePerShare": 96.754,
+      "revenueGrowth": 0.386,
+      "grossProfits": 72311996416,
+      "ebitda": 46489001984,
+      "netIncomeToCommon": 27580000256,
+      "trailingEps": 30.81,
+      "forwardEps": 50.53885,
+      "earningsGrowth": 0.163,
+      "totalCash": 4885000192,
+      "totalCashPerShare": 5.484,
+      "totalDebt": 49502998528,
+      "debtToEquity": 122.925,
+      "currentRatio": 1.389,
+      "bookValue": 45.187,
+      "operatingCashflow": 30645000192,
+      "freeCashflow": 9343699968
     },
     "_valuation_measures": {
       "marketCap": 1280258998272,
+      "enterpriseValue": 1324876955648,
       "trailingPE": 46.650116,
       "forwardPE": 28.43931,
-      "priceToBook": 31.8076
+      "pegRatio": 1.32,
+      "priceToSalesTrailing12Months": 14.807187,
+      "priceToBook": 31.8076,
+      "enterpriseToRevenue": 15.323,
+      "enterpriseToEbitda": 28.499
     }
   },
   "ZTS": {
@@ -33261,14 +33288,14 @@
     },
     "_valuation_measures": {
       "marketCap": 21409923072,
-      "enterpriseValue": 20818184192,
+      "enterpriseValue": 20819523584,
       "trailingPE": 8.073233,
       "forwardPE": 14.758168,
       "pegRatio": 0.21,
       "priceToSalesTrailing12Months": 4.270674,
       "priceToBook": 5.9379644,
       "enterpriseToRevenue": 4.153,
-      "enterpriseToEbitda": 20.153
+      "enterpriseToEbitda": 20.154
     }
   },
   "SBUX": {
@@ -33403,14 +33430,14 @@
     },
     "_valuation_measures": {
       "marketCap": 3607674224640,
-      "enterpriseValue": 3512528535552,
+      "enterpriseValue": 3510930243584,
       "trailingPE": 15.323761,
       "forwardPE": 19.01185,
       "pegRatio": 1.02,
       "priceToSalesTrailing12Months": 7.6580124,
       "priceToBook": 5.470119,
-      "enterpriseToRevenue": 7.456,
-      "enterpriseToEbitda": 18.934
+      "enterpriseToRevenue": 7.453,
+      "enterpriseToEbitda": 18.925
     }
   },
   "HON": {
@@ -33475,14 +33502,14 @@
     },
     "_valuation_measures": {
       "marketCap": 72148221952,
-      "enterpriseValue": 83550363648,
+      "enterpriseValue": 83534495744,
       "trailingPE": 11.286068,
       "forwardPE": 23.050587,
       "pegRatio": 3.17,
       "priceToSalesTrailing12Months": 1.9115655,
       "priceToBook": 3.2227192,
-      "enterpriseToRevenue": 2.214,
-      "enterpriseToEbitda": 9.265
+      "enterpriseToRevenue": 2.213,
+      "enterpriseToEbitda": 9.263
     }
   },
   "COR": {
@@ -33690,14 +33717,14 @@
     },
     "_valuation_measures": {
       "marketCap": 33812613120,
-      "enterpriseValue": 38915854336,
+      "enterpriseValue": 38910414848,
       "trailingPE": 46.714287,
       "forwardPE": 14.014676,
       "pegRatio": 0.18,
       "priceToSalesTrailing12Months": 6.0343027,
       "priceToBook": 5.0917883,
-      "enterpriseToRevenue": 6.945,
-      "enterpriseToEbitda": 20.852
+      "enterpriseToRevenue": 6.944,
+      "enterpriseToEbitda": 20.849
     }
   },
   "TRV": {
@@ -34327,14 +34354,14 @@
     },
     "_valuation_measures": {
       "marketCap": 105725468672,
-      "enterpriseValue": 129831051264,
+      "enterpriseValue": 129790459904,
       "trailingPE": 64.14775,
       "forwardPE": 51.60957,
       "pegRatio": 3.12,
       "priceToSalesTrailing12Months": 10.419382,
       "priceToBook": 7.272839,
-      "enterpriseToRevenue": 12.795,
-      "enterpriseToEbitda": 27.683
+      "enterpriseToRevenue": 12.791,
+      "enterpriseToEbitda": 27.674
     }
   },
   "Q": {
@@ -35099,7 +35126,7 @@
       "grossProfits": 2307859968,
       "ebitda": 1881671040,
       "netIncomeToCommon": 1162077952,
-      "trailingEps": 5.57,
+      "trailingEps": 5.65,
       "forwardEps": 6.75207,
       "earningsGrowth": 0.289,
       "totalCash": 466224000,
@@ -35114,7 +35141,7 @@
     "_valuation_measures": {
       "marketCap": 35129802752,
       "enterpriseValue": 34683576320,
-      "trailingPE": 30.610413,
+      "trailingPE": 30.17699,
       "forwardPE": 25.251516,
       "pegRatio": 2.01,
       "priceToSalesTrailing12Months": 6.0707607,
@@ -35469,14 +35496,14 @@
     },
     "_valuation_measures": {
       "marketCap": 51705462784,
-      "enterpriseValue": 62945968128,
+      "enterpriseValue": 62919376896,
       "trailingPE": 22.754827,
       "forwardPE": 21.266256,
       "pegRatio": 3.18,
       "priceToSalesTrailing12Months": 2.421688,
       "priceToBook": 5.61704,
-      "enterpriseToRevenue": 2.948,
-      "enterpriseToEbitda": 17.827
+      "enterpriseToRevenue": 2.947,
+      "enterpriseToEbitda": 17.819
     }
   },
   "ASML": {
@@ -35541,14 +35568,14 @@
     },
     "_valuation_measures": {
       "marketCap": 591392669696,
-      "enterpriseValue": 32655525543936,
+      "enterpriseValue": 32646799294464,
       "trailingPE": 37.7564,
       "forwardPE": 24.20248,
       "pegRatio": 0.79,
       "priceToSalesTrailing12Months": 14.9820175,
       "priceToBook": 1317.5282,
-      "enterpriseToRevenue": 827.277,
-      "enterpriseToEbitda": 2018.14
+      "enterpriseToRevenue": 827.056,
+      "enterpriseToEbitda": 2017.601
     }
   },
   "D": {
@@ -36321,14 +36348,14 @@
     },
     "_valuation_measures": {
       "marketCap": 88846180352,
-      "enterpriseValue": 168771928064,
+      "enterpriseValue": 168754184192,
       "trailingPE": 7.9177213,
       "forwardPE": 7.104181,
       "pegRatio": 1.34,
       "priceToSalesTrailing12Months": 0.7222973,
       "priceToBook": 0.95968705,
       "enterpriseToRevenue": 1.372,
-      "enterpriseToEbitda": 5.032
+      "enterpriseToEbitda": 5.031
     }
   },
   "EME": {

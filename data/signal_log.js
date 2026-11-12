@@ -1,38 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-09-10",
-    "ticker": "PG",
-    "name": "The Procter & Gamble Company",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 142.97000122070312
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "AMGN",
-    "name": "Amgen Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 382.4700012207031
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "MRVL",
-    "name": "Marvell Technology, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 226.9600067138672
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "STX",
-    "name": "Seagate Technology Holdings plc",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 862.3300170898438
-  },
-  {
-    "date": "2026-09-10",
     "ticker": "TMUS",
     "name": "T-Mobile US, Inc.",
     "type": "dead",
@@ -7998,5 +7966,37 @@ const SIGNAL_LOG_DATA = [
     "type": "golden",
     "streak": 1,
     "entry_price": 224.63999938964844
+  },
+  {
+    "date": "2026-11-11",
+    "ticker": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 972.9000244140625
+  },
+  {
+    "date": "2026-11-11",
+    "ticker": "COF",
+    "name": "Capital One Financial Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 197.11000061035156
+  },
+  {
+    "date": "2026-11-11",
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 1478.68994140625
+  },
+  {
+    "date": "2026-11-11",
+    "ticker": "WDAY",
+    "name": "Workday, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 191.16000366210938
   }
 ];

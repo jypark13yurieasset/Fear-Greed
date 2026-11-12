@@ -436,71 +436,71 @@ const SMA20_TOP10_LOG = {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
-      "dist_sma20": 38.59,
-      "rsi14": 73.17
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 15.68,
-      "rsi14": 71.46
+      "dist_sma20": 38.38,
+      "rsi14": 74.33
     },
     {
       "ticker": "RKLB",
       "name": "Rocket Lab Corporation",
       "sector": "Industrials",
-      "dist_sma20": 15.16,
-      "rsi14": 55.69
+      "dist_sma20": 20.71,
+      "rsi14": 59.17
     },
     {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 13.1,
-      "rsi14": 66.97
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 18.61,
+      "rsi14": 62.82
     },
     {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 12.8,
-      "rsi14": 71.75
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 15.01,
+      "rsi14": 72.21
     },
     {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.54,
-      "rsi14": 70.74
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.39,
-      "rsi14": 59.55
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 12.42,
+      "rsi14": 67.9
     },
     {
       "ticker": "EW",
       "name": "Edwards Lifesciences Corporation",
       "sector": "Health Care",
-      "dist_sma20": 11.64,
-      "rsi14": 76.9
+      "dist_sma20": 12.4,
+      "rsi14": 78.86
     },
     {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
       "sector": "Consumer Discretionary",
-      "dist_sma20": 11.39,
-      "rsi14": 72.27
+      "dist_sma20": 12.33,
+      "rsi14": 60.62
     },
     {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 12.2,
+      "rsi14": 72.4
+    },
+    {
+      "ticker": "FERG",
+      "name": "Ferguson Enterprises Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 11.35,
+      "rsi14": 72.22
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
       "sector": "Health Care",
-      "dist_sma20": 10.65,
-      "rsi14": 72.6
+      "dist_sma20": 11.18,
+      "rsi14": 70.02
     }
   ]
 };

@@ -433,74 +433,74 @@ const SMA5_TOP10_LOG = {
   ],
   "2026-11-12": [
     {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 22.25,
+      "rsi14": 49.72
+    },
+    {
       "ticker": "RKLB",
       "name": "Rocket Lab Corporation",
       "sector": "Industrials",
-      "dist_sma5": 14.85,
-      "rsi14": 55.69
+      "dist_sma5": 15.33,
+      "rsi14": 59.17
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 8.88,
-      "rsi14": 48.6
+      "dist_sma5": 13.76,
+      "rsi14": 53.63
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "sector": "Communication Services",
-      "dist_sma5": 8.38,
-      "rsi14": 73.17
+      "dist_sma5": 13.74,
+      "rsi14": 45.58
     },
     {
       "ticker": "MPWR",
       "name": "Monolithic Power Systems, Inc.",
       "sector": "Information Technology",
-      "dist_sma5": 7.26,
-      "rsi14": 56.45
+      "dist_sma5": 12.94,
+      "rsi14": 62.82
     },
     {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 6.26,
-      "rsi14": 49.4
-    },
-    {
-      "ticker": "CVS",
-      "name": "CVS Health Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 6.12,
-      "rsi14": 50.45
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 5.88,
-      "rsi14": 44.84
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 5.82,
-      "rsi14": 39.77
-    },
-    {
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 5.57,
-      "rsi14": 41.95
-    },
-    {
-      "ticker": "SPCX",
-      "name": "SpaceX",
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
       "sector": "Industrials",
-      "dist_sma5": 5.37,
-      "rsi14": 49.09
+      "dist_sma5": 12.68,
+      "rsi14": 47.83
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 12.59,
+      "rsi14": 40.59
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 12.18,
+      "rsi14": 45.1
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 12.15,
+      "rsi14": 38.27
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 11.97,
+      "rsi14": 37.42
     }
   ]
 };
