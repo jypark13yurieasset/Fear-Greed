@@ -1,78 +1,6 @@
 [
   {
     "date": "2026-09-10",
-    "ticker": "TMUS",
-    "name": "T-Mobile US, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 177.16000366210938
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "ABT",
-    "name": "Abbott Laboratories",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 103.36000061035156
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "WELL",
-    "name": "Welltower Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 235.7100067138672
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "UBER",
-    "name": "Uber Technologies, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 72.55999755859375
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "DHR",
-    "name": "Danaher Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 200.52999877929688
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "GLW",
-    "name": "Corning Incorporated",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 163.1199951171875
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "COF",
-    "name": "Capital One Financial Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 207.11000061035156
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "SPGI",
-    "name": "S&P Global Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 410.4200134277344
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "ADBE",
-    "name": "Adobe Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 248.8300018310547
-  },
-  {
-    "date": "2026-09-10",
     "ticker": "KKR",
     "name": "KKR & Co. Inc.",
     "type": "dead",
@@ -7998,5 +7926,77 @@
     "type": "dead",
     "streak": 3,
     "entry_price": 191.16000366210938
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "ANET",
+    "name": "Arista Networks, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 206.6300048828125
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 957.97998046875
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "COF",
+    "name": "Capital One Financial Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 193.60000610351562
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "CEG",
+    "name": "Constellation Energy Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 282.3999938964844
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "CDNS",
+    "name": "Cadence Design Systems, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 333.32000732421875
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 1447.4000244140625
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "TEL",
+    "name": "TE Connectivity plc",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 217.82000732421875
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "STT",
+    "name": "State Street Corporation",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 173.6999969482422
+  },
+  {
+    "date": "2026-11-12",
+    "ticker": "PDD",
+    "name": "PDD Holdings Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 77.52999877929688
   }
 ]

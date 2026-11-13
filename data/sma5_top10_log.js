@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-11-03": [
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 14.89,
-      "rsi14": 76.72
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 10.81,
-      "rsi14": 81.85
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 10.13,
-      "rsi14": 67.77
-    },
-    {
-      "ticker": "CRH",
-      "name": "CRH plc",
-      "sector": "Materials",
-      "dist_sma5": 7.24,
-      "rsi14": 75.4
-    },
-    {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 7.01,
-      "rsi14": 52.86
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 6.8,
-      "rsi14": 72.21
-    },
-    {
-      "ticker": "SHW",
-      "name": "The Sherwin-Williams Company",
-      "sector": "Materials",
-      "dist_sma5": 6.01,
-      "rsi14": 63.95
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 5.93,
-      "rsi14": 49.28
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 5.83,
-      "rsi14": 63.65
-    },
-    {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 5.79,
-      "rsi14": 73.0
-    }
-  ],
   "2026-11-04": [
     {
       "ticker": "IDXX",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 11.97,
       "rsi14": 37.42
+    }
+  ],
+  "2026-11-13": [
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 12.08,
+      "rsi14": 57.48
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.1,
+      "rsi14": 59.5
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 9.29,
+      "rsi14": 60.43
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.23,
+      "rsi14": 46.0
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.42,
+      "rsi14": 40.27
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": 6.24,
+      "rsi14": 38.65
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.23,
+      "rsi14": 44.08
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 6.05,
+      "rsi14": 41.29
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.8,
+      "rsi14": 39.46
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": 5.64,
+      "rsi14": 43.33
     }
   ]
 };
