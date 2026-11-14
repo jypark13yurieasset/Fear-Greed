@@ -1,38 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-09-10",
-    "ticker": "KKR",
-    "name": "KKR & Co. Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 100.87000274658203
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "DASH",
-    "name": "DoorDash, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 201.02999877929688
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "INTU",
-    "name": "Intuit Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 312.7699890136719
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "MCO",
-    "name": "Moody's Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 467.3599853515625
-  },
-  {
-    "date": "2026-09-10",
     "ticker": "SNPS",
     "name": "Synopsys, Inc.",
     "type": "dead",
@@ -7998,5 +7966,37 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 1,
     "entry_price": 77.52999877929688
+  },
+  {
+    "date": "2026-11-13",
+    "ticker": "ANET",
+    "name": "Arista Networks, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 197.2899932861328
+  },
+  {
+    "date": "2026-11-13",
+    "ticker": "CEG",
+    "name": "Constellation Energy Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 280.20001220703125
+  },
+  {
+    "date": "2026-11-13",
+    "ticker": "STT",
+    "name": "State Street Corporation",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 173.4499969482422
+  },
+  {
+    "date": "2026-11-13",
+    "ticker": "PDD",
+    "name": "PDD Holdings Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 78.97000122070312
   }
 ];

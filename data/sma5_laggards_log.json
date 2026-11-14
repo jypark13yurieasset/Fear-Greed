@@ -433,74 +433,74 @@
   ],
   "2026-11-13": [
     {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -14.12,
+      "rsi14": 35.79
+    },
+    {
       "ticker": "MRNA",
       "name": "Moderna, Inc.",
       "sector": "Health Care",
-      "dist_sma5": -7.76,
-      "rsi14": 52.41
+      "dist_sma5": -8.7,
+      "rsi14": 49.72
     },
     {
       "ticker": "MSTR",
       "name": "Strategy Inc",
       "sector": "Information Technology",
-      "dist_sma5": -6.58,
-      "rsi14": 33.94
+      "dist_sma5": -6.21,
+      "rsi14": 32.57
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -6.55,
-      "rsi14": 38.66
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": -5.68,
-      "rsi14": 45.64
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -4.69,
+      "rsi14": 33.23
     },
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "sector": "Information Technology",
-      "dist_sma5": -4.94,
-      "rsi14": 25.99
+      "dist_sma5": -4.24,
+      "rsi14": 24.86
     },
     {
-      "ticker": "KDP",
-      "name": "Keurig Dr Pepper Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": -4.18,
-      "rsi14": 51.65
-    },
-    {
-      "ticker": "XYZ",
-      "name": "Block, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.81,
-      "rsi14": 53.66
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.63,
-      "rsi14": 55.05
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": -4.02,
+      "rsi14": 46.31
     },
     {
       "ticker": "DAL",
       "name": "Delta Air Lines, Inc.",
       "sector": "Industrials",
-      "dist_sma5": -3.63,
-      "rsi14": 54.51
+      "dist_sma5": -3.76,
+      "rsi14": 53.92
     },
     {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
+      "ticker": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.43,
+      "rsi14": 37.06
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
       "sector": "Consumer Discretionary",
-      "dist_sma5": -3.08,
-      "rsi14": 58.75
+      "dist_sma5": -2.72,
+      "rsi14": 41.11
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma5": -2.71,
+      "rsi14": 36.8
     }
   ]
 }

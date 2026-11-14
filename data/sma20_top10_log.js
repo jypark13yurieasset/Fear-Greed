@@ -436,71 +436,71 @@ const SMA20_TOP10_LOG = {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
-      "dist_sma20": 32.01,
-      "rsi14": 70.4
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 15.98,
-      "rsi14": 56.29
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.18,
-      "rsi14": 60.36
-    },
-    {
-      "ticker": "ANET",
-      "name": "Arista Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.12,
-      "rsi14": 60.43
+      "dist_sma20": 33.97,
+      "rsi14": 72.57
     },
     {
       "ticker": "IDXX",
       "name": "IDEXX Laboratories, Inc.",
       "sector": "Health Care",
-      "dist_sma20": 12.86,
-      "rsi14": 70.67
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.83,
-      "rsi14": 57.48
+      "dist_sma20": 12.56,
+      "rsi14": 71.56
     },
     {
       "ticker": "EW",
       "name": "Edwards Lifesciences Corporation",
       "sector": "Health Care",
-      "dist_sma20": 11.35,
-      "rsi14": 78.82
+      "dist_sma20": 11.56,
+      "rsi14": 80.28
     },
     {
       "ticker": "FER",
       "name": "Ferrovial N.V.",
       "sector": "Industrials",
-      "dist_sma20": 10.73,
-      "rsi14": 71.66
+      "dist_sma20": 10.43,
+      "rsi14": 72.9
     },
     {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 10.31,
+      "rsi14": 52.91
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": 10.4,
-      "rsi14": 59.5
+      "dist_sma20": 9.87,
+      "rsi14": 56.07
     },
     {
       "ticker": "TTWO",
       "name": "Take-Two Interactive Software, Inc.",
       "sector": "Communication Services",
-      "dist_sma20": 9.84,
-      "rsi14": 63.6
+      "dist_sma20": 9.66,
+      "rsi14": 64.09
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 9.29,
+      "rsi14": 55.25
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 8.71,
+      "rsi14": 68.37
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 8.09,
+      "rsi14": 57.19
     }
   ]
 };

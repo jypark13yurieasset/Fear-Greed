@@ -433,74 +433,74 @@
   ],
   "2026-11-13": [
     {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -20.57,
-      "rsi14": 26.6
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -20.05,
-      "rsi14": 29.86
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -19.99,
-      "rsi14": 31.58
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -18.67,
-      "rsi14": 33.4
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -23.32,
+      "rsi14": 35.79
     },
     {
       "ticker": "SNDK",
       "name": "Sandisk Corporation",
       "sector": "Information Technology",
-      "dist_sma20": -18.13,
-      "rsi14": 35.88
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -17.86,
-      "rsi14": 27.51
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -17.42,
-      "rsi14": 25.99
+      "dist_sma20": -21.29,
+      "rsi14": 33.93
     },
     {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "sector": "Information Technology",
-      "dist_sma20": -17.07,
-      "rsi14": 37.17
+      "dist_sma20": -19.51,
+      "rsi14": 35.25
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma20": -16.25,
-      "rsi14": 38.66
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -19.1,
+      "rsi14": 32.42
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -19.01,
+      "rsi14": 31.5
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -18.04,
+      "rsi14": 24.86
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -17.62,
+      "rsi14": 29.95
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -17.51,
+      "rsi14": 37.45
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -17.48,
+      "rsi14": 31.91
     },
     {
       "ticker": "MSTR",
       "name": "Strategy Inc",
       "sector": "Information Technology",
-      "dist_sma20": -15.56,
-      "rsi14": 33.94
+      "dist_sma20": -16.85,
+      "rsi14": 32.57
     }
   ]
 }
