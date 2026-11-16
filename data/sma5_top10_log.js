@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-11-04": [
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 10.76,
-      "rsi14": 76.76
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 8.28,
-      "rsi14": 82.74
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 7.64,
-      "rsi14": 55.39
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.23,
-      "rsi14": 57.02
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 5.15,
-      "rsi14": 65.88
-    },
-    {
-      "ticker": "PWR",
-      "name": "Quanta Services, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 4.59,
-      "rsi14": 56.46
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 4.24,
-      "rsi14": 50.72
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.67,
-      "rsi14": 80.24
-    },
-    {
-      "ticker": "APH",
-      "name": "Amphenol Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 3.59,
-      "rsi14": 56.66
-    },
-    {
-      "ticker": "GE",
-      "name": "GE Aerospace",
-      "sector": "Industrials",
-      "dist_sma5": 3.28,
-      "rsi14": 57.89
-    }
-  ],
   "2026-11-05": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Health Care",
       "dist_sma5": 2.61,
       "rsi14": 51.38
+    }
+  ],
+  "2026-11-17": [
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 3.07,
+      "rsi14": 63.62
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 2.99,
+      "rsi14": 68.19
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 2.86,
+      "rsi14": 73.41
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.34,
+      "rsi14": 50.35
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 2.13,
+      "rsi14": 69.24
+    },
+    {
+      "ticker": "PG",
+      "name": "The Procter & Gamble Company",
+      "sector": "Consumer Staples",
+      "dist_sma5": 2.12,
+      "rsi14": 72.16
+    },
+    {
+      "ticker": "CL",
+      "name": "Colgate-Palmolive Company",
+      "sector": "Consumer Staples",
+      "dist_sma5": 2.08,
+      "rsi14": 67.91
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb Limited",
+      "sector": "Financials",
+      "dist_sma5": 2.04,
+      "rsi14": 70.18
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": 1.88,
+      "rsi14": 77.11
+    },
+    {
+      "ticker": "ALL",
+      "name": "The Allstate Corporation",
+      "sector": "Financials",
+      "dist_sma5": 1.81,
+      "rsi14": 64.85
     }
   ]
 };

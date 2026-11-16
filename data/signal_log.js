@@ -1,62 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-09-10",
-    "ticker": "SNPS",
-    "name": "Synopsys, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 397.1700134277344
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "HPE",
-    "name": "Hewlett Packard Enterprise Company",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 55.220001220703125
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "APD",
-    "name": "Air Products and Chemicals, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 293.6499938964844
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "ALL",
-    "name": "The Allstate Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 251.7899932861328
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "AJG",
-    "name": "Arthur J. Gallagher & Co.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 243.30999755859375
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "F",
-    "name": "Ford Motor Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 13.880000114440918
-  },
-  {
-    "date": "2026-09-10",
-    "ticker": "NDAQ",
-    "name": "Nasdaq, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 92.01000213623047
-  },
-  {
-    "date": "2026-09-10",
     "ticker": "EW",
     "name": "Edwards Lifesciences Corporation",
     "type": "dead",
@@ -7998,5 +7942,61 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 2,
     "entry_price": 78.97000122070312
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 517.989990234375
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "ANET",
+    "name": "Arista Networks, Inc.",
+    "type": "golden",
+    "streak": 3,
+    "entry_price": 187.02000427246094
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "NEM",
+    "name": "Newmont Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 110.30999755859375
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "CDNS",
+    "name": "Cadence Design Systems, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 309.42999267578125
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "SNPS",
+    "name": "Synopsys, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 441.3299865722656
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "ROST",
+    "name": "Ross Stores, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 222.99000549316406
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "PDD",
+    "name": "PDD Holdings Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 78.11000061035156
   }
 ];

@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-11-04": [
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -33.45,
-      "rsi14": 23.66
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -27.51,
-      "rsi14": 29.07
-    },
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": -25.75,
-      "rsi14": 22.09
-    },
-    {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -25.37,
-      "rsi14": 25.37
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -22.6,
-      "rsi14": 34.35
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -21.61,
-      "rsi14": 30.83
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -20.01,
-      "rsi14": 33.42
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -19.44,
-      "rsi14": 30.18
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -17.33,
-      "rsi14": 35.25
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -17.2,
-      "rsi14": 34.03
-    }
-  ],
   "2026-11-05": [
     {
       "ticker": "INTC",
@@ -501,6 +429,78 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma20": -16.85,
       "rsi14": 32.57
+    }
+  ],
+  "2026-11-17": [
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -27.6,
+      "rsi14": 33.93
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -26.19,
+      "rsi14": 31.27
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -23.56,
+      "rsi14": 32.55
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.97,
+      "rsi14": 34.52
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -22.87,
+      "rsi14": 29.87
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -22.49,
+      "rsi14": 28.48
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": -22.29,
+      "rsi14": 28.73
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -21.13,
+      "rsi14": 33.26
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -20.19,
+      "rsi14": 22.72
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": -19.16,
+      "rsi14": 28.44
     }
   ]
 };

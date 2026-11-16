@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-11-04": [
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 20.24,
-      "rsi14": 76.76
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 19.82,
-      "rsi14": 82.74
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 15.5,
-      "rsi14": 79.64
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 15.3,
-      "rsi14": 65.88
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 13.32,
-      "rsi14": 80.24
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 11.78,
-      "rsi14": 74.22
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 11.29,
-      "rsi14": 66.75
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": 11.1,
-      "rsi14": 71.02
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "dist_sma20": 10.8,
-      "rsi14": 75.8
-    },
-    {
-      "ticker": "LHX",
-      "name": "L3Harris Technologies, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 10.01,
-      "rsi14": 74.77
-    }
-  ],
   "2026-11-05": [
     {
       "ticker": "CVNA",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Consumer Discretionary",
       "dist_sma20": 8.09,
       "rsi14": 57.19
+    }
+  ],
+  "2026-11-17": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 32.8,
+      "rsi14": 73.41
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 10.71,
+      "rsi14": 70.23
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 10.38,
+      "rsi14": 80.1
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 9.35,
+      "rsi14": 73.09
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 8.36,
+      "rsi14": 69.24
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 8.24,
+      "rsi14": 80.21
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 8.2,
+      "rsi14": 68.19
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 7.32,
+      "rsi14": 67.46
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 7.29,
+      "rsi14": 77.11
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 6.97,
+      "rsi14": 75.24
     }
   ]
 };
