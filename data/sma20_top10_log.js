@@ -1,78 +1,6 @@
 const SMA20_TOP10_LOG = {
   "2026-11-05": [
     {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 23.97,
-      "rsi14": 72.98
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 22.88,
-      "rsi14": 79.44
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 18.8,
-      "rsi14": 85.25
-    },
-    {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 18.12,
-      "rsi14": 82.84
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 16.82,
-      "rsi14": 68.15
-    },
-    {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 14.78,
-      "rsi14": 74.78
-    },
-    {
-      "ticker": "CRH",
-      "name": "CRH plc",
-      "sector": "Materials",
-      "dist_sma20": 14.64,
-      "rsi14": 72.19
-    },
-    {
-      "ticker": "AON",
-      "name": "Aon plc",
-      "sector": "Financials",
-      "dist_sma20": 14.55,
-      "rsi14": 76.35
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 14.12,
-      "rsi14": 72.43
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 13.88,
-      "rsi14": 70.53
-    }
-  ],
-  "2026-11-06": [
-    {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
@@ -143,7 +71,7 @@ const SMA20_TOP10_LOG = {
       "rsi14": 66.73
     }
   ],
-  "2026-11-10": [
+  "2026-11-09": [
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",
@@ -215,7 +143,7 @@ const SMA20_TOP10_LOG = {
       "rsi14": 58.8
     }
   ],
-  "2026-11-11": [
+  "2026-11-10": [
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",
@@ -287,7 +215,7 @@ const SMA20_TOP10_LOG = {
       "rsi14": 72.6
     }
   ],
-  "2026-11-12": [
+  "2026-11-11": [
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",
@@ -357,6 +285,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Health Care",
       "dist_sma20": 11.18,
       "rsi14": 70.02
+    }
+  ],
+  "2026-11-12": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 32.01,
+      "rsi14": 70.4
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma20": 15.98,
+      "rsi14": 56.29
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.18,
+      "rsi14": 60.36
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 15.12,
+      "rsi14": 60.43
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 12.86,
+      "rsi14": 70.67
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 12.83,
+      "rsi14": 57.48
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 11.35,
+      "rsi14": 78.82
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 10.73,
+      "rsi14": 71.66
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 10.4,
+      "rsi14": 59.5
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 9.84,
+      "rsi14": 63.6
     }
   ],
   "2026-11-13": [
@@ -431,7 +431,7 @@ const SMA20_TOP10_LOG = {
       "rsi14": 57.19
     }
   ],
-  "2026-11-17": [
+  "2026-11-16": [
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",

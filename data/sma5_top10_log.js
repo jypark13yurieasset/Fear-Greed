@@ -1,78 +1,6 @@
 const SMA5_TOP10_LOG = {
   "2026-11-05": [
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 12.13,
-      "rsi14": 68.15
-    },
-    {
-      "ticker": "XYZ",
-      "name": "Block, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 11.24,
-      "rsi14": 70.84
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 10.51,
-      "rsi14": 50.81
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 10.2,
-      "rsi14": 79.44
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 9.74,
-      "rsi14": 61.14
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 8.82,
-      "rsi14": 70.26
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 8.49,
-      "rsi14": 72.98
-    },
-    {
-      "ticker": "MMM",
-      "name": "3M Company",
-      "sector": "Industrials",
-      "dist_sma5": 7.62,
-      "rsi14": 75.2
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 7.59,
-      "rsi14": 72.56
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 7.53,
-      "rsi14": 85.25
-    }
-  ],
-  "2026-11-06": [
-    {
       "ticker": "APP",
       "name": "AppLovin Corporation",
       "sector": "Communication Services",
@@ -143,7 +71,7 @@ const SMA5_TOP10_LOG = {
       "rsi14": 43.78
     }
   ],
-  "2026-11-10": [
+  "2026-11-09": [
     {
       "ticker": "APP",
       "name": "AppLovin Corporation",
@@ -215,7 +143,7 @@ const SMA5_TOP10_LOG = {
       "rsi14": 62.59
     }
   ],
-  "2026-11-11": [
+  "2026-11-10": [
     {
       "ticker": "RKLB",
       "name": "Rocket Lab Corporation",
@@ -287,7 +215,7 @@ const SMA5_TOP10_LOG = {
       "rsi14": 49.09
     }
   ],
-  "2026-11-12": [
+  "2026-11-11": [
     {
       "ticker": "CRWV",
       "name": "CoreWeave, Inc.",
@@ -357,6 +285,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 11.97,
       "rsi14": 37.42
+    }
+  ],
+  "2026-11-12": [
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 12.08,
+      "rsi14": 57.48
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 10.1,
+      "rsi14": 59.5
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 9.29,
+      "rsi14": 60.43
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 8.23,
+      "rsi14": 46.0
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.42,
+      "rsi14": 40.27
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": 6.24,
+      "rsi14": 38.65
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.23,
+      "rsi14": 44.08
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 6.05,
+      "rsi14": 41.29
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.8,
+      "rsi14": 39.46
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Information Technology",
+      "dist_sma5": 5.64,
+      "rsi14": 43.33
     }
   ],
   "2026-11-13": [
@@ -431,7 +431,7 @@ const SMA5_TOP10_LOG = {
       "rsi14": 51.38
     }
   ],
-  "2026-11-17": [
+  "2026-11-16": [
     {
       "ticker": "ELV",
       "name": "Elevance Health, Inc.",

@@ -1,78 +1,6 @@
 const SMA5_LAGGARDS_LOG = {
   "2026-11-05": [
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -16.47,
-      "rsi14": 31.57
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -16.23,
-      "rsi14": 28.66
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -13.45,
-      "rsi14": 22.78
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -12.96,
-      "rsi14": 26.78
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -10.22,
-      "rsi14": 30.7
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -10.2,
-      "rsi14": 31.26
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "dist_sma5": -10.18,
-      "rsi14": 41.55
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.66,
-      "rsi14": 31.54
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.64,
-      "rsi14": 31.58
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": -9.48,
-      "rsi14": 31.7
-    }
-  ],
-  "2026-11-06": [
-    {
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
       "sector": "Industrials",
@@ -143,7 +71,7 @@ const SMA5_LAGGARDS_LOG = {
       "rsi14": 29.11
     }
   ],
-  "2026-11-10": [
+  "2026-11-09": [
     {
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
@@ -215,7 +143,7 @@ const SMA5_LAGGARDS_LOG = {
       "rsi14": 28.76
     }
   ],
-  "2026-11-11": [
+  "2026-11-10": [
     {
       "ticker": "AXON",
       "name": "Axon Enterprise, Inc.",
@@ -287,7 +215,7 @@ const SMA5_LAGGARDS_LOG = {
       "rsi14": 41.66
     }
   ],
-  "2026-11-12": [
+  "2026-11-11": [
     {
       "ticker": "PDD",
       "name": "PDD Holdings Inc.",
@@ -357,6 +285,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Consumer Discretionary",
       "dist_sma5": -1.75,
       "rsi14": 51.89
+    }
+  ],
+  "2026-11-12": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -7.76,
+      "rsi14": 52.41
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -6.58,
+      "rsi14": 33.94
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -6.55,
+      "rsi14": 38.66
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": -5.68,
+      "rsi14": 45.64
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.94,
+      "rsi14": 25.99
+    },
+    {
+      "ticker": "KDP",
+      "name": "Keurig Dr Pepper Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": -4.18,
+      "rsi14": 51.65
+    },
+    {
+      "ticker": "XYZ",
+      "name": "Block, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -3.81,
+      "rsi14": 53.66
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.63,
+      "rsi14": 55.05
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": -3.63,
+      "rsi14": 54.51
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -3.08,
+      "rsi14": 58.75
     }
   ],
   "2026-11-13": [
@@ -431,7 +431,7 @@ const SMA5_LAGGARDS_LOG = {
       "rsi14": 36.8
     }
   ],
-  "2026-11-17": [
+  "2026-11-16": [
     {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",

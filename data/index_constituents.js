@@ -1,5 +1,5 @@
 const INDEX_DATA = {
-  "date": "2026-11-17",
+  "date": "2026-11-16",
   "stocks": [
     {
       "ticker": "AAPL",

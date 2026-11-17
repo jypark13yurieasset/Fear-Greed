@@ -614,11 +614,8 @@ def compute_cross_flags(closes):
     return is_golden, is_dead
 
 def us_date_to_log_key(us_date_str):
-    """미국 거래일 → 평소(한국 아침 실행) SMA 로그에 쓰이는 KST 날짜 키 (다음날, 토요일이면 금요일)"""
-    d = datetime.datetime.strptime(us_date_str, "%Y-%m-%d").date() + datetime.timedelta(days=1)
-    if d.weekday() == 5:
-        d = d - datetime.timedelta(days=1)
-    return d.isoformat()
+    """미국 거래일 그대로 SMA 로그 키로 사용"""
+    return us_date_str
 
 # 누락된 거래일 감지: 마지막 처리일(signal_history의 last_seen 최댓값)과 최신 거래일 사이
 backfill_log_rows = {}   # {KST 로그 키: [종목별 dist_sma5/dist_sma20/rsi14 ...]}
@@ -697,14 +694,14 @@ print("\n" + "=" * 60)
 print("🧮 모멘텀 지표 연산 중...")
 stocks_output = []
 
-# Base date in KST matching script execution date (Google Finance baseline)
-# If weekend (Saturday/Sunday), adjust to the previous Friday to capture Friday's final market close
+# Base date matching latest US trading date (falling back to KST execution date)
 now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
 if now_kst.weekday() == 5:    # Saturday
     now_kst = now_kst - datetime.timedelta(days=1)
 elif now_kst.weekday() == 6:  # Sunday
     now_kst = now_kst - datetime.timedelta(days=2)
-run_date_str = now_kst.strftime("%Y-%m-%d")
+latest_us_trading_date = _us_dates[-1] if _us_dates else None
+run_date_str = latest_us_trading_date if latest_us_trading_date else now_kst.strftime("%Y-%m-%d")
 baseline_date = pd.Timestamp(run_date_str)
 
 for t, s in stock_map.items():
