@@ -795,6 +795,354 @@
           "sector": "Energy"
         }
       ]
+    },
+    {
+      "id": "altimeter",
+      "name": "Brad Gerstner",
+      "fund": "Altimeter Capital",
+      "aum": "$10.31B",
+      "top_sector": "Information Technology (55.5%)",
+      "top_buy": "TSLA",
+      "top_sell": "CBRS",
+      "holdings": [
+        {
+          "ticker": "NVDA",
+          "company": "NVIDIA Corp",
+          "weight": 22.17,
+          "change_type": "increase",
+          "change_pct": "+592K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "META",
+          "company": "Meta Platforms Inc",
+          "weight": 11.95,
+          "change_type": "increase",
+          "change_pct": "+344K Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "CBRS",
+          "company": "Cerebras Systems Inc",
+          "weight": 9.8,
+          "change_type": "decrease",
+          "change_pct": "-1.27M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla Inc",
+          "weight": 6.59,
+          "change_type": "new",
+          "change_pct": "NEW (+1.92M)",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "SNOW",
+          "company": "Snowflake Inc",
+          "weight": 6.34,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "TSM",
+          "company": "Taiwan Semiconductor",
+          "weight": 6.34,
+          "change_type": "increase",
+          "change_pct": "+4.2K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon.com Inc",
+          "weight": 5.93,
+          "change_type": "increase",
+          "change_pct": "+27K Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "MSFT",
+          "company": "Microsoft Corp",
+          "weight": 5.89,
+          "change_type": "decrease",
+          "change_pct": "-84K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "UBER",
+          "company": "Uber Technologies Inc",
+          "weight": 5.85,
+          "change_type": "increase",
+          "change_pct": "+1.44M Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "SMH",
+          "company": "VanEck Semiconductor ETF (PUT)",
+          "weight": 4.96,
+          "change_type": "new",
+          "change_pct": "NEW (+840K)",
+          "sector": "Information Technology"
+        }
+      ]
+    },
+    {
+      "id": "coatue",
+      "name": "Philippe Laffont",
+      "fund": "Coatue Management",
+      "aum": "$54.50B",
+      "top_sector": "Information Technology (34.9%)",
+      "top_buy": "MSFT",
+      "top_sell": "CBRS",
+      "holdings": [
+        {
+          "ticker": "TSM",
+          "company": "Taiwan Semiconductor",
+          "weight": 7.9,
+          "change_type": "increase",
+          "change_pct": "+522K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "MU",
+          "company": "Micron Technology Inc",
+          "weight": 6.4,
+          "change_type": "increase",
+          "change_pct": "+133K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "MSFT",
+          "company": "Microsoft Corp",
+          "weight": 6.08,
+          "change_type": "increase",
+          "change_pct": "+3.52M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "META",
+          "company": "Meta Platforms Inc",
+          "weight": 6.01,
+          "change_type": "increase",
+          "change_pct": "+1.99M Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "LRCX",
+          "company": "Lam Research Corp",
+          "weight": 5.98,
+          "change_type": "increase",
+          "change_pct": "+484K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "SPCX",
+          "company": "SpaceX",
+          "weight": 5.39,
+          "change_type": "increase",
+          "change_pct": "+895K Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon.com Inc",
+          "weight": 5.31,
+          "change_type": "decrease",
+          "change_pct": "-217K Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "AVGO",
+          "company": "Broadcom Inc",
+          "weight": 4.3,
+          "change_type": "increase",
+          "change_pct": "+820K Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "GEV",
+          "company": "GE Vernova Inc",
+          "weight": 4.29,
+          "change_type": "decrease",
+          "change_pct": "-96K Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "AMAT",
+          "company": "Applied Materials Inc",
+          "weight": 4.24,
+          "change_type": "increase",
+          "change_pct": "+303K Shares",
+          "sector": "Information Technology"
+        }
+      ]
+    },
+    {
+      "id": "himalaya",
+      "name": "Li Lu",
+      "fund": "Himalaya Capital",
+      "aum": "$3.78B",
+      "top_sector": "Communication Services (48.3%)",
+      "top_buy": "PDD",
+      "top_sell": "None",
+      "holdings": [
+        {
+          "ticker": "PDD",
+          "company": "PDD Holdings Inc",
+          "weight": 24.24,
+          "change_type": "increase",
+          "change_pct": "+1.00M Shares",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "GOOGL",
+          "company": "Alphabet Inc. Class A",
+          "weight": 23.14,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "GOOG",
+          "company": "Alphabet Inc. Class C",
+          "weight": 22.09,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "BRK.B",
+          "company": "Berkshire Hathaway Class B",
+          "weight": 14.59,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "EWBC",
+          "company": "East West Bancorp Inc",
+          "weight": 9.1,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "TME",
+          "company": "Tencent Music Entertainment",
+          "weight": 3.11,
+          "change_type": "increase",
+          "change_pct": "+8.23M Shares",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "CROX",
+          "company": "Crocs Inc",
+          "weight": 2.75,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Consumer Discretionary"
+        },
+        {
+          "ticker": "AAPL",
+          "company": "Apple Inc.",
+          "weight": 0.97,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google CVC",
+      "fund": "Alphabet Inc.",
+      "aum": "$88.35B",
+      "top_sector": "Industrials (95.4%)",
+      "top_buy": "QCOM",
+      "top_sell": "GTLB",
+      "holdings": [
+        {
+          "ticker": "SPCX",
+          "company": "SpaceX",
+          "weight": 94.78,
+          "change_type": "increase",
+          "change_pct": "+3.85M Shares",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "CME",
+          "company": "CME Group Inc",
+          "weight": 1.03,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Finance"
+        },
+        {
+          "ticker": "PL",
+          "company": "Planet Labs PBC",
+          "weight": 0.65,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Industrials"
+        },
+        {
+          "ticker": "ARM",
+          "company": "Arm Holdings plc",
+          "weight": 0.64,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "RVMD",
+          "company": "Revolution Medicines Inc",
+          "weight": 0.62,
+          "change_type": "decrease",
+          "change_pct": "-273K Shares",
+          "sector": "Health Care"
+        },
+        {
+          "ticker": "QCOM",
+          "company": "Qualcomm Inc",
+          "weight": 0.62,
+          "change_type": "new",
+          "change_pct": "NEW (+2.98M)",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "ASTS",
+          "company": "AST SpaceMobile Inc",
+          "weight": 0.6,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Communication Services"
+        },
+        {
+          "ticker": "FRSH",
+          "company": "Freshworks Inc",
+          "weight": 0.21,
+          "change_type": "decrease",
+          "change_pct": "-1.87M Shares",
+          "sector": "Information Technology"
+        },
+        {
+          "ticker": "PRBL",
+          "company": "Parabilis Medicines Inc",
+          "weight": 0.18,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Health Care"
+        },
+        {
+          "ticker": "TEM",
+          "company": "Tempus AI Inc",
+          "weight": 0.14,
+          "change_type": "none",
+          "change_pct": "No Change",
+          "sector": "Health Care"
+        }
+      ]
     }
   ]
 }

@@ -149,7 +149,8 @@
         /* 13F Specific Styles */
         .guru-tabs {
             display: flex;
-            gap: 15px;
+            flex-wrap: wrap;
+            gap: 12px;
             margin-bottom: 25px;
             justify-content: center;
         }
@@ -158,12 +159,13 @@
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--text-secondary);
-            padding: 12px 30px;
+            padding: 10px 22px;
             border-radius: 15px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            white-space: nowrap;
         }
 
         .guru-tab:hover {
