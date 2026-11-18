@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-11-05": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -20.22,
-      "rsi14": 23.86
-    },
-    {
-      "ticker": "MCHP",
-      "name": "Microchip Technology Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": -17.25,
-      "rsi14": 26.93
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -14.45,
-      "rsi14": 26.25
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -14.42,
-      "rsi14": 28.33
-    },
-    {
-      "ticker": "STX",
-      "name": "Seagate Technology Holdings plc",
-      "sector": "Information Technology",
-      "dist_sma5": -14.15,
-      "rsi14": 24.49
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -11.4,
-      "rsi14": 29.51
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "dist_sma5": -10.83,
-      "rsi14": 36.69
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -10.0,
-      "rsi14": 24.3
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.93,
-      "rsi14": 31.27
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.76,
-      "rsi14": 29.11
-    }
-  ],
   "2026-11-09": [
     {
       "ticker": "AXON",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Health Care",
       "dist_sma5": -7.97,
       "rsi14": 47.08
+    }
+  ],
+  "2026-11-17": [
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -13.42,
+      "rsi14": 33.7
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -11.94,
+      "rsi14": 26.2
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -10.15,
+      "rsi14": 27.18
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -9.54,
+      "rsi14": 30.86
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -9.51,
+      "rsi14": 45.24
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -9.1,
+      "rsi14": 39.3
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.48,
+      "rsi14": 25.73
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -8.13,
+      "rsi14": 44.43
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.7,
+      "rsi14": 40.55
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": -7.6,
+      "rsi14": 45.47
     }
   ]
 };
