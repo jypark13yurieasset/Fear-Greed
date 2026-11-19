@@ -1,76 +1,4 @@
 {
-  "2026-11-09": [
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 46.84,
-      "rsi14": 78.32
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 19.08,
-      "rsi14": 74.62
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 18.53,
-      "rsi14": 65.86
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 18.18,
-      "rsi14": 67.21
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 14.64,
-      "rsi14": 73.91
-    },
-    {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 13.53,
-      "rsi14": 79.57
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 13.49,
-      "rsi14": 66.49
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.68,
-      "rsi14": 69.87
-    },
-    {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.67,
-      "rsi14": 72.57
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 12.57,
-      "rsi14": 58.8
-    }
-  ],
   "2026-11-10": [
     {
       "ticker": "APP",
@@ -501,6 +429,78 @@
       "sector": "Communication Services",
       "dist_sma20": 5.27,
       "rsi14": 56.7
+    }
+  ],
+  "2026-11-18": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 20.22,
+      "rsi14": 64.78
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 11.53,
+      "rsi14": 67.2
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 8.0,
+      "rsi14": 67.89
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 6.88,
+      "rsi14": 53.49
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 6.62,
+      "rsi14": 55.12
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 6.57,
+      "rsi14": 72.06
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 5.95,
+      "rsi14": 53.67
+    },
+    {
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "dist_sma20": 5.91,
+      "rsi14": 69.59
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "dist_sma20": 5.7,
+      "rsi14": 67.3
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 5.47,
+      "rsi14": 64.5
     }
   ]
 }

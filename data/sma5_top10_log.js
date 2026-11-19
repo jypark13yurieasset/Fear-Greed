@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-11-09": [
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 22.42,
-      "rsi14": 78.32
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 11.17,
-      "rsi14": 51.39
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 10.17,
-      "rsi14": 58.8
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 8.92,
-      "rsi14": 47.67
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "sector": "Utilities",
-      "dist_sma5": 8.29,
-      "rsi14": 55.7
-    },
-    {
-      "ticker": "ANET",
-      "name": "Arista Networks, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 7.67,
-      "rsi14": 51.51
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 7.47,
-      "rsi14": 67.21
-    },
-    {
-      "ticker": "FERG",
-      "name": "Ferguson Enterprises Inc.",
-      "sector": "Industrials",
-      "dist_sma5": 6.55,
-      "rsi14": 70.42
-    },
-    {
-      "ticker": "ABNB",
-      "name": "Airbnb, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 6.46,
-      "rsi14": 66.38
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": 5.82,
-      "rsi14": 62.59
-    }
-  ],
   "2026-11-10": [
     {
       "ticker": "RKLB",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Consumer Discretionary",
       "dist_sma5": 0.6,
       "rsi14": 60.95
+    }
+  ],
+  "2026-11-18": [
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 5.55,
+      "rsi14": 47.75
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 4.45,
+      "rsi14": 53.41
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.3,
+      "rsi14": 50.03
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 3.57,
+      "rsi14": 39.97
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 3.11,
+      "rsi14": 67.2
+    },
+    {
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "dist_sma5": 2.79,
+      "rsi14": 69.59
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": 2.66,
+      "rsi14": 60.22
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "sector": "Industrials",
+      "dist_sma5": 2.26,
+      "rsi14": 50.57
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 1.98,
+      "rsi14": 55.22
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 1.71,
+      "rsi14": 55.12
     }
   ]
 };
