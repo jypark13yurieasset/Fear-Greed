@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-11-10": [
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 38.59,
-      "rsi14": 73.17
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 15.68,
-      "rsi14": 71.46
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 15.16,
-      "rsi14": 55.69
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 13.1,
-      "rsi14": 66.97
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 12.8,
-      "rsi14": 71.75
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.54,
-      "rsi14": 70.74
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.39,
-      "rsi14": 59.55
-    },
-    {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 11.64,
-      "rsi14": 76.9
-    },
-    {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 11.39,
-      "rsi14": 72.27
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 10.65,
-      "rsi14": 72.6
-    }
-  ],
   "2026-11-11": [
     {
       "ticker": "APP",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Communication Services",
       "dist_sma20": 5.47,
       "rsi14": 64.5
+    }
+  ],
+  "2026-11-19": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 14.55,
+      "rsi14": 60.82
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 8.23,
+      "rsi14": 62.92
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 7.75,
+      "rsi14": 64.02
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 5.9,
+      "rsi14": 61.8
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 5.63,
+      "rsi14": 64.57
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Health Care",
+      "dist_sma20": 4.48,
+      "rsi14": 66.55
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 4.02,
+      "rsi14": 52.55
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 4.01,
+      "rsi14": 54.55
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 3.95,
+      "rsi14": 51.18
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 3.93,
+      "rsi14": 67.82
     }
   ]
 };

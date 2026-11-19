@@ -1,76 +1,4 @@
 {
-  "2026-11-10": [
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -12.33,
-      "rsi14": 22.66
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -7.8,
-      "rsi14": 23.95
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": -6.5,
-      "rsi14": 37.0
-    },
-    {
-      "ticker": "MCHP",
-      "name": "Microchip Technology Incorporated",
-      "sector": "Information Technology",
-      "dist_sma5": -5.84,
-      "rsi14": 31.92
-    },
-    {
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -4.51,
-      "rsi14": 31.16
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -4.0,
-      "rsi14": 46.32
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.39,
-      "rsi14": 27.11
-    },
-    {
-      "ticker": "DXCM",
-      "name": "DexCom, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -3.32,
-      "rsi14": 44.21
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.26,
-      "rsi14": 48.44
-    },
-    {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.03,
-      "rsi14": 41.66
-    }
-  ],
   "2026-11-11": [
     {
       "ticker": "PDD",
@@ -501,6 +429,78 @@
       "sector": "Industrials",
       "dist_sma5": -6.63,
       "rsi14": 38.73
+    }
+  ],
+  "2026-11-19": [
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "sector": "Health Care",
+      "dist_sma5": -12.55,
+      "rsi14": 24.19
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -11.68,
+      "rsi14": 22.68
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -10.39,
+      "rsi14": 36.61
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma5": -9.14,
+      "rsi14": 23.72
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -9.07,
+      "rsi14": 31.78
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.59,
+      "rsi14": 36.51
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.43,
+      "rsi14": 21.61
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -8.29,
+      "rsi14": 40.89
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": -7.66,
+      "rsi14": 37.22
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": -7.24,
+      "rsi14": 33.63
     }
   ]
 }
