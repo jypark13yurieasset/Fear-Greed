@@ -1,76 +1,4 @@
 {
-  "2026-11-11": [
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 38.38,
-      "rsi14": 74.33
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma20": 20.71,
-      "rsi14": 59.17
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": 18.61,
-      "rsi14": 62.82
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 15.01,
-      "rsi14": 72.21
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": 12.42,
-      "rsi14": 67.9
-    },
-    {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 12.4,
-      "rsi14": 78.86
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma20": 12.33,
-      "rsi14": 60.62
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 12.2,
-      "rsi14": 72.4
-    },
-    {
-      "ticker": "FERG",
-      "name": "Ferguson Enterprises Inc.",
-      "sector": "Industrials",
-      "dist_sma20": 11.35,
-      "rsi14": 72.22
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 11.18,
-      "rsi14": 70.02
-    }
-  ],
   "2026-11-12": [
     {
       "ticker": "APP",
@@ -501,6 +429,78 @@
       "sector": "Consumer Staples",
       "dist_sma20": 3.93,
       "rsi14": 67.82
+    }
+  ],
+  "2026-11-20": [
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 4.74,
+      "rsi14": 58.3
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 4.54,
+      "rsi14": 57.78
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 4.44,
+      "rsi14": 59.11
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 4.23,
+      "rsi14": 69.6
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 3.88,
+      "rsi14": 51.98
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 3.14,
+      "rsi14": 59.92
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 2.8,
+      "rsi14": 50.4
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 2.76,
+      "rsi14": 53.28
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 2.66,
+      "rsi14": 59.78
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma20": 2.42,
+      "rsi14": 61.18
     }
   ]
 }

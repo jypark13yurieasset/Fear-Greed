@@ -1,76 +1,4 @@
 {
-  "2026-11-11": [
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 22.25,
-      "rsi14": 49.72
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 15.33,
-      "rsi14": 59.17
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 13.76,
-      "rsi14": 53.63
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": 13.74,
-      "rsi14": 45.58
-    },
-    {
-      "ticker": "MPWR",
-      "name": "Monolithic Power Systems, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 12.94,
-      "rsi14": 62.82
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 12.68,
-      "rsi14": 47.83
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 12.59,
-      "rsi14": 40.59
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 12.18,
-      "rsi14": 45.1
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 12.15,
-      "rsi14": 38.27
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": 11.97,
-      "rsi14": 37.42
-    }
-  ],
   "2026-11-12": [
     {
       "ticker": "AMD",
@@ -501,6 +429,78 @@
       "sector": "Consumer Discretionary",
       "dist_sma5": 0.67,
       "rsi14": 62.92
+    }
+  ],
+  "2026-11-20": [
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 3.92,
+      "rsi14": 57.78
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 2.77,
+      "rsi14": 48.78
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 2.62,
+      "rsi14": 52.39
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": 1.23,
+      "rsi14": 59.11
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon Communications Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 0.77,
+      "rsi14": 55.89
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 0.71,
+      "rsi14": 50.4
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "dist_sma5": 0.39,
+      "rsi14": 63.98
+    },
+    {
+      "ticker": "DUK",
+      "name": "Duke Energy Corporation",
+      "sector": "Utilities",
+      "dist_sma5": -0.03,
+      "rsi14": 62.22
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": -0.1,
+      "rsi14": 69.6
+    },
+    {
+      "ticker": "MRSH",
+      "name": "Marsh & McLennan Companies, Inc.",
+      "sector": "Financials",
+      "dist_sma5": -0.11,
+      "rsi14": 60.64
     }
   ]
 }

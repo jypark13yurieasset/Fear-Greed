@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-11-11": [
-    {
-      "ticker": "PDD",
-      "name": "PDD Holdings Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -2.67,
-      "rsi14": 46.12
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": -2.47,
-      "rsi14": 38.18
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -2.45,
-      "rsi14": 27.83
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -2.35,
-      "rsi14": 28.74
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -2.26,
-      "rsi14": 47.68
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": -2.2,
-      "rsi14": 56.57
-    },
-    {
-      "ticker": "TRI",
-      "name": "Thomson Reuters Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -2.17,
-      "rsi14": 46.88
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": -1.96,
-      "rsi14": 52.76
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Information Technology",
-      "dist_sma5": -1.85,
-      "rsi14": 59.4
-    },
-    {
-      "ticker": "NKE",
-      "name": "NIKE, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -1.75,
-      "rsi14": 51.89
-    }
-  ],
   "2026-11-12": [
     {
       "ticker": "MRNA",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Materials",
       "dist_sma5": -7.24,
       "rsi14": 33.63
+    }
+  ],
+  "2026-11-20": [
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -18.42,
+      "rsi14": 28.51
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -15.96,
+      "rsi14": 25.35
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -14.86,
+      "rsi14": 32.6
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -14.5,
+      "rsi14": 15.05
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma5": -14.28,
+      "rsi14": 20.22
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -13.44,
+      "rsi14": 38.42
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -13.32,
+      "rsi14": 26.76
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": -13.29,
+      "rsi14": 35.63
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -13.2,
+      "rsi14": 30.07
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -13.13,
+      "rsi14": 29.52
     }
   ]
 };
