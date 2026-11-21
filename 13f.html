@@ -68,7 +68,7 @@
         .container {
             width: 100%;
             max-width: 1120px;
-            margin: 0 auto;
+            초 margin: 0 auto;
             z-index: 1;
             position: relative;
         }
@@ -245,8 +245,10 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .holdings-table th:nth-child(3), .holdings-table th:nth-child(4),
-        .holdings-table td:nth-child(3), .holdings-table td:nth-child(4) {
+        .holdings-table th:nth-child(3),
+        .holdings-table th:nth-child(4),
+        .holdings-table td:nth-child(3),
+        .holdings-table td:nth-child(4) {
             text-align: right;
         }
 
@@ -256,14 +258,15 @@
             color: var(--text-primary);
         }
 
-        .holdings-table td:nth-child(3), .holdings-table td:nth-child(4) {
+        .holdings-table td:nth-child(3),
+        .holdings-table td:nth-child(4) {
             text-align: right;
         }
 
         .holdings-table tr:hover td {
             background: rgba(255, 255, 255, 0.02);
         }
-        
+
         .row-new {
             background: rgba(255, 215, 0, 0.05) !important;
         }
@@ -277,57 +280,60 @@
             font-size: 0.85rem;
         }
 
-        .badge-increase { 
-            color: #00d26a; 
-            background: rgba(0, 210, 106, 0.1); 
+        .badge-increase {
+            color: #00d26a;
+            background: rgba(0, 210, 106, 0.1);
             border: 1px solid rgba(0, 210, 106, 0.25);
-            padding: 4px 10px; 
-            border-radius: 20px; 
-            display: inline-block; 
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: inline-block;
             font-size: 0.85rem;
             font-weight: 600;
         }
-        .badge-decrease { 
-            color: #f93c65; 
-            background: rgba(249, 60, 101, 0.1); 
+
+        .badge-decrease {
+            color: #f93c65;
+            background: rgba(249, 60, 101, 0.1);
             border: 1px solid rgba(249, 60, 101, 0.25);
-            padding: 4px 10px; 
-            border-radius: 20px; 
+            padding: 4px 10px;
+            border-radius: 20px;
             display: inline-block;
             font-size: 0.85rem;
             font-weight: 600;
         }
-        .badge-new { 
-            color: #ffd700; 
-            background: rgba(255, 215, 0, 0.1); 
+
+        .badge-new {
+            color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
             border: 1px solid rgba(255, 215, 0, 0.3);
-            padding: 4px 10px; 
-            border-radius: 20px; 
+            padding: 4px 10px;
+            border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: 700; 
+            font-weight: 700;
             display: inline-block;
         }
-        .badge-none { 
-            color: #94a3b8; 
-            background: rgba(148, 163, 184, 0.1); 
+
+        .badge-none {
+            color: #94a3b8;
+            background: rgba(148, 163, 184, 0.1);
             border: 1px solid rgba(148, 163, 184, 0.25);
-            padding: 4px 10px; 
-            border-radius: 20px; 
+            padding: 4px 10px;
+            border-radius: 20px;
             display: inline-block;
             font-size: 0.85rem;
             font-weight: 500;
         }
+
         .badge-unknown {
             color: #64748b;
             background: transparent;
             border: 1px dashed rgba(100, 116, 139, 0.4);
-            padding: 4px 10px; 
-            border-radius: 20px; 
+            padding: 4px 10px;
+            border-radius: 20px;
             display: inline-block;
             font-size: 0.8rem;
             font-weight: 400;
         }
-
     </style>
 </head>
 
@@ -347,9 +353,12 @@
                     <a href="./13f.html" class="nav-tab active">5. 13F</a>
                 </div>
             </div>
-            <div class="dashboard-subtitle" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="dashboard-subtitle"
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
                 <span>글로벌 구루 및 기관 투자자 포트폴리오 추적 &nbsp;|&nbsp; <span id="update-date">기준일: 로딩중...</span></span>
-                <a href="https://whalewisdom.com/" target="_blank" style="font-size: 0.8rem; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; display: flex; align-items: center; gap: 4px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent)'">
+                <a href="https://whalewisdom.com/" target="_blank"
+                    style="font-size: 0.8rem; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; display: flex; align-items: center; gap: 4px;"
+                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--accent)'">
                     WhaleWisdom ↗
                 </a>
             </div>
@@ -378,11 +387,13 @@
                 </div>
                 <div class="metric-card">
                     <div class="metric-title">Top Buy / New</div>
-                    <div class="metric-value badge-increase" id="metric-buy" style="font-size: 1.1rem; padding-top: 5px;">-</div>
+                    <div class="metric-value badge-increase" id="metric-buy"
+                        style="font-size: 1.1rem; padding-top: 5px;">-</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-title">Top Sell / Reduce</div>
-                    <div class="metric-value badge-decrease" id="metric-sell" style="font-size: 1.1rem; padding-top: 5px;">-</div>
+                    <div class="metric-value badge-decrease" id="metric-sell"
+                        style="font-size: 1.1rem; padding-top: 5px;">-</div>
                 </div>
             </div>
 
@@ -427,7 +438,7 @@
                 const response = await fetch('./data/13f_data.json?v=' + new Date().getTime());
                 if (!response.ok) throw new Error('Data load failed');
                 f13Data = await response.json();
-                
+
                 // AUM 기준으로 기관들을 내림차순 정렬
                 if (f13Data.gurus) {
                     f13Data.gurus.sort((a, b) => {
@@ -442,10 +453,10 @@
                         return parseAUM(b.aum) - parseAUM(a.aum);
                     });
                 }
-                
+
                 document.getElementById('update-date').innerText = `기준일: ${f13Data.update_date}`;
                 document.getElementById('13f-content').style.display = 'block';
-                
+
                 renderTabs();
                 // Select first guru by default
                 if (f13Data.gurus && f13Data.gurus.length > 0) {
@@ -493,17 +504,17 @@
             // Render Table
             const tbody = document.getElementById('holdings-body');
             tbody.innerHTML = '';
-            
+
             // Prepare data for chart (aggregate by sector)
             const sectorData = {};
 
             guru.holdings.forEach(h => {
                 // Table Row
                 const row = document.createElement('tr');
-                
+
                 let changeClass = 'badge-none';
                 let changeText = 'Equal';
-                
+
                 if (h.change_type === 'increase') {
                     changeClass = 'badge-increase';
                     changeText = '▲ Up';
@@ -544,7 +555,7 @@
 
         function renderChart(sectorData) {
             const ctx = document.getElementById('sectorChart').getContext('2d');
-            
+
             if (chartInstance) {
                 chartInstance.destroy();
             }
@@ -553,10 +564,10 @@
             const sortedSectors = Object.entries(sectorData).sort((a, b) => b[1] - a[1]);
             const labels = sortedSectors.map(s => s[0]);
             const data = sortedSectors.map(s => s[1]);
-            
+
             // Generate some nice colors based on theme
             const bgColors = [
-                '#7c8cf5', '#00d26a', '#f93c65', '#ffd700', 
+                '#7c8cf5', '#00d26a', '#f93c65', '#ffd700',
                 '#a5b4fc', '#38bdf8', '#c084fc', '#fb923c', '#94a3b8'
             ];
 
@@ -608,7 +619,7 @@
                             bodyFont: { family: "'Outfit', sans-serif", size: 12 },
                             padding: 10,
                             callbacks: {
-                                label: function(context) {
+                                label: function (context) {
                                     let label = context.label || '';
                                     if (label) label += ': ';
                                     label += context.raw.toFixed(1) + '%';
