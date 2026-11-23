@@ -1,181 +1,5 @@
 [
   {
-    "date": "2026-09-21",
-    "ticker": "CI",
-    "name": "The Cigna Group",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 274.4700012207031
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "RSG",
-    "name": "Republic Services, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 213.92999267578125
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "COHR",
-    "name": "Coherent Corp.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 321.5199890136719
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "COR",
-    "name": "Cencora, Inc.",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 316.489990234375
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "KEYS",
-    "name": "Keysight Technologies, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 342.0299987792969
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "OKE",
-    "name": "ONEOK, Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 91.80000305175781
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "OXY",
-    "name": "Occidental Petroleum Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 57.25
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "NUE",
-    "name": "Nucor Corporation",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 242.39999389648438
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "FANG",
-    "name": "Diamondback Energy, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 189.27000427246094
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "CTVA",
-    "name": "Corteva, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 79.11000061035156
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "HUM",
-    "name": "Humana Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 378.5799865722656
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "ARM",
-    "name": "Arm Holdings plc",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 322.8999938964844
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "NBIS",
-    "name": "Nebius Group N.V.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 232.8000030517578
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "ALAB",
-    "name": "Astera Labs, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 340.739990234375
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "KDP",
-    "name": "Keurig Dr Pepper Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 30.6200008392334
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "ALNY",
-    "name": "Alnylam Pharmaceuticals, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 244.32000732421875
-  },
-  {
-    "date": "2026-09-21",
-    "ticker": "005930.KS",
-    "name": "Samsung Electronics Co., Ltd.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 274000.0
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "NVDA",
-    "name": "NVIDIA Corporation",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 228.8699951171875
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "GOOG",
-    "name": "Alphabet Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 347.4100036621094
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "V",
-    "name": "Visa Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 362.0400085449219
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "WFC",
-    "name": "Wells Fargo & Company",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 83.1500015258789
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "TXN",
-    "name": "Texas Instruments Incorporated",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 271.4100036621094
-  },
-  {
     "date": "2026-09-22",
     "ticker": "STX",
     "name": "Seagate Technology Holdings plc",
@@ -7998,5 +7822,181 @@
     "type": "dead",
     "streak": 2,
     "entry_price": 45.41999816894531
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "AVGO",
+    "name": "Broadcom Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 313.54998779296875
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "ANET",
+    "name": "Arista Networks, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 178.30999755859375
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "ABT",
+    "name": "Abbott Laboratories",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 103.31999969482422
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "UBER",
+    "name": "Uber Technologies, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 64.06999969482422
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "EQIX",
+    "name": "Equinix, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 999.4000244140625
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "BNY",
+    "name": "The Bank of New York Mellon Cor",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 145.82000732421875
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "GD",
+    "name": "General Dynamics Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 347.8399963378906
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "USB",
+    "name": "U.S. Bancorp",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 57.40999984741211
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "CEG",
+    "name": "Constellation Energy Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 251.72000122070312
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "AMT",
+    "name": "American Tower Corporation",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 179.30999755859375
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "KKR",
+    "name": "KKR & Co. Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 92.62000274658203
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "ELV",
+    "name": "Elevance Health, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 379.54998779296875
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "APO",
+    "name": "Apollo Global Management, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 116.94000244140625
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "GM",
+    "name": "General Motors Company",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 81.63999938964844
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "DLR",
+    "name": "Digital Realty Trust, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 167.41000366210938
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "MET",
+    "name": "MetLife, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 98.72000122070312
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "TFC",
+    "name": "Truist Financial Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 46.88999938964844
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "HONA",
+    "name": "Honeywell Aerospace Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 154.6199951171875
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 284.010009765625
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "HUM",
+    "name": "Humana Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 383.67999267578125
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "PYPL",
+    "name": "PayPal Holdings, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 55.2400016784668
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "XYZ",
+    "name": "Block, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 73.23999786376953
   }
 ]

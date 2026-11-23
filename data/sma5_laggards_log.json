@@ -1,76 +1,4 @@
 {
-  "2026-11-12": [
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -7.76,
-      "rsi14": 52.41
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": -6.58,
-      "rsi14": 33.94
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -6.55,
-      "rsi14": 38.66
-    },
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Materials",
-      "dist_sma5": -5.68,
-      "rsi14": 45.64
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -4.94,
-      "rsi14": 25.99
-    },
-    {
-      "ticker": "KDP",
-      "name": "Keurig Dr Pepper Inc.",
-      "sector": "Consumer Staples",
-      "dist_sma5": -4.18,
-      "rsi14": 51.65
-    },
-    {
-      "ticker": "XYZ",
-      "name": "Block, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -3.81,
-      "rsi14": 53.66
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.63,
-      "rsi14": 55.05
-    },
-    {
-      "ticker": "DAL",
-      "name": "Delta Air Lines, Inc.",
-      "sector": "Industrials",
-      "dist_sma5": -3.63,
-      "rsi14": 54.51
-    },
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": -3.08,
-      "rsi14": 58.75
-    }
-  ],
   "2026-11-13": [
     {
       "ticker": "NBIS",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": -13.13,
       "rsi14": 29.52
+    }
+  ],
+  "2026-11-23": [
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -8.22,
+      "rsi14": 37.82
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.56,
+      "rsi14": 29.7
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.57,
+      "rsi14": 43.76
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.55,
+      "rsi14": 42.56
+    },
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -5.06,
+      "rsi14": 33.94
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -4.25,
+      "rsi14": 31.01
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "dist_sma5": -3.96,
+      "rsi14": 31.5
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "sector": "Health Care",
+      "dist_sma5": -3.76,
+      "rsi14": 28.78
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "dist_sma5": -3.66,
+      "rsi14": 32.33
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": -3.31,
+      "rsi14": 35.0
     }
   ]
 }
