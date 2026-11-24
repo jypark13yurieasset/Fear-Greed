@@ -45197,5 +45197,421 @@
             }
         ],
         "updated_at": "11-24 07:52 KST"
+    },
+    "2026-11-24": {
+        "fear_and_greed": 17,
+        "sp500_price": 7201.09,
+        "sp500_change": -0.5,
+        "nasdaq_price": 23733.53,
+        "nasdaq_change": -1.48,
+        "vix_price": 26.36,
+        "vix_change": -0.98,
+        "dxy_price": 103.83,
+        "dxy_change": -0.47,
+        "btc_data": {
+            "price": 59931.17,
+            "ath": 126198.07,
+            "drawdown": -52.51
+        },
+        "assets_top20": [
+            {
+                "rank": 1,
+                "name": "Gold",
+                "code": "GOLD",
+                "mcap": "$24.718 T"
+            },
+            {
+                "rank": 2,
+                "name": "Apple",
+                "code": "AAPL",
+                "mcap": "$5.145 T"
+            },
+            {
+                "rank": 3,
+                "name": "NVIDIA",
+                "code": "NVDA",
+                "mcap": "$3.751 T"
+            },
+            {
+                "rank": 4,
+                "name": "Microsoft",
+                "code": "MSFT",
+                "mcap": "$3.684 T"
+            },
+            {
+                "rank": 5,
+                "name": "Alphabet (Google)",
+                "code": "GOOG",
+                "mcap": "$3.400 T"
+            },
+            {
+                "rank": 6,
+                "name": "Amazon",
+                "code": "AMZN",
+                "mcap": "$2.728 T"
+            },
+            {
+                "rank": 7,
+                "name": "Silver",
+                "code": "SILVER",
+                "mcap": "$2.291 T"
+            },
+            {
+                "rank": 8,
+                "name": "TSMC",
+                "code": "TSM",
+                "mcap": "$1.811 T"
+            },
+            {
+                "rank": 9,
+                "name": "SpaceX",
+                "code": "SPCX",
+                "mcap": "$1.708 T"
+            },
+            {
+                "rank": 10,
+                "name": "Saudi Aramco",
+                "code": "2222.SR",
+                "mcap": "$1.695 T"
+            },
+            {
+                "rank": 11,
+                "name": "Tesla",
+                "code": "TSLA",
+                "mcap": "$1.520 T"
+            },
+            {
+                "rank": 12,
+                "name": "Meta Platforms (Facebook)",
+                "code": "META",
+                "mcap": "$1.507 T"
+            },
+            {
+                "rank": 13,
+                "name": "Broadcom",
+                "code": "AVGO",
+                "mcap": "$1.437 T"
+            },
+            {
+                "rank": 14,
+                "name": "Eli Lilly",
+                "code": "LLY",
+                "mcap": "$1.253 T"
+            },
+            {
+                "rank": 15,
+                "name": "Berkshire Hathaway",
+                "code": "BRK-B",
+                "mcap": "$1.226 T"
+            },
+            {
+                "rank": 16,
+                "name": "Bitcoin",
+                "code": "BTC",
+                "mcap": "$1.205 T"
+            },
+            {
+                "rank": 17,
+                "name": "Anthropic",
+                "code": "ANT",
+                "mcap": "$1.094 T"
+            },
+            {
+                "rank": 18,
+                "name": "Walmart",
+                "code": "WMT",
+                "mcap": "$1.049 T"
+            },
+            {
+                "rank": 19,
+                "name": "Vanguard S&P 500 ETF",
+                "code": "VOO",
+                "mcap": "$995.48 B"
+            },
+            {
+                "rank": 20,
+                "name": "Samsung",
+                "code": "005930.KS",
+                "mcap": "$918.25 B"
+            }
+        ],
+        "aaii_bullish": 33.3,
+        "aaii_neutral": 24.4,
+        "aaii_bearish": 42.2,
+        "aaii_date": "2026-11-18",
+        "us_etfs": {
+            "ARKK": {
+                "date": "2026-11-25",
+                "holdings": [
+                    {
+                        "ticker": "TSLA",
+                        "name": "Tesla, Inc.",
+                        "weight": 12.37
+                    },
+                    {
+                        "ticker": "SPCX",
+                        "name": "Space Exploration Technologies Corp.",
+                        "weight": 8.68
+                    },
+                    {
+                        "ticker": "n/a",
+                        "name": "GOLDMAN FS TRSY OBLIG INST 468",
+                        "weight": 5.76
+                    },
+                    {
+                        "ticker": "TEM",
+                        "name": "Tempus AI, Inc.",
+                        "weight": 4.92
+                    },
+                    {
+                        "ticker": "CRCL",
+                        "name": "Circle Internet Group, Inc.",
+                        "weight": 3.75
+                    },
+                    {
+                        "ticker": "n/a",
+                        "name": "OPENAI GROUP PBC SERIES C",
+                        "weight": 3.46
+                    },
+                    {
+                        "ticker": "COIN",
+                        "name": "Coinbase Global, Inc.",
+                        "weight": 3.35
+                    },
+                    {
+                        "ticker": "SHOP",
+                        "name": "Shopify Inc.",
+                        "weight": 3.26
+                    },
+                    {
+                        "ticker": "TWST",
+                        "name": "Twist Bioscience Corporation",
+                        "weight": 3.16
+                    },
+                    {
+                        "ticker": "NVDA",
+                        "name": "NVIDIA Corporation",
+                        "weight": 2.69
+                    }
+                ]
+            },
+            "IVES": {
+                "date": "2026-11-25",
+                "holdings": [
+                    {
+                        "ticker": "AAPL",
+                        "name": "Apple Inc.",
+                        "weight": 5.96
+                    },
+                    {
+                        "ticker": "AMZN",
+                        "name": "Amazon.com, Inc.",
+                        "weight": 5.71
+                    },
+                    {
+                        "ticker": "TSLA",
+                        "name": "Tesla, Inc.",
+                        "weight": 5.7
+                    },
+                    {
+                        "ticker": "MSFT",
+                        "name": "Microsoft Corporation",
+                        "weight": 5.43
+                    },
+                    {
+                        "ticker": "AVGO",
+                        "name": "Broadcom Inc.",
+                        "weight": 4.89
+                    },
+                    {
+                        "ticker": "META",
+                        "name": "Meta Platforms, Inc.",
+                        "weight": 4.64
+                    },
+                    {
+                        "ticker": "GOOGL",
+                        "name": "Alphabet Inc.",
+                        "weight": 4.57
+                    },
+                    {
+                        "ticker": "TSM",
+                        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+                        "weight": 4.5
+                    },
+                    {
+                        "ticker": "NVDA",
+                        "name": "NVIDIA Corporation",
+                        "weight": 4.17
+                    },
+                    {
+                        "ticker": "AMD",
+                        "name": "Advanced Micro Devices, Inc.",
+                        "weight": 4.04
+                    }
+                ]
+            },
+            "GRNY": {
+                "date": "2026-11-25",
+                "holdings": [
+                    {
+                        "ticker": "ORLY",
+                        "name": "O'Reilly Automotive, Inc.",
+                        "weight": 2.41
+                    },
+                    {
+                        "ticker": "COST",
+                        "name": "Costco Wholesale Corporation",
+                        "weight": 2.38
+                    },
+                    {
+                        "ticker": "MCK",
+                        "name": "McKesson Corporation",
+                        "weight": 2.38
+                    },
+                    {
+                        "ticker": "CF",
+                        "name": "CF Industries Holdings, Inc.",
+                        "weight": 2.35
+                    },
+                    {
+                        "ticker": "TMO",
+                        "name": "Thermo Fisher Scientific Inc.",
+                        "weight": 2.34
+                    },
+                    {
+                        "ticker": "LMT",
+                        "name": "Lockheed Martin Corporation",
+                        "weight": 2.33
+                    },
+                    {
+                        "ticker": "XOM",
+                        "name": "ExxonMobil Holdings Corporation",
+                        "weight": 2.33
+                    },
+                    {
+                        "ticker": "V",
+                        "name": "Visa Inc.",
+                        "weight": 2.33
+                    },
+                    {
+                        "ticker": "MNST",
+                        "name": "Monster Beverage Corporation",
+                        "weight": 2.32
+                    },
+                    {
+                        "ticker": "AAPL",
+                        "name": "Apple Inc.",
+                        "weight": 2.31
+                    }
+                ]
+            }
+        },
+        "koact_date": "2026-11-25",
+        "koact_holdings": [
+            {
+                "name": "Amazon.com Inc",
+                "ticker": "AMZN",
+                "weight": 8.62
+            },
+            {
+                "name": "BROADCOM LTD",
+                "ticker": "AVGO",
+                "weight": 8.41
+            },
+            {
+                "name": "ADVANCED MICRO DEVICES",
+                "ticker": "AMD",
+                "weight": 8.19
+            },
+            {
+                "name": "BLOOM ENERGY CORPORATION",
+                "ticker": "BE",
+                "weight": 8.18
+            },
+            {
+                "name": "MICRON TECH",
+                "ticker": "MU",
+                "weight": 6.69
+            },
+            {
+                "name": "ALPHABET INC-CL A",
+                "ticker": "GOOGL",
+                "weight": 5.3
+            },
+            {
+                "name": "MICROSOFT",
+                "ticker": "MSFT",
+                "weight": 5.14
+            },
+            {
+                "name": "Cloudflare Inc",
+                "ticker": "NET",
+                "weight": 4.9
+            },
+            {
+                "name": "ARISTA NETWORKS",
+                "ticker": "ANET",
+                "weight": 4.41
+            },
+            {
+                "name": "Palantir Technologies Inc -A",
+                "ticker": "PLTR",
+                "weight": 4.1
+            }
+        ],
+        "time_date": "2026-11-24",
+        "time_holdings": [
+            {
+                "name": "Apple Inc",
+                "ticker": "AAPL",
+                "weight": 7.29
+            },
+            {
+                "name": "Microsoft Corp",
+                "ticker": "MSFT",
+                "weight": 7.05
+            },
+            {
+                "name": "Amazon.com Inc",
+                "ticker": "AMZN",
+                "weight": 6.87
+            },
+            {
+                "name": "Alphabet Inc",
+                "ticker": "GOOGL",
+                "weight": 5.73
+            },
+            {
+                "name": "Advanced Micro Devices Inc",
+                "ticker": "AMD",
+                "weight": 5.62
+            },
+            {
+                "name": "NVIDIA Corp",
+                "ticker": "NVDA",
+                "weight": 4.15
+            },
+            {
+                "name": "Meta Platforms Inc",
+                "ticker": "META",
+                "weight": 3.12
+            },
+            {
+                "name": "NASDAQ 100 E-MINI INDEX DEC 2026",
+                "ticker": "NQZ6",
+                "weight": 3.11
+            },
+            {
+                "name": "Space Exploration Technologies Corp",
+                "ticker": "SPCX",
+                "weight": 2.86
+            },
+            {
+                "name": "현금",
+                "ticker": "",
+                "weight": 2.81
+            }
+        ],
+        "updated_at": "11-25 08:02 KST"
     }
 }

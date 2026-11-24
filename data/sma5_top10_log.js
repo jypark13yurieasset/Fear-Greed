@@ -1,76 +1,4 @@
 const SMA5_TOP10_LOG = {
-  "2026-11-13": [
-    {
-      "ticker": "ALNY",
-      "name": "Alnylam Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 4.48,
-      "rsi14": 34.62
-    },
-    {
-      "ticker": "DVN",
-      "name": "Devon Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 4.17,
-      "rsi14": 47.55
-    },
-    {
-      "ticker": "VLO",
-      "name": "Valero Energy Corporation",
-      "sector": "Energy",
-      "dist_sma5": 4.01,
-      "rsi14": 47.16
-    },
-    {
-      "ticker": "TRGP",
-      "name": "Targa Resources Corp.",
-      "sector": "Energy",
-      "dist_sma5": 3.21,
-      "rsi14": 54.3
-    },
-    {
-      "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "dist_sma5": 3.16,
-      "rsi14": 47.85
-    },
-    {
-      "ticker": "EOG",
-      "name": "EOG Resources, Inc.",
-      "sector": "Energy",
-      "dist_sma5": 3.12,
-      "rsi14": 57.68
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "dist_sma5": 3.06,
-      "rsi14": 53.45
-    },
-    {
-      "ticker": "PSX",
-      "name": "Phillips 66",
-      "sector": "Energy",
-      "dist_sma5": 2.66,
-      "rsi14": 48.61
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron Corporation",
-      "sector": "Energy",
-      "dist_sma5": 2.61,
-      "rsi14": 52.01
-    },
-    {
-      "ticker": "DXCM",
-      "name": "DexCom, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.61,
-      "rsi14": 51.38
-    }
-  ],
   "2026-11-16": [
     {
       "ticker": "ELV",
@@ -501,6 +429,78 @@ const SMA5_TOP10_LOG = {
       "sector": "Information Technology",
       "dist_sma5": 4.18,
       "rsi14": 44.15
+    }
+  ],
+  "2026-11-24": [
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 10.32,
+      "rsi14": 53.54
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 8.06,
+      "rsi14": 43.42
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 5.73,
+      "rsi14": 62.18
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorporated",
+      "sector": "Health Care",
+      "dist_sma5": 5.42,
+      "rsi14": 62.16
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.78,
+      "rsi14": 68.82
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 4.64,
+      "rsi14": 39.59
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.59,
+      "rsi14": 68.54
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 4.58,
+      "rsi14": 39.47
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.54,
+      "rsi14": 51.17
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": 4.37,
+      "rsi14": 68.81
     }
   ]
 };

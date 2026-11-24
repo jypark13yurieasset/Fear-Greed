@@ -1,94 +1,6 @@
 [
   {
     "date": "2026-09-22",
-    "ticker": "STX",
-    "name": "Seagate Technology Holdings plc",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 919.8400268554688
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "VZ",
-    "name": "Verizon Communications Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 46.45000076293945
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "ADI",
-    "name": "Analog Devices, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 390.3699951171875
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "ETN",
-    "name": "Eaton Corporation plc",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 442.489990234375
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "COP",
-    "name": "ConocoPhillips",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 125.2699966430664
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "GLW",
-    "name": "Corning Incorporated",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 159.69000244140625
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "PGR",
-    "name": "The Progressive Corporation",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 206.94000244140625
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "CME",
-    "name": "CME Group Inc.",
-    "type": "dead",
-    "streak": 1,
-    "entry_price": 267.2099914550781
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "DDOG",
-    "name": "Datadog, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 247.47500610351562
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "JCI",
-    "name": "Johnson Controls International plc",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 146.44000244140625
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "EOG",
-    "name": "EOG Resources, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 139.52000427246094
-  },
-  {
-    "date": "2026-09-22",
     "ticker": "CI",
     "name": "The Cigna Group",
     "type": "dead",
@@ -7998,5 +7910,93 @@
     "type": "dead",
     "streak": 2,
     "entry_price": 73.23999786376953
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 252.2899932861328
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "AVGO",
+    "name": "Broadcom Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 301.0799865722656
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "ANET",
+    "name": "Arista Networks, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 168.55999755859375
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "BNY",
+    "name": "The Bank of New York Mellon Cor",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 145.22000122070312
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "EQIX",
+    "name": "Equinix, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 982.77001953125
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "TDG",
+    "name": "TransDigm Group Incorporated",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1129.3199462890625
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "NXPI",
+    "name": "NXP Semiconductors N.V.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 239.39999389648438
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 1190.1600341796875
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "A",
+    "name": "Agilent Technologies, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 183.52000427246094
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "EBAY",
+    "name": "eBay Inc.",
+    "type": "dead",
+    "streak": 1,
+    "entry_price": 113.7699966430664
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 280.29998779296875
   }
 ]
