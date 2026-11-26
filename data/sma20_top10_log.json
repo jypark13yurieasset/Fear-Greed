@@ -1,76 +1,4 @@
 {
-  "2026-11-16": [
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 32.8,
-      "rsi14": 73.41
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 10.71,
-      "rsi14": 70.23
-    },
-    {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 10.38,
-      "rsi14": 80.1
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 9.35,
-      "rsi14": 73.09
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 8.36,
-      "rsi14": 69.24
-    },
-    {
-      "ticker": "CAH",
-      "name": "Cardinal Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 8.24,
-      "rsi14": 80.21
-    },
-    {
-      "ticker": "HUM",
-      "name": "Humana Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 8.2,
-      "rsi14": 68.19
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 7.32,
-      "rsi14": 67.46
-    },
-    {
-      "ticker": "COST",
-      "name": "Costco Wholesale Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": 7.29,
-      "rsi14": 77.11
-    },
-    {
-      "ticker": "MCK",
-      "name": "McKesson Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 6.97,
-      "rsi14": 75.24
-    }
-  ],
   "2026-11-17": [
     {
       "ticker": "APP",
@@ -501,6 +429,78 @@
       "sector": "Communication Services",
       "dist_sma20": 4.61,
       "rsi14": 57.64
+    }
+  ],
+  "2026-11-25": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 7.41,
+      "rsi14": 58.32
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 7.35,
+      "rsi14": 63.94
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 7.35,
+      "rsi14": 59.52
+    },
+    {
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "dist_sma20": 6.36,
+      "rsi14": 68.86
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 6.19,
+      "rsi14": 65.46
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 6.09,
+      "rsi14": 62.7
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 5.47,
+      "rsi14": 61.06
+    },
+    {
+      "ticker": "ORLY",
+      "name": "O'Reilly Automotive, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 5.45,
+      "rsi14": 71.03
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 5.22,
+      "rsi14": 45.6
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 5.18,
+      "rsi14": 68.01
     }
   ]
 }

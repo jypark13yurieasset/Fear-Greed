@@ -1,76 +1,4 @@
 {
-  "2026-11-16": [
-    {
-      "ticker": "ELV",
-      "name": "Elevance Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 3.07,
-      "rsi14": 63.62
-    },
-    {
-      "ticker": "HUM",
-      "name": "Humana Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 2.99,
-      "rsi14": 68.19
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 2.86,
-      "rsi14": 73.41
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": 2.34,
-      "rsi14": 50.35
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma5": 2.13,
-      "rsi14": 69.24
-    },
-    {
-      "ticker": "PG",
-      "name": "The Procter & Gamble Company",
-      "sector": "Consumer Staples",
-      "dist_sma5": 2.12,
-      "rsi14": 72.16
-    },
-    {
-      "ticker": "CL",
-      "name": "Colgate-Palmolive Company",
-      "sector": "Consumer Staples",
-      "dist_sma5": 2.08,
-      "rsi14": 67.91
-    },
-    {
-      "ticker": "CB",
-      "name": "Chubb Limited",
-      "sector": "Financials",
-      "dist_sma5": 2.04,
-      "rsi14": 70.18
-    },
-    {
-      "ticker": "COST",
-      "name": "Costco Wholesale Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma5": 1.88,
-      "rsi14": 77.11
-    },
-    {
-      "ticker": "ALL",
-      "name": "The Allstate Corporation",
-      "sector": "Financials",
-      "dist_sma5": 1.81,
-      "rsi14": 64.85
-    }
-  ],
   "2026-11-17": [
     {
       "ticker": "SPCX",
@@ -501,6 +429,78 @@
       "sector": "Consumer Staples",
       "dist_sma5": 4.37,
       "rsi14": 68.81
+    }
+  ],
+  "2026-11-25": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 9.38,
+      "rsi14": 47.61
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 6.01,
+      "rsi14": 43.51
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Information Technology",
+      "dist_sma5": 5.96,
+      "rsi14": 52.65
+    },
+    {
+      "ticker": "NKE",
+      "name": "NIKE, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 5.7,
+      "rsi14": 49.4
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma5": 5.66,
+      "rsi14": 59.52
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "dist_sma5": 5.34,
+      "rsi14": 60.74
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": 4.91,
+      "rsi14": 53.81
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 4.91,
+      "rsi14": 38.6
+    },
+    {
+      "ticker": "TRI",
+      "name": "Thomson Reuters Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 4.91,
+      "rsi14": 51.87
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "dist_sma5": 4.7,
+      "rsi14": 51.1
     }
   ]
 }

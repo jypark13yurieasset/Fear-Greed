@@ -1,54 +1,6 @@
 const SIGNAL_LOG_DATA = [
   {
     "date": "2026-09-22",
-    "ticker": "CI",
-    "name": "The Cigna Group",
-    "type": "dead",
-    "streak": 3,
-    "entry_price": 273.739990234375
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "RSG",
-    "name": "Republic Services, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 213.8800048828125
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "TER",
-    "name": "Teradyne, Inc.",
-    "type": "golden",
-    "streak": 1,
-    "entry_price": 398.69000244140625
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "COHR",
-    "name": "Coherent Corp.",
-    "type": "golden",
-    "streak": 3,
-    "entry_price": 310.3900146484375
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "KEYS",
-    "name": "Keysight Technologies, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 347.32000732421875
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "OKE",
-    "name": "ONEOK, Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 90.08999633789062
-  },
-  {
-    "date": "2026-09-22",
     "ticker": "OXY",
     "name": "Occidental Petroleum Corporation",
     "type": "dead",
@@ -7998,5 +7950,53 @@ const SIGNAL_LOG_DATA = [
     "type": "dead",
     "streak": 3,
     "entry_price": 280.29998779296875
+  },
+  {
+    "date": "2026-11-25",
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 244.42999267578125
+  },
+  {
+    "date": "2026-11-25",
+    "ticker": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorporated",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 564.1199951171875
+  },
+  {
+    "date": "2026-11-25",
+    "ticker": "NXPI",
+    "name": "NXP Semiconductors N.V.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 242.9600067138672
+  },
+  {
+    "date": "2026-11-25",
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "type": "dead",
+    "streak": 2,
+    "entry_price": 1194.6300048828125
+  },
+  {
+    "date": "2026-11-25",
+    "ticker": "A",
+    "name": "Agilent Technologies, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 178.44000244140625
+  },
+  {
+    "date": "2026-11-25",
+    "ticker": "DXCM",
+    "name": "DexCom, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 84.83999633789062
   }
 ];

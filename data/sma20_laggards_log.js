@@ -1,76 +1,4 @@
 const SMA20_LAGGARDS_LOG = {
-  "2026-11-16": [
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma20": -27.6,
-      "rsi14": 33.93
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -26.19,
-      "rsi14": 31.27
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -23.56,
-      "rsi14": 32.55
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -22.97,
-      "rsi14": 34.52
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -22.87,
-      "rsi14": 29.87
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -22.49,
-      "rsi14": 28.48
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma20": -22.29,
-      "rsi14": 28.73
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma20": -21.13,
-      "rsi14": 33.26
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "dist_sma20": -20.19,
-      "rsi14": 22.72
-    },
-    {
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "sector": "Industrials",
-      "dist_sma20": -19.16,
-      "rsi14": 28.44
-    }
-  ],
   "2026-11-17": [
     {
       "ticker": "NBIS",
@@ -501,6 +429,78 @@ const SMA20_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma20": -17.34,
       "rsi14": 37.37
+    }
+  ],
+  "2026-11-25": [
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma20": -33.06,
+      "rsi14": 27.22
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma20": -30.72,
+      "rsi14": 33.06
+    },
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "sector": "Information Technology",
+      "dist_sma20": -28.29,
+      "rsi14": 27.03
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -20.65,
+      "rsi14": 35.24
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -19.06,
+      "rsi14": 35.68
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -17.0,
+      "rsi14": 38.01
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "sector": "Industrials",
+      "dist_sma20": -16.66,
+      "rsi14": 38.29
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -16.55,
+      "rsi14": 29.95
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": -15.51,
+      "rsi14": 35.12
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "dist_sma20": -14.88,
+      "rsi14": 31.24
     }
   ]
 };

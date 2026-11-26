@@ -1,76 +1,4 @@
 const SMA5_LAGGARDS_LOG = {
-  "2026-11-16": [
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -16.35,
-      "rsi14": 33.93
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": -10.01,
-      "rsi14": 28.73
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -9.48,
-      "rsi14": 31.27
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -9.29,
-      "rsi14": 29.02
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -9.03,
-      "rsi14": 34.52
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -8.25,
-      "rsi14": 40.15
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.12,
-      "rsi14": 33.26
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -8.01,
-      "rsi14": 47.84
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.97,
-      "rsi14": 32.55
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -7.97,
-      "rsi14": 47.08
-    }
-  ],
   "2026-11-17": [
     {
       "ticker": "NBIS",
@@ -501,6 +429,78 @@ const SMA5_LAGGARDS_LOG = {
       "sector": "Information Technology",
       "dist_sma5": -6.42,
       "rsi14": 39.76
+    }
+  ],
+  "2026-11-25": [
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -10.86,
+      "rsi14": 27.22
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -7.14,
+      "rsi14": 38.01
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -6.75,
+      "rsi14": 35.68
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.54,
+      "rsi14": 41.25
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -5.4,
+      "rsi14": 35.93
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Information Technology",
+      "dist_sma5": -5.26,
+      "rsi14": 36.75
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "sector": "Communication Services",
+      "dist_sma5": -5.21,
+      "rsi14": 33.06
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -5.04,
+      "rsi14": 38.31
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.83,
+      "rsi14": 35.24
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices, Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -4.73,
+      "rsi14": 38.62
     }
   ]
 };
