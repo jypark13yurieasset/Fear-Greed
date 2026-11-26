@@ -45620,21 +45620,21 @@ window.fng_data = {
         "sp500_change": -0.25,
         "nasdaq_price": 23585.8,
         "nasdaq_change": -0.62,
-        "vix_price": 28.29,
-        "vix_change": 7.32,
-        "dxy_price": 103.7,
-        "dxy_change": -0.11,
+        "vix_price": 26.8,
+        "vix_change": 1.67,
+        "dxy_price": 103.8,
+        "dxy_change": 0.12,
         "btc_data": {
-            "price": 60161.42,
+            "price": 60475.54,
             "ath": 126198.07,
-            "drawdown": -52.33
+            "drawdown": -52.08
         },
         "assets_top20": [
             {
                 "rank": 1,
                 "name": "Gold",
                 "code": "GOLD",
-                "mcap": "$25.100 T"
+                "mcap": "$24.984 T"
             },
             {
                 "rank": 2,
@@ -45670,7 +45670,7 @@ window.fng_data = {
                 "rank": 7,
                 "name": "Silver",
                 "code": "SILVER",
-                "mcap": "$2.341 T"
+                "mcap": "$2.350 T"
             },
             {
                 "rank": 8,
@@ -45688,7 +45688,7 @@ window.fng_data = {
                 "rank": 10,
                 "name": "Saudi Aramco",
                 "code": "2222.SR",
-                "mcap": "$1.693 T"
+                "mcap": "$1.701 T"
             },
             {
                 "rank": 11,
@@ -45724,7 +45724,7 @@ window.fng_data = {
                 "rank": 16,
                 "name": "Bitcoin",
                 "code": "BTC",
-                "mcap": "$1.209 T"
+                "mcap": "$1.217 T"
             },
             {
                 "rank": 17,
@@ -45757,7 +45757,7 @@ window.fng_data = {
         "aaii_date": "2026-11-18",
         "us_etfs": {
             "ARKK": {
-                "date": "2026-11-26",
+                "date": "2026-11-27",
                 "holdings": [
                     {
                         "ticker": "TSLA",
@@ -45812,7 +45812,7 @@ window.fng_data = {
                 ]
             },
             "IVES": {
-                "date": "2026-11-26",
+                "date": "2026-11-27",
                 "holdings": [
                     {
                         "ticker": "AAPL",
@@ -45867,7 +45867,7 @@ window.fng_data = {
                 ]
             },
             "GRNY": {
-                "date": "2026-11-26",
+                "date": "2026-11-27",
                 "holdings": [
                     {
                         "ticker": "INTC",
@@ -45922,112 +45922,112 @@ window.fng_data = {
                 ]
             }
         },
-        "koact_date": "2026-11-26",
+        "koact_date": "2026-11-27",
         "koact_holdings": [
             {
                 "name": "Amazon.com Inc",
                 "ticker": "AMZN",
-                "weight": 8.9
+                "weight": 8.75
             },
             {
                 "name": "BLOOM ENERGY CORPORATION",
                 "ticker": "BE",
-                "weight": 7.95
+                "weight": 7.89
             },
             {
                 "name": "ALPHABET INC-CL A",
                 "ticker": "GOOGL",
-                "weight": 5.96
-            },
-            {
-                "name": "MICRON TECH",
-                "ticker": "MU",
-                "weight": 5.67
-            },
-            {
-                "name": "ADVANCED MICRO DEVICES",
-                "ticker": "AMD",
-                "weight": 5.44
+                "weight": 5.93
             },
             {
                 "name": "MICROSOFT",
                 "ticker": "MSFT",
-                "weight": 5.41
+                "weight": 5.42
             },
             {
                 "name": "Cloudflare Inc",
                 "ticker": "NET",
-                "weight": 5.05
+                "weight": 5.06
+            },
+            {
+                "name": "ADVANCED MICRO DEVICES",
+                "ticker": "AMD",
+                "weight": 4.89
             },
             {
                 "name": "Palantir Technologies Inc -A",
                 "ticker": "PLTR",
-                "weight": 4.34
+                "weight": 4.47
             },
             {
                 "name": "COCA-COLA CO/THE",
                 "ticker": "KO",
-                "weight": 3.72
+                "weight": 3.77
             },
             {
                 "name": "ELI LILLY & CO",
                 "ticker": "LLY",
-                "weight": 3.5
+                "weight": 3.51
+            },
+            {
+                "name": "APPLE Inc",
+                "ticker": "AAPL",
+                "weight": 3.07
             }
         ],
-        "time_date": "2026-11-25",
+        "time_date": "2026-11-26",
         "time_holdings": [
             {
                 "name": "Apple Inc",
                 "ticker": "AAPL",
-                "weight": 7.66
+                "weight": 7.73
             },
             {
                 "name": "Microsoft Corp",
                 "ticker": "MSFT",
-                "weight": 7.35
+                "weight": 7.29
             },
             {
                 "name": "Amazon.com Inc",
                 "ticker": "AMZN",
-                "weight": 7.02
+                "weight": 6.84
             },
             {
                 "name": "Alphabet Inc",
                 "ticker": "GOOGL",
-                "weight": 5.87
+                "weight": 5.77
             },
             {
                 "name": "Advanced Micro Devices Inc",
                 "ticker": "AMD",
-                "weight": 5.3
+                "weight": 5.23
             },
             {
                 "name": "NVIDIA Corp",
                 "ticker": "NVDA",
-                "weight": 4.04
+                "weight": 3.91
             },
             {
                 "name": "Meta Platforms Inc",
                 "ticker": "META",
-                "weight": 3.19
+                "weight": 3.31
             },
             {
                 "name": "NASDAQ 100 E-MINI INDEX DEC 2026",
                 "ticker": "NQZ6",
-                "weight": 3.16
+                "weight": 3.15
             },
             {
                 "name": "현금",
                 "ticker": "",
-                "weight": 2.91
+                "weight": 2.9
             },
             {
-                "name": "Tesla Inc",
-                "ticker": "TSLA",
-                "weight": 2.85
+                "name": "Palo Alto Networks Inc",
+                "ticker": "PANW",
+                "weight": 2.87
             }
         ],
-        "updated_at": "11-26 08:15 KST"
+        "updated_at": "11-27 07:37 KST"
     }
 };
