@@ -1,76 +1,4 @@
 {
-  "2026-11-17": [
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "sector": "Communication Services",
-      "dist_sma5": -13.42,
-      "rsi14": 33.7
-    },
-    {
-      "ticker": "MSTR",
-      "name": "Strategy Inc",
-      "sector": "Information Technology",
-      "dist_sma5": -11.94,
-      "rsi14": 26.2
-    },
-    {
-      "ticker": "HOOD",
-      "name": "Robinhood Markets, Inc.",
-      "sector": "Financials",
-      "dist_sma5": -10.15,
-      "rsi14": 27.18
-    },
-    {
-      "ticker": "SNDK",
-      "name": "Sandisk Corporation",
-      "sector": "Information Technology",
-      "dist_sma5": -9.54,
-      "rsi14": 30.86
-    },
-    {
-      "ticker": "RKLB",
-      "name": "Rocket Lab Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -9.51,
-      "rsi14": 45.24
-    },
-    {
-      "ticker": "BE",
-      "name": "Bloom Energy Corporation",
-      "sector": "Industrials",
-      "dist_sma5": -9.1,
-      "rsi14": 39.3
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -8.48,
-      "rsi14": 25.73
-    },
-    {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": -8.13,
-      "rsi14": 44.43
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "sector": "Information Technology",
-      "dist_sma5": -7.7,
-      "rsi14": 40.55
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Communication Services",
-      "dist_sma5": -7.6,
-      "rsi14": 45.47
-    }
-  ],
   "2026-11-18": [
     {
       "ticker": "MSTR",
@@ -501,6 +429,78 @@
       "sector": "Information Technology",
       "dist_sma5": -4.73,
       "rsi14": 38.62
+    }
+  ],
+  "2026-11-27": [
+    {
+      "ticker": "MDT",
+      "name": "Medtronic plc",
+      "sector": "Health Care",
+      "dist_sma5": -2.3,
+      "rsi14": 41.2
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": -1.6,
+      "rsi14": 41.4
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorporated",
+      "sector": "Health Care",
+      "dist_sma5": -1.59,
+      "rsi14": 49.34
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "sector": "Utilities",
+      "dist_sma5": -1.4,
+      "rsi14": 40.41
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": -0.68,
+      "rsi14": 30.09
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Information Technology",
+      "dist_sma5": -0.36,
+      "rsi14": 39.13
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma5": -0.25,
+      "rsi14": 37.04
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -0.19,
+      "rsi14": 48.03
+    },
+    {
+      "ticker": "TRGP",
+      "name": "Targa Resources Corp.",
+      "sector": "Energy",
+      "dist_sma5": -0.15,
+      "rsi14": 44.93
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie Inc.",
+      "sector": "Health Care",
+      "dist_sma5": -0.13,
+      "rsi14": 53.63
     }
   ]
 }

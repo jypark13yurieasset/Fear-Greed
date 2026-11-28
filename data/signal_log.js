@@ -1,69 +1,5 @@
 const SIGNAL_LOG_DATA = [
   {
-    "date": "2026-09-22",
-    "ticker": "OXY",
-    "name": "Occidental Petroleum Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 56.310001373291016
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "NUE",
-    "name": "Nucor Corporation",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 245.66000366210938
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "ARM",
-    "name": "Arm Holdings plc",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 333.20001220703125
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "NBIS",
-    "name": "Nebius Group N.V.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 236.1199951171875
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "ALAB",
-    "name": "Astera Labs, Inc.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 363.4599914550781
-  },
-  {
-    "date": "2026-09-22",
-    "ticker": "005930.KS",
-    "name": "Samsung Electronics Co., Ltd.",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 276500.0
-  },
-  {
-    "date": "2026-09-23",
-    "ticker": "V",
-    "name": "Visa Inc.",
-    "type": "dead",
-    "streak": 2,
-    "entry_price": 361.5199890136719
-  },
-  {
-    "date": "2026-09-23",
-    "ticker": "TXN",
-    "name": "Texas Instruments Incorporated",
-    "type": "golden",
-    "streak": 2,
-    "entry_price": 272.6199951171875
-  },
-  {
     "date": "2026-09-23",
     "ticker": "WFC",
     "name": "Wells Fargo & Company",
@@ -7998,5 +7934,69 @@ const SIGNAL_LOG_DATA = [
     "type": "golden",
     "streak": 1,
     "entry_price": 84.83999633789062
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "TSLA",
+    "name": "Tesla, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 400.0
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 366.760009765625
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorporated",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 534.5700073242188
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "BX",
+    "name": "Blackstone Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 121.95999908447266
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "APO",
+    "name": "Apollo Global Management, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 122.97000122070312
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "type": "dead",
+    "streak": 3,
+    "entry_price": 1265.02001953125
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "PAYX",
+    "name": "Paychex, Inc.",
+    "type": "golden",
+    "streak": 1,
+    "entry_price": 118.12999725341797
+  },
+  {
+    "date": "2026-11-27",
+    "ticker": "DXCM",
+    "name": "DexCom, Inc.",
+    "type": "golden",
+    "streak": 2,
+    "entry_price": 85.1500015258789
   }
 ];

@@ -1,76 +1,4 @@
 {
-  "2026-11-17": [
-    {
-      "ticker": "SPCX",
-      "name": "SpaceX",
-      "sector": "Industrials",
-      "dist_sma5": 1.52,
-      "rsi14": 48.95
-    },
-    {
-      "ticker": "SYK",
-      "name": "Stryker Corporation",
-      "sector": "Health Care",
-      "dist_sma5": 1.19,
-      "rsi14": 55.56
-    },
-    {
-      "ticker": "ALL",
-      "name": "The Allstate Corporation",
-      "sector": "Financials",
-      "dist_sma5": 1.11,
-      "rsi14": 64.85
-    },
-    {
-      "ticker": "PG",
-      "name": "The Procter & Gamble Company",
-      "sector": "Consumer Staples",
-      "dist_sma5": 0.98,
-      "rsi14": 68.49
-    },
-    {
-      "ticker": "GILD",
-      "name": "Gilead Sciences, Inc.",
-      "sector": "Health Care",
-      "dist_sma5": 0.91,
-      "rsi14": 61.83
-    },
-    {
-      "ticker": "ORLY",
-      "name": "O'Reilly Automotive, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 0.82,
-      "rsi14": 61.07
-    },
-    {
-      "ticker": "COST",
-      "name": "Costco Wholesale Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma5": 0.74,
-      "rsi14": 75.34
-    },
-    {
-      "ticker": "NOC",
-      "name": "Northrop Grumman Corporation",
-      "sector": "Industrials",
-      "dist_sma5": 0.61,
-      "rsi14": 58.9
-    },
-    {
-      "ticker": "MCD",
-      "name": "McDonald's Corporation",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 0.6,
-      "rsi14": 64.9
-    },
-    {
-      "ticker": "AZO",
-      "name": "AutoZone, Inc.",
-      "sector": "Consumer Discretionary",
-      "dist_sma5": 0.6,
-      "rsi14": 60.95
-    }
-  ],
   "2026-11-18": [
     {
       "ticker": "PANW",
@@ -501,6 +429,78 @@
       "sector": "Health Care",
       "dist_sma5": 4.7,
       "rsi14": 51.1
+    }
+  ],
+  "2026-11-27": [
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 11.87,
+      "rsi14": 53.36
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma5": 8.23,
+      "rsi14": 56.25
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 7.63,
+      "rsi14": 51.54
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma5": 6.68,
+      "rsi14": 57.49
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify Inc.",
+      "sector": "Information Technology",
+      "dist_sma5": 6.52,
+      "rsi14": 46.79
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "sector": "Industrials",
+      "dist_sma5": 6.47,
+      "rsi14": 45.17
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "dist_sma5": 6.15,
+      "rsi14": 46.89
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma5": 6.09,
+      "rsi14": 62.42
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 6.0,
+      "rsi14": 48.05
+    },
+    {
+      "ticker": "NKE",
+      "name": "NIKE, Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma5": 5.78,
+      "rsi14": 51.95
     }
   ]
 }

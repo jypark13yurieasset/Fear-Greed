@@ -1,76 +1,4 @@
 const SMA20_TOP10_LOG = {
-  "2026-11-17": [
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 25.06,
-      "rsi14": 67.53
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDEXX Laboratories, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 7.93,
-      "rsi14": 66.39
-    },
-    {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 7.69,
-      "rsi14": 72.89
-    },
-    {
-      "ticker": "REGN",
-      "name": "Regeneron Pharmaceuticals, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 7.02,
-      "rsi14": 68.25
-    },
-    {
-      "ticker": "FER",
-      "name": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "dist_sma20": 6.66,
-      "rsi14": 67.21
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "sector": "Communication Services",
-      "dist_sma20": 6.47,
-      "rsi14": 65.42
-    },
-    {
-      "ticker": "COST",
-      "name": "Costco Wholesale Corporation",
-      "sector": "Consumer Staples",
-      "dist_sma20": 6.35,
-      "rsi14": 75.34
-    },
-    {
-      "ticker": "CAH",
-      "name": "Cardinal Health, Inc.",
-      "sector": "Health Care",
-      "dist_sma20": 6.05,
-      "rsi14": 71.77
-    },
-    {
-      "ticker": "MCK",
-      "name": "McKesson Corporation",
-      "sector": "Health Care",
-      "dist_sma20": 5.36,
-      "rsi14": 69.63
-    },
-    {
-      "ticker": "TMUS",
-      "name": "T-Mobile US, Inc.",
-      "sector": "Communication Services",
-      "dist_sma20": 5.27,
-      "rsi14": 56.7
-    }
-  ],
   "2026-11-18": [
     {
       "ticker": "APP",
@@ -501,6 +429,78 @@ const SMA20_TOP10_LOG = {
       "sector": "Consumer Discretionary",
       "dist_sma20": 5.18,
       "rsi14": 68.01
+    }
+  ],
+  "2026-11-27": [
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "dist_sma20": 10.88,
+      "rsi14": 62.42
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 8.73,
+      "rsi14": 49.74
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Information Technology",
+      "dist_sma20": 8.18,
+      "rsi14": 55.98
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "dist_sma20": 7.98,
+      "rsi14": 65.62
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "dist_sma20": 7.77,
+      "rsi14": 60.96
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 7.37,
+      "rsi14": 53.36
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "dist_sma20": 7.25,
+      "rsi14": 56.25
+    },
+    {
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "dist_sma20": 7.01,
+      "rsi14": 70.91
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "dist_sma20": 5.28,
+      "rsi14": 62.31
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace Inc.",
+      "sector": "Industrials",
+      "dist_sma20": 5.28,
+      "rsi14": 57.49
     }
   ]
 };
